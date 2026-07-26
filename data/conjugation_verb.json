@@ -1,0 +1,547 @@
+{
+  "meta": {
+    "description": "Japanese verb conjugation system",
+    "groups": ["group1", "group2", "group3"],
+    "group_labels": {
+      "group1": "Godan (u-verb) \u2014 five-row",
+      "group2": "Ichidan (ru-verb) \u2014 one-row",
+      "group3": "Irregular (\u3059\u308b / \u304f\u308b)"
+    },
+    "known_exceptions": [
+      {
+        "verb": "\u884c\u304f",
+        "reading": "iku",
+        "meaning": "to go",
+        "group": "group1",
+        "note": "The single most common irregular sound-change (\u9298\u4fbf) in the language. Every other \u304f-ending verb takes \u3044\u305f/\u3044\u3066 (e.g. \u66f8\u304f\u2192\u66f8\u3044\u305f), but \u884c\u304f takes \u3063\u305f/\u3063\u3066 instead: \u884c\u3063\u305f (not \u884c\u3044\u305f), \u884c\u3063\u3066 (not \u884c\u3044\u3066). This propagates into every form built on past-plain or te-form: \u884c\u3063\u305f\u3089 (tara), \u884c\u3063\u3066\u3044\u308b (progressive), etc. The original file's general \u304f\u2192\u3044\u305f/\u3044\u3066 rule is correct for every other verb \u2014 \u884c\u304f is the sole common exception and was missing from the source file."
+      }
+    ]
+  },
+  "tenses": [
+    {
+      "name_en": "dictionary",
+      "name_jp": "\u3058\u3057\u3087\u3051\u3044",
+      "usage_en": "The basic, informal form of the verb used in casual speech and as a base for many grammar patterns.",
+      "structure": {
+        "group1": [
+          { "ending": "\u3046", "rule": "no change", "result": "\u3046" },
+          { "ending": "\u304f", "rule": "no change", "result": "\u304f" },
+          { "ending": "\u3050", "rule": "no change", "result": "\u3050" },
+          { "ending": "\u3059", "rule": "no change", "result": "\u3059" },
+          { "ending": "\u3064", "rule": "no change", "result": "\u3064" },
+          { "ending": "\u306c", "rule": "no change", "result": "\u306c" },
+          { "ending": "\u3080", "rule": "no change", "result": "\u3080" },
+          { "ending": "\u3076", "rule": "no change", "result": "\u3076" },
+          { "ending": "\u308b", "rule": "no change", "result": "\u308b" }
+        ],
+        "group2": [
+          { "ending": "\u308b", "rule": "no change", "result": "\u308b" }
+        ],
+        "group3": [
+          { "verb": "\u3059\u308b", "result": "\u3059\u308b" },
+          { "verb": "\u304f\u308b", "result": "\u304f\u308b" }
+        ]
+      }
+    },
+    {
+      "name_en": "polite present",
+      "name_jp": "\u307e\u3059\u3051\u3044",
+      "usage_en": "Formal/polite form used in standard conversation when speaking to superiors or strangers.",
+      "structure": {
+        "group1": [
+          { "ending": "\u3046", "rule": "replace with \u3044 column + \u307e\u3059", "result": "\u3044\u307e\u3059" },
+          { "ending": "\u304f", "rule": "replace with \u3044 column + \u307e\u3059", "result": "\u304d\u307e\u3059" },
+          { "ending": "\u3050", "rule": "replace with \u3044 column + \u307e\u3059", "result": "\u304e\u307e\u3059" },
+          { "ending": "\u3059", "rule": "replace with \u3044 column + \u307e\u3059", "result": "\u3057\u307e\u3059" },
+          { "ending": "\u3064", "rule": "replace with \u3044 column + \u307e\u3059", "result": "\u3061\u307e\u3059" },
+          { "ending": "\u306c", "rule": "replace with \u3044 column + \u307e\u3059", "result": "\u306b\u307e\u3059" },
+          { "ending": "\u3080", "rule": "replace with \u3044 column + \u307e\u3059", "result": "\u307f\u307e\u3059" },
+          { "ending": "\u3076", "rule": "replace with \u3044 column + \u307e\u3059", "result": "\u3073\u307e\u3059" },
+          { "ending": "\u308b", "rule": "replace with \u3044 column + \u307e\u3059", "result": "\u308a\u307e\u3059" }
+        ],
+        "group2": [
+          { "ending": "\u308b", "rule": "remove \u308b and add \u307e\u3059", "result": "\u307e\u3059" }
+        ],
+        "group3": [
+          { "verb": "\u3059\u308b", "result": "\u3057\u307e\u3059" },
+          { "verb": "\u304f\u308b", "result": "\u304d\u307e\u3059" }
+        ]
+      }
+    },
+    {
+      "name_en": "negative plain",
+      "name_jp": "\u306a\u3044\u3051\u3044",
+      "usage_en": "Casual negative form expressing 'will not do' or 'does not do'.",
+      "structure": {
+        "group1": [
+          { "ending": "\u3046", "rule": "replace with \u308f + \u306a\u3044", "result": "\u308f\u306a\u3044" },
+          { "ending": "\u304f", "rule": "replace with \u3042 column + \u306a\u3044", "result": "\u304b\u306a\u3044" },
+          { "ending": "\u3050", "rule": "replace with \u3042 column + \u306a\u3044", "result": "\u304c\u306a\u3044" },
+          { "ending": "\u3059", "rule": "replace with \u3042 column + \u306a\u3044", "result": "\u3055\u306a\u3044" },
+          { "ending": "\u3064", "rule": "replace with \u3042 column + \u306a\u3044", "result": "\u305f\u306a\u3044" },
+          { "ending": "\u306c", "rule": "replace with \u3042 column + \u306a\u3044", "result": "\u306a\u306a\u3044" },
+          { "ending": "\u3080", "rule": "replace with \u3042 column + \u306a\u3044", "result": "\u307e\u306a\u3044" },
+          { "ending": "\u3076", "rule": "replace with \u3042 column + \u306a\u3044", "result": "\u3070\u306a\u3044" },
+          { "ending": "\u308b", "rule": "replace with \u3042 column + \u306a\u3044", "result": "\u3089\u306a\u3044" }
+        ],
+        "group2": [
+          { "ending": "\u308b", "rule": "remove \u308b and add \u306a\u3044", "result": "\u306a\u3044" }
+        ],
+        "group3": [
+          { "verb": "\u3059\u308b", "result": "\u3057\u306a\u3044" },
+          { "verb": "\u304f\u308b", "result": "\u3053\u306a\u3044" }
+        ]
+      }
+    },
+    {
+      "name_en": "negative polite",
+      "name_jp": "\u307e\u305b\u3093\u3051\u3044",
+      "usage_en": "Polite negative form for formal communication.",
+      "structure": {
+        "group1": [
+          { "ending": "\u3046", "rule": "replace with \u3044 column + \u307e\u305b\u3093", "result": "\u3044\u307e\u305b\u3093" },
+          { "ending": "\u304f", "rule": "replace with \u3044 column + \u307e\u305b\u3093", "result": "\u304d\u307e\u305b\u3093" },
+          { "ending": "\u3050", "rule": "replace with \u3044 column + \u307e\u305b\u3093", "result": "\u304e\u307e\u305b\u3093" },
+          { "ending": "\u3059", "rule": "replace with \u3044 column + \u307e\u305b\u3093", "result": "\u3057\u307e\u305b\u3093" },
+          { "ending": "\u3064", "rule": "replace with \u3044 column + \u307e\u305b\u3093", "result": "\u3061\u307e\u305b\u3093" },
+          { "ending": "\u306c", "rule": "replace with \u3044 column + \u307e\u305b\u3093", "result": "\u306b\u307e\u305b\u3093" },
+          { "ending": "\u3080", "rule": "replace with \u3044 column + \u307e\u305b\u3093", "result": "\u307f\u307e\u305b\u3093" },
+          { "ending": "\u3076", "rule": "replace with \u3044 column + \u307e\u305b\u3093", "result": "\u3073\u307e\u305b\u3093" },
+          { "ending": "\u308b", "rule": "replace with \u3044 column + \u307e\u305b\u3093", "result": "\u308a\u307e\u305b\u3093" }
+        ],
+        "group2": [
+          { "ending": "\u308b", "rule": "remove \u308b and add \u307e\u305b\u3093", "result": "\u307e\u305b\u3093" }
+        ],
+        "group3": [
+          { "verb": "\u3059\u308b", "result": "\u3057\u307e\u305b\u3093" },
+          { "verb": "\u304f\u308b", "result": "\u304d\u307e\u305b\u3093" }
+        ]
+      }
+    },
+    {
+      "name_en": "past plain",
+      "name_jp": "\u305f\u3051\u3044",
+      "usage_en": "Informal past tense to express finished actions.",
+      "structure": {
+        "group1": [
+          { "ending": "\u3046", "rule": "replace with \u3063\u305f", "result": "\u3063\u305f" },
+          { "ending": "\u3064", "rule": "replace with \u3063\u305f", "result": "\u3063\u305f" },
+          { "ending": "\u308b", "rule": "replace with \u3063\u305f", "result": "\u3063\u305f" },
+          { "ending": "\u3080", "rule": "replace with \u3093\u3060", "result": "\u3093\u3060" },
+          { "ending": "\u3076", "rule": "replace with \u3093\u3060", "result": "\u3093\u3060" },
+          { "ending": "\u306c", "rule": "replace with \u3093\u3060", "result": "\u3093\u3060" },
+          { "ending": "\u304f", "rule": "replace with \u3044\u305f (exception: \u884c\u304f \u2192 \u884c\u3063\u305f)", "result": "\u3044\u305f" },
+          { "ending": "\u3050", "rule": "replace with \u3044\u3060", "result": "\u3044\u3060" },
+          { "ending": "\u3059", "rule": "replace with \u3057\u305f", "result": "\u3057\u305f" }
+        ],
+        "group2": [
+          { "ending": "\u308b", "rule": "remove \u308b and add \u305f", "result": "\u305f" }
+        ],
+        "group3": [
+          { "verb": "\u3059\u308b", "result": "\u3057\u305f" },
+          { "verb": "\u304f\u308b", "result": "\u304d\u305f" }
+        ]
+      }
+    },
+    {
+      "name_en": "past polite",
+      "name_jp": "\u307e\u3057\u305f\u3051\u3044",
+      "usage_en": "Formal past tense for polite communication.",
+      "structure": {
+        "group1": [
+          { "ending": "\u3046", "rule": "replace with \u3044 column + \u307e\u3057\u305f", "result": "\u3044\u307e\u3057\u305f" },
+          { "ending": "\u304f", "rule": "replace with \u3044 column + \u307e\u3057\u305f", "result": "\u304d\u307e\u3057\u305f" },
+          { "ending": "\u3050", "rule": "replace with \u3044 column + \u307e\u3057\u305f", "result": "\u304e\u307e\u3057\u305f" },
+          { "ending": "\u3059", "rule": "replace with \u3044 column + \u307e\u3057\u305f", "result": "\u3057\u307e\u3057\u305f" },
+          { "ending": "\u3064", "rule": "replace with \u3044 column + \u307e\u3057\u305f", "result": "\u3061\u307e\u3057\u305f" },
+          { "ending": "\u306c", "rule": "replace with \u3044 column + \u307e\u3057\u305f", "result": "\u306b\u307e\u3057\u305f" },
+          { "ending": "\u3080", "rule": "replace with \u3044 column + \u307e\u3057\u305f", "result": "\u307f\u307e\u3057\u305f" },
+          { "ending": "\u3076", "rule": "replace with \u3044 column + \u307e\u3057\u305f", "result": "\u3073\u307e\u3057\u305f" },
+          { "ending": "\u308b", "rule": "replace with \u3044 column + \u307e\u3057\u305f", "result": "\u308a\u307e\u3057\u305f" }
+        ],
+        "group2": [
+          { "ending": "\u308b", "rule": "remove \u308b and add \u307e\u3057\u305f", "result": "\u307e\u3057\u305f" }
+        ],
+        "group3": [
+          { "verb": "\u3059\u308b", "result": "\u3057\u307e\u3057\u305f" },
+          { "verb": "\u304f\u308b", "result": "\u304d\u307e\u3057\u305f" }
+        ]
+      }
+    },
+    {
+      "name_en": "past negative plain",
+      "name_jp": "\u306a\u304b\u3063\u305f\u3051\u3044",
+      "usage_en": "Casual past negative to express 'did not do'.",
+      "structure": {
+        "group1": [
+          { "ending": "\u3046", "rule": "replace with \u308f + \u306a\u304b\u3063\u305f", "result": "\u308f\u306a\u304b\u3063\u305f" },
+          { "ending": "\u304f", "rule": "replace with \u3042 column + \u306a\u304b\u3063\u305f", "result": "\u304b\u306a\u304b\u3063\u305f" },
+          { "ending": "\u3050", "rule": "replace with \u3042 column + \u306a\u304b\u3063\u305f", "result": "\u304c\u306a\u304b\u3063\u305f" },
+          { "ending": "\u3059", "rule": "replace with \u3042 column + \u306a\u304b\u3063\u305f", "result": "\u3055\u306a\u304b\u3063\u305f" },
+          { "ending": "\u3064", "rule": "replace with \u3042 column + \u306a\u304b\u3063\u305f", "result": "\u305f\u306a\u304b\u3063\u305f" },
+          { "ending": "\u306c", "rule": "replace with \u3042 column + \u306a\u304b\u3063\u305f", "result": "\u306a\u306a\u304b\u3063\u305f" },
+          { "ending": "\u3080", "rule": "replace with \u3042 column + \u306a\u304b\u3063\u305f", "result": "\u307e\u306a\u304b\u3063\u305f" },
+          { "ending": "\u3076", "rule": "replace with \u3042 column + \u306a\u304b\u3063\u305f", "result": "\u3070\u306a\u304b\u3063\u305f" },
+          { "ending": "\u308b", "rule": "replace with \u3042 column + \u306a\u304b\u3063\u305f", "result": "\u3089\u306a\u304b\u3063\u305f" }
+        ],
+        "group2": [
+          { "ending": "\u308b", "rule": "remove \u308b and add \u306a\u304b\u3063\u305f", "result": "\u306a\u304b\u3063\u305f" }
+        ],
+        "group3": [
+          { "verb": "\u3059\u308b", "result": "\u3057\u306a\u304b\u3063\u305f" },
+          { "verb": "\u304f\u308b", "result": "\u3053\u306a\u304b\u3063\u305f" }
+        ]
+      }
+    },
+    {
+      "name_en": "past negative polite",
+      "name_jp": "\u307e\u305b\u3093\u3067\u3057\u305f\u3051\u3044",
+      "usage_en": "Formal past negative form.",
+      "structure": {
+        "group1": [
+          { "ending": "\u3046", "rule": "replace with \u3044 column + \u307e\u305b\u3093\u3067\u3057\u305f", "result": "\u3044\u307e\u305b\u3093\u3067\u3057\u305f" },
+          { "ending": "\u304f", "rule": "replace with \u3044 column + \u307e\u305b\u3093\u3067\u3057\u305f", "result": "\u304d\u307e\u305b\u3093\u3067\u3057\u305f" },
+          { "ending": "\u3050", "rule": "replace with \u3044 column + \u307e\u305b\u3093\u3067\u3057\u305f", "result": "\u304e\u307e\u305b\u3093\u3067\u3057\u305f" },
+          { "ending": "\u3059", "rule": "replace with \u3044 column + \u307e\u305b\u3093\u3067\u3057\u305f", "result": "\u3057\u307e\u305b\u3093\u3067\u3057\u305f" },
+          { "ending": "\u3064", "rule": "replace with \u3044 column + \u307e\u305b\u3093\u3067\u3057\u305f", "result": "\u3061\u307e\u305b\u3093\u3067\u3057\u305f" },
+          { "ending": "\u306c", "rule": "replace with \u3044 column + \u307e\u305b\u3093\u3067\u3057\u305f", "result": "\u306b\u307e\u305b\u3093\u3067\u3057\u305f" },
+          { "ending": "\u3080", "rule": "replace with \u3044 column + \u307e\u305b\u3093\u3067\u3057\u305f", "result": "\u307f\u307e\u305b\u3093\u3067\u3057\u305f" },
+          { "ending": "\u3076", "rule": "replace with \u3044 column + \u307e\u305b\u3093\u3067\u3057\u305f", "result": "\u3073\u307e\u305b\u3093\u3067\u3057\u305f" },
+          { "ending": "\u308b", "rule": "replace with \u3044 column + \u307e\u305b\u3093\u3067\u3057\u305f", "result": "\u308a\u307e\u305b\u3093\u3067\u3057\u305f" }
+        ],
+        "group2": [
+          { "ending": "\u308b", "rule": "remove \u308b and add \u307e\u305b\u3093\u3067\u3057\u305f", "result": "\u307e\u305b\u3093\u3067\u3057\u305f" }
+        ],
+        "group3": [
+          { "verb": "\u3059\u308b", "result": "\u3057\u307e\u305b\u3093\u3067\u3057\u305f" },
+          { "verb": "\u304f\u308b", "result": "\u304d\u307e\u305b\u3093\u3067\u3057\u305f" }
+        ]
+      }
+    },
+    {
+      "name_en": "te-form",
+      "name_jp": "\u3066\u3051\u3044",
+      "usage_en": "The conjunctive form used to connect sentences, express requests, or continuous states.",
+      "structure": {
+        "group1": [
+          { "ending": "\u3046", "rule": "replace with \u3063\u3066", "result": "\u3063\u3066" },
+          { "ending": "\u3064", "rule": "replace with \u3063\u3066", "result": "\u3063\u3066" },
+          { "ending": "\u308b", "rule": "replace with \u3063\u3066", "result": "\u3063\u3066" },
+          { "ending": "\u3080", "rule": "replace with \u3093\u3067", "result": "\u3093\u3067" },
+          { "ending": "\u3076", "rule": "replace with \u3093\u3067", "result": "\u3093\u3067" },
+          { "ending": "\u306c", "rule": "replace with \u3093\u3067", "result": "\u3093\u3067" },
+          { "ending": "\u304f", "rule": "replace with \u3044\u3066 (exception: \u884c\u304f \u2192 \u884c\u3063\u3066)", "result": "\u3044\u3066" },
+          { "ending": "\u3050", "rule": "replace with \u3044\u3067", "result": "\u3044\u3067" },
+          { "ending": "\u3059", "rule": "replace with \u3057\u3066", "result": "\u3057\u3066" }
+        ],
+        "group2": [
+          { "ending": "\u308b", "rule": "remove \u308b and add \u3066", "result": "\u3066" }
+        ],
+        "group3": [
+          { "verb": "\u3059\u308b", "result": "\u3057\u3066" },
+          { "verb": "\u304f\u308b", "result": "\u304d\u3066" }
+        ]
+      }
+    },
+    {
+      "name_en": "potential",
+      "name_jp": "\u304b\u306e\u3046\u3051\u3044",
+      "usage_en": "Expresses ability or possibility ('can do').",
+      "structure": {
+        "group1": [
+          { "ending": "\u3046", "rule": "replace with \u3048 column + \u308b", "result": "\u3048\u308b" },
+          { "ending": "\u304f", "rule": "replace with \u3048 column + \u308b", "result": "\u3051\u308b" },
+          { "ending": "\u3050", "rule": "replace with \u3048 column + \u308b", "result": "\u3052\u308b" },
+          { "ending": "\u3059", "rule": "replace with \u3048 column + \u308b", "result": "\u305b\u308b" },
+          { "ending": "\u3064", "rule": "replace with \u3048 column + \u308b", "result": "\u3066\u308b" },
+          { "ending": "\u306c", "rule": "replace with \u3048 column + \u308b", "result": "\u306d\u308b" },
+          { "ending": "\u3080", "rule": "replace with \u3048 column + \u308b", "result": "\u3081\u308b" },
+          { "ending": "\u3076", "rule": "replace with \u3048 column + \u308b", "result": "\u3079\u308b" },
+          { "ending": "\u308b", "rule": "replace with \u3048 column + \u308b", "result": "\u308c\u308b" }
+        ],
+        "group2": [
+          { "ending": "\u308b", "rule": "remove \u308b and add \u3089\u308c\u308b", "result": "\u3089\u308c\u308b" }
+        ],
+        "group3": [
+          { "verb": "\u3059\u308b", "result": "\u3067\u304d\u308b" },
+          { "verb": "\u304f\u308b", "result": "\u3053\u3089\u308c\u308b" }
+        ]
+      }
+    },
+    {
+      "name_en": "passive",
+      "name_jp": "\u3046\u3051\u307f\u3051\u3044",
+      "usage_en": "Used when an action is performed upon the subject.",
+      "structure": {
+        "group1": [
+          { "ending": "\u3046", "rule": "replace with \u308f + \u308c\u308b", "result": "\u308f\u308c\u308b" },
+          { "ending": "\u304f", "rule": "replace with \u3042 column + \u308c\u308b", "result": "\u304b\u308c\u308b" },
+          { "ending": "\u3050", "rule": "replace with \u3042 column + \u308c\u308b", "result": "\u304c\u308c\u308b" },
+          { "ending": "\u3059", "rule": "replace with \u3042 column + \u308c\u308b", "result": "\u3055\u308c\u308b" },
+          { "ending": "\u3064", "rule": "replace with \u3042 column + \u308c\u308b", "result": "\u305f\u308c\u308b" },
+          { "ending": "\u306c", "rule": "replace with \u3042 column + \u308c\u308b", "result": "\u306a\u308c\u308b" },
+          { "ending": "\u3080", "rule": "replace with \u3042 column + \u308c\u308b", "result": "\u307e\u308c\u308b" },
+          { "ending": "\u3076", "rule": "replace with \u3042 column + \u308c\u308b", "result": "\u3070\u308c\u308b" },
+          { "ending": "\u308b", "rule": "replace with \u3042 column + \u308c\u308b", "result": "\u3089\u308c\u308b" }
+        ],
+        "group2": [
+          { "ending": "\u308b", "rule": "remove \u308b and add \u3089\u308c\u308b", "result": "\u3089\u308c\u308b" }
+        ],
+        "group3": [
+          { "verb": "\u3059\u308b", "result": "\u3055\u308c\u308b" },
+          { "verb": "\u304f\u308b", "result": "\u3053\u3089\u308c\u308b" }
+        ]
+      }
+    },
+    {
+      "name_en": "causative",
+      "name_jp": "\u3057\u3048\u304d\u3051\u3044",
+      "usage_en": "Expresses making or letting someone do something.",
+      "structure": {
+        "group1": [
+          { "ending": "\u3046", "rule": "replace with \u308f + \u305b\u308b", "result": "\u308f\u305b\u308b" },
+          { "ending": "\u304f", "rule": "replace with \u3042 column + \u305b\u308b", "result": "\u304b\u305b\u308b" },
+          { "ending": "\u3050", "rule": "replace with \u3042 column + \u305b\u308b", "result": "\u304c\u305b\u308b" },
+          { "ending": "\u3059", "rule": "replace with \u3042 column + \u305b\u308b", "result": "\u3055\u305b\u308b" },
+          { "ending": "\u3064", "rule": "replace with \u3042 column + \u305b\u308b", "result": "\u305f\u305b\u308b" },
+          { "ending": "\u306c", "rule": "replace with \u3042 column + \u305b\u308b", "result": "\u306a\u305b\u308b" },
+          { "ending": "\u3080", "rule": "replace with \u3042 column + \u305b\u308b", "result": "\u307e\u305b\u308b" },
+          { "ending": "\u3076", "rule": "replace with \u3042 column + \u305b\u308b", "result": "\u3070\u305b\u308b" },
+          { "ending": "\u308b", "rule": "replace with \u3042 column + \u305b\u308b", "result": "\u3089\u305b\u308b" }
+        ],
+        "group2": [
+          { "ending": "\u308b", "rule": "remove \u308b and add \u3055\u305b\u308b", "result": "\u3055\u305b\u308b" }
+        ],
+        "group3": [
+          { "verb": "\u3059\u308b", "result": "\u3055\u305b\u308b" },
+          { "verb": "\u304f\u308b", "result": "\u3053\u3055\u305b\u308b" }
+        ]
+      }
+    },
+    {
+      "name_en": "causative-passive",
+      "name_jp": "\u3057\u3048\u304d\u3046\u3051\u307f\u3051\u3044",
+      "usage_en": "Expresses being made to do something against one's will.",
+      "structure": {
+        "group1": [
+          { "ending": "\u3046", "rule": "replace with \u308f + \u305b\u3089\u308c\u308b (colloquially contracted to \u3055\u308c\u308b)", "result": "\u308f\u305b\u3089\u308c\u308b" },
+          { "ending": "\u304f", "rule": "replace with \u3042 column + \u305b\u3089\u308c\u308b (colloquially contracted to \u3055\u308c\u308b)", "result": "\u304b\u305b\u3089\u308c\u308b" },
+          { "ending": "\u3050", "rule": "replace with \u3042 column + \u305b\u3089\u308c\u308b (colloquially contracted to \u3055\u308c\u308b)", "result": "\u304c\u305b\u3089\u308c\u308b" },
+          { "ending": "\u3059", "rule": "replace with \u3042 column + \u305b\u3089\u308c\u308b (no contracted form for \u3059-verbs)", "result": "\u3055\u305b\u3089\u308c\u308b" },
+          { "ending": "\u3064", "rule": "replace with \u3042 column + \u305b\u3089\u308c\u308b (colloquially contracted to \u3055\u308c\u308b)", "result": "\u305f\u305b\u3089\u308c\u308b" },
+          { "ending": "\u306c", "rule": "replace with \u3042 column + \u305b\u3089\u308c\u308b (colloquially contracted to \u3055\u308c\u308b)", "result": "\u306a\u305b\u3089\u308c\u308b" },
+          { "ending": "\u3080", "rule": "replace with \u3042 column + \u305b\u3089\u308c\u308b (colloquially contracted to \u3055\u308c\u308b)", "result": "\u307e\u305b\u3089\u308c\u308b" },
+          { "ending": "\u3076", "rule": "replace with \u3042 column + \u305b\u3089\u308c\u308b (colloquially contracted to \u3055\u308c\u308b)", "result": "\u3070\u305b\u3089\u308c\u308b" },
+          { "ending": "\u308b", "rule": "replace with \u3042 column + \u305b\u3089\u308c\u308b (colloquially contracted to \u3055\u308c\u308b)", "result": "\u3089\u305b\u3089\u308c\u308b" }
+        ],
+        "group2": [
+          { "ending": "\u308b", "rule": "remove \u308b and add \u3055\u305b\u3089\u308c\u308b", "result": "\u3055\u305b\u3089\u308c\u308b" }
+        ],
+        "group3": [
+          { "verb": "\u3059\u308b", "result": "\u3055\u305b\u3089\u308c\u308b" },
+          { "verb": "\u304f\u308b", "result": "\u3053\u3055\u305b\u3089\u308c\u308b" }
+        ]
+      }
+    },
+    {
+      "name_en": "imperative",
+      "name_jp": "\u3081\u3044\u308c\u3044\u3051\u3044",
+      "usage_en": "A command form, often blunt or harsh.",
+      "structure": {
+        "group1": [
+          { "ending": "\u3046", "rule": "replace with \u3048 column", "result": "\u3048" },
+          { "ending": "\u304f", "rule": "replace with \u3048 column", "result": "\u3051" },
+          { "ending": "\u3050", "rule": "replace with \u3048 column", "result": "\u3052" },
+          { "ending": "\u3059", "rule": "replace with \u3048 column", "result": "\u305b" },
+          { "ending": "\u3064", "rule": "replace with \u3048 column", "result": "\u3066" },
+          { "ending": "\u306c", "rule": "replace with \u3048 column", "result": "\u306d" },
+          { "ending": "\u3080", "rule": "replace with \u3048 column", "result": "\u3081" },
+          { "ending": "\u3076", "rule": "replace with \u3048 column", "result": "\u3079" },
+          { "ending": "\u308b", "rule": "replace with \u3048 column", "result": "\u308c" }
+        ],
+        "group2": [
+          { "ending": "\u308b", "rule": "remove \u308b and add \u308d", "result": "\u308d" }
+        ],
+        "group3": [
+          { "verb": "\u3059\u308b", "result": "\u3057\u308d" },
+          { "verb": "\u304f\u308b", "result": "\u3053\u3044" }
+        ]
+      }
+    },
+    {
+      "name_en": "volitional",
+      "name_jp": "\u3044\u3053\u3046\u3051\u3044",
+      "usage_en": "Expresses intention or invitation ('let's').",
+      "structure": {
+        "group1": [
+          { "ending": "\u3046", "rule": "replace with \u304a column + \u3046", "result": "\u304a\u3046" },
+          { "ending": "\u304f", "rule": "replace with \u304a column + \u3046", "result": "\u3053\u3046" },
+          { "ending": "\u3050", "rule": "replace with \u304a column + \u3046", "result": "\u3054\u3046" },
+          { "ending": "\u3059", "rule": "replace with \u304a column + \u3046", "result": "\u305d\u3046" },
+          { "ending": "\u3064", "rule": "replace with \u304a column + \u3046", "result": "\u3068\u3046" },
+          { "ending": "\u306c", "rule": "replace with \u304a column + \u3046", "result": "\u306e\u3046" },
+          { "ending": "\u3080", "rule": "replace with \u304a column + \u3046", "result": "\u3082\u3046" },
+          { "ending": "\u3076", "rule": "replace with \u304a column + \u3046", "result": "\u307c\u3046" },
+          { "ending": "\u308b", "rule": "replace with \u304a column + \u3046", "result": "\u308d\u3046" }
+        ],
+        "group2": [
+          { "ending": "\u308b", "rule": "remove \u308b and add \u3088\u3046", "result": "\u3088\u3046" }
+        ],
+        "group3": [
+          { "verb": "\u3059\u308b", "result": "\u3057\u3088\u3046" },
+          { "verb": "\u304f\u308b", "result": "\u3053\u3088\u3046" }
+        ]
+      }
+    },
+    {
+      "name_en": "conditional (ba form)",
+      "name_jp": "\u3070\u3051\u3044",
+      "usage_en": "Expresses a general condition ('if X, then Y').",
+      "structure": {
+        "group1": [
+          { "ending": "\u3046", "rule": "replace with \u3048 column + \u3070", "result": "\u3048\u3070" },
+          { "ending": "\u304f", "rule": "replace with \u3048 column + \u3070", "result": "\u3051\u3070" },
+          { "ending": "\u3050", "rule": "replace with \u3048 column + \u3070", "result": "\u3052\u3070" },
+          { "ending": "\u3059", "rule": "replace with \u3048 column + \u3070", "result": "\u305b\u3070" },
+          { "ending": "\u3064", "rule": "replace with \u3048 column + \u3070", "result": "\u3066\u3070" },
+          { "ending": "\u306c", "rule": "replace with \u3048 column + \u3070", "result": "\u306d\u3070" },
+          { "ending": "\u3080", "rule": "replace with \u3048 column + \u3070", "result": "\u3081\u3070" },
+          { "ending": "\u3076", "rule": "replace with \u3048 column + \u3070", "result": "\u3079\u3070" },
+          { "ending": "\u308b", "rule": "replace with \u3048 column + \u3070", "result": "\u308c\u3070" }
+        ],
+        "group2": [
+          { "ending": "\u308b", "rule": "remove \u308b and add \u308c\u3070", "result": "\u308c\u3070" }
+        ],
+        "group3": [
+          { "verb": "\u3059\u308b", "result": "\u3059\u308c\u3070" },
+          { "verb": "\u304f\u308b", "result": "\u304f\u308c\u3070" }
+        ]
+      }
+    },
+    {
+      "name_en": "conditional (tara form)",
+      "name_jp": "\u305f\u3089\u3051\u3044",
+      "usage_en": "Past-based conditional ('if and when').",
+      "structure": {
+        "group1": [
+          { "ending": "\u3046", "rule": "apply Past Plain rule and add \u3089", "result": "\u3063\u305f\u3089" },
+          { "ending": "\u3064", "rule": "apply Past Plain rule and add \u3089", "result": "\u3063\u305f\u3089" },
+          { "ending": "\u308b", "rule": "apply Past Plain rule and add \u3089", "result": "\u3063\u305f\u3089" },
+          { "ending": "\u3080", "rule": "apply Past Plain rule and add \u3089", "result": "\u3093\u3060\u3089" },
+          { "ending": "\u3076", "rule": "apply Past Plain rule and add \u3089", "result": "\u3093\u3060\u3089" },
+          { "ending": "\u306c", "rule": "apply Past Plain rule and add \u3089", "result": "\u3093\u3060\u3089" },
+          { "ending": "\u304f", "rule": "apply Past Plain rule and add \u3089 (exception: \u884c\u304f \u2192 \u884c\u3063\u305f\u3089)", "result": "\u3044\u305f\u3089" },
+          { "ending": "\u3050", "rule": "apply Past Plain rule and add \u3089", "result": "\u3044\u3060\u3089" },
+          { "ending": "\u3059", "rule": "apply Past Plain rule and add \u3089", "result": "\u3057\u305f\u3089" }
+        ],
+        "group2": [
+          { "ending": "\u308b", "rule": "remove \u308b and add \u305f\u3089", "result": "\u305f\u3089" }
+        ],
+        "group3": [
+          { "verb": "\u3059\u308b", "result": "\u3057\u305f\u3089" },
+          { "verb": "\u304f\u308b", "result": "\u304d\u305f\u3089" }
+        ]
+      }
+    },
+    {
+      "name_en": "desire (tai form)",
+      "name_jp": "\u305f\u3044\u3051\u3044",
+      "usage_en": "Expresses the speaker's desire to do something ('want to'). Conjugates exactly like an i-adjective from this point on (\u305f\u304f\u306a\u3044, \u305f\u304b\u3063\u305f, etc.).",
+      "structure": {
+        "group1": [
+          { "ending": "\u3046", "rule": "replace with \u3044 column + \u305f\u3044", "result": "\u3044\u305f\u3044" },
+          { "ending": "\u304f", "rule": "replace with \u3044 column + \u305f\u3044", "result": "\u304d\u305f\u3044" },
+          { "ending": "\u3050", "rule": "replace with \u3044 column + \u305f\u3044", "result": "\u304e\u305f\u3044" },
+          { "ending": "\u3059", "rule": "replace with \u3044 column + \u305f\u3044", "result": "\u3057\u305f\u3044" },
+          { "ending": "\u3064", "rule": "replace with \u3044 column + \u305f\u3044", "result": "\u3061\u305f\u3044" },
+          { "ending": "\u306c", "rule": "replace with \u3044 column + \u305f\u3044", "result": "\u306b\u305f\u3044" },
+          { "ending": "\u3080", "rule": "replace with \u3044 column + \u305f\u3044", "result": "\u307f\u305f\u3044" },
+          { "ending": "\u3076", "rule": "replace with \u3044 column + \u305f\u3044", "result": "\u3073\u305f\u3044" },
+          { "ending": "\u308b", "rule": "replace with \u3044 column + \u305f\u3044", "result": "\u308a\u305f\u3044" }
+        ],
+        "group2": [
+          { "ending": "\u308b", "rule": "remove \u308b and add \u305f\u3044", "result": "\u305f\u3044" }
+        ],
+        "group3": [
+          { "verb": "\u3059\u308b", "result": "\u3057\u305f\u3044" },
+          { "verb": "\u304f\u308b", "result": "\u304d\u305f\u3044" }
+        ]
+      }
+    },
+    {
+      "name_en": "progressive",
+      "name_jp": "\u3066\u3044\u308b\u3051\u3044",
+      "usage_en": "Expresses an ongoing action or a resulting state ('is doing' / 'has done and remains so').",
+      "structure": {
+        "group1": [
+          { "ending": "\u3046", "rule": "apply Te-form rule and add \u3044\u308b", "result": "\u3063\u3066\u3044\u308b" },
+          { "ending": "\u3064", "rule": "apply Te-form rule and add \u3044\u308b", "result": "\u3063\u3066\u3044\u308b" },
+          { "ending": "\u308b", "rule": "apply Te-form rule and add \u3044\u308b", "result": "\u3063\u3066\u3044\u308b" },
+          { "ending": "\u3080", "rule": "apply Te-form rule and add \u3044\u308b", "result": "\u3093\u3067\u3044\u308b" },
+          { "ending": "\u3076", "rule": "apply Te-form rule and add \u3044\u308b", "result": "\u3093\u3067\u3044\u308b" },
+          { "ending": "\u306c", "rule": "apply Te-form rule and add \u3044\u308b", "result": "\u3093\u3067\u3044\u308b" },
+          { "ending": "\u304f", "rule": "apply Te-form rule and add \u3044\u308b (exception: \u884c\u304f \u2192 \u884c\u3063\u3066\u3044\u308b)", "result": "\u3044\u3066\u3044\u308b" },
+          { "ending": "\u3050", "rule": "apply Te-form rule and add \u3044\u308b", "result": "\u3044\u3067\u3044\u308b" },
+          { "ending": "\u3059", "rule": "apply Te-form rule and add \u3044\u308b", "result": "\u3057\u3066\u3044\u308b" }
+        ],
+        "group2": [
+          { "ending": "\u308b", "rule": "remove \u308b and add \u3066\u3044\u308b", "result": "\u3066\u3044\u308b" }
+        ],
+        "group3": [
+          { "verb": "\u3059\u308b", "result": "\u3057\u3066\u3044\u308b" },
+          { "verb": "\u304f\u308b", "result": "\u304d\u3066\u3044\u308b" }
+        ]
+      }
+    },
+    {
+      "name_en": "prohibition",
+      "name_jp": "\u304d\u3093\u3057\u3051\u3044",
+      "usage_en": "Strong, blunt prohibition ('don't do'). Attaches directly to the dictionary form for every group.",
+      "structure": {
+        "group1": [
+          { "ending": "\u3046", "rule": "add \u306a to dictionary form", "result": "\u3046\u306a" },
+          { "ending": "\u304f", "rule": "add \u306a to dictionary form", "result": "\u304f\u306a" },
+          { "ending": "\u3050", "rule": "add \u306a to dictionary form", "result": "\u3050\u306a" },
+          { "ending": "\u3059", "rule": "add \u306a to dictionary form", "result": "\u3059\u306a" },
+          { "ending": "\u3064", "rule": "add \u306a to dictionary form", "result": "\u3064\u306a" },
+          { "ending": "\u306c", "rule": "add \u306a to dictionary form", "result": "\u306c\u306a" },
+          { "ending": "\u3080", "rule": "add \u306a to dictionary form", "result": "\u3080\u306a" },
+          { "ending": "\u3076", "rule": "add \u306a to dictionary form", "result": "\u3076\u306a" },
+          { "ending": "\u308b", "rule": "add \u306a to dictionary form", "result": "\u308b\u306a" }
+        ],
+        "group2": [
+          { "ending": "\u308b", "rule": "add \u306a to dictionary form", "result": "\u308b\u306a" }
+        ],
+        "group3": [
+          { "verb": "\u3059\u308b", "result": "\u3059\u308b\u306a" },
+          { "verb": "\u304f\u308b", "result": "\u304f\u308b\u306a" }
+        ]
+      }
+    },
+    {
+      "name_en": "must / obligation",
+      "name_jp": "\u304b\u306a\u3089\u306a\u3044\u3051\u3044",
+      "usage_en": "Expresses obligation or necessity ('must do'). \u306a\u304f\u3066\u306f\u3044\u3051\u306a\u3044 and \u306a\u304d\u3083\u3044\u3051\u306a\u3044 are common, more casual alternatives with the same meaning.",
+      "structure": {
+        "group1": [
+          { "ending": "\u3046", "rule": "replace with \u308f + \u306a\u3051\u308c\u3070\u306a\u3089\u306a\u3044", "result": "\u308f\u306a\u3051\u308c\u3070\u306a\u3089\u306a\u3044" },
+          { "ending": "\u304f", "rule": "replace with \u3042 column + \u306a\u3051\u308c\u3070\u306a\u3089\u306a\u3044", "result": "\u304b\u306a\u3051\u308c\u3070\u306a\u3089\u306a\u3044" },
+          { "ending": "\u3050", "rule": "replace with \u3042 column + \u306a\u3051\u308c\u3070\u306a\u3089\u306a\u3044", "result": "\u304c\u306a\u3051\u308c\u3070\u306a\u3089\u306a\u3044" },
+          { "ending": "\u3059", "rule": "replace with \u3042 column + \u306a\u3051\u308c\u3070\u306a\u3089\u306a\u3044", "result": "\u3055\u306a\u3051\u308c\u3070\u306a\u3089\u306a\u3044" },
+          { "ending": "\u3064", "rule": "replace with \u3042 column + \u306a\u3051\u308c\u3070\u306a\u3089\u306a\u3044", "result": "\u305f\u306a\u3051\u308c\u3070\u306a\u3089\u306a\u3044" },
+          { "ending": "\u306c", "rule": "replace with \u3042 column + \u306a\u3051\u308c\u3070\u306a\u3089\u306a\u3044", "result": "\u306a\u306a\u3051\u308c\u3070\u306a\u3089\u306a\u3044" },
+          { "ending": "\u3080", "rule": "replace with \u3042 column + \u306a\u3051\u308c\u3070\u306a\u3089\u306a\u3044", "result": "\u307e\u306a\u3051\u308c\u3070\u306a\u3089\u306a\u3044" },
+          { "ending": "\u3076", "rule": "replace with \u3042 column + \u306a\u3051\u308c\u3070\u306a\u3089\u306a\u3044", "result": "\u3070\u306a\u3051\u308c\u3070\u306a\u3089\u306a\u3044" },
+          { "ending": "\u308b", "rule": "replace with \u3042 column + \u306a\u3051\u308c\u3070\u306a\u3089\u306a\u3044", "result": "\u3089\u306a\u3051\u308c\u3070\u306a\u3089\u306a\u3044" }
+        ],
+        "group2": [
+          { "ending": "\u308b", "rule": "remove \u308b and add \u306a\u3051\u308c\u3070\u306a\u3089\u306a\u3044", "result": "\u306a\u3051\u308c\u3070\u306a\u3089\u306a\u3044" }
+        ],
+        "group3": [
+          { "verb": "\u3059\u308b", "result": "\u3057\u306a\u3051\u308c\u3070\u306a\u3089\u306a\u3044" },
+          { "verb": "\u304f\u308b", "result": "\u3053\u306a\u3051\u308c\u3070\u306a\u3089\u306a\u3044" }
+        ]
+      }
+    }
+  ]
+}

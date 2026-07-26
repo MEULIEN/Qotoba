@@ -1,0 +1,7418 @@
+{
+  "words": [
+    {
+      "id": "v_nomu",
+      "dictionary": "飲む",
+      "kana": "のむ",
+      "romaji": "nomu",
+      "meaning": "to drink",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "daily",
+        "food",
+        "n5"
+      ],
+      "example": {
+        "jp": "毎日水を飲む。",
+        "en": "I drink water every day."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_kaku",
+      "dictionary": "書く",
+      "kana": "かく",
+      "romaji": "kaku",
+      "meaning": "to write",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "daily",
+        "study",
+        "n5"
+      ],
+      "example": {
+        "jp": "手紙を書く。",
+        "en": "I write a letter."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_hanasu",
+      "dictionary": "話す",
+      "kana": "はなす",
+      "romaji": "hanasu",
+      "meaning": "to speak, to talk",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "daily",
+        "communication",
+        "n5"
+      ],
+      "example": {
+        "jp": "友達と日本語で話す。",
+        "en": "I speak Japanese with my friend."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_iku",
+      "dictionary": "行く",
+      "kana": "いく",
+      "romaji": "iku",
+      "meaning": "to go",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "daily",
+        "movement",
+        "irregular",
+        "n5"
+      ],
+      "example": {
+        "jp": "学校に行く。",
+        "en": "I go to school."
+      },
+      "note": "Irregular sound-change: past/te-form/tara/progressive use 行った/行って instead of the expected 行いた/行いて.",
+      "irregular_overrides": {
+        "past plain": "行った",
+        "past polite": "行きました",
+        "te-form": "行って",
+        "conditional (tara form)": "行ったら",
+        "progressive": "行っている"
+      }
+    },
+    {
+      "id": "v_taberu",
+      "dictionary": "食べる",
+      "kana": "たべる",
+      "romaji": "taberu",
+      "meaning": "to eat",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "daily",
+        "food",
+        "n5"
+      ],
+      "example": {
+        "jp": "朝ご飯を食べる。",
+        "en": "I eat breakfast."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_miru",
+      "dictionary": "見る",
+      "kana": "みる",
+      "romaji": "miru",
+      "meaning": "to see, to watch",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "daily",
+        "entertainment",
+        "n5"
+      ],
+      "example": {
+        "jp": "テレビを見る。",
+        "en": "I watch TV."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_suru",
+      "dictionary": "する",
+      "kana": "する",
+      "romaji": "suru",
+      "meaning": "to do",
+      "type": "verb",
+      "group": "group3",
+      "tags": [
+        "daily",
+        "irregular",
+        "n5"
+      ],
+      "example": {
+        "jp": "宏題をする。",
+        "en": "I do homework."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_kuru",
+      "dictionary": "くる",
+      "kana": "くる",
+      "kanji_form": "来る",
+      "romaji": "kuru",
+      "meaning": "to come",
+      "type": "verb",
+      "group": "group3",
+      "tags": [
+        "daily",
+        "movement",
+        "irregular",
+        "n5"
+      ],
+      "example": {
+        "jp": "友達が家にくる。",
+        "en": "A friend comes to my house."
+      },
+      "note": "Written with kanji 来る in real sentences, but the reading of 来 shifts with every conjugation (来ます/kimasu, 来ない/konai, 来た/kita…). This app conjugates in kana (くる→きます/こない/きた) so the reading is always unambiguous — swap in 来 yourself once the readings feel automatic.",
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_au",
+      "dictionary": "会う",
+      "kana": "あう",
+      "romaji": "au",
+      "meaning": "to meet",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "daily",
+        "social",
+        "n5"
+      ],
+      "example": {
+        "jp": "友達に会う。",
+        "en": "I meet a friend."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_aku",
+      "dictionary": "開く",
+      "kana": "あく",
+      "romaji": "aku",
+      "meaning": "to open, to become open (intransitive)",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "daily",
+        "n5"
+      ],
+      "example": {
+        "jp": "ドアが開く。",
+        "en": "The door opens."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_akeru",
+      "dictionary": "開ける",
+      "kana": "あける",
+      "romaji": "akeru",
+      "meaning": "to open (something)",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "daily",
+        "n5"
+      ],
+      "example": {
+        "jp": "窓を開ける。",
+        "en": "I open the window."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_ageru",
+      "dictionary": "あげる",
+      "kana": "あげる",
+      "romaji": "ageru",
+      "meaning": "to give, to raise",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "daily",
+        "social",
+        "n5"
+      ],
+      "example": {
+        "jp": "友達に花をあげる。",
+        "en": "I give flowers to a friend."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_asobu",
+      "dictionary": "遊ぶ",
+      "kana": "あそぶ",
+      "romaji": "asobu",
+      "meaning": "to play",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "daily",
+        "leisure",
+        "n5"
+      ],
+      "example": {
+        "jp": "公園で遊ぶ。",
+        "en": "I play in the park."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_abiru",
+      "dictionary": "浴びる",
+      "kana": "あびる",
+      "romaji": "abiru",
+      "meaning": "to take a shower",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "daily",
+        "body",
+        "n5"
+      ],
+      "example": {
+        "jp": "シャワーを浴びる。",
+        "en": "I take a shower."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_arau",
+      "dictionary": "洗う",
+      "kana": "あらう",
+      "romaji": "arau",
+      "meaning": "to wash",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "daily",
+        "body",
+        "n5"
+      ],
+      "example": {
+        "jp": "手を洗う。",
+        "en": "I wash my hands."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_aru",
+      "dictionary": "ある",
+      "kana": "ある",
+      "romaji": "aru",
+      "meaning": "to exist (inanimate); to have",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "daily",
+        "irregular",
+        "n5"
+      ],
+      "example": {
+        "jp": "机の上に本がある。",
+        "en": "There is a book on the desk."
+      },
+      "irregular_overrides": {
+        "negative plain": "ない",
+        "past negative plain": "なかった",
+        "must / obligation": "なければならない"
+      },
+      "note": "Irregular negative: the plain negative of ある is the suppletive word ない (not あらない). The polite forms (あります/ありません) are perfectly regular."
+    },
+    {
+      "id": "v_aruku",
+      "dictionary": "歩く",
+      "kana": "あるく",
+      "romaji": "aruku",
+      "meaning": "to walk",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "daily",
+        "movement",
+        "n5"
+      ],
+      "example": {
+        "jp": "公園を歩く。",
+        "en": "I walk through the park."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_iu",
+      "dictionary": "言う",
+      "kana": "いう",
+      "romaji": "iu",
+      "meaning": "to say, to tell",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "daily",
+        "communication",
+        "n5"
+      ],
+      "example": {
+        "jp": "「ありがとう」と言う。",
+        "en": "I say \"thank you.\""
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_iru_need",
+      "dictionary": "要る",
+      "kana": "いる",
+      "romaji": "iru",
+      "meaning": "to need, to require",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "daily",
+        "irregular",
+        "n5"
+      ],
+      "example": {
+        "jp": "お金が要る。",
+        "en": "Money is needed."
+      },
+      "irregular_overrides": {},
+      "note": "Looks like an ichidan -iru verb but is godan — one of the classic exceptions (見る, 候る, 入るなどの中でも特に間違えやすい)."
+    },
+    {
+      "id": "v_iru_exist",
+      "dictionary": "いる",
+      "kana": "いる",
+      "romaji": "iru",
+      "meaning": "to exist, to be (animate)",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "daily",
+        "n5"
+      ],
+      "example": {
+        "jp": "部屋に猫がいる。",
+        "en": "There is a cat in the room."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_ireru",
+      "dictionary": "入れる",
+      "kana": "いれる",
+      "romaji": "ireru",
+      "meaning": "to insert, to put in",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "daily",
+        "n5"
+      ],
+      "example": {
+        "jp": "かばんに本を入れる。",
+        "en": "I put the book in the bag."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_utau",
+      "dictionary": "歌う",
+      "kana": "うたう",
+      "romaji": "utau",
+      "meaning": "to sing",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "daily",
+        "leisure",
+        "n5"
+      ],
+      "example": {
+        "jp": "歌を歌う。",
+        "en": "I sing a song."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_umareru",
+      "dictionary": "生まれる",
+      "kana": "うまれる",
+      "romaji": "umareru",
+      "meaning": "to be born",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "daily",
+        "life",
+        "n5"
+      ],
+      "example": {
+        "jp": "東京で生まれる。",
+        "en": "I was born in Tokyo."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_uru",
+      "dictionary": "売る",
+      "kana": "うる",
+      "romaji": "uru",
+      "meaning": "to sell",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "daily",
+        "business",
+        "n5"
+      ],
+      "example": {
+        "jp": "花を売る。",
+        "en": "I sell flowers."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_okiru",
+      "dictionary": "起きる",
+      "kana": "おきる",
+      "romaji": "okiru",
+      "meaning": "to get up, to wake up",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "daily",
+        "n5"
+      ],
+      "example": {
+        "jp": "朝六時に起きる。",
+        "en": "I get up at six in the morning."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_oku",
+      "dictionary": "置く",
+      "kana": "おく",
+      "romaji": "oku",
+      "meaning": "to put, to place",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "daily",
+        "n5"
+      ],
+      "example": {
+        "jp": "机に本を置く。",
+        "en": "I put the book on the desk."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_okuru",
+      "dictionary": "送る",
+      "kana": "おくる",
+      "romaji": "okuru",
+      "meaning": "to send",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "daily",
+        "communication",
+        "n5"
+      ],
+      "example": {
+        "jp": "手紙を送る。",
+        "en": "I send a letter."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_osu",
+      "dictionary": "押す",
+      "kana": "おす",
+      "romaji": "osu",
+      "meaning": "to push",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "daily",
+        "n5"
+      ],
+      "example": {
+        "jp": "ボタンを押す。",
+        "en": "I push the button."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_oboeru",
+      "dictionary": "覚える",
+      "kana": "おぼえる",
+      "romaji": "oboeru",
+      "meaning": "to memorize, to remember",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "study",
+        "n5"
+      ],
+      "example": {
+        "jp": "単語を覚える。",
+        "en": "I memorize the word."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_oyogu",
+      "dictionary": "泳ぐ",
+      "kana": "およぐ",
+      "romaji": "oyogu",
+      "meaning": "to swim",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "leisure",
+        "body",
+        "n5"
+      ],
+      "example": {
+        "jp": "海で泳ぐ。",
+        "en": "I swim in the ocean."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_oriru",
+      "dictionary": "降りる",
+      "kana": "おりる",
+      "romaji": "oriru",
+      "meaning": "to get off, to get down",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "movement",
+        "n5"
+      ],
+      "example": {
+        "jp": "バスを降りる。",
+        "en": "I get off the bus."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_owaru",
+      "dictionary": "終わる",
+      "kana": "おわる",
+      "romaji": "owaru",
+      "meaning": "to end, to finish",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "daily",
+        "n5"
+      ],
+      "example": {
+        "jp": "仕事が終わる。",
+        "en": "Work ends."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_kau",
+      "dictionary": "買う",
+      "kana": "かう",
+      "romaji": "kau",
+      "meaning": "to buy",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "daily",
+        "shopping",
+        "n5"
+      ],
+      "example": {
+        "jp": "パンを買う。",
+        "en": "I buy bread."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_kaesu",
+      "dictionary": "返す",
+      "kana": "かえす",
+      "romaji": "kaesu",
+      "meaning": "to return (something)",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "daily",
+        "n5"
+      ],
+      "example": {
+        "jp": "本を返す。",
+        "en": "I return the book."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_kaeru",
+      "dictionary": "帰る",
+      "kana": "かえる",
+      "romaji": "kaeru",
+      "meaning": "to return home, to go back",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "daily",
+        "irregular",
+        "n5"
+      ],
+      "example": {
+        "jp": "家に帰る。",
+        "en": "I return home."
+      },
+      "irregular_overrides": {},
+      "note": "Looks like an ichidan -eru verb but is godan — one of the classic exceptions."
+    },
+    {
+      "id": "v_kakaru",
+      "dictionary": "かかる",
+      "kana": "かかる",
+      "romaji": "kakaru",
+      "meaning": "to take (time or money)",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "daily",
+        "n5"
+      ],
+      "example": {
+        "jp": "一時間かかる。",
+        "en": "It takes one hour."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_kakeru",
+      "dictionary": "かける",
+      "kana": "かける",
+      "romaji": "kakeru",
+      "meaning": "to hang; to put on (glasses); to make a phone call",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "daily",
+        "communication",
+        "n5"
+      ],
+      "example": {
+        "jp": "電話をかける。",
+        "en": "I make a phone call."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_kasu",
+      "dictionary": "貸す",
+      "kana": "かす",
+      "romaji": "kasu",
+      "meaning": "to lend",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "daily",
+        "social",
+        "n5"
+      ],
+      "example": {
+        "jp": "本を貸す。",
+        "en": "I lend a book."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_kaburu",
+      "dictionary": "かぶる",
+      "kana": "かぶる",
+      "romaji": "kaburu",
+      "meaning": "to put on (a hat)",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "daily",
+        "clothing",
+        "n5"
+      ],
+      "example": {
+        "jp": "帽子をかぶる。",
+        "en": "I put on a hat."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_kariru",
+      "dictionary": "借りる",
+      "kana": "かりる",
+      "romaji": "kariru",
+      "meaning": "to borrow",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "daily",
+        "social",
+        "n5"
+      ],
+      "example": {
+        "jp": "本を借りる。",
+        "en": "I borrow a book."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_kieru",
+      "dictionary": "消える",
+      "kana": "きえる",
+      "romaji": "kieru",
+      "meaning": "to go out, to vanish",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "daily",
+        "n5"
+      ],
+      "example": {
+        "jp": "電気が消える。",
+        "en": "The light goes out."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_kiku",
+      "dictionary": "聞く",
+      "kana": "きく",
+      "romaji": "kiku",
+      "meaning": "to listen, to hear, to ask",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "daily",
+        "leisure",
+        "n5"
+      ],
+      "example": {
+        "jp": "音楽を聞く。",
+        "en": "I listen to music."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_kiru_cut",
+      "dictionary": "切る",
+      "kana": "きる",
+      "romaji": "kiru",
+      "meaning": "to cut",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "daily",
+        "irregular",
+        "n5"
+      ],
+      "example": {
+        "jp": "紙を切る。",
+        "en": "I cut the paper."
+      },
+      "irregular_overrides": {},
+      "note": "Looks like an ichidan -iru verb but is godan — one of the classic exceptions. Not to be confused with 着る (kiru, \"to wear\"), which really is ichidan."
+    },
+    {
+      "id": "v_kiru_wear",
+      "dictionary": "着る",
+      "kana": "きる",
+      "romaji": "kiru",
+      "meaning": "to wear, to put on (clothes)",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "daily",
+        "clothing",
+        "n5"
+      ],
+      "example": {
+        "jp": "服を着る。",
+        "en": "I put on clothes."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_kesu",
+      "dictionary": "消す",
+      "kana": "けす",
+      "romaji": "kesu",
+      "meaning": "to turn off, to switch off",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "daily",
+        "n5"
+      ],
+      "example": {
+        "jp": "電気を消す。",
+        "en": "I turn off the light."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_kotaeru",
+      "dictionary": "答える",
+      "kana": "こたえる",
+      "romaji": "kotaeru",
+      "meaning": "to answer",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "study",
+        "communication",
+        "n5"
+      ],
+      "example": {
+        "jp": "質問に答える。",
+        "en": "I answer the question."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_komaru",
+      "dictionary": "困る",
+      "kana": "こまる",
+      "romaji": "komaru",
+      "meaning": "to be in trouble, to be at a loss",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "feelings",
+        "n5"
+      ],
+      "example": {
+        "jp": "道がわからなくて困る。",
+        "en": "I don't know the way, so I'm at a loss."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_saku",
+      "dictionary": "咲く",
+      "kana": "さく",
+      "romaji": "saku",
+      "meaning": "to bloom, to blossom",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "nature",
+        "n5"
+      ],
+      "example": {
+        "jp": "花が咲く。",
+        "en": "The flower blooms."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_sasu",
+      "dictionary": "さす",
+      "kana": "さす",
+      "romaji": "sasu",
+      "meaning": "to hold up (an umbrella)",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "daily",
+        "weather",
+        "n5"
+      ],
+      "example": {
+        "jp": "傘をさす。",
+        "en": "I open an umbrella."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_shinu",
+      "dictionary": "死ぬ",
+      "kana": "しぬ",
+      "romaji": "shinu",
+      "meaning": "to die",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "daily",
+        "irregular",
+        "n5"
+      ],
+      "example": {
+        "jp": "魚が死ぬ。",
+        "en": "The fish dies."
+      },
+      "irregular_overrides": {},
+      "note": "One of the only verbs in the language ending in ぬ — a whole conjugation row exists mostly for this one word."
+    },
+    {
+      "id": "v_shimaru",
+      "dictionary": "閉まる",
+      "kana": "しまる",
+      "romaji": "shimaru",
+      "meaning": "to close (intransitive)",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "daily",
+        "n5"
+      ],
+      "example": {
+        "jp": "店が閉まる。",
+        "en": "The store closes."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_shimeru_close",
+      "dictionary": "閉める",
+      "kana": "しめる",
+      "romaji": "shimeru",
+      "meaning": "to close (something)",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "daily",
+        "n5"
+      ],
+      "example": {
+        "jp": "ドアを閉める。",
+        "en": "I close the door."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_shimeru_fasten",
+      "dictionary": "締める",
+      "kana": "しめる",
+      "romaji": "shimeru",
+      "meaning": "to fasten, to tighten",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "daily",
+        "clothing",
+        "n5"
+      ],
+      "example": {
+        "jp": "ベルトを締める。",
+        "en": "I fasten my belt."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_shiru",
+      "dictionary": "知る",
+      "kana": "しる",
+      "romaji": "shiru",
+      "meaning": "to know, to get to know",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "daily",
+        "irregular",
+        "n5"
+      ],
+      "example": {
+        "jp": "そのニュースを知る。",
+        "en": "I get to know that news."
+      },
+      "irregular_overrides": {},
+      "note": "Looks like an ichidan -iru verb but is godan — one of the classic exceptions."
+    },
+    {
+      "id": "v_suu",
+      "dictionary": "吸う",
+      "kana": "すう",
+      "romaji": "suu",
+      "meaning": "to breathe in, to smoke",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "daily",
+        "body",
+        "n5"
+      ],
+      "example": {
+        "jp": "空気を吸う。",
+        "en": "I breathe in air."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_sumu",
+      "dictionary": "住む",
+      "kana": "すむ",
+      "romaji": "sumu",
+      "meaning": "to live, to reside",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "daily",
+        "life",
+        "n5"
+      ],
+      "example": {
+        "jp": "東京に住む。",
+        "en": "I live in Tokyo."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_suwaru",
+      "dictionary": "座る",
+      "kana": "すわる",
+      "romaji": "suwaru",
+      "meaning": "to sit",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "daily",
+        "body",
+        "n5"
+      ],
+      "example": {
+        "jp": "椅子に座る。",
+        "en": "I sit on the chair."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_dasu",
+      "dictionary": "出す",
+      "kana": "だす",
+      "romaji": "dasu",
+      "meaning": "to take out, to hand in",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "daily",
+        "n5"
+      ],
+      "example": {
+        "jp": "手紙を出す。",
+        "en": "I send out a letter."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_tatsu",
+      "dictionary": "立つ",
+      "kana": "たつ",
+      "romaji": "tatsu",
+      "meaning": "to stand",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "daily",
+        "body",
+        "n5"
+      ],
+      "example": {
+        "jp": "教室の前に立つ。",
+        "en": "I stand in front of the classroom."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_tanomu",
+      "dictionary": "頼む",
+      "kana": "たのむ",
+      "romaji": "tanomu",
+      "meaning": "to ask, to request",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "daily",
+        "social",
+        "n5"
+      ],
+      "example": {
+        "jp": "友達に頼む。",
+        "en": "I ask a friend for a favor."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_chigau",
+      "dictionary": "違う",
+      "kana": "ちがう",
+      "romaji": "chigau",
+      "meaning": "to be different, to be wrong",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "daily",
+        "n5"
+      ],
+      "example": {
+        "jp": "答えが違う。",
+        "en": "The answer is different."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_tsukau",
+      "dictionary": "使う",
+      "kana": "つかう",
+      "romaji": "tsukau",
+      "meaning": "to use",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "daily",
+        "n5"
+      ],
+      "example": {
+        "jp": "ペンを使う。",
+        "en": "I use a pen."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_tsukareru",
+      "dictionary": "疲れる",
+      "kana": "つかれる",
+      "romaji": "tsukareru",
+      "meaning": "to get tired",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "feelings",
+        "body",
+        "n5"
+      ],
+      "example": {
+        "jp": "仕事で疲れる。",
+        "en": "I get tired from work."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_tsuku",
+      "dictionary": "着く",
+      "kana": "つく",
+      "romaji": "tsuku",
+      "meaning": "to arrive",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "movement",
+        "n5"
+      ],
+      "example": {
+        "jp": "駅に着く。",
+        "en": "I arrive at the station."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_tsukuru",
+      "dictionary": "作る",
+      "kana": "つくる",
+      "romaji": "tsukuru",
+      "meaning": "to make, to produce",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "daily",
+        "n5"
+      ],
+      "example": {
+        "jp": "料理を作る。",
+        "en": "I make a meal."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_tsukeru",
+      "dictionary": "つける",
+      "kana": "つける",
+      "romaji": "tsukeru",
+      "meaning": "to turn on",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "daily",
+        "n5"
+      ],
+      "example": {
+        "jp": "テレビをつける。",
+        "en": "I turn on the TV."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_tsutomeru",
+      "dictionary": "勤める",
+      "kana": "つとめる",
+      "romaji": "tsutomeru",
+      "meaning": "to work for, to be employed at",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "business",
+        "n5"
+      ],
+      "example": {
+        "jp": "会社に勤める。",
+        "en": "I work for a company."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_dekakeru",
+      "dictionary": "出かける",
+      "kana": "でかける",
+      "romaji": "dekakeru",
+      "meaning": "to go out, to head out",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "daily",
+        "movement",
+        "n5"
+      ],
+      "example": {
+        "jp": "買い物に出かける。",
+        "en": "I go out shopping."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_dekiru",
+      "dictionary": "できる",
+      "kana": "できる",
+      "romaji": "dekiru",
+      "meaning": "can do, to be able to",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "daily",
+        "irregular",
+        "n5"
+      ],
+      "example": {
+        "jp": "日本語ができる。",
+        "en": "I can speak Japanese."
+      },
+      "irregular_overrides": {},
+      "note": "Conjugates as a regular ichidan verb (できます / できない / できた) even though it functions as the potential of する."
+    },
+    {
+      "id": "v_deru",
+      "dictionary": "出る",
+      "kana": "でる",
+      "romaji": "deru",
+      "meaning": "to leave, to exit, to attend",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "daily",
+        "movement",
+        "n5"
+      ],
+      "example": {
+        "jp": "部屋を出る。",
+        "en": "I leave the room."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_tobu",
+      "dictionary": "飛ぶ",
+      "kana": "とぶ",
+      "romaji": "tobu",
+      "meaning": "to fly, to jump",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "movement",
+        "n5"
+      ],
+      "example": {
+        "jp": "鳥が飛ぶ。",
+        "en": "The bird flies."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_tomaru",
+      "dictionary": "止まる",
+      "kana": "とまる",
+      "romaji": "tomaru",
+      "meaning": "to stop (intransitive)",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "daily",
+        "movement",
+        "n5"
+      ],
+      "example": {
+        "jp": "車が止まる。",
+        "en": "The car stops."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_toru_take",
+      "dictionary": "取る",
+      "kana": "とる",
+      "romaji": "toru",
+      "meaning": "to take, to pick up",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "daily",
+        "n5"
+      ],
+      "example": {
+        "jp": "塩を取る。",
+        "en": "I pick up the salt."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_toru_photo",
+      "dictionary": "撮る",
+      "kana": "とる",
+      "romaji": "toru",
+      "meaning": "to take (a photo)",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "leisure",
+        "n5"
+      ],
+      "example": {
+        "jp": "写真を撮る。",
+        "en": "I take a photo."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_naku",
+      "dictionary": "鳴く",
+      "kana": "なく",
+      "romaji": "naku",
+      "meaning": "to make a sound (animal cry, birdsong)",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "nature",
+        "n5"
+      ],
+      "example": {
+        "jp": "鳥が鳴く。",
+        "en": "The bird sings."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_narabu",
+      "dictionary": "並ぶ",
+      "kana": "ならぶ",
+      "romaji": "narabu",
+      "meaning": "to line up, to stand in a row",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "daily",
+        "n5"
+      ],
+      "example": {
+        "jp": "学生が並ぶ。",
+        "en": "The students line up."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_naraberu",
+      "dictionary": "並べる",
+      "kana": "ならべる",
+      "romaji": "naraberu",
+      "meaning": "to arrange, to line (something) up",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "daily",
+        "n5"
+      ],
+      "example": {
+        "jp": "本を並べる。",
+        "en": "I line up the books."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_naru",
+      "dictionary": "なる",
+      "kana": "なる",
+      "romaji": "naru",
+      "meaning": "to become",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "daily",
+        "n5"
+      ],
+      "example": {
+        "jp": "医者になる。",
+        "en": "I become a doctor."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_nugu",
+      "dictionary": "脱ぐ",
+      "kana": "ぬぐ",
+      "romaji": "nugu",
+      "meaning": "to take off (clothes)",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "daily",
+        "clothing",
+        "n5"
+      ],
+      "example": {
+        "jp": "靴を脱ぐ。",
+        "en": "I take off my shoes."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_neru",
+      "dictionary": "寝る",
+      "kana": "ねる",
+      "romaji": "neru",
+      "meaning": "to sleep, to go to bed",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "daily",
+        "n5"
+      ],
+      "example": {
+        "jp": "早く寝る。",
+        "en": "I go to bed early."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_noboru",
+      "dictionary": "登る",
+      "kana": "のぼる",
+      "romaji": "noboru",
+      "meaning": "to climb, to ascend",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "leisure",
+        "movement",
+        "n5"
+      ],
+      "example": {
+        "jp": "山に登る。",
+        "en": "I climb the mountain."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_noru",
+      "dictionary": "乗る",
+      "kana": "のる",
+      "romaji": "noru",
+      "meaning": "to ride, to get on",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "daily",
+        "movement",
+        "n5"
+      ],
+      "example": {
+        "jp": "バスに乗る。",
+        "en": "I ride the bus."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_hairu",
+      "dictionary": "入る",
+      "kana": "はいる",
+      "romaji": "hairu",
+      "meaning": "to enter, to go in",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "daily",
+        "irregular",
+        "n5"
+      ],
+      "example": {
+        "jp": "部屋に入る。",
+        "en": "I enter the room."
+      },
+      "irregular_overrides": {},
+      "note": "Looks like an ichidan -iru verb but is godan — one of the classic exceptions."
+    },
+    {
+      "id": "v_haku",
+      "dictionary": "履く",
+      "kana": "はく",
+      "romaji": "haku",
+      "meaning": "to put on (shoes, trousers)",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "daily",
+        "clothing",
+        "n5"
+      ],
+      "example": {
+        "jp": "靴を履く。",
+        "en": "I put on my shoes."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_hajimaru",
+      "dictionary": "始まる",
+      "kana": "はじまる",
+      "romaji": "hajimaru",
+      "meaning": "to begin, to start (intransitive)",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "daily",
+        "n5"
+      ],
+      "example": {
+        "jp": "授業が始まる。",
+        "en": "Class begins."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_hashiru",
+      "dictionary": "走る",
+      "kana": "はしる",
+      "romaji": "hashiru",
+      "meaning": "to run",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "body",
+        "irregular",
+        "n5"
+      ],
+      "example": {
+        "jp": "公園を走る。",
+        "en": "I run through the park."
+      },
+      "irregular_overrides": {},
+      "note": "Looks like an ichidan -iru verb but is godan — one of the classic exceptions."
+    },
+    {
+      "id": "v_hataraku",
+      "dictionary": "働く",
+      "kana": "はたらく",
+      "romaji": "hataraku",
+      "meaning": "to work",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "business",
+        "n5"
+      ],
+      "example": {
+        "jp": "会社で働く。",
+        "en": "I work at the company."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_haru",
+      "dictionary": "張る",
+      "kana": "はる",
+      "romaji": "haru",
+      "meaning": "to stick, to put up",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "daily",
+        "n5"
+      ],
+      "example": {
+        "jp": "紙を張る。",
+        "en": "I put up a piece of paper."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_hareru",
+      "dictionary": "晴れる",
+      "kana": "はれる",
+      "romaji": "hareru",
+      "meaning": "to clear up (weather)",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "weather",
+        "n5"
+      ],
+      "example": {
+        "jp": "明日は晴れる。",
+        "en": "It will clear up tomorrow."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_hiku_pull",
+      "dictionary": "引く",
+      "kana": "ひく",
+      "romaji": "hiku",
+      "meaning": "to pull",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "daily",
+        "n5"
+      ],
+      "example": {
+        "jp": "ドアを引く。",
+        "en": "I pull the door."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_hiku_instrument",
+      "dictionary": "弾く",
+      "kana": "ひく",
+      "romaji": "hiku",
+      "meaning": "to play (a string or keyboard instrument)",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "leisure",
+        "n5"
+      ],
+      "example": {
+        "jp": "ピアノを弾く。",
+        "en": "I play the piano."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_fuku",
+      "dictionary": "吹く",
+      "kana": "ふく",
+      "romaji": "fuku",
+      "meaning": "to blow (wind)",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "weather",
+        "nature",
+        "n5"
+      ],
+      "example": {
+        "jp": "風が吹く。",
+        "en": "The wind blows."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_furu",
+      "dictionary": "降る",
+      "kana": "ふる",
+      "romaji": "furu",
+      "meaning": "to fall (rain, snow)",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "weather",
+        "n5"
+      ],
+      "example": {
+        "jp": "雨が降る。",
+        "en": "It rains."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_magaru",
+      "dictionary": "曲がる",
+      "kana": "まがる",
+      "romaji": "magaru",
+      "meaning": "to turn",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "movement",
+        "n5"
+      ],
+      "example": {
+        "jp": "右に曲がる。",
+        "en": "I turn right."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_matsu",
+      "dictionary": "待つ",
+      "kana": "まつ",
+      "romaji": "matsu",
+      "meaning": "to wait",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "daily",
+        "n5"
+      ],
+      "example": {
+        "jp": "友達を待つ。",
+        "en": "I wait for a friend."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_migaku",
+      "dictionary": "磨く",
+      "kana": "みがく",
+      "romaji": "migaku",
+      "meaning": "to brush, to polish",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "daily",
+        "body",
+        "n5"
+      ],
+      "example": {
+        "jp": "歯を磨く。",
+        "en": "I brush my teeth."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_miseru",
+      "dictionary": "見せる",
+      "kana": "みせる",
+      "romaji": "miseru",
+      "meaning": "to show",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "daily",
+        "n5"
+      ],
+      "example": {
+        "jp": "写真を見せる。",
+        "en": "I show a photo."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_motsu",
+      "dictionary": "持つ",
+      "kana": "もつ",
+      "romaji": "motsu",
+      "meaning": "to have, to hold, to carry",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "daily",
+        "n5"
+      ],
+      "example": {
+        "jp": "かばんを持つ。",
+        "en": "I carry a bag."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_yasumu",
+      "dictionary": "休む",
+      "kana": "やすむ",
+      "romaji": "yasumu",
+      "meaning": "to rest, to take a break, to be absent",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "daily",
+        "body",
+        "n5"
+      ],
+      "example": {
+        "jp": "家で休む。",
+        "en": "I rest at home."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_yaru",
+      "dictionary": "やる",
+      "kana": "やる",
+      "romaji": "yaru",
+      "meaning": "to do (casual)",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "daily",
+        "n5"
+      ],
+      "example": {
+        "jp": "仕事をやる。",
+        "en": "I do the work."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_yobu",
+      "dictionary": "呼ぶ",
+      "kana": "よぶ",
+      "romaji": "yobu",
+      "meaning": "to call (out to)",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "daily",
+        "communication",
+        "n5"
+      ],
+      "example": {
+        "jp": "名前を呼ぶ。",
+        "en": "I call out a name."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_yomu",
+      "dictionary": "読む",
+      "kana": "よむ",
+      "romaji": "yomu",
+      "meaning": "to read",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "daily",
+        "study",
+        "n5"
+      ],
+      "example": {
+        "jp": "本を読む。",
+        "en": "I read a book."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_wakaru",
+      "dictionary": "分かる",
+      "kana": "わかる",
+      "romaji": "wakaru",
+      "meaning": "to understand, to know",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "daily",
+        "study",
+        "n5"
+      ],
+      "example": {
+        "jp": "意味が分かる。",
+        "en": "I understand the meaning."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_wasureru",
+      "dictionary": "忘れる",
+      "kana": "わすれる",
+      "romaji": "wasureru",
+      "meaning": "to forget",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "daily",
+        "n5"
+      ],
+      "example": {
+        "jp": "名前を忘れる。",
+        "en": "I forget the name."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_watasu",
+      "dictionary": "渡す",
+      "kana": "わたす",
+      "romaji": "watasu",
+      "meaning": "to hand over",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "daily",
+        "social",
+        "n5"
+      ],
+      "example": {
+        "jp": "お金を渡す。",
+        "en": "I hand over the money."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_wataru",
+      "dictionary": "渡る",
+      "kana": "わたる",
+      "romaji": "wataru",
+      "meaning": "to cross",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "movement",
+        "n5"
+      ],
+      "example": {
+        "jp": "道を渡る。",
+        "en": "I cross the street."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_agaru",
+      "dictionary": "上がる",
+      "kana": "あがる",
+      "romaji": "agaru",
+      "meaning": "to rise; to go up",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "値段が上がる。",
+        "en": "The price goes up."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_aku_vacant",
+      "dictionary": "空く",
+      "kana": "あく",
+      "romaji": "aku",
+      "meaning": "to be empty; to be vacant",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "席が空く。",
+        "en": "A seat becomes vacant."
+      },
+      "irregular_overrides": {},
+      "note": "Different word from 開く (aku, “to open/become open”) already in your library — same reading, different kanji and nuance (空く is specifically about becoming empty/vacant)."
+    },
+    {
+      "id": "v_atsumaru",
+      "dictionary": "集まる",
+      "kana": "あつまる",
+      "romaji": "atsumaru",
+      "meaning": "to gather; to collect",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "公園に人が集まる。",
+        "en": "People gather in the park."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_atsumeru",
+      "dictionary": "集める",
+      "kana": "あつめる",
+      "romaji": "atsumeru",
+      "meaning": "to collect; to assemble",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "切手を集める。",
+        "en": "I collect stamps."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_ayamaru",
+      "dictionary": "謝る",
+      "kana": "あやまる",
+      "romaji": "ayamaru",
+      "meaning": "to apologize",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "先生に謝る。",
+        "en": "I apologize to the teacher."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_ikiru",
+      "dictionary": "生きる",
+      "kana": "いきる",
+      "romaji": "ikiru",
+      "meaning": "to live; to exist",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "百歳まで生きる。",
+        "en": "I live to a hundred years old."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_ijimeru",
+      "dictionary": "いじめる",
+      "kana": "いじめる",
+      "romaji": "ijimeru",
+      "meaning": "to ill-treat; to bully",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "弟をいじめる。",
+        "en": "I bully my little brother."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_isogu",
+      "dictionary": "急ぐ",
+      "kana": "いそぐ",
+      "romaji": "isogu",
+      "meaning": "to hurry; to rush",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "駅まで急ぐ。",
+        "en": "I hurry to the station."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_itasu",
+      "dictionary": "致す",
+      "kana": "いたす",
+      "romaji": "itasu",
+      "meaning": "to do (humble)",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "その仕事は私が致す。",
+        "en": "I will do that work (humbly)."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_itadaku",
+      "dictionary": "いただく",
+      "kana": "いただく",
+      "romaji": "itadaku",
+      "meaning": "to receive (humble)",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "お土産をいただく。",
+        "en": "I receive a souvenir (humbly)."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_inoru",
+      "dictionary": "祈る",
+      "kana": "いのる",
+      "romaji": "inoru",
+      "meaning": "to pray; to wish",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "成功を祈る。",
+        "en": "I pray for success."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_irassharu",
+      "dictionary": "いらっしゃる",
+      "kana": "いらっしゃる",
+      "romaji": "irassharu",
+      "meaning": "to be, to go, to come (honorific)",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "先生がいらっしゃる。",
+        "en": "The teacher is here (honorific)."
+      },
+      "irregular_overrides": {
+        "polite present": "いらっしゃいます",
+        "negative polite": "いらっしゃいません",
+        "past polite": "いらっしゃいました",
+        "past negative polite": "いらっしゃいませんでした"
+      },
+      "note": "Irregular renyoukei before ます: い replaces り (いらっしゃいます, not いらっしゃります). Everything else (te-form, past, negative) is regular godan. Confirmed via Wiktionary / WordReference."
+    },
+    {
+      "id": "v_ueru",
+      "dictionary": "植える",
+      "kana": "うえる",
+      "romaji": "ueru",
+      "meaning": "to plant",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "庭に木を植える。",
+        "en": "I plant a tree in the garden."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_ukagau",
+      "dictionary": "伺う",
+      "kana": "うかがう",
+      "romaji": "ukagau",
+      "meaning": "to ask, to visit (humble)",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "お話を伺う。",
+        "en": "I hear the story (humbly)."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_ukeru",
+      "dictionary": "受ける",
+      "kana": "うける",
+      "romaji": "ukeru",
+      "meaning": "to receive; to get",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "試験を受ける。",
+        "en": "I take a test."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_ugoku",
+      "dictionary": "動く",
+      "kana": "うごく",
+      "romaji": "ugoku",
+      "meaning": "to move; to take action",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "車が動く。",
+        "en": "The car moves."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_utsu",
+      "dictionary": "打つ",
+      "kana": "うつ",
+      "romaji": "utsu",
+      "meaning": "to hit; to bang",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "ボールを打つ。",
+        "en": "I hit the ball."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_utsusu",
+      "dictionary": "写す",
+      "kana": "うつす",
+      "romaji": "utsusu",
+      "meaning": "to copy; to imitate",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "ノートを写す。",
+        "en": "I copy the notebook."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_utsuru",
+      "dictionary": "移る",
+      "kana": "うつる",
+      "romaji": "utsuru",
+      "meaning": "to move (house); to transfer (department)",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "東京に移る。",
+        "en": "I move to Tokyo."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_erabu",
+      "dictionary": "選ぶ",
+      "kana": "えらぶ",
+      "romaji": "erabu",
+      "meaning": "to select; to choose",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "本を選ぶ。",
+        "en": "I choose a book."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_oidininaru",
+      "dictionary": "おいでになる",
+      "kana": "おいでになる",
+      "romaji": "oidininaru",
+      "meaning": "to come, to go, to be (honorific)",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "社長がおいでになる。",
+        "en": "The president comes (honorific)."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_okureru",
+      "dictionary": "遅れる",
+      "kana": "おくれる",
+      "romaji": "okureru",
+      "meaning": "to be late",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "学校に遅れる。",
+        "en": "I am late for school."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_okosu",
+      "dictionary": "起こす",
+      "kana": "おこす",
+      "romaji": "okosu",
+      "meaning": "to cause; to wake (someone)",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "弟を起こす。",
+        "en": "I wake my little brother."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_okonau",
+      "dictionary": "行う",
+      "kana": "おこなう",
+      "romaji": "okonau",
+      "meaning": "to perform; to carry out",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "式を行う。",
+        "en": "I hold a ceremony."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_okoru",
+      "dictionary": "怒る",
+      "kana": "おこる",
+      "romaji": "okoru",
+      "meaning": "to get angry",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "彼が怒る。",
+        "en": "He gets angry."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_ochiru",
+      "dictionary": "落ちる",
+      "kana": "おちる",
+      "romaji": "ochiru",
+      "meaning": "to fall down",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "葉が落ちる。",
+        "en": "A leaf falls."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_ossharu",
+      "dictionary": "おっしゃる",
+      "kana": "おっしゃる",
+      "romaji": "ossharu",
+      "meaning": "to say; to speak (honorific)",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "先生がそうおっしゃる。",
+        "en": "The teacher says so (honorific)."
+      },
+      "irregular_overrides": {
+        "polite present": "おっしゃいます",
+        "negative polite": "おっしゃいません",
+        "past polite": "おっしゃいました",
+        "past negative polite": "おっしゃいませんでした"
+      },
+      "note": "Irregular renyoukei before ます: い replaces り (おっしゃいます, not おっしゃります). Everything else (te-form, past, negative) is regular godan. Confirmed via Wiktionary / WordReference."
+    },
+    {
+      "id": "v_otosu",
+      "dictionary": "落とす",
+      "kana": "おとす",
+      "romaji": "otosu",
+      "meaning": "to drop; to let fall",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "財布を落とす。",
+        "en": "I drop my wallet."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_odoru",
+      "dictionary": "踊る",
+      "kana": "おどる",
+      "romaji": "odoru",
+      "meaning": "to dance",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "パーティーで踊る。",
+        "en": "I dance at the party."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_odoroku",
+      "dictionary": "驚く",
+      "kana": "おどろく",
+      "romaji": "odoroku",
+      "meaning": "to be surprised",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "そのニュースに驚く。",
+        "en": "I am surprised by that news."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_omoidasu",
+      "dictionary": "思い出す",
+      "kana": "おもいだす",
+      "romaji": "omoidasu",
+      "meaning": "to remember; to recollect",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "昔のことを思い出す。",
+        "en": "I remember something from the past."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_omou",
+      "dictionary": "思う",
+      "kana": "おもう",
+      "romaji": "omou",
+      "meaning": "to think; to suppose",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "彼のことを思う。",
+        "en": "I think about him."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_oru",
+      "dictionary": "折る",
+      "kana": "おる",
+      "romaji": "oru",
+      "meaning": "to break, to fold",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "紙を折る。",
+        "en": "I fold the paper."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_oreru",
+      "dictionary": "折れる",
+      "kana": "おれる",
+      "romaji": "oreru",
+      "meaning": "to break, to fold (intransitive)",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "枝が折れる。",
+        "en": "The branch breaks."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_kaeru_2",
+      "dictionary": "変える",
+      "kana": "かえる",
+      "romaji": "kaeru",
+      "meaning": "to change (something)",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "予定を変える。",
+        "en": "I change the plan."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_kazaru",
+      "dictionary": "飾る",
+      "kana": "かざる",
+      "romaji": "kazaru",
+      "meaning": "to decorate",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "部屋を飾る。",
+        "en": "I decorate the room."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_katadukeru",
+      "dictionary": "片付ける",
+      "kana": "かたづける",
+      "romaji": "katadukeru",
+      "meaning": "to tidy up",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "机を片付ける。",
+        "en": "I tidy up the desk."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_katsu",
+      "dictionary": "勝つ",
+      "kana": "かつ",
+      "romaji": "katsu",
+      "meaning": "to win",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "試合に勝つ。",
+        "en": "I win the match."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_kamau",
+      "dictionary": "かまう",
+      "kana": "かまう",
+      "romaji": "kamau",
+      "meaning": "to mind, to care about",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "彼はいつも妹にかまう。",
+        "en": "He always fusses over his little sister."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_kamu",
+      "dictionary": "噛む",
+      "kana": "かむ",
+      "romaji": "kamu",
+      "meaning": "to bite; to chew",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "ガムを噛む。",
+        "en": "I chew gum."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_kawaku",
+      "dictionary": "乾く",
+      "kana": "かわく",
+      "romaji": "kawaku",
+      "meaning": "to get dry",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "洗濯物が乾く。",
+        "en": "The laundry gets dry."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_kawaru",
+      "dictionary": "変わる",
+      "kana": "かわる",
+      "romaji": "kawaru",
+      "meaning": "to change (intransitive)",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "天気が変わる。",
+        "en": "The weather changes."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_kangaeru",
+      "dictionary": "考える",
+      "kana": "かんがえる",
+      "romaji": "kangaeru",
+      "meaning": "to think, to consider",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "将来のことを考える。",
+        "en": "I think about the future."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_kikoeru",
+      "dictionary": "聞こえる",
+      "kana": "きこえる",
+      "romaji": "kikoeru",
+      "meaning": "to be audible, to be heard",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "音楽が聞こえる。",
+        "en": "I can hear music."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_kimaru",
+      "dictionary": "決まる",
+      "kana": "きまる",
+      "romaji": "kimaru",
+      "meaning": "to be decided",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "予定が決まる。",
+        "en": "The schedule is decided."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_kimeru",
+      "dictionary": "決める",
+      "kana": "きめる",
+      "romaji": "kimeru",
+      "meaning": "to decide",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "行き先を決める。",
+        "en": "I decide the destination."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_kudasaru",
+      "dictionary": "くださる",
+      "kana": "くださる",
+      "romaji": "kudasaru",
+      "meaning": "to give (honorific)",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "先生が本をくださる。",
+        "en": "The teacher gives me a book (honorific)."
+      },
+      "irregular_overrides": {
+        "polite present": "くださいます",
+        "negative polite": "くださいません",
+        "past polite": "くださいました",
+        "past negative polite": "くださいませんでした"
+      },
+      "note": "Irregular renyoukei before ます: い replaces り (くださいます, not くださります). Everything else (te-form, past, negative) is regular godan. Confirmed via Wiktionary / WordReference."
+    },
+    {
+      "id": "v_kuraberu",
+      "dictionary": "比べる",
+      "kana": "くらべる",
+      "romaji": "kuraberu",
+      "meaning": "to compare",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "値段を比べる。",
+        "en": "I compare the prices."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_kureru_1",
+      "dictionary": "暮れる",
+      "kana": "くれる",
+      "romaji": "kureru",
+      "meaning": "to get dark, to come to an end",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "日が暮れる。",
+        "en": "The day comes to an end."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_kureru_2",
+      "dictionary": "くれる",
+      "kana": "くれる",
+      "romaji": "kureru",
+      "meaning": "to give (to me)",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "友達がお菓子をくれる。",
+        "en": "A friend gives me sweets."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_komu",
+      "dictionary": "込む",
+      "kana": "こむ",
+      "romaji": "komu",
+      "meaning": "to be crowded",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "電車が込む。",
+        "en": "The train gets crowded."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_goranninaru",
+      "dictionary": "ご覧になる",
+      "kana": "ごらんになる",
+      "romaji": "goranninaru",
+      "meaning": "to look, to see, to watch (honorific)",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "写真をご覧になる。",
+        "en": "You look at the photo (honorific)."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_kowasu",
+      "dictionary": "壊す",
+      "kana": "こわす",
+      "romaji": "kowasu",
+      "meaning": "to break, to destroy",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "おもちゃを壊す。",
+        "en": "I break the toy."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_kowareru",
+      "dictionary": "壊れる",
+      "kana": "こわれる",
+      "romaji": "kowareru",
+      "meaning": "to be broken",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "時計が壊れる。",
+        "en": "The clock breaks."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_sagasu",
+      "dictionary": "探す",
+      "kana": "さがす",
+      "romaji": "sagasu",
+      "meaning": "to search, to look for",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "鍵を探す。",
+        "en": "I search for my keys."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_sageru",
+      "dictionary": "下げる",
+      "kana": "さげる",
+      "romaji": "sageru",
+      "meaning": "to lower; to reduce",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "値段を下げる。",
+        "en": "I lower the price."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_sashiageru",
+      "dictionary": "差し上げる",
+      "kana": "さしあげる",
+      "romaji": "sashiageru",
+      "meaning": "to give (humble)",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "先生に花を差し上げる。",
+        "en": "I give flowers to the teacher (humbly)."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_sawagu",
+      "dictionary": "騒ぐ",
+      "kana": "さわぐ",
+      "romaji": "sawagu",
+      "meaning": "to make noise; to be noisy",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "子供が騒ぐ。",
+        "en": "The children make noise."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_sawaru",
+      "dictionary": "触る",
+      "kana": "さわる",
+      "romaji": "sawaru",
+      "meaning": "to touch",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "絵に触る。",
+        "en": "I touch the painting."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_shikaru",
+      "dictionary": "しかる",
+      "kana": "しかる",
+      "romaji": "shikaru",
+      "meaning": "to scold",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "子供をしかる。",
+        "en": "I scold the child."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_shiraseru",
+      "dictionary": "知らせる",
+      "kana": "しらせる",
+      "romaji": "shiraseru",
+      "meaning": "to notify, to inform",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "結果を知らせる。",
+        "en": "I inform them of the result."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_shiraberu",
+      "dictionary": "調べる",
+      "kana": "しらべる",
+      "romaji": "shiraberu",
+      "meaning": "to look up; to investigate",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "言葉の意味を調べる。",
+        "en": "I look up the meaning of the word."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_sugiru",
+      "dictionary": "過ぎる",
+      "kana": "すぎる",
+      "romaji": "sugiru",
+      "meaning": "to pass, to exceed",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "時間が過ぎる。",
+        "en": "Time passes."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_susumu",
+      "dictionary": "進む",
+      "kana": "すすむ",
+      "romaji": "susumu",
+      "meaning": "to advance, to make progress",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "計画が進む。",
+        "en": "The plan advances."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_suteru",
+      "dictionary": "捨てる",
+      "kana": "すてる",
+      "romaji": "suteru",
+      "meaning": "to throw away",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "ごみを捨てる。",
+        "en": "I throw away the garbage."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_suberu",
+      "dictionary": "滑る",
+      "kana": "すべる",
+      "romaji": "suberu",
+      "meaning": "to slide, to slip",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "道で滑る。",
+        "en": "I slip on the road."
+      },
+      "irregular_overrides": {},
+      "note": "Ends in -eru/-iru like an ichidan verb but is actually godan — a lesser-known member of the same exception family as 帰る/知る/入る."
+    },
+    {
+      "id": "v_sumu_2",
+      "dictionary": "済む",
+      "kana": "すむ",
+      "romaji": "sumu",
+      "meaning": "to finish, to be completed",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "宿題が済む。",
+        "en": "The homework is finished."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_sodateru",
+      "dictionary": "育てる",
+      "kana": "そだてる",
+      "romaji": "sodateru",
+      "meaning": "to raise, to nurture",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "子供を育てる。",
+        "en": "I raise a child."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_taoreru",
+      "dictionary": "倒れる",
+      "kana": "たおれる",
+      "romaji": "taoreru",
+      "meaning": "to fall over, to collapse",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "木が倒れる。",
+        "en": "The tree falls over."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_tasu",
+      "dictionary": "足す",
+      "kana": "たす",
+      "romaji": "tasu",
+      "meaning": "to add",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "数字を足す。",
+        "en": "I add the numbers."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_tazuneru_1",
+      "dictionary": "尋ねる",
+      "kana": "たずねる",
+      "romaji": "tazuneru",
+      "meaning": "to ask, to inquire",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "道を尋ねる。",
+        "en": "I ask for directions."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_tazuneru_2",
+      "dictionary": "訪ねる",
+      "kana": "たずねる",
+      "romaji": "tazuneru",
+      "meaning": "to visit",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "先生の家を訪ねる。",
+        "en": "I visit the teacher's house."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_tateru_1",
+      "dictionary": "立てる",
+      "kana": "たてる",
+      "romaji": "tateru",
+      "meaning": "to stand (something) up, to set up",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "看板を立てる。",
+        "en": "I set up a sign."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_tateru_2",
+      "dictionary": "建てる",
+      "kana": "たてる",
+      "romaji": "tateru",
+      "meaning": "to build, to construct",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "家を建てる。",
+        "en": "I build a house."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_tanoshimu",
+      "dictionary": "楽しむ",
+      "kana": "たのしむ",
+      "romaji": "tanoshimu",
+      "meaning": "to enjoy",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "旅行を楽しむ。",
+        "en": "I enjoy the trip."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_tariru",
+      "dictionary": "足りる",
+      "kana": "たりる",
+      "romaji": "tariru",
+      "meaning": "to be enough, to be sufficient",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "お金が足りる。",
+        "en": "The money is enough."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_tsukamaeru",
+      "dictionary": "捕まえる",
+      "kana": "つかまえる",
+      "romaji": "tsukamaeru",
+      "meaning": "to catch, to capture",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "犯人を捕まえる。",
+        "en": "I catch the criminal."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_tsuku_2",
+      "dictionary": "付く",
+      "kana": "つく",
+      "romaji": "tsuku",
+      "meaning": "to be attached, to adhere",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "インクが服に付く。",
+        "en": "Ink gets on the clothes."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_tsukeru_2",
+      "dictionary": "漬ける",
+      "kana": "つける",
+      "romaji": "tsukeru",
+      "meaning": "to soak, to pickle",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "野菜を漬ける。",
+        "en": "I pickle the vegetables."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_tsutaeru",
+      "dictionary": "伝える",
+      "kana": "つたえる",
+      "romaji": "tsutaeru",
+      "meaning": "to convey, to transmit",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "気持ちを伝える。",
+        "en": "I convey my feelings."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_tsuduku",
+      "dictionary": "続く",
+      "kana": "つづく",
+      "romaji": "tsuduku",
+      "meaning": "to continue (intransitive)",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "雨が続く。",
+        "en": "The rain continues."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_tsudukeru",
+      "dictionary": "続ける",
+      "kana": "つづける",
+      "romaji": "tsudukeru",
+      "meaning": "to continue (something)",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "勉強を続ける。",
+        "en": "I continue studying."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_tsutsumu",
+      "dictionary": "包む",
+      "kana": "つつむ",
+      "romaji": "tsutsumu",
+      "meaning": "to wrap",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "プレゼントを包む。",
+        "en": "I wrap the present."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_tsuru",
+      "dictionary": "釣る",
+      "kana": "つる",
+      "romaji": "tsuru",
+      "meaning": "to fish",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "魚を釣る。",
+        "en": "I fish for fish."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_tsureru",
+      "dictionary": "連れる",
+      "kana": "つれる",
+      "romaji": "tsureru",
+      "meaning": "to take (someone) along",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "子供を連れる。",
+        "en": "I bring my child along."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_tetsudau",
+      "dictionary": "手伝う",
+      "kana": "てつだう",
+      "romaji": "tetsudau",
+      "meaning": "to help",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "母を手伝う。",
+        "en": "I help my mother."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_tooru",
+      "dictionary": "通る",
+      "kana": "とおる",
+      "romaji": "tooru",
+      "meaning": "to go past, to pass through",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "道を通る。",
+        "en": "I pass through the street."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_todokeru",
+      "dictionary": "届ける",
+      "kana": "とどける",
+      "romaji": "todokeru",
+      "meaning": "to deliver",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "荷物を届ける。",
+        "en": "I deliver the package."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_tomaru_2",
+      "dictionary": "泊まる",
+      "kana": "とまる",
+      "romaji": "tomaru",
+      "meaning": "to stay overnight (e.g. hotel)",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "ホテルに泊まる。",
+        "en": "I stay at a hotel."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_tomeru",
+      "dictionary": "止める",
+      "kana": "とめる",
+      "romaji": "tomeru",
+      "meaning": "to stop (something)",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "車を止める。",
+        "en": "I stop the car."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_torikaeru",
+      "dictionary": "取り替える",
+      "kana": "とりかえる",
+      "romaji": "torikaeru",
+      "meaning": "to exchange, to replace",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "電池を取り替える。",
+        "en": "I replace the battery."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_naosu",
+      "dictionary": "直す",
+      "kana": "なおす",
+      "romaji": "naosu",
+      "meaning": "to fix, to correct",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "車を直す。",
+        "en": "I fix the car."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_naoru_1",
+      "dictionary": "治る",
+      "kana": "なおる",
+      "romaji": "naoru",
+      "meaning": "to be cured, to heal",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "病気が治る。",
+        "en": "The illness is cured."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_naoru_2",
+      "dictionary": "直る",
+      "kana": "なおる",
+      "romaji": "naoru",
+      "meaning": "to be repaired, to be fixed",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "時計が直る。",
+        "en": "The clock gets fixed."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_naku_2",
+      "dictionary": "泣く",
+      "kana": "なく",
+      "romaji": "naku",
+      "meaning": "to cry",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "赤ちゃんが泣く。",
+        "en": "The baby cries."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_nakunaru_1",
+      "dictionary": "亡くなる",
+      "kana": "なくなる",
+      "romaji": "nakunaru",
+      "meaning": "to die (of a person)",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "祖父が亡くなる。",
+        "en": "My grandfather passes away."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_nakunaru_2",
+      "dictionary": "無くなる",
+      "kana": "なくなる",
+      "romaji": "nakunaru",
+      "meaning": "to be lost, to run out",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "お金が無くなる。",
+        "en": "The money runs out."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_nageru",
+      "dictionary": "投げる",
+      "kana": "なげる",
+      "romaji": "nageru",
+      "meaning": "to throw",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "ボールを投げる。",
+        "en": "I throw the ball."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_nasaru",
+      "dictionary": "なさる",
+      "kana": "なさる",
+      "romaji": "nasaru",
+      "meaning": "to do (honorific)",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "先生が勉強をなさる。",
+        "en": "The teacher studies (honorific)."
+      },
+      "irregular_overrides": {
+        "polite present": "なさいます",
+        "negative polite": "なさいません",
+        "past polite": "なさいました",
+        "past negative polite": "なさいませんでした"
+      },
+      "note": "Irregular renyoukei before ます: い replaces り (なさいます, not なさります). Everything else (te-form, past, negative) is regular godan. Confirmed via Wiktionary / WordReference."
+    },
+    {
+      "id": "v_naru_2",
+      "dictionary": "鳴る",
+      "kana": "なる",
+      "romaji": "naru",
+      "meaning": "to ring, to sound",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "電話が鳴る。",
+        "en": "The phone rings."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_nareru",
+      "dictionary": "慣れる",
+      "kana": "なれる",
+      "romaji": "nareru",
+      "meaning": "to get used to",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "新しい仕事に慣れる。",
+        "en": "I get used to the new job."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_nigeru",
+      "dictionary": "逃げる",
+      "kana": "にげる",
+      "romaji": "nigeru",
+      "meaning": "to run away, to escape",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "犬が逃げる。",
+        "en": "The dog runs away."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_niru",
+      "dictionary": "似る",
+      "kana": "にる",
+      "romaji": "niru",
+      "meaning": "to resemble",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "彼は父に似る。",
+        "en": "He resembles his father."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_nusumu",
+      "dictionary": "盗む",
+      "kana": "ぬすむ",
+      "romaji": "nusumu",
+      "meaning": "to steal",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "財布を盗む。",
+        "en": "I steal a wallet."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_nuru",
+      "dictionary": "塗る",
+      "kana": "ぬる",
+      "romaji": "nuru",
+      "meaning": "to paint, to coat",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "壁を塗る。",
+        "en": "I paint the wall."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_nureru",
+      "dictionary": "濡れる",
+      "kana": "ぬれる",
+      "romaji": "nureru",
+      "meaning": "to get wet",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "雨で服が濡れる。",
+        "en": "My clothes get wet from the rain."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_nemuru",
+      "dictionary": "眠る",
+      "kana": "ねむる",
+      "romaji": "nemuru",
+      "meaning": "to sleep",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "よく眠る。",
+        "en": "I sleep well."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_nokoru",
+      "dictionary": "残る",
+      "kana": "のこる",
+      "romaji": "nokoru",
+      "meaning": "to remain, to be left",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "料理が残る。",
+        "en": "The food is left over."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_norikaeru",
+      "dictionary": "乗り換える",
+      "kana": "のりかえる",
+      "romaji": "norikaeru",
+      "meaning": "to transfer (trains), to change (bus)",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "バスに乗り換える。",
+        "en": "I transfer to a bus."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_hakobu",
+      "dictionary": "運ぶ",
+      "kana": "はこぶ",
+      "romaji": "hakobu",
+      "meaning": "to carry, to transport",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "荷物を運ぶ。",
+        "en": "I carry the luggage."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_hajimeru",
+      "dictionary": "始める",
+      "kana": "はじめる",
+      "romaji": "hajimeru",
+      "meaning": "to start, to begin",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "授業を始める。",
+        "en": "I begin the class."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_harau",
+      "dictionary": "払う",
+      "kana": "はらう",
+      "romaji": "harau",
+      "meaning": "to pay",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "お金を払う。",
+        "en": "I pay money."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_hieru",
+      "dictionary": "冷える",
+      "kana": "ひえる",
+      "romaji": "hieru",
+      "meaning": "to cool down, to feel cold",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "部屋が冷える。",
+        "en": "The room cools down."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_hikaru",
+      "dictionary": "光る",
+      "kana": "ひかる",
+      "romaji": "hikaru",
+      "meaning": "to shine, to glitter",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "星が光る。",
+        "en": "The star shines."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_hikkosu",
+      "dictionary": "引っ越す",
+      "kana": "ひっこす",
+      "romaji": "hikkosu",
+      "meaning": "to move house",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "新しい町に引っ越す。",
+        "en": "I move to a new town."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_hiraku",
+      "dictionary": "開く",
+      "kana": "ひらく",
+      "romaji": "hiraku",
+      "meaning": "to open (formal / of events)",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "店を開く。",
+        "en": "I open a store."
+      },
+      "irregular_overrides": {},
+      "note": "Shares the kanji 開く with 開く (aku) already in your library, but this is the ひらく reading — a different, more formal/deliberate word (opening an event, a book, an umbrella), not just a stylistic variant."
+    },
+    {
+      "id": "v_hirou",
+      "dictionary": "拾う",
+      "kana": "ひろう",
+      "romaji": "hirou",
+      "meaning": "to pick up",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "ごみを拾う。",
+        "en": "I pick up trash."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_fueru",
+      "dictionary": "増える",
+      "kana": "ふえる",
+      "romaji": "fueru",
+      "meaning": "to increase (intransitive)",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "人口が増える。",
+        "en": "The population increases."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_futoru",
+      "dictionary": "太る",
+      "kana": "ふとる",
+      "romaji": "futoru",
+      "meaning": "to gain weight",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "最近太る。",
+        "en": "I've been gaining weight lately."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_fumu",
+      "dictionary": "踏む",
+      "kana": "ふむ",
+      "romaji": "fumu",
+      "meaning": "to step on",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "足を踏む。",
+        "en": "I step on a foot."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_furidasu",
+      "dictionary": "降り出す",
+      "kana": "ふりだす",
+      "romaji": "furidasu",
+      "meaning": "to start raining/snowing",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "雨が降り出す。",
+        "en": "It starts to rain."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_homeru",
+      "dictionary": "褒める",
+      "kana": "ほめる",
+      "romaji": "homeru",
+      "meaning": "to praise",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "子供を褒める。",
+        "en": "I praise the child."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_mairu",
+      "dictionary": "参る",
+      "kana": "まいる",
+      "romaji": "mairu",
+      "meaning": "to go, to come (humble)",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "すぐに参る。",
+        "en": "I will come right away (humbly)."
+      },
+      "irregular_overrides": {},
+      "note": "Ends in -eru/-iru like an ichidan verb but is actually godan — a lesser-known member of the same exception family as 帰る/知る/入る."
+    },
+    {
+      "id": "v_makeru",
+      "dictionary": "負ける",
+      "kana": "まける",
+      "romaji": "makeru",
+      "meaning": "to lose, to be defeated",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "試合に負ける。",
+        "en": "I lose the match."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_machigaeru",
+      "dictionary": "間違える",
+      "kana": "まちがえる",
+      "romaji": "machigaeru",
+      "meaning": "to make a mistake",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "答えを間違える。",
+        "en": "I get the answer wrong."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_maniau",
+      "dictionary": "間に合う",
+      "kana": "まにあう",
+      "romaji": "maniau",
+      "meaning": "to be in time (for)",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "電車に間に合う。",
+        "en": "I make it in time for the train."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_mawaru",
+      "dictionary": "回る",
+      "kana": "まわる",
+      "romaji": "mawaru",
+      "meaning": "to turn, to go around",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "公園を回る。",
+        "en": "I go around the park."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_mieru",
+      "dictionary": "見える",
+      "kana": "みえる",
+      "romaji": "mieru",
+      "meaning": "to be visible, to be able to see",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "山が見える。",
+        "en": "I can see the mountain."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_mitsukaru",
+      "dictionary": "見つかる",
+      "kana": "みつかる",
+      "romaji": "mitsukaru",
+      "meaning": "to be found",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "鍵が見つかる。",
+        "en": "The key is found."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_mitsukeru",
+      "dictionary": "見つける",
+      "kana": "みつける",
+      "romaji": "mitsukeru",
+      "meaning": "to find",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "答えを見つける。",
+        "en": "I find the answer."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_mukau",
+      "dictionary": "向かう",
+      "kana": "むかう",
+      "romaji": "mukau",
+      "meaning": "to head towards",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "駅に向かう。",
+        "en": "I head towards the station."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_mukaeru",
+      "dictionary": "迎える",
+      "kana": "むかえる",
+      "romaji": "mukaeru",
+      "meaning": "to welcome, to greet",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "友達を迎える。",
+        "en": "I welcome a friend."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_meshiagaru",
+      "dictionary": "召し上がる",
+      "kana": "めしあがる",
+      "romaji": "meshiagaru",
+      "meaning": "to eat, to drink (honorific)",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "お客様がケーキを召し上がる。",
+        "en": "The guest eats cake (honorific)."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_moushiageru",
+      "dictionary": "申し上げる",
+      "kana": "もうしあげる",
+      "romaji": "moushiageru",
+      "meaning": "to say (humble)",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "お礼を申し上げる。",
+        "en": "I express my thanks (humbly)."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_mousu",
+      "dictionary": "申す",
+      "kana": "もうす",
+      "romaji": "mousu",
+      "meaning": "to say (humble)",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "田中と申す。",
+        "en": "I am called Tanaka (humbly)."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_modoru",
+      "dictionary": "戻る",
+      "kana": "もどる",
+      "romaji": "modoru",
+      "meaning": "to go back, to return",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "家に戻る。",
+        "en": "I go back home."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_morau",
+      "dictionary": "貰う",
+      "kana": "もらう",
+      "romaji": "morau",
+      "meaning": "to receive",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "プレゼントを貰う。",
+        "en": "I receive a present."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_yaku",
+      "dictionary": "焼く",
+      "kana": "やく",
+      "romaji": "yaku",
+      "meaning": "to grill, to bake, to burn",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "パンを焼く。",
+        "en": "I bake bread."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_yakunitatsu",
+      "dictionary": "役に立つ",
+      "kana": "やくにたつ",
+      "romaji": "yakunitatsu",
+      "meaning": "to be useful, to be helpful",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "この本は役に立つ。",
+        "en": "This book is useful."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_yaseru",
+      "dictionary": "痩せる",
+      "kana": "やせる",
+      "romaji": "yaseru",
+      "meaning": "to lose weight, to become thin",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "運動して痩せる。",
+        "en": "I lose weight by exercising."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_yamu",
+      "dictionary": "止む",
+      "kana": "やむ",
+      "romaji": "yamu",
+      "meaning": "to stop, to cease (e.g. rain)",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "雨が止む。",
+        "en": "The rain stops."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_yameru",
+      "dictionary": "止める",
+      "kana": "やめる",
+      "romaji": "yameru",
+      "meaning": "to quit, to stop (doing something)",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "たばこを止める。",
+        "en": "I quit smoking."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_yureru",
+      "dictionary": "揺れる",
+      "kana": "ゆれる",
+      "romaji": "yureru",
+      "meaning": "to shake, to sway",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "電車が揺れる。",
+        "en": "The train shakes."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_yogoreru",
+      "dictionary": "汚れる",
+      "kana": "よごれる",
+      "romaji": "yogoreru",
+      "meaning": "to get dirty",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "シャツが汚れる。",
+        "en": "The shirt gets dirty."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_yoru_2",
+      "dictionary": "寄る",
+      "kana": "よる",
+      "romaji": "yoru",
+      "meaning": "to approach, to drop by",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "店に寄る。",
+        "en": "I drop by the store."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_yorokobu",
+      "dictionary": "喜ぶ",
+      "kana": "よろこぶ",
+      "romaji": "yorokobu",
+      "meaning": "to be glad, to be delighted",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "プレゼントに喜ぶ。",
+        "en": "I am delighted with the present."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_wakasu",
+      "dictionary": "沸かす",
+      "kana": "わかす",
+      "romaji": "wakasu",
+      "meaning": "to boil (something)",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "お湯を沸かす。",
+        "en": "I boil water."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_wakareru",
+      "dictionary": "別れる",
+      "kana": "わかれる",
+      "romaji": "wakareru",
+      "meaning": "to part, to separate",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "友達と別れる。",
+        "en": "I part with a friend."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_waku",
+      "dictionary": "沸く",
+      "kana": "わく",
+      "romaji": "waku",
+      "meaning": "to boil (intransitive)",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "お湯が沸く。",
+        "en": "The water boils."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_warau",
+      "dictionary": "笑う",
+      "kana": "わらう",
+      "romaji": "warau",
+      "meaning": "to laugh, to smile",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "大きな声で笑う。",
+        "en": "I laugh loudly."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_wareru",
+      "dictionary": "割れる",
+      "kana": "われる",
+      "romaji": "wareru",
+      "meaning": "to break, to shatter",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "n4"
+      ],
+      "example": {
+        "jp": "ガラスが割れる。",
+        "en": "The glass breaks."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_kakaeru",
+      "dictionary": "抱える",
+      "kana": "かかえる",
+      "romaji": "kakaeru",
+      "meaning": "to hold or carry under the arm; to have (a problem, debt)",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "問題を抱える。",
+        "en": "I have a problem."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_nagasu",
+      "dictionary": "流す",
+      "kana": "ながす",
+      "romaji": "nagasu",
+      "meaning": "to drain; to pour; to wash away",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "水を流す。",
+        "en": "I let the water run."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_kanjiru",
+      "dictionary": "感じる",
+      "kana": "かんじる",
+      "romaji": "kanjiru",
+      "meaning": "to feel; to sense",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "寒さを感じる。",
+        "en": "I feel the cold."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_kurikaesu",
+      "dictionary": "繰り返す",
+      "kana": "くりかえす",
+      "romaji": "kurikaesu",
+      "meaning": "to repeat",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "同じ間違いを繰り返す。",
+        "en": "I repeat the same mistake."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_kataru",
+      "dictionary": "語る",
+      "kana": "かたる",
+      "romaji": "kataru",
+      "meaning": "to talk about; to narrate",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "昔の話を語る。",
+        "en": "I talk about an old story."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_mamoru",
+      "dictionary": "守る",
+      "kana": "まもる",
+      "romaji": "mamoru",
+      "meaning": "to protect; to guard; to keep (a promise)",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "約束を守る。",
+        "en": "I keep my promise."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_utsu_2",
+      "dictionary": "撃つ",
+      "kana": "うつ",
+      "romaji": "utsu",
+      "meaning": "to shoot (at)",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "鳥を撃つ。",
+        "en": "I shoot the bird."
+      },
+      "irregular_overrides": {},
+      "note": "Different word from 打つ (utsu, “to hit/strike”) already in your library — same reading, different kanji."
+    },
+    {
+      "id": "v_damaru",
+      "dictionary": "黙る",
+      "kana": "だまる",
+      "romaji": "damaru",
+      "meaning": "to be silent; to say nothing",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "急に黙る。",
+        "en": "I suddenly fall silent."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_hanashiau",
+      "dictionary": "話し合う",
+      "kana": "はなしあう",
+      "romaji": "hanashiau",
+      "meaning": "to discuss; to talk together",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "将来について話し合う。",
+        "en": "We discuss the future."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_oou",
+      "dictionary": "覆う",
+      "kana": "おおう",
+      "romaji": "oou",
+      "meaning": "to cover; to hide; to conceal",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "顔を手で覆う。",
+        "en": "I cover my face with my hands."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_koeru",
+      "dictionary": "越える",
+      "kana": "こえる",
+      "romaji": "koeru",
+      "meaning": "to cross over; to exceed",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "山を越える。",
+        "en": "I cross over the mountain."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_noseru",
+      "dictionary": "乗せる",
+      "kana": "のせる",
+      "romaji": "noseru",
+      "meaning": "to give a ride; to load",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "車に荷物を乗せる。",
+        "en": "I load the luggage onto the car."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_kakusu",
+      "dictionary": "隠す",
+      "kana": "かくす",
+      "romaji": "kakusu",
+      "meaning": "to hide; to conceal",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "本音を隠す。",
+        "en": "I hide my true feelings."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_sakebu",
+      "dictionary": "叫ぶ",
+      "kana": "さけぶ",
+      "romaji": "sakebu",
+      "meaning": "to shout; to cry out",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "大声で叫ぶ。",
+        "en": "I shout in a loud voice."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_uketoru",
+      "dictionary": "受け取る",
+      "kana": "うけとる",
+      "romaji": "uketoru",
+      "meaning": "to receive; to accept",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "荷物を受け取る。",
+        "en": "I receive the package."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_tobidasu",
+      "dictionary": "飛び出す",
+      "kana": "とびだす",
+      "romaji": "tobidasu",
+      "meaning": "to jump out; to rush out",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "部屋から飛び出す。",
+        "en": "I rush out of the room."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_nozomu",
+      "dictionary": "望む",
+      "kana": "のぞむ",
+      "romaji": "nozomu",
+      "meaning": "to desire; to wish for; to hope",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "平和を望む。",
+        "en": "I wish for peace."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_atsukau",
+      "dictionary": "扱う",
+      "kana": "あつかう",
+      "romaji": "atsukau",
+      "meaning": "to deal with; to handle; to treat",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "商品を扱う。",
+        "en": "I handle the merchandise."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_utsusu_2",
+      "dictionary": "移す",
+      "kana": "うつす",
+      "romaji": "utsusu",
+      "meaning": "to move (something); to transfer",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "机を窓側に移す。",
+        "en": "I move the desk to the window side."
+      },
+      "irregular_overrides": {},
+      "note": "Different word from 写す (utsusu, “to copy/photograph”) already in your library — same reading, different kanji."
+    },
+    {
+      "id": "v_sasou",
+      "dictionary": "誘う",
+      "kana": "さそう",
+      "romaji": "sasou",
+      "meaning": "to invite; to tempt; to ask (someone to do)",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "友達を映画に誘う。",
+        "en": "I invite a friend to a movie."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_kaeru_3",
+      "dictionary": "換える",
+      "kana": "かえる",
+      "romaji": "kaeru",
+      "meaning": "to exchange; to replace; to substitute",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "円をドルに換える。",
+        "en": "I exchange yen for dollars."
+      },
+      "irregular_overrides": {},
+      "note": "One of several かえる homophones already in your library (変える “change”, 帰る “return home”) — this one specifically means swapping one thing for another."
+    },
+    {
+      "id": "v_kooru",
+      "dictionary": "凍る",
+      "kana": "こおる",
+      "romaji": "kooru",
+      "meaning": "to freeze",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "池が凍る。",
+        "en": "The pond freezes."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_susumeru",
+      "dictionary": "勧める",
+      "kana": "すすめる",
+      "romaji": "susumeru",
+      "meaning": "to recommend; to suggest",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "この本を勧める。",
+        "en": "I recommend this book."
+      },
+      "irregular_overrides": {},
+      "note": "Homophone of 進める (susumeru, “to advance/proceed”) below — same reading, different kanji and meaning."
+    },
+    {
+      "id": "v_tatakau",
+      "dictionary": "戦う",
+      "kana": "たたかう",
+      "romaji": "tatakau",
+      "meaning": "to fight; to make war; to compete",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "敵と戦う。",
+        "en": "I fight the enemy."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_tayoru",
+      "dictionary": "頼る",
+      "kana": "たよる",
+      "romaji": "tayoru",
+      "meaning": "to rely on; to depend on",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "友達に頼る。",
+        "en": "I rely on a friend."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_deau",
+      "dictionary": "出会う",
+      "kana": "であう",
+      "romaji": "deau",
+      "meaning": "to meet by chance; to encounter",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "駅で先生に出会う。",
+        "en": "I run into my teacher at the station."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_nobasu",
+      "dictionary": "伸ばす",
+      "kana": "のばす",
+      "romaji": "nobasu",
+      "meaning": "to extend; to grow long; to postpone",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "旅行の予定を伸ばす。",
+        "en": "I extend the trip schedule."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_hakaru",
+      "dictionary": "計る",
+      "kana": "はかる",
+      "romaji": "hakaru",
+      "meaning": "to measure (time, quantity)",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "時間を計る。",
+        "en": "I measure the time."
+      },
+      "irregular_overrides": {},
+      "note": "Japanese has several はかる homophones (measure length/weigh/plan/plot) with different kanji — this is the general “measure” one."
+    },
+    {
+      "id": "v_hipparu",
+      "dictionary": "引っ張る",
+      "kana": "ひっぱる",
+      "romaji": "hipparu",
+      "meaning": "to pull; to drag; to tow",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "ロープを引っ張る。",
+        "en": "I pull the rope."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_hirogaru",
+      "dictionary": "広がる",
+      "kana": "ひろがる",
+      "romaji": "hirogaru",
+      "meaning": "to spread out; to extend",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "噂が広がる。",
+        "en": "The rumor spreads."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_michiru",
+      "dictionary": "満ちる",
+      "kana": "みちる",
+      "romaji": "michiru",
+      "meaning": "to become full; to be filled",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "会場が人で満ちる。",
+        "en": "The venue becomes full of people."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_motozuku",
+      "dictionary": "基づく",
+      "kana": "もとづく",
+      "romaji": "motozuku",
+      "meaning": "to be based on; to be grounded on",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "事実に基づく。",
+        "en": "It is based on facts."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_yatou",
+      "dictionary": "雇う",
+      "kana": "やとう",
+      "romaji": "yatou",
+      "meaning": "to employ; to hire",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "新しい社員を雇う。",
+        "en": "I hire a new employee."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_tsukamaru",
+      "dictionary": "つかまる",
+      "kana": "つかまる",
+      "romaji": "tsukamaru",
+      "meaning": "to be caught; to hold on to",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "つり革につかまる。",
+        "en": "I hold on to the strap."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_kurasu",
+      "dictionary": "暮らす",
+      "kana": "くらす",
+      "romaji": "kurasu",
+      "meaning": "to live; to get along; to spend (time)",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "田舎で暮らす。",
+        "en": "I live in the countryside."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_hanasu_2",
+      "dictionary": "放す",
+      "kana": "はなす",
+      "romaji": "hanasu",
+      "meaning": "to release; to let go; to set free",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "犬を放す。",
+        "en": "I let the dog loose."
+      },
+      "irregular_overrides": {},
+      "note": "Different word from 話す (hanasu, “to speak”) already in your library — same reading, different kanji."
+    },
+    {
+      "id": "v_fusegu",
+      "dictionary": "防ぐ",
+      "kana": "ふせぐ",
+      "romaji": "fusegu",
+      "meaning": "to defend against; to prevent",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "事故を防ぐ。",
+        "en": "I prevent an accident."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_meijiru",
+      "dictionary": "命じる",
+      "kana": "めいじる",
+      "romaji": "meijiru",
+      "meaning": "to order; to command; to appoint",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "退去を命じる。",
+        "en": "I order them to leave."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_modosu",
+      "dictionary": "戻す",
+      "kana": "もどす",
+      "romaji": "modosu",
+      "meaning": "to put back; to return (something)",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "本を棚に戻す。",
+        "en": "I put the book back on the shelf."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_ataeru",
+      "dictionary": "与える",
+      "kana": "あたえる",
+      "romaji": "ataeru",
+      "meaning": "to give (to someone of lower status); to grant",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "子供に本を与える。",
+        "en": "I give the child a book."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_azukeru",
+      "dictionary": "預ける",
+      "kana": "あずける",
+      "romaji": "azukeru",
+      "meaning": "to leave in someone's keeping; to deposit",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "荷物をホテルに預ける。",
+        "en": "I leave my luggage at the hotel."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_mochiiru",
+      "dictionary": "用いる",
+      "kana": "もちいる",
+      "romaji": "mochiiru",
+      "meaning": "to use; to make use of",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "新しい方法を用いる。",
+        "en": "I use a new method."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_tachiagaru",
+      "dictionary": "立ち上がる",
+      "kana": "たちあがる",
+      "romaji": "tachiagaru",
+      "meaning": "to stand up; to rise; to take action",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "椅子から立ち上がる。",
+        "en": "I stand up from the chair."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_nagareru",
+      "dictionary": "流れる",
+      "kana": "ながれる",
+      "romaji": "nagareru",
+      "meaning": "to stream; to flow; to drift",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "川が流れる。",
+        "en": "The river flows."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_ronjiru",
+      "dictionary": "論じる",
+      "kana": "ろんじる",
+      "romaji": "ronjiru",
+      "meaning": "to discuss; to argue; to debate",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "問題を論じる。",
+        "en": "I discuss the problem."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_oru_2",
+      "dictionary": "おる",
+      "kana": "おる",
+      "romaji": "oru",
+      "meaning": "to be, to exist (animate, humble)",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "私はここにおる。",
+        "en": "I am here (humble)."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_sosogu",
+      "dictionary": "注ぐ",
+      "kana": "そそぐ",
+      "romaji": "sosogu",
+      "meaning": "to pour into; to flow into",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "コップに水を注ぐ。",
+        "en": "I pour water into the cup."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_korobu",
+      "dictionary": "転ぶ",
+      "kana": "ころぶ",
+      "romaji": "korobu",
+      "meaning": "to fall down; to tumble",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "道で転ぶ。",
+        "en": "I fall down on the road."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_akiru",
+      "dictionary": "飽きる",
+      "kana": "あきる",
+      "romaji": "akiru",
+      "meaning": "to get tired of; to lose interest in",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "勉強に飽きる。",
+        "en": "I get tired of studying."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_oitsuku",
+      "dictionary": "追いつく",
+      "kana": "おいつく",
+      "romaji": "oitsuku",
+      "meaning": "to catch up (with)",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "前の人に追いつく。",
+        "en": "I catch up with the person ahead."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_osameru",
+      "dictionary": "収める",
+      "kana": "おさめる",
+      "romaji": "osameru",
+      "meaning": "to obtain (a result); to achieve; to store",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "いい結果を収める。",
+        "en": "I achieve a good result."
+      },
+      "irregular_overrides": {},
+      "note": "Japanese has several おさめる homophones (govern/study-master/pay-supply/achieve) with different kanji — this is the “achieve/store” one."
+    },
+    {
+      "id": "v_osoreru",
+      "dictionary": "恐れる",
+      "kana": "おそれる",
+      "romaji": "osoreru",
+      "meaning": "to fear; to be afraid of",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "失敗を恐れる。",
+        "en": "I fear failure."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_kakureru",
+      "dictionary": "隠れる",
+      "kana": "かくれる",
+      "romaji": "kakureru",
+      "meaning": "to hide; to be hidden",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "木の後ろに隠れる。",
+        "en": "I hide behind the tree."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_toku",
+      "dictionary": "解く",
+      "kana": "とく",
+      "romaji": "toku",
+      "meaning": "to untie; to solve",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "紐を解く。",
+        "en": "I untie the string."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_tokeru",
+      "dictionary": "解ける",
+      "kana": "とける",
+      "romaji": "tokeru",
+      "meaning": "to be solved; to come untied; to melt",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "問題が解ける。",
+        "en": "The problem gets solved."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_fureru",
+      "dictionary": "触れる",
+      "kana": "ふれる",
+      "romaji": "fureru",
+      "meaning": "to touch; to feel; to mention",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "その話題に触れる。",
+        "en": "I touch on that topic."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_susumeru_2",
+      "dictionary": "進める",
+      "kana": "すすめる2",
+      "romaji": "susumeru",
+      "meaning": "to advance; to move forward; to proceed with",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "計画を進める。",
+        "en": "I move the plan forward."
+      },
+      "irregular_overrides": {},
+      "note": "Homophone of 勧める (susumeru, “to recommend”) above — same reading, different kanji and meaning."
+    },
+    {
+      "id": "v_furueru",
+      "dictionary": "震える",
+      "kana": "ふるえる",
+      "romaji": "furueru",
+      "meaning": "to shiver; to shake; to tremble",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "寒くて体が震える。",
+        "en": "My body trembles from the cold."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_kireru",
+      "dictionary": "切れる",
+      "kana": "きれる",
+      "romaji": "kireru",
+      "meaning": "to break; to snap; to be cut; to run out",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "糸が切れる。",
+        "en": "The thread snaps."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_shimeru_3",
+      "dictionary": "占める",
+      "kana": "しめる",
+      "romaji": "shimeru",
+      "meaning": "to occupy; to account for; to make up",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "大きな部分を占める。",
+        "en": "It accounts for a large part."
+      },
+      "irregular_overrides": {},
+      "note": "A third しめる homophone alongside 閉める (“close”) and 締める (“fasten”) already in your library."
+    },
+    {
+      "id": "v_namakeru",
+      "dictionary": "怠ける",
+      "kana": "なまける",
+      "romaji": "namakeru",
+      "meaning": "to be idle; to neglect (work)",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "仕事を怠ける。",
+        "en": "I neglect my work."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_tataku",
+      "dictionary": "叩く",
+      "kana": "たたく",
+      "romaji": "tataku",
+      "meaning": "to strike; to beat; to knock; to tap",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "ドアを叩く。",
+        "en": "I knock on the door."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_shaberu",
+      "dictionary": "しゃべる",
+      "kana": "しゃべる",
+      "romaji": "shaberu",
+      "meaning": "to talk; to chat; to chatter",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "友達とよくしゃべる。",
+        "en": "I chat with my friend a lot."
+      },
+      "irregular_overrides": {},
+      "note": "Ends in -eru like an ichidan verb but is actually godan — another member of the 帰る/知る/滑る exception family."
+    },
+    {
+      "id": "v_tsukamu",
+      "dictionary": "つかむ",
+      "kana": "つかむ",
+      "romaji": "tsukamu",
+      "meaning": "to seize; to grasp; to catch",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "手すりをつかむ。",
+        "en": "I grasp the handrail."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_akirameru",
+      "dictionary": "諦める",
+      "kana": "あきらめる",
+      "romaji": "akirameru",
+      "meaning": "to give up; to abandon (hope, plans)",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "夢を諦める。",
+        "en": "I give up on my dream."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_oboreru",
+      "dictionary": "おぼれる",
+      "kana": "おぼれる",
+      "romaji": "oboreru",
+      "meaning": "to drown; to nearly drown",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "川でおぼれる。",
+        "en": "I nearly drown in the river."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_todoku",
+      "dictionary": "届く",
+      "kana": "とどく",
+      "romaji": "todoku",
+      "meaning": "to reach; to arrive; to be delivered",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "荷物が届く。",
+        "en": "The package arrives."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_makaseru",
+      "dictionary": "任せる",
+      "kana": "まかせる",
+      "romaji": "makaseru",
+      "meaning": "to entrust (a task) to another",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "仕事を部下に任せる。",
+        "en": "I entrust the work to a subordinate."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_ureru",
+      "dictionary": "売れる",
+      "kana": "うれる",
+      "romaji": "ureru",
+      "meaning": "to sell well; to be popular",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "この商品はよく売れる。",
+        "en": "This product sells well."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_nuku",
+      "dictionary": "抜く",
+      "kana": "ぬく",
+      "romaji": "nuku",
+      "meaning": "to pull out; to extract; to omit",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "釘を抜く。",
+        "en": "I pull out the nail."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_nukeru",
+      "dictionary": "抜ける",
+      "kana": "ぬける",
+      "romaji": "nukeru",
+      "meaning": "to come out; to fall out; to be missing",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "力が抜ける。",
+        "en": "The strength drains out of me."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_hohoemu",
+      "dictionary": "微笑む",
+      "kana": "ほほえむ",
+      "romaji": "hohoemu",
+      "meaning": "to smile",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "優しく微笑む。",
+        "en": "I smile gently."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_tsukeru_3",
+      "dictionary": "付ける",
+      "kana": "つける",
+      "romaji": "tsukeru",
+      "meaning": "to attach; to append; to apply (ointment)",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "名前をノートに付ける。",
+        "en": "I write my name in the notebook."
+      },
+      "irregular_overrides": {},
+      "note": "A third つける homophone alongside 点ける (“turn on”) and 漬ける (“pickle/soak”) already in your library."
+    },
+    {
+      "id": "v_sugureru",
+      "dictionary": "優れる",
+      "kana": "すぐれる",
+      "romaji": "sugureru",
+      "meaning": "to surpass; to excel; to be superior",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "彼は語学に優れる。",
+        "en": "He excels at languages."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_unaru",
+      "dictionary": "唸る",
+      "kana": "うなる",
+      "romaji": "unaru",
+      "meaning": "to groan; to moan; to growl",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "犬が唸る。",
+        "en": "The dog growls."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_sakeru",
+      "dictionary": "避ける",
+      "kana": "さける",
+      "romaji": "sakeru",
+      "meaning": "to avoid",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "人混みを避ける。",
+        "en": "I avoid the crowd."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_egaku",
+      "dictionary": "描く",
+      "kana": "えがく",
+      "romaji": "egaku",
+      "meaning": "to draw; to paint; to depict",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "風景を描く。",
+        "en": "I paint the scenery."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_idaku",
+      "dictionary": "抱く",
+      "kana": "いだく",
+      "romaji": "idaku",
+      "meaning": "to embrace; to harbour (a feeling)",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "希望を抱く。",
+        "en": "I harbor hope."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_eru",
+      "dictionary": "得る",
+      "kana": "える",
+      "romaji": "eru",
+      "meaning": "to get; to earn; to acquire; to gain",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "知識を得る。",
+        "en": "I gain knowledge."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_orosu",
+      "dictionary": "下ろす",
+      "kana": "おろす",
+      "romaji": "orosu",
+      "meaning": "to take down; to lower; to withdraw (cash)",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "荷物をトラックから下ろす。",
+        "en": "I unload the luggage from the truck."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_kiku_2",
+      "dictionary": "効く",
+      "kana": "きく",
+      "romaji": "kiku",
+      "meaning": "to be effective; to work (medicine, etc.)",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "この薬はよく効く。",
+        "en": "This medicine works well."
+      },
+      "irregular_overrides": {},
+      "note": "Different word from 聞く (kiku, “to listen”) already in your library — same reading, different kanji."
+    },
+    {
+      "id": "v_hoeru",
+      "dictionary": "吠える",
+      "kana": "ほえる",
+      "romaji": "hoeru",
+      "meaning": "to bark; to howl; to roar",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "犬が吠える。",
+        "en": "The dog barks."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_hiku_3",
+      "dictionary": "ひく",
+      "kana": "ひく",
+      "romaji": "hiku",
+      "meaning": "to run over (with a vehicle)",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "車が人をひく。",
+        "en": "The car runs over a person."
+      },
+      "irregular_overrides": {},
+      "note": "A third ひく homophone alongside 引く (“pull”) and 弾く (“play an instrument”) already in your library."
+    },
+    {
+      "id": "v_haku_2",
+      "dictionary": "吐く",
+      "kana": "はく",
+      "romaji": "haku",
+      "meaning": "to vomit; to emit; to confess",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "気分が悪くて吐く。",
+        "en": "I feel sick and vomit."
+      },
+      "irregular_overrides": {},
+      "note": "Different word from 履く (haku, “to put on shoes”) already in your library — same reading, different kanji."
+    },
+    {
+      "id": "v_shitagau",
+      "dictionary": "従う",
+      "kana": "したがう",
+      "romaji": "shitagau",
+      "meaning": "to obey; to abide by; to follow",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "規則に従う。",
+        "en": "I obey the rules."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_noberu",
+      "dictionary": "述べる",
+      "kana": "のべる",
+      "romaji": "noberu",
+      "meaning": "to state; to express; to mention",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "意見を述べる。",
+        "en": "I state my opinion."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_tasukeru",
+      "dictionary": "助ける",
+      "kana": "たすける",
+      "romaji": "tasukeru",
+      "meaning": "to save; to help; to rescue",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "困っている人を助ける。",
+        "en": "I help a person in trouble."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_nobiru",
+      "dictionary": "伸びる",
+      "kana": "のびる",
+      "romaji": "nobiru",
+      "meaning": "to stretch; to extend; to grow (hair, height)",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "髪が伸びる。",
+        "en": "My hair grows long."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_shinjiru",
+      "dictionary": "信じる",
+      "kana": "しんじる",
+      "romaji": "shinjiru",
+      "meaning": "to believe; to trust; to have faith in",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "彼の言葉を信じる。",
+        "en": "I believe his words."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_furu_2",
+      "dictionary": "振る",
+      "kana": "ふる",
+      "romaji": "furu",
+      "meaning": "to wave; to shake; to turn down (someone)",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "手を振る。",
+        "en": "I wave my hand."
+      },
+      "irregular_overrides": {},
+      "note": "Different word from 降る (furu, “to fall” – rain/snow) already in your library — same reading, different kanji."
+    },
+    {
+      "id": "v_moushikomu",
+      "dictionary": "申し込む",
+      "kana": "もうしこむ",
+      "romaji": "moushikomu",
+      "meaning": "to apply for; to propose; to request",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "参加を申し込む。",
+        "en": "I apply to participate."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_yameru_2",
+      "dictionary": "辞める",
+      "kana": "やめる2",
+      "romaji": "yameru",
+      "meaning": "to resign; to retire; to quit (a job)",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "会社を辞める。",
+        "en": "I quit my job."
+      },
+      "irregular_overrides": {},
+      "note": "More specific than 止める/yameru (“quit doing something”) already in your library — this one is specifically about leaving a job or position."
+    },
+    {
+      "id": "v_waru",
+      "dictionary": "割る",
+      "kana": "わる",
+      "romaji": "waru",
+      "meaning": "to divide; to break; to crack; to split",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "卵を割る。",
+        "en": "I crack the egg."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_karu",
+      "dictionary": "刈る",
+      "kana": "かる",
+      "romaji": "karu",
+      "meaning": "to cut (grass, hair); to mow; to trim",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "庭の草を刈る。",
+        "en": "I mow the grass in the garden."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_fukumu",
+      "dictionary": "含む",
+      "kana": "ふくむ",
+      "romaji": "fukumu",
+      "meaning": "to contain; to comprise; to include",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "税金を含む。",
+        "en": "It includes tax."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_negau",
+      "dictionary": "願う",
+      "kana": "ねがう",
+      "romaji": "negau",
+      "meaning": "to desire; to wish; to request; to pray",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "成功を願う。",
+        "en": "I wish for success."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_kiniiru",
+      "dictionary": "気に入る",
+      "kana": "きにいる",
+      "romaji": "kiniiru",
+      "meaning": "to like; to be pleased with",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "この服を気に入る。",
+        "en": "I like this piece of clothing."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_okoru_2",
+      "dictionary": "起こる",
+      "kana": "おこる",
+      "romaji": "okoru",
+      "meaning": "to occur; to happen",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "事故が起こる。",
+        "en": "An accident occurs."
+      },
+      "irregular_overrides": {},
+      "note": "Different word from 怒る (okoru, “to get angry”) already in your library — same reading, different kanji."
+    },
+    {
+      "id": "v_sakarau",
+      "dictionary": "逆らう",
+      "kana": "さからう",
+      "romaji": "sakarau",
+      "meaning": "to go against; to oppose; to disobey",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "親に逆らう。",
+        "en": "I go against my parents."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_oyobosu",
+      "dictionary": "及ぼす",
+      "kana": "およぼす",
+      "romaji": "oyobosu",
+      "meaning": "to exert (an influence); to cause",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "健康に影響を及ぼす。",
+        "en": "It has an effect on health."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_sukuu",
+      "dictionary": "救う",
+      "kana": "すくう",
+      "romaji": "sukuu",
+      "meaning": "to rescue; to save",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "溺れた人を救う。",
+        "en": "I rescue a drowning person."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_saru_2",
+      "dictionary": "去る",
+      "kana": "さる",
+      "romaji": "saru",
+      "meaning": "to leave; to go away; to pass (of time)",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "町を去る。",
+        "en": "I leave the town."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_kuruu",
+      "dictionary": "狂う",
+      "kana": "くるう",
+      "romaji": "kuruu",
+      "meaning": "to go mad; to get out of order",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "機械が狂う。",
+        "en": "The machine goes haywire."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_kurushimu",
+      "dictionary": "苦しむ",
+      "kana": "くるしむ",
+      "romaji": "kurushimu",
+      "meaning": "to suffer; to be worried; to be troubled",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "頭痛に苦しむ。",
+        "en": "I suffer from a headache."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_tatsu_2",
+      "dictionary": "経つ",
+      "kana": "たつ2",
+      "romaji": "tatsu",
+      "meaning": "to pass; to elapse (of time)",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "三年が経つ。",
+        "en": "Three years pass."
+      },
+      "irregular_overrides": {},
+      "note": "Different word from 立つ (tatsu, “to stand”) already in your library — same reading, different kanji."
+    },
+    {
+      "id": "v_kirau",
+      "dictionary": "嫌う",
+      "kana": "きらう",
+      "romaji": "kirau",
+      "meaning": "to hate; to dislike",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "虫を嫌う。",
+        "en": "I dislike bugs."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_herasu",
+      "dictionary": "減らす",
+      "kana": "へらす",
+      "romaji": "herasu",
+      "meaning": "to decrease; to reduce (something)",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "体重を減らす。",
+        "en": "I reduce my weight."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_heru",
+      "dictionary": "減る",
+      "kana": "へる",
+      "romaji": "heru",
+      "meaning": "to decrease; to diminish",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "人口が減る。",
+        "en": "The population decreases."
+      },
+      "irregular_overrides": {},
+      "note": "Ends in -eru like an ichidan verb but is actually godan — another member of the exception family (減らない, not 減ない)."
+    },
+    {
+      "id": "v_arawareru",
+      "dictionary": "現れる",
+      "kana": "あらわれる",
+      "romaji": "arawareru",
+      "meaning": "to appear; to come in sight; to become visible",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "星が空に現れる。",
+        "en": "Stars appear in the sky."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_konomu",
+      "dictionary": "好む",
+      "kana": "このむ",
+      "romaji": "konomu",
+      "meaning": "to like; to prefer",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "辛い食べ物を好む。",
+        "en": "I prefer spicy food."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_itaru",
+      "dictionary": "至る",
+      "kana": "いたる",
+      "romaji": "itaru",
+      "meaning": "to arrive at; to reach; to lead to",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "結論に至る。",
+        "en": "I arrive at a conclusion."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_tamesu",
+      "dictionary": "試す",
+      "kana": "ためす",
+      "romaji": "tamesu",
+      "meaning": "to attempt; to test; to try out",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "新しいレシピを試す。",
+        "en": "I try out a new recipe."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_kau_2",
+      "dictionary": "飼う",
+      "kana": "かう2",
+      "romaji": "kau",
+      "meaning": "to keep (a pet); to raise (an animal)",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "猫を飼う。",
+        "en": "I keep a cat."
+      },
+      "irregular_overrides": {},
+      "note": "Different word from 買う (kau, “to buy”) already in your library — same reading, different kanji."
+    },
+    {
+      "id": "v_niau",
+      "dictionary": "似合う",
+      "kana": "にあう",
+      "romaji": "niau",
+      "meaning": "to suit; to match; to become (someone)",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "この帽子は君に似合う。",
+        "en": "This hat suits you."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_iwau",
+      "dictionary": "祝う",
+      "kana": "いわう",
+      "romaji": "iwau",
+      "meaning": "to congratulate; to celebrate",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "誕生日を祝う。",
+        "en": "I celebrate my birthday."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_toriageru",
+      "dictionary": "取り上げる",
+      "kana": "とりあげる",
+      "romaji": "toriageru",
+      "meaning": "to pick up; to adopt; to take away",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "その話題を取り上げる。",
+        "en": "I take up that topic."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_yuzuru",
+      "dictionary": "譲る",
+      "kana": "ゆずる",
+      "romaji": "yuzuru",
+      "meaning": "to hand over; to give up (one's seat); to concede",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "お年寄りに席を譲る。",
+        "en": "I give up my seat to an elderly person."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_kumu",
+      "dictionary": "組む",
+      "kana": "くむ",
+      "romaji": "kumu",
+      "meaning": "to cross (arms/legs); to put together; to team up",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "腕を組む。",
+        "en": "I cross my arms."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_uttaeru",
+      "dictionary": "訴える",
+      "kana": "うったえる",
+      "romaji": "uttaeru",
+      "meaning": "to appeal to; to sue; to complain of",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "裁判所に訴える。",
+        "en": "I appeal to the court."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_masu_2",
+      "dictionary": "増す",
+      "kana": "ます",
+      "romaji": "masu",
+      "meaning": "to increase; to grow",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "人口が増す。",
+        "en": "The population increases."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_shizumu",
+      "dictionary": "沈む",
+      "kana": "しずむ",
+      "romaji": "shizumu",
+      "meaning": "to sink; to go down; to feel depressed",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "船が沈む。",
+        "en": "The ship sinks."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_tsuujiru",
+      "dictionary": "通じる",
+      "kana": "つうじる",
+      "romaji": "tsuujiru",
+      "meaning": "to be open to; to communicate; to lead to",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "この道は駅に通じる。",
+        "en": "This road leads to the station."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_toosu",
+      "dictionary": "通す",
+      "kana": "とおす",
+      "romaji": "toosu",
+      "meaning": "to let pass through; to force through",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "針に糸を通す。",
+        "en": "I thread a needle."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_toorisugiru",
+      "dictionary": "通り過ぎる",
+      "kana": "とおりすぎる",
+      "romaji": "toorisugiru",
+      "meaning": "to go past; to pass by",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "バス停を通り過ぎる。",
+        "en": "I pass by the bus stop."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_taosu",
+      "dictionary": "倒す",
+      "kana": "たおす",
+      "romaji": "taosu",
+      "meaning": "to throw down; to defeat; to knock down",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "木を倒す。",
+        "en": "I knock down the tree."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_ataru",
+      "dictionary": "当たる",
+      "kana": "あたる",
+      "romaji": "ataru",
+      "meaning": "to be hit; to be equivalent to; to be correct",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "宝くじが当たる。",
+        "en": "The lottery ticket wins."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_ugokasu",
+      "dictionary": "動かす",
+      "kana": "うごかす",
+      "romaji": "ugokasu",
+      "meaning": "to move (something); to operate",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "机を動かす。",
+        "en": "I move the desk."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_mitomeru",
+      "dictionary": "認める",
+      "kana": "みとめる",
+      "romaji": "mitomeru",
+      "meaning": "to recognize; to approve; to admit",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "自分の失敗を認める。",
+        "en": "I admit my own mistake."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_moeru",
+      "dictionary": "燃える",
+      "kana": "もえる",
+      "romaji": "moeru",
+      "meaning": "to burn; to get fired up",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "紙がよく燃える。",
+        "en": "Paper burns well."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_nayamu",
+      "dictionary": "悩む",
+      "kana": "なやむ",
+      "romaji": "nayamu",
+      "meaning": "to be worried; to be troubled",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "進路について悩む。",
+        "en": "I worry about my future path."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_kanashimu",
+      "dictionary": "悲しむ",
+      "kana": "かなしむ",
+      "romaji": "kanashimu",
+      "meaning": "to be sad; to mourn; to grieve",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "別れを悲しむ。",
+        "en": "I grieve over the parting."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_tobasu",
+      "dictionary": "飛ばす",
+      "kana": "とばす",
+      "romaji": "tobasu",
+      "meaning": "to let fly; to send flying; to skip over",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "紙飛行機を飛ばす。",
+        "en": "I fly a paper airplane."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_kusaru",
+      "dictionary": "腐る",
+      "kana": "くさる",
+      "romaji": "kusaru",
+      "meaning": "to rot; to go bad; to decay",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "野菜が腐る。",
+        "en": "The vegetables go bad."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_tojiru",
+      "dictionary": "閉じる",
+      "kana": "とじる",
+      "romaji": "tojiru",
+      "meaning": "to close (a book, one's eyes)",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "本を閉じる。",
+        "en": "I close the book."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_arawasu",
+      "dictionary": "表す",
+      "kana": "あらわす",
+      "romaji": "arawasu",
+      "meaning": "to represent; to signify; to show",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "気持ちを言葉で表す。",
+        "en": "I express my feelings in words."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_kizuku",
+      "dictionary": "気づく",
+      "kana": "きづく",
+      "romaji": "kizuku",
+      "meaning": "to notice; to become aware of; to realize",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "間違いに気づく。",
+        "en": "I notice the mistake."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_kuu",
+      "dictionary": "食う",
+      "kana": "くう",
+      "romaji": "kuu",
+      "meaning": "to eat (casual, often masculine speech)",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "飯を食う。",
+        "en": "I eat a meal."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_sodatsu",
+      "dictionary": "育つ",
+      "kana": "そだつ",
+      "romaji": "sodatsu",
+      "meaning": "to be raised; to grow up",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "子供が元気に育つ。",
+        "en": "The child grows up healthy."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_kotonaru",
+      "dictionary": "異なる",
+      "kana": "ことなる",
+      "romaji": "kotonaru",
+      "meaning": "to differ; to vary",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "意見が人によって異なる。",
+        "en": "Opinions differ from person to person."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_nigiru",
+      "dictionary": "握る",
+      "kana": "にぎる",
+      "romaji": "nigiru",
+      "meaning": "to grasp; to grip; to clutch",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "手を強く握る。",
+        "en": "I grip the hand tightly."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_yokogiru",
+      "dictionary": "横切る",
+      "kana": "よこぎる",
+      "romaji": "yokogiru",
+      "meaning": "to cross; to traverse",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "道路を横切る。",
+        "en": "I cross the road."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_kuwaeru",
+      "dictionary": "加える",
+      "kana": "くわえる",
+      "romaji": "kuwaeru",
+      "meaning": "to add; to append; to include",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "スープに塩を加える。",
+        "en": "I add salt to the soup."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_kuwawaru",
+      "dictionary": "加わる",
+      "kana": "くわわる",
+      "romaji": "kuwawaru",
+      "meaning": "to be added to; to join in",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "議論に加わる。",
+        "en": "I join the discussion."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_kasegu",
+      "dictionary": "稼ぐ",
+      "kana": "かせぐ",
+      "romaji": "kasegu",
+      "meaning": "to earn (income); to work hard for",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "お金を稼ぐ。",
+        "en": "I earn money."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_sugosu",
+      "dictionary": "過ごす",
+      "kana": "すごす",
+      "romaji": "sugosu",
+      "meaning": "to pass (time); to spend (time)",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "休みを家族と過ごす。",
+        "en": "I spend the holiday with my family."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_mawasu",
+      "dictionary": "回す",
+      "kana": "まわす",
+      "romaji": "mawasu",
+      "meaning": "to turn; to rotate; to pass around",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "ハンドルを回す。",
+        "en": "I turn the steering wheel."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_tashikameru",
+      "dictionary": "確かめる",
+      "kana": "たしかめる",
+      "romaji": "tashikameru",
+      "meaning": "to ascertain; to check; to make sure",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "答えを確かめる。",
+        "en": "I check the answer."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_samasu",
+      "dictionary": "覚ます",
+      "kana": "さます",
+      "romaji": "samasu",
+      "meaning": "to awaken; to arouse from sleep",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "目を覚ます。",
+        "en": "I wake myself up."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_sameru",
+      "dictionary": "覚める",
+      "kana": "さめる",
+      "romaji": "sameru",
+      "meaning": "to wake up; to become sober",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "目が覚める。",
+        "en": "I wake up."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_manabu",
+      "dictionary": "学ぶ",
+      "kana": "まなぶ",
+      "romaji": "manabu",
+      "meaning": "to study (in depth); to learn",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "大学で経済を学ぶ。",
+        "en": "I study economics at university."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_sasu_2",
+      "dictionary": "指す",
+      "kana": "さす2",
+      "romaji": "sasu",
+      "meaning": "to point; to indicate; to nominate",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "地図で場所を指す。",
+        "en": "I point to the location on the map."
+      },
+      "irregular_overrides": {},
+      "note": "Different word from さす (sasu, “to hold up an umbrella”) already in your library — same reading, different meaning."
+    },
+    {
+      "id": "v_motomeru",
+      "dictionary": "求める",
+      "kana": "もとめる",
+      "romaji": "motomeru",
+      "meaning": "to want; to request; to seek",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "助けを求める。",
+        "en": "I ask for help."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_tsunagu",
+      "dictionary": "つなぐ",
+      "kana": "つなぐ",
+      "romaji": "tsunagu",
+      "meaning": "to connect; to link together; to tie",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "手をつなぐ。",
+        "en": "I hold hands."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_kakeru_4",
+      "dictionary": "欠ける",
+      "kana": "かける2",
+      "romaji": "kakeru",
+      "meaning": "to be chipped; to be lacking; to be missing",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "茶碗が欠ける。",
+        "en": "The teacup gets chipped."
+      },
+      "irregular_overrides": {},
+      "note": "Different word from 掛ける (kakeru, “to hang/wear/call”) already in your library — same reading, different kanji."
+    },
+    {
+      "id": "v_muku",
+      "dictionary": "向く",
+      "kana": "むく",
+      "romaji": "muku",
+      "meaning": "to turn toward; to face; to be suited to",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "窓の方を向く。",
+        "en": "I turn towards the window."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_mukeru",
+      "dictionary": "向ける",
+      "kana": "むける",
+      "romaji": "mukeru",
+      "meaning": "to turn (something) towards; to point",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "カメラをこちらに向ける。",
+        "en": "I point the camera this way."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_sumaseru",
+      "dictionary": "済ませる",
+      "kana": "すませる",
+      "romaji": "sumaseru",
+      "meaning": "to finish; to get through with",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "食事を済ませる。",
+        "en": "I finish the meal."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_sasaeru",
+      "dictionary": "支える",
+      "kana": "ささえる",
+      "romaji": "sasaeru",
+      "meaning": "to support; to prop; to sustain",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "柱が屋根を支える。",
+        "en": "The pillar supports the roof."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_yosu",
+      "dictionary": "よす",
+      "kana": "よす",
+      "romaji": "yosu",
+      "meaning": "to cease; to stop; to give up (literary/old-fashioned)",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "その話はもうよす。",
+        "en": "I'll stop talking about that now."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_toreru",
+      "dictionary": "取れる",
+      "kana": "とれる",
+      "romaji": "toreru",
+      "meaning": "to come off; to be removed; to be caught (fish, etc.)",
+      "type": "verb",
+      "group": "group2",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "シャツのボタンが取れる。",
+        "en": "The shirt's button comes off."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_tsuku_3",
+      "dictionary": "就く",
+      "kana": "つく2",
+      "romaji": "tsuku",
+      "meaning": "to take (a position, seat); to ascend (the throne)",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "新しい仕事に就く。",
+        "en": "I take up a new job."
+      },
+      "irregular_overrides": {},
+      "note": "A third つく homophone alongside 着く (“arrive”) and 付く (“be attached”) already in your library."
+    },
+    {
+      "id": "v_nozoku",
+      "dictionary": "除く",
+      "kana": "のぞく",
+      "romaji": "nozoku",
+      "meaning": "to remove; to eliminate; to exclude",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "リストから名前を除く。",
+        "en": "I remove the name from the list."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_maneku",
+      "dictionary": "招く",
+      "kana": "まねく",
+      "romaji": "maneku",
+      "meaning": "to invite; to beckon; to bring about",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "誤解を招く。",
+        "en": "I invite misunderstanding."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_habuku",
+      "dictionary": "省く",
+      "kana": "はぶく",
+      "romaji": "habuku",
+      "meaning": "to omit; to leave out; to curtail",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "説明を省く。",
+        "en": "I omit the explanation."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "v_yurusu",
+      "dictionary": "許す",
+      "kana": "ゆるす",
+      "romaji": "yurusu",
+      "meaning": "to permit; to allow; to forgive",
+      "type": "verb",
+      "group": "group1",
+      "tags": [
+        "n3"
+      ],
+      "example": {
+        "jp": "彼のミスを許す。",
+        "en": "I forgive his mistake."
+      },
+      "irregular_overrides": {}
+    }
+  ]
+}

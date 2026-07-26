@@ -1,0 +1,356 @@
+{
+  "meta": {
+    "description": "Direction and spatial-position vocabulary \u2014 compass directions, relative position nouns, range/comparison words built on \u4ee5, and the extra vocabulary needed to give or follow directions.",
+    "note": "Most of these are plain nouns and don't conjugate, so this is a browsable reference rather than a conjugation drill set. \u66f2\u304c\u308b (magaru, \u201cto turn\u201d) and \u6e21\u308b (wataru, \u201cto cross\u201d) already exist as full conjugating entries in your Word Library \u2014 they're cross-referenced here rather than duplicated.",
+    "categories": {
+      "compass": "The 8 compass directions",
+      "position": "Relative position nouns \u2014 always paired with \u306e (e.g. \u672c\u306e\u4e0a 'on top of the book')",
+      "range": "\u4ee5-prefixed words marking a boundary or range relative to a reference point",
+      "directions-vocab": "Extra vocabulary for giving or asking for directions"
+    }
+  },
+  "words": [
+    {
+      "word": "\u6771",
+      "kana": "\u3072\u304c\u3057",
+      "romaji": "higashi",
+      "meaning_en": "east",
+      "category": "compass",
+      "usage_note": "Compass words combine directly with \u306e to modify a noun (\u6771\u306e\u7a93 'the east-facing window') or with \u306b/\u3078 for direction of movement (\u6771\u306b\u9032\u3080 'proceed eastward').",
+      "examples": [{ "jp": "\u592a\u967d\u306f\u6771\u304b\u3089\u51fa\u308b\u3002", "en": "The sun rises in the east." }]
+    },
+    {
+      "word": "\u897f",
+      "kana": "\u306b\u3057",
+      "romaji": "nishi",
+      "meaning_en": "west",
+      "category": "compass",
+      "usage_note": null,
+      "examples": [{ "jp": "\u592a\u967d\u306f\u897f\u306b\u6c88\u3080\u3002", "en": "The sun sets in the west." }]
+    },
+    {
+      "word": "\u5357",
+      "kana": "\u307f\u306a\u307f",
+      "romaji": "minami",
+      "meaning_en": "south",
+      "category": "compass",
+      "usage_note": null,
+      "examples": [{ "jp": "\u5357\u306e\u5cf6\u3078\u65c5\u884c\u3059\u308b\u3002", "en": "I travel to an island in the south." }]
+    },
+    {
+      "word": "\u5317",
+      "kana": "\u304d\u305f",
+      "romaji": "kita",
+      "meaning_en": "north",
+      "category": "compass",
+      "usage_note": null,
+      "examples": [{ "jp": "\u5317\u306e\u5730\u57df\u306f\u5bd2\u3044\u3002", "en": "The northern region is cold." }]
+    },
+    {
+      "word": "\u5317\u6771",
+      "kana": "\u307b\u304f\u3068\u3046",
+      "romaji": "hokutou",
+      "meaning_en": "northeast",
+      "category": "compass",
+      "usage_note": "Intercardinal directions in Japanese are built north/south-first: \u5317\u6771 (northeast), not \u6771\u5317. This is the reverse order from some other conventions, so it's worth memorizing as fixed compounds.",
+      "examples": [{ "jp": "\u98a8\u304c\u5317\u6771\u304b\u3089\u5439\u3044\u3066\u3044\u308b\u3002", "en": "The wind is blowing from the northeast." }]
+    },
+    {
+      "word": "\u5317\u897f",
+      "kana": "\u307b\u304f\u305b\u3044",
+      "romaji": "hokusei",
+      "meaning_en": "northwest",
+      "category": "compass",
+      "usage_note": null,
+      "examples": [{ "jp": "\u5317\u897f\u306e\u7a7a\u304c\u6669\u3063\u3066\u304d\u305f\u3002", "en": "The sky to the northwest has clouded over." }]
+    },
+    {
+      "word": "\u5357\u6771",
+      "kana": "\u306a\u3093\u3068\u3046",
+      "romaji": "nantou",
+      "meaning_en": "southeast",
+      "category": "compass",
+      "usage_note": null,
+      "examples": [{ "jp": "\u5357\u6771\u30a2\u30b8\u30a2\u3092\u65c5\u884c\u3059\u308b\u3002", "en": "I travel around Southeast Asia." }]
+    },
+    {
+      "word": "\u5357\u897f",
+      "kana": "\u306a\u3093\u305b\u3044",
+      "romaji": "nansei",
+      "meaning_en": "southwest",
+      "category": "compass",
+      "usage_note": null,
+      "examples": [{ "jp": "\u5357\u897f\u306e\u7a7a\u304c\u660e\u308b\u3044\u3002", "en": "The sky to the southwest is bright." }]
+    },
+    {
+      "word": "\u4e0a",
+      "kana": "\u3046\u3048",
+      "romaji": "ue",
+      "meaning_en": "above; on top of; the top",
+      "category": "position",
+      "usage_note": "Position nouns like this attach to another noun with \u306e: \u6a5f\u306e\u4e0a\u306b\u672c\u304c\u3042\u308b 'there is a book on the desk'. Don't confuse with \u4e0a\u3052\u308b (ageru, 'to raise' \u2014 a different, verb, word).",
+      "examples": [{ "jp": "\u6a5f\u306e\u4e0a\u306b\u672c\u304c\u3042\u308b\u3002", "en": "There is a book on top of the desk." }]
+    },
+    {
+      "word": "\u4e0b",
+      "kana": "\u3057\u305f",
+      "romaji": "shita",
+      "meaning_en": "below; under; underneath",
+      "category": "position",
+      "usage_note": "Also read もと in some fixed expressions (\u6cd5\u306e\u3082\u3068 'under the law'), but した is the everyday spatial reading.",
+      "examples": [{ "jp": "\u6a5f\u306e\u4e0b\u306b\u732b\u304c\u3044\u308b\u3002", "en": "There is a cat under the desk." }]
+    },
+    {
+      "word": "\u524d",
+      "kana": "\u307e\u3048",
+      "romaji": "mae",
+      "meaning_en": "front; before",
+      "category": "position",
+      "usage_note": "Doubles as a time word: \u98df\u4e8b\u306e\u524d 'before the meal'.",
+      "examples": [{ "jp": "\u99c5\u306e\u524d\u3067\u5f85\u3064\u3002", "en": "I'll wait in front of the station." }]
+    },
+    {
+      "word": "\u5f8c\u308d",
+      "kana": "\u3046\u3057\u308d",
+      "romaji": "ushiro",
+      "meaning_en": "behind; the back",
+      "category": "position",
+      "usage_note": "Spatial only \u2014 for 'after' in time, use \u5f8c (\u3042\u3068) instead.",
+      "examples": [{ "jp": "\u5b66\u6821\u306e\u5f8c\u308d\u306b\u516c\u5712\u304c\u3042\u308b\u3002", "en": "There is a park behind the school." }]
+    },
+    {
+      "word": "\u5de6",
+      "kana": "\u3072\u3060\u308a",
+      "romaji": "hidari",
+      "meaning_en": "left",
+      "category": "position",
+      "usage_note": null,
+      "examples": [{ "jp": "\u5de6\u306b\u66f2\u304c\u308b\u3002", "en": "I turn left." }]
+    },
+    {
+      "word": "\u53f3",
+      "kana": "\u307f\u304e",
+      "romaji": "migi",
+      "meaning_en": "right",
+      "category": "position",
+      "usage_note": null,
+      "examples": [{ "jp": "\u53f3\u306b\u66f2\u304c\u308b\u3002", "en": "I turn right." }]
+    },
+    {
+      "word": "\u4e2d",
+      "kana": "\u306a\u304b",
+      "romaji": "naka",
+      "meaning_en": "inside; middle; among",
+      "category": "position",
+      "usage_note": "Also used abstractly for 'among/within a group': 三人の中で一番背が高い 'the tallest among the three'.",
+      "examples": [{ "jp": "\u30ab\u30d0\u30f3\u306e\u4e2d\u306b\u8ca1\u5e03\u304c\u3042\u308b\u3002", "en": "There is a wallet inside the bag." }]
+    },
+    {
+      "word": "\u5916",
+      "kana": "\u305d\u3068",
+      "romaji": "soto",
+      "meaning_en": "outside",
+      "category": "position",
+      "usage_note": null,
+      "examples": [{ "jp": "\u5916\u3067\u5f85\u3063\u3066\u3044\u308b\u3002", "en": "I'm waiting outside." }]
+    },
+    {
+      "word": "\u96a3",
+      "kana": "\u3068\u306a\u308a",
+      "romaji": "tonari",
+      "meaning_en": "next to; the neighboring one",
+      "category": "position",
+      "usage_note": "For things of the same kind lined up (houses, seats, buildings); compare そば/近く for general nearness regardless of category.",
+      "examples": [{ "jp": "\u9280\u884c\u306e\u96a3\u306b\u30ab\u30d5\u30a7\u304c\u3042\u308b\u3002", "en": "There is a cafe next to the bank." }]
+    },
+    {
+      "word": "\u5411\u304b\u3044",
+      "kana": "\u3080\u304b\u3044",
+      "romaji": "mukai",
+      "meaning_en": "across from; opposite",
+      "category": "position",
+      "usage_note": null,
+      "examples": [{ "jp": "\u9053\u306e\u5411\u304b\u3044\u306b\u90f5\u4fbf\u5c40\u304c\u3042\u308b\u3002", "en": "There is a post office across the street." }]
+    },
+    {
+      "word": "\u305d\u3070",
+      "kana": "\u305d\u3070",
+      "romaji": "soba",
+      "meaning_en": "near; beside; close by",
+      "category": "position",
+      "usage_note": "Emphasizes closeness/proximity to a person or thing, often with a sense of accompaniment; 近く is more neutrally about physical distance.",
+      "examples": [{ "jp": "\u99c5\u306e\u305d\u3070\u306b\u4f4f\u3093\u3067\u3044\u308b\u3002", "en": "I live near the station." }]
+    },
+    {
+      "word": "\u8fd1\u304f",
+      "kana": "\u3061\u304b\u304f",
+      "romaji": "chikaku",
+      "meaning_en": "nearby; the vicinity",
+      "category": "position",
+      "usage_note": null,
+      "examples": [{ "jp": "\u3053\u306e\u8fd1\u304f\u306b\u30b3\u30f3\u30d3\u30cb\u306f\u3042\u308a\u307e\u3059\u304b\u3002", "en": "Is there a convenience store near here?" }]
+    },
+    {
+      "word": "\u9060\u304f",
+      "kana": "\u3068\u304a\u304f",
+      "romaji": "tooku",
+      "meaning_en": "far away; a distant place",
+      "category": "position",
+      "usage_note": null,
+      "examples": [{ "jp": "\u9060\u304f\u306b\u5c71\u304c\u898b\u3048\u308b\u3002", "en": "I can see mountains in the distance." }]
+    },
+    {
+      "word": "\u9593",
+      "kana": "\u3042\u3044\u3060",
+      "romaji": "aida",
+      "meaning_en": "between; among; during",
+      "category": "position",
+      "usage_note": "Spatial ('between two things': 木と木の間) and temporal ('during/while': 夏休みの間) uses are both common.",
+      "examples": [{ "jp": "\u5b66\u6821\u3068\u99c5\u306e\u9593\u306b\u516c\u5712\u304c\u3042\u308b\u3002", "en": "There is a park between the school and the station." }]
+    },
+    {
+      "word": "\u89d2",
+      "kana": "\u304b\u3069",
+      "romaji": "kado",
+      "meaning_en": "corner (of a street or building, outside edge)",
+      "category": "position",
+      "usage_note": "The outside corner of a building or intersection \u2014 the one you'd turn at. Compare 隅 for an inside nook or corner of a room.",
+      "examples": [{ "jp": "\u3042\u306e\u89d2\u3092\u66f2\u304c\u3063\u3066\u304f\u3060\u3055\u3044\u3002", "en": "Please turn at that corner." }]
+    },
+    {
+      "word": "\u9685",
+      "kana": "\u3059\u307f",
+      "romaji": "sumi",
+      "meaning_en": "corner; nook (of a room or enclosed space)",
+      "category": "position",
+      "usage_note": "The inside corner of a room or box, unlike 角 which is an outside corner you'd walk around.",
+      "examples": [{ "jp": "\u90e8\u5c4b\u306e\u9685\u306b\u672c\u68da\u304c\u3042\u308b\u3002", "en": "There is a bookshelf in the corner of the room." }]
+    },
+    {
+      "word": "\u4ee5\u4e0a",
+      "kana": "\u3044\u3058\u3087\u3046",
+      "romaji": "ijou",
+      "meaning_en": "or more; above; the above(-mentioned)",
+      "category": "range",
+      "usage_note": "Attaches to a number or noun to mean 'that amount or more': 二十歳以上 'twenty years old or older'. As a standalone noun in writing, 以上 also closes off a list or statement ('the above / that is all').",
+      "examples": [{ "jp": "\u4e8c\u5341\u6b73\u4ee5\u4e0a\u306e\u4eba\u3060\u3051\u5165\u308c\u308b\u3002", "en": "Only people twenty years old or older may enter." }]
+    },
+    {
+      "word": "\u4ee5\u4e0b",
+      "kana": "\u3044\u304b",
+      "romaji": "ika",
+      "meaning_en": "or less; below; the following",
+      "category": "range",
+      "usage_note": "Mirror image of 以上: 十歳以下 'ten years old or younger'. In documents, 以下同様 means 'the same applies below/hereafter'.",
+      "examples": [{ "jp": "\u5341\u6b73\u4ee5\u4e0b\u306e\u5b50\u4f9b\u306f\u7121\u6599\u3067\u3059\u3002", "en": "Children ten years old or younger are free." }]
+    },
+    {
+      "word": "\u4ee5\u5185",
+      "kana": "\u3044\u306a\u3044",
+      "romaji": "inai",
+      "meaning_en": "within (a range, time, or distance)",
+      "category": "range",
+      "usage_note": "Sets an upper boundary that is not exceeded: 一時間以内 'within one hour'.",
+      "examples": [{ "jp": "\u4e00\u6642\u9593\u4ee5\u5185\u306b\u623b\u3063\u3066\u304f\u3060\u3055\u3044\u3002", "en": "Please come back within one hour." }]
+    },
+    {
+      "word": "\u4ee5\u5916",
+      "kana": "\u3044\u304c\u3044",
+      "romaji": "igai",
+      "meaning_en": "except; other than; aside from",
+      "category": "range",
+      "usage_note": "Not to be confused with \u610f\u5916 (igai, \u201csurprising, unexpected\u201d) \u2014 same reading, completely different word and kanji.",
+      "examples": [{ "jp": "\u65e5\u66dc\u65e5\u4ee5\u5916\u306f\u958b\u3044\u3066\u3044\u308b\u3002", "en": "It's open every day except Sunday." }]
+    },
+    {
+      "word": "\u4ee5\u524d",
+      "kana": "\u3044\u305c\u3093",
+      "romaji": "izen",
+      "meaning_en": "before (a point in time); previously",
+      "category": "range",
+      "usage_note": "Marks a time boundary looking backward: 三時以前 'before three o'clock'. Compare 前 (mae), which is more general/relative.",
+      "examples": [{ "jp": "\u4e09\u6642\u4ee5\u524d\u306b\u6765\u3066\u304f\u3060\u3055\u3044\u3002", "en": "Please come before three o'clock." }]
+    },
+    {
+      "word": "\u4ee5\u5f8c",
+      "kana": "\u3044\u3054",
+      "romaji": "igo",
+      "meaning_en": "after (a point in time); from now on",
+      "category": "range",
+      "usage_note": "Mirror of 以前: marks a time boundary looking forward. 今後 (kongo) is a common near-synonym meaning specifically 'from now on'.",
+      "examples": [{ "jp": "\u4e09\u6642\u4ee5\u5f8c\u306b\u304a\u3053\u3057\u304f\u3060\u3055\u3044\u3002", "en": "Please come after three o'clock." }]
+    },
+    {
+      "word": "\u4ee5\u6765",
+      "kana": "\u3044\u3089\u3044",
+      "romaji": "irai",
+      "meaning_en": "since (a point in the past, continuing to now)",
+      "category": "range",
+      "usage_note": "Unlike 以後 (which just marks 'after X'), 以来 specifically frames an unbroken continuation from that point to the present: 卒業以来会っていない 'haven't met since graduating'.",
+      "examples": [{ "jp": "\u5352\u696d\u4ee5\u6765\u4f1a\u3063\u3066\u3044\u306a\u3044\u3002", "en": "I haven't met them since graduating." }]
+    },
+    {
+      "word": "\u307e\u3063\u3059\u3050",
+      "kana": "\u307e\u3063\u3059\u3050",
+      "romaji": "massugu",
+      "meaning_en": "straight; straight ahead",
+      "category": "directions-vocab",
+      "usage_note": "Functions as a な-adjective/adverb: まっすぐな道 'a straight road', まっすぐ行く 'go straight'. The single most common word in giving directions.",
+      "examples": [{ "jp": "\u3053\u306e\u9053\u3092\u307e\u3063\u3059\u3050\u884c\u3063\u3066\u304f\u3060\u3055\u3044\u3002", "en": "Please go straight down this road." }]
+    },
+    {
+      "word": "\u66f2\u304c\u308b",
+      "kana": "\u307e\u304c\u308b",
+      "romaji": "magaru",
+      "meaning_en": "to turn (at a corner or intersection)",
+      "category": "directions-vocab",
+      "usage_note": "Already in your Word Library as a full conjugating verb (godan) \u2014 look it up there for the complete conjugation table.",
+      "examples": [{ "jp": "\u6b21\u306e\u89d2\u3092\u5de6\u306b\u66f2\u304c\u308b\u3002", "en": "Turn left at the next corner." }]
+    },
+    {
+      "word": "\u6e21\u308b",
+      "kana": "\u308f\u305f\u308b",
+      "romaji": "wataru",
+      "meaning_en": "to cross (a street, bridge, river)",
+      "category": "directions-vocab",
+      "usage_note": "Already in your Word Library as a full conjugating verb (godan) \u2014 look it up there for the complete conjugation table.",
+      "examples": [{ "jp": "\u6a4b\u3092\u6e21\u308b\u3068\u516c\u5712\u304c\u3042\u308b\u3002", "en": "Cross the bridge and there's a park." }]
+    },
+    {
+      "word": "\u7a81\u304d\u5f53\u305f\u308a",
+      "kana": "\u3064\u304d\u3042\u305f\u308a",
+      "romaji": "tsukiatari",
+      "meaning_en": "the end of a street or corridor (where it dead-ends into something)",
+      "category": "directions-vocab",
+      "usage_note": "Marks where a straight path terminates: 突き当たりを右に曲がる 'turn right at the end (of this street)'.",
+      "examples": [{ "jp": "\u7a81\u304d\u5f53\u305f\u308a\u3092\u53f3\u306b\u66f2\u304c\u3063\u3066\u304f\u3060\u3055\u3044\u3002", "en": "Turn right at the end of the street." }]
+    },
+    {
+      "word": "\u4fe1\u53f7",
+      "kana": "\u3057\u3093\u3054\u3046",
+      "romaji": "shingou",
+      "meaning_en": "traffic light; signal",
+      "category": "directions-vocab",
+      "usage_note": null,
+      "examples": [{ "jp": "\u6b21\u306e\u4fe1\u53f7\u3092\u5de6\u306b\u66f2\u304c\u3063\u3066\u304f\u3060\u3055\u3044\u3002", "en": "Turn left at the next traffic light." }]
+    },
+    {
+      "word": "\u4ea4\u5dee\u70b9",
+      "kana": "\u3053\u3046\u3055\u3066\u3093",
+      "romaji": "kousaten",
+      "meaning_en": "intersection; crossroads",
+      "category": "directions-vocab",
+      "usage_note": null,
+      "examples": [{ "jp": "\u3042\u306e\u4ea4\u5dee\u70b9\u3092\u6e21\u3063\u3066\u304f\u3060\u3055\u3044\u3002", "en": "Please cross that intersection." }]
+    },
+    {
+      "word": "\u76ee\u5370",
+      "kana": "\u3081\u3058\u308b\u3057",
+      "romaji": "mejirushi",
+      "meaning_en": "landmark; identifying mark",
+      "category": "directions-vocab",
+      "usage_note": null,
+      "examples": [{ "jp": "\u3042\u306e\u9ad8\u3044\u30d3\u30eb\u304c\u76ee\u5370\u3067\u3059\u3002", "en": "That tall building is the landmark." }]
+    }
+  ]
+}

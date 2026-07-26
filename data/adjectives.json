@@ -1,0 +1,157 @@
+{
+  "words": [
+    {
+      "id": "a_takai",
+      "dictionary": "高い",
+      "kana": "たかい",
+      "romaji": "takai",
+      "meaning": "expensive; tall; high",
+      "type": "i-adjective",
+      "tags": [
+        "shopping",
+        "description"
+      ],
+      "example": {
+        "jp": "このかばんは高いです。",
+        "en": "This bag is expensive."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_ookii",
+      "dictionary": "大きい",
+      "kana": "おおきい",
+      "romaji": "ookii",
+      "meaning": "big, large",
+      "type": "i-adjective",
+      "tags": [
+        "description"
+      ],
+      "example": {
+        "jp": "この犬は大きいです。",
+        "en": "This dog is big."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_ii",
+      "dictionary": "いい",
+      "kana": "いい",
+      "romaji": "ii",
+      "meaning": "good",
+      "type": "i-adjective",
+      "tags": [
+        "description",
+        "irregular"
+      ],
+      "example": {
+        "jp": "今日はいい天気です。",
+        "en": "Today is nice weather."
+      },
+      "note": "Irregular: every form besides the dictionary form and polite present is built on the stem 良- (yo-), not い-.",
+      "irregular_overrides": {
+        "negative plain": "良くない",
+        "negative polite": "良くないです",
+        "past plain": "良かった",
+        "past polite": "良かったです",
+        "past negative plain": "良くなかった",
+        "past negative polite": "良くなかったです",
+        "adverbial": "良く",
+        "te-form": "良くて",
+        "conditional": "良ければ",
+        "hypothetical past": "良かったら",
+        "wanting something to be a certain way": "良くなってほしい",
+        "conjunctive (literary)": "良く",
+        "degree": "良すぎる",
+        "nominalization": "良さ",
+        "seeming": "良さそう",
+        "negative implication": "良くなくて"
+      }
+    },
+    {
+      "id": "a_tanoshii",
+      "dictionary": "楽しい",
+      "kana": "たのしい",
+      "romaji": "tanoshii",
+      "meaning": "fun, enjoyable",
+      "type": "i-adjective",
+      "tags": [
+        "feelings",
+        "entertainment"
+      ],
+      "example": {
+        "jp": "旅行は楽しいです。",
+        "en": "The trip is fun."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_shizuka",
+      "dictionary": "静か",
+      "kana": "しずか",
+      "romaji": "shizuka",
+      "meaning": "quiet",
+      "type": "na-adjective",
+      "tags": [
+        "description",
+        "places"
+      ],
+      "example": {
+        "jp": "図書館は静かです。",
+        "en": "The library is quiet."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_suki",
+      "dictionary": "好き",
+      "kana": "すき",
+      "romaji": "suki",
+      "meaning": "likeable, fond of",
+      "type": "na-adjective",
+      "tags": [
+        "feelings"
+      ],
+      "example": {
+        "jp": "音楽が好きです。",
+        "en": "I like music."
+      },
+      "note": "The thing liked is usually marked with が, not を: 音楽が好きです (not 音楽を好きです).",
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_genki",
+      "dictionary": "元気",
+      "kana": "げんき",
+      "romaji": "genki",
+      "meaning": "energetic, healthy, well",
+      "type": "na-adjective",
+      "tags": [
+        "feelings",
+        "health"
+      ],
+      "example": {
+        "jp": "田中さんは元気です。",
+        "en": "Tanaka-san is doing well."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_benri",
+      "dictionary": "便利",
+      "kana": "べんり",
+      "romaji": "benri",
+      "meaning": "convenient",
+      "type": "na-adjective",
+      "tags": [
+        "technology",
+        "description"
+      ],
+      "example": {
+        "jp": "このアプリは便利です。",
+        "en": "This app is convenient."
+      },
+      "irregular_overrides": {}
+    }
+  ]
+}

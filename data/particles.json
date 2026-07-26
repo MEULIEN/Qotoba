@@ -1,0 +1,579 @@
+{
+  "meta": {
+    "description": "Japanese particle (\u52a9\u8a5e) usage reference, organized by the JLPT level each is typically introduced at.",
+    "note": "Unlike vocabulary, particles are a closed grammatical class, so this list aims to be genuinely comprehensive for true particles (\u683c\u52a9\u8a5e/\u4fc2\u52a9\u8a5e/\u526f\u52a9\u8a5e/\u63a5\u7d9a\u52a9\u8a5e/\u7d42\u52a9\u8a5e). At N3 and above it also includes the handful of compound case-marking expressions (について, にとって, において, etc.) that function the same way and are commonly taught alongside particles, but it does not attempt to cover full N2/N1 grammar patterns that aren't fundamentally particles (e.g. ~ざるを得ない).",
+    "categories": {
+      "case": "\u683c\u52a9\u8a5e \u2014 marks the grammatical role of a noun (subject, object, location, etc.)",
+      "binding": "\u4fc2\u52a9\u8a5e/\u526f\u52a9\u8a5e \u2014 adds nuance/emphasis/scope to a noun or phrase",
+      "conjunctive": "\u63a5\u7d9a\u52a9\u8a5e \u2014 connects clauses",
+      "sentence-final": "\u7d42\u52a9\u8a5e \u2014 attaches to the end of a sentence to add tone or seek a reaction",
+      "compound-case": "A multi-word expression that functions like a case particle; common at N3+"
+    }
+  },
+  "particles": [
+    {
+      "particle": "\u306f",
+      "level": "N5",
+      "category": "binding",
+      "meaning_en": "Marks the sentence topic \u2014 what the sentence is about.",
+      "usage_note": "Written \u306f but pronounced \u308f in this role. Often confused with \u304c: \u306f sets up what you're talking about (and can imply contrast with something unstated), \u304c identifies specifically who/what does something. \u79c1\u306f\u5b66\u751f\u3067\u3059 introduces 'as for me'; \u79c1\u304c\u5b66\u751f\u3067\u3059 answers 'who is the student?'.",
+      "examples": [
+        { "jp": "\u3053\u308c\u306f\u672c\u3067\u3059\u3002", "en": "This is a book." },
+        { "jp": "\u79c1\u306f\u65e5\u672c\u4eba\u3067\u3059\u304c\u3001\u5f7c\u306f\u9055\u3044\u307e\u3059\u3002", "en": "I'm Japanese, but he's not (contrastive は)." }
+      ]
+    },
+    {
+      "particle": "\u304c",
+      "level": "N5",
+      "category": "case",
+      "meaning_en": "Marks the grammatical subject \u2014 who or what is doing/being something.",
+      "usage_note": "Used for new information, for identifying which thing does something (answering 'who/what?'), inside subordinate clauses, and with certain adjectives/verbs of desire, ability, and perception (\u597d\u304d, \u3067\u304d\u308b, \u898b\u3048\u308b, \u307b\u3057\u3044).",
+      "examples": [
+        { "jp": "\u732b\u304c\u3044\u307e\u3059\u3002", "en": "There is a cat. / A cat is (here)." },
+        { "jp": "\u97f3\u697d\u304c\u597d\u304d\u3067\u3059\u3002", "en": "I like music." }
+      ]
+    },
+    {
+      "particle": "\u3092",
+      "level": "N5",
+      "category": "case",
+      "meaning_en": "Marks the direct object of a transitive verb.",
+      "usage_note": "Also marks the space or point of departure with certain motion verbs (\u516c\u5712\u3092\u6b69\u304f 'walk through the park', \u5bb6\u3092\u51fa\u308b 'leave the house') even though nothing is literally being acted upon.",
+      "examples": [
+        { "jp": "\u30b3\u30fc\u30d2\u30fc\u3092\u98f2\u3080\u3002", "en": "I drink coffee." },
+        { "jp": "\u516c\u5712\u3092\u6b69\u304f\u3002", "en": "I walk through the park." }
+      ]
+    },
+    {
+      "particle": "\u306b",
+      "level": "N5",
+      "category": "case",
+      "meaning_en": "Marks a point in time, a location of existence, a destination, or an indirect object.",
+      "usage_note": "One of the most overloaded particles in Japanese. Compare with \u3067: \u306b marks where something exists or the point something moves toward; \u3067 marks where an action takes place.",
+      "examples": [
+        { "jp": "\u4e03\u6642\u306b\u8d77\u304d\u308b\u3002", "en": "I wake up at seven." },
+        { "jp": "\u673a\u306e\u4e0a\u306b\u672c\u304c\u3042\u308b\u3002", "en": "There is a book on the desk." },
+        { "jp": "\u53cb\u9054\u306b\u672c\u3092\u3042\u3052\u308b\u3002", "en": "I give a book to a friend." }
+      ]
+    },
+    {
+      "particle": "\u3067",
+      "level": "N5",
+      "category": "case",
+      "meaning_en": "Marks the location where an action happens, or the means/instrument used.",
+      "usage_note": "Contrast with \u306b: \u3067 is for where something HAPPENS, not where something IS. \u56f3\u66f8\u9928\u3067\u672c\u3092\u8aad\u3080 ('read at the library', an action) vs \u56f3\u66f8\u9928\u306b\u672c\u304c\u3042\u308b ('the book exists at the library', a state).",
+      "examples": [
+        { "jp": "\u56f3\u66f8\u9928\u3067\u672c\u3092\u8aad\u3080\u3002", "en": "I read a book at the library." },
+        { "jp": "\u96fb\u8eca\u3067\u5b66\u6821\u306b\u884c\u304f\u3002", "en": "I go to school by train." }
+      ]
+    },
+    {
+      "particle": "\u3068",
+      "level": "N5",
+      "category": "case",
+      "meaning_en": "Exhaustive 'and' between nouns, 'with' (accompaniment), or introduces a quotation/thought.",
+      "usage_note": "Unlike \u3084, \u3068 lists every item \u2014 \u30ea\u30f3\u30b4\u3068\u30d0\u30ca\u30ca means exactly apples and bananas, nothing else. As a quotation marker it precedes 言う, 思う, 聞く, etc.",
+      "examples": [
+        { "jp": "\u53cb\u9054\u3068\u6620\u753b\u3092\u898b\u308b\u3002", "en": "I watch a movie with a friend." },
+        { "jp": "\u5f7c\u306f\u300c\u884c\u304d\u305f\u3044\u300d\u3068\u8a00\u3063\u305f\u3002", "en": "He said, \"I want to go.\"" }
+      ]
+    },
+    {
+      "particle": "\u3082",
+      "level": "N5",
+      "category": "binding",
+      "meaning_en": "'Also / too', or emphatic 'even / as many as' with numbers.",
+      "usage_note": "Replaces \u306f/\u304c/\u3092 in the same slot (\u79c1\u3082\u5b66\u751f\u3067\u3059, not \u79c1\u306f\u3082). With a number it can emphasize surprise at quantity: \u30ea\u30f3\u30b4\u3092\u5341\u500b\u3082\u98df\u3079\u305f 'ate as many as ten apples'.",
+      "examples": [
+        { "jp": "\u79c1\u3082\u5b66\u751f\u3067\u3059\u3002", "en": "I am also a student." },
+        { "jp": "\u30b1\u30fc\u30ad\u3092\u4e94\u3064\u3082\u98df\u3079\u305f\u3002", "en": "I ate as many as five cakes." }
+      ]
+    },
+    {
+      "particle": "\u306e",
+      "level": "N5",
+      "category": "case",
+      "meaning_en": "Possessive/attributive 'of', or nominalizes a verb or clause into a noun-like phrase.",
+      "usage_note": "\u79c1\u306e\u672c 'my book' is the basic possessive use. \u30ce\u5316 (nominalization) lets a verb phrase act as a noun: \u6ce3\u304f\u306e\u3092\u3084\u3081\u308b 'stop the crying' / stop crying.",
+      "examples": [
+        { "jp": "\u3053\u308c\u306f\u79c1\u306e\u30da\u30f3\u3067\u3059\u3002", "en": "This is my pen." },
+        { "jp": "\u6cf3\u3050\u306e\u304c\u597d\u304d\u3067\u3059\u3002", "en": "I like swimming." }
+      ]
+    },
+    {
+      "particle": "\u304b\u3089",
+      "level": "N5",
+      "category": "case",
+      "meaning_en": "'From' (a place, time, or source); when attached to a plain-form clause, 'because'.",
+      "usage_note": "As a reason marker, \u304b\u3089 is more subjective/conversational than \u306e\u3067 and can stand alone as an answer ('Why?' \u2014 '\u5bd2\u3044\u304b\u3089' 'Because it's cold').",
+      "examples": [
+        { "jp": "\u4e5d\u6642\u304b\u3089\u4ed5\u4e8b\u3092\u3059\u308b\u3002", "en": "I work from nine o'clock." },
+        { "jp": "\u5bd2\u3044\u304b\u3089\u3001\u30b3\u30fc\u30c8\u3092\u7740\u308b\u3002", "en": "Because it's cold, I wear a coat." }
+      ]
+    },
+    {
+      "particle": "\u307e\u3067",
+      "level": "N5",
+      "category": "case",
+      "meaning_en": "'Until / up to' (a place or time), marking an endpoint.",
+      "usage_note": "Often paired with \u304b\u3089 in \u304b\u3089\u301c\u307e\u3067 'from ... to ...'.",
+      "examples": [
+        { "jp": "\u4e94\u6642\u307e\u3067\u5f85\u3064\u3002", "en": "I'll wait until five o'clock." },
+        { "jp": "\u9a5b\u304b\u3089\u6771\u4eac\u307e\u3067\u96fb\u8eca\u3067\u884c\u304f\u3002", "en": "I go by train from Osaka to Tokyo." }
+      ]
+    },
+    {
+      "particle": "\u3084",
+      "level": "N5",
+      "category": "case",
+      "meaning_en": "Non-exhaustive 'and' \u2014 lists a few representative examples among others.",
+      "usage_note": "Compare \u3068: \u30ea\u30f3\u30b4\u3084\u30d0\u30ca\u30ca implies there might be other fruit too, not just those two. Often paired with \u306a\u3069 ('etc.') for extra clarity: \u30ea\u30f3\u30b4\u3084\u30d0\u30ca\u30ca\u306a\u3069.",
+      "examples": [
+        { "jp": "\u672c\u3084\u30ce\u30fc\u30c8\u3092\u30ab\u30d0\u30f3\u306b\u5165\u308c\u308b\u3002", "en": "I put things like books and notebooks in my bag." }
+      ]
+    },
+    {
+      "particle": "\u304b",
+      "level": "N5",
+      "category": "binding",
+      "meaning_en": "Turns a statement into a question, or means 'or' between alternatives.",
+      "usage_note": "In casual speech, rising intonation alone often replaces か (\u884c\u304f\uff1f), but か is standard in polite/written Japanese and required in embedded questions (\u884c\u304f\u304b\u3069\u3046\u304b\u308f\u304b\u3089\u306a\u3044 'I don't know whether I'll go').",
+      "examples": [
+        { "jp": "\u3053\u308c\u306f\u672c\u3067\u3059\u304b\u3002", "en": "Is this a book?" },
+        { "jp": "\u30b3\u30fc\u30d2\u30fc\u304b\u7d05\u8336\u304c\u3044\u3044\u3067\u3059\u304b\u3002", "en": "Would you like coffee or tea?" }
+      ]
+    },
+    {
+      "particle": "\u306d",
+      "level": "N5",
+      "category": "sentence-final",
+      "meaning_en": "Seeks agreement or confirmation \u2014 roughly 'right?' / 'isn't it?'.",
+      "usage_note": "Softens a statement and invites the listener to agree, unlike よ which asserts new information toward the listener.",
+      "examples": [
+        { "jp": "\u4eca\u65e5\u306f\u5bd2\u3044\u3067\u3059\u306d\u3002", "en": "It's cold today, isn't it?" }
+      ]
+    },
+    {
+      "particle": "\u3088",
+      "level": "N5",
+      "category": "sentence-final",
+      "meaning_en": "Asserts or emphasizes information the speaker believes the listener doesn't know.",
+      "usage_note": "Can sound pushy if overused with someone of higher status; softer alternatives exist in polite speech (e.g. adding \u3088 to です/ます forms rather than plain forms).",
+      "examples": [
+        { "jp": "\u3082\u3046\u4e5d\u6642\u3067\u3059\u3088\u3002", "en": "It's already nine o'clock, you know." }
+      ]
+    },
+    {
+      "particle": "\u3078",
+      "level": "N5",
+      "category": "case",
+      "meaning_en": "'Toward' \u2014 marks the direction of movement.",
+      "usage_note": "Written \u3078 but pronounced \u3048 in this role. Largely interchangeable with に for destinations, but \u3078 emphasizes the direction of travel rather than the endpoint itself.",
+      "examples": [
+        { "jp": "\u6771\u4eac\u3078\u884c\u304f\u3002", "en": "I'm going to (toward) Tokyo." }
+      ]
+    },
+    {
+      "particle": "\u304f\u3089\u3044/\u3050\u3089\u3044",
+      "level": "N5",
+      "category": "binding",
+      "meaning_en": "'About / approximately' with quantities, or 'to the extent of' for comparison.",
+      "usage_note": "\u3050\u3089\u3044 is common after a voiced sound (\u4e94\u5206\u304f\u3089\u3044/\u4e94\u5206\u3050\u3089\u3044 are both heard); either is fine in casual speech.",
+      "examples": [
+        { "jp": "\u99c5\u307e\u3067\u4e94\u5206\u304f\u3089\u3044\u304b\u304b\u308b\u3002", "en": "It takes about five minutes to the station." }
+      ]
+    },
+    {
+      "particle": "\u3060\u3051",
+      "level": "N5",
+      "category": "binding",
+      "meaning_en": "'Only / just' \u2014 sets an upper limit, neutral in tone.",
+      "usage_note": "Compare しか: だけ is neutral ('just this much'), while しか + negative verb has a stronger 'nothing but this' feel.",
+      "examples": [
+        { "jp": "\u3053\u308c\u3060\u3051\u9858\u3044\u3092\u3057\u307e\u3059\u3002", "en": "I'll ask just this one favor." }
+      ]
+    },
+    {
+      "particle": "\u3057\u304b",
+      "level": "N5",
+      "category": "binding",
+      "meaning_en": "'Only / nothing but' \u2014 always paired with a negative verb.",
+      "usage_note": "The negative verb is grammatically required even though the sentence is not semantically negative: \u767e\u5186\u3057\u304b\u306a\u3044 literally 'there isn't [anything] but 100 yen' = 'there's only 100 yen'.",
+      "examples": [
+        { "jp": "\u767e\u5186\u3057\u304b\u306a\u3044\u3002", "en": "I only have 100 yen." }
+      ]
+    },
+    {
+      "particle": "\u306a\u304c\u3089",
+      "level": "N4",
+      "category": "conjunctive",
+      "meaning_en": "'While doing' \u2014 two actions performed by the same person at once.",
+      "usage_note": "Attaches to a verb's ます-stem (\u98f2\u307f\u306a\u304c\u3089, from 飲みます). The subject must be the same for both actions.",
+      "examples": [
+        { "jp": "\u97f3\u697d\u3092\u8074\u304d\u306a\u304c\u3089\u52c9\u5f37\u3059\u308b\u3002", "en": "I study while listening to music." }
+      ]
+    },
+    {
+      "particle": "\u306e\u3067",
+      "level": "N4",
+      "category": "conjunctive",
+      "meaning_en": "'Because / since' \u2014 gives an objective-sounding reason.",
+      "usage_note": "Softer and more polite-sounding than から; common when explaining a reason to someone you don't know well, or when making a request (雨が降っているので、傘を貸してください).",
+      "examples": [
+        { "jp": "\u96e8\u304c\u964d\u3063\u3066\u3044\u308b\u306e\u3067\u3001\u5098\u3092\u6301\u3063\u3066\u3044\u304f\u3002", "en": "Since it's raining, I'll bring an umbrella." }
+      ]
+    },
+    {
+      "particle": "\u306e\u306b",
+      "level": "N4",
+      "category": "conjunctive",
+      "meaning_en": "'Although / despite' \u2014 often with a sense of surprise, frustration, or unmet expectation.",
+      "usage_note": "Unlike \u3051\u3069/\u304c ('but', neutral), \u306e\u306b carries emotional weight \u2014 the outcome contradicts what was expected or hoped for.",
+      "examples": [
+        { "jp": "\u52c9\u5f37\u3057\u305f\u306e\u306b\u3001\u8a66\u9a13\u306b\u843d\u3061\u305f\u3002", "en": "Even though I studied, I failed the test." }
+      ]
+    },
+    {
+      "particle": "\u3051\u3069/\u3051\u308c\u3069/\u3051\u308c\u3069\u3082",
+      "level": "N4",
+      "category": "conjunctive",
+      "meaning_en": "'But / although' \u2014 a softer, more conversational version of \u304c.",
+      "usage_note": "\u3051\u3069 is casual, \u3051\u308c\u3069\u3082 the most formal of the three. Also used to gently introduce a topic without strong contrast: \u4eca\u65e5\u884c\u304f\u3093\u3060\u3051\u3069\u3001\u4e00\u7dd2\u306b\u3069\u3046\uff1f 'I'm going today \u2014 want to come along?'",
+      "examples": [
+        { "jp": "\u5b89\u3044\u3051\u3069\u3001\u5473\u306f\u3044\u3044\u3002", "en": "It's cheap, but it tastes good." }
+      ]
+    },
+    {
+      "particle": "\u3070\u304b\u308a",
+      "level": "N4",
+      "category": "binding",
+      "meaning_en": "'Only / nothing but', or 'just did X' right after a verb's past-plain form.",
+      "usage_note": "遊んでばかりいる 'does nothing but play' criticizes an excessive habit. 食べたばかりだ 'just ate' marks something that happened moments ago.",
+      "examples": [
+        { "jp": "\u30b2\u30fc\u30e0\u3070\u304b\u308a\u3057\u3066\u3044\u308b\u3002", "en": "All he does is play games." },
+        { "jp": "\u3055\u3063\u304d\u98df\u3079\u305f\u3070\u304b\u308a\u3060\u3002", "en": "I just ate." }
+      ]
+    },
+    {
+      "particle": "\u3068\u304b",
+      "level": "N4",
+      "category": "binding",
+      "meaning_en": "Casual, non-exhaustive listing \u2014 'things like X and Y'.",
+      "usage_note": "More conversational than \u3084; very common in spoken Japanese, including after a single item to soften a statement (行くとか言ってたよ 'he said something like he'd go').",
+      "examples": [
+        { "jp": "\u30b5\u30c3\u30ab\u30fc\u3068\u304b\u30d0\u30b9\u30b1\u30c3\u30c8\u3068\u304b\u304c\u597d\u304d\u3067\u3059\u3002", "en": "I like things like soccer and basketball." }
+      ]
+    },
+    {
+      "particle": "\u3067\u3082",
+      "level": "N4",
+      "category": "binding",
+      "meaning_en": "'Even' (with a noun), or 'but/however' at the start of a sentence.",
+      "usage_note": "コーヒーでも飲みますか uses でも loosely to mean 'or something' \u2014 softening a suggestion rather than listing exhaustively.",
+      "examples": [
+        { "jp": "\u5b50\u4f9b\u3067\u3082\u77e5\u3063\u3066\u3044\u308b\u3002", "en": "Even a child knows that." },
+        { "jp": "\u30b3\u30fc\u30d2\u30fc\u3067\u3082\u98f2\u307f\u307e\u305b\u3093\u304b\u3002", "en": "Would you like some coffee or something?" }
+      ]
+    },
+    {
+      "particle": "\u3057",
+      "level": "N4",
+      "category": "conjunctive",
+      "meaning_en": "Lists reasons or qualities, implying there are more \u2014 'and what's more...'.",
+      "usage_note": "Stacks multiple justifications for a conclusion: 安いし、おいしいし、また行きたい 'it's cheap, and it's tasty, so I want to go again'.",
+      "examples": [
+        { "jp": "\u5b89\u3044\u3057\u3001\u304a\u3044\u3057\u3044\u3057\u3001\u307e\u305f\u884c\u304d\u305f\u3044\u3002", "en": "It's cheap, and it's tasty, so I want to go again." }
+      ]
+    },
+    {
+      "particle": "\u3055\u3048",
+      "level": "N3",
+      "category": "binding",
+      "meaning_en": "'Even' \u2014 highlights an extreme example to make a point.",
+      "usage_note": "Often used in the pattern さえ〜ば 'if only even X' for a minimal condition: これさえあれば大丈夫 'as long as I have even just this, I'll be fine'.",
+      "examples": [
+        { "jp": "\u5b50\u4f9b\u3055\u3048\u3067\u304d\u308b\u3002", "en": "Even a child can do it." }
+      ]
+    },
+    {
+      "particle": "\u3053\u305d",
+      "level": "N3",
+      "category": "binding",
+      "meaning_en": "Emphasizes the preceding word \u2014 'precisely / it is X that...'.",
+      "usage_note": "Frequently used to politely deflect thanks: \u3053\u3061\u3089\u3053\u305d 'no, it is I (who should be thanking you)'.",
+      "examples": [
+        { "jp": "\u4eca\u5e74\u3053\u305d\u9805\u5f35\u308a\u305f\u3044\u3002", "en": "This year, of all years, I want to do my best." }
+      ]
+    },
+    {
+      "particle": "\u304f\u305b\u306b",
+      "level": "N3",
+      "category": "conjunctive",
+      "meaning_en": "'Even though / and yet' \u2014 with a critical or annoyed tone.",
+      "usage_note": "Similar territory to のに, but more openly judgmental \u2014 it implies the subject should have acted otherwise. Best used carefully; can sound accusatory.",
+      "examples": [
+        { "jp": "\u77e5\u3063\u3066\u3044\u308b\u304f\u305b\u306b\u3001\u6559\u3048\u3066\u304f\u308c\u306a\u3044\u3002", "en": "Even though he knows, he won't tell me." }
+      ]
+    },
+    {
+      "particle": "\u307b\u3069",
+      "level": "N3",
+      "category": "case",
+      "meaning_en": "'To the extent of' \u2014 comparison or degree.",
+      "usage_note": "In the pattern 〜ば〜ほど 'the more X, the more Y': 高ければ高いほどいい 'the more expensive, the better' (used ironically/literally). Also used to soften: 死ぬほど疲れた 'tired to death (i.e. extremely)'.",
+      "examples": [
+        { "jp": "\u6b7b\u306c\u307b\u3069\u75b2\u308c\u305f\u3002", "en": "I was tired to death." }
+      ]
+    },
+    {
+      "particle": "\u3063\u3066",
+      "level": "N3",
+      "category": "binding",
+      "meaning_en": "Casual topic marker or quotation, standing in for \u306f or \u3068.",
+      "usage_note": "Extremely common in spoken Japanese: 田中さんって知ってる? 'Do you know [the person called] Tanaka?' Also reports hearsay: 明日休みだって 'I heard tomorrow's a day off'.",
+      "examples": [
+        { "jp": "\u65e5\u672c\u8a9e\u3063\u3066\u96e3\u3057\u3044\u3067\u3059\u304b\u3002", "en": "Is Japanese (the thing called Japanese) difficult?" }
+      ]
+    },
+    {
+      "particle": "\u3088\u308a",
+      "level": "N5",
+      "category": "case",
+      "meaning_en": "'Than' in comparisons; in formal/written Japanese, also 'from'.",
+      "usage_note": "Marks the thing being compared against: これはそれより大きい 'this is bigger than that'. In formal writing (train announcements, letters) より can also mean 'from', overlapping with から.",
+      "examples": [
+        { "jp": "\u96fb\u8eca\u306f\u30d0\u30b9\u3088\u308a\u901f\u3044\u3002", "en": "Trains are faster than buses." }
+      ]
+    },
+    {
+      "particle": "\u305f\u308a",
+      "level": "N4",
+      "category": "conjunctive",
+      "meaning_en": "Lists representative actions among others \u2014 'doing things like X and Y'.",
+      "usage_note": "Almost always appears at least twice in the pattern 〜たり〜たりする: 週末は本を読んだり、映画を見たりする 'on weekends I do things like reading and watching movies'.",
+      "examples": [
+        { "jp": "\u9031\u672b\u306f\u672c\u3092\u8aad\u3093\u3060\u308a\u3001\u6620\u753b\u3092\u898b\u305f\u308a\u3059\u308b\u3002", "en": "On weekends I do things like read books and watch movies." }
+      ]
+    },
+    {
+      "particle": "\u306a",
+      "level": "N4",
+      "category": "sentence-final",
+      "meaning_en": "After a dictionary-form verb, a blunt prohibition 'don't do X'; can also soften an exclamation in casual speech.",
+      "usage_note": "食べるな 'don't eat (it)!' is direct and can sound harsh \u2014 typically used by men, in signs, or toward close friends/family. As a softer exclamation (いい天気だな 'nice weather, huh') it's closer to ね but more casual/self-directed.",
+      "examples": [
+        { "jp": "\u3053\u3053\u306b\u5165\u308b\u306a\u3002", "en": "Don't enter here." }
+      ]
+    },
+    {
+      "particle": "\u308f",
+      "level": "N5",
+      "category": "sentence-final",
+      "meaning_en": "Softens a statement with a gentle, personal-feeling assertion.",
+      "usage_note": "Traditionally associated with women's speech in standard Tokyo Japanese, though usage varies by region and generation (it's part of ordinary casual speech in Kansai dialect for all speakers). Rising intonation adds gentleness; it's rarely taught for active use by learners but worth recognizing.",
+      "examples": [
+        { "jp": "\u79c1\u3082\u884c\u304f\u308f\u3002", "en": "I'll go too." }
+      ]
+    },
+    {
+      "particle": "\u304b\u306a",
+      "level": "N4",
+      "category": "sentence-final",
+      "meaning_en": "'I wonder...' \u2014 a soft, musing question, often to oneself.",
+      "usage_note": "Softer and more introspective than か: 雨が降るかな 'I wonder if it'll rain' doesn't demand an answer the way a direct question would.",
+      "examples": [
+        { "jp": "\u660e\u65e5\u306f\u6674\u308c\u308b\u304b\u306a\u3002", "en": "I wonder if it'll be sunny tomorrow." }
+      ]
+    },
+    {
+      "particle": "\u305e/\u305c",
+      "level": "N3",
+      "category": "sentence-final",
+      "meaning_en": "Blunt, forceful emphasis \u2014 strongly associated with masculine or rough speech.",
+      "usage_note": "ぞ is the more common of the two; ぜ is somewhat rougher/older-sounding. Both mainly appear in fiction and casual male speech (行くぞ 'let's go!' as self-encouragement or to a group) \u2014 worth recognizing in media, not typically used by learners in polite contexts.",
+      "examples": [
+        { "jp": "\u3055\u3042\u3001\u884c\u304f\u305e\u3002", "en": "All right, let's go!" }
+      ]
+    },
+    {
+      "particle": "\u306b\u3064\u3044\u3066",
+      "level": "N3",
+      "category": "compound-case",
+      "meaning_en": "'About / concerning' \u2014 introduces the topic being discussed.",
+      "usage_note": "The most neutral, general-purpose way to say 'about X'; safe as a default in essays, reports, and questions.",
+      "examples": [
+        { "jp": "\u65e5\u672c\u306e\u6b74\u53f2\u306b\u3064\u3044\u3066\u8a71\u3059\u3002", "en": "I'll talk about Japanese history." }
+      ]
+    },
+    {
+      "particle": "\u306b\u3068\u3063\u3066",
+      "level": "N3",
+      "category": "compound-case",
+      "meaning_en": "'For / from the standpoint of' \u2014 evaluates something from a particular perspective.",
+      "usage_note": "Frames a judgment as specific to that person/thing's viewpoint: 私にとって家族が一番大切だ 'for me, family matters most (though others might rank things differently)'.",
+      "examples": [
+        { "jp": "\u5b50\u4f9b\u306b\u3068\u3063\u3066\u3001\u30b2\u30fc\u30e0\u306f\u5927\u5207\u3060\u3002", "en": "For children, games are important." }
+      ]
+    },
+    {
+      "particle": "\u306b\u3088\u3063\u3066",
+      "level": "N3",
+      "category": "compound-case",
+      "meaning_en": "'By / due to / depending on' \u2014 marks an agent, cause, or varying factor.",
+      "usage_note": "Marks the agent in a passive sentence (この小説は夏目漱石によって書かれた 'written by Natsume Soseki'), a cause, or a factor that something varies by (人によって違う 'it varies by person').",
+      "examples": [
+        { "jp": "\u3053\u306e\u5c0f\u8aac\u306f\u590f\u76ee\u6f31\u77f3\u306b\u3088\u3063\u3066\u66f8\u304b\u308c\u305f\u3002", "en": "This novel was written by Natsume Soseki." }
+      ]
+    },
+    {
+      "particle": "\u306b\u5bfe\u3057\u3066",
+      "level": "N3",
+      "category": "compound-case",
+      "meaning_en": "'Towards / in contrast to' \u2014 directs an action or attitude at something, or contrasts two things.",
+      "usage_note": "Sets up a target for an attitude/action (\u5b50\u4f9b\u306b\u5bfe\u3057\u3066\u512a\u3057\u3044 'kind toward children') or contrasts two facts (兄は外向的なのに対して、弟は内向的だ).",
+      "examples": [
+        { "jp": "\u5148\u751f\u306b\u5bfe\u3057\u3066\u5931\u793c\u306a\u614b\u5ea6\u3092\u3068\u3063\u305f\u3002", "en": "He took a rude attitude towards the teacher." }
+      ]
+    },
+    {
+      "particle": "\u306b\u95a2\u3057\u3066",
+      "level": "N3",
+      "category": "compound-case",
+      "meaning_en": "'Regarding / with respect to' \u2014 a more formal register of について.",
+      "usage_note": "Common in written reports, news, and formal speech; について is the everyday equivalent.",
+      "examples": [
+        { "jp": "\u4e8b\u4ef6\u306b\u95a2\u3057\u3066\u3001\u8b66\u5bdf\u304c\u8abf\u3079\u3066\u3044\u308b\u3002", "en": "The police are investigating regarding the incident." }
+      ]
+    },
+    {
+      "particle": "\u3059\u3089",
+      "level": "N2",
+      "category": "binding",
+      "meaning_en": "'Even' \u2014 a more formal/literary version of さえ, often stressing an extreme, unexpected case.",
+      "usage_note": "Frequently paired with a negative for emphasis: 想像すらできない 'I can't even imagine it'.",
+      "examples": [
+        { "jp": "\u305d\u306e\u4e8b\u5b9f\u3092\u60f3\u50cf\u3059\u3089\u3067\u304d\u306a\u304b\u3063\u305f\u3002", "en": "I couldn't even imagine that fact." }
+      ]
+    },
+    {
+      "particle": "\u3092\u3081\u3050\u3063\u3066",
+      "level": "N2",
+      "category": "compound-case",
+      "meaning_en": "'Over / concerning (a dispute or contested issue)'.",
+      "usage_note": "Specifically frames something as being argued or competed over, not just discussed \u2014 その土地をめぐって争いが起きた 'a dispute broke out over that land'.",
+      "examples": [
+        { "jp": "\u9057\u7523\u3092\u3081\u3050\u3063\u3066\u5175\u5f1f\u304c\u4e89\u3046\u3002", "en": "The siblings fight over the inheritance." }
+      ]
+    },
+    {
+      "particle": "\u306b\u3057\u305f\u304c\u3063\u3066",
+      "level": "N2",
+      "category": "compound-case",
+      "meaning_en": "'In accordance with / as ... then ...' \u2014 tracks a change that proceeds alongside another.",
+      "usage_note": "Two senses: 'following a rule/instruction' (指示にしたがって進める) or 'as one thing changes, so does another' (収入が増えるにしたがって、支出も増える).",
+      "examples": [
+        { "jp": "\u53ce\u5165\u304c\u5897\u3048\u308b\u306b\u3057\u305f\u304c\u3063\u3066\u3001\u652f\u51fa\u3082\u5897\u3048\u308b\u3002", "en": "As income increases, spending increases too." }
+      ]
+    },
+    {
+      "particle": "\u306b\u304a\u3044\u3066",
+      "level": "N2",
+      "category": "compound-case",
+      "meaning_en": "Formal 'at / in' \u2014 a written-register version of で marking the setting of an event.",
+      "usage_note": "Standard in formal writing and speeches; rarely used in casual conversation, where で covers the same ground.",
+      "examples": [
+        { "jp": "\u958b\u5e55\u5f0f\u306f\u6771\u4eac\u306b\u304a\u3044\u3066\u884c\u308f\u308c\u305f\u3002", "en": "The opening ceremony was held in Tokyo." }
+      ]
+    },
+    {
+      "particle": "\u3082\u306e\u306e",
+      "level": "N2",
+      "category": "conjunctive",
+      "meaning_en": "'Although / while it's true that...' \u2014 concedes a point before a contrasting statement.",
+      "usage_note": "More literary than けど/のに; common in essays and formal writing to acknowledge one fact while pivoting to another.",
+      "examples": [
+        { "jp": "\u53c2\u52a0\u3059\u308b\u3082\u306e\u306e\u3001\u3042\u307e\u308a\u671f\u5f85\u3057\u3066\u3044\u306a\u3044\u3002", "en": "Although I'm participating, I'm not expecting much." }
+      ]
+    },
+    {
+      "particle": "\u3069\u3053\u308d\u304b",
+      "level": "N2",
+      "category": "binding",
+      "meaning_en": "'Far from / let alone' \u2014 flatly rejects a mild claim in favor of a stronger, often opposite, one.",
+      "usage_note": "Sets up a strong contrast: 忙しいどころか、暇で仕方ない 'far from busy, I'm bored out of my mind'.",
+      "examples": [
+        { "jp": "\u6669\u3057\u3044\u3069\u3053\u308d\u304b\u3001\u3068\u3066\u3082\u512a\u3057\u3044\u3002", "en": "Far from mean, he's actually very kind." }
+      ]
+    },
+    {
+      "particle": "\u306a\u3093\u3066",
+      "level": "N2",
+      "category": "binding",
+      "meaning_en": "Casual, often disdainful or surprised 'such a thing as...'.",
+      "usage_note": "Colloquial version of と/という, colored with surprise, contempt, or self-deprecation: 私が優勝するなんて信じられない 'I can't believe [a thing like] me winning'.",
+      "examples": [
+        { "jp": "\u96ea\u304c\u964d\u308b\u306a\u3093\u3066\u601d\u308f\u306a\u304b\u3063\u305f\u3002", "en": "I didn't think it would (of all things) snow." }
+      ]
+    },
+    {
+      "particle": "\u3060\u306b",
+      "level": "N1",
+      "category": "binding",
+      "meaning_en": "Literary 'not even' \u2014 an intensified, formal version of さえ/すら used almost exclusively with negatives.",
+      "usage_note": "Rare in conversation; mostly seen in formal writing and set phrases like 想像だにしなかった 'I hadn't even imagined it'.",
+      "examples": [
+        { "jp": "\u305d\u3093\u306a\u3053\u3068\u306f\u60f3\u50cf\u3060\u306b\u3057\u306a\u304b\u3063\u305f\u3002", "en": "I hadn't even imagined such a thing." }
+      ]
+    },
+    {
+      "particle": "\u3068\u3044\u3048\u3069\u3082",
+      "level": "N1",
+      "category": "conjunctive",
+      "meaning_en": "Formal 'even though / notwithstanding' \u2014 concedes a strong point before a contrasting conclusion.",
+      "usage_note": "More literary than のに/けれども; common in formal speeches and writing.",
+      "examples": [
+        { "jp": "\u56f0\u96e3\u3067\u3042\u308b\u3068\u3044\u3048\u3069\u3082\u3001\u8ab0\u304b\u304c\u3084\u3089\u306d\u3070\u306a\u3089\u306a\u3044\u3002", "en": "Difficult though it may be, someone has to do it." }
+      ]
+    },
+    {
+      "particle": "\u306b\u3068\u3069\u307e\u3089\u305a",
+      "level": "N1",
+      "category": "compound-case",
+      "meaning_en": "'Not limited to / extending beyond' \u2014 a fact applies beyond the expected scope.",
+      "usage_note": "Frequently used to expand a claim from a specific case to a broader one: この問題は日本にとどまらず、世界的な課題だ 'this issue isn't limited to Japan \u2014 it's a global one'.",
+      "examples": [
+        { "jp": "\u5f71\u97ff\u306f\u56fd\u5185\u306b\u3068\u3069\u307e\u3089\u305a\u3001\u6d77\u5916\u306b\u3082\u53ca\u3093\u3060\u3002", "en": "The impact wasn't limited to the country \u2014 it reached overseas too." }
+      ]
+    },
+    {
+      "particle": "\u3092\u3082\u3063\u3066",
+      "level": "N1",
+      "category": "compound-case",
+      "meaning_en": "'By means of / with' \u2014 formal, marking the method, timing boundary, or basis for something official.",
+      "usage_note": "Common in formal announcements to mark an exact cutoff: 本日をもって終了します 'this concludes as of today'.",
+      "examples": [
+        { "jp": "\u672c\u65e5\u3092\u3082\u3063\u3066\u3001\u55b6\u696d\u3092\u7d42\u4e86\u3044\u305f\u3057\u307e\u3059\u3002", "en": "As of today, we conclude business." }
+      ]
+    },
+    {
+      "particle": "\u3078\u3084",
+      "level": "N1",
+      "category": "conjunctive",
+      "meaning_en": "Literary 'as soon as' \u2014 the second event follows the first almost instantly.",
+      "usage_note": "Attaches to dictionary form: 家を出るや否や雨が降り出した 'no sooner had I left the house than it started raining'. Almost exclusively written/literary register.",
+      "examples": [
+        { "jp": "\u5bb6\u3092\u51fa\u308b\u3084\u5426\u3084\u3001\u96e8\u304c\u964d\u308a\u51fa\u3057\u305f\u3002", "en": "No sooner had I left the house than it started raining." }
+      ]
+    },
+    {
+      "particle": "\u306a\u3044\u3057",
+      "level": "N1",
+      "category": "binding",
+      "meaning_en": "Formal 'or' between alternatives, or 'that is to say' clarifying a preceding term.",
+      "usage_note": "Written-register alternative to か/または; common in official documents and formal announcements.",
+      "examples": [
+        { "jp": "\u73fe\u91d1\u306a\u3044\u3057\u30ab\u30fc\u30c9\u3067\u304a\u652f\u6255\u3044\u304f\u3060\u3055\u3044\u3002", "en": "Please pay by cash or card." }
+      ]
+    }
+  ]
+}

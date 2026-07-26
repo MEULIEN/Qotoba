@@ -1,0 +1,194 @@
+{
+  "meta": {
+    "description": "Japanese adjective conjugation system",
+    "types": ["i-adjective", "na-adjective"],
+    "known_exceptions": [
+      {
+        "word": "\u3044\u3044",
+        "alt_form": "\u826f\u3044",
+        "reading": "ii / yoi",
+        "meaning": "good",
+        "type": "i-adjective",
+        "note": "The one truly irregular i-adjective. \u3044\u3044 is only used in the dictionary form and the polite present (\u3044\u3044\u3067\u3059). Every other form is built on the stem \u3088- instead of \u3044-: \u826f\u304f\u306a\u3044 (not \u3044\u304f\u306a\u3044), \u826f\u304b\u3063\u305f (not \u3044\u304b\u3063\u305f), \u826f\u3051\u308c\u3070, etc. This is a very well known exception and any general 'remove \u3044 and add X' rule needs a special case for this one word."
+      }
+    ]
+  },
+  "forms": [
+    {
+      "name_en": "dictionary",
+      "name_jp": "\u3058\u3057\u3087\u3051\u3044",
+      "usage_en": "The basic plain form used to end a sentence informally or as a base for other forms.",
+      "structure": {
+        "i-adjective": { "ending": "\u3044", "rule": "no change", "result": "\u3044" },
+        "na-adjective": {
+          "ending": "(stem)",
+          "rule": "the citation/dictionary form is the bare stem (e.g. \u9759\u304b); \u3060 is the plain copula added to end a sentence, not part of the word itself",
+          "result": "\u3060",
+          "note": "Dictionaries list na-adjectives as the bare stem alone. We include \u3060 here because this row represents 'plain form used to end a sentence' to stay parallel with the i-adjective row above."
+        }
+      }
+    },
+    {
+      "name_en": "polite present",
+      "name_jp": "\u3066\u3044\u306d\u3044\u3051\u3044",
+      "usage_en": "The standard polite present form used in formal conversation.",
+      "structure": {
+        "i-adjective": { "ending": "\u3044", "rule": "add \u3067\u3059 to dictionary form", "result": "\u3044\u3067\u3059" },
+        "na-adjective": { "ending": "(stem)", "rule": "add \u3067\u3059 to the stem", "result": "\u3067\u3059" }
+      }
+    },
+    {
+      "name_en": "negative plain",
+      "name_jp": "\u3072\u3066\u3044\u3051\u3044",
+      "usage_en": "Casual negative form expressing 'is not'.",
+      "structure": {
+        "i-adjective": { "ending": "\u3044", "rule": "remove \u3044 and add \u304f\u306a\u3044", "result": "\u304f\u306a\u3044" },
+        "na-adjective": { "ending": "(stem)", "rule": "add \u3067\u306f\u306a\u3044 (colloquially \u3058\u3083\u306a\u3044) to the stem", "result": "\u3067\u306f\u306a\u3044" }
+      }
+    },
+    {
+      "name_en": "negative polite",
+      "name_jp": "\u3072\u3066\u3044\u306e\u3066\u3044\u306d\u3044\u3051\u3044",
+      "usage_en": "Formal negative form for polite communication.",
+      "structure": {
+        "i-adjective": { "ending": "\u3044", "rule": "remove \u3044 and add \u304f\u3042\u308a\u307e\u305b\u3093 or \u304f\u306a\u3044\u3067\u3059", "result": "\u304f\u306a\u3044\u3067\u3059" },
+        "na-adjective": { "ending": "(stem)", "rule": "add \u3067\u306f\u3042\u308a\u307e\u305b\u3093 to the stem", "result": "\u3067\u306f\u3042\u308a\u307e\u305b\u3093" }
+      }
+    },
+    {
+      "name_en": "past plain",
+      "name_jp": "\u304b\u3053\u3051\u3044",
+      "usage_en": "Informal past tense to express 'was'.",
+      "structure": {
+        "i-adjective": { "ending": "\u3044", "rule": "remove \u3044 and add \u304b\u3063\u305f", "result": "\u304b\u3063\u305f" },
+        "na-adjective": { "ending": "(stem)", "rule": "add \u3060\u3063\u305f to the stem", "result": "\u3060\u3063\u305f" }
+      }
+    },
+    {
+      "name_en": "past polite",
+      "name_jp": "\u3066\u3044\u306d\u3044\u304b\u3053\u3051\u3044",
+      "usage_en": "Formal past tense for polite communication.",
+      "structure": {
+        "i-adjective": { "ending": "\u3044", "rule": "remove \u3044 and add \u304b\u3063\u305f\u3067\u3059", "result": "\u304b\u3063\u305f\u3067\u3059" },
+        "na-adjective": { "ending": "(stem)", "rule": "add \u3067\u3057\u305f to the stem", "result": "\u3067\u3057\u305f" }
+      }
+    },
+    {
+      "name_en": "past negative plain",
+      "name_jp": "\u304b\u3053\u306e\u3072\u3066\u3044\u3051\u3044",
+      "usage_en": "Casual past negative form for 'was not'.",
+      "structure": {
+        "i-adjective": { "ending": "\u3044", "rule": "remove \u3044 and add \u304f\u306a\u304b\u3063\u305f", "result": "\u304f\u306a\u304b\u3063\u305f" },
+        "na-adjective": { "ending": "(stem)", "rule": "add \u3067\u306f\u306a\u304b\u3063\u305f to the stem", "result": "\u3067\u306f\u306a\u304b\u3063\u305f" }
+      }
+    },
+    {
+      "name_en": "past negative polite",
+      "name_jp": "\u304b\u3053\u306e\u3072\u3066\u3044\u306e\u3066\u3044\u306d\u3044\u3051\u3044",
+      "usage_en": "Formal past negative form.",
+      "structure": {
+        "i-adjective": { "ending": "\u3044", "rule": "remove \u3044 and add \u304f\u306a\u304b\u3063\u305f\u3067\u3059 or \u304f\u3042\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "result": "\u304f\u306a\u304b\u3063\u305f\u3067\u3059" },
+        "na-adjective": { "ending": "(stem)", "rule": "add \u3067\u306f\u3042\u308a\u307e\u305b\u3093\u3067\u3057\u305f to the stem", "result": "\u3067\u306f\u3042\u308a\u307e\u305b\u3093\u3067\u3057\u305f" }
+      }
+    },
+    {
+      "name_en": "adverbial",
+      "name_jp": "\u3075\u304f\u3057\u3051\u3044",
+      "usage_en": "Converts the adjective into an adverb to modify verbs.",
+      "structure": {
+        "i-adjective": { "ending": "\u3044", "rule": "remove \u3044 and add \u304f", "result": "\u304f" },
+        "na-adjective": { "ending": "(stem)", "rule": "add \u306b to the stem", "result": "\u306b" }
+      }
+    },
+    {
+      "name_en": "te-form",
+      "name_jp": "\u3066\u3051\u3044",
+      "usage_en": "The conjunctive form used to connect adjectives or provide reasons.",
+      "structure": {
+        "i-adjective": { "ending": "\u3044", "rule": "remove \u3044 and add \u304f\u3066", "result": "\u304f\u3066" },
+        "na-adjective": { "ending": "(stem)", "rule": "add \u3067 to the stem", "result": "\u3067" }
+      }
+    },
+    {
+      "name_en": "conditional",
+      "name_jp": "\u3070\u30fb\u306a\u3089\u3051\u3044",
+      "usage_en": "Expresses a condition ('if').",
+      "structure": {
+        "i-adjective": { "ending": "\u3044", "rule": "remove \u3044 and add \u3051\u308c\u3070", "result": "\u3051\u308c\u3070" },
+        "na-adjective": { "ending": "(stem)", "rule": "add \u306a\u3089 (or \u306a\u3089\u3070) to the stem", "result": "\u306a\u3089" }
+      }
+    },
+    {
+      "name_en": "hypothetical past",
+      "name_jp": "\u305f\u3089\u3051\u3044",
+      "usage_en": "Past-based conditional ('if and when').",
+      "structure": {
+        "i-adjective": { "ending": "\u3044", "rule": "remove \u3044 and add \u304b\u3063\u305f\u3089", "result": "\u304b\u3063\u305f\u3089" },
+        "na-adjective": { "ending": "(stem)", "rule": "add \u3060\u3063\u305f\u3089 to the stem", "result": "\u3060\u3063\u305f\u3089" }
+      }
+    },
+    {
+      "name_en": "wanting something to be a certain way",
+      "name_jp": "\u306a\u3063\u3066\u307b\u3057\u3044",
+      "usage_en": "Corrected from the source file. Adjectives do not take \u3066\u307b\u3057\u3044 directly (that pattern attaches to a VERB's te-form, e.g. \u884c\u3063\u3066\u307b\u3057\u3044 'I want you to go'). To say you want something/someone to BE a certain way, put the adjective in its adverbial form and add \u306a\u3063\u3066\u307b\u3057\u3044 ('become' + \u307b\u3057\u3044), e.g. \u9759\u304b\u306b\u306a\u3063\u3066\u307b\u3057\u3044 'I want it to be quiet' (lit. 'become quiet').",
+      "structure": {
+        "i-adjective": { "ending": "\u3044", "rule": "remove \u3044, add \u304f, then attach \u306a\u3063\u3066\u307b\u3057\u3044", "result": "\u304f\u306a\u3063\u3066\u307b\u3057\u3044" },
+        "na-adjective": { "ending": "(stem)", "rule": "add \u306b to the stem, then attach \u306a\u3063\u3066\u307b\u3057\u3044", "result": "\u306b\u306a\u3063\u3066\u307b\u3057\u3044" }
+      }
+    },
+    {
+      "name_en": "conjunctive (literary)",
+      "name_jp": "\u4e2d\u6b62\u5f62",
+      "usage_en": "Literary or formal way to connect clauses without using 'te'. For i-adjectives this is the same surface form as the adverbial form above, just used to link clauses rather than modify a verb.",
+      "structure": {
+        "i-adjective": { "ending": "\u3044", "rule": "remove \u3044 and add \u304f", "result": "\u304f" },
+        "na-adjective": { "ending": "(stem)", "rule": "add \u3067 to the stem (same surface form as te-form)", "result": "\u3067" }
+      }
+    },
+    {
+      "name_en": "degree",
+      "name_jp": "\u3059\u304e\u3051\u3044",
+      "usage_en": "Expresses an excessive degree ('too much').",
+      "structure": {
+        "i-adjective": { "ending": "\u3044", "rule": "remove \u3044 and add \u3059\u304e\u308b", "result": "\u3059\u304e\u308b" },
+        "na-adjective": { "ending": "(stem)", "rule": "add \u3059\u304e\u308b to the stem", "result": "\u3059\u304e\u308b" }
+      }
+    },
+    {
+      "name_en": "noun modification",
+      "name_jp": "\u9023\u4f53\u5f62",
+      "usage_en": "The form used to directly modify a noun.",
+      "structure": {
+        "i-adjective": { "ending": "\u3044", "rule": "keep \u3044 and place before noun", "result": "\u3044" },
+        "na-adjective": { "ending": "(stem)", "rule": "add \u306a to the stem and place before noun", "result": "\u306a" }
+      }
+    },
+    {
+      "name_en": "nominalization",
+      "name_jp": "\u540d\u8a5e\u5316",
+      "usage_en": "Converts an adjective into a noun representing the quality or degree.",
+      "structure": {
+        "i-adjective": { "ending": "\u3044", "rule": "remove \u3044 and add \u3055", "result": "\u3055" },
+        "na-adjective": { "ending": "(stem)", "rule": "add \u3055 to the stem", "result": "\u3055" }
+      }
+    },
+    {
+      "name_en": "seeming",
+      "name_jp": "\u305d\u3046\u3051\u3044",
+      "usage_en": "Expresses that something appears to be a certain way. Irregular: \u3044\u3044/\u826f\u3044 \u2192 \u826f\u3055\u305d\u3046 (not \u826f\u305d\u3046), and \u306a\u3044 \u2192 \u306a\u3055\u305d\u3046 (not \u306a\u305d\u3046) \u2014 both insert an extra \u3055 before \u305d\u3046.",
+      "structure": {
+        "i-adjective": { "ending": "\u3044", "rule": "remove \u3044 and add \u305d\u3046 (irregular for \u3044\u3044/\u826f\u3044 \u2192 \u826f\u3055\u305d\u3046 and \u306a\u3044 \u2192 \u306a\u3055\u305d\u3046)", "result": "\u305d\u3046" },
+        "na-adjective": { "ending": "(stem)", "rule": "add \u305d\u3046 to the stem", "result": "\u305d\u3046" }
+      }
+    },
+    {
+      "name_en": "negative implication",
+      "name_jp": "\u5426\u5b9a\u306e\u3066\u5f62",
+      "usage_en": "Used to express 'not [adjective] and...'",
+      "structure": {
+        "i-adjective": { "ending": "\u3044", "rule": "remove \u3044 and add \u304f\u306a\u304f\u3066", "result": "\u304f\u306a\u304f\u3066" },
+        "na-adjective": { "ending": "(stem)", "rule": "add \u3067\u306f\u306a\u304f\u3066 to the stem", "result": "\u3067\u306f\u306a\u304f\u3066" }
+      }
+    }
+  ]
+}
