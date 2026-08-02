@@ -1,4 +1,4 @@
-const CACHE_NAME = 'katsuyo-v1';
+const CACHE_NAME = 'katsuyo-v2';
 const ASSETS = [
   './',
   './index.html',
@@ -12,6 +12,7 @@ const ASSETS = [
   './data/particles.json',
   './data/directions.json',
   './data/demonstratives.json',
+  './data/radicals.json',
   './icons/icon-180.png',
   './icons/icon-192.png',
   './icons/icon-512.png'

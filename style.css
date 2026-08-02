@@ -287,6 +287,7 @@ a{color:inherit;}
   padding:16px;
 }
 .answer-reveal .label{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--good);}
+.answer-reveal .label.wrong{color:var(--bad);}
 .answer-reveal .result{font-family:var(--font-jp-display);font-size:22px;font-weight:700;margin-top:4px;color:var(--ink);}
 .answer-reveal .rule{font-size:12.5px;opacity:.75;margin-top:8px;line-height:1.55;}
 
@@ -329,6 +330,47 @@ a{color:inherit;}
 .empty-state .glyph{font-size:34px;margin-bottom:10px;font-family:var(--font-jp-display);}
 
 .footer-note{font-size:11px;opacity:.4;text-align:center;padding:8px 10px 0;}
+
+/* ---------- settings ---------- */
+.chip-row{display:flex;flex-wrap:wrap;gap:8px;}
+.chip{
+  display:inline-flex;align-items:center;gap:7px;
+  padding:9px 14px;border-radius:100px;border:1.5px solid var(--paper-line);
+  background:#fff;cursor:pointer;font-weight:700;font-size:13px;color:var(--ink);
+}
+.chip .chip-count{font-size:10.5px;opacity:.55;font-weight:700;}
+.chip.on{background:var(--ink);border-color:var(--ink);color:var(--paper);}
+.chip.on .chip-count{opacity:.7;}
+.topic-select{
+  width:100%;border:1.5px solid var(--paper-line);border-radius:var(--radius-sm);
+  background:#fff;color:var(--ink);font-family:var(--font-ui);font-size:13.5px;
+  padding:6px;
+}
+.topic-select option{padding:7px 8px;border-radius:5px;}
+.settings-hint{font-size:11.5px;opacity:.6;margin-top:5px;line-height:1.5;}
+.inline-link{
+  background:none;border:none;padding:0;color:var(--gold);font-weight:700;
+  font-size:inherit;cursor:pointer;text-decoration:underline;
+}
+
+/* ---------- radicals ---------- */
+.radical-grid{
+  display:grid;grid-template-columns:repeat(auto-fill,minmax(96px,1fr));gap:9px;margin-top:12px;
+}
+.radical-tile{
+  background:#fff;border:1px solid var(--paper-line);border-radius:var(--radius-sm);
+  padding:12px 8px;cursor:pointer;text-align:center;display:flex;flex-direction:column;
+  align-items:center;gap:2px;
+}
+.radical-tile:active{background:var(--paper-dim);}
+.radical-glyph{font-family:var(--font-jp-display);font-size:30px;font-weight:700;color:var(--ink);}
+.radical-name{font-size:11.5px;font-weight:700;color:var(--ink);}
+.radical-meaning{font-size:10px;opacity:.55;line-height:1.35;}
+.example-kanji{
+  font-family:var(--font-jp-display);font-size:18px;
+  padding:7px 12px;border-radius:var(--radius-sm);background:#fff;
+  border:1px solid var(--paper-line);color:var(--ink);
+}
 
 @media (max-width:340px){
   .hero .greeting{font-size:24px;}

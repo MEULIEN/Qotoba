@@ -45,6 +45,7 @@ const STATE = {
   particleData: null,
   directionsData: null,
   demonstrativesData: null,
+  radicalData: null,
   allWords: [],
   srs: {},        // key -> {box, due, introduced, reps, lapses}
   meaningSrs: {},  // wordId -> {box, due}
@@ -55,7 +56,8 @@ const STATE = {
   libraryTab: 'all',
   particleTab: 'all',
   directionsTab: 'all',
-  demoTab: 'all'
+  demoTab: 'all',
+  radicalTab: 'all'
 };
 
 /* ---------------- utils ---------------- */
@@ -85,65 +87,245 @@ function escapeHtml(s) {
 }
 function srsKey(wordId, formName) { return wordId + '::' + formName; }
 
-/* ---------------- storage ---------------- */
+/* ---------------- storage keys ---------------- */
 const LS_SRS = 'katsuyo_srs_v1';
 const LS_MEANING = 'katsuyo_meaning_srs_v1';
 const LS_PROGRESS = 'katsuyo_progress_v1';
+const LS_SETTINGS = 'katsuyo_settings_v1';
 
-function loadStorage() {
-  try { STATE.srs = JSON.parse(localStorage.getItem(LS_SRS)) || {}; } catch (e) { STATE.srs = {}; }
-  try { STATE.meaningSrs = JSON.parse(localStorage.getItem(LS_MEANING)) || {}; } catch (e) { STATE.meaningSrs = {}; }
-  try {
-    const p = JSON.parse(localStorage.getItem(LS_PROGRESS));
-    if (p) STATE.progress = Object.assign(STATE.progress, p);
-  } catch (e) { /* keep defaults */ }
-  if (!STATE.progress.today || STATE.progress.today.date !== todayStr()) {
-    STATE.progress.today = { date: todayStr(), morning: false, evening: false };
+/* ============================================================
+   DataRegistry — single source of truth for every data file.
+   Word sources (verbs, adjectives) feed the SRS and library;
+   reference sources (particles, directions, demonstratives,
+   radicals) only feed their browse views.
+   ============================================================ */
+class DataRegistry {
+  constructor() {
+    this.sources = {};     // name -> { words: [...] }
+    this.references = {};  // name -> reference payload
+    this.conj = {};        // name -> conjugation rule payload
+  }
+
+  registerWordSource(name, data) { this.sources[name] = data; }
+  registerReference(name, data) { this.references[name] = data; }
+  registerConjugation(name, data) { this.conj[name] = data; }
+
+  get verbWords() { return (this.sources.verb && this.sources.verb.words) || []; }
+  get adjWords() { return (this.sources.adjective && this.sources.adjective.words) || []; }
+  get allWords() { return [...this.verbWords, ...this.adjWords]; }
+
+  isVerb(word) { return word.type === 'verb'; }
+  formsFor(word) { return this.isVerb(word) ? this.conj.verb.tenses : this.conj.adj.forms; }
+  tiersFor(word) { return this.isVerb(word) ? VERB_TIERS : ADJ_TIERS; }
+  formDef(word, formName) { return this.formsFor(word).find(f => f.name_en === formName); }
+  findWord(id) { return this.allWords.find(w => w.id === id); }
+
+  levelOf(word) {
+    const tag = (word.tags || []).find(t => /^n[1-5]$/.test(t));
+    return tag || null;
+  }
+  topicsOf(word) { return (word.tags || []).filter(t => !/^n[1-5]$/.test(t)); }
+  get availableLevels() {
+    const have = new Set(this.allWords.map(w => this.levelOf(w)).filter(Boolean));
+    return ['n5', 'n4', 'n3', 'n2', 'n1'].filter(l => have.has(l));
+  }
+  get availableTopics() {
+    const set = new Set();
+    for (const w of this.allWords) for (const t of this.topicsOf(w)) set.add(t);
+    return [...set].sort();
+  }
+  enabledWords() { return this.allWords.filter(w => settings.wordEnabled(w)); }
+  enabledIdSet() { return new Set(this.enabledWords().map(w => w.id)); }
+}
+
+/* ============================================================
+   Settings — which levels and topics are in the study scope.
+   A word is included only when its JLPT level tag (if any) is
+   selected and, when any topics are selected, it carries at
+   least one of those topic tags.
+   ============================================================ */
+class Settings {
+  constructor() {
+    this.key = LS_SETTINGS;
+    this.DEFAULTS = { levels: ['n5', 'n4', 'n3', 'n2', 'n1'], topics: [] };
+    this.value = { levels: [...this.DEFAULTS.levels], topics: [] };
+  }
+  load() {
+    try {
+      const raw = JSON.parse(localStorage.getItem(this.key));
+      if (raw) {
+        if (Array.isArray(raw.levels)) this.value.levels = raw.levels;
+        if (Array.isArray(raw.topics)) this.value.topics = raw.topics;
+      }
+    } catch (e) { /* keep defaults */ }
+  }
+  save() { localStorage.setItem(this.key, JSON.stringify(this.value)); }
+  reset() {
+    this.value = { levels: [...this.DEFAULTS.levels], topics: [] };
+    this.save();
+  }
+  toggleLevel(level) {
+    const i = this.value.levels.indexOf(level);
+    if (i >= 0) this.value.levels.splice(i, 1);
+    else this.value.levels.push(level);
+    this.save();
+  }
+  wordEnabled(word) {
+    const level = registry.levelOf(word);
+    if (level && !this.value.levels.includes(level)) return false;
+    if (this.value.topics.length === 0) return true;
+    return registry.topicsOf(word).some(t => this.value.topics.includes(t));
   }
 }
-function saveSrs() { localStorage.setItem(LS_SRS, JSON.stringify(STATE.srs)); }
-function saveMeaningSrs() { localStorage.setItem(LS_MEANING, JSON.stringify(STATE.meaningSrs)); }
-function saveProgress() { localStorage.setItem(LS_PROGRESS, JSON.stringify(STATE.progress)); }
 
-/* ---------------- data loading ---------------- */
-async function loadData() {
-  const [verbData, adjData, verbWords, adjWords, particleData, directionsData, demonstrativesData] = await Promise.all([
-    fetch('data/conjugation_verb.json').then(r => r.json()),
-    fetch('data/conjugation_adj.json').then(r => r.json()),
-    fetch('data/verbs.json').then(r => r.json()),
-    fetch('data/adjectives.json').then(r => r.json()),
-    fetch('data/particles.json').then(r => r.json()),
-    fetch('data/directions.json').then(r => r.json()),
-    fetch('data/demonstratives.json').then(r => r.json())
-  ]);
-  STATE.verbData = verbData;
-  STATE.adjData = adjData;
-  STATE.particleData = particleData;
-  STATE.directionsData = directionsData;
-  STATE.demonstrativesData = demonstrativesData;
-  STATE.allWords = [...verbWords.words, ...adjWords.words];
+/* ============================================================
+   SrsEngine — all spaced-repetition state lives here (keys,
+   meaning cards, daily progress) and persists to localStorage.
+   ============================================================ */
+class SrsEngine {
+  load() {
+    try { STATE.srs = JSON.parse(localStorage.getItem(LS_SRS)) || {}; } catch (e) { STATE.srs = {}; }
+    try { STATE.meaningSrs = JSON.parse(localStorage.getItem(LS_MEANING)) || {}; } catch (e) { STATE.meaningSrs = {}; }
+    try {
+      const p = JSON.parse(localStorage.getItem(LS_PROGRESS));
+      if (p) STATE.progress = Object.assign(STATE.progress, p);
+    } catch (e) { /* keep defaults */ }
+    if (!STATE.progress.today || STATE.progress.today.date !== todayStr()) {
+      STATE.progress.today = { date: todayStr(), morning: false, evening: false };
+    }
+  }
+  saveSrs() { localStorage.setItem(LS_SRS, JSON.stringify(STATE.srs)); }
+  saveMeaningSrs() { localStorage.setItem(LS_MEANING, JSON.stringify(STATE.meaningSrs)); }
+  saveProgress() { localStorage.setItem(LS_PROGRESS, JSON.stringify(STATE.progress)); }
+
+  tierIndexOf(word, formName) {
+    const tiers = registry.tiersFor(word);
+    for (let i = 0; i < tiers.length; i++) if (tiers[i].includes(formName)) return i;
+    return tiers.length;
+  }
+  getNewCandidates(limit) {
+    const enabledIds = registry.enabledIdSet();
+    const introducedCount = {};
+    for (const key in STATE.srs) {
+      if (!enabledIds.has(key.split('::')[0])) continue;
+      const wordId = key.split('::')[0];
+      introducedCount[wordId] = (introducedCount[wordId] || 0) + 1;
+    }
+    const totalForWord = {};
+    for (const word of registry.enabledWords()) totalForWord[word.id] = registry.formsFor(word).length;
+
+    const inProgressCount = Object.keys(introducedCount)
+      .filter(id => introducedCount[id] < (totalForWord[id] || Infinity)).length;
+    let poolHasRoom = inProgressCount < ACTIVE_WORD_POOL;
+
+    const candidates = [];
+    for (const word of registry.enabledWords()) {
+      const introduced = introducedCount[word.id] || 0;
+      const started = introduced > 0;
+      if (!started && !poolHasRoom) continue;
+      const forms = registry.formsFor(word).map(f => f.name_en);
+      for (const formName of forms) {
+        const key = srsKey(word.id, formName);
+        if (!STATE.srs[key]) candidates.push({ word, formName, tier: this.tierIndexOf(word, formName), started });
+      }
+    }
+    candidates.sort((a, b) => (a.tier - b.tier) || (b.started - a.started) || (Math.random() - 0.5));
+    return candidates.slice(0, limit);
+  }
+  getDueItems(limit) {
+    const enabledIds = registry.enabledIdSet();
+    const today = todayStr();
+    const due = [];
+    for (const key in STATE.srs) {
+      const item = STATE.srs[key];
+      if (item.introduced && item.due <= today) {
+        const [wordId, formName] = key.split('::');
+        if (!enabledIds.has(wordId)) continue;
+        const word = registry.findWord(wordId);
+        if (word) due.push({ word, formName, srsItem: item });
+      }
+    }
+    due.sort((a, b) => a.srsItem.due.localeCompare(b.srsItem.due));
+    return shuffle(due.slice(0, Math.max(limit * 2, limit))).slice(0, limit);
+  }
+  introduceCard(word, formName) {
+    const key = srsKey(word.id, formName);
+    STATE.srs[key] = { box: 1, due: todayStr(), introduced: true, reps: 0, lapses: 0 };
+  }
+  gradeCard(word, formName, grade) {
+    const key = srsKey(word.id, formName);
+    const item = STATE.srs[key] || { box: 1, due: todayStr(), introduced: true, reps: 0, lapses: 0 };
+    item.reps += 1;
+    let correct = true;
+    if (grade === 'again') {
+      item.box = 1;
+      item.due = todayStr();
+      item.lapses += 1;
+      correct = false;
+    } else if (grade === 'good') {
+      item.box = Math.min(item.box + 1, MAX_BOX);
+      item.due = addDays(todayStr(), BOX_INTERVAL_DAYS[item.box]);
+    } else if (grade === 'easy') {
+      item.box = Math.min(item.box + 2, MAX_BOX);
+      item.due = addDays(todayStr(), BOX_INTERVAL_DAYS[item.box]);
+    }
+    STATE.srs[key] = item;
+    this.saveSrs();
+    STATE.progress.totalReviews += 1;
+    if (correct) STATE.progress.totalCorrect += 1;
+    this.saveProgress();
+    return correct;
+  }
+  gradeMeaning(wordId, grade) {
+    const item = STATE.meaningSrs[wordId] || { box: 1, due: todayStr() };
+    if (grade === 'again') { item.box = 1; item.due = todayStr(); }
+    else { item.box = Math.min(item.box + 1, MAX_BOX); item.due = addDays(todayStr(), BOX_INTERVAL_DAYS[item.box]); }
+    STATE.meaningSrs[wordId] = item;
+    this.saveMeaningSrs();
+  }
+  masteryStats() {
+    let introduced = 0, mastered = 0, total = 0;
+    const enabledIds = registry.enabledIdSet();
+    for (const word of registry.enabledWords()) total += registry.formsFor(word).length;
+    for (const key in STATE.srs) {
+      if (!enabledIds.has(key.split('::')[0])) continue;
+      const item = STATE.srs[key];
+      if (item.introduced) { introduced++; if (item.box >= MAX_BOX) mastered++; }
+    }
+    return { introduced, mastered, total };
+  }
+  markSessionDone(kind) {
+    const today = todayStr();
+    if (STATE.progress.today.date !== today) STATE.progress.today = { date: today, morning: false, evening: false };
+    STATE.progress.today[kind] = true;
+
+    if (STATE.progress.lastActiveDate !== today) {
+      if (STATE.progress.lastActiveDate && daysBetween(STATE.progress.lastActiveDate, today) === 1) {
+        STATE.progress.streak += 1;
+      } else {
+        STATE.progress.streak = 1;
+      }
+      STATE.progress.lastActiveDate = today;
+    }
+    this.saveProgress();
+  }
 }
 
-function isVerb(word) { return word.type === 'verb'; }
-function getFormsList(word) { return isVerb(word) ? STATE.verbData.tenses : STATE.adjData.forms; }
-function getTiers(word) { return isVerb(word) ? VERB_TIERS : ADJ_TIERS; }
-function findWord(id) { return STATE.allWords.find(w => w.id === id); }
-function findFormDef(word, formName) {
-  return getFormsList(word).find(f => f.name_en === formName);
-}
-
-/* ---------------- conjugation engine ----------------
-   Verified against every word/form combination in data/*.json
-   before this file was written (see build notes). */
+/* ============================================================
+   Conjugation engine — runs on word + rule data from the
+   registry. conjugate() returns the kanji form; conjugateKana()
+   reruns the engine on the kana reading so hiragana answers
+   are accepted (e.g. 指さない → ささない).
+   ============================================================ */
 function conjugate(word, formName) {
   const overrides = word.irregular_overrides || {};
   if (Object.prototype.hasOwnProperty.call(overrides, formName)) return overrides[formName];
 
-  const formDef = findFormDef(word, formName);
+  const formDef = registry.formDef(word, formName);
   if (!formDef) return '?';
   const struct = formDef.structure;
 
-  if (isVerb(word)) {
+  if (registry.isVerb(word)) {
     if (word.group === 'group3') {
       const direct = struct.group3.find(e => e.verb === word.dictionary);
       if (direct) return direct.result;
@@ -166,110 +348,40 @@ function conjugate(word, formName) {
   return word.dictionary + struct['na-adjective'].result;
 }
 
-/* ---------------- SRS engine ---------------- */
-function tierIndexOf(word, formName) {
-  const tiers = getTiers(word);
-  for (let i = 0; i < tiers.length; i++) if (tiers[i].includes(formName)) return i;
-  return tiers.length;
+function conjugateKana(word, formName) {
+  return conjugate({ ...word, dictionary: word.kana }, formName);
 }
-function getNewCandidates(limit) {
-  const introducedCount = {};
-  for (const key in STATE.srs) {
-    const wordId = key.split('::')[0];
-    introducedCount[wordId] = (introducedCount[wordId] || 0) + 1;
-  }
-  const totalForWord = {};
-  for (const word of STATE.allWords) totalForWord[word.id] = getFormsList(word).length;
 
-  const inProgressCount = Object.keys(introducedCount)
-    .filter(id => introducedCount[id] < (totalForWord[id] || Infinity)).length;
-  let poolHasRoom = inProgressCount < ACTIVE_WORD_POOL;
+function normalizeAnswer(s) {
+  return String(s || '').trim().toLowerCase().replace(/\s+/g, '');
+}
+function answerAccepted(word, formName, typed) {
+  const normalized = normalizeAnswer(typed);
+  if (!normalized) return false;
+  const candidates = [
+    conjugate(word, formName),
+    conjugateKana(word, formName),
+    word.dictionary,
+    word.kana,
+    (word.romaji || '').toLowerCase()
+  ].filter(Boolean);
+  return candidates.some(c => normalizeAnswer(c) === normalized);
+}
 
-  const candidates = [];
-  for (const word of STATE.allWords) {
-    const introduced = introducedCount[word.id] || 0;
-    const started = introduced > 0;
-    if (!started && !poolHasRoom) continue; // don't start new words until a pool slot frees up
-    const forms = getFormsList(word).map(f => f.name_en);
-    for (const formName of forms) {
-      const key = srsKey(word.id, formName);
-      if (!STATE.srs[key]) candidates.push({ word, formName, tier: tierIndexOf(word, formName), started });
-    }
-  }
-  // breadth first within the active pool (lowest tier wins), started-ness
-  // only breaks ties so the pool actually fills before any one word is
-  // deepened all the way through
-  candidates.sort((a, b) => (a.tier - b.tier) || (b.started - a.started) || (Math.random() - 0.5));
-  return candidates.slice(0, limit);
-}
-function getDueItems(limit) {
-  const today = todayStr();
-  const due = [];
-  for (const key in STATE.srs) {
-    const item = STATE.srs[key];
-    if (item.introduced && item.due <= today) {
-      const [wordId, formName] = key.split('::');
-      const word = findWord(wordId);
-      if (word) due.push({ word, formName, srsItem: item });
-    }
-  }
-  due.sort((a, b) => a.srsItem.due.localeCompare(b.srsItem.due));
-  return shuffle(due.slice(0, Math.max(limit * 2, limit))).slice(0, limit);
-}
-function introduceCard(word, formName) {
-  const key = srsKey(word.id, formName);
-  STATE.srs[key] = { box: 1, due: todayStr(), introduced: true, reps: 0, lapses: 0 };
-}
-function gradeCard(word, formName, grade) {
-  const key = srsKey(word.id, formName);
-  const item = STATE.srs[key] || { box: 1, due: todayStr(), introduced: true, reps: 0, lapses: 0 };
-  item.reps += 1;
-  let correct = true;
-  if (grade === 'again') {
-    item.box = 1;
-    item.due = todayStr();
-    item.lapses += 1;
-    correct = false;
-  } else if (grade === 'good') {
-    item.box = Math.min(item.box + 1, MAX_BOX);
-    item.due = addDays(todayStr(), BOX_INTERVAL_DAYS[item.box]);
-  } else if (grade === 'easy') {
-    item.box = Math.min(item.box + 2, MAX_BOX);
-    item.due = addDays(todayStr(), BOX_INTERVAL_DAYS[item.box]);
-  }
-  STATE.srs[key] = item;
-  saveSrs();
-  STATE.progress.totalReviews += 1;
-  if (correct) STATE.progress.totalCorrect += 1;
-  saveProgress();
-  return correct;
-}
-function gradeMeaning(wordId, grade) {
-  const item = STATE.meaningSrs[wordId] || { box: 1, due: todayStr() };
-  if (grade === 'again') { item.box = 1; item.due = todayStr(); }
-  else { item.box = Math.min(item.box + 1, MAX_BOX); item.due = addDays(todayStr(), BOX_INTERVAL_DAYS[item.box]); }
-  STATE.meaningSrs[wordId] = item;
-  saveMeaningSrs();
-}
-function masteryStats() {
-  let introduced = 0, mastered = 0, total = 0;
-  for (const word of STATE.allWords) total += getFormsList(word).length;
-  for (const key in STATE.srs) {
-    const item = STATE.srs[key];
-    if (item.introduced) { introduced++; if (item.box >= MAX_BOX) mastered++; }
-  }
-  return { introduced, mastered, total };
+function exampleForForm(word, formName) {
+  const ex = word.example || {};
+  if (ex.form_en && ex.form_en[formName]) return ex.form_en[formName];
+  return ex.en || '';
 }
 
 /* ---------------- distractor generation (for recognition quiz) ---------------- */
 function buildChoices(word, formName) {
   const correct = conjugate(word, formName);
-  const forms = getFormsList(word).map(f => f.name_en).filter(f => f !== formName);
+  const forms = registry.formsFor(word).map(f => f.name_en).filter(f => f !== formName);
   const otherResults = shuffle(forms).map(f => conjugate(word, f)).filter(r => r && r !== correct && r !== '?');
   const uniqueDistractors = [...new Set(otherResults)].slice(0, 3);
-  // pad with conjugations of other same-type words if this word doesn't have enough forms
   if (uniqueDistractors.length < 3) {
-    const pool = STATE.allWords.filter(w => w.id !== word.id && isVerb(w) === isVerb(word));
+    const pool = registry.enabledWords().filter(w => w.id !== word.id && registry.isVerb(w) === registry.isVerb(word));
     for (const w of shuffle(pool)) {
       if (uniqueDistractors.length >= 3) break;
       const r = conjugate(w, formName);
@@ -279,63 +391,131 @@ function buildChoices(word, formName) {
   return shuffle([correct, ...uniqueDistractors.slice(0, 3)]);
 }
 
-/* ---------------- session builders ---------------- */
-function buildMorningSession() {
-  const newCards = getNewCandidates(NEW_PER_MORNING);
-  const dueCards = getDueItems(DUE_PER_MORNING);
-  const queue = [];
-  for (const c of newCards) {
-    queue.push({ step: 'teach', word: c.word, formName: c.formName });
-    queue.push({ step: 'quiz-recognition', word: c.word, formName: c.formName, isNew: true });
+/* ============================================================
+   Session — one study run (morning teach+recognize, evening
+   recall+meaning) built from the SRS engine.
+   ============================================================ */
+class Session {
+  constructor(kind) {
+    this.kind = kind;
+    this.queue = [];
+    this.index = 0;
+    this.stats = { correct: 0, total: 0, newCount: 0 };
+    this._answered = null;
+    this._revealed = false;
+    this._choicesCache = {};
+    if (kind === 'morning') this.buildMorning();
+    else this.buildEvening();
   }
-  const mixed = shuffle([
-    ...newCards.map(c => ({ step: 'quiz-recognition', word: c.word, formName: c.formName, isNew: false })),
-    ...dueCards.map(c => ({ step: 'quiz-recognition', word: c.word, formName: c.formName, isNew: false }))
-  ]);
-  queue.push(...mixed);
-  return { kind: 'morning', queue, index: 0, stats: { correct: 0, total: 0, newCount: newCards.length } };
-}
-function buildEveningSession() {
-  let dueCards = getDueItems(DUE_PER_EVENING);
-  if (dueCards.length === 0) {
-    // nothing due yet today — fall back to light overlearning review
-    const pool = [];
-    for (const key in STATE.srs) {
-      const item = STATE.srs[key];
-      if (item.introduced) {
-        const [wordId, formName] = key.split('::');
-        const word = findWord(wordId);
-        if (word) pool.push({ word, formName, srsItem: item });
+  buildMorning() {
+    const newCards = srs.getNewCandidates(NEW_PER_MORNING);
+    const dueCards = srs.getDueItems(DUE_PER_MORNING);
+    const queue = [];
+    for (const c of newCards) {
+      queue.push({ step: 'teach', word: c.word, formName: c.formName });
+      queue.push({ step: 'quiz-recognition', word: c.word, formName: c.formName, isNew: true });
+    }
+    const mixed = shuffle([
+      ...newCards.map(c => ({ step: 'quiz-recognition', word: c.word, formName: c.formName, isNew: false })),
+      ...dueCards.map(c => ({ step: 'quiz-recognition', word: c.word, formName: c.formName, isNew: false }))
+    ]);
+    queue.push(...mixed);
+    this.queue = queue;
+    this.stats.newCount = newCards.length;
+  }
+  buildEvening() {
+    let dueCards = srs.getDueItems(DUE_PER_EVENING);
+    if (dueCards.length === 0) {
+      const pool = [];
+      const enabledIds = registry.enabledIdSet();
+      for (const key in STATE.srs) {
+        const item = STATE.srs[key];
+        if (item.introduced) {
+          const [wordId, formName] = key.split('::');
+          if (!enabledIds.has(wordId)) continue;
+          const word = registry.findWord(wordId);
+          if (word) pool.push({ word, formName, srsItem: item });
+        }
       }
+      dueCards = sample(pool, 5);
     }
-    dueCards = sample(pool, 5);
+    const queue = shuffle(dueCards.map(c => ({ step: 'quiz-recall', word: c.word, formName: c.formName })));
+
+    const enabledIds = registry.enabledIdSet();
+    const introducedWordIds = [...new Set(Object.keys(STATE.srs)
+      .filter(k => STATE.srs[k].introduced)
+      .map(k => k.split('::')[0])
+      .filter(id => enabledIds.has(id)))];
+    const meaningWords = sample(introducedWordIds.map(id => registry.findWord(id)).filter(Boolean), MEANING_CARDS_PER_EVENING);
+    const meaningCards = meaningWords.map(w => ({ step: 'quiz-meaning', word: w, direction: Math.random() < 0.5 ? 'jp2en' : 'en2jp' }));
+
+    this.queue = shuffle([...queue, ...meaningCards]);
   }
-  const queue = shuffle(dueCards.map(c => ({ step: 'quiz-recall', word: c.word, formName: c.formName })));
+  currentCard() { return this.queue[this.index]; }
+  advance() {
+    this.index += 1;
+    this._answered = null;
+    this._revealed = false;
+  }
+  finish() { srs.markSessionDone(this.kind); }
+}
+/* ============================================================
+   App singletons — the registry owns data, settings own the
+   study scope, the SRS engine owns spaced-repetition state.
+   ============================================================ */
+const registry = new DataRegistry();
+const settings = new Settings();
+const srs = new SrsEngine();
 
-  // sprinkle in bidirectional meaning-recall cards from already-introduced words
-  const introducedWordIds = [...new Set(Object.keys(STATE.srs).filter(k => STATE.srs[k].introduced).map(k => k.split('::')[0]))];
-  const meaningWords = sample(introducedWordIds.map(findWord).filter(Boolean), MEANING_CARDS_PER_EVENING);
-  const meaningCards = meaningWords.map(w => ({ step: 'quiz-meaning', word: w, direction: Math.random() < 0.5 ? 'jp2en' : 'en2jp' }));
+/* ---------------- compatibility facades ----------------
+   Thin module-level functions so callers (and the integration
+   test harness) keep a stable API while the logic lives in
+   the classes above. */
+function findWord(id) { return registry.findWord(id); }
+function gradeCard(word, formName, grade) { return srs.gradeCard(word, formName, grade); }
+function gradeMeaning(wordId, grade) { srs.gradeMeaning(wordId, grade); }
+function introduceCard(word, formName) { srs.introduceCard(word, formName); }
+function getNewCandidates(limit) { return srs.getNewCandidates(limit); }
+function getDueItems(limit) { return srs.getDueItems(limit); }
+function masteryStats() { return srs.masteryStats(); }
+function markSessionDone(kind) { srs.markSessionDone(kind); }
+function buildMorningSession() { return new Session('morning'); }
+function buildEveningSession() { return new Session('evening'); }
+function currentCard() { return STATE.session ? STATE.session.currentCard() : null; }
 
-  const finalQueue = shuffle([...queue, ...meaningCards]);
-  return { kind: 'evening', queue: finalQueue, index: 0, stats: { correct: 0, total: 0, newCount: 0 } };
+/* ---------------- storage ---------------- */
+function loadStorage() {
+  settings.load();
+  srs.load();
 }
 
-/* ---------------- progress bookkeeping ---------------- */
-function markSessionDone(kind) {
-  const today = todayStr();
-  if (STATE.progress.today.date !== today) STATE.progress.today = { date: today, morning: false, evening: false };
-  STATE.progress.today[kind] = true;
-
-  if (STATE.progress.lastActiveDate !== today) {
-    if (STATE.progress.lastActiveDate && daysBetween(STATE.progress.lastActiveDate, today) === 1) {
-      STATE.progress.streak += 1;
-    } else {
-      STATE.progress.streak = 1;
-    }
-    STATE.progress.lastActiveDate = today;
-  }
-  saveProgress();
+/* ---------------- data loading ---------------- */
+async function loadData() {
+  const [verbConj, adjConj, verbs, adjectives, particles, directions, demonstratives, radicals] = await Promise.all([
+    fetch('data/conjugation_verb.json').then(r => r.json()),
+    fetch('data/conjugation_adj.json').then(r => r.json()),
+    fetch('data/verbs.json').then(r => r.json()),
+    fetch('data/adjectives.json').then(r => r.json()),
+    fetch('data/particles.json').then(r => r.json()),
+    fetch('data/directions.json').then(r => r.json()),
+    fetch('data/demonstratives.json').then(r => r.json()),
+    fetch('data/radicals.json').then(r => r.json())
+  ]);
+  registry.registerConjugation('verb', verbConj);
+  registry.registerConjugation('adj', adjConj);
+  registry.registerWordSource('verb', verbs);
+  registry.registerWordSource('adjective', adjectives);
+  registry.registerReference('particles', particles);
+  registry.registerReference('directions', directions);
+  registry.registerReference('demonstratives', demonstratives);
+  registry.registerReference('radicals', radicals);
+  STATE.verbData = verbConj;
+  STATE.adjData = adjConj;
+  STATE.particleData = particles;
+  STATE.directionsData = directions;
+  STATE.demonstrativesData = demonstratives;
+  STATE.radicalData = radicals;
+  STATE.allWords = registry.allWords;
 }
 
 /* ============================================================
@@ -357,6 +537,9 @@ function render() {
     case 'directionDetail': html = renderDirectionDetail(); break;
     case 'demonstratives': html = renderDemonstratives(); break;
     case 'demonstrativeDetail': html = renderDemonstrativeDetail(); break;
+    case 'radicals': html = renderRadicals(); break;
+    case 'radicalDetail': html = renderRadicalDetail(); break;
+    case 'settings': html = renderSettings(); break;
     case 'session': html = renderSession(); break;
     case 'summary': html = renderSummary(); break;
     default: html = '<div class="screen"><p>Loading…</p></div>';
@@ -431,6 +614,8 @@ function renderHome() {
       <button class="link-btn ghost" data-action="go" data-view="particles">🔤 Particles</button>
       <button class="link-btn ghost" data-action="go" data-view="directions">🧭 Directions</button>
       <button class="link-btn ghost" data-action="go" data-view="demonstratives">👉 Kosoado</button>
+      <button class="link-btn ghost" data-action="go" data-view="radicals">🌱 Radicals</button>
+      <button class="link-btn ghost" data-action="go" data-view="settings">⚙️ Settings</button>
     </div>
     <p class="footer-note">All data stays on this device. No account, no server.</p>
   </div>`;
@@ -438,17 +623,18 @@ function renderHome() {
 
 function renderLibrary() {
   const tab = STATE.libraryTab;
-  const filtered = STATE.allWords.filter(w => {
+  const enabled = registry.enabledWords();
+  const filtered = enabled.filter(w => {
     if (tab === 'all') return true;
     if (tab === 'verb') return w.type === 'verb';
     return w.type === tab;
   });
   const rows = filtered.map(w => {
-    const introducedForms = getFormsList(w).filter(f => {
+    const introducedForms = registry.formsFor(w).filter(f => {
       const s = STATE.srs[srsKey(w.id, f.name_en)];
       return s && s.introduced;
     }).length;
-    const totalForms = getFormsList(w).length;
+    const totalForms = registry.formsFor(w).length;
     return `<div class="word-row" data-action="go" data-view="wordDetail" data-id="${w.id}">
       <span class="kanji">${escapeHtml(w.dictionary)}</span>
       <span class="info">
@@ -458,6 +644,11 @@ function renderLibrary() {
       <span class="mastery">${introducedForms}/${totalForms}</span>
     </div>`;
   }).join('');
+  const scopeNote = enabled.length < registry.allWords.length
+    ? `<div class="detail-head" style="background:var(--gold-soft);color:var(--ink-deep);margin-top:10px">
+        <span class="eyebrow" style="color:#7A5E1A">Filtered by settings</span>
+        <p style="margin-top:6px;font-size:13px;line-height:1.6">Showing ${enabled.length} of ${registry.allWords.length} words. Adjust the scope in <button class="inline-link" data-action="go" data-view="settings">Settings</button>.</p>
+      </div>` : '';
   return `<div class="screen">
     ${topbar('Word Library', 'home')}
     <div class="tab-row">
@@ -466,6 +657,7 @@ function renderLibrary() {
       <button class="tab ${tab === 'i-adjective' ? 'active' : ''}" data-action="tab" data-tab="i-adjective">い-adj</button>
       <button class="tab ${tab === 'na-adjective' ? 'active' : ''}" data-action="tab" data-tab="na-adjective">な-adj</button>
     </div>
+    ${scopeNote}
     <div class="word-list">${rows || '<div class="empty-state">No words in this category yet.</div>'}</div>
   </div>`;
 }
@@ -473,9 +665,9 @@ function renderLibrary() {
 function renderWordDetail() {
   const word = findWord(STATE.viewParams.id);
   if (!word) return `<div class="screen">${topbar('Not found', 'library')}</div>`;
-  const forms = getFormsList(word);
-  const badgeClass = isVerb(word) ? 'verb' : word.type;
-  const badgeLabel = isVerb(word) ? (word.group === 'group1' ? 'Godan' : word.group === 'group2' ? 'Ichidan' : 'Irregular') : (word.type === 'i-adjective' ? 'い-adjective' : 'な-adjective');
+  const forms = registry.formsFor(word);
+  const badgeClass = registry.isVerb(word) ? 'verb' : word.type;
+  const badgeLabel = registry.isVerb(word) ? (word.group === 'group1' ? 'Godan' : word.group === 'group2' ? 'Ichidan' : 'Irregular') : (word.type === 'i-adjective' ? 'い-adjective' : 'な-adjective');
   const rowsHtml = forms.map(f => {
     const key = srsKey(word.id, f.name_en);
     const s = STATE.srs[key];
@@ -532,7 +724,7 @@ function renderRuleDetail() {
   const isVerbKind = kind === 'verb';
   const formDef = (isVerbKind ? STATE.verbData.tenses : STATE.adjData.forms).find(f => f.name_en === form);
   if (!formDef) return `<div class="screen">${topbar('Not found', 'rules')}</div>`;
-  const words = STATE.allWords.filter(w => isVerbKind ? isVerb(w) : !isVerb(w));
+  const words = registry.enabledWords().filter(w => isVerbKind ? registry.isVerb(w) : !registry.isVerb(w));
   const rows = words.map(w => `<div class="word-row" data-action="go" data-view="wordDetail" data-id="${w.id}">
       <span class="kanji">${escapeHtml(w.dictionary)}</span>
       <span class="info"><div class="kana">${escapeHtml(w.meaning)}</div></span>
@@ -744,11 +936,99 @@ function renderDemonstrativeDetail() {
   </div>`;
 }
 
-/* ---------- session screens ---------- */
-function currentCard() {
-  const s = STATE.session;
-  return s.queue[s.index];
+/* ---------- radical reference ---------- */
+const RADICAL_CATEGORIES = ['all', 'single', 'water', 'person', 'tree', 'mouth', 'hand', 'heart', 'sun', 'moon', 'fire', 'earth', 'metal', 'misc'];
+const RADICAL_CATEGORY_LABEL = {
+  all: 'All', single: 'Single', water: 'Water', person: 'Person', tree: 'Tree', mouth: 'Mouth',
+  hand: 'Hand', heart: 'Heart', sun: 'Sun', moon: 'Moon', fire: 'Fire', earth: 'Earth', metal: 'Metal', misc: 'Misc'
+};
+
+function renderRadicals() {
+  const tab = STATE.radicalTab;
+  const list = (STATE.radicalData.words || []).filter(r => tab === 'all' || r.category === tab);
+  const tabs = RADICAL_CATEGORIES.map(cat =>
+    `<button class="tab ${tab === cat ? 'active' : ''}" data-action="radical-tab" data-tab="${cat}">${RADICAL_CATEGORY_LABEL[cat]}</button>`
+  ).join('');
+  const tiles = list.map(r => {
+    const idx = STATE.radicalData.words.indexOf(r);
+    return `<button class="radical-tile" data-action="go" data-view="radicalDetail" data-id="${idx}">
+      <span class="radical-glyph">${escapeHtml(r.radical)}</span>
+      <span class="radical-name">${escapeHtml(r.kana)}</span>
+      <span class="radical-meaning">${escapeHtml(r.meaning_en)}</span>
+    </button>`;
+  }).join('');
+  return `<div class="screen">
+    ${topbar('Radicals', 'home')}
+    <div class="tab-row" style="flex-wrap:wrap">${tabs}</div>
+    <div class="radical-grid">${tiles || '<div class="empty-state">Nothing in this category.</div>'}</div>
+  </div>`;
 }
+
+function renderRadicalDetail() {
+  const r = STATE.radicalData.words[Number(STATE.viewParams.id)];
+  if (!r) return `<div class="screen">${topbar('Not found', 'radicals')}</div>`;
+  const examples = (r.examples || []).map(k => `<span class="example-kanji">${escapeHtml(k)}</span>`).join('');
+  return `<div class="screen">
+    ${topbar(RADICAL_CATEGORY_LABEL[r.category], 'radicals')}
+    <div class="detail-head">
+      <span class="badge naadj">${escapeHtml(RADICAL_CATEGORY_LABEL[r.category])}</span>
+      <div class="kanji" style="margin-top:10px;font-size:46px">${escapeHtml(r.radical)}</div>
+      <div class="kana">${escapeHtml(r.kana)} · ${escapeHtml(r.romaji)}</div>
+      <div class="meaning" style="margin-top:8px">${escapeHtml(r.meaning_en)}</div>
+    </div>
+    <div class="form-row"><div class="usage" style="font-size:13px;opacity:.8;line-height:1.6">${escapeHtml(r.note || '')}</div></div>
+    <div class="eyebrow">Kanji that use it</div>
+    <div class="row-strip">${examples}</div>
+  </div>`;
+}
+
+/* ---------- settings ---------- */
+function renderSettings() {
+  const levels = ['n5', 'n4', 'n3', 'n2', 'n1'];
+  const counts = {};
+  for (const w of registry.allWords) {
+    const l = registry.levelOf(w);
+    if (l) counts[l] = (counts[l] || 0) + 1;
+  }
+  const levelChips = levels.map(lv => {
+    const on = settings.value.levels.includes(lv);
+    return `<button class="chip ${on ? 'on' : ''}" data-action="toggle-level" data-level="${lv}">
+      <span class="chip-label">${lv.toUpperCase()}</span>
+      <span class="chip-count">${counts[lv] || 0}</span>
+    </button>`;
+  }).join('');
+
+  const topics = registry.availableTopics;
+  const topicOptions = topics.map(tp =>
+    `<option value="${escapeHtml(tp)}" ${settings.value.topics.includes(tp) ? 'selected' : ''}>${escapeHtml(tp)}</option>`
+  ).join('');
+  const topicSelect = `<select multiple class="topic-select" size="${Math.min(Math.max(topics.length, 1), 8)}">
+    ${topicOptions}
+  </select>`;
+
+  const enabledCount = registry.enabledWords().length;
+  const totalCount = registry.allWords.length;
+
+  return `<div class="screen">
+    ${topbar('Settings', 'home')}
+    <div class="detail-head">
+      <div class="kanji" style="font-size:22px">Study scope</div>
+      <div class="meaning" style="margin-top:6px">Choose which words appear in the library and in daily sessions. Progress already earned is kept.</div>
+    </div>
+    <div class="eyebrow">Levels</div>
+    <div class="chip-row">${levelChips}</div>
+    <div class="eyebrow" style="margin-top:14px">Topics</div>
+    <p class="settings-hint">Select one or more topics (hold Ctrl/Cmd and click). Leave empty to include every topic.</p>
+    ${topicSelect}
+    <div class="action-row" style="margin-top:14px">
+      <button class="btn primary" data-action="go" data-view="home">Done</button>
+      <button class="btn ghost" data-action="reset-settings">Reset</button>
+    </div>
+    <p class="settings-hint" style="margin-top:12px">${enabledCount} of ${totalCount} words are in scope right now.</p>
+  </div>`;
+}
+
+/* ---------- session screens ---------- */
 function sessionProgressPct() {
   const s = STATE.session;
   return Math.round((s.index / s.queue.length) * 100);
@@ -760,7 +1040,7 @@ function renderSession() {
     finishSession();
     return renderSummary();
   }
-  const card = currentCard();
+  const card = s.currentCard();
   const title = s.kind === 'morning' ? 'Morning · Learn' : 'Evening · Recall';
   let body = '';
   if (card.step === 'teach') body = renderTeachCard(card);
@@ -776,14 +1056,14 @@ function renderSession() {
 }
 
 function wordBadges(word) {
-  const cls = isVerb(word) ? 'verb' : word.type;
-  const label = isVerb(word) ? 'verb' : (word.type === 'i-adjective' ? 'い-adj' : 'な-adj');
+  const cls = registry.isVerb(word) ? 'verb' : word.type;
+  const label = registry.isVerb(word) ? 'verb' : (word.type === 'i-adjective' ? 'い-adj' : 'な-adj');
   return `<div class="badges"><span class="badge ${cls}">${label}</span></div>`;
 }
 
 function renderTeachCard(card) {
   const { word, formName } = card;
-  const formDef = findFormDef(word, formName);
+  const formDef = registry.formDef(word, formName);
   const result = conjugate(word, formName);
   return `<div class="prompt-card">
     ${wordBadges(word)}
@@ -805,7 +1085,7 @@ function renderTeachCard(card) {
 
 function renderRecognitionCard(card) {
   const { word, formName } = card;
-  const formDef = findFormDef(word, formName);
+  const formDef = registry.formDef(word, formName);
   const choices = STATE.session._choicesCache = STATE.session._choicesCache || {};
   const cacheKey = STATE.session.index;
   if (!choices[cacheKey]) choices[cacheKey] = buildChoices(word, formName);
@@ -841,16 +1121,18 @@ function renderRecognitionCard(card) {
 
 function renderRecallCard(card) {
   const { word, formName } = card;
-  const formDef = findFormDef(word, formName);
+  const formDef = registry.formDef(word, formName);
   const result = conjugate(word, formName);
+  const answered = STATE.session._answered;
   const revealed = STATE.session._revealed;
   const exJp = word.example.jp;
-  const clozeJp = exJp.replace(word.dictionary, revealed ? `<b>${escapeHtml(result)}</b>` : '<span class="blank">&nbsp;</span>');
+  const clozeJp = exJp.replace(word.dictionary, revealed || answered ? `<b>${escapeHtml(result)}</b>` : '<span class="blank">&nbsp;</span>');
 
-  const inputHtml = revealed ? '' : `
+  const inputHtml = (revealed || answered) ? '' : `
     <input type="text" class="recall-input" id="recall-input" placeholder="Type it, or just think it through" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false">
     <div class="action-row" style="margin-top:12px">
-      <button class="btn primary" data-action="reveal">Show answer</button>
+      <button class="btn primary" data-action="check">Check</button>
+      <button class="btn ghost" data-action="reveal">Show answer</button>
     </div>`;
 
   const revealHtml = revealed ? `
@@ -864,7 +1146,15 @@ function renderRecallCard(card) {
       <button class="btn again" data-action="grade" data-grade="again">Again</button>
       <button class="btn good" data-action="grade" data-grade="good">Good</button>
       <button class="btn easy" data-action="grade" data-grade="easy">Easy</button>
-    </div>` : '';
+    </div>` : '' ;
+
+  const checkedHtml = answered ? `
+    <div class="answer-reveal">
+      <div class="label ${answered.correct ? '' : 'wrong'}">${answered.correct ? 'Correct' : 'Not quite'}</div>
+      <div class="result">${escapeHtml(result)}</div>
+      <div class="rule">${escapeHtml(formDef.usage_en)}</div>
+    </div>
+    <div class="action-row"><button class="btn primary" data-action="advance">Next →</button></div>` : '';
 
   return `<div class="prompt-card">
     ${wordBadges(word)}
@@ -876,9 +1166,10 @@ function renderRecallCard(card) {
       <div class="usage">${escapeHtml(formDef.usage_en)}</div>
     </div>
     <div class="cloze-line">${clozeJp}</div>
-    <div class="cloze-en">${escapeHtml(word.example.en)}</div>
+    <div class="cloze-en">${escapeHtml(exampleForForm(word, formName))}</div>
   </div>
   ${inputHtml}
+  ${checkedHtml}
   ${revealHtml}`;
 }
 
@@ -925,28 +1216,43 @@ function renderSummary() {
   </div>`;
 }
 
-/* ---------------- session interaction handlers ---------------- */
+/* ============================================================
+   SESSION INTERACTION HANDLERS
+   ============================================================ */
 function finishSession() {
-  markSessionDone(STATE.session.kind);
+  STATE.session.finish();
 }
 
 function handleChoice(picked) {
-  const card = currentCard();
+  const card = STATE.session.currentCard();
   const correct = conjugate(card.word, card.formName);
   const isCorrect = picked === correct;
   const key = srsKey(card.word.id, card.formName);
-  if (!STATE.srs[key]) introduceCard(card.word, card.formName);
-  gradeCard(card.word, card.formName, isCorrect ? 'good' : 'again');
+  if (!STATE.srs[key]) srs.introduceCard(card.word, card.formName);
+  srs.gradeCard(card.word, card.formName, isCorrect ? 'good' : 'again');
   STATE.session.stats.total += 1;
   if (isCorrect) STATE.session.stats.correct += 1;
   STATE.session._answered = { picked, correct: isCorrect };
   render();
 }
 
+function handleCheck() {
+  if (STATE.session._answered || STATE.session._revealed) return;
+  const card = STATE.session.currentCard();
+  const input = document.getElementById('recall-input');
+  const typed = input ? input.value : '';
+  const isCorrect = answerAccepted(card.word, card.formName, typed);
+  const key = srsKey(card.word.id, card.formName);
+  if (!STATE.srs[key]) srs.introduceCard(card.word, card.formName);
+  srs.gradeCard(card.word, card.formName, isCorrect ? 'good' : 'again');
+  STATE.session.stats.total += 1;
+  if (isCorrect) STATE.session.stats.correct += 1;
+  STATE.session._answered = { typed, correct: isCorrect };
+  render();
+}
+
 function advanceQueue() {
-  STATE.session.index += 1;
-  STATE.session._answered = null;
-  STATE.session._revealed = false;
+  STATE.session.advance();
   render();
 }
 
@@ -956,18 +1262,18 @@ function handleReveal() {
 }
 
 function handleGrade(grade) {
-  const card = currentCard();
+  const card = STATE.session.currentCard();
   const key = srsKey(card.word.id, card.formName);
-  if (!STATE.srs[key]) introduceCard(card.word, card.formName);
-  const correct = gradeCard(card.word, card.formName, grade);
+  if (!STATE.srs[key]) srs.introduceCard(card.word, card.formName);
+  const correct = srs.gradeCard(card.word, card.formName, grade);
   STATE.session.stats.total += 1;
   if (correct) STATE.session.stats.correct += 1;
   advanceQueue();
 }
 
 function handleGradeMeaning(grade) {
-  const card = currentCard();
-  gradeMeaning(card.word.id, grade);
+  const card = STATE.session.currentCard();
+  srs.gradeMeaning(card.word.id, grade);
   STATE.session.stats.total += 1;
   if (grade !== 'again') STATE.session.stats.correct += 1;
   advanceQueue();
@@ -981,10 +1287,10 @@ function goView(view, params) {
 }
 
 function startSession(kind) {
-  STATE.session = kind === 'morning' ? buildMorningSession() : buildEveningSession();
+  STATE.session = new Session(kind);
   if (STATE.session.queue.length === 0) {
-    // absolute fallback: nothing exists to review or learn
-    STATE.session.queue.push({ step: 'teach', word: STATE.allWords[0], formName: 'dictionary' });
+    const first = registry.enabledWords()[0];
+    if (first) STATE.session.queue.push({ step: 'teach', word: first, formName: 'dictionary' });
   }
   goView('session');
 }
@@ -1013,10 +1319,21 @@ app.addEventListener('click', (e) => {
   } else if (action === 'demo-tab') {
     STATE.demoTab = el.dataset.tab;
     render();
+  } else if (action === 'radical-tab') {
+    STATE.radicalTab = el.dataset.tab;
+    render();
+  } else if (action === 'toggle-level') {
+    settings.toggleLevel(el.dataset.level);
+    render();
+  } else if (action === 'reset-settings') {
+    settings.reset();
+    render();
   } else if (action === 'start-session') {
     startSession(el.dataset.kind);
   } else if (action === 'choice') {
     if (!STATE.session._answered) handleChoice(el.dataset.value);
+  } else if (action === 'check') {
+    handleCheck();
   } else if (action === 'advance') {
     advanceQueue();
   } else if (action === 'reveal') {
@@ -1025,6 +1342,27 @@ app.addEventListener('click', (e) => {
     handleGrade(el.dataset.grade);
   } else if (action === 'grade-meaning') {
     handleGradeMeaning(el.dataset.grade);
+  }
+});
+
+document.addEventListener('change', (e) => {
+  if (e.target && e.target.classList && e.target.classList.contains('topic-select')) {
+    settings.value.topics = [...e.target.selectedOptions].map(o => o.value);
+    settings.save();
+    render();
+  }
+});
+
+document.addEventListener('keydown', (e) => {
+  if (e.key !== 'Enter') return;
+  if (STATE.view !== 'session' || !STATE.session) return;
+  const active = document.activeElement;
+  if (active && active.id === 'recall-input') {
+    e.preventDefault();
+    handleCheck();
+  } else {
+    const advance = document.querySelector('[data-action="advance"]');
+    if (advance) { e.preventDefault(); advanceQueue(); }
   }
 });
 

@@ -136,7 +136,7 @@
         "n5"
       ],
       "example": {
-        "jp": "宏題をする。",
+        "jp": "宿題をする。",
         "en": "I do homework."
       },
       "irregular_overrides": {}
@@ -314,7 +314,8 @@
       "irregular_overrides": {
         "negative plain": "ない",
         "past negative plain": "なかった",
-        "must / obligation": "なければならない"
+        "must / obligation": "なければならない",
+        "potential": "ありえる"
       },
       "note": "Irregular negative: the plain negative of ある is the suppletive word ない (not あらない). The polite forms (あります/ありません) are perfectly regular."
     },
@@ -2342,7 +2343,7 @@
       "id": "v_oidininaru",
       "dictionary": "おいでになる",
       "kana": "おいでになる",
-      "romaji": "oidininaru",
+      "romaji": "oideninaru",
       "meaning": "to come, to go, to be (honorific)",
       "type": "verb",
       "group": "group1",
@@ -2589,7 +2590,7 @@
       "romaji": "kaeru",
       "meaning": "to change (something)",
       "type": "verb",
-      "group": "group1",
+      "group": "group2",
       "tags": [
         "n4"
       ],
@@ -2620,7 +2621,7 @@
       "id": "v_katadukeru",
       "dictionary": "片付ける",
       "kana": "かたづける",
-      "romaji": "katadukeru",
+      "romaji": "katazukeru",
       "meaning": "to tidy up",
       "type": "verb",
       "group": "group2",
@@ -3375,7 +3376,7 @@
       "id": "v_tsuduku",
       "dictionary": "続く",
       "kana": "つづく",
-      "romaji": "tsuduku",
+      "romaji": "tsuzuku",
       "meaning": "to continue (intransitive)",
       "type": "verb",
       "group": "group1",
@@ -3392,7 +3393,7 @@
       "id": "v_tsudukeru",
       "dictionary": "続ける",
       "kana": "つづける",
-      "romaji": "tsudukeru",
+      "romaji": "tsuzukeru",
       "meaning": "to continue (something)",
       "type": "verb",
       "group": "group2",
@@ -5548,7 +5549,7 @@
     {
       "id": "v_susumeru_2",
       "dictionary": "進める",
-      "kana": "すすめる2",
+      "kana": "すすめる",
       "romaji": "susumeru",
       "meaning": "to advance; to move forward; to proceed with",
       "type": "verb",
@@ -6151,7 +6152,7 @@
     {
       "id": "v_yameru_2",
       "dictionary": "辞める",
-      "kana": "やめる2",
+      "kana": "やめる",
       "romaji": "yameru",
       "meaning": "to resign; to retire; to quit (a job)",
       "type": "verb",
@@ -6374,7 +6375,7 @@
     {
       "id": "v_tatsu_2",
       "dictionary": "経つ",
-      "kana": "たつ2",
+      "kana": "たつ",
       "romaji": "tatsu",
       "meaning": "to pass; to elapse (of time)",
       "type": "verb",
@@ -6512,7 +6513,7 @@
     {
       "id": "v_kau_2",
       "dictionary": "飼う",
-      "kana": "かう2",
+      "kana": "かう",
       "romaji": "kau",
       "meaning": "to keep (a pet); to raise (an animal)",
       "type": "verb",
@@ -7159,7 +7160,7 @@
     {
       "id": "v_sasu_2",
       "dictionary": "指す",
-      "kana": "さす2",
+      "kana": "さす",
       "romaji": "sasu",
       "meaning": "to point; to indicate; to nominate",
       "type": "verb",
@@ -7169,7 +7170,23 @@
       ],
       "example": {
         "jp": "地図で場所を指す。",
-        "en": "I point to the location on the map."
+        "en": "I point to the location on the map.",
+        "form_en": {
+          "negative plain": "I do not point to the location on the map.",
+          "negative polite": "I do not point to the location on the map.",
+          "past plain": "I pointed to the location on the map.",
+          "past polite": "I pointed to the location on the map.",
+          "past negative plain": "I did not point to the location on the map.",
+          "past negative polite": "I did not point to the location on the map.",
+          "te-form": "I point to the location on the map, and ...",
+          "progressive": "I am pointing to the location on the map.",
+          "desire (tai form)": "I want to point to the location on the map.",
+          "imperative": "Point to the location on the map!",
+          "prohibition": "Do not point to the location on the map!",
+          "must / obligation": "I must point to the location on the map.",
+          "potential": "I can point to the location on the map.",
+          "passive": "The location on the map is pointed to (by me)."
+        }
       },
       "irregular_overrides": {},
       "note": "Different word from さす (sasu, “to hold up an umbrella”) already in your library — same reading, different meaning."
@@ -7211,7 +7228,7 @@
     {
       "id": "v_kakeru_4",
       "dictionary": "欠ける",
-      "kana": "かける2",
+      "kana": "かける",
       "romaji": "kakeru",
       "meaning": "to be chipped; to be lacking; to be missing",
       "type": "verb",
@@ -7331,7 +7348,7 @@
     {
       "id": "v_tsuku_3",
       "dictionary": "就く",
-      "kana": "つく2",
+      "kana": "つく",
       "romaji": "tsuku",
       "meaning": "to take (a position, seat); to ascend (the throne)",
       "type": "verb",
