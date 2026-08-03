@@ -1,4 +1,4 @@
-# Qotoba
+# JapApp — Katsuyō 活用
 
 A small, offline-first PWA for daily Japanese verb and adjective conjugation practice. Vanilla JS, no build step, no framework, no server — all data lives in this folder and all progress stays on your device.
 

@@ -1,4 +1,4 @@
-const CACHE_NAME = 'katsuyo-v2';
+const CACHE_NAME = 'katsuyo-v3';
 const ASSETS = [
   './',
   './index.html',
@@ -7,6 +7,8 @@ const ASSETS = [
   './manifest.json',
   './data/verbs.json',
   './data/adjectives.json',
+  './data/adverbs.json',
+  './data/nouns.json',
   './data/conjugation_verb.json',
   './data/conjugation_adj.json',
   './data/particles.json',

@@ -36,42 +36,6 @@
       "irregular_overrides": {}
     },
     {
-      "id": "a_ii",
-      "dictionary": "いい",
-      "kana": "いい",
-      "romaji": "ii",
-      "meaning": "good",
-      "type": "i-adjective",
-      "tags": [
-        "description",
-        "irregular",
-        "n5"
-      ],
-      "example": {
-        "jp": "今日はいい天気です。",
-        "en": "Today is nice weather."
-      },
-      "note": "Irregular: every form besides the dictionary form and polite present is built on the stem 良- (yo-), not い-.",
-      "irregular_overrides": {
-        "negative plain": "良くない",
-        "negative polite": "良くないです",
-        "past plain": "良かった",
-        "past polite": "良かったです",
-        "past negative plain": "良くなかった",
-        "past negative polite": "良くなかったです",
-        "adverbial": "良く",
-        "te-form": "良くて",
-        "conditional": "良ければ",
-        "hypothetical past": "良かったら",
-        "wanting something to be a certain way": "良くなってほしい",
-        "conjunctive (literary)": "良く",
-        "degree": "良すぎる",
-        "nominalization": "良さ",
-        "seeming": "良さそう",
-        "negative implication": "良くなくて"
-      }
-    },
-    {
       "id": "a_tanoshii",
       "dictionary": "楽しい",
       "kana": "たのしい",
@@ -160,6 +124,3723 @@
         "en": "This app is convenient."
       },
       "irregular_overrides": {}
+    },
+    {
+      "id": "a_chiisai",
+      "dictionary": "小さい",
+      "kana": "ちいさい",
+      "romaji": "chiisai",
+      "meaning": "small, little",
+      "type": "i-adjective",
+      "tags": [
+        "description",
+        "n5"
+      ],
+      "example": {
+        "jp": "この猫はとても小さいです。",
+        "en": "This cat is very small."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_atarashii",
+      "dictionary": "新しい",
+      "kana": "あたらしい",
+      "romaji": "atarashii",
+      "meaning": "new",
+      "type": "i-adjective",
+      "tags": [
+        "description",
+        "shopping",
+        "n5"
+      ],
+      "example": {
+        "jp": "新しい靴を買いました。",
+        "en": "I bought new shoes."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_furui",
+      "dictionary": "古い",
+      "kana": "ふるい",
+      "romaji": "furui",
+      "meaning": "old (not new)",
+      "type": "i-adjective",
+      "tags": [
+        "description",
+        "shopping",
+        "n5"
+      ],
+      "example": {
+        "jp": "この車は古いですが、よく走ります。",
+        "en": "This car is old but runs well."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_yasui",
+      "dictionary": "安い",
+      "kana": "やすい",
+      "romaji": "yasui",
+      "meaning": "cheap, inexpensive",
+      "type": "i-adjective",
+      "tags": [
+        "shopping",
+        "n5"
+      ],
+      "example": {
+        "jp": "この店は安くて、おいしいです。",
+        "en": "This shop is cheap and delicious."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_hikui",
+      "dictionary": "低い",
+      "kana": "ひくい",
+      "romaji": "hikui",
+      "meaning": "low",
+      "type": "i-adjective",
+      "tags": [
+        "description",
+        "n5"
+      ],
+      "example": {
+        "jp": "このテーブルは低すぎます。",
+        "en": "This table is too low."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_atsui_heat",
+      "dictionary": "暑い",
+      "kana": "あつい",
+      "romaji": "atsui",
+      "meaning": "hot (weather)",
+      "type": "i-adjective",
+      "tags": [
+        "weather",
+        "n5"
+      ],
+      "example": {
+        "jp": "今日はとても暑いです。",
+        "en": "It is very hot today."
+      },
+      "note": "暑い refers to hot weather. The hot-to-the-touch 熱い and the thick 厚い are separate words also read あつい.",
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_samui",
+      "dictionary": "寒い",
+      "kana": "さむい",
+      "romaji": "samui",
+      "meaning": "cold (weather)",
+      "type": "i-adjective",
+      "tags": [
+        "weather",
+        "n5"
+      ],
+      "example": {
+        "jp": "冬は寒いです。",
+        "en": "Winter is cold."
+      },
+      "note": "寒い refers to cold weather/air. The cold-to-the-touch 冷たい is a separate word.",
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_atatakai",
+      "dictionary": "暖かい",
+      "kana": "あたたかい",
+      "romaji": "atatakai",
+      "meaning": "warm (weather/heat)",
+      "type": "i-adjective",
+      "tags": [
+        "weather",
+        "n5"
+      ],
+      "example": {
+        "jp": "今日は暖かくて気持ちがいいです。",
+        "en": "It is warm and pleasant today."
+      },
+      "note": "暖かい describes warm weather or heat. 温かい (also あたたかい) is used for warm things that can be touched, like food.",
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_suzushii",
+      "dictionary": "涼しい",
+      "kana": "すずしい",
+      "romaji": "suzushii",
+      "meaning": "cool, refreshing",
+      "type": "i-adjective",
+      "tags": [
+        "weather",
+        "n5"
+      ],
+      "example": {
+        "jp": "秋は涼しいです。",
+        "en": "Autumn is cool."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_atsui_hot",
+      "dictionary": "熱い",
+      "kana": "あつい",
+      "romaji": "atsui",
+      "meaning": "hot (to the touch)",
+      "type": "i-adjective",
+      "tags": [
+        "food",
+        "body",
+        "n5"
+      ],
+      "example": {
+        "jp": "このお茶は熱いです。気をつけてください。",
+        "en": "This tea is hot. Please be careful."
+      },
+      "note": "熱い describes something physically hot to touch. Weather heat is 暑い and thickness is 厚い.",
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_tsumetai",
+      "dictionary": "冷たい",
+      "kana": "つめたい",
+      "romaji": "tsumetai",
+      "meaning": "cold (to the touch)",
+      "type": "i-adjective",
+      "tags": [
+        "food",
+        "body",
+        "n5"
+      ],
+      "example": {
+        "jp": "冷たい水が飲みたいです。",
+        "en": "I want to drink cold water."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_isogashii",
+      "dictionary": "忙しい",
+      "kana": "いそがしい",
+      "romaji": "isogashii",
+      "meaning": "busy",
+      "type": "i-adjective",
+      "tags": [
+        "daily",
+        "business",
+        "n5"
+      ],
+      "example": {
+        "jp": "今週は仕事が忙しいです。",
+        "en": "I am busy with work this week."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_hiroi",
+      "dictionary": "広い",
+      "kana": "ひろい",
+      "romaji": "hiroi",
+      "meaning": "wide, spacious",
+      "type": "i-adjective",
+      "tags": [
+        "description",
+        "places",
+        "n5"
+      ],
+      "example": {
+        "jp": "この部屋は広くて明るいです。",
+        "en": "This room is spacious and bright."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_semai",
+      "dictionary": "狭い",
+      "kana": "せまい",
+      "romaji": "semai",
+      "meaning": "narrow, small",
+      "type": "i-adjective",
+      "tags": [
+        "description",
+        "places",
+        "n5"
+      ],
+      "example": {
+        "jp": "うちの台所は狭いです。",
+        "en": "Our kitchen is small."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_tooi",
+      "dictionary": "遠い",
+      "kana": "とおい",
+      "romaji": "tooi",
+      "meaning": "far",
+      "type": "i-adjective",
+      "tags": [
+        "places",
+        "n5"
+      ],
+      "example": {
+        "jp": "駅からここまで遠いです。",
+        "en": "It is far from the station to here."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_chikai",
+      "dictionary": "近い",
+      "kana": "ちかい",
+      "romaji": "chikai",
+      "meaning": "near, close",
+      "type": "i-adjective",
+      "tags": [
+        "places",
+        "n5"
+      ],
+      "example": {
+        "jp": "スーパーは家に近いです。",
+        "en": "The supermarket is near my house."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_nagai",
+      "dictionary": "長い",
+      "kana": "ながい",
+      "romaji": "nagai",
+      "meaning": "long",
+      "type": "i-adjective",
+      "tags": [
+        "description",
+        "n5"
+      ],
+      "example": {
+        "jp": "この川は長いです。",
+        "en": "This river is long."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_mijikai",
+      "dictionary": "短い",
+      "kana": "みじかい",
+      "romaji": "mijikai",
+      "meaning": "short",
+      "type": "i-adjective",
+      "tags": [
+        "description",
+        "n5"
+      ],
+      "example": {
+        "jp": "冬は昼が短いです。",
+        "en": "In winter the days are short."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_muzukashii",
+      "dictionary": "難しい",
+      "kana": "むずかしい",
+      "romaji": "muzukashii",
+      "meaning": "difficult",
+      "type": "i-adjective",
+      "tags": [
+        "study",
+        "n5"
+      ],
+      "example": {
+        "jp": "この問題は難しいです。",
+        "en": "This problem is difficult."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_yasashii_easy",
+      "dictionary": "易しい",
+      "kana": "やさしい",
+      "romaji": "yasashii",
+      "meaning": "easy",
+      "type": "i-adjective",
+      "tags": [
+        "study",
+        "n5"
+      ],
+      "example": {
+        "jp": "この本は易しい日本語で書いてあります。",
+        "en": "This book is written in easy Japanese."
+      },
+      "note": "易しい (easy) and 優しい (kind) are different words that are both read やさしい.",
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_warui",
+      "dictionary": "悪い",
+      "kana": "わるい",
+      "romaji": "warui",
+      "meaning": "bad",
+      "type": "i-adjective",
+      "tags": [
+        "description",
+        "health",
+        "n5"
+      ],
+      "example": {
+        "jp": "体の調子が悪いです。",
+        "en": "I am not feeling well."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_hayai_early",
+      "dictionary": "早い",
+      "kana": "はやい",
+      "romaji": "hayai",
+      "meaning": "early; fast",
+      "type": "i-adjective",
+      "tags": [
+        "daily",
+        "time",
+        "n5"
+      ],
+      "example": {
+        "jp": "今朝は早く起きました。",
+        "en": "I got up early this morning."
+      },
+      "note": "早い means early; for speed 速い (also はやい) is used. 早い has no speed nuance in standard usage.",
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_osoi",
+      "dictionary": "遅い",
+      "kana": "おそい",
+      "romaji": "osoi",
+      "meaning": "late; slow",
+      "type": "i-adjective",
+      "tags": [
+        "daily",
+        "time",
+        "n5"
+      ],
+      "example": {
+        "jp": "電車が遅れています。遅いです。",
+        "en": "The train is delayed. It is late."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_ooi",
+      "dictionary": "多い",
+      "kana": "おおい",
+      "romaji": "ooi",
+      "meaning": "many, a lot of",
+      "type": "i-adjective",
+      "tags": [
+        "description",
+        "n5"
+      ],
+      "example": {
+        "jp": "日本には雨が多いです。",
+        "en": "There is a lot of rain in Japan."
+      },
+      "note": "多い describes the subject directly (人が多い). It is not used attributively before a noun the way other adjectives are (Xの多い人 is used instead).",
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_sukunai",
+      "dictionary": "少ない",
+      "kana": "すくない",
+      "romaji": "sukunai",
+      "meaning": "few, little",
+      "type": "i-adjective",
+      "tags": [
+        "description",
+        "n5"
+      ],
+      "example": {
+        "jp": "今年の雪は少ないです。",
+        "en": "There is little snow this year."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_akarui",
+      "dictionary": "明るい",
+      "kana": "あかるい",
+      "romaji": "akarui",
+      "meaning": "bright",
+      "type": "i-adjective",
+      "tags": [
+        "description",
+        "n5"
+      ],
+      "example": {
+        "jp": "この部屋は明るいです。",
+        "en": "This room is bright."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_kurai",
+      "dictionary": "暗い",
+      "kana": "くらい",
+      "romaji": "kurai",
+      "meaning": "dark",
+      "type": "i-adjective",
+      "tags": [
+        "description",
+        "n5"
+      ],
+      "example": {
+        "jp": "夜の公園は暗いです。",
+        "en": "The park at night is dark."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_wakai",
+      "dictionary": "若い",
+      "kana": "わかい",
+      "romaji": "wakai",
+      "meaning": "young",
+      "type": "i-adjective",
+      "tags": [
+        "body",
+        "social",
+        "n5"
+      ],
+      "example": {
+        "jp": "彼はまだ若いです。",
+        "en": "He is still young."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_shiroi",
+      "dictionary": "白い",
+      "kana": "しろい",
+      "romaji": "shiroi",
+      "meaning": "white",
+      "type": "i-adjective",
+      "tags": [
+        "description",
+        "n5"
+      ],
+      "example": {
+        "jp": "白いシャツを着ています。",
+        "en": "I am wearing a white shirt."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_kuroi",
+      "dictionary": "黒い",
+      "kana": "くろい",
+      "romaji": "kuroi",
+      "meaning": "black",
+      "type": "i-adjective",
+      "tags": [
+        "description",
+        "n5"
+      ],
+      "example": {
+        "jp": "黒い髪が好きです。",
+        "en": "I like black hair."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_akai",
+      "dictionary": "赤い",
+      "kana": "あかい",
+      "romaji": "akai",
+      "meaning": "red",
+      "type": "i-adjective",
+      "tags": [
+        "description",
+        "n5"
+      ],
+      "example": {
+        "jp": "赤いりんごをもらいました。",
+        "en": "I received a red apple."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_aoi",
+      "dictionary": "青い",
+      "kana": "あおい",
+      "romaji": "aoi",
+      "meaning": "blue; (unripe) green",
+      "type": "i-adjective",
+      "tags": [
+        "description",
+        "nature",
+        "n5"
+      ],
+      "example": {
+        "jp": "空が青いです。",
+        "en": "The sky is blue."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_omoi",
+      "dictionary": "重い",
+      "kana": "おもい",
+      "romaji": "omoi",
+      "meaning": "heavy",
+      "type": "i-adjective",
+      "tags": [
+        "body",
+        "shopping",
+        "n5"
+      ],
+      "example": {
+        "jp": "この荷物は重いです。",
+        "en": "This luggage is heavy."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_karui",
+      "dictionary": "軽い",
+      "kana": "かるい",
+      "romaji": "karui",
+      "meaning": "light",
+      "type": "i-adjective",
+      "tags": [
+        "body",
+        "shopping",
+        "n5"
+      ],
+      "example": {
+        "jp": "このバッグは軽くて便利です。",
+        "en": "This bag is light and convenient."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_tsuyoi",
+      "dictionary": "強い",
+      "kana": "つよい",
+      "romaji": "tsuyoi",
+      "meaning": "strong",
+      "type": "i-adjective",
+      "tags": [
+        "body",
+        "description",
+        "n5"
+      ],
+      "example": {
+        "jp": "彼はとても強いです。",
+        "en": "He is very strong."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_yowai",
+      "dictionary": "弱い",
+      "kana": "よわい",
+      "romaji": "yowai",
+      "meaning": "weak",
+      "type": "i-adjective",
+      "tags": [
+        "body",
+        "description",
+        "n5"
+      ],
+      "example": {
+        "jp": "私はお酒に弱いです。",
+        "en": "I have a low tolerance for alcohol."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_omoshiroi",
+      "dictionary": "面白い",
+      "kana": "おもしろい",
+      "romaji": "omoshiroi",
+      "meaning": "interesting, fun",
+      "type": "i-adjective",
+      "tags": [
+        "entertainment",
+        "n5"
+      ],
+      "example": {
+        "jp": "この映画は面白かったです。",
+        "en": "This movie was interesting."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_yasashii_kind",
+      "dictionary": "優しい",
+      "kana": "やさしい",
+      "romaji": "yasashii",
+      "meaning": "kind, gentle",
+      "type": "i-adjective",
+      "tags": [
+        "feelings",
+        "social",
+        "n5"
+      ],
+      "example": {
+        "jp": "田中さんは優しい人です。",
+        "en": "Tanaka-san is a kind person."
+      },
+      "note": "優しい (kind) and 易しい (easy) are different words that are both read やさしい.",
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_abunai",
+      "dictionary": "危ない",
+      "kana": "あぶない",
+      "romaji": "abunai",
+      "meaning": "dangerous",
+      "type": "i-adjective",
+      "tags": [
+        "description",
+        "daily",
+        "n5"
+      ],
+      "example": {
+        "jp": "ここは危ないです。近づかないでください。",
+        "en": "This place is dangerous. Please do not go near it."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_okashii",
+      "dictionary": "おかしい",
+      "kana": "おかしい",
+      "romaji": "okashii",
+      "meaning": "funny; strange",
+      "type": "i-adjective",
+      "tags": [
+        "entertainment",
+        "feelings",
+        "n5"
+      ],
+      "example": {
+        "jp": "その話はおかしくて、笑ってしまいました。",
+        "en": "That story was funny and I laughed."
+      },
+      "note": "おかしい usually means funny, but it can also mean strange/suspicious depending on context.",
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_utsukushii",
+      "dictionary": "美しい",
+      "kana": "うつくしい",
+      "romaji": "utsukushii",
+      "meaning": "beautiful",
+      "type": "i-adjective",
+      "tags": [
+        "description",
+        "nature",
+        "n4"
+      ],
+      "example": {
+        "jp": "この花はとても美しいです。",
+        "en": "This flower is very beautiful."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_kitanai",
+      "dictionary": "汚い",
+      "kana": "きたない",
+      "romaji": "kitanai",
+      "meaning": "dirty",
+      "type": "i-adjective",
+      "tags": [
+        "description",
+        "n4"
+      ],
+      "example": {
+        "jp": "部屋が汚いので、掃除します。",
+        "en": "The room is dirty, so I will clean it."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_kanashii",
+      "dictionary": "悲しい",
+      "kana": "かなしい",
+      "romaji": "kanashii",
+      "meaning": "sad",
+      "type": "i-adjective",
+      "tags": [
+        "feelings",
+        "n4"
+      ],
+      "example": {
+        "jp": "別れは悲しいです。",
+        "en": "Parting is sad."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_ureshii",
+      "dictionary": "嬉しい",
+      "kana": "うれしい",
+      "romaji": "ureshii",
+      "meaning": "happy, glad",
+      "type": "i-adjective",
+      "tags": [
+        "feelings",
+        "n4"
+      ],
+      "example": {
+        "jp": "プレゼントをもらって嬉しいです。",
+        "en": "I am glad I received a present."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_sabishii",
+      "dictionary": "寂しい",
+      "kana": "さびしい",
+      "romaji": "sabishii",
+      "meaning": "lonely",
+      "type": "i-adjective",
+      "tags": [
+        "feelings",
+        "n4"
+      ],
+      "example": {
+        "jp": "一人で暮らすのは寂しいです。",
+        "en": "Living alone is lonely."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_itai",
+      "dictionary": "痛い",
+      "kana": "いたい",
+      "romaji": "itai",
+      "meaning": "painful",
+      "type": "i-adjective",
+      "tags": [
+        "body",
+        "health",
+        "n4"
+      ],
+      "example": {
+        "jp": "頭が痛いです。",
+        "en": "I have a headache."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_kayui",
+      "dictionary": "痒い",
+      "kana": "かゆい",
+      "romaji": "kayui",
+      "meaning": "itchy",
+      "type": "i-adjective",
+      "tags": [
+        "body",
+        "health",
+        "n4"
+      ],
+      "example": {
+        "jp": "虫に刺されて、足が痒いです。",
+        "en": "A bug bit me and my leg is itchy."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_nigai",
+      "dictionary": "苦い",
+      "kana": "にがい",
+      "romaji": "nigai",
+      "meaning": "bitter",
+      "type": "i-adjective",
+      "tags": [
+        "food",
+        "n4"
+      ],
+      "example": {
+        "jp": "この薬は苦いです。",
+        "en": "This medicine is bitter."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_amai",
+      "dictionary": "甘い",
+      "kana": "あまい",
+      "romaji": "amai",
+      "meaning": "sweet; indulgent",
+      "type": "i-adjective",
+      "tags": [
+        "food",
+        "n4"
+      ],
+      "example": {
+        "jp": "このケーキは甘いです。",
+        "en": "This cake is sweet."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_karai_spicy",
+      "dictionary": "辛い",
+      "kana": "からい",
+      "romaji": "karai",
+      "meaning": "spicy, hot",
+      "type": "i-adjective",
+      "tags": [
+        "food",
+        "n4"
+      ],
+      "example": {
+        "jp": "このカレーは辛いです。",
+        "en": "This curry is spicy."
+      },
+      "note": "辛い read からい means spicy/hot in taste. Read つらい, it is a different word meaning painful/hard.",
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_tsurai_painful",
+      "dictionary": "辛い",
+      "kana": "つらい",
+      "romaji": "tsurai",
+      "meaning": "painful, hard (emotionally or physically)",
+      "type": "i-adjective",
+      "tags": [
+        "feelings",
+        "body",
+        "n4"
+      ],
+      "example": {
+        "jp": "毎日の通勤はつらいです。",
+        "en": "The daily commute is hard."
+      },
+      "note": "辛い read つらい means painful/trying. Read からい, it is a different word meaning spicy.",
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_suppai",
+      "dictionary": "酸っぱい",
+      "kana": "すっぱい",
+      "romaji": "suppai",
+      "meaning": "sour",
+      "type": "i-adjective",
+      "tags": [
+        "food",
+        "n4"
+      ],
+      "example": {
+        "jp": "このりんごは少し酸っぱいです。",
+        "en": "This apple is a little sour."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_shiokarai",
+      "dictionary": "塩辛い",
+      "kana": "しおからい",
+      "romaji": "shiokarai",
+      "meaning": "salty",
+      "type": "i-adjective",
+      "tags": [
+        "food",
+        "n4"
+      ],
+      "example": {
+        "jp": "このスープは塩辛いです。",
+        "en": "This soup is salty."
+      },
+      "note": "The standard reading is しおからい; the colloquial しょっぱい is widely used in casual speech.",
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_katai",
+      "dictionary": "固い",
+      "kana": "かたい",
+      "romaji": "katai",
+      "meaning": "hard, firm",
+      "type": "i-adjective",
+      "tags": [
+        "description",
+        "food",
+        "n4"
+      ],
+      "example": {
+        "jp": "このパンは固くて食べられません。",
+        "en": "This bread is hard and I cannot eat it."
+      },
+      "note": "固い means physically hard/firm. 硬い and 堅い are common variants of the same reading.",
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_yawarakai",
+      "dictionary": "柔らかい",
+      "kana": "やわらかい",
+      "romaji": "yawarakai",
+      "meaning": "soft",
+      "type": "i-adjective",
+      "tags": [
+        "description",
+        "food",
+        "n4"
+      ],
+      "example": {
+        "jp": "このベッドは柔らかいです。",
+        "en": "This bed is soft."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_hosoi",
+      "dictionary": "細い",
+      "kana": "ほそい",
+      "romaji": "hosoi",
+      "meaning": "thin, slender",
+      "type": "i-adjective",
+      "tags": [
+        "body",
+        "description",
+        "n4"
+      ],
+      "example": {
+        "jp": "彼女は細い指をしています。",
+        "en": "She has slender fingers."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_futoi",
+      "dictionary": "太い",
+      "kana": "ふとい",
+      "romaji": "futoi",
+      "meaning": "thick, fat",
+      "type": "i-adjective",
+      "tags": [
+        "body",
+        "description",
+        "n4"
+      ],
+      "example": {
+        "jp": "この木は幹が太いです。",
+        "en": "This tree has a thick trunk."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_komakai",
+      "dictionary": "細かい",
+      "kana": "こまかい",
+      "romaji": "komakai",
+      "meaning": "fine, detailed, small",
+      "type": "i-adjective",
+      "tags": [
+        "study",
+        "description",
+        "n4"
+      ],
+      "example": {
+        "jp": "細かい点まで説明してください。",
+        "en": "Please explain even the fine points."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_marui",
+      "dictionary": "丸い",
+      "kana": "まるい",
+      "romaji": "marui",
+      "meaning": "round",
+      "type": "i-adjective",
+      "tags": [
+        "description",
+        "n4"
+      ],
+      "example": {
+        "jp": "地球は丸いです。",
+        "en": "The earth is round."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_shikakui",
+      "dictionary": "四角い",
+      "kana": "しかくい",
+      "romaji": "shikakui",
+      "meaning": "square",
+      "type": "i-adjective",
+      "tags": [
+        "description",
+        "n4"
+      ],
+      "example": {
+        "jp": "四角い箱を探しています。",
+        "en": "I am looking for a square box."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_fukai",
+      "dictionary": "深い",
+      "kana": "ふかい",
+      "romaji": "fukai",
+      "meaning": "deep",
+      "type": "i-adjective",
+      "tags": [
+        "nature",
+        "description",
+        "n4"
+      ],
+      "example": {
+        "jp": "この湖はとても深いです。",
+        "en": "This lake is very deep."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_asai",
+      "dictionary": "浅い",
+      "kana": "あさい",
+      "romaji": "asai",
+      "meaning": "shallow",
+      "type": "i-adjective",
+      "tags": [
+        "nature",
+        "description",
+        "n4"
+      ],
+      "example": {
+        "jp": "この川は浅くて、泳げます。",
+        "en": "This river is shallow and you can swim in it."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_hayai_fast",
+      "dictionary": "速い",
+      "kana": "はやい",
+      "romaji": "hayai",
+      "meaning": "fast, quick",
+      "type": "i-adjective",
+      "tags": [
+        "movement",
+        "daily",
+        "n4"
+      ],
+      "example": {
+        "jp": "この車は速いです。",
+        "en": "This car is fast."
+      },
+      "note": "速い means fast/quick; 早い (also はやい) means early.",
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_usui",
+      "dictionary": "薄い",
+      "kana": "うすい",
+      "romaji": "usui",
+      "meaning": "thin (of objects/taste); weak",
+      "type": "i-adjective",
+      "tags": [
+        "description",
+        "food",
+        "n4"
+      ],
+      "example": {
+        "jp": "この紙は薄いです。",
+        "en": "This paper is thin."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_atsui_thick",
+      "dictionary": "厚い",
+      "kana": "あつい",
+      "romaji": "atsui",
+      "meaning": "thick",
+      "type": "i-adjective",
+      "tags": [
+        "description",
+        "n4"
+      ],
+      "example": {
+        "jp": "この本は厚いです。",
+        "en": "This book is thick."
+      },
+      "note": "厚い means thick in depth. The weather heat 暑い and touch heat 熱い are also read あつい.",
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_kowai",
+      "dictionary": "怖い",
+      "kana": "こわい",
+      "romaji": "kowai",
+      "meaning": "scary, frightening",
+      "type": "i-adjective",
+      "tags": [
+        "feelings",
+        "n4"
+      ],
+      "example": {
+        "jp": "夜に一人で歩くのは怖いです。",
+        "en": "Walking alone at night is scary."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_hazukashii",
+      "dictionary": "恥ずかしい",
+      "kana": "はずかしい",
+      "romaji": "hazukashii",
+      "meaning": "embarrassing, shy",
+      "type": "i-adjective",
+      "tags": [
+        "feelings",
+        "n4"
+      ],
+      "example": {
+        "jp": "人前で話すのは恥ずかしいです。",
+        "en": "Speaking in front of people is embarrassing."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_tadashii",
+      "dictionary": "正しい",
+      "kana": "ただしい",
+      "romaji": "tadashii",
+      "meaning": "correct, right",
+      "type": "i-adjective",
+      "tags": [
+        "study",
+        "n4"
+      ],
+      "example": {
+        "jp": "彼の答えは正しいです。",
+        "en": "His answer is correct."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_erai",
+      "dictionary": "偉い",
+      "kana": "えらい",
+      "romaji": "erai",
+      "meaning": "great, admirable",
+      "type": "i-adjective",
+      "tags": [
+        "social",
+        "n4"
+      ],
+      "example": {
+        "jp": "彼は偉い人です。",
+        "en": "He is a great person."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_mezurashii",
+      "dictionary": "珍しい",
+      "kana": "めずらしい",
+      "romaji": "mezurashii",
+      "meaning": "rare, unusual",
+      "type": "i-adjective",
+      "tags": [
+        "description",
+        "n4"
+      ],
+      "example": {
+        "jp": "この動物はとても珍しいです。",
+        "en": "This animal is very rare."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_nemui",
+      "dictionary": "眠い",
+      "kana": "ねむい",
+      "romaji": "nemui",
+      "meaning": "sleepy",
+      "type": "i-adjective",
+      "tags": [
+        "body",
+        "health",
+        "n4"
+      ],
+      "example": {
+        "jp": "昨夜あまり寝なかったので、眠いです。",
+        "en": "I did not sleep much last night, so I am sleepy."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_natsukashii",
+      "dictionary": "懐かしい",
+      "kana": "なつかしい",
+      "romaji": "natsukashii",
+      "meaning": "nostalgic, dearly remembered",
+      "type": "i-adjective",
+      "tags": [
+        "feelings",
+        "n3"
+      ],
+      "example": {
+        "jp": "子どもの頃の写真を見ると、懐かしい気持ちになります。",
+        "en": "Looking at childhood photos makes me feel nostalgic."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_kurushii",
+      "dictionary": "苦しい",
+      "kana": "くるしい",
+      "romaji": "kurushii",
+      "meaning": "painful, hard to bear",
+      "type": "i-adjective",
+      "tags": [
+        "body",
+        "feelings",
+        "n3"
+      ],
+      "example": {
+        "jp": "息が苦しいです。",
+        "en": "I am having trouble breathing."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_mabushii",
+      "dictionary": "眩しい",
+      "kana": "まぶしい",
+      "romaji": "mabushii",
+      "meaning": "dazzling, glaring",
+      "type": "i-adjective",
+      "tags": [
+        "body",
+        "n3"
+      ],
+      "example": {
+        "jp": "太陽が眩しいです。",
+        "en": "The sun is dazzling."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_koishii",
+      "dictionary": "恋しい",
+      "kana": "こいしい",
+      "romaji": "koishii",
+      "meaning": "yearned-for, missed",
+      "type": "i-adjective",
+      "tags": [
+        "feelings",
+        "n3"
+      ],
+      "example": {
+        "jp": "故郷が恋しいです。",
+        "en": "I miss my hometown."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_hageshii",
+      "dictionary": "激しい",
+      "kana": "はげしい",
+      "romaji": "hageshii",
+      "meaning": "intense, violent",
+      "type": "i-adjective",
+      "tags": [
+        "nature",
+        "feelings",
+        "n3"
+      ],
+      "example": {
+        "jp": "昨日は激しい雨が降りました。",
+        "en": "Heavy rain fell yesterday."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_sugoi",
+      "dictionary": "凄い",
+      "kana": "すごい",
+      "romaji": "sugoi",
+      "meaning": "amazing, tremendous",
+      "type": "i-adjective",
+      "tags": [
+        "feelings",
+        "description",
+        "n3"
+      ],
+      "example": {
+        "jp": "彼の料理はすごくおいしいです。",
+        "en": "His cooking is really delicious."
+      },
+      "note": "凄い can be used adverbially as すごく (extremely) in casual speech.",
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_subarashii",
+      "dictionary": "素晴らしい",
+      "kana": "すばらしい",
+      "romaji": "subarashii",
+      "meaning": "wonderful, splendid",
+      "type": "i-adjective",
+      "tags": [
+        "feelings",
+        "description",
+        "n3"
+      ],
+      "example": {
+        "jp": "素晴らしい景色ですね。",
+        "en": "What a wonderful view."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_kashikoi",
+      "dictionary": "賢い",
+      "kana": "かしこい",
+      "romaji": "kashikoi",
+      "meaning": "wise, clever",
+      "type": "i-adjective",
+      "tags": [
+        "study",
+        "social",
+        "n3"
+      ],
+      "example": {
+        "jp": "彼は賢い犬です。",
+        "en": "He is a clever dog."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_osanai",
+      "dictionary": "幼い",
+      "kana": "おさない",
+      "romaji": "osanai",
+      "meaning": "childish, immature",
+      "type": "i-adjective",
+      "tags": [
+        "body",
+        "social",
+        "n3"
+      ],
+      "example": {
+        "jp": "彼は考え方が幼いです。",
+        "en": "His way of thinking is immature."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_moroi",
+      "dictionary": "脆い",
+      "kana": "もろい",
+      "romaji": "moroi",
+      "meaning": "fragile, brittle",
+      "type": "i-adjective",
+      "tags": [
+        "description",
+        "n3"
+      ],
+      "example": {
+        "jp": "このガラスは脆いです。",
+        "en": "This glass is fragile."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_surudoi",
+      "dictionary": "鋭い",
+      "kana": "するどい",
+      "romaji": "surudoi",
+      "meaning": "sharp, keen",
+      "type": "i-adjective",
+      "tags": [
+        "description",
+        "n3"
+      ],
+      "example": {
+        "jp": "このナイフは鋭いです。",
+        "en": "This knife is sharp."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_nibui",
+      "dictionary": "鈍い",
+      "kana": "にぶい",
+      "romaji": "nibui",
+      "meaning": "dull, blunt",
+      "type": "i-adjective",
+      "tags": [
+        "description",
+        "n3"
+      ],
+      "example": {
+        "jp": "このハサミは鈍くなりました。",
+        "en": "These scissors have become dull."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_kokochiyoi",
+      "dictionary": "心地よい",
+      "kana": "ここちよい",
+      "romaji": "kokochiyoi",
+      "meaning": "pleasant, comfortable",
+      "type": "i-adjective",
+      "tags": [
+        "feelings",
+        "n3"
+      ],
+      "example": {
+        "jp": "秋の風は心地よいです。",
+        "en": "The autumn breeze is pleasant."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_sawagashii",
+      "dictionary": "騒がしい",
+      "kana": "さわがしい",
+      "romaji": "sawagashii",
+      "meaning": "noisy",
+      "type": "i-adjective",
+      "tags": [
+        "description",
+        "n3"
+      ],
+      "example": {
+        "jp": "隣の部屋が騒がしいです。",
+        "en": "The next room is noisy."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_ayashii",
+      "dictionary": "怪しい",
+      "kana": "あやしい",
+      "romaji": "ayashii",
+      "meaning": "suspicious, dubious",
+      "type": "i-adjective",
+      "tags": [
+        "description",
+        "n3"
+      ],
+      "example": {
+        "jp": "怪しい人が家の前を歩いています。",
+        "en": "A suspicious person is walking in front of my house."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_kibishii",
+      "dictionary": "厳しい",
+      "kana": "きびしい",
+      "romaji": "kibishii",
+      "meaning": "strict, harsh",
+      "type": "i-adjective",
+      "tags": [
+        "social",
+        "study",
+        "n3"
+      ],
+      "example": {
+        "jp": "うちの先生は厳しいです。",
+        "en": "My teacher is strict."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_mushiatsui",
+      "dictionary": "蒸し暑い",
+      "kana": "むしあつい",
+      "romaji": "mushiatsui",
+      "meaning": "humid, muggy",
+      "type": "i-adjective",
+      "tags": [
+        "weather",
+        "n3"
+      ],
+      "example": {
+        "jp": "日本の夏は蒸し暑いです。",
+        "en": "Japanese summers are humid."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_awatadashii",
+      "dictionary": "慌ただしい",
+      "kana": "あわただしい",
+      "romaji": "awatadashii",
+      "meaning": "hectic, hurried",
+      "type": "i-adjective",
+      "tags": [
+        "daily",
+        "business",
+        "n2"
+      ],
+      "example": {
+        "jp": "年末は何かと慌ただしいです。",
+        "en": "The end of the year is always hectic."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_takumashii",
+      "dictionary": "逞しい",
+      "kana": "たくましい",
+      "romaji": "takumashii",
+      "meaning": "robust, sturdy",
+      "type": "i-adjective",
+      "tags": [
+        "body",
+        "n2"
+      ],
+      "example": {
+        "jp": "彼は逞しい体をしています。",
+        "en": "He has a robust build."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_tanomoshii",
+      "dictionary": "頼もしい",
+      "kana": "たのもしい",
+      "romaji": "tanomoshii",
+      "meaning": "reliable, dependable",
+      "type": "i-adjective",
+      "tags": [
+        "social",
+        "n2"
+      ],
+      "example": {
+        "jp": "後輩が頼もしいです。",
+        "en": "My junior is dependable."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_osoroshii",
+      "dictionary": "恐ろしい",
+      "kana": "おそろしい",
+      "romaji": "osoroshii",
+      "meaning": "terrible, dreadful",
+      "type": "i-adjective",
+      "tags": [
+        "feelings",
+        "n2"
+      ],
+      "example": {
+        "jp": "恐ろしい夢を見ました。",
+        "en": "I had a terrible dream."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_monosugoi",
+      "dictionary": "物凄い",
+      "kana": "ものすごい",
+      "romaji": "monosugoi",
+      "meaning": "tremendous, extraordinary",
+      "type": "i-adjective",
+      "tags": [
+        "description",
+        "n2"
+      ],
+      "example": {
+        "jp": "昨日は物凄い風が吹きました。",
+        "en": "A tremendous wind blew yesterday."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_hosonagai",
+      "dictionary": "細長い",
+      "kana": "ほそながい",
+      "romaji": "hosonagai",
+      "meaning": "long and thin",
+      "type": "i-adjective",
+      "tags": [
+        "description",
+        "n2"
+      ],
+      "example": {
+        "jp": "細長い箱の中に箸が入っています。",
+        "en": "Chopsticks are in the long thin box."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_okubukai",
+      "dictionary": "奥深い",
+      "kana": "おくぶかい",
+      "romaji": "okubukai",
+      "meaning": "profound, deep",
+      "type": "i-adjective",
+      "tags": [
+        "description",
+        "study",
+        "n2"
+      ],
+      "example": {
+        "jp": "日本語は奥深いです。",
+        "en": "The Japanese language is profound."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_setsunai",
+      "dictionary": "切ない",
+      "kana": "せつない",
+      "romaji": "setsunai",
+      "meaning": "heartbreaking, painful",
+      "type": "i-adjective",
+      "tags": [
+        "feelings",
+        "n2"
+      ],
+      "example": {
+        "jp": "この歌を聴くと切なくなります。",
+        "en": "This song makes me feel a pang of sadness."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_mottainai",
+      "dictionary": "もったいない",
+      "kana": "もったいない",
+      "romaji": "mottainai",
+      "meaning": "wasteful; too good for something",
+      "type": "i-adjective",
+      "tags": [
+        "shopping",
+        "nature",
+        "n2"
+      ],
+      "example": {
+        "jp": "まだ食べられるのに捨てるのはもったいないです。",
+        "en": "Throwing it away when it is still edible is wasteful."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_tayorinai",
+      "dictionary": "頼りない",
+      "kana": "たよりない",
+      "romaji": "tayorinai",
+      "meaning": "unreliable, helpless",
+      "type": "i-adjective",
+      "tags": [
+        "social",
+        "n2"
+      ],
+      "example": {
+        "jp": "彼は頼りない人です。",
+        "en": "He is an unreliable person."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_toutoi",
+      "dictionary": "尊い",
+      "kana": "とうとい",
+      "romaji": "toutoi",
+      "meaning": "precious, noble, venerable",
+      "type": "i-adjective",
+      "tags": [
+        "social",
+        "feelings",
+        "n1"
+      ],
+      "example": {
+        "jp": "命は尊いものです。",
+        "en": "Life is precious."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_namanamashii",
+      "dictionary": "生々しい",
+      "kana": "なまなましい",
+      "romaji": "namanamashii",
+      "meaning": "vivid, graphic",
+      "type": "i-adjective",
+      "tags": [
+        "description",
+        "n1"
+      ],
+      "example": {
+        "jp": "その事故の映像は生々しかったです。",
+        "en": "The footage of the accident was graphic."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_itamashii",
+      "dictionary": "痛ましい",
+      "kana": "いたましい",
+      "romaji": "itamashii",
+      "meaning": "pitiful, heartbreaking",
+      "type": "i-adjective",
+      "tags": [
+        "feelings",
+        "n1"
+      ],
+      "example": {
+        "jp": "災害の被害は痛ましいものです。",
+        "en": "The damage from the disaster is heartbreaking."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_nagorioshii",
+      "dictionary": "名残惜しい",
+      "kana": "なごりおしい",
+      "romaji": "nagorioshii",
+      "meaning": "sad to leave, reluctant to part",
+      "type": "i-adjective",
+      "tags": [
+        "feelings",
+        "n1"
+      ],
+      "example": {
+        "jp": "長年住んだ町を離れるのは名残惜しいです。",
+        "en": "I am reluctant to leave the town I lived in for many years."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_monotarinai",
+      "dictionary": "物足りない",
+      "kana": "ものたりない",
+      "romaji": "monotarinai",
+      "meaning": "unsatisfying, leaving something to be desired",
+      "type": "i-adjective",
+      "tags": [
+        "feelings",
+        "n1"
+      ],
+      "example": {
+        "jp": "この料理は味が物足りないです。",
+        "en": "This dish tastes a bit lacking."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_bakabakashii",
+      "dictionary": "馬鹿馬鹿しい",
+      "kana": "ばかばかしい",
+      "romaji": "bakabakashii",
+      "meaning": "absurd, ridiculous",
+      "type": "i-adjective",
+      "tags": [
+        "description",
+        "n1"
+      ],
+      "example": {
+        "jp": "その理由は馬鹿馬鹿しいです。",
+        "en": "That reason is absurd."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_utomashii",
+      "dictionary": "疎ましい",
+      "kana": "うとましい",
+      "romaji": "utomashii",
+      "meaning": "loathsome, annoying",
+      "type": "i-adjective",
+      "tags": [
+        "feelings",
+        "n1"
+      ],
+      "example": {
+        "jp": "その口癖が疎ましく感じます。",
+        "en": "I find that verbal tic of his annoying."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_isagiyoi",
+      "dictionary": "潔い",
+      "kana": "いさぎよい",
+      "romaji": "isagiyoi",
+      "meaning": "clean-cut, gracious, decisive",
+      "type": "i-adjective",
+      "tags": [
+        "social",
+        "feelings",
+        "n1"
+      ],
+      "example": {
+        "jp": "彼は失敗を潔く認めました。",
+        "en": "He graciously admitted his mistake."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_iyashii",
+      "dictionary": "卑しい",
+      "kana": "いやしい",
+      "romaji": "iyashii",
+      "meaning": "mean, greedy, base",
+      "type": "i-adjective",
+      "tags": [
+        "social",
+        "n1"
+      ],
+      "example": {
+        "jp": "卑しい心で金を奪った。",
+        "en": "He stole the money out of greed."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_uruwashii",
+      "dictionary": "麗しい",
+      "kana": "うるわしい",
+      "romaji": "uruwashii",
+      "meaning": "beautiful, lovely",
+      "type": "i-adjective",
+      "tags": [
+        "description",
+        "n1"
+      ],
+      "example": {
+        "jp": "麗しい歌声が聞こえてきます。",
+        "en": "A beautiful singing voice can be heard."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_kanbashii",
+      "dictionary": "芳しい",
+      "kana": "かんばしい",
+      "romaji": "kanbashii",
+      "meaning": "fragrant, sweet-smelling",
+      "type": "i-adjective",
+      "tags": [
+        "food",
+        "description",
+        "n1"
+      ],
+      "example": {
+        "jp": "花の芳しい香りがします。",
+        "en": "There is a fragrant smell of flowers."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_isamashii",
+      "dictionary": "勇ましい",
+      "kana": "いさましい",
+      "romaji": "isamashii",
+      "meaning": "brave, valiant",
+      "type": "i-adjective",
+      "tags": [
+        "body",
+        "social",
+        "n1"
+      ],
+      "example": {
+        "jp": "彼は勇ましい兵士でした。",
+        "en": "He was a brave soldier."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_kirei",
+      "dictionary": "きれい",
+      "kana": "きれい",
+      "romaji": "kirei",
+      "meaning": "pretty, clean, neat",
+      "type": "na-adjective",
+      "tags": [
+        "description",
+        "n5"
+      ],
+      "example": {
+        "jp": "きれいな花が咲いています。",
+        "en": "Beautiful flowers are blooming."
+      },
+      "note": "Usually written in kana; 綺麗 is also seen. Its reading has no kanji-origin な/だ spelling change.",
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_yuumei",
+      "dictionary": "有名",
+      "kana": "ゆうめい",
+      "romaji": "yuumei",
+      "meaning": "famous",
+      "type": "na-adjective",
+      "tags": [
+        "description",
+        "n5"
+      ],
+      "example": {
+        "jp": "このお寺は有名です。",
+        "en": "This temple is famous."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_taisetsu",
+      "dictionary": "大切",
+      "kana": "たいせつ",
+      "romaji": "taisetsu",
+      "meaning": "important, precious",
+      "type": "na-adjective",
+      "tags": [
+        "feelings",
+        "n5"
+      ],
+      "example": {
+        "jp": "健康は何よりも大切です。",
+        "en": "Health is the most important thing of all."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_daijoubu",
+      "dictionary": "大丈夫",
+      "kana": "だいじょうぶ",
+      "romaji": "daijoubu",
+      "meaning": "all right, safe, no problem",
+      "type": "na-adjective",
+      "tags": [
+        "health",
+        "daily",
+        "n5"
+      ],
+      "example": {
+        "jp": "大丈夫ですか。",
+        "en": "Are you all right?"
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_hitsuyou",
+      "dictionary": "必要",
+      "kana": "ひつよう",
+      "romaji": "hitsuyou",
+      "meaning": "necessary",
+      "type": "na-adjective",
+      "tags": [
+        "study",
+        "business",
+        "n5"
+      ],
+      "example": {
+        "jp": "パスポートが必要です。",
+        "en": "A passport is necessary."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_kantan",
+      "dictionary": "簡単",
+      "kana": "かんたん",
+      "romaji": "kantan",
+      "meaning": "simple, easy",
+      "type": "na-adjective",
+      "tags": [
+        "study",
+        "description",
+        "n5"
+      ],
+      "example": {
+        "jp": "この問題は簡単です。",
+        "en": "This problem is simple."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_hen",
+      "dictionary": "変",
+      "kana": "へん",
+      "romaji": "hen",
+      "meaning": "strange, odd",
+      "type": "na-adjective",
+      "tags": [
+        "description",
+        "n5"
+      ],
+      "example": {
+        "jp": "今日は変な夢を見ました。",
+        "en": "I had a strange dream today."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_onaji",
+      "dictionary": "同じ",
+      "kana": "おなじ",
+      "romaji": "onaji",
+      "meaning": "same, identical",
+      "type": "na-adjective",
+      "tags": [
+        "description",
+        "study",
+        "n5"
+      ],
+      "example": {
+        "jp": "私たちは同じ学校です。",
+        "en": "We go to the same school."
+      },
+      "note": "同じ is exceptional: it can directly modify a noun without な (同じ人), and its plain copula is だ (同じだ).",
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_dame",
+      "dictionary": "だめ",
+      "kana": "だめ",
+      "romaji": "dame",
+      "meaning": "no good, hopeless, not allowed",
+      "type": "na-adjective",
+      "tags": [
+        "daily",
+        "n5"
+      ],
+      "example": {
+        "jp": "ここで写真を撮ってはだめです。",
+        "en": "You must not take photos here."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_jouzu",
+      "dictionary": "上手",
+      "kana": "じょうず",
+      "romaji": "jouzu",
+      "meaning": "skillful, good at",
+      "type": "na-adjective",
+      "tags": [
+        "study",
+        "daily",
+        "n5"
+      ],
+      "example": {
+        "jp": "彼は料理が上手です。",
+        "en": "He is good at cooking."
+      },
+      "note": "上手 and 下手 take が for the skill: 料理が上手です.",
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_heta",
+      "dictionary": "下手",
+      "kana": "へた",
+      "romaji": "heta",
+      "meaning": "unskillful, bad at",
+      "type": "na-adjective",
+      "tags": [
+        "study",
+        "daily",
+        "n5"
+      ],
+      "example": {
+        "jp": "私は歌が下手です。",
+        "en": "I am bad at singing."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_hima",
+      "dictionary": "暇",
+      "kana": "ひま",
+      "romaji": "hima",
+      "meaning": "free (time); idle",
+      "type": "na-adjective",
+      "tags": [
+        "daily",
+        "leisure",
+        "n5"
+      ],
+      "example": {
+        "jp": "今日は暇なので、遊びに行きましょう。",
+        "en": "I am free today, so let us go out."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_joubu",
+      "dictionary": "丈夫",
+      "kana": "じょうぶ",
+      "romaji": "joubu",
+      "meaning": "sturdy, strong, healthy",
+      "type": "na-adjective",
+      "tags": [
+        "body",
+        "health",
+        "n5"
+      ],
+      "example": {
+        "jp": "この靴は丈夫で長持ちします。",
+        "en": "These shoes are sturdy and last long."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_muri",
+      "dictionary": "無理",
+      "kana": "むり",
+      "romaji": "muri",
+      "meaning": "unreasonable, impossible, overdoing it",
+      "type": "na-adjective",
+      "tags": [
+        "daily",
+        "business",
+        "n5"
+      ],
+      "example": {
+        "jp": "一人で全部運ぶのは無理です。",
+        "en": "It is impossible to carry everything alone."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_kirai",
+      "dictionary": "嫌い",
+      "kana": "きらい",
+      "romaji": "kirai",
+      "meaning": "disliked, hateful",
+      "type": "na-adjective",
+      "tags": [
+        "feelings",
+        "food",
+        "n5"
+      ],
+      "example": {
+        "jp": "私は野菜が嫌いです。",
+        "en": "I dislike vegetables."
+      },
+      "note": "嫌い looks like an i-adjective but conjugates as a na-adjective (嫌いな, 嫌いだ). The thing disliked takes が.",
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_shinsetsu",
+      "dictionary": "親切",
+      "kana": "しんせつ",
+      "romaji": "shinsetsu",
+      "meaning": "kind, helpful",
+      "type": "na-adjective",
+      "tags": [
+        "social",
+        "communication",
+        "n5"
+      ],
+      "example": {
+        "jp": "駅の人が親切に道を教えてくれました。",
+        "en": "The station staff kindly showed me the way."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_tokubetsu",
+      "dictionary": "特別",
+      "kana": "とくべつ",
+      "romaji": "tokubetsu",
+      "meaning": "special, exceptional",
+      "type": "na-adjective",
+      "tags": [
+        "description",
+        "n4"
+      ],
+      "example": {
+        "jp": "今日は特別な日です。",
+        "en": "Today is a special day."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_nigiyaka",
+      "dictionary": "賑やか",
+      "kana": "にぎやか",
+      "romaji": "nigiyaka",
+      "meaning": "lively, bustling",
+      "type": "na-adjective",
+      "tags": [
+        "places",
+        "description",
+        "n4"
+      ],
+      "example": {
+        "jp": "この通りは夜も賑やかです。",
+        "en": "This street is lively even at night."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_juubun",
+      "dictionary": "十分",
+      "kana": "じゅうぶん",
+      "romaji": "juubun",
+      "meaning": "sufficient, enough",
+      "type": "na-adjective",
+      "tags": [
+        "study",
+        "daily",
+        "n4"
+      ],
+      "example": {
+        "jp": "時間は十分あります。",
+        "en": "There is enough time."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_teinei",
+      "dictionary": "丁寧",
+      "kana": "ていねい",
+      "romaji": "teinei",
+      "meaning": "polite, careful, thorough",
+      "type": "na-adjective",
+      "tags": [
+        "communication",
+        "study",
+        "n4"
+      ],
+      "example": {
+        "jp": "彼は丁寧な言葉を使います。",
+        "en": "He uses polite language."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_zannen",
+      "dictionary": "残念",
+      "kana": "ざんねん",
+      "romaji": "zannen",
+      "meaning": "regrettable, unfortunate",
+      "type": "na-adjective",
+      "tags": [
+        "feelings",
+        "n4"
+      ],
+      "example": {
+        "jp": "試験に落ちて残念でした。",
+        "en": "It was unfortunate that I failed the exam."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_kiken",
+      "dictionary": "危険",
+      "kana": "きけん",
+      "romaji": "kiken",
+      "meaning": "dangerous",
+      "type": "na-adjective",
+      "tags": [
+        "description",
+        "daily",
+        "n4"
+      ],
+      "example": {
+        "jp": "ここは危険な場所です。",
+        "en": "This is a dangerous place."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_anzen",
+      "dictionary": "安全",
+      "kana": "あんぜん",
+      "romaji": "anzen",
+      "meaning": "safe, secure",
+      "type": "na-adjective",
+      "tags": [
+        "daily",
+        "places",
+        "n4"
+      ],
+      "example": {
+        "jp": "この国は安全です。",
+        "en": "This country is safe."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_fukuzatsu",
+      "dictionary": "複雑",
+      "kana": "ふくざつ",
+      "romaji": "fukuzatsu",
+      "meaning": "complicated, complex",
+      "type": "na-adjective",
+      "tags": [
+        "study",
+        "description",
+        "n4"
+      ],
+      "example": {
+        "jp": "この問題は複雑です。",
+        "en": "This problem is complicated."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_suteki",
+      "dictionary": "素敵",
+      "kana": "すてき",
+      "romaji": "suteki",
+      "meaning": "lovely, wonderful, stylish",
+      "type": "na-adjective",
+      "tags": [
+        "feelings",
+        "description",
+        "n4"
+      ],
+      "example": {
+        "jp": "素敵なドレスですね。",
+        "en": "That is a lovely dress."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_rippa",
+      "dictionary": "立派",
+      "kana": "りっぱ",
+      "romaji": "rippa",
+      "meaning": "splendid, fine, admirable",
+      "type": "na-adjective",
+      "tags": [
+        "description",
+        "social",
+        "n4"
+      ],
+      "example": {
+        "jp": "彼は立派な医者になりました。",
+        "en": "He became a fine doctor."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_tokui",
+      "dictionary": "得意",
+      "kana": "とくい",
+      "romaji": "tokui",
+      "meaning": "good at; proud of",
+      "type": "na-adjective",
+      "tags": [
+        "study",
+        "daily",
+        "n4"
+      ],
+      "example": {
+        "jp": "私は英語が得意です。",
+        "en": "I am good at English."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_nigate",
+      "dictionary": "苦手",
+      "kana": "にがて",
+      "romaji": "nigate",
+      "meaning": "bad at, not good with",
+      "type": "na-adjective",
+      "tags": [
+        "study",
+        "feelings",
+        "n4"
+      ],
+      "example": {
+        "jp": "私は人前で話すのが苦手です。",
+        "en": "I am not good at speaking in front of people."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_nesshin",
+      "dictionary": "熱心",
+      "kana": "ねっしん",
+      "romaji": "nesshin",
+      "meaning": "enthusiastic, devoted",
+      "type": "na-adjective",
+      "tags": [
+        "study",
+        "social",
+        "n4"
+      ],
+      "example": {
+        "jp": "彼は日本語の勉強に熱心です。",
+        "en": "He is enthusiastic about studying Japanese."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_majime",
+      "dictionary": "真面目",
+      "kana": "まじめ",
+      "romaji": "majime",
+      "meaning": "serious, diligent, earnest",
+      "type": "na-adjective",
+      "tags": [
+        "social",
+        "study",
+        "n4"
+      ],
+      "example": {
+        "jp": "彼女は真面目な学生です。",
+        "en": "She is a serious student."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_shiawase",
+      "dictionary": "幸せ",
+      "kana": "しあわせ",
+      "romaji": "shiawase",
+      "meaning": "happy, fortunate",
+      "type": "na-adjective",
+      "tags": [
+        "feelings",
+        "n4"
+      ],
+      "example": {
+        "jp": "家族と過ごす時間は幸せです。",
+        "en": "Time spent with family is happy."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_jiyuu",
+      "dictionary": "自由",
+      "kana": "じゆう",
+      "romaji": "jiyuu",
+      "meaning": "free, unconstrained",
+      "type": "na-adjective",
+      "tags": [
+        "daily",
+        "social",
+        "n4"
+      ],
+      "example": {
+        "jp": "好きなことを自由にしてください。",
+        "en": "Please feel free to do whatever you like."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_fuben",
+      "dictionary": "不便",
+      "kana": "ふべん",
+      "romaji": "fuben",
+      "meaning": "inconvenient",
+      "type": "na-adjective",
+      "tags": [
+        "technology",
+        "places",
+        "n4"
+      ],
+      "example": {
+        "jp": "この田舎は電車が不便です。",
+        "en": "Trains are inconvenient in this countryside."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_shinsen",
+      "dictionary": "新鮮",
+      "kana": "しんせん",
+      "romaji": "shinsen",
+      "meaning": "fresh",
+      "type": "na-adjective",
+      "tags": [
+        "food",
+        "description",
+        "n4"
+      ],
+      "example": {
+        "jp": "この魚は新鮮でおいしいです。",
+        "en": "This fish is fresh and delicious."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_taikutsu",
+      "dictionary": "退屈",
+      "kana": "たいくつ",
+      "romaji": "taikutsu",
+      "meaning": "boring, tedious",
+      "type": "na-adjective",
+      "tags": [
+        "entertainment",
+        "feelings",
+        "n4"
+      ],
+      "example": {
+        "jp": "この映画は退屈でした。",
+        "en": "This movie was boring."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_shinpai",
+      "dictionary": "心配",
+      "kana": "しんぱい",
+      "romaji": "shinpai",
+      "meaning": "worried, anxious",
+      "type": "na-adjective",
+      "tags": [
+        "feelings",
+        "n4"
+      ],
+      "example": {
+        "jp": "母は私のことを心配しています。",
+        "en": "My mother is worried about me."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_mendou",
+      "dictionary": "面倒",
+      "kana": "めんどう",
+      "romaji": "mendou",
+      "meaning": "troublesome, bothersome",
+      "type": "na-adjective",
+      "tags": [
+        "daily",
+        "n4"
+      ],
+      "example": {
+        "jp": "書類を書くのは面倒です。",
+        "en": "Filling out forms is a hassle."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_taihen",
+      "dictionary": "大変",
+      "kana": "たいへん",
+      "romaji": "taihen",
+      "meaning": "hard, tough, serious",
+      "type": "na-adjective",
+      "tags": [
+        "daily",
+        "business",
+        "n4"
+      ],
+      "example": {
+        "jp": "子育ては大変です。",
+        "en": "Raising children is tough."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_shoujiki",
+      "dictionary": "正直",
+      "kana": "しょうじき",
+      "romaji": "shoujiki",
+      "meaning": "honest, frank",
+      "type": "na-adjective",
+      "tags": [
+        "social",
+        "communication",
+        "n4"
+      ],
+      "example": {
+        "jp": "正直な人に頼まれた仕事です。",
+        "en": "It is work entrusted to me by an honest person."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_baka",
+      "dictionary": "馬鹿",
+      "kana": "ばか",
+      "romaji": "baka",
+      "meaning": "foolish, stupid",
+      "type": "na-adjective",
+      "tags": [
+        "social",
+        "description",
+        "n4"
+      ],
+      "example": {
+        "jp": "そんなことをするのは馬鹿です。",
+        "en": "It is foolish to do such a thing."
+      },
+      "note": "Harsh when directed at people (fool/idiot); in compounds like 馬鹿らしい it is milder.",
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_nameraka",
+      "dictionary": "滑らか",
+      "kana": "なめらか",
+      "romaji": "nameraka",
+      "meaning": "smooth, sleek",
+      "type": "na-adjective",
+      "tags": [
+        "description",
+        "n4"
+      ],
+      "example": {
+        "jp": "この机の表面は滑らかです。",
+        "en": "The surface of this desk is smooth."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_hade",
+      "dictionary": "派手",
+      "kana": "はで",
+      "romaji": "hade",
+      "meaning": "flashy, showy",
+      "type": "na-adjective",
+      "tags": [
+        "description",
+        "clothing",
+        "n4"
+      ],
+      "example": {
+        "jp": "彼女は派手な服が好きです。",
+        "en": "She likes flashy clothes."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_jimi",
+      "dictionary": "地味",
+      "kana": "じみ",
+      "romaji": "jimi",
+      "meaning": "plain, subdued",
+      "type": "na-adjective",
+      "tags": [
+        "description",
+        "clothing",
+        "n4"
+      ],
+      "example": {
+        "jp": "彼は地味なネクタイをしています。",
+        "en": "He is wearing a plain necktie."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_sunao",
+      "dictionary": "素直",
+      "kana": "すなお",
+      "romaji": "sunao",
+      "meaning": "obedient, frank, open-minded",
+      "type": "na-adjective",
+      "tags": [
+        "social",
+        "feelings",
+        "n4"
+      ],
+      "example": {
+        "jp": "彼は素直な性格です。",
+        "en": "He has an open, obedient nature."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_yutaka",
+      "dictionary": "豊か",
+      "kana": "ゆたか",
+      "romaji": "yutaka",
+      "meaning": "abundant, rich",
+      "type": "na-adjective",
+      "tags": [
+        "nature",
+        "social",
+        "n3"
+      ],
+      "example": {
+        "jp": "この国は自然が豊かです。",
+        "en": "This country is rich in nature."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_zeitaku",
+      "dictionary": "贅沢",
+      "kana": "ぜいたく",
+      "romaji": "zeitaku",
+      "meaning": "luxurious, extravagant",
+      "type": "na-adjective",
+      "tags": [
+        "shopping",
+        "daily",
+        "n3"
+      ],
+      "example": {
+        "jp": "そんな贅沢な暮らしはできません。",
+        "en": "I cannot afford such a luxurious life."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_jouhin",
+      "dictionary": "上品",
+      "kana": "じょうひん",
+      "romaji": "jouhin",
+      "meaning": "elegant, refined",
+      "type": "na-adjective",
+      "tags": [
+        "description",
+        "social",
+        "n3"
+      ],
+      "example": {
+        "jp": "彼女は上品な話し方をします。",
+        "en": "She speaks in an elegant manner."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_gehin",
+      "dictionary": "下品",
+      "kana": "げひん",
+      "romaji": "gehin",
+      "meaning": "vulgar, crude",
+      "type": "na-adjective",
+      "tags": [
+        "description",
+        "social",
+        "n3"
+      ],
+      "example": {
+        "jp": "下品な冗談はやめてください。",
+        "en": "Please stop with the vulgar jokes."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_seikaku",
+      "dictionary": "正確",
+      "kana": "せいかく",
+      "romaji": "seikaku",
+      "meaning": "accurate, precise",
+      "type": "na-adjective",
+      "tags": [
+        "study",
+        "business",
+        "n3"
+      ],
+      "example": {
+        "jp": "彼の答えは正確です。",
+        "en": "His answer is accurate."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_meikaku",
+      "dictionary": "明確",
+      "kana": "めいかく",
+      "romaji": "meikaku",
+      "meaning": "clear, definite",
+      "type": "na-adjective",
+      "tags": [
+        "study",
+        "communication",
+        "n3"
+      ],
+      "example": {
+        "jp": "彼は明確な理由を説明しました。",
+        "en": "He explained a clear reason."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_gutaiteki",
+      "dictionary": "具体的",
+      "kana": "ぐたいてき",
+      "romaji": "gutaiteki",
+      "meaning": "concrete, specific",
+      "type": "na-adjective",
+      "tags": [
+        "study",
+        "business",
+        "n3"
+      ],
+      "example": {
+        "jp": "具体的な例を挙げてください。",
+        "en": "Please give a concrete example."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_igai",
+      "dictionary": "意外",
+      "kana": "いがい",
+      "romaji": "igai",
+      "meaning": "unexpected, surprising",
+      "type": "na-adjective",
+      "tags": [
+        "feelings",
+        "n3"
+      ],
+      "example": {
+        "jp": "試験が意外に難しかったです。",
+        "en": "The exam was surprisingly difficult."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_tekitou",
+      "dictionary": "適当",
+      "kana": "てきとう",
+      "romaji": "tekitou",
+      "meaning": "appropriate; (colloquial) careless",
+      "type": "na-adjective",
+      "tags": [
+        "study",
+        "daily",
+        "n3"
+      ],
+      "example": {
+        "jp": "適当なサイズを選んでください。",
+        "en": "Please choose an appropriate size."
+      },
+      "note": "In casual speech 適当 can mean half-hearted or sloppy (適当にやる), so it is often written with kana or adjusted in tone.",
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_kiraku",
+      "dictionary": "気楽",
+      "kana": "きらく",
+      "romaji": "kiraku",
+      "meaning": "carefree, easy-going",
+      "type": "na-adjective",
+      "tags": [
+        "feelings",
+        "daily",
+        "n3"
+      ],
+      "example": {
+        "jp": "退職して気楽な生活を送っています。",
+        "en": "After retiring I lead a carefree life."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_kigaru",
+      "dictionary": "気軽",
+      "kana": "きがる",
+      "romaji": "kigaru",
+      "meaning": "light-hearted, casual",
+      "type": "na-adjective",
+      "tags": [
+        "feelings",
+        "communication",
+        "n3"
+      ],
+      "example": {
+        "jp": "気軽に相談してください。",
+        "en": "Please feel free to ask for advice."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_kaiteki",
+      "dictionary": "快適",
+      "kana": "かいてき",
+      "romaji": "kaiteki",
+      "meaning": "comfortable, pleasant",
+      "type": "na-adjective",
+      "tags": [
+        "daily",
+        "places",
+        "n3"
+      ],
+      "example": {
+        "jp": "このホテルは快適です。",
+        "en": "This hotel is comfortable."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_raku",
+      "dictionary": "楽",
+      "kana": "らく",
+      "romaji": "raku",
+      "meaning": "easy, comfortable, painless",
+      "type": "na-adjective",
+      "tags": [
+        "daily",
+        "feelings",
+        "n3"
+      ],
+      "example": {
+        "jp": "仕事が終わって楽になりました。",
+        "en": "I am relieved now that the work is done."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_sensai",
+      "dictionary": "繊細",
+      "kana": "せんさい",
+      "romaji": "sensai",
+      "meaning": "delicate, sensitive",
+      "type": "na-adjective",
+      "tags": [
+        "description",
+        "feelings",
+        "n3"
+      ],
+      "example": {
+        "jp": "彼は繊細な神経の持ち主です。",
+        "en": "He has delicate nerves."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_binbou",
+      "dictionary": "貧乏",
+      "kana": "びんぼう",
+      "romaji": "binbou",
+      "meaning": "poor, impoverished",
+      "type": "na-adjective",
+      "tags": [
+        "social",
+        "daily",
+        "n3"
+      ],
+      "example": {
+        "jp": "彼は貧乏な家庭に育ちました。",
+        "en": "He grew up in a poor family."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_odayaka",
+      "dictionary": "穏やか",
+      "kana": "おだやか",
+      "romaji": "odayaka",
+      "meaning": "calm, gentle, mild",
+      "type": "na-adjective",
+      "tags": [
+        "nature",
+        "feelings",
+        "n3"
+      ],
+      "example": {
+        "jp": "海は穏やかです。",
+        "en": "The sea is calm."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_hanayaka",
+      "dictionary": "華やか",
+      "kana": "はなやか",
+      "romaji": "hanayaka",
+      "meaning": "gorgeous, brilliant",
+      "type": "na-adjective",
+      "tags": [
+        "description",
+        "social",
+        "n3"
+      ],
+      "example": {
+        "jp": "彼女は華やかな生活をしています。",
+        "en": "She lives a glamorous life."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_seijitsu",
+      "dictionary": "誠実",
+      "kana": "せいじつ",
+      "romaji": "seijitsu",
+      "meaning": "sincere, faithful",
+      "type": "na-adjective",
+      "tags": [
+        "social",
+        "n3"
+      ],
+      "example": {
+        "jp": "彼は誠実な人です。",
+        "en": "He is a sincere person."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_kappatsu",
+      "dictionary": "活発",
+      "kana": "かっぱつ",
+      "romaji": "kappatsu",
+      "meaning": "active, lively",
+      "type": "na-adjective",
+      "tags": [
+        "body",
+        "social",
+        "n3"
+      ],
+      "example": {
+        "jp": "この子は活発です。",
+        "en": "This child is very active."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_sekkyokuteki",
+      "dictionary": "積極的",
+      "kana": "せっきょくてき",
+      "romaji": "sekkyokuteki",
+      "meaning": "proactive, positive",
+      "type": "na-adjective",
+      "tags": [
+        "social",
+        "business",
+        "n3"
+      ],
+      "example": {
+        "jp": "彼は会議で積極的に意見を言います。",
+        "en": "He actively voices opinions in meetings."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_shoukyokuteki",
+      "dictionary": "消極的",
+      "kana": "しょうきょくてき",
+      "romaji": "shoukyokuteki",
+      "meaning": "passive, negative",
+      "type": "na-adjective",
+      "tags": [
+        "social",
+        "business",
+        "n3"
+      ],
+      "example": {
+        "jp": "彼女は消極的な性格です。",
+        "en": "She has a passive personality."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_kenkyo",
+      "dictionary": "謙虚",
+      "kana": "けんきょ",
+      "romaji": "kenkyo",
+      "meaning": "humble, modest",
+      "type": "na-adjective",
+      "tags": [
+        "social",
+        "n3"
+      ],
+      "example": {
+        "jp": "彼は能力があるのに謙虚です。",
+        "en": "He is capable yet humble."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_juunan",
+      "dictionary": "柔軟",
+      "kana": "じゅうなん",
+      "romaji": "juunan",
+      "meaning": "flexible",
+      "type": "na-adjective",
+      "tags": [
+        "study",
+        "social",
+        "n3"
+      ],
+      "example": {
+        "jp": "柔軟な考え方が必要です。",
+        "en": "A flexible way of thinking is necessary."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_bimyuu",
+      "dictionary": "微妙",
+      "kana": "びみょう",
+      "romaji": "bimyuu",
+      "meaning": "subtle, delicate, (vague)",
+      "type": "na-adjective",
+      "tags": [
+        "description",
+        "feelings",
+        "n2"
+      ],
+      "example": {
+        "jp": "二つの意味の違いは微妙です。",
+        "en": "The difference in meaning between the two is subtle."
+      },
+      "note": "In casual speech 微妙 often means 'not great / hard to say' (as a hedging response).",
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_genmitsu",
+      "dictionary": "厳密",
+      "kana": "げんみつ",
+      "romaji": "genmitsu",
+      "meaning": "rigorous, strict, exact",
+      "type": "na-adjective",
+      "tags": [
+        "study",
+        "n2"
+      ],
+      "example": {
+        "jp": "厳密に言えば、その説明は正しくありません。",
+        "en": "Strictly speaking, that explanation is not correct."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_koumyou",
+      "dictionary": "巧妙",
+      "kana": "こうみょう",
+      "romaji": "koumyou",
+      "meaning": "ingenious, skillful, crafty",
+      "type": "na-adjective",
+      "tags": [
+        "study",
+        "description",
+        "n2"
+      ],
+      "example": {
+        "jp": "彼は巧妙な手口で詐欺を働いた。",
+        "en": "He committed fraud through a cunning scheme."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_ganko",
+      "dictionary": "頑固",
+      "kana": "がんこ",
+      "romaji": "ganko",
+      "meaning": "stubborn, obstinate",
+      "type": "na-adjective",
+      "tags": [
+        "social",
+        "n2"
+      ],
+      "example": {
+        "jp": "彼は頑固で意見を変えません。",
+        "en": "He is stubborn and will not change his opinion."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_kenjitsu",
+      "dictionary": "堅実",
+      "kana": "けんじつ",
+      "romaji": "kenjitsu",
+      "meaning": "steady, sound, prudent",
+      "type": "na-adjective",
+      "tags": [
+        "social",
+        "business",
+        "n2"
+      ],
+      "example": {
+        "jp": "彼は堅実な投資をしています。",
+        "en": "He makes sound investments."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_kousei",
+      "dictionary": "公正",
+      "kana": "こうせい",
+      "romaji": "kousei",
+      "meaning": "fair, just",
+      "type": "na-adjective",
+      "tags": [
+        "social",
+        "business",
+        "n2"
+      ],
+      "example": {
+        "jp": "彼は公正な審判をしました。",
+        "en": "He made a fair judgment."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_kyakkanteki",
+      "dictionary": "客観的",
+      "kana": "きゃっかんてき",
+      "romaji": "kyakkanteki",
+      "meaning": "objective",
+      "type": "na-adjective",
+      "tags": [
+        "study",
+        "n2"
+      ],
+      "example": {
+        "jp": "客観的に自分の欠点を見てください。",
+        "en": "Please look at your own faults objectively."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_shukanteki",
+      "dictionary": "主観的",
+      "kana": "しゅかんてき",
+      "romaji": "shukanteki",
+      "meaning": "subjective",
+      "type": "na-adjective",
+      "tags": [
+        "study",
+        "n2"
+      ],
+      "example": {
+        "jp": "その意見は主観的です。",
+        "en": "That opinion is subjective."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_hiteiteki",
+      "dictionary": "否定的",
+      "kana": "ひていてき",
+      "romaji": "hiteiteki",
+      "meaning": "negative (attitude)",
+      "type": "na-adjective",
+      "tags": [
+        "feelings",
+        "social",
+        "n2"
+      ],
+      "example": {
+        "jp": "彼はその計画に否定的です。",
+        "en": "He is negative about the plan."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_kouteiteki",
+      "dictionary": "肯定的",
+      "kana": "こうていてき",
+      "romaji": "kouteiteki",
+      "meaning": "positive (attitude)",
+      "type": "na-adjective",
+      "tags": [
+        "feelings",
+        "social",
+        "n2"
+      ],
+      "example": {
+        "jp": "彼女は新しい案に肯定的です。",
+        "en": "She is positive about the new idea."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_hihanteki",
+      "dictionary": "批判的",
+      "kana": "ひはんてき",
+      "romaji": "hihanteki",
+      "meaning": "critical",
+      "type": "na-adjective",
+      "tags": [
+        "study",
+        "social",
+        "n2"
+      ],
+      "example": {
+        "jp": "彼は政府の政策に批判的です。",
+        "en": "He is critical of the government's policy."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_aimai",
+      "dictionary": "曖昧",
+      "kana": "あいまい",
+      "romaji": "aimai",
+      "meaning": "vague, ambiguous",
+      "type": "na-adjective",
+      "tags": [
+        "description",
+        "communication",
+        "n2"
+      ],
+      "example": {
+        "jp": "彼の返事は曖昧でした。",
+        "en": "His answer was vague."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_fujuubun",
+      "dictionary": "不十分",
+      "kana": "ふじゅうぶん",
+      "romaji": "fujuubun",
+      "meaning": "insufficient, inadequate",
+      "type": "na-adjective",
+      "tags": [
+        "study",
+        "business",
+        "n2"
+      ],
+      "example": {
+        "jp": "この資料は情報が不十分です。",
+        "en": "This document has insufficient information."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_socchoku",
+      "dictionary": "率直",
+      "kana": "そっちょく",
+      "romaji": "socchoku",
+      "meaning": "frank, candid",
+      "type": "na-adjective",
+      "tags": [
+        "communication",
+        "social",
+        "n2"
+      ],
+      "example": {
+        "jp": "率直に意見を聞かせてください。",
+        "en": "Please give me your frank opinion."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_shinchou",
+      "dictionary": "慎重",
+      "kana": "しんちょう",
+      "romaji": "shinchou",
+      "meaning": "cautious, careful",
+      "type": "na-adjective",
+      "tags": [
+        "daily",
+        "social",
+        "n2"
+      ],
+      "example": {
+        "jp": "彼は慎重に物事を進めます。",
+        "en": "He proceeds carefully."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_daitan",
+      "dictionary": "大胆",
+      "kana": "だいたん",
+      "romaji": "daitan",
+      "meaning": "daring, bold",
+      "type": "na-adjective",
+      "tags": [
+        "social",
+        "description",
+        "n2"
+      ],
+      "example": {
+        "jp": "彼は大胆な計画を立てました。",
+        "en": "He made a bold plan."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_muda",
+      "dictionary": "無駄",
+      "kana": "むだ",
+      "romaji": "muda",
+      "meaning": "wasteful, futile",
+      "type": "na-adjective",
+      "tags": [
+        "shopping",
+        "daily",
+        "n2"
+      ],
+      "example": {
+        "jp": "そんな買い物は無駄です。",
+        "en": "Such shopping is wasteful."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_kenmei",
+      "dictionary": "賢明",
+      "kana": "けんめい",
+      "romaji": "kenmei",
+      "meaning": "wise, sensible",
+      "type": "na-adjective",
+      "tags": [
+        "study",
+        "social",
+        "n2"
+      ],
+      "example": {
+        "jp": "今は待つのが賢明です。",
+        "en": "It is wise to wait now."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_kouka",
+      "dictionary": "高価",
+      "kana": "こうか",
+      "romaji": "kouka",
+      "meaning": "costly, expensive, high-priced",
+      "type": "na-adjective",
+      "tags": [
+        "shopping",
+        "n2"
+      ],
+      "example": {
+        "jp": "高価な時計を身につけています。",
+        "en": "He wears an expensive watch."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_yuuga",
+      "dictionary": "優雅",
+      "kana": "ゆうが",
+      "romaji": "yuuga",
+      "meaning": "elegant, graceful",
+      "type": "na-adjective",
+      "tags": [
+        "description",
+        "social",
+        "n2"
+      ],
+      "example": {
+        "jp": "彼女は優雅な身のこなしをします。",
+        "en": "She moves gracefully."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_gouka",
+      "dictionary": "豪華",
+      "kana": "ごうか",
+      "romaji": "gouka",
+      "meaning": "luxurious, magnificent",
+      "type": "na-adjective",
+      "tags": [
+        "shopping",
+        "daily",
+        "n2"
+      ],
+      "example": {
+        "jp": "豪華なホテルに泊まりました。",
+        "en": "I stayed at a luxurious hotel."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_hisan",
+      "dictionary": "悲惨",
+      "kana": "ひさん",
+      "romaji": "hisan",
+      "meaning": "miserable, tragic",
+      "type": "na-adjective",
+      "tags": [
+        "feelings",
+        "n2"
+      ],
+      "example": {
+        "jp": "戦争は悲惨なものです。",
+        "en": "War is tragic."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_setsujitsu",
+      "dictionary": "切実",
+      "kana": "せつじつ",
+      "romaji": "setsujitsu",
+      "meaning": "earnest, pressing, urgent",
+      "type": "na-adjective",
+      "tags": [
+        "feelings",
+        "business",
+        "n2"
+      ],
+      "example": {
+        "jp": "彼は切実な問題を抱えています。",
+        "en": "He has a pressing problem."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_sasai",
+      "dictionary": "些細",
+      "kana": "ささい",
+      "romaji": "sasai",
+      "meaning": "trivial, petty",
+      "type": "na-adjective",
+      "tags": [
+        "description",
+        "n2"
+      ],
+      "example": {
+        "jp": "些細なことで喧嘩してしまいました。",
+        "en": "We ended up quarreling over something trivial."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_sougon",
+      "dictionary": "荘厳",
+      "kana": "そうごん",
+      "romaji": "sougon",
+      "meaning": "solemn, majestic",
+      "type": "na-adjective",
+      "tags": [
+        "description",
+        "n1"
+      ],
+      "example": {
+        "jp": "この教会の雰囲気は荘厳です。",
+        "en": "The atmosphere of this church is solemn."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_fujouri",
+      "dictionary": "不条理",
+      "kana": "ふじょうり",
+      "romaji": "fujouri",
+      "meaning": "absurd, irrational",
+      "type": "na-adjective",
+      "tags": [
+        "description",
+        "social",
+        "n1"
+      ],
+      "example": {
+        "jp": "戦争の不条理さを強く感じました。",
+        "en": "I strongly felt the absurdity of war."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_enkatsu",
+      "dictionary": "円滑",
+      "kana": "えんかつ",
+      "romaji": "enkatsu",
+      "meaning": "smooth, harmonious",
+      "type": "na-adjective",
+      "tags": [
+        "business",
+        "social",
+        "n1"
+      ],
+      "example": {
+        "jp": "会議が円滑に進みました。",
+        "en": "The meeting went smoothly."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_onkou",
+      "dictionary": "温厚",
+      "kana": "おんこう",
+      "romaji": "onkou",
+      "meaning": "gentle, mild-tempered",
+      "type": "na-adjective",
+      "tags": [
+        "social",
+        "n1"
+      ],
+      "example": {
+        "jp": "彼は温厚な性格で知られています。",
+        "en": "He is known for his gentle personality."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_somatsu",
+      "dictionary": "粗末",
+      "kana": "そまつ",
+      "romaji": "somatsu",
+      "meaning": "crude, humble, shabby",
+      "type": "na-adjective",
+      "tags": [
+        "shopping",
+        "description",
+        "n1"
+      ],
+      "example": {
+        "jp": "粗末な食事で申し訳ありません。",
+        "en": "I am sorry for the humble meal."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_kokkei",
+      "dictionary": "滑稽",
+      "kana": "こっけい",
+      "romaji": "kokkei",
+      "meaning": "comical, ridiculous",
+      "type": "na-adjective",
+      "tags": [
+        "entertainment",
+        "description",
+        "n1"
+      ],
+      "example": {
+        "jp": "彼の失敗は滑稽に見えました。",
+        "en": "His failure looked comical."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_kakoku",
+      "dictionary": "過酷",
+      "kana": "かこく",
+      "romaji": "kakoku",
+      "meaning": "harsh, cruel, severe",
+      "type": "na-adjective",
+      "tags": [
+        "nature",
+        "social",
+        "n1"
+      ],
+      "example": {
+        "jp": "山岳地帯の環境は過酷です。",
+        "en": "The environment in the mountainous region is harsh."
+      },
+      "irregular_overrides": {}
+    },
+    {
+      "id": "a_ii",
+      "dictionary": "いい",
+      "kana": "いい",
+      "romaji": "ii",
+      "meaning": "good",
+      "type": "i-adjective",
+      "tags": [
+        "description",
+        "irregular",
+        "n5"
+      ],
+      "example": {
+        "jp": "今日はいい天気です。",
+        "en": "Today is nice weather."
+      },
+      "note": "Irregular: every form besides the dictionary form and polite present is built on the stem 良- (yo-), not い-.",
+      "irregular_overrides": {
+        "negative plain": "良くない",
+        "negative polite": "良くないです",
+        "past plain": "良かった",
+        "past polite": "良かったです",
+        "past negative plain": "良くなかった",
+        "past negative polite": "良くなかったです",
+        "adverbial": "良く",
+        "te-form": "良くて",
+        "conditional": "良ければ",
+        "hypothetical past": "良かったら",
+        "wanting something to be a certain way": "良くなってほしい",
+        "conjunctive (literary)": "良く",
+        "degree": "良すぎる",
+        "nominalization": "良さ",
+        "seeming": "良さそう",
+        "negative implication": "良くなくて"
+      }
     }
   ]
 }

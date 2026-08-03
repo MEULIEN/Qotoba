@@ -112,10 +112,17 @@ class DataRegistry {
 
   get verbWords() { return (this.sources.verb && this.sources.verb.words) || []; }
   get adjWords() { return (this.sources.adjective && this.sources.adjective.words) || []; }
-  get allWords() { return [...this.verbWords, ...this.adjWords]; }
+  get adverbWords() { return (this.sources.adverb && this.sources.adverb.words) || []; }
+  get nounWords() { return (this.sources.noun && this.sources.noun.words) || []; }
+  get allWords() { return [...this.verbWords, ...this.adjWords, ...this.adverbWords, ...this.nounWords]; }
 
   isVerb(word) { return word.type === 'verb'; }
-  formsFor(word) { return this.isVerb(word) ? this.conj.verb.tenses : this.conj.adj.forms; }
+  isAdjective(word) { return word.type === 'i-adjective' || word.type === 'na-adjective'; }
+  formsFor(word) {
+    if (this.isVerb(word)) return this.conj.verb.tenses;
+    if (this.isAdjective(word)) return this.conj.adj.forms;
+    return [{ name_en: 'dictionary', name_jp: 'じしょけい', usage_en: 'The basic plain (dictionary) form.' }];
+  }
   tiersFor(word) { return this.isVerb(word) ? VERB_TIERS : ADJ_TIERS; }
   formDef(word, formName) { return this.formsFor(word).find(f => f.name_en === formName); }
   findWord(id) { return this.allWords.find(w => w.id === id); }
@@ -321,6 +328,10 @@ function conjugate(word, formName) {
   const overrides = word.irregular_overrides || {};
   if (Object.prototype.hasOwnProperty.call(overrides, formName)) return overrides[formName];
 
+  if (word.type !== 'verb' && word.type !== 'i-adjective' && word.type !== 'na-adjective') {
+    return formName === 'dictionary' ? word.dictionary : '?';
+  }
+
   const formDef = registry.formDef(word, formName);
   if (!formDef) return '?';
   const struct = formDef.structure;
@@ -491,11 +502,13 @@ function loadStorage() {
 
 /* ---------------- data loading ---------------- */
 async function loadData() {
-  const [verbConj, adjConj, verbs, adjectives, particles, directions, demonstratives, radicals] = await Promise.all([
+  const [verbConj, adjConj, verbs, adjectives, adverbs, nouns, particles, directions, demonstratives, radicals] = await Promise.all([
     fetch('data/conjugation_verb.json').then(r => r.json()),
     fetch('data/conjugation_adj.json').then(r => r.json()),
     fetch('data/verbs.json').then(r => r.json()),
     fetch('data/adjectives.json').then(r => r.json()),
+    fetch('data/adverbs.json').then(r => r.json()),
+    fetch('data/nouns.json').then(r => r.json()),
     fetch('data/particles.json').then(r => r.json()),
     fetch('data/directions.json').then(r => r.json()),
     fetch('data/demonstratives.json').then(r => r.json()),
@@ -505,6 +518,8 @@ async function loadData() {
   registry.registerConjugation('adj', adjConj);
   registry.registerWordSource('verb', verbs);
   registry.registerWordSource('adjective', adjectives);
+  registry.registerWordSource('adverb', adverbs);
+  registry.registerWordSource('noun', nouns);
   registry.registerReference('particles', particles);
   registry.registerReference('directions', directions);
   registry.registerReference('demonstratives', demonstratives);
@@ -656,6 +671,8 @@ function renderLibrary() {
       <button class="tab ${tab === 'verb' ? 'active' : ''}" data-action="tab" data-tab="verb">Verbs</button>
       <button class="tab ${tab === 'i-adjective' ? 'active' : ''}" data-action="tab" data-tab="i-adjective">い-adj</button>
       <button class="tab ${tab === 'na-adjective' ? 'active' : ''}" data-action="tab" data-tab="na-adjective">な-adj</button>
+      <button class="tab ${tab === 'adverb' ? 'active' : ''}" data-action="tab" data-tab="adverb">Adverbs</button>
+      <button class="tab ${tab === 'noun' ? 'active' : ''}" data-action="tab" data-tab="noun">Nouns</button>
     </div>
     ${scopeNote}
     <div class="word-list">${rows || '<div class="empty-state">No words in this category yet.</div>'}</div>
@@ -667,7 +684,7 @@ function renderWordDetail() {
   if (!word) return `<div class="screen">${topbar('Not found', 'library')}</div>`;
   const forms = registry.formsFor(word);
   const badgeClass = registry.isVerb(word) ? 'verb' : word.type;
-  const badgeLabel = registry.isVerb(word) ? (word.group === 'group1' ? 'Godan' : word.group === 'group2' ? 'Ichidan' : 'Irregular') : (word.type === 'i-adjective' ? 'い-adjective' : 'な-adjective');
+  const badgeLabel = registry.isVerb(word) ? (word.group === 'group1' ? 'Godan' : word.group === 'group2' ? 'Ichidan' : 'Irregular') : (word.type === 'i-adjective' ? 'い-adjective' : word.type === 'na-adjective' ? 'な-adjective' : word.type === 'adverb' ? 'Adverb' : word.type === 'noun' ? 'Noun' : word.type);
   const rowsHtml = forms.map(f => {
     const key = srsKey(word.id, f.name_en);
     const s = STATE.srs[key];
@@ -937,10 +954,12 @@ function renderDemonstrativeDetail() {
 }
 
 /* ---------- radical reference ---------- */
-const RADICAL_CATEGORIES = ['all', 'single', 'water', 'person', 'tree', 'mouth', 'hand', 'heart', 'sun', 'moon', 'fire', 'earth', 'metal', 'misc'];
+const RADICAL_CATEGORIES = ['all', 'single', 'water', 'person', 'tree', 'plant', 'mouth', 'hand', 'heart', 'sun', 'moon', 'fire', 'earth', 'metal', 'animal', 'body', 'tool', 'building', 'food', 'cloth', 'nature', 'misc'];
 const RADICAL_CATEGORY_LABEL = {
-  all: 'All', single: 'Single', water: 'Water', person: 'Person', tree: 'Tree', mouth: 'Mouth',
-  hand: 'Hand', heart: 'Heart', sun: 'Sun', moon: 'Moon', fire: 'Fire', earth: 'Earth', metal: 'Metal', misc: 'Misc'
+  all: 'All', single: 'Single', water: 'Water', person: 'Person', tree: 'Tree', plant: 'Plant',
+  mouth: 'Mouth', hand: 'Hand', heart: 'Heart', sun: 'Sun', moon: 'Moon', fire: 'Fire',
+  earth: 'Earth', metal: 'Metal', animal: 'Animal', body: 'Body', tool: 'Tool',
+  building: 'Building', food: 'Food', cloth: 'Cloth', nature: 'Nature', misc: 'Misc'
 };
 
 function renderRadicals() {

@@ -1,44 +1,1477 @@
 {
-  "meta": {
-    "description": "Common kanji radicals (部首), grouped by theme. Each entry lists the radical, its Japanese name, and a few kanji it appears in."
+ "meta": {
+  "description": "Common kanji radicals (部首), grouped by theme. Each entry lists the radical, its Japanese name, and a few kanji it appears in."
+ },
+ "words": [
+  {
+   "id": "r_ichi",
+   "radical": "一",
+   "kana": "いち",
+   "romaji": "ichi",
+   "meaning_en": "one",
+   "category": "single",
+   "note": "The simplest radical, a single horizontal stroke. It appears in kanji like 天 (heaven) and 元 (origin) as the top stroke.",
+   "examples": [
+    "一",
+    "天",
+    "元"
+   ]
   },
-  "words": [
-    { "id": "r_ichi", "radical": "一", "kana": "いち", "romaji": "ichi", "meaning_en": "one", "category": "single", "note": "The simplest radical, a single horizontal stroke. It appears in kanji like 天 (heaven) and 元 (origin) as the top stroke.", "examples": ["一", "天", "元"] },
-    { "id": "r_ni", "radical": "二", "kana": "に", "romaji": "ni", "meaning_en": "two", "category": "single", "note": "Two stacked horizontal strokes. Commonly seen in 元 and 示, and as part of compound numbers.", "examples": ["二", "元", "示"] },
-    { "id": "r_san", "radical": "三", "kana": "さん", "romaji": "san", "meaning_en": "three", "category": "single", "note": "Three horizontal strokes. It hides inside kanji like 春 (spring), whose top part is a variant of 三.", "examples": ["三", "春"] },
-    { "id": "r_juu", "radical": "十", "kana": "じゅう", "romaji": "juu", "meaning_en": "ten", "category": "single", "note": "A cross of two strokes. It appears in 計 (count) and 古 (old).", "examples": ["十", "計", "古"] },
-    { "id": "r_hachi", "radical": "八", "kana": "はち", "romaji": "hachi", "meaning_en": "eight", "category": "single", "note": "Two strokes opening downward. Seen in 公 (public) and 分 (part), where the 'two-part' sense splits things apart.", "examples": ["八", "公", "分"] },
-    { "id": "r_sanzui", "radical": "氵", "kana": "さんずい", "romaji": "sanzui", "meaning_en": "water radical (three drops)", "category": "water", "note": "The left-side water radical. Almost every kanji related to water or liquids uses it: 海 (sea), 泳 (swim), 湯 (hot water).", "examples": ["海", "泳", "湯", "酒"] },
-    { "id": "r_mizu", "radical": "水", "kana": "みず", "romaji": "mizu", "meaning_en": "water", "category": "water", "note": "The standalone water character. 氷 (ice) is water with an extra stroke on the left.", "examples": ["水", "泉", "氷"] },
-    { "id": "r_kawa", "radical": "川", "kana": "かわ", "romaji": "kawa", "meaning_en": "river", "category": "water", "note": "Three flowing strokes. It appears on the right side of 順 (order) and 訓 (instruction).", "examples": ["川", "順"] },
-    { "id": "r_hito", "radical": "人", "kana": "ひと", "romaji": "hito", "meaning_en": "person", "category": "person", "note": "The standalone person radical. In 休 (rest) a person 亻 leans against a tree 木 — the picture of resting.", "examples": ["人", "休", "体"] },
-    { "id": "r_ninben", "radical": "亻", "kana": "にんべん", "romaji": "ninben", "meaning_en": "person radical (left side)", "category": "person", "note": "The compressed person radical on the left. Words about people or their actions use it: 休 (rest), 体 (body), 住 (live).", "examples": ["休", "体", "住", "使"] },
-    { "id": "r_ki", "radical": "木", "kana": "き", "romaji": "ki", "meaning_en": "tree", "category": "tree", "note": "A tree — the vertical trunk with two branches. One tree is 木, two are 林 (grove), three are 森 (forest).", "examples": ["木", "林", "森"] },
-    { "id": "r_kusakanmuri", "radical": "艹", "kana": "くさかんむり", "romaji": "kusakanmuri", "meaning_en": "grass radical (top)", "category": "tree", "note": "The grass/plant crown on top of a character. Found in 花 (flower), 茶 (tea), and 草 (grass).", "examples": ["花", "茶", "草"] },
-    { "id": "r_kuchi", "radical": "口", "kana": "くち", "romaji": "kuchi", "meaning_en": "mouth", "category": "mouth", "note": "A square representing an open mouth. It stacks to form 品 (goods) and appears in 問 (ask).", "examples": ["口", "品", "問"] },
-    { "id": "r_gen", "radical": "言", "kana": "げん", "romaji": "gen", "meaning_en": "speech", "category": "mouth", "note": "Speech — lines coming out of a mouth. Words about speaking or words themselves carry it: 話 (talk), 語 (language).", "examples": ["言", "話", "語"] },
-    { "id": "r_te", "radical": "手", "kana": "て", "romaji": "te", "meaning_en": "hand", "category": "hand", "note": "The standalone hand. 持 (hold) combines it with the temple radical.", "examples": ["手", "持"] },
-    { "id": "r_tehen", "radical": "扌", "kana": "てへん", "romaji": "tehen", "meaning_en": "hand radical (left side)", "category": "hand", "note": "The compressed hand on the left, used in almost every hand-action verb: 打 (hit), 持 (hold), 指 (point).", "examples": ["打", "持", "指", "投"] },
-    { "id": "r_kokoro", "radical": "心", "kana": "こころ", "romaji": "kokoro", "meaning_en": "heart", "category": "heart", "note": "The standalone heart. In 思 (think) it sits under a field 田 — thoughts growing from the heart/mind.", "examples": ["心", "思"] },
-    { "id": "r_risshinben", "radical": "忄", "kana": "りっしんべん", "romaji": "risshinben", "meaning_en": "heart radical (left side)", "category": "heart", "note": "The vertical heart on the left. Emotions and states of mind use it: 情 (feeling), 忙 (busy), 快 (pleasant).", "examples": ["情", "忙", "快"] },
-    { "id": "r_hi", "radical": "日", "kana": "ひ / にち", "romaji": "hi / nichi", "meaning_en": "sun; day", "category": "sun", "note": "The sun. It brightens 明 (bright, with 月) and measures 時 (time).", "examples": ["日", "明", "時"] },
-    { "id": "r_tsuki", "radical": "月", "kana": "つき", "romaji": "tsuki", "meaning_en": "moon; month", "category": "moon", "note": "The moon. Paired with 日 it forms 明 (bright); it also counts months in 期 (period).", "examples": ["月", "明", "期"] },
-    { "id": "r_firehi", "radical": "火", "kana": "ひ", "romaji": "hi", "meaning_en": "fire", "category": "fire", "note": "The standalone fire, a person 人 with sparks flying. 燃 (burn) and 炭 (charcoal) carry it.", "examples": ["火", "燃", "炭"] },
-    { "id": "r_renga", "radical": "灬", "kana": "れんが", "romaji": "renga", "meaning_en": "fire radical (bottom)", "category": "fire", "note": "Four flames at the bottom of a character, the compressed fire radical. Seen in 煮 (boil), 熱 (heat), and 然 (so).", "examples": ["煮", "熱", "然"] },
-    { "id": "r_tsuchi", "radical": "土", "kana": "つち", "romaji": "tsuchi", "meaning_en": "earth; ground", "category": "earth", "note": "Earth as ground. Land words use it: 地 (ground), 場 (place), 城 (castle).", "examples": ["土", "地", "場"] },
-    { "id": "r_yama", "radical": "山", "kana": "やま", "romaji": "yama", "meaning_en": "mountain", "category": "earth", "note": "Three peaks. Found in 岩 (rock) and 峰 (peak).", "examples": ["山", "岩", "峰"] },
-    { "id": "r_ishi", "radical": "石", "kana": "いし", "romaji": "ishi", "meaning_en": "stone", "category": "earth", "note": "A rock under a cliff. 研 (polish, study) — polishing on a stone — and 確 (certain) carry it.", "examples": ["石", "研", "確"] },
-    { "id": "r_ta", "radical": "田", "kana": "た", "romaji": "ta", "meaning_en": "rice field", "category": "earth", "note": "A divided rice paddy. It sits inside 男 (man, 'field + strength') and 思 (think).", "examples": ["田", "男", "思"] },
-    { "id": "r_kane", "radical": "金", "kana": "かね", "romaji": "kane", "meaning_en": "gold; metal", "category": "metal", "note": "Gold in the earth, its ore glinting. Money is お金, and metal characters like 銀 (silver) take it as their base.", "examples": ["金", "銀", "鉄"] },
-    { "id": "r_kanehen", "radical": "釒", "kana": "かねへん", "romaji": "kanehen", "meaning_en": "metal radical (left side)", "category": "metal", "note": "The compressed metal radical on the left. Nearly every metal name uses it: 銀 (silver), 鉄 (iron), 銅 (copper).", "examples": ["銀", "鉄", "銅"] },
-    { "id": "r_onna", "radical": "女", "kana": "おんな", "romaji": "onna", "meaning_en": "woman", "category": "misc", "note": "A kneeling woman. It appears in 好 (like — a woman with a child) and 姉 (older sister).", "examples": ["女", "好", "姉"] },
-    { "id": "r_ko", "radical": "子", "kana": "こ", "romaji": "ko", "meaning_en": "child", "category": "misc", "note": "A swaddled baby. 学 (study) shows a child 子 under a canopy of learning.", "examples": ["子", "好", "学"] },
-    { "id": "r_me", "radical": "目", "kana": "め", "romaji": "me", "meaning_en": "eye", "category": "misc", "note": "An eye turned sideways. 見 (see) is an eye 目 on legs 儿; 眠 (sleep) closes the eye.", "examples": ["目", "見", "眠"] },
-    { "id": "r_ame", "radical": "雨", "kana": "あめ", "romaji": "ame", "meaning_en": "rain", "category": "misc", "note": "Clouds with raindrops. Weather kanji fall from it: 雪 (snow) and 雲 (cloud).", "examples": ["雨", "雪", "雲"] },
-    { "id": "r_ukanmuri", "radical": "宀", "kana": "うかんむり", "romaji": "ukanmuri", "meaning_en": "roof radical (top)", "category": "misc", "note": "A roof. Home words shelter under it: 家 (house), 宿 (lodging), 安 (peace).", "examples": ["家", "宿", "安"] },
-    { "id": "r_shinnyo", "radical": "辶", "kana": "しんにょう", "romaji": "shinnyo", "meaning_en": "road radical (walking)", "category": "misc", "note": "A road and a foot. Movement words walk with it: 道 (road), 進 (advance), 近 (near).", "examples": ["道", "進", "近"] },
-    { "id": "r_itonhen", "radical": "糸", "kana": "いとへん", "romaji": "itohen", "meaning_en": "thread radical", "category": "misc", "note": "A skein of thread. Fiber and connection words use it: 線 (line), 紙 (paper), 約 (promise, binding).", "examples": ["線", "紙", "約"] },
-    { "id": "r_sara", "radical": "皿", "kana": "さら", "romaji": "sara", "meaning_en": "dish", "category": "misc", "note": "A flat dish or plate. 血 (blood) is a drop into the dish; 盛 (heap) serves up food on it.", "examples": ["皿", "血", "盛"] },
-    { "id": "r_katana", "radical": "刀", "kana": "かたな", "romaji": "katana", "meaning_en": "blade", "category": "misc", "note": "A sword. Cutting words carry it: 切 (cut), 分 (divide, a blade splitting), 初 (first — first cut of cloth).", "examples": ["刀", "切", "分"] }
-  ]
+  {
+   "id": "r_ni",
+   "radical": "二",
+   "kana": "に",
+   "romaji": "ni",
+   "meaning_en": "two",
+   "category": "single",
+   "note": "Two stacked horizontal strokes. Commonly seen in 元 and 示, and as part of compound numbers.",
+   "examples": [
+    "二",
+    "元",
+    "示"
+   ]
+  },
+  {
+   "id": "r_san",
+   "radical": "三",
+   "kana": "さん",
+   "romaji": "san",
+   "meaning_en": "three",
+   "category": "single",
+   "note": "Three horizontal strokes. It hides inside kanji like 春 (spring), whose top part is a variant of 三.",
+   "examples": [
+    "三",
+    "春"
+   ]
+  },
+  {
+   "id": "r_juu",
+   "radical": "十",
+   "kana": "じゅう",
+   "romaji": "juu",
+   "meaning_en": "ten",
+   "category": "single",
+   "note": "A cross of two strokes. It appears in 計 (count) and 古 (old).",
+   "examples": [
+    "十",
+    "計",
+    "古"
+   ]
+  },
+  {
+   "id": "r_hachi",
+   "radical": "八",
+   "kana": "はち",
+   "romaji": "hachi",
+   "meaning_en": "eight",
+   "category": "single",
+   "note": "Two strokes opening downward. Seen in 公 (public) and 分 (part), where the 'two-part' sense splits things apart.",
+   "examples": [
+    "八",
+    "公",
+    "分"
+   ]
+  },
+  {
+   "id": "r_sanzui",
+   "radical": "氵",
+   "kana": "さんずい",
+   "romaji": "sanzui",
+   "meaning_en": "water radical (three drops)",
+   "category": "water",
+   "note": "The left-side water radical. Almost every kanji related to water or liquids uses it: 海 (sea), 泳 (swim), 湯 (hot water).",
+   "examples": [
+    "海",
+    "泳",
+    "湯",
+    "酒"
+   ]
+  },
+  {
+   "id": "r_mizu",
+   "radical": "水",
+   "kana": "みず",
+   "romaji": "mizu",
+   "meaning_en": "water",
+   "category": "water",
+   "note": "The standalone water character. 氷 (ice) is water with an extra stroke on the left.",
+   "examples": [
+    "水",
+    "泉",
+    "氷"
+   ]
+  },
+  {
+   "id": "r_kawa",
+   "radical": "川",
+   "kana": "かわ",
+   "romaji": "kawa",
+   "meaning_en": "river",
+   "category": "water",
+   "note": "Three flowing strokes. It appears on the right side of 順 (order) and 訓 (instruction).",
+   "examples": [
+    "川",
+    "順"
+   ]
+  },
+  {
+   "id": "r_hito",
+   "radical": "人",
+   "kana": "ひと",
+   "romaji": "hito",
+   "meaning_en": "person",
+   "category": "person",
+   "note": "The standalone person radical. In 休 (rest) a person 亻 leans against a tree 木 — the picture of resting.",
+   "examples": [
+    "人",
+    "休",
+    "体"
+   ]
+  },
+  {
+   "id": "r_ninben",
+   "radical": "亻",
+   "kana": "にんべん",
+   "romaji": "ninben",
+   "meaning_en": "person radical (left side)",
+   "category": "person",
+   "note": "The compressed person radical on the left. Words about people or their actions use it: 休 (rest), 体 (body), 住 (live).",
+   "examples": [
+    "休",
+    "体",
+    "住",
+    "使"
+   ]
+  },
+  {
+   "id": "r_ki",
+   "radical": "木",
+   "kana": "き",
+   "romaji": "ki",
+   "meaning_en": "tree",
+   "category": "tree",
+   "note": "A tree — the vertical trunk with two branches. One tree is 木, two are 林 (grove), three are 森 (forest).",
+   "examples": [
+    "木",
+    "林",
+    "森"
+   ]
+  },
+  {
+   "id": "r_kusakanmuri",
+   "radical": "艹",
+   "kana": "くさかんむり",
+   "romaji": "kusakanmuri",
+   "meaning_en": "grass radical (top)",
+   "category": "tree",
+   "note": "The grass/plant crown on top of a character. Found in 花 (flower), 茶 (tea), and 草 (grass).",
+   "examples": [
+    "花",
+    "茶",
+    "草"
+   ]
+  },
+  {
+   "id": "r_kuchi",
+   "radical": "口",
+   "kana": "くち",
+   "romaji": "kuchi",
+   "meaning_en": "mouth",
+   "category": "mouth",
+   "note": "A square representing an open mouth. It stacks to form 品 (goods) and appears in 問 (ask).",
+   "examples": [
+    "口",
+    "品",
+    "問"
+   ]
+  },
+  {
+   "id": "r_gen",
+   "radical": "言",
+   "kana": "げん",
+   "romaji": "gen",
+   "meaning_en": "speech",
+   "category": "mouth",
+   "note": "Speech — lines coming out of a mouth. Words about speaking or words themselves carry it: 話 (talk), 語 (language).",
+   "examples": [
+    "言",
+    "話",
+    "語"
+   ]
+  },
+  {
+   "id": "r_te",
+   "radical": "手",
+   "kana": "て",
+   "romaji": "te",
+   "meaning_en": "hand",
+   "category": "hand",
+   "note": "The standalone hand. 持 (hold) combines it with the temple radical.",
+   "examples": [
+    "手",
+    "持"
+   ]
+  },
+  {
+   "id": "r_tehen",
+   "radical": "扌",
+   "kana": "てへん",
+   "romaji": "tehen",
+   "meaning_en": "hand radical (left side)",
+   "category": "hand",
+   "note": "The compressed hand on the left, used in almost every hand-action verb: 打 (hit), 持 (hold), 指 (point).",
+   "examples": [
+    "打",
+    "持",
+    "指",
+    "投"
+   ]
+  },
+  {
+   "id": "r_kokoro",
+   "radical": "心",
+   "kana": "こころ",
+   "romaji": "kokoro",
+   "meaning_en": "heart",
+   "category": "heart",
+   "note": "The standalone heart. In 思 (think) it sits under a field 田 — thoughts growing from the heart/mind.",
+   "examples": [
+    "心",
+    "思"
+   ]
+  },
+  {
+   "id": "r_risshinben",
+   "radical": "忄",
+   "kana": "りっしんべん",
+   "romaji": "risshinben",
+   "meaning_en": "heart radical (left side)",
+   "category": "heart",
+   "note": "The vertical heart on the left. Emotions and states of mind use it: 情 (feeling), 忙 (busy), 快 (pleasant).",
+   "examples": [
+    "情",
+    "忙",
+    "快"
+   ]
+  },
+  {
+   "id": "r_hi",
+   "radical": "日",
+   "kana": "ひ / にち",
+   "romaji": "hi / nichi",
+   "meaning_en": "sun; day",
+   "category": "sun",
+   "note": "The sun. It brightens 明 (bright, with 月) and measures 時 (time).",
+   "examples": [
+    "日",
+    "明",
+    "時"
+   ]
+  },
+  {
+   "id": "r_tsuki",
+   "radical": "月",
+   "kana": "つき",
+   "romaji": "tsuki",
+   "meaning_en": "moon; month",
+   "category": "moon",
+   "note": "The moon. Paired with 日 it forms 明 (bright); it also counts months in 期 (period).",
+   "examples": [
+    "月",
+    "明",
+    "期"
+   ]
+  },
+  {
+   "id": "r_firehi",
+   "radical": "火",
+   "kana": "ひ",
+   "romaji": "hi",
+   "meaning_en": "fire",
+   "category": "fire",
+   "note": "The standalone fire, a person 人 with sparks flying. 燃 (burn) and 炭 (charcoal) carry it.",
+   "examples": [
+    "火",
+    "燃",
+    "炭"
+   ]
+  },
+  {
+   "id": "r_renga",
+   "radical": "灬",
+   "kana": "れんが",
+   "romaji": "renga",
+   "meaning_en": "fire radical (bottom)",
+   "category": "fire",
+   "note": "Four flames at the bottom of a character, the compressed fire radical. Seen in 煮 (boil), 熱 (heat), and 然 (so).",
+   "examples": [
+    "煮",
+    "熱",
+    "然"
+   ]
+  },
+  {
+   "id": "r_tsuchi",
+   "radical": "土",
+   "kana": "つち",
+   "romaji": "tsuchi",
+   "meaning_en": "earth; ground",
+   "category": "earth",
+   "note": "Earth as ground. Land words use it: 地 (ground), 場 (place), 城 (castle).",
+   "examples": [
+    "土",
+    "地",
+    "場"
+   ]
+  },
+  {
+   "id": "r_yama",
+   "radical": "山",
+   "kana": "やま",
+   "romaji": "yama",
+   "meaning_en": "mountain",
+   "category": "earth",
+   "note": "Three peaks. Found in 岩 (rock) and 峰 (peak).",
+   "examples": [
+    "山",
+    "岩",
+    "峰"
+   ]
+  },
+  {
+   "id": "r_ishi",
+   "radical": "石",
+   "kana": "いし",
+   "romaji": "ishi",
+   "meaning_en": "stone",
+   "category": "earth",
+   "note": "A rock under a cliff. 研 (polish, study) — polishing on a stone — and 確 (certain) carry it.",
+   "examples": [
+    "石",
+    "研",
+    "確"
+   ]
+  },
+  {
+   "id": "r_ta",
+   "radical": "田",
+   "kana": "た",
+   "romaji": "ta",
+   "meaning_en": "rice field",
+   "category": "earth",
+   "note": "A divided rice paddy. It sits inside 男 (man, 'field + strength') and 思 (think).",
+   "examples": [
+    "田",
+    "男",
+    "思"
+   ]
+  },
+  {
+   "id": "r_kane",
+   "radical": "金",
+   "kana": "かね",
+   "romaji": "kane",
+   "meaning_en": "gold; metal",
+   "category": "metal",
+   "note": "Gold in the earth, its ore glinting. Money is お金, and metal characters like 銀 (silver) take it as their base.",
+   "examples": [
+    "金",
+    "銀",
+    "鉄"
+   ]
+  },
+  {
+   "id": "r_kanehen",
+   "radical": "釒",
+   "kana": "かねへん",
+   "romaji": "kanehen",
+   "meaning_en": "metal radical (left side)",
+   "category": "metal",
+   "note": "The compressed metal radical on the left. Nearly every metal name uses it: 銀 (silver), 鉄 (iron), 銅 (copper).",
+   "examples": [
+    "銀",
+    "鉄",
+    "銅"
+   ]
+  },
+  {
+   "id": "r_onna",
+   "radical": "女",
+   "kana": "おんな",
+   "romaji": "onna",
+   "meaning_en": "woman",
+   "category": "misc",
+   "note": "A kneeling woman. It appears in 好 (like — a woman with a child) and 姉 (older sister).",
+   "examples": [
+    "女",
+    "好",
+    "姉"
+   ]
+  },
+  {
+   "id": "r_ko",
+   "radical": "子",
+   "kana": "こ",
+   "romaji": "ko",
+   "meaning_en": "child",
+   "category": "misc",
+   "note": "A swaddled baby. 学 (study) shows a child 子 under a canopy of learning.",
+   "examples": [
+    "子",
+    "好",
+    "学"
+   ]
+  },
+  {
+   "id": "r_me",
+   "radical": "目",
+   "kana": "め",
+   "romaji": "me",
+   "meaning_en": "eye",
+   "category": "misc",
+   "note": "An eye turned sideways. 見 (see) is an eye 目 on legs 儿; 眠 (sleep) closes the eye.",
+   "examples": [
+    "目",
+    "見",
+    "眠"
+   ]
+  },
+  {
+   "id": "r_ame",
+   "radical": "雨",
+   "kana": "あめ",
+   "romaji": "ame",
+   "meaning_en": "rain",
+   "category": "misc",
+   "note": "Clouds with raindrops. Weather kanji fall from it: 雪 (snow) and 雲 (cloud).",
+   "examples": [
+    "雨",
+    "雪",
+    "雲"
+   ]
+  },
+  {
+   "id": "r_ukanmuri",
+   "radical": "宀",
+   "kana": "うかんむり",
+   "romaji": "ukanmuri",
+   "meaning_en": "roof radical (top)",
+   "category": "misc",
+   "note": "A roof. Home words shelter under it: 家 (house), 宿 (lodging), 安 (peace).",
+   "examples": [
+    "家",
+    "宿",
+    "安"
+   ]
+  },
+  {
+   "id": "r_shinnyo",
+   "radical": "辶",
+   "kana": "しんにょう",
+   "romaji": "shinnyo",
+   "meaning_en": "road radical (walking)",
+   "category": "misc",
+   "note": "A road and a foot. Movement words walk with it: 道 (road), 進 (advance), 近 (near).",
+   "examples": [
+    "道",
+    "進",
+    "近"
+   ]
+  },
+  {
+   "id": "r_itonhen",
+   "radical": "糸",
+   "kana": "いとへん",
+   "romaji": "itohen",
+   "meaning_en": "thread radical",
+   "category": "misc",
+   "note": "A skein of thread. Fiber and connection words use it: 線 (line), 紙 (paper), 約 (promise, binding).",
+   "examples": [
+    "線",
+    "紙",
+    "約"
+   ]
+  },
+  {
+   "id": "r_sara",
+   "radical": "皿",
+   "kana": "さら",
+   "romaji": "sara",
+   "meaning_en": "dish",
+   "category": "misc",
+   "note": "A flat dish or plate. 血 (blood) is a drop into the dish; 盛 (heap) serves up food on it.",
+   "examples": [
+    "皿",
+    "血",
+    "盛"
+   ]
+  },
+  {
+   "id": "r_katana",
+   "radical": "刀",
+   "kana": "かたな",
+   "romaji": "katana",
+   "meaning_en": "blade",
+   "category": "misc",
+   "note": "A sword. Cutting words carry it: 切 (cut), 分 (divide, a blade splitting), 初 (first — first cut of cloth).",
+   "examples": [
+    "刀",
+    "切",
+    "分"
+   ]
+  },
+  {
+   "id": "r_no",
+   "radical": "丿",
+   "kana": "の",
+   "romaji": "no",
+   "meaning_en": "katakana-no / sweeping stroke",
+   "category": "single",
+   "note": "A single leftward diagonal stroke. Found as part of 九 (nine), 乇, and as the top stroke of 反 and 乎.",
+   "examples": [
+    "九",
+    "反",
+    "乎"
+   ]
+  },
+  {
+   "id": "r_ten",
+   "radical": "丶",
+   "kana": "てん",
+   "romaji": "ten",
+   "meaning_en": "dot",
+   "category": "single",
+   "note": "A single dot, also called 点. Appears in 丸 (round) and 丹 (red) as a filled dot.",
+   "examples": [
+    "丸",
+    "丹"
+   ]
+  },
+  {
+   "id": "r_nisui",
+   "radical": "冫",
+   "kana": "にすい",
+   "romaji": "nisui",
+   "meaning_en": "two-dot water / ice",
+   "category": "water",
+   "note": "A reduced form of 氷 (ice), two dots. Common in 冬 (winter), 冷 (cold), 寒 (cold weather), 決 (decide).",
+   "examples": [
+    "冬",
+    "冷",
+    "寒",
+    "決"
+   ]
+  },
+  {
+   "id": "r_ninnyou",
+   "radical": "儿",
+   "kana": "にんにょう",
+   "romaji": "ninnyou",
+   "meaning_en": "human legs",
+   "category": "person",
+   "note": "Depicts legs; carries ideas of standing/walking. Seen in 兄 (older brother), 元 (origin), 見 (see).",
+   "examples": [
+    "兄",
+    "元",
+    "見"
+   ]
+  },
+  {
+   "id": "r_gyoninben",
+   "radical": "彳",
+   "kana": "ぎょうにんべん",
+   "romaji": "gyoninben",
+   "meaning_en": "person walking (two-step)",
+   "category": "person",
+   "note": "A reduced 行 showing a crossroads. Used in verbs of motion: 行 (go), 待 (wait), 後 (behind).",
+   "examples": [
+    "行",
+    "待",
+    "後"
+   ]
+  },
+  {
+   "id": "r_dai",
+   "radical": "大",
+   "kana": "だい",
+   "romaji": "dai",
+   "meaning_en": "big",
+   "category": "person",
+   "note": "A person standing with arms and legs spread wide — 'big'. Basis for 天 (heaven), 太 (thick), 犬 (dog).",
+   "examples": [
+    "天",
+    "太",
+    "犬"
+   ]
+  },
+  {
+   "id": "r_samurai",
+   "radical": "士",
+   "kana": "さむらい",
+   "romaji": "samurai",
+   "meaning_en": "warrior / scholar",
+   "category": "person",
+   "note": "Literally 'samurai', written like 土 with an extra stroke. In 声 (voice), 志 (aspiration), 喜 (joy).",
+   "examples": [
+    "声",
+    "志",
+    "喜"
+   ]
+  },
+  {
+   "id": "r_tatsu",
+   "radical": "立",
+   "kana": "たつ",
+   "romaji": "tatsu",
+   "meaning_en": "stand",
+   "category": "person",
+   "note": "A person standing on a line (the ground). Basis for 位 (position), 音 (sound), 新 (new).",
+   "examples": [
+    "位",
+    "音",
+    "新"
+   ]
+  },
+  {
+   "id": "r_take",
+   "radical": "竹",
+   "kana": "たけ",
+   "romaji": "take",
+   "meaning_en": "bamboo",
+   "category": "plant",
+   "note": "A pair of bamboo stalks with leaves. In 筆 (brush), 笑 (laugh), 答 (answer), 笛 (flute).",
+   "examples": [
+    "筆",
+    "笑",
+    "答",
+    "笛"
+   ]
+  },
+  {
+   "id": "r_nogi",
+   "radical": "禾",
+   "kana": "のぎ",
+   "romaji": "nogi",
+   "meaning_en": "grain / rice plant",
+   "category": "plant",
+   "note": "Ear of grain hanging from a stalk. In 秋 (autumn), 科 (department), 利 (profit), 種 (seed).",
+   "examples": [
+    "秋",
+    "科",
+    "利",
+    "種"
+   ]
+  },
+  {
+   "id": "r_kome",
+   "radical": "米",
+   "kana": "こめ",
+   "romaji": "kome",
+   "meaning_en": "rice",
+   "category": "plant",
+   "note": "Grains of rice scattered around a cross. In 粉 (powder), 料 (ingredients), 精 (refine), 迷 (be lost).",
+   "examples": [
+    "粉",
+    "料",
+    "精",
+    "迷"
+   ]
+  },
+  {
+   "id": "r_akubi",
+   "radical": "欠",
+   "kana": "あくび",
+   "romaji": "akubi",
+   "meaning_en": "yawn / lack",
+   "category": "mouth",
+   "note": "A person with the mouth wide open — yawning. In 歌 (song), 吹 (blow), 飲 (drink), 欲 (desire).",
+   "examples": [
+    "歌",
+    "吹",
+    "飲",
+    "欲"
+   ]
+  },
+  {
+   "id": "r_sun",
+   "radical": "寸",
+   "kana": "すん",
+   "romaji": "sun",
+   "meaning_en": "thumb (measure)",
+   "category": "hand",
+   "note": "A hand (又) with a mark at the wrist, measuring one 寸 (3 cm). In 寺 (temple), 時 (time), 対 (opposite).",
+   "examples": [
+    "寺",
+    "時",
+    "対"
+   ]
+  },
+  {
+   "id": "r_kunigamae",
+   "radical": "囗",
+   "kana": "くにがまえ",
+   "romaji": "kunigamae",
+   "meaning_en": "enclosure",
+   "category": "earth",
+   "note": "A box/territory frame. In 国 (country), 回 (round), 四 (four), 図 (diagram).",
+   "examples": [
+    "国",
+    "回",
+    "四",
+    "図"
+   ]
+  },
+  {
+   "id": "r_kozato",
+   "radical": "阜",
+   "kana": "こざと",
+   "romaji": "kozato",
+   "meaning_en": "mound / hill",
+   "category": "earth",
+   "note": "Stepped mound; as 阝 on the left means land forms. In 院 (institute), 阪 (slope), 陸 (land).",
+   "examples": [
+    "院",
+    "阪",
+    "陸"
+   ]
+  },
+  {
+   "id": "r_ushi",
+   "radical": "牛",
+   "kana": "うし",
+   "romaji": "ushi",
+   "meaning_en": "cow",
+   "category": "animal",
+   "note": "A cow's head with horns. In 物 (thing), 牧 (grazing), 特 (special), 告 (announce).",
+   "examples": [
+    "物",
+    "牧",
+    "特",
+    "告"
+   ]
+  },
+  {
+   "id": "r_inu",
+   "radical": "犬",
+   "kana": "いぬ",
+   "romaji": "inu",
+   "meaning_en": "dog",
+   "category": "animal",
+   "note": "A dog. As 犭 (animal radical) it appears in 猫 (cat), 犯 (offend), 狩 (hunt).",
+   "examples": [
+    "犬",
+    "猫",
+    "犯",
+    "狩"
+   ]
+  },
+  {
+   "id": "r_uma",
+   "radical": "馬",
+   "kana": "うま",
+   "romaji": "uma",
+   "meaning_en": "horse",
+   "category": "animal",
+   "note": "A horse with mane and legs. In 駅 (station), 駆 (gallop), 騎 (riding).",
+   "examples": [
+    "駅",
+    "駆",
+    "騎"
+   ]
+  },
+  {
+   "id": "r_tori",
+   "radical": "鳥",
+   "kana": "とり",
+   "romaji": "tori",
+   "meaning_en": "bird",
+   "category": "animal",
+   "note": "A bird with wings and a tail. In 鳴 (cry out), 島 (island), 鶏 (chicken).",
+   "examples": [
+    "鳴",
+    "島",
+    "鶏"
+   ]
+  },
+  {
+   "id": "r_sakana",
+   "radical": "魚",
+   "kana": "さかな",
+   "romaji": "sakana",
+   "meaning_en": "fish",
+   "category": "animal",
+   "note": "A fish with scales and tail. In 鮮 (fresh), 鯨 (whale), 漁 (fishing).",
+   "examples": [
+    "鮮",
+    "鯨",
+    "漁"
+   ]
+  },
+  {
+   "id": "r_mushi",
+   "radical": "虫",
+   "kana": "むし",
+   "romaji": "mushi",
+   "meaning_en": "insect / creature",
+   "category": "animal",
+   "note": "A snake or insect. In 蚊 (mosquito), 蛇 (snake), 風 (wind, from 'insect').",
+   "examples": [
+    "蚊",
+    "蛇",
+    "風"
+   ]
+  },
+  {
+   "id": "r_hitsuji",
+   "radical": "羊",
+   "kana": "ひつじ",
+   "romaji": "hitsuji",
+   "meaning_en": "sheep",
+   "category": "animal",
+   "note": "A sheep with horns and ears. In 洋 (ocean), 美 (beauty), 群 (group).",
+   "examples": [
+    "洋",
+    "美",
+    "群"
+   ]
+  },
+  {
+   "id": "r_furutori",
+   "radical": "隹",
+   "kana": "ふるとり",
+   "romaji": "furutori",
+   "meaning_en": "short-tailed bird",
+   "category": "animal",
+   "note": "A bird seen from behind. In 集 (gather), 雑 (various), 雄 (male), 難 (difficult).",
+   "examples": [
+    "集",
+    "雑",
+    "雄",
+    "難"
+   ]
+  },
+  {
+   "id": "r_mimi",
+   "radical": "耳",
+   "kana": "みみ",
+   "romaji": "mimi",
+   "meaning_en": "ear",
+   "category": "body",
+   "note": "An ear. In 聞 (listen), 取 (take), 職 (occupation).",
+   "examples": [
+    "聞",
+    "取",
+    "職"
+   ]
+  },
+  {
+   "id": "r_ashi",
+   "radical": "足",
+   "kana": "あし",
+   "romaji": "ashi",
+   "meaning_en": "foot / leg",
+   "category": "body",
+   "note": "A foot. In 走 (run, as ⻊), 踏 (step), 距 (distance).",
+   "examples": [
+    "走",
+    "踏",
+    "距"
+   ]
+  },
+  {
+   "id": "r_mi",
+   "radical": "身",
+   "kana": "み",
+   "romaji": "mi",
+   "meaning_en": "body",
+   "category": "body",
+   "note": "A body. In 体 (body), 射 (shoot), 躲 (avoid).",
+   "examples": [
+    "体",
+    "射"
+   ]
+  },
+  {
+   "id": "r_tsume",
+   "radical": "爪",
+   "kana": "つめ",
+   "romaji": "tsume",
+   "meaning_en": "claw / nail",
+   "category": "body",
+   "note": "A hand with claws. In 爬 (climb), 受 (receive, as 爫), 采 (pick).",
+   "examples": [
+    "受",
+    "采"
+   ]
+  },
+  {
+   "id": "r_niku",
+   "radical": "肉",
+   "kana": "にく",
+   "romaji": "niku",
+   "meaning_en": "meat / flesh",
+   "category": "body",
+   "note": "A chunk of meat with gristle. As 月 (meat radical) in 胸 (chest), 服 (clothes), 胃 (stomach).",
+   "examples": [
+    "肉",
+    "胸",
+    "服",
+    "胃"
+   ]
+  },
+  {
+   "id": "r_hone",
+   "radical": "骨",
+   "kana": "ほね",
+   "romaji": "hone",
+   "meaning_en": "bone",
+   "category": "body",
+   "note": "Bones and a body. In 滑 (slide), 骸 (remains).",
+   "examples": [
+    "骨",
+    "滑",
+    "骸"
+   ]
+  },
+  {
+   "id": "r_oogai",
+   "radical": "頁",
+   "kana": "おおがい",
+   "romaji": "oogai",
+   "meaning_en": "head / page",
+   "category": "body",
+   "note": "A head. In 顔 (face), 頭 (head), 額 (forehead), 願 (request).",
+   "examples": [
+    "顔",
+    "頭",
+    "額",
+    "願"
+   ]
+  },
+  {
+   "id": "r_ha",
+   "radical": "歯",
+   "kana": "は",
+   "romaji": "ha",
+   "meaning_en": "tooth",
+   "category": "body",
+   "note": "A mouth with teeth. In 齧 (gnaw), 齢 (age).",
+   "examples": [
+    "歯",
+    "齢"
+   ]
+  },
+  {
+   "id": "r_hana",
+   "radical": "鼻",
+   "kana": "はな",
+   "romaji": "hana",
+   "meaning_en": "nose",
+   "category": "body",
+   "note": "A nose. In 鼾 (snore), 臭 (smell).",
+   "examples": [
+    "鼻",
+    "臭"
+   ]
+  },
+  {
+   "id": "r_chi",
+   "radical": "血",
+   "kana": "ち",
+   "romaji": "chi",
+   "meaning_en": "blood",
+   "category": "body",
+   "note": "Blood in a bowl. In 衆 (crowd), 衄 (nosebleed).",
+   "examples": [
+    "血",
+    "衆"
+   ]
+  },
+  {
+   "id": "r_yamaidare",
+   "radical": "疒",
+   "kana": "やまいだれ",
+   "romaji": "yamaidare",
+   "meaning_en": "sickness",
+   "category": "body",
+   "note": "A bed with a sick person. In 病 (illness), 痛 (pain), 疲 (tired), 癒 (heal).",
+   "examples": [
+    "病",
+    "痛",
+    "疲",
+    "癒"
+   ]
+  },
+  {
+   "id": "r_shikabane",
+   "radical": "尸",
+   "kana": "しかばね",
+   "romaji": "shikabane",
+   "meaning_en": "corpse",
+   "category": "body",
+   "note": "A corpse; often means 'person lying down'. In 尾 (tail), 居 (reside), 屋 (roof).",
+   "examples": [
+    "尾",
+    "居",
+    "屋"
+   ]
+  },
+  {
+   "id": "r_chikara",
+   "radical": "力",
+   "kana": "ちから",
+   "romaji": "chikara",
+   "meaning_en": "power / strength",
+   "category": "tool",
+   "note": "A plow or an arm with muscle. In 男 (man), 努 (endeavor), 助 (help), 動 (move).",
+   "examples": [
+    "男",
+    "努",
+    "助",
+    "動"
+   ]
+  },
+  {
+   "id": "r_yumi",
+   "radical": "弓",
+   "kana": "ゆみ",
+   "romaji": "yumi",
+   "meaning_en": "bow",
+   "category": "tool",
+   "note": "A bow. In 引 (pull), 強 (strong), 張 (stretch), 弾 (bullet).",
+   "examples": [
+    "引",
+    "強",
+    "張",
+    "弾"
+   ]
+  },
+  {
+   "id": "r_hoko",
+   "radical": "戈",
+   "kana": "ほこ",
+   "romaji": "hoko",
+   "meaning_en": "halberd",
+   "category": "tool",
+   "note": "A polearm. In 戦 (war), 我 (I), 成 (become), 武 (military).",
+   "examples": [
+    "戦",
+    "我",
+    "成",
+    "武"
+   ]
+  },
+  {
+   "id": "r_ono",
+   "radical": "斤",
+   "kana": "おの",
+   "romaji": "ono",
+   "meaning_en": "axe",
+   "category": "tool",
+   "note": "An axe. In 新 (new), 断 (cut off), 折 (fold, as 扌+斤).",
+   "examples": [
+    "新",
+    "断",
+    "折"
+   ]
+  },
+  {
+   "id": "r_ya",
+   "radical": "矢",
+   "kana": "や",
+   "romaji": "ya",
+   "meaning_en": "arrow",
+   "category": "tool",
+   "note": "An arrow. In 知 (know), 短 (short), 医 (medicine).",
+   "examples": [
+    "知",
+    "短",
+    "医"
+   ]
+  },
+  {
+   "id": "r_kuruma",
+   "radical": "車",
+   "kana": "くるま",
+   "romaji": "kuruma",
+   "meaning_en": "vehicle / wheel",
+   "category": "tool",
+   "note": "A chariot seen from above. In 転 (turn), 連 (link), 軍 (army), 輸 (transport).",
+   "examples": [
+    "転",
+    "連",
+    "軍",
+    "輸"
+   ]
+  },
+  {
+   "id": "r_fune",
+   "radical": "舟",
+   "kana": "ふね",
+   "romaji": "fune",
+   "meaning_en": "boat",
+   "category": "tool",
+   "note": "A boat. In 船 (ship), 航 (navigate), 般 (kind).",
+   "examples": [
+    "船",
+    "航",
+    "般"
+   ]
+  },
+  {
+   "id": "r_bokuzukuri",
+   "radical": "攵",
+   "kana": "ぼくづくり",
+   "romaji": "bokuzukuri",
+   "meaning_en": "strike / action (hand with stick)",
+   "category": "tool",
+   "note": "A hand holding a stick; the 'do' element. In 教 (teach), 数 (number), 変 (change), 放 (release).",
+   "examples": [
+    "教",
+    "数",
+    "変",
+    "放"
+   ]
+  },
+  {
+   "id": "r_madare",
+   "radical": "广",
+   "kana": "まだれ",
+   "romaji": "madare",
+   "meaning_en": "dotted cliff / shelter",
+   "category": "building",
+   "note": "A roof over a wall. In 店 (shop), 店 (shop), 広 (wide), 庭 (garden).",
+   "examples": [
+    "店",
+    "広",
+    "庭",
+    "度"
+   ]
+  },
+  {
+   "id": "r_gandare",
+   "radical": "厂",
+   "kana": "がんだれ",
+   "romaji": "gandare",
+   "meaning_en": "cliff",
+   "category": "building",
+   "note": "A cliff/overhang. In 原 (field), 厚 (thick), 圧 (pressure).",
+   "examples": [
+    "原",
+    "厚",
+    "圧"
+   ]
+  },
+  {
+   "id": "r_mon",
+   "radical": "門",
+   "kana": "もん",
+   "romaji": "mon",
+   "meaning_en": "gate",
+   "category": "building",
+   "note": "A pair of gate doors. In 間 (interval), 開 (open), 閉 (close), 聞 (listen).",
+   "examples": [
+    "間",
+    "開",
+    "閉",
+    "聞"
+   ]
+  },
+  {
+   "id": "r_to",
+   "radical": "戸",
+   "kana": "と",
+   "romaji": "to",
+   "meaning_en": "door",
+   "category": "building",
+   "note": "A single door. In 所 (place), 戻 (return), 扉 (front door).",
+   "examples": [
+    "所",
+    "戻",
+    "扉"
+   ]
+  },
+  {
+   "id": "r_oozato",
+   "radical": "邑",
+   "kana": "おおざと",
+   "romaji": "oozato",
+   "meaning_en": "town / village",
+   "category": "building",
+   "note": "A walled town; as 阝 on the right means places. In 都 (capital), 部 (part), 郷 (home town).",
+   "examples": [
+    "都",
+    "部",
+    "郷"
+   ]
+  },
+  {
+   "id": "r_wakanmuri",
+   "radical": "冖",
+   "kana": "わかんむり",
+   "romaji": "wakanmuri",
+   "meaning_en": "crown cover",
+   "category": "building",
+   "note": "A cover/crown over something. In 冗 (superfluous), 写 (copy), 冠 (crown).",
+   "examples": [
+    "冗",
+    "写",
+    "冠"
+   ]
+  },
+  {
+   "id": "r_makigamae",
+   "radical": "冂",
+   "kana": "まきがまえ",
+   "romaji": "makigamae",
+   "meaning_en": "box frame",
+   "category": "building",
+   "note": "An open box frame. In 同 (same), 内 (inside), 円 (circle).",
+   "examples": [
+    "同",
+    "内",
+    "円"
+   ]
+  },
+  {
+   "id": "r_hakogamae",
+   "radical": "匚",
+   "kana": "はこがまえ",
+   "romaji": "hakogamae",
+   "meaning_en": "box",
+   "category": "building",
+   "note": "A box. In 区 (district), 医 (medicine), 匹 (counter for animals).",
+   "examples": [
+    "区",
+    "医",
+    "匹"
+   ]
+  },
+  {
+   "id": "r_ana",
+   "radical": "穴",
+   "kana": "あな",
+   "romaji": "ana",
+   "meaning_en": "hole / cave",
+   "category": "building",
+   "note": "A cave. In 空 (sky), 室 (room), 窓 (window), 究 (research).",
+   "examples": [
+    "空",
+    "室",
+    "窓",
+    "究"
+   ]
+  },
+  {
+   "id": "r_tori_sake",
+   "radical": "酉",
+   "kana": "とり",
+   "romaji": "tori_sake",
+   "meaning_en": "sake jar",
+   "category": "food",
+   "note": "A sake jar. In 酒 (alcohol), 配 (distribute), 酸 (acid), 医? (medicine from wine).",
+   "examples": [
+    "酒",
+    "配",
+    "酸"
+   ]
+  },
+  {
+   "id": "r_shoku",
+   "radical": "食",
+   "kana": "しょく",
+   "romaji": "shoku",
+   "meaning_en": "eat / food",
+   "category": "food",
+   "note": "A roof over a rice bowl. In 飯 (meal), 飲 (drink), 養 (nourish), 食 (as 飠 radical).",
+   "examples": [
+    "飯",
+    "飲",
+    "養"
+   ]
+  },
+  {
+   "id": "r_mame",
+   "radical": "豆",
+   "kana": "まめ",
+   "romaji": "mame",
+   "meaning_en": "bean",
+   "category": "food",
+   "note": "A vessel with beans. In 頭 (head, from 頁+豆), 短 (short), 豊 (abundant).",
+   "examples": [
+    "頭",
+    "短",
+    "豊"
+   ]
+  },
+  {
+   "id": "r_koromo",
+   "radical": "衣",
+   "kana": "ころも",
+   "romaji": "koromo",
+   "meaning_en": "garment",
+   "category": "cloth",
+   "note": "A robe; as 衤 (cloth radical) in 服 (clothes), 初 (begin), 被 (wear).",
+   "examples": [
+    "衣",
+    "服",
+    "初",
+    "被"
+   ]
+  },
+  {
+   "id": "r_haba",
+   "radical": "巾",
+   "kana": "はば",
+   "romaji": "haba",
+   "meaning_en": "cloth / width",
+   "category": "cloth",
+   "note": "A cloth hanging. In 布 (cloth), 市 (market), 帰 (return), 帳 (notebook).",
+   "examples": [
+    "布",
+    "市",
+    "帰",
+    "帳"
+   ]
+  },
+  {
+   "id": "r_kawa_leather",
+   "radical": "革",
+   "kana": "かわ",
+   "romaji": "kawa_leather",
+   "meaning_en": "leather",
+   "category": "cloth",
+   "note": "Animal hide stretched on a frame. In 靴 (shoes), 革 (change), 皮 (skin).",
+   "examples": [
+    "靴",
+    "皮",
+    "変"
+   ]
+  },
+  {
+   "id": "r_kaze",
+   "radical": "風",
+   "kana": "かぜ",
+   "romaji": "kaze",
+   "meaning_en": "wind",
+   "category": "nature",
+   "note": "A sail in the wind (with an insect inside). In 嵐 (storm), 颯 (rustling).",
+   "examples": [
+    "嵐",
+    "颯"
+   ]
+  },
+  {
+   "id": "r_shiro",
+   "radical": "白",
+   "kana": "しろ",
+   "romaji": "shiro",
+   "meaning_en": "white",
+   "category": "nature",
+   "note": "A rising sun — daylight/white. In 的 (target), 皇 (emperor), 泉 (spring).",
+   "examples": [
+    "的",
+    "皇",
+    "泉"
+   ]
+  },
+  {
+   "id": "r_aka",
+   "radical": "赤",
+   "kana": "あか",
+   "romaji": "aka",
+   "meaning_en": "red",
+   "category": "nature",
+   "note": "Fire under earth — red. In 赦 (pardon), 赫 (glaring).",
+   "examples": [
+    "赤",
+    "赦"
+   ]
+  },
+  {
+   "id": "r_kuro",
+   "radical": "黑",
+   "kana": "くろ",
+   "romaji": "kuro",
+   "meaning_en": "black",
+   "category": "nature",
+   "note": "A window blackened with soot. In 点 (point), 黙 (silence), 墨 (ink).",
+   "examples": [
+    "点",
+    "黙",
+    "墨"
+   ]
+  },
+  {
+   "id": "r_tani",
+   "radical": "谷",
+   "kana": "たに",
+   "romaji": "tani",
+   "meaning_en": "valley",
+   "category": "nature",
+   "note": "Water flowing between mountains. In 欲 (desire), 容 (contain), 浴 (bathe).",
+   "examples": [
+    "欲",
+    "容",
+    "浴"
+   ]
+  },
+  {
+   "id": "r_kai",
+   "radical": "貝",
+   "kana": "かい",
+   "romaji": "kai",
+   "meaning_en": "shell / money",
+   "category": "misc",
+   "note": "A cowrie shell, ancient currency. In 買 (buy), 財 (wealth), 資 (capital), 貧 (poor).",
+   "examples": [
+    "買",
+    "財",
+    "資",
+    "貧"
+   ]
+  },
+  {
+   "id": "r_oni",
+   "radical": "鬼",
+   "kana": "おに",
+   "romaji": "oni",
+   "meaning_en": "demon / spirit",
+   "category": "misc",
+   "note": "A demon with horns. In 魂 (soul), 魅 (charm), 魔 (demon).",
+   "examples": [
+    "魂",
+    "魅",
+    "魔"
+   ]
+  },
+  {
+   "id": "r_oto",
+   "radical": "音",
+   "kana": "おと",
+   "romaji": "oto",
+   "meaning_en": "sound",
+   "category": "misc",
+   "note": "Words under a roof — sound. In 音 (as in 韻), 響 (echo), 意 (meaning).",
+   "examples": [
+    "響",
+    "意",
+    "韻"
+   ]
+  },
+  {
+   "id": "r_takai",
+   "radical": "高",
+   "kana": "たかい",
+   "romaji": "takai",
+   "meaning_en": "tall / high",
+   "category": "misc",
+   "note": "A tall tower. In 稿 (draft), 商 (trade), 京 (capital).",
+   "examples": [
+    "稿",
+    "商",
+    "京"
+   ]
+  }
+ ]
 }

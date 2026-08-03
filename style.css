@@ -20,6 +20,10 @@
   --iadj-soft:  #F0E3EC;
   --naadj:      #1F5C6B;
   --naadj-soft: #E1EDEF;
+  --adv:        #8A5A00;
+  --adv-soft:   #F4E7C3;
+  --noun:       #4A5A8A;
+  --noun-soft:  #E4E7F2;
   --good:       #3F6B3F;
   --good-soft:  #E5EFE1;
   --bad:        #9C3B3B;
@@ -173,6 +177,8 @@ a{color:inherit;}
 .badge.verb{background:var(--verb-soft);color:var(--verb);}
 .badge.i-adjective{background:var(--iadj-soft);color:var(--iadj);}
 .badge.na-adjective{background:var(--naadj-soft);color:var(--naadj);}
+.badge.adverb{background:var(--adv-soft);color:var(--adv);}
+.badge.noun{background:var(--noun-soft);color:var(--noun);}
 
 /* ---------- library ---------- */
 .tab-row{display:flex;gap:8px;}

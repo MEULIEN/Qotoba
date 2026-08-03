@@ -1,0 +1,8017 @@
+{
+ "meta": {
+  "description": "Japanese nouns (名詞), organized by JLPT level.",
+  "note": "Covers common concrete and abstract nouns. Proper nouns, counters, and demonstratives are intentionally excluded (they live in their own data files). Kanji shown in the dictionary form; kana gives the reading."
+ },
+ "words": [
+  {
+   "id": "n_kazoku",
+   "dictionary": "家族",
+   "kana": "かぞく",
+   "romaji": "kazoku",
+   "meaning": "family",
+   "type": "noun",
+   "tags": [
+    "family",
+    "n5"
+   ],
+   "example": {
+    "jp": "家族と一緒に住んでいます。",
+    "en": "I live with my family."
+   }
+  },
+  {
+   "id": "n_chichi",
+   "dictionary": "父",
+   "kana": "ちち",
+   "romaji": "chichi",
+   "meaning": "father (humble)",
+   "type": "noun",
+   "tags": [
+    "family",
+    "n5"
+   ],
+   "example": {
+    "jp": "父は会社員です。",
+    "en": "My father is an office worker."
+   },
+   "note": "Speaking about one's own father; use お父さん (otousan) to address/refer politely."
+  },
+  {
+   "id": "n_haha",
+   "dictionary": "母",
+   "kana": "はは",
+   "romaji": "haha",
+   "meaning": "mother (humble)",
+   "type": "noun",
+   "tags": [
+    "family",
+    "n5"
+   ],
+   "example": {
+    "jp": "母は料理が上手です。",
+    "en": "My mother is good at cooking."
+   },
+   "note": "One's own mother; polite form is お母さん (okaasan)."
+  },
+  {
+   "id": "n_ani",
+   "dictionary": "兄",
+   "kana": "あに",
+   "romaji": "ani",
+   "meaning": "older brother",
+   "type": "noun",
+   "tags": [
+    "family",
+    "n5"
+   ],
+   "example": {
+    "jp": "兄は大学生です。",
+    "en": "My older brother is a university student."
+   }
+  },
+  {
+   "id": "n_ane",
+   "dictionary": "姉",
+   "kana": "あね",
+   "romaji": "ane",
+   "meaning": "older sister",
+   "type": "noun",
+   "tags": [
+    "family",
+    "n5"
+   ],
+   "example": {
+    "jp": "姉は医者です。",
+    "en": "My older sister is a doctor."
+   }
+  },
+  {
+   "id": "n_otouto",
+   "dictionary": "弟",
+   "kana": "おとうと",
+   "romaji": "otouto",
+   "meaning": "younger brother",
+   "type": "noun",
+   "tags": [
+    "family",
+    "n5"
+   ],
+   "example": {
+    "jp": "弟はまだ小学生です。",
+    "en": "My younger brother is still an elementary school student."
+   }
+  },
+  {
+   "id": "n_imouto",
+   "dictionary": "妹",
+   "kana": "いもうと",
+   "romaji": "imouto",
+   "meaning": "younger sister",
+   "type": "noun",
+   "tags": [
+    "family",
+    "n5"
+   ],
+   "example": {
+    "jp": "妹と買い物に行きました。",
+    "en": "I went shopping with my younger sister."
+   }
+  },
+  {
+   "id": "n_kodomo",
+   "dictionary": "子供",
+   "kana": "こども",
+   "romaji": "kodomo",
+   "meaning": "child",
+   "type": "noun",
+   "tags": [
+    "family",
+    "people",
+    "n5"
+   ],
+   "example": {
+    "jp": "子供が公園で遊んでいます。",
+    "en": "Children are playing in the park."
+   }
+  },
+  {
+   "id": "n_musuko",
+   "dictionary": "息子",
+   "kana": "むすこ",
+   "romaji": "musuko",
+   "meaning": "son",
+   "type": "noun",
+   "tags": [
+    "family",
+    "n5"
+   ],
+   "example": {
+    "jp": "息子は十歳です。",
+    "en": "My son is ten years old."
+   }
+  },
+  {
+   "id": "n_musume",
+   "dictionary": "娘",
+   "kana": "むすめ",
+   "romaji": "musume",
+   "meaning": "daughter",
+   "type": "noun",
+   "tags": [
+    "family",
+    "n5"
+   ],
+   "example": {
+    "jp": "娘はピアノを習っています。",
+    "en": "My daughter is learning piano."
+   }
+  },
+  {
+   "id": "n_oji",
+   "dictionary": "おじ",
+   "kana": "おじ",
+   "romaji": "oji",
+   "meaning": "uncle",
+   "type": "noun",
+   "tags": [
+    "family",
+    "n5"
+   ],
+   "example": {
+    "jp": "おじは東京に住んでいます。",
+    "en": "My uncle lives in Tokyo."
+   },
+   "note": "叔父; polite form おじさん."
+  },
+  {
+   "id": "n_oba",
+   "dictionary": "おば",
+   "kana": "おば",
+   "romaji": "oba",
+   "meaning": "aunt",
+   "type": "noun",
+   "tags": [
+    "family",
+    "n5"
+   ],
+   "example": {
+    "jp": "おばは英語の先生です。",
+    "en": "My aunt is an English teacher."
+   },
+   "note": "叔母; polite form おばさん."
+  },
+  {
+   "id": "n_sofu",
+   "dictionary": "祖父",
+   "kana": "そふ",
+   "romaji": "sofu",
+   "meaning": "grandfather",
+   "type": "noun",
+   "tags": [
+    "family",
+    "n5"
+   ],
+   "example": {
+    "jp": "祖父は元気です。",
+    "en": "My grandfather is healthy."
+   }
+  },
+  {
+   "id": "n_sobo",
+   "dictionary": "祖母",
+   "kana": "そぼ",
+   "romaji": "sobo",
+   "meaning": "grandmother",
+   "type": "noun",
+   "tags": [
+    "family",
+    "n5"
+   ],
+   "example": {
+    "jp": "祖母は毎朝散歩します。",
+    "en": "My grandmother takes a walk every morning."
+   }
+  },
+  {
+   "id": "n_otto",
+   "dictionary": "夫",
+   "kana": "おっと",
+   "romaji": "otto",
+   "meaning": "husband",
+   "type": "noun",
+   "tags": [
+    "family",
+    "n5"
+   ],
+   "example": {
+    "jp": "夫は今、出張中です。",
+    "en": "My husband is on a business trip."
+   }
+  },
+  {
+   "id": "n_tsuma",
+   "dictionary": "妻",
+   "kana": "つま",
+   "romaji": "tsuma",
+   "meaning": "wife",
+   "type": "noun",
+   "tags": [
+    "family",
+    "n5"
+   ],
+   "example": {
+    "jp": "妻は看護師です。",
+    "en": "My wife is a nurse."
+   }
+  },
+  {
+   "id": "n_hito",
+   "dictionary": "人",
+   "kana": "ひと",
+   "romaji": "hito",
+   "meaning": "person",
+   "type": "noun",
+   "tags": [
+    "people",
+    "n5"
+   ],
+   "example": {
+    "jp": "あそこに人がいます。",
+    "en": "There's a person over there."
+   }
+  },
+  {
+   "id": "n_otoko",
+   "dictionary": "男",
+   "kana": "おとこ",
+   "romaji": "otoko",
+   "meaning": "man",
+   "type": "noun",
+   "tags": [
+    "people",
+    "n5"
+   ],
+   "example": {
+    "jp": "男の人が走っています。",
+    "en": "A man is running."
+   }
+  },
+  {
+   "id": "n_onna",
+   "dictionary": "女",
+   "kana": "おんな",
+   "romaji": "onna",
+   "meaning": "woman",
+   "type": "noun",
+   "tags": [
+    "people",
+    "n5"
+   ],
+   "example": {
+    "jp": "女の人が歌を歌っています。",
+    "en": "A woman is singing."
+   }
+  },
+  {
+   "id": "n_otokonoko",
+   "dictionary": "男の子",
+   "kana": "おとこのこ",
+   "romaji": "otokonoko",
+   "meaning": "boy",
+   "type": "noun",
+   "tags": [
+    "people",
+    "n5"
+   ],
+   "example": {
+    "jp": "男の子がボールで遊んでいます。",
+    "en": "A boy is playing with a ball."
+   }
+  },
+  {
+   "id": "n_onnannoko",
+   "dictionary": "女の子",
+   "kana": "おんなのこ",
+   "romaji": "onnannoko",
+   "meaning": "girl",
+   "type": "noun",
+   "tags": [
+    "people",
+    "n5"
+   ],
+   "example": {
+    "jp": "女の子が本を読んでいます。",
+    "en": "A girl is reading a book."
+   }
+  },
+  {
+   "id": "n_sensei",
+   "dictionary": "先生",
+   "kana": "せんせい",
+   "romaji": "sensei",
+   "meaning": "teacher; instructor",
+   "type": "noun",
+   "tags": [
+    "people",
+    "school",
+    "n5"
+   ],
+   "example": {
+    "jp": "田中先生は日本語を教えます。",
+    "en": "Teacher Tanaka teaches Japanese."
+   }
+  },
+  {
+   "id": "n_gakusei",
+   "dictionary": "学生",
+   "kana": "がくせい",
+   "romaji": "gakusei",
+   "meaning": "student",
+   "type": "noun",
+   "tags": [
+    "people",
+    "school",
+    "n5"
+   ],
+   "example": {
+    "jp": "私は学生です。",
+    "en": "I am a student."
+   }
+  },
+  {
+   "id": "n_kaishain",
+   "dictionary": "会社員",
+   "kana": "かいしゃいん",
+   "romaji": "kaishain",
+   "meaning": "office worker; company employee",
+   "type": "noun",
+   "tags": [
+    "people",
+    "work",
+    "n5"
+   ],
+   "example": {
+    "jp": "兄は会社員です。",
+    "en": "My older brother is an office worker."
+   }
+  },
+  {
+   "id": "n_isha",
+   "dictionary": "医者",
+   "kana": "いしゃ",
+   "romaji": "isha",
+   "meaning": "doctor",
+   "type": "noun",
+   "tags": [
+    "people",
+    "health",
+    "n5"
+   ],
+   "example": {
+    "jp": "医者に診てもらいました。",
+    "en": "I had a doctor examine me."
+   }
+  },
+  {
+   "id": "n_untenshu",
+   "dictionary": "運転手",
+   "kana": "うんてんしゅ",
+   "romaji": "untenshu",
+   "meaning": "driver",
+   "type": "noun",
+   "tags": [
+    "people",
+    "transport",
+    "n5"
+   ],
+   "example": {
+    "jp": "運転手に道を聞きました。",
+    "en": "I asked the driver for directions."
+   }
+  },
+  {
+   "id": "n_tomodachi",
+   "dictionary": "友達",
+   "kana": "ともだち",
+   "romaji": "tomodachi",
+   "meaning": "friend",
+   "type": "noun",
+   "tags": [
+    "people",
+    "social",
+    "n5"
+   ],
+   "example": {
+    "jp": "友達と映画を見ました。",
+    "en": "I watched a movie with a friend."
+   }
+  },
+  {
+   "id": "n_karada",
+   "dictionary": "体",
+   "kana": "からだ",
+   "romaji": "karada",
+   "meaning": "body",
+   "type": "noun",
+   "tags": [
+    "body",
+    "health",
+    "n5"
+   ],
+   "example": {
+    "jp": "体に気をつけてください。",
+    "en": "Please take care of yourself."
+   }
+  },
+  {
+   "id": "n_atama",
+   "dictionary": "頭",
+   "kana": "あたま",
+   "romaji": "atama",
+   "meaning": "head",
+   "type": "noun",
+   "tags": [
+    "body",
+    "n5"
+   ],
+   "example": {
+    "jp": "頭が痛いです。",
+    "en": "I have a headache."
+   }
+  },
+  {
+   "id": "n_kao",
+   "dictionary": "顔",
+   "kana": "かお",
+   "romaji": "kao",
+   "meaning": "face",
+   "type": "noun",
+   "tags": [
+    "body",
+    "n5"
+   ],
+   "example": {
+    "jp": "顔を洗います。",
+    "en": "I wash my face."
+   }
+  },
+  {
+   "id": "n_me",
+   "dictionary": "目",
+   "kana": "め",
+   "romaji": "me",
+   "meaning": "eye",
+   "type": "noun",
+   "tags": [
+    "body",
+    "n5"
+   ],
+   "example": {
+    "jp": "目が疲れました。",
+    "en": "My eyes are tired."
+   }
+  },
+  {
+   "id": "n_mimi",
+   "dictionary": "耳",
+   "kana": "みみ",
+   "romaji": "mimi",
+   "meaning": "ear",
+   "type": "noun",
+   "tags": [
+    "body",
+    "n5"
+   ],
+   "example": {
+    "jp": "耳が大きいです。",
+    "en": "His ears are big."
+   }
+  },
+  {
+   "id": "n_hana_nose",
+   "dictionary": "鼻",
+   "kana": "はな",
+   "romaji": "hana_nose",
+   "meaning": "nose",
+   "type": "noun",
+   "tags": [
+    "body",
+    "n5"
+   ],
+   "example": {
+    "jp": "鼻が高いです。",
+    "en": "His nose is high."
+   },
+   "note": "Written 鼻; distinguishes from 花/はな flower by romaji id."
+  },
+  {
+   "id": "n_kuchi",
+   "dictionary": "口",
+   "kana": "くち",
+   "romaji": "kuchi",
+   "meaning": "mouth",
+   "type": "noun",
+   "tags": [
+    "body",
+    "n5"
+   ],
+   "example": {
+    "jp": "口を大きく開けてください。",
+    "en": "Please open your mouth wide."
+   }
+  },
+  {
+   "id": "n_ha",
+   "dictionary": "歯",
+   "kana": "は",
+   "romaji": "ha",
+   "meaning": "tooth; teeth",
+   "type": "noun",
+   "tags": [
+    "body",
+    "health",
+    "n5"
+   ],
+   "example": {
+    "jp": "毎日歯を磨きます。",
+    "en": "I brush my teeth every day."
+   }
+  },
+  {
+   "id": "n_nodo",
+   "dictionary": "喉",
+   "kana": "のど",
+   "romaji": "nodo",
+   "meaning": "throat",
+   "type": "noun",
+   "tags": [
+    "body",
+    "n5"
+   ],
+   "example": {
+    "jp": "喉が渇きました。",
+    "en": "I'm thirsty."
+   }
+  },
+  {
+   "id": "n_te",
+   "dictionary": "手",
+   "kana": "て",
+   "romaji": "te",
+   "meaning": "hand",
+   "type": "noun",
+   "tags": [
+    "body",
+    "n5"
+   ],
+   "example": {
+    "jp": "手を洗ってください。",
+    "en": "Please wash your hands."
+   }
+  },
+  {
+   "id": "n_ashi",
+   "dictionary": "足",
+   "kana": "あし",
+   "romaji": "ashi",
+   "meaning": "leg; foot",
+   "type": "noun",
+   "tags": [
+    "body",
+    "n5"
+   ],
+   "example": {
+    "jp": "足が痛いです。",
+    "en": "My leg hurts."
+   }
+  },
+  {
+   "id": "n_onaka",
+   "dictionary": "お腹",
+   "kana": "おなか",
+   "romaji": "onaka",
+   "meaning": "belly; stomach",
+   "type": "noun",
+   "tags": [
+    "body",
+    "n5"
+   ],
+   "example": {
+    "jp": "お腹がすきました。",
+    "en": "I'm hungry."
+   }
+  },
+  {
+   "id": "n_senaka",
+   "dictionary": "背中",
+   "kana": "せなか",
+   "romaji": "senaka",
+   "meaning": "back",
+   "type": "noun",
+   "tags": [
+    "body",
+    "n5"
+   ],
+   "example": {
+    "jp": "背中がかゆいです。",
+    "en": "My back itches."
+   }
+  },
+  {
+   "id": "n_fuku",
+   "dictionary": "服",
+   "kana": "ふく",
+   "romaji": "fuku",
+   "meaning": "clothes",
+   "type": "noun",
+   "tags": [
+    "clothes",
+    "n5"
+   ],
+   "example": {
+    "jp": "新しい服を買いました。",
+    "en": "I bought new clothes."
+   }
+  },
+  {
+   "id": "n_shatsu",
+   "dictionary": "シャツ",
+   "kana": "シャツ",
+   "romaji": "shatsu",
+   "meaning": "shirt",
+   "type": "noun",
+   "tags": [
+    "clothes",
+    "n5"
+   ],
+   "example": {
+    "jp": "白いシャツを着ています。",
+    "en": "He's wearing a white shirt."
+   }
+  },
+  {
+   "id": "n_zubon",
+   "dictionary": "ズボン",
+   "kana": "ズボン",
+   "romaji": "zubon",
+   "meaning": "trousers; pants",
+   "type": "noun",
+   "tags": [
+    "clothes",
+    "n5"
+   ],
+   "example": {
+    "jp": "このズボンはちょっと大きいです。",
+    "en": "These pants are a bit big."
+   }
+  },
+  {
+   "id": "n_sukaato",
+   "dictionary": "スカート",
+   "kana": "スカート",
+   "romaji": "sukaato",
+   "meaning": "skirt",
+   "type": "noun",
+   "tags": [
+    "clothes",
+    "n5"
+   ],
+   "example": {
+    "jp": "彼女はスカートを履いています。",
+    "en": "She's wearing a skirt."
+   }
+  },
+  {
+   "id": "n_kutsu",
+   "dictionary": "靴",
+   "kana": "くつ",
+   "romaji": "kutsu",
+   "meaning": "shoes",
+   "type": "noun",
+   "tags": [
+    "clothes",
+    "n5"
+   ],
+   "example": {
+    "jp": "靴を脱いでください。",
+    "en": "Please take off your shoes."
+   }
+  },
+  {
+   "id": "n_kutsushita",
+   "dictionary": "靴下",
+   "kana": "くつした",
+   "romaji": "kutsushita",
+   "meaning": "socks",
+   "type": "noun",
+   "tags": [
+    "clothes",
+    "n5"
+   ],
+   "example": {
+    "jp": "靴下を履きます。",
+    "en": "I put on socks."
+   }
+  },
+  {
+   "id": "n_boushi",
+   "dictionary": "帽子",
+   "kana": "ぼうし",
+   "romaji": "boushi",
+   "meaning": "hat; cap",
+   "type": "noun",
+   "tags": [
+    "clothes",
+    "n5"
+   ],
+   "example": {
+    "jp": "帽子をかぶっています。",
+    "en": "He's wearing a hat."
+   }
+  },
+  {
+   "id": "n_megane",
+   "dictionary": "眼鏡",
+   "kana": "めがね",
+   "romaji": "megane",
+   "meaning": "glasses",
+   "type": "noun",
+   "tags": [
+    "clothes",
+    "n5"
+   ],
+   "example": {
+    "jp": "眼鏡をかけています。",
+    "en": "She wears glasses."
+   }
+  },
+  {
+   "id": "n_tabemono",
+   "dictionary": "食べ物",
+   "kana": "たべもの",
+   "romaji": "tabemono",
+   "meaning": "food",
+   "type": "noun",
+   "tags": [
+    "food",
+    "n5"
+   ],
+   "example": {
+    "jp": "日本の食べ物はおいしいです。",
+    "en": "Japanese food is delicious."
+   }
+  },
+  {
+   "id": "n_nomimono",
+   "dictionary": "飲み物",
+   "kana": "のみもの",
+   "romaji": "nomimono",
+   "meaning": "drink; beverage",
+   "type": "noun",
+   "tags": [
+    "drink",
+    "n5"
+   ],
+   "example": {
+    "jp": "何か飲み物をください。",
+    "en": "Please give me something to drink."
+   }
+  },
+  {
+   "id": "n_gohan",
+   "dictionary": "ご飯",
+   "kana": "ごはん",
+   "romaji": "gohan",
+   "meaning": "cooked rice; meal",
+   "type": "noun",
+   "tags": [
+    "food",
+    "n5"
+   ],
+   "example": {
+    "jp": "ご飯を食べました。",
+    "en": "I ate a meal."
+   }
+  },
+  {
+   "id": "n_asagohan",
+   "dictionary": "朝ご飯",
+   "kana": "あさごはん",
+   "romaji": "asagohan",
+   "meaning": "breakfast",
+   "type": "noun",
+   "tags": [
+    "food",
+    "time",
+    "n5"
+   ],
+   "example": {
+    "jp": "朝ご飯を食べてから出かけます。",
+    "en": "I go out after eating breakfast."
+   }
+  },
+  {
+   "id": "n_hirugohan",
+   "dictionary": "昼ご飯",
+   "kana": "ひるごはん",
+   "romaji": "hirugohan",
+   "meaning": "lunch",
+   "type": "noun",
+   "tags": [
+    "food",
+    "time",
+    "n5"
+   ],
+   "example": {
+    "jp": "昼ご飯はうどんにしました。",
+    "en": "I had udon for lunch."
+   }
+  },
+  {
+   "id": "n_bangohan",
+   "dictionary": "晩ご飯",
+   "kana": "ばんごはん",
+   "romaji": "bangohan",
+   "meaning": "dinner",
+   "type": "noun",
+   "tags": [
+    "food",
+    "time",
+    "n5"
+   ],
+   "example": {
+    "jp": "晩ご飯を一緒に食べましょう。",
+    "en": "Let's have dinner together."
+   }
+  },
+  {
+   "id": "n_mizu",
+   "dictionary": "水",
+   "kana": "みず",
+   "romaji": "mizu",
+   "meaning": "water",
+   "type": "noun",
+   "tags": [
+    "drink",
+    "nature",
+    "n5"
+   ],
+   "example": {
+    "jp": "冷たい水をください。",
+    "en": "Please give me some cold water."
+   }
+  },
+  {
+   "id": "n_ocha",
+   "dictionary": "お茶",
+   "kana": "おちゃ",
+   "romaji": "ocha",
+   "meaning": "green tea; tea",
+   "type": "noun",
+   "tags": [
+    "drink",
+    "n5"
+   ],
+   "example": {
+    "jp": "お茶を飲みませんか。",
+    "en": "Would you like some tea?"
+   }
+  },
+  {
+   "id": "n_koucha",
+   "dictionary": "紅茶",
+   "kana": "こうちゃ",
+   "romaji": "koucha",
+   "meaning": "black tea",
+   "type": "noun",
+   "tags": [
+    "drink",
+    "n5"
+   ],
+   "example": {
+    "jp": "紅茶に砂糖を入れます。",
+    "en": "I put sugar in my tea."
+   }
+  },
+  {
+   "id": "n_koohii",
+   "dictionary": "コーヒー",
+   "kana": "コーヒー",
+   "romaji": "koohii",
+   "meaning": "coffee",
+   "type": "noun",
+   "tags": [
+    "drink",
+    "n5"
+   ],
+   "example": {
+    "jp": "朝コーヒーを飲みます。",
+    "en": "I drink coffee in the morning."
+   }
+  },
+  {
+   "id": "n_gyuunyuu",
+   "dictionary": "牛乳",
+   "kana": "ぎゅうにゅう",
+   "romaji": "gyuunyuu",
+   "meaning": "milk",
+   "type": "noun",
+   "tags": [
+    "drink",
+    "n5"
+   ],
+   "example": {
+    "jp": "毎朝牛乳を飲みます。",
+    "en": "I drink milk every morning."
+   }
+  },
+  {
+   "id": "n_juusu",
+   "dictionary": "ジュース",
+   "kana": "ジュース",
+   "romaji": "juusu",
+   "meaning": "juice",
+   "type": "noun",
+   "tags": [
+    "drink",
+    "n5"
+   ],
+   "example": {
+    "jp": "ジュースを一杯ください。",
+    "en": "Please give me a glass of juice."
+   }
+  },
+  {
+   "id": "n_osake",
+   "dictionary": "お酒",
+   "kana": "おさけ",
+   "romaji": "osake",
+   "meaning": "alcohol; sake",
+   "type": "noun",
+   "tags": [
+    "drink",
+    "n5"
+   ],
+   "example": {
+    "jp": "お酒を飲みすぎました。",
+    "en": "I drank too much."
+   }
+  },
+  {
+   "id": "n_biiru",
+   "dictionary": "ビール",
+   "kana": "ビール",
+   "romaji": "biiru",
+   "meaning": "beer",
+   "type": "noun",
+   "tags": [
+    "drink",
+    "n5"
+   ],
+   "example": {
+    "jp": "ビールを一本ください。",
+    "en": "Please give me a bottle of beer."
+   }
+  },
+  {
+   "id": "n_pan",
+   "dictionary": "パン",
+   "kana": "パン",
+   "romaji": "pan",
+   "meaning": "bread",
+   "type": "noun",
+   "tags": [
+    "food",
+    "n5"
+   ],
+   "example": {
+    "jp": "朝パンを食べます。",
+    "en": "I eat bread in the morning."
+   }
+  },
+  {
+   "id": "n_tamago",
+   "dictionary": "卵",
+   "kana": "たまご",
+   "romaji": "tamago",
+   "meaning": "egg",
+   "type": "noun",
+   "tags": [
+    "food",
+    "n5"
+   ],
+   "example": {
+    "jp": "卵を二つ買いました。",
+    "en": "I bought two eggs."
+   }
+  },
+  {
+   "id": "n_niku",
+   "dictionary": "肉",
+   "kana": "にく",
+   "romaji": "niku",
+   "meaning": "meat",
+   "type": "noun",
+   "tags": [
+    "food",
+    "n5"
+   ],
+   "example": {
+    "jp": "肉はあまり食べません。",
+    "en": "I don't eat much meat."
+   }
+  },
+  {
+   "id": "n_sakana",
+   "dictionary": "魚",
+   "kana": "さかな",
+   "romaji": "sakana",
+   "meaning": "fish",
+   "type": "noun",
+   "tags": [
+    "food",
+    "nature",
+    "n5"
+   ],
+   "example": {
+    "jp": "魚が好きです。",
+    "en": "I like fish."
+   }
+  },
+  {
+   "id": "n_yasai",
+   "dictionary": "野菜",
+   "kana": "やさい",
+   "romaji": "yasai",
+   "meaning": "vegetables",
+   "type": "noun",
+   "tags": [
+    "food",
+    "n5"
+   ],
+   "example": {
+    "jp": "野菜をたくさん食べます。",
+    "en": "I eat a lot of vegetables."
+   }
+  },
+  {
+   "id": "n_kudamono",
+   "dictionary": "果物",
+   "kana": "くだもの",
+   "romaji": "kudamono",
+   "meaning": "fruit",
+   "type": "noun",
+   "tags": [
+    "food",
+    "n5"
+   ],
+   "example": {
+    "jp": "果物は体にいいです。",
+    "en": "Fruit is good for you."
+   }
+  },
+  {
+   "id": "n_sushi",
+   "dictionary": "寿司",
+   "kana": "すし",
+   "romaji": "sushi",
+   "meaning": "sushi",
+   "type": "noun",
+   "tags": [
+    "food",
+    "n5"
+   ],
+   "example": {
+    "jp": "寿司を食べたことがあります。",
+    "en": "I've eaten sushi before."
+   }
+  },
+  {
+   "id": "n_udon",
+   "dictionary": "うどん",
+   "kana": "うどん",
+   "romaji": "udon",
+   "meaning": "udon (thick wheat noodles)",
+   "type": "noun",
+   "tags": [
+    "food",
+    "n5"
+   ],
+   "example": {
+    "jp": "うどんが好きです。",
+    "en": "I like udon."
+   }
+  },
+  {
+   "id": "n_karee",
+   "dictionary": "カレー",
+   "kana": "カレー",
+   "romaji": "karee",
+   "meaning": "curry",
+   "type": "noun",
+   "tags": [
+    "food",
+    "n5"
+   ],
+   "example": {
+    "jp": "今日はカレーを食べます。",
+    "en": "I'll eat curry today."
+   }
+  },
+  {
+   "id": "n_keeki",
+   "dictionary": "ケーキ",
+   "kana": "ケーキ",
+   "romaji": "keeki",
+   "meaning": "cake",
+   "type": "noun",
+   "tags": [
+    "food",
+    "n5"
+   ],
+   "example": {
+    "jp": "誕生日にケーキを買いました。",
+    "en": "I bought a cake for the birthday."
+   }
+  },
+  {
+   "id": "n_aisukuriimu",
+   "dictionary": "アイスクリーム",
+   "kana": "アイスクリーム",
+   "romaji": "aisukuriimu",
+   "meaning": "ice cream",
+   "type": "noun",
+   "tags": [
+    "food",
+    "n5"
+   ],
+   "example": {
+    "jp": "夏はアイスクリームがおいしいです。",
+    "en": "Ice cream is delicious in summer."
+   }
+  },
+  {
+   "id": "n_ie",
+   "dictionary": "家",
+   "kana": "いえ",
+   "romaji": "ie",
+   "meaning": "house; home",
+   "type": "noun",
+   "tags": [
+    "house",
+    "place",
+    "n5"
+   ],
+   "example": {
+    "jp": "家は駅の近くにあります。",
+    "en": "My house is near the station."
+   }
+  },
+  {
+   "id": "n_heya",
+   "dictionary": "部屋",
+   "kana": "へや",
+   "romaji": "heya",
+   "meaning": "room",
+   "type": "noun",
+   "tags": [
+    "house",
+    "n5"
+   ],
+   "example": {
+    "jp": "部屋がきれいです。",
+    "en": "The room is clean."
+   }
+  },
+  {
+   "id": "n_niwa",
+   "dictionary": "庭",
+   "kana": "にわ",
+   "romaji": "niwa",
+   "meaning": "garden; yard",
+   "type": "noun",
+   "tags": [
+    "house",
+    "nature",
+    "n5"
+   ],
+   "example": {
+    "jp": "庭に花を植えました。",
+    "en": "I planted flowers in the garden."
+   }
+  },
+  {
+   "id": "n_mado",
+   "dictionary": "窓",
+   "kana": "まど",
+   "romaji": "mado",
+   "meaning": "window",
+   "type": "noun",
+   "tags": [
+    "house",
+    "n5"
+   ],
+   "example": {
+    "jp": "窓を開けてください。",
+    "en": "Please open the window."
+   }
+  },
+  {
+   "id": "n_doa",
+   "dictionary": "ドア",
+   "kana": "ドア",
+   "romaji": "doa",
+   "meaning": "door",
+   "type": "noun",
+   "tags": [
+    "house",
+    "n5"
+   ],
+   "example": {
+    "jp": "ドアを閉めます。",
+    "en": "I close the door."
+   }
+  },
+  {
+   "id": "n_tsukue",
+   "dictionary": "机",
+   "kana": "つくえ",
+   "romaji": "tsukue",
+   "meaning": "desk",
+   "type": "noun",
+   "tags": [
+    "house",
+    "school",
+    "n5"
+   ],
+   "example": {
+    "jp": "机の上に本があります。",
+    "en": "There's a book on the desk."
+   }
+  },
+  {
+   "id": "n_isu",
+   "dictionary": "椅子",
+   "kana": "いす",
+   "romaji": "isu",
+   "meaning": "chair",
+   "type": "noun",
+   "tags": [
+    "house",
+    "n5"
+   ],
+   "example": {
+    "jp": "この椅子は高いです。",
+    "en": "This chair is expensive."
+   }
+  },
+  {
+   "id": "n_beddo",
+   "dictionary": "ベッド",
+   "kana": "ベッド",
+   "romaji": "beddo",
+   "meaning": "bed",
+   "type": "noun",
+   "tags": [
+    "house",
+    "n5"
+   ],
+   "example": {
+    "jp": "ベッドで寝ます。",
+    "en": "I sleep in a bed."
+   }
+  },
+  {
+   "id": "n_tokei",
+   "dictionary": "時計",
+   "kana": "とけい",
+   "romaji": "tokei",
+   "meaning": "clock; watch",
+   "type": "noun",
+   "tags": [
+    "house",
+    "n5"
+   ],
+   "example": {
+    "jp": "時計が止まっています。",
+    "en": "The clock has stopped."
+   }
+  },
+  {
+   "id": "n_terebi",
+   "dictionary": "テレビ",
+   "kana": "テレビ",
+   "romaji": "terebi",
+   "meaning": "television",
+   "type": "noun",
+   "tags": [
+    "house",
+    "communication",
+    "n5"
+   ],
+   "example": {
+    "jp": "毎晩テレビを見ます。",
+    "en": "I watch TV every night."
+   }
+  },
+  {
+   "id": "n_pasokon",
+   "dictionary": "パソコン",
+   "kana": "パソコン",
+   "romaji": "pasokon",
+   "meaning": "personal computer",
+   "type": "noun",
+   "tags": [
+    "house",
+    "study",
+    "technology",
+    "n5"
+   ],
+   "example": {
+    "jp": "パソコンでメールを送ります。",
+    "en": "I send emails with my computer."
+   }
+  },
+  {
+   "id": "n_denwa",
+   "dictionary": "電話",
+   "kana": "でんわ",
+   "romaji": "denwa",
+   "meaning": "telephone; phone call",
+   "type": "noun",
+   "tags": [
+    "communication",
+    "n5"
+   ],
+   "example": {
+    "jp": "電話をかけました。",
+    "en": "I made a phone call."
+   }
+  },
+  {
+   "id": "n_kagi",
+   "dictionary": "鍵",
+   "kana": "かぎ",
+   "romaji": "kagi",
+   "meaning": "key",
+   "type": "noun",
+   "tags": [
+    "house",
+    "n5"
+   ],
+   "example": {
+    "jp": "鍵をなくしました。",
+    "en": "I lost my key."
+   }
+  },
+  {
+   "id": "n_kaban",
+   "dictionary": "鞄",
+   "kana": "かばん",
+   "romaji": "kaban",
+   "meaning": "bag",
+   "type": "noun",
+   "tags": [
+    "shopping",
+    "house",
+    "n5"
+   ],
+   "example": {
+    "jp": "鞄の中に財布があります。",
+    "en": "There's a wallet in my bag."
+   }
+  },
+  {
+   "id": "n_saifu",
+   "dictionary": "財布",
+   "kana": "さいふ",
+   "romaji": "saifu",
+   "meaning": "wallet",
+   "type": "noun",
+   "tags": [
+    "money",
+    "n5"
+   ],
+   "example": {
+    "jp": "財布を忘れました。",
+    "en": "I forgot my wallet."
+   }
+  },
+  {
+   "id": "n_okane",
+   "dictionary": "お金",
+   "kana": "おかね",
+   "romaji": "okane",
+   "meaning": "money",
+   "type": "noun",
+   "tags": [
+    "money",
+    "n5"
+   ],
+   "example": {
+    "jp": "お金が足りません。",
+    "en": "I don't have enough money."
+   }
+  },
+  {
+   "id": "n_kitte",
+   "dictionary": "切手",
+   "kana": "きって",
+   "romaji": "kitte",
+   "meaning": "postage stamp",
+   "type": "noun",
+   "tags": [
+    "communication",
+    "n5"
+   ],
+   "example": {
+    "jp": "切手を買いました。",
+    "en": "I bought a stamp."
+   }
+  },
+  {
+   "id": "n_tegami",
+   "dictionary": "手紙",
+   "kana": "てがみ",
+   "romaji": "tegami",
+   "meaning": "letter",
+   "type": "noun",
+   "tags": [
+    "communication",
+    "n5"
+   ],
+   "example": {
+    "jp": "母に手紙を書きます。",
+    "en": "I write a letter to my mother."
+   }
+  },
+  {
+   "id": "n_hon",
+   "dictionary": "本",
+   "kana": "ほん",
+   "romaji": "hon",
+   "meaning": "book",
+   "type": "noun",
+   "tags": [
+    "study",
+    "n5"
+   ],
+   "example": {
+    "jp": "本を一冊読みました。",
+    "en": "I read one book."
+   }
+  },
+  {
+   "id": "n_zasshi",
+   "dictionary": "雑誌",
+   "kana": "ざっし",
+   "romaji": "zasshi",
+   "meaning": "magazine",
+   "type": "noun",
+   "tags": [
+    "study",
+    "n5"
+   ],
+   "example": {
+    "jp": "雑誌を買いました。",
+    "en": "I bought a magazine."
+   }
+  },
+  {
+   "id": "n_shinbun",
+   "dictionary": "新聞",
+   "kana": "しんぶん",
+   "romaji": "shinbun",
+   "meaning": "newspaper",
+   "type": "noun",
+   "tags": [
+    "study",
+    "communication",
+    "n5"
+   ],
+   "example": {
+    "jp": "毎朝新聞を読みます。",
+    "en": "I read the newspaper every morning."
+   }
+  },
+  {
+   "id": "n_enpitsu",
+   "dictionary": "鉛筆",
+   "kana": "えんぴつ",
+   "romaji": "enpitsu",
+   "meaning": "pencil",
+   "type": "noun",
+   "tags": [
+    "study",
+    "n5"
+   ],
+   "example": {
+    "jp": "鉛筆で書いてください。",
+    "en": "Please write with a pencil."
+   }
+  },
+  {
+   "id": "n_pen",
+   "dictionary": "ペン",
+   "kana": "ペン",
+   "romaji": "pen",
+   "meaning": "pen",
+   "type": "noun",
+   "tags": [
+    "study",
+    "n5"
+   ],
+   "example": {
+    "jp": "ペンがありません。",
+    "en": "I don't have a pen."
+   }
+  },
+  {
+   "id": "n_keshigomu",
+   "dictionary": "消しゴム",
+   "kana": "けしごむ",
+   "romaji": "keshigomu",
+   "meaning": "eraser",
+   "type": "noun",
+   "tags": [
+    "study",
+    "n5"
+   ],
+   "example": {
+    "jp": "消しゴムを忘れました。",
+    "en": "I forgot my eraser."
+   }
+  },
+  {
+   "id": "n_kami",
+   "dictionary": "紙",
+   "kana": "かみ",
+   "romaji": "kami",
+   "meaning": "paper",
+   "type": "noun",
+   "tags": [
+    "study",
+    "n5"
+   ],
+   "example": {
+    "jp": "紙に名前を書いてください。",
+    "en": "Please write your name on the paper."
+   },
+   "note": "Written 紙; homophone of 髪 (hair), kept separate by romaji id."
+  },
+  {
+   "id": "n_nooto",
+   "dictionary": "ノート",
+   "kana": "ノート",
+   "romaji": "nooto",
+   "meaning": "notebook",
+   "type": "noun",
+   "tags": [
+    "study",
+    "n5"
+   ],
+   "example": {
+    "jp": "ノートにメモを取ります。",
+    "en": "I take notes in a notebook."
+   }
+  },
+  {
+   "id": "n_jisho",
+   "dictionary": "辞書",
+   "kana": "じしょ",
+   "romaji": "jisho",
+   "meaning": "dictionary",
+   "type": "noun",
+   "tags": [
+    "study",
+    "n5"
+   ],
+   "example": {
+    "jp": "辞書で言葉を調べます。",
+    "en": "I look up words in a dictionary."
+   }
+  },
+  {
+   "id": "n_nihongo",
+   "dictionary": "日本語",
+   "kana": "にほんご",
+   "romaji": "nihongo",
+   "meaning": "Japanese (language)",
+   "type": "noun",
+   "tags": [
+    "study",
+    "n5"
+   ],
+   "example": {
+    "jp": "日本語を勉強しています。",
+    "en": "I'm studying Japanese."
+   }
+  },
+  {
+   "id": "n_eigo",
+   "dictionary": "英語",
+   "kana": "えいご",
+   "romaji": "eigo",
+   "meaning": "English (language)",
+   "type": "noun",
+   "tags": [
+    "study",
+    "n5"
+   ],
+   "example": {
+    "jp": "英語が話せます。",
+    "en": "I can speak English."
+   }
+  },
+  {
+   "id": "n_chuugokugo",
+   "dictionary": "中国語",
+   "kana": "ちゅうごくご",
+   "romaji": "chuugokugo",
+   "meaning": "Chinese (language)",
+   "type": "noun",
+   "tags": [
+    "study",
+    "n5"
+   ],
+   "example": {
+    "jp": "中国語を習っています。",
+    "en": "I'm learning Chinese."
+   }
+  },
+  {
+   "id": "n_shukudai",
+   "dictionary": "宿題",
+   "kana": "しゅくだい",
+   "romaji": "shukudai",
+   "meaning": "homework",
+   "type": "noun",
+   "tags": [
+    "study",
+    "school",
+    "n5"
+   ],
+   "example": {
+    "jp": "宿題を終えました。",
+    "en": "I finished my homework."
+   }
+  },
+  {
+   "id": "n_shiken",
+   "dictionary": "試験",
+   "kana": "しけん",
+   "romaji": "shiken",
+   "meaning": "exam; test",
+   "type": "noun",
+   "tags": [
+    "study",
+    "school",
+    "n5"
+   ],
+   "example": {
+    "jp": "試験は来週です。",
+    "en": "The exam is next week."
+   }
+  },
+  {
+   "id": "n_e",
+   "dictionary": "絵",
+   "kana": "え",
+   "romaji": "e",
+   "meaning": "picture; drawing; painting",
+   "type": "noun",
+   "tags": [
+    "study",
+    "n5"
+   ],
+   "example": {
+    "jp": "自分で絵を描きました。",
+    "en": "I drew a picture myself."
+   }
+  },
+  {
+   "id": "n_shashin",
+   "dictionary": "写真",
+   "kana": "しゃしん",
+   "romaji": "shashin",
+   "meaning": "photograph",
+   "type": "noun",
+   "tags": [
+    "study",
+    "n5"
+   ],
+   "example": {
+    "jp": "写真を撮りました。",
+    "en": "I took a photo."
+   }
+  },
+  {
+   "id": "n_ongaku",
+   "dictionary": "音楽",
+   "kana": "おんがく",
+   "romaji": "ongaku",
+   "meaning": "music",
+   "type": "noun",
+   "tags": [
+    "study",
+    "culture",
+    "n5"
+   ],
+   "example": {
+    "jp": "音楽を聞きながら勉強します。",
+    "en": "I study while listening to music."
+   }
+  },
+  {
+   "id": "n_uta",
+   "dictionary": "歌",
+   "kana": "うた",
+   "romaji": "uta",
+   "meaning": "song",
+   "type": "noun",
+   "tags": [
+    "study",
+    "culture",
+    "n5"
+   ],
+   "example": {
+    "jp": "この歌を歌えます。",
+    "en": "I can sing this song."
+   }
+  },
+  {
+   "id": "n_eiga",
+   "dictionary": "映画",
+   "kana": "えいが",
+   "romaji": "eiga",
+   "meaning": "movie; film",
+   "type": "noun",
+   "tags": [
+    "culture",
+    "n5"
+   ],
+   "example": {
+    "jp": "映画を見に行きました。",
+    "en": "I went to see a movie."
+   }
+  },
+  {
+   "id": "n_kotoba",
+   "dictionary": "言葉",
+   "kana": "ことば",
+   "romaji": "kotoba",
+   "meaning": "word; language",
+   "type": "noun",
+   "tags": [
+    "study",
+    "n5"
+   ],
+   "example": {
+    "jp": "言葉の意味を調べました。",
+    "en": "I looked up the meaning of the word."
+   }
+  },
+  {
+   "id": "n_gakkou",
+   "dictionary": "学校",
+   "kana": "がっこう",
+   "romaji": "gakkou",
+   "meaning": "school",
+   "type": "noun",
+   "tags": [
+    "place",
+    "school",
+    "n5"
+   ],
+   "example": {
+    "jp": "学校は八時半に始まります。",
+    "en": "School starts at 8:30."
+   }
+  },
+  {
+   "id": "n_kyoushitsu",
+   "dictionary": "教室",
+   "kana": "きょうしつ",
+   "romaji": "kyoushitsu",
+   "meaning": "classroom",
+   "type": "noun",
+   "tags": [
+    "place",
+    "school",
+    "n5"
+   ],
+   "example": {
+    "jp": "教室で勉強します。",
+    "en": "I study in the classroom."
+   }
+  },
+  {
+   "id": "n_shokudou",
+   "dictionary": "食堂",
+   "kana": "しょくどう",
+   "romaji": "shokudou",
+   "meaning": "cafeteria; dining hall",
+   "type": "noun",
+   "tags": [
+    "place",
+    "food",
+    "n5"
+   ],
+   "example": {
+    "jp": "社員食堂で昼ご飯を食べます。",
+    "en": "I eat lunch in the company cafeteria."
+   }
+  },
+  {
+   "id": "n_toshokan",
+   "dictionary": "図書館",
+   "kana": "としょかん",
+   "romaji": "toshokan",
+   "meaning": "library",
+   "type": "noun",
+   "tags": [
+    "place",
+    "study",
+    "n5"
+   ],
+   "example": {
+    "jp": "図書館で本を借ります。",
+    "en": "I borrow books at the library."
+   }
+  },
+  {
+   "id": "n_byouin",
+   "dictionary": "病院",
+   "kana": "びょういん",
+   "romaji": "byouin",
+   "meaning": "hospital",
+   "type": "noun",
+   "tags": [
+    "place",
+    "health",
+    "n5"
+   ],
+   "example": {
+    "jp": "病院で診てもらいます。",
+    "en": "I'll get examined at the hospital."
+   }
+  },
+  {
+   "id": "n_yakkyoku",
+   "dictionary": "薬局",
+   "kana": "やっきょく",
+   "romaji": "yakkyoku",
+   "meaning": "pharmacy; drugstore",
+   "type": "noun",
+   "tags": [
+    "place",
+    "health",
+    "n5"
+   ],
+   "example": {
+    "jp": "薬局で風邪薬を買いました。",
+    "en": "I bought cold medicine at the pharmacy."
+   }
+  },
+  {
+   "id": "n_kouen",
+   "dictionary": "公園",
+   "kana": "こうえん",
+   "romaji": "kouen",
+   "meaning": "park",
+   "type": "noun",
+   "tags": [
+    "place",
+    "nature",
+    "n5"
+   ],
+   "example": {
+    "jp": "公園を散歩します。",
+    "en": "I take a walk in the park."
+   }
+  },
+  {
+   "id": "n_eki",
+   "dictionary": "駅",
+   "kana": "えき",
+   "romaji": "eki",
+   "meaning": "station",
+   "type": "noun",
+   "tags": [
+    "place",
+    "transport",
+    "n5"
+   ],
+   "example": {
+    "jp": "駅まで歩きます。",
+    "en": "I walk to the station."
+   }
+  },
+  {
+   "id": "n_kuukou",
+   "dictionary": "空港",
+   "kana": "くうこう",
+   "romaji": "kuukou",
+   "meaning": "airport",
+   "type": "noun",
+   "tags": [
+    "place",
+    "transport",
+    "n5"
+   ],
+   "example": {
+    "jp": "空港まで送ります。",
+    "en": "I'll drive you to the airport."
+   }
+  },
+  {
+   "id": "n_minato",
+   "dictionary": "港",
+   "kana": "みなと",
+   "romaji": "minato",
+   "meaning": "port; harbor",
+   "type": "noun",
+   "tags": [
+    "place",
+    "transport",
+    "n5"
+   ],
+   "example": {
+    "jp": "港に船が泊まっています。",
+    "en": "A ship is anchored in the harbor."
+   }
+  },
+  {
+   "id": "n_mise",
+   "dictionary": "店",
+   "kana": "みせ",
+   "romaji": "mise",
+   "meaning": "shop; store",
+   "type": "noun",
+   "tags": [
+    "place",
+    "shopping",
+    "n5"
+   ],
+   "example": {
+    "jp": "この店は安いです。",
+    "en": "This store is cheap."
+   }
+  },
+  {
+   "id": "n_suupaa",
+   "dictionary": "スーパー",
+   "kana": "スーパー",
+   "romaji": "suupaa",
+   "meaning": "supermarket",
+   "type": "noun",
+   "tags": [
+    "place",
+    "shopping",
+    "n5"
+   ],
+   "example": {
+    "jp": "スーパーで野菜を買いました。",
+    "en": "I bought vegetables at the supermarket."
+   }
+  },
+  {
+   "id": "n_depaato",
+   "dictionary": "デパート",
+   "kana": "デパート",
+   "romaji": "depaato",
+   "meaning": "department store",
+   "type": "noun",
+   "tags": [
+    "place",
+    "shopping",
+    "n5"
+   ],
+   "example": {
+    "jp": "デパートで服を買いました。",
+    "en": "I bought clothes at the department store."
+   }
+  },
+  {
+   "id": "n_resutoran",
+   "dictionary": "レストラン",
+   "kana": "レストラン",
+   "romaji": "resutoran",
+   "meaning": "restaurant",
+   "type": "noun",
+   "tags": [
+    "place",
+    "food",
+    "n5"
+   ],
+   "example": {
+    "jp": "レストランで晩ご飯を食べます。",
+    "en": "I'll eat dinner at a restaurant."
+   }
+  },
+  {
+   "id": "n_hoteru",
+   "dictionary": "ホテル",
+   "kana": "ホテル",
+   "romaji": "hoteru",
+   "meaning": "hotel",
+   "type": "noun",
+   "tags": [
+    "place",
+    "n5"
+   ],
+   "example": {
+    "jp": "ホテルを予約しました。",
+    "en": "I booked a hotel."
+   }
+  },
+  {
+   "id": "n_ginkou",
+   "dictionary": "銀行",
+   "kana": "ぎんこう",
+   "romaji": "ginkou",
+   "meaning": "bank",
+   "type": "noun",
+   "tags": [
+    "place",
+    "money",
+    "n5"
+   ],
+   "example": {
+    "jp": "銀行にお金を預けます。",
+    "en": "I deposit money at the bank."
+   }
+  },
+  {
+   "id": "n_yuubinkyoku",
+   "dictionary": "郵便局",
+   "kana": "ゆうびんきょく",
+   "romaji": "yuubinkyoku",
+   "meaning": "post office",
+   "type": "noun",
+   "tags": [
+    "place",
+    "communication",
+    "n5"
+   ],
+   "example": {
+    "jp": "郵便局で荷物を送ります。",
+    "en": "I send packages at the post office."
+   }
+  },
+  {
+   "id": "n_kouban",
+   "dictionary": "交番",
+   "kana": "こうばん",
+   "romaji": "kouban",
+   "meaning": "police box",
+   "type": "noun",
+   "tags": [
+    "place",
+    "n5"
+   ],
+   "example": {
+    "jp": "交番で道を聞きました。",
+    "en": "I asked directions at the police box."
+   }
+  },
+  {
+   "id": "n_bijutsukan",
+   "dictionary": "美術館",
+   "kana": "びじゅつかん",
+   "romaji": "bijutsukan",
+   "meaning": "art museum",
+   "type": "noun",
+   "tags": [
+    "place",
+    "culture",
+    "n5"
+   ],
+   "example": {
+    "jp": "美術館で絵を見ました。",
+    "en": "I looked at paintings at the art museum."
+   }
+  },
+  {
+   "id": "n_machi",
+   "dictionary": "町",
+   "kana": "まち",
+   "romaji": "machi",
+   "meaning": "town; city",
+   "type": "noun",
+   "tags": [
+    "place",
+    "n5"
+   ],
+   "example": {
+    "jp": "この町は静かです。",
+    "en": "This town is quiet."
+   }
+  },
+  {
+   "id": "n_michi",
+   "dictionary": "道",
+   "kana": "みち",
+   "romaji": "michi",
+   "meaning": "road; street; way",
+   "type": "noun",
+   "tags": [
+    "place",
+    "movement",
+    "n5"
+   ],
+   "example": {
+    "jp": "道が混んでいます。",
+    "en": "The road is crowded."
+   }
+  },
+  {
+   "id": "n_hashi",
+   "dictionary": "橋",
+   "kana": "はし",
+   "romaji": "hashi",
+   "meaning": "bridge",
+   "type": "noun",
+   "tags": [
+    "place",
+    "movement",
+    "n5"
+   ],
+   "example": {
+    "jp": "この橋を渡ります。",
+    "en": "I cross this bridge."
+   },
+   "note": "Written 橋; homophone of 箸 (chopsticks)."
+  },
+  {
+   "id": "n_kuni",
+   "dictionary": "国",
+   "kana": "くに",
+   "romaji": "kuni",
+   "meaning": "country",
+   "type": "noun",
+   "tags": [
+    "place",
+    "n5"
+   ],
+   "example": {
+    "jp": "日本はアジアの国です。",
+    "en": "Japan is an Asian country."
+   }
+  },
+  {
+   "id": "n_sekai",
+   "dictionary": "世界",
+   "kana": "せかい",
+   "romaji": "sekai",
+   "meaning": "world",
+   "type": "noun",
+   "tags": [
+    "place",
+    "n5"
+   ],
+   "example": {
+    "jp": "世界を旅行したいです。",
+    "en": "I want to travel the world."
+   }
+  },
+  {
+   "id": "n_densha",
+   "dictionary": "電車",
+   "kana": "でんしゃ",
+   "romaji": "densha",
+   "meaning": "train",
+   "type": "noun",
+   "tags": [
+    "transport",
+    "n5"
+   ],
+   "example": {
+    "jp": "電車で会社に行きます。",
+    "en": "I go to work by train."
+   }
+  },
+  {
+   "id": "n_basu",
+   "dictionary": "バス",
+   "kana": "バス",
+   "romaji": "basu",
+   "meaning": "bus",
+   "type": "noun",
+   "tags": [
+    "transport",
+    "n5"
+   ],
+   "example": {
+    "jp": "バスで駅まで行きます。",
+    "en": "I go to the station by bus."
+   }
+  },
+  {
+   "id": "n_takushii",
+   "dictionary": "タクシー",
+   "kana": "タクシー",
+   "romaji": "takushii",
+   "meaning": "taxi",
+   "type": "noun",
+   "tags": [
+    "transport",
+    "n5"
+   ],
+   "example": {
+    "jp": "タクシーを呼びます。",
+    "en": "I'll call a taxi."
+   }
+  },
+  {
+   "id": "n_kuruma",
+   "dictionary": "車",
+   "kana": "くるま",
+   "romaji": "kuruma",
+   "meaning": "car",
+   "type": "noun",
+   "tags": [
+    "transport",
+    "n5"
+   ],
+   "example": {
+    "jp": "車を運転します。",
+    "en": "I drive a car."
+   }
+  },
+  {
+   "id": "n_jitensha",
+   "dictionary": "自転車",
+   "kana": "じてんしゃ",
+   "romaji": "jitensha",
+   "meaning": "bicycle",
+   "type": "noun",
+   "tags": [
+    "transport",
+    "n5"
+   ],
+   "example": {
+    "jp": "自転車で学校へ行きます。",
+    "en": "I go to school by bicycle."
+   }
+  },
+  {
+   "id": "n_fune",
+   "dictionary": "船",
+   "kana": "ふね",
+   "romaji": "fune",
+   "meaning": "ship; boat",
+   "type": "noun",
+   "tags": [
+    "transport",
+    "n5"
+   ],
+   "example": {
+    "jp": "船で島へ行きます。",
+    "en": "I go to the island by ship."
+   }
+  },
+  {
+   "id": "n_hikouki",
+   "dictionary": "飛行機",
+   "kana": "ひこうき",
+   "romaji": "hikouki",
+   "meaning": "airplane",
+   "type": "noun",
+   "tags": [
+    "transport",
+    "n5"
+   ],
+   "example": {
+    "jp": "飛行機で東京に行きます。",
+    "en": "I'll fly to Tokyo."
+   }
+  },
+  {
+   "id": "n_tenki",
+   "dictionary": "天気",
+   "kana": "てんき",
+   "romaji": "tenki",
+   "meaning": "weather",
+   "type": "noun",
+   "tags": [
+    "weather",
+    "n5"
+   ],
+   "example": {
+    "jp": "今日はいい天気です。",
+    "en": "The weather is nice today."
+   }
+  },
+  {
+   "id": "n_hare",
+   "dictionary": "晴れ",
+   "kana": "はれ",
+   "romaji": "hare",
+   "meaning": "clear weather",
+   "type": "noun",
+   "tags": [
+    "weather",
+    "n5"
+   ],
+   "example": {
+    "jp": "明日は晴れだそうです。",
+    "en": "I hear tomorrow will be sunny."
+   }
+  },
+  {
+   "id": "n_kumori",
+   "dictionary": "曇り",
+   "kana": "くもり",
+   "romaji": "kumori",
+   "meaning": "cloudy weather",
+   "type": "noun",
+   "tags": [
+    "weather",
+    "n5"
+   ],
+   "example": {
+    "jp": "今日は曇りです。",
+    "en": "It's cloudy today."
+   }
+  },
+  {
+   "id": "n_ame",
+   "dictionary": "雨",
+   "kana": "あめ",
+   "romaji": "ame",
+   "meaning": "rain",
+   "type": "noun",
+   "tags": [
+    "weather",
+    "nature",
+    "n5"
+   ],
+   "example": {
+    "jp": "雨が降っています。",
+    "en": "It's raining."
+   }
+  },
+  {
+   "id": "n_yuki",
+   "dictionary": "雪",
+   "kana": "ゆき",
+   "romaji": "yuki",
+   "meaning": "snow",
+   "type": "noun",
+   "tags": [
+    "weather",
+    "nature",
+    "n5"
+   ],
+   "example": {
+    "jp": "雪が降りました。",
+    "en": "It snowed."
+   }
+  },
+  {
+   "id": "n_kaze",
+   "dictionary": "風",
+   "kana": "かぜ",
+   "romaji": "kaze",
+   "meaning": "wind",
+   "type": "noun",
+   "tags": [
+    "weather",
+    "n5"
+   ],
+   "example": {
+    "jp": "風が強いです。",
+    "en": "The wind is strong."
+   }
+  },
+  {
+   "id": "n_sora",
+   "dictionary": "空",
+   "kana": "そら",
+   "romaji": "sora",
+   "meaning": "sky",
+   "type": "noun",
+   "tags": [
+    "nature",
+    "n5"
+   ],
+   "example": {
+    "jp": "空が青いです。",
+    "en": "The sky is blue."
+   }
+  },
+  {
+   "id": "n_tsuki",
+   "dictionary": "月",
+   "kana": "つき",
+   "romaji": "tsuki",
+   "meaning": "moon",
+   "type": "noun",
+   "tags": [
+    "nature",
+    "n5"
+   ],
+   "example": {
+    "jp": "月がきれいです。",
+    "en": "The moon is beautiful."
+   }
+  },
+  {
+   "id": "n_hoshi",
+   "dictionary": "星",
+   "kana": "ほし",
+   "romaji": "hoshi",
+   "meaning": "star",
+   "type": "noun",
+   "tags": [
+    "nature",
+    "n5"
+   ],
+   "example": {
+    "jp": "星がたくさん見えます。",
+    "en": "I can see many stars."
+   }
+  },
+  {
+   "id": "n_umi",
+   "dictionary": "海",
+   "kana": "うみ",
+   "romaji": "umi",
+   "meaning": "sea; ocean",
+   "type": "noun",
+   "tags": [
+    "nature",
+    "place",
+    "n5"
+   ],
+   "example": {
+    "jp": "海で泳ぎました。",
+    "en": "I swam in the sea."
+   }
+  },
+  {
+   "id": "n_yama",
+   "dictionary": "山",
+   "kana": "やま",
+   "romaji": "yama",
+   "meaning": "mountain",
+   "type": "noun",
+   "tags": [
+    "nature",
+    "place",
+    "n5"
+   ],
+   "example": {
+    "jp": "富士山は高いです。",
+    "en": "Mt. Fuji is tall."
+   }
+  },
+  {
+   "id": "n_kawa",
+   "dictionary": "川",
+   "kana": "かわ",
+   "romaji": "kawa",
+   "meaning": "river",
+   "type": "noun",
+   "tags": [
+    "nature",
+    "place",
+    "n5"
+   ],
+   "example": {
+    "jp": "川で魚を釣りました。",
+    "en": "I fished in the river."
+   },
+   "note": "Written 川; homophone of 皮 (skin/leather)."
+  },
+  {
+   "id": "n_mizuumi",
+   "dictionary": "湖",
+   "kana": "みずうみ",
+   "romaji": "mizuumi",
+   "meaning": "lake",
+   "type": "noun",
+   "tags": [
+    "nature",
+    "place",
+    "n5"
+   ],
+   "example": {
+    "jp": "湖はとても大きいです。",
+    "en": "The lake is very large."
+   }
+  },
+  {
+   "id": "n_hana",
+   "dictionary": "花",
+   "kana": "はな",
+   "romaji": "hana",
+   "meaning": "flower",
+   "type": "noun",
+   "tags": [
+    "nature",
+    "n5"
+   ],
+   "example": {
+    "jp": "花が咲きました。",
+    "en": "Flowers have bloomed."
+   },
+   "note": "Written 花; homophone of 鼻 (nose)."
+  },
+  {
+   "id": "n_ki",
+   "dictionary": "木",
+   "kana": "き",
+   "romaji": "ki",
+   "meaning": "tree",
+   "type": "noun",
+   "tags": [
+    "nature",
+    "n5"
+   ],
+   "example": {
+    "jp": "庭に木があります。",
+    "en": "There's a tree in the garden."
+   }
+  },
+  {
+   "id": "n_kusa",
+   "dictionary": "草",
+   "kana": "くさ",
+   "romaji": "kusa",
+   "meaning": "grass",
+   "type": "noun",
+   "tags": [
+    "nature",
+    "n5"
+   ],
+   "example": {
+    "jp": "草が伸びました。",
+    "en": "The grass has grown."
+   }
+  },
+  {
+   "id": "n_inu",
+   "dictionary": "犬",
+   "kana": "いぬ",
+   "romaji": "inu",
+   "meaning": "dog",
+   "type": "noun",
+   "tags": [
+    "animals",
+    "n5"
+   ],
+   "example": {
+    "jp": "犬を飼っています。",
+    "en": "I keep a dog."
+   }
+  },
+  {
+   "id": "n_neko",
+   "dictionary": "猫",
+   "kana": "ねこ",
+   "romaji": "neko",
+   "meaning": "cat",
+   "type": "noun",
+   "tags": [
+    "animals",
+    "n5"
+   ],
+   "example": {
+    "jp": "猫が好きです。",
+    "en": "I like cats."
+   }
+  },
+  {
+   "id": "n_tori",
+   "dictionary": "鳥",
+   "kana": "とり",
+   "romaji": "tori",
+   "meaning": "bird",
+   "type": "noun",
+   "tags": [
+    "animals",
+    "nature",
+    "n5"
+   ],
+   "example": {
+    "jp": "鳥が空を飛んでいます。",
+    "en": "A bird is flying in the sky."
+   }
+  },
+  {
+   "id": "n_mushi",
+   "dictionary": "虫",
+   "kana": "むし",
+   "romaji": "mushi",
+   "meaning": "insect; bug",
+   "type": "noun",
+   "tags": [
+    "animals",
+    "nature",
+    "n5"
+   ],
+   "example": {
+    "jp": "虫が苦手です。",
+    "en": "I don't like insects."
+   }
+  },
+  {
+   "id": "n_doubutsu",
+   "dictionary": "動物",
+   "kana": "どうぶつ",
+   "romaji": "doubutsu",
+   "meaning": "animal",
+   "type": "noun",
+   "tags": [
+    "animals",
+    "nature",
+    "n5"
+   ],
+   "example": {
+    "jp": "動物園で動物を見ました。",
+    "en": "I saw animals at the zoo."
+   }
+  },
+  {
+   "id": "n_ima",
+   "dictionary": "今",
+   "kana": "いま",
+   "romaji": "ima",
+   "meaning": "now",
+   "type": "noun",
+   "tags": [
+    "time",
+    "n5"
+   ],
+   "example": {
+    "jp": "今、三時です。",
+    "en": "It's three o'clock now."
+   }
+  },
+  {
+   "id": "n_kyou",
+   "dictionary": "今日",
+   "kana": "きょう",
+   "romaji": "kyou",
+   "meaning": "today",
+   "type": "noun",
+   "tags": [
+    "time",
+    "n5"
+   ],
+   "example": {
+    "jp": "今日は忙しいです。",
+    "en": "I'm busy today."
+   }
+  },
+  {
+   "id": "n_kinou",
+   "dictionary": "昨日",
+   "kana": "きのう",
+   "romaji": "kinou",
+   "meaning": "yesterday",
+   "type": "noun",
+   "tags": [
+    "time",
+    "n5"
+   ],
+   "example": {
+    "jp": "昨日、雨が降りました。",
+    "en": "It rained yesterday."
+   }
+  },
+  {
+   "id": "n_ashita",
+   "dictionary": "明日",
+   "kana": "あした",
+   "romaji": "ashita",
+   "meaning": "tomorrow",
+   "type": "noun",
+   "tags": [
+    "time",
+    "n5"
+   ],
+   "example": {
+    "jp": "明日、京都へ行きます。",
+    "en": "I'll go to Kyoto tomorrow."
+   },
+   "note": "Also read あす in formal writing."
+  },
+  {
+   "id": "n_asatte",
+   "dictionary": "明後日",
+   "kana": "あさって",
+   "romaji": "asatte",
+   "meaning": "day after tomorrow",
+   "type": "noun",
+   "tags": [
+    "time",
+    "n5"
+   ],
+   "example": {
+    "jp": "明後日、テストがあります。",
+    "en": "There's a test the day after tomorrow."
+   }
+  },
+  {
+   "id": "n_ototoi",
+   "dictionary": "一昨日",
+   "kana": "おととい",
+   "romaji": "ototoi",
+   "meaning": "day before yesterday",
+   "type": "noun",
+   "tags": [
+    "time",
+    "n5"
+   ],
+   "example": {
+    "jp": "一昨日、友達に会いました。",
+    "en": "I met a friend the day before yesterday."
+   }
+  },
+  {
+   "id": "n_kesa",
+   "dictionary": "今朝",
+   "kana": "けさ",
+   "romaji": "kesa",
+   "meaning": "this morning",
+   "type": "noun",
+   "tags": [
+    "time",
+    "n5"
+   ],
+   "example": {
+    "jp": "今朝、早く起きました。",
+    "en": "I got up early this morning."
+   }
+  },
+  {
+   "id": "n_konban",
+   "dictionary": "今晩",
+   "kana": "こんばん",
+   "romaji": "konban",
+   "meaning": "tonight",
+   "type": "noun",
+   "tags": [
+    "time",
+    "n5"
+   ],
+   "example": {
+    "jp": "今晩、雨が降りますか。",
+    "en": "Will it rain tonight?"
+   }
+  },
+  {
+   "id": "n_yuube",
+   "dictionary": "昨夜",
+   "kana": "ゆうべ",
+   "romaji": "yuube",
+   "meaning": "last night",
+   "type": "noun",
+   "tags": [
+    "time",
+    "n5"
+   ],
+   "example": {
+    "jp": "昨夜、よく眠れました。",
+    "en": "I slept well last night."
+   }
+  },
+  {
+   "id": "n_asa",
+   "dictionary": "朝",
+   "kana": "あさ",
+   "romaji": "asa",
+   "meaning": "morning",
+   "type": "noun",
+   "tags": [
+    "time",
+    "n5"
+   ],
+   "example": {
+    "jp": "朝は六時に起きます。",
+    "en": "I get up at six in the morning."
+   }
+  },
+  {
+   "id": "n_hiru",
+   "dictionary": "昼",
+   "kana": "ひる",
+   "romaji": "hiru",
+   "meaning": "noon; daytime",
+   "type": "noun",
+   "tags": [
+    "time",
+    "n5"
+   ],
+   "example": {
+    "jp": "昼は外で食べます。",
+    "en": "I eat out during the day."
+   }
+  },
+  {
+   "id": "n_yoru",
+   "dictionary": "夜",
+   "kana": "よる",
+   "romaji": "yoru",
+   "meaning": "night",
+   "type": "noun",
+   "tags": [
+    "time",
+    "n5"
+   ],
+   "example": {
+    "jp": "夜は家にいます。",
+    "en": "I'm home at night."
+   }
+  },
+  {
+   "id": "n_yuugata",
+   "dictionary": "夕方",
+   "kana": "ゆうがた",
+   "romaji": "yuugata",
+   "meaning": "evening; dusk",
+   "type": "noun",
+   "tags": [
+    "time",
+    "n5"
+   ],
+   "example": {
+    "jp": "夕方に散歩します。",
+    "en": "I take a walk in the evening."
+   }
+  },
+  {
+   "id": "n_gozen",
+   "dictionary": "午前",
+   "kana": "ごぜん",
+   "romaji": "gozen",
+   "meaning": "a.m.; morning",
+   "type": "noun",
+   "tags": [
+    "time",
+    "n5"
+   ],
+   "example": {
+    "jp": "午前十時に会いましょう。",
+    "en": "Let's meet at 10 a.m."
+   }
+  },
+  {
+   "id": "n_gogo",
+   "dictionary": "午後",
+   "kana": "ごご",
+   "romaji": "gogo",
+   "meaning": "p.m.; afternoon",
+   "type": "noun",
+   "tags": [
+    "time",
+    "n5"
+   ],
+   "example": {
+    "jp": "午後は家にいます。",
+    "en": "I'll be home in the afternoon."
+   }
+  },
+  {
+   "id": "n_jikan",
+   "dictionary": "時間",
+   "kana": "じかん",
+   "romaji": "jikan",
+   "meaning": "time; hour",
+   "type": "noun",
+   "tags": [
+    "time",
+    "n5"
+   ],
+   "example": {
+    "jp": "時間がありません。",
+    "en": "I don't have time."
+   }
+  },
+  {
+   "id": "n_shuumatsu",
+   "dictionary": "週末",
+   "kana": "しゅうまつ",
+   "romaji": "shuumatsu",
+   "meaning": "weekend",
+   "type": "noun",
+   "tags": [
+    "time",
+    "n5"
+   ],
+   "example": {
+    "jp": "週末はどこかへ行きますか。",
+    "en": "Are you going anywhere this weekend?"
+   }
+  },
+  {
+   "id": "n_mainichi",
+   "dictionary": "毎日",
+   "kana": "まいにち",
+   "romaji": "mainichi",
+   "meaning": "every day",
+   "type": "noun",
+   "tags": [
+    "time",
+    "frequency",
+    "n5"
+   ],
+   "example": {
+    "jp": "毎日日本語を勉強します。",
+    "en": "I study Japanese every day."
+   }
+  },
+  {
+   "id": "n_maiasa",
+   "dictionary": "毎朝",
+   "kana": "まいあさ",
+   "romaji": "maiasa",
+   "meaning": "every morning",
+   "type": "noun",
+   "tags": [
+    "time",
+    "frequency",
+    "n5"
+   ],
+   "example": {
+    "jp": "毎朝走ります。",
+    "en": "I run every morning."
+   }
+  },
+  {
+   "id": "n_maiban",
+   "dictionary": "毎晩",
+   "kana": "まいばん",
+   "romaji": "maiban",
+   "meaning": "every night",
+   "type": "noun",
+   "tags": [
+    "time",
+    "frequency",
+    "n5"
+   ],
+   "example": {
+    "jp": "毎晩本を読みます。",
+    "en": "I read a book every night."
+   }
+  },
+  {
+   "id": "n_konshuu",
+   "dictionary": "今週",
+   "kana": "こんしゅう",
+   "romaji": "konshuu",
+   "meaning": "this week",
+   "type": "noun",
+   "tags": [
+    "time",
+    "n5"
+   ],
+   "example": {
+    "jp": "今週は忙しいです。",
+    "en": "I'm busy this week."
+   }
+  },
+  {
+   "id": "n_raishuu",
+   "dictionary": "来週",
+   "kana": "らいしゅう",
+   "romaji": "raishuu",
+   "meaning": "next week",
+   "type": "noun",
+   "tags": [
+    "time",
+    "n5"
+   ],
+   "example": {
+    "jp": "来週、旅行します。",
+    "en": "I'll travel next week."
+   }
+  },
+  {
+   "id": "n_senshuu",
+   "dictionary": "先週",
+   "kana": "せんしゅう",
+   "romaji": "senshuu",
+   "meaning": "last week",
+   "type": "noun",
+   "tags": [
+    "time",
+    "n5"
+   ],
+   "example": {
+    "jp": "先週、映画を見ました。",
+    "en": "I watched a movie last week."
+   }
+  },
+  {
+   "id": "n_kongetsu",
+   "dictionary": "今月",
+   "kana": "こんげつ",
+   "romaji": "kongetsu",
+   "meaning": "this month",
+   "type": "noun",
+   "tags": [
+    "time",
+    "n5"
+   ],
+   "example": {
+    "jp": "今月はお金が足りません。",
+    "en": "I don't have enough money this month."
+   }
+  },
+  {
+   "id": "n_raigetsu",
+   "dictionary": "来月",
+   "kana": "らいげつ",
+   "romaji": "raigetsu",
+   "meaning": "next month",
+   "type": "noun",
+   "tags": [
+    "time",
+    "n5"
+   ],
+   "example": {
+    "jp": "来月、会社を辞めます。",
+    "en": "I'll quit my job next month."
+   }
+  },
+  {
+   "id": "n_sengetsu",
+   "dictionary": "先月",
+   "kana": "せんげつ",
+   "romaji": "sengetsu",
+   "meaning": "last month",
+   "type": "noun",
+   "tags": [
+    "time",
+    "n5"
+   ],
+   "example": {
+    "jp": "先月、日本に来ました。",
+    "en": "I came to Japan last month."
+   }
+  },
+  {
+   "id": "n_kotoshi",
+   "dictionary": "今年",
+   "kana": "ことし",
+   "romaji": "kotoshi",
+   "meaning": "this year",
+   "type": "noun",
+   "tags": [
+    "time",
+    "n5"
+   ],
+   "example": {
+    "jp": "今年は暖かいです。",
+    "en": "This year is warm."
+   }
+  },
+  {
+   "id": "n_rainen",
+   "dictionary": "来年",
+   "kana": "らいねん",
+   "romaji": "rainen",
+   "meaning": "next year",
+   "type": "noun",
+   "tags": [
+    "time",
+    "n5"
+   ],
+   "example": {
+    "jp": "来年、結婚します。",
+    "en": "I'll get married next year."
+   }
+  },
+  {
+   "id": "n_kyonen",
+   "dictionary": "去年",
+   "kana": "きょねん",
+   "romaji": "kyonen",
+   "meaning": "last year",
+   "type": "noun",
+   "tags": [
+    "time",
+    "n5"
+   ],
+   "example": {
+    "jp": "去年、卒業しました。",
+    "en": "I graduated last year."
+   }
+  },
+  {
+   "id": "n_nen",
+   "dictionary": "年",
+   "kana": "ねん",
+   "romaji": "nen",
+   "meaning": "year",
+   "type": "noun",
+   "tags": [
+    "time",
+    "n5"
+   ],
+   "example": {
+    "jp": "あと一年で二十歳です。",
+    "en": "In one more year I'll be twenty."
+   }
+  },
+  {
+   "id": "n_gatsu",
+   "dictionary": "月",
+   "kana": "がつ",
+   "romaji": "gatsu",
+   "meaning": "month",
+   "type": "noun",
+   "tags": [
+    "time",
+    "n5"
+   ],
+   "example": {
+    "jp": "この月は忙しいです。",
+    "en": "This month is busy."
+   },
+   "note": "Written 月; read がつ after numbers (いちがつ)."
+  },
+  {
+   "id": "n_nichi",
+   "dictionary": "日",
+   "kana": "にち",
+   "romaji": "nichi",
+   "meaning": "day; date",
+   "type": "noun",
+   "tags": [
+    "time",
+    "n5"
+   ],
+   "example": {
+    "jp": "今月の十日です。",
+    "en": "It's the tenth of this month."
+   }
+  },
+  {
+   "id": "n_shuu",
+   "dictionary": "週",
+   "kana": "しゅう",
+   "romaji": "shuu",
+   "meaning": "week",
+   "type": "noun",
+   "tags": [
+    "time",
+    "n5"
+   ],
+   "example": {
+    "jp": "週に一回テニスをします。",
+    "en": "I play tennis once a week."
+   }
+  },
+  {
+   "id": "n_ji",
+   "dictionary": "時",
+   "kana": "じ",
+   "romaji": "ji",
+   "meaning": "o'clock",
+   "type": "noun",
+   "tags": [
+    "time",
+    "n5"
+   ],
+   "example": {
+    "jp": "今、九時です。",
+    "en": "It's nine o'clock now."
+   }
+  },
+  {
+   "id": "n_fun",
+   "dictionary": "分",
+   "kana": "ふん",
+   "romaji": "fun",
+   "meaning": "minute",
+   "type": "noun",
+   "tags": [
+    "time",
+    "n5"
+   ],
+   "example": {
+    "jp": "五分待ってください。",
+    "en": "Please wait five minutes."
+   }
+  },
+  {
+   "id": "n_byou",
+   "dictionary": "秒",
+   "kana": "びょう",
+   "romaji": "byou",
+   "meaning": "second",
+   "type": "noun",
+   "tags": [
+    "time",
+    "n5"
+   ],
+   "example": {
+    "jp": "三秒で終わります。",
+    "en": "It'll be done in three seconds."
+   }
+  },
+  {
+   "id": "n_yasumi",
+   "dictionary": "休み",
+   "kana": "やすみ",
+   "romaji": "yasumi",
+   "meaning": "rest; day off; holiday",
+   "type": "noun",
+   "tags": [
+    "time",
+    "n5"
+   ],
+   "example": {
+    "jp": "明日は学校が休みです。",
+    "en": "There's no school tomorrow."
+   }
+  },
+  {
+   "id": "n_getsuyoubi",
+   "dictionary": "月曜日",
+   "kana": "げつようび",
+   "romaji": "getsuyoubi",
+   "meaning": "Monday",
+   "type": "noun",
+   "tags": [
+    "time",
+    "days",
+    "n5"
+   ],
+   "example": {
+    "jp": "月曜日に会議があります。",
+    "en": "There's a meeting on Monday."
+   }
+  },
+  {
+   "id": "n_kayoubi",
+   "dictionary": "火曜日",
+   "kana": "かようび",
+   "romaji": "kayoubi",
+   "meaning": "Tuesday",
+   "type": "noun",
+   "tags": [
+    "time",
+    "days",
+    "n5"
+   ],
+   "example": {
+    "jp": "火曜日は図書館が休みです。",
+    "en": "The library is closed on Tuesdays."
+   }
+  },
+  {
+   "id": "n_suiyoubi",
+   "dictionary": "水曜日",
+   "kana": "すいようび",
+   "romaji": "suiyoubi",
+   "meaning": "Wednesday",
+   "type": "noun",
+   "tags": [
+    "time",
+    "days",
+    "n5"
+   ],
+   "example": {
+    "jp": "水曜日に日本語を習います。",
+    "en": "I take Japanese lessons on Wednesdays."
+   }
+  },
+  {
+   "id": "n_mokuyoubi",
+   "dictionary": "木曜日",
+   "kana": "もくようび",
+   "romaji": "mokuyoubi",
+   "meaning": "Thursday",
+   "type": "noun",
+   "tags": [
+    "time",
+    "days",
+    "n5"
+   ],
+   "example": {
+    "jp": "木曜日は忙しいです。",
+    "en": "Thursdays are busy."
+   }
+  },
+  {
+   "id": "n_kinyoubi",
+   "dictionary": "金曜日",
+   "kana": "きんようび",
+   "romaji": "kinyoubi",
+   "meaning": "Friday",
+   "type": "noun",
+   "tags": [
+    "time",
+    "days",
+    "n5"
+   ],
+   "example": {
+    "jp": "金曜日に映画を見ます。",
+    "en": "I watch a movie on Fridays."
+   }
+  },
+  {
+   "id": "n_doyoubi",
+   "dictionary": "土曜日",
+   "kana": "どようび",
+   "romaji": "doyoubi",
+   "meaning": "Saturday",
+   "type": "noun",
+   "tags": [
+    "time",
+    "days",
+    "n5"
+   ],
+   "example": {
+    "jp": "土曜日は買い物をします。",
+    "en": "I go shopping on Saturdays."
+   }
+  },
+  {
+   "id": "n_nichiyoubi",
+   "dictionary": "日曜日",
+   "kana": "にちようび",
+   "romaji": "nichiyoubi",
+   "meaning": "Sunday",
+   "type": "noun",
+   "tags": [
+    "time",
+    "days",
+    "n5"
+   ],
+   "example": {
+    "jp": "日曜日に遊びに行きます。",
+    "en": "I'll go out to play on Sunday."
+   }
+  },
+  {
+   "id": "n_ichigatsu",
+   "dictionary": "一月",
+   "kana": "いちがつ",
+   "romaji": "ichigatsu",
+   "meaning": "January",
+   "type": "noun",
+   "tags": [
+    "time",
+    "months",
+    "n5"
+   ],
+   "example": {
+    "jp": "一月は寒いです。",
+    "en": "January is cold."
+   }
+  },
+  {
+   "id": "n_nigatsu",
+   "dictionary": "二月",
+   "kana": "にがつ",
+   "romaji": "nigatsu",
+   "meaning": "February",
+   "type": "noun",
+   "tags": [
+    "time",
+    "months",
+    "n5"
+   ],
+   "example": {
+    "jp": "二月に旅行します。",
+    "en": "I'll travel in February."
+   }
+  },
+  {
+   "id": "n_sangatsu",
+   "dictionary": "三月",
+   "kana": "さんがつ",
+   "romaji": "sangatsu",
+   "meaning": "March",
+   "type": "noun",
+   "tags": [
+    "time",
+    "months",
+    "n5"
+   ],
+   "example": {
+    "jp": "三月に卒業しました。",
+    "en": "I graduated in March."
+   }
+  },
+  {
+   "id": "n_shigatsu",
+   "dictionary": "四月",
+   "kana": "しがつ",
+   "romaji": "shigatsu",
+   "meaning": "April",
+   "type": "noun",
+   "tags": [
+    "time",
+    "months",
+    "n5"
+   ],
+   "example": {
+    "jp": "四月に日本へ来ました。",
+    "en": "I came to Japan in April."
+   }
+  },
+  {
+   "id": "n_gogatsu",
+   "dictionary": "五月",
+   "kana": "ごがつ",
+   "romaji": "gogatsu",
+   "meaning": "May",
+   "type": "noun",
+   "tags": [
+    "time",
+    "months",
+    "n5"
+   ],
+   "example": {
+    "jp": "五月の連休に帰ります。",
+    "en": "I'll go home during the Golden Week holiday in May."
+   }
+  },
+  {
+   "id": "n_rokugatsu",
+   "dictionary": "六月",
+   "kana": "ろくがつ",
+   "romaji": "rokugatsu",
+   "meaning": "June",
+   "type": "noun",
+   "tags": [
+    "time",
+    "months",
+    "n5"
+   ],
+   "example": {
+    "jp": "六月に雨がよく降ります。",
+    "en": "It rains a lot in June."
+   }
+  },
+  {
+   "id": "n_shichigatsu",
+   "dictionary": "七月",
+   "kana": "しちがつ",
+   "romaji": "shichigatsu",
+   "meaning": "July",
+   "type": "noun",
+   "tags": [
+    "time",
+    "months",
+    "n5"
+   ],
+   "example": {
+    "jp": "七月は暑いです。",
+    "en": "July is hot."
+   }
+  },
+  {
+   "id": "n_hachigatsu",
+   "dictionary": "八月",
+   "kana": "はちがつ",
+   "romaji": "hachigatsu",
+   "meaning": "August",
+   "type": "noun",
+   "tags": [
+    "time",
+    "months",
+    "n5"
+   ],
+   "example": {
+    "jp": "八月にお祭りがあります。",
+    "en": "There's a festival in August."
+   }
+  },
+  {
+   "id": "n_kugatsu",
+   "dictionary": "九月",
+   "kana": "くがつ",
+   "romaji": "kugatsu",
+   "meaning": "September",
+   "type": "noun",
+   "tags": [
+    "time",
+    "months",
+    "n5"
+   ],
+   "example": {
+    "jp": "九月に新しい仕事を始めます。",
+    "en": "I'll start a new job in September."
+   }
+  },
+  {
+   "id": "n_juugatsu",
+   "dictionary": "十月",
+   "kana": "じゅうがつ",
+   "romaji": "juugatsu",
+   "meaning": "October",
+   "type": "noun",
+   "tags": [
+    "time",
+    "months",
+    "n5"
+   ],
+   "example": {
+    "jp": "十月は涼しいです。",
+    "en": "October is cool."
+   }
+  },
+  {
+   "id": "n_juuichigatsu",
+   "dictionary": "十一月",
+   "kana": "じゅういちがつ",
+   "romaji": "juuichigatsu",
+   "meaning": "November",
+   "type": "noun",
+   "tags": [
+    "time",
+    "months",
+    "n5"
+   ],
+   "example": {
+    "jp": "十一月に紅葉を見ます。",
+    "en": "I'll see the autumn leaves in November."
+   }
+  },
+  {
+   "id": "n_juunigatsu",
+   "dictionary": "十二月",
+   "kana": "じゅうにがつ",
+   "romaji": "juunigatsu",
+   "meaning": "December",
+   "type": "noun",
+   "tags": [
+    "time",
+    "months",
+    "n5"
+   ],
+   "example": {
+    "jp": "十二月は忙しいです。",
+    "en": "December is busy."
+   }
+  },
+  {
+   "id": "n_koto",
+   "dictionary": "事",
+   "kana": "こと",
+   "romaji": "koto",
+   "meaning": "thing; matter; fact",
+   "type": "noun",
+   "tags": [
+    "abstract",
+    "n4"
+   ],
+   "example": {
+    "jp": "いいことを考えました。",
+    "en": "I thought of a good idea."
+   }
+  },
+  {
+   "id": "n_mono",
+   "dictionary": "物",
+   "kana": "もの",
+   "romaji": "mono",
+   "meaning": "thing; object",
+   "type": "noun",
+   "tags": [
+    "abstract",
+    "n4"
+   ],
+   "example": {
+    "jp": "安い物を探しています。",
+    "en": "I'm looking for something cheap."
+   }
+  },
+  {
+   "id": "n_namae",
+   "dictionary": "名前",
+   "kana": "なまえ",
+   "romaji": "namae",
+   "meaning": "name",
+   "type": "noun",
+   "tags": [
+    "people",
+    "n4"
+   ],
+   "example": {
+    "jp": "名前を書いてください。",
+    "en": "Please write your name."
+   }
+  },
+  {
+   "id": "n_juusho",
+   "dictionary": "住所",
+   "kana": "じゅうしょ",
+   "romaji": "juusho",
+   "meaning": "address",
+   "type": "noun",
+   "tags": [
+    "people",
+    "n4"
+   ],
+   "example": {
+    "jp": "住所を教えてください。",
+    "en": "Please tell me your address."
+   }
+  },
+  {
+   "id": "n_kaisha",
+   "dictionary": "会社",
+   "kana": "かいしゃ",
+   "romaji": "kaisha",
+   "meaning": "company",
+   "type": "noun",
+   "tags": [
+    "work",
+    "n4"
+   ],
+   "example": {
+    "jp": "会社まで一時間かかります。",
+    "en": "It takes an hour to get to the company."
+   }
+  },
+  {
+   "id": "n_shigoto",
+   "dictionary": "仕事",
+   "kana": "しごと",
+   "romaji": "shigoto",
+   "meaning": "work; job",
+   "type": "noun",
+   "tags": [
+    "work",
+    "n4"
+   ],
+   "example": {
+    "jp": "仕事を探しています。",
+    "en": "I'm looking for work."
+   }
+  },
+  {
+   "id": "n_yakusoku",
+   "dictionary": "約束",
+   "kana": "やくそく",
+   "romaji": "yakusoku",
+   "meaning": "promise; appointment",
+   "type": "noun",
+   "tags": [
+    "social",
+    "n4"
+   ],
+   "example": {
+    "jp": "友達と約束しました。",
+    "en": "I made a promise with a friend."
+   }
+  },
+  {
+   "id": "n_shitsumon",
+   "dictionary": "質問",
+   "kana": "しつもん",
+   "romaji": "shitsumon",
+   "meaning": "question",
+   "type": "noun",
+   "tags": [
+    "study",
+    "communication",
+    "n4"
+   ],
+   "example": {
+    "jp": "先生に質問しました。",
+    "en": "I asked the teacher a question."
+   }
+  },
+  {
+   "id": "n_mondai",
+   "dictionary": "問題",
+   "kana": "もんだい",
+   "romaji": "mondai",
+   "meaning": "problem; question",
+   "type": "noun",
+   "tags": [
+    "study",
+    "abstract",
+    "n4"
+   ],
+   "example": {
+    "jp": "問題の答えを書きます。",
+    "en": "I write the answer to the problem."
+   }
+  },
+  {
+   "id": "n_kotae",
+   "dictionary": "答え",
+   "kana": "こたえ",
+   "romaji": "kotae",
+   "meaning": "answer",
+   "type": "noun",
+   "tags": [
+    "study",
+    "n4"
+   ],
+   "example": {
+    "jp": "答えは三番です。",
+    "en": "The answer is number three."
+   }
+  },
+  {
+   "id": "n_ryokou",
+   "dictionary": "旅行",
+   "kana": "りょこう",
+   "romaji": "ryokou",
+   "meaning": "trip; travel",
+   "type": "noun",
+   "tags": [
+    "travel",
+    "n4"
+   ],
+   "example": {
+    "jp": "旅行の準備をしています。",
+    "en": "I'm preparing for the trip."
+   }
+  },
+  {
+   "id": "n_nimotsu",
+   "dictionary": "荷物",
+   "kana": "にもつ",
+   "romaji": "nimotsu",
+   "meaning": "luggage; baggage",
+   "type": "noun",
+   "tags": [
+    "travel",
+    "n4"
+   ],
+   "example": {
+    "jp": "荷物が重いです。",
+    "en": "My luggage is heavy."
+   }
+  },
+  {
+   "id": "n_yotei",
+   "dictionary": "予定",
+   "kana": "よてい",
+   "romaji": "yotei",
+   "meaning": "plan; schedule",
+   "type": "noun",
+   "tags": [
+    "abstract",
+    "n4"
+   ],
+   "example": {
+    "jp": "明日の予定を教えてください。",
+    "en": "Please tell me tomorrow's schedule."
+   }
+  },
+  {
+   "id": "n_kippu",
+   "dictionary": "切符",
+   "kana": "きっぷ",
+   "romaji": "kippu",
+   "meaning": "ticket",
+   "type": "noun",
+   "tags": [
+    "transport",
+    "n4"
+   ],
+   "example": {
+    "jp": "駅で切符を買いました。",
+    "en": "I bought a ticket at the station."
+   }
+  },
+  {
+   "id": "n_tenin",
+   "dictionary": "店員",
+   "kana": "てんいん",
+   "romaji": "tenin",
+   "meaning": "shop clerk",
+   "type": "noun",
+   "tags": [
+    "people",
+    "shopping",
+    "n4"
+   ],
+   "example": {
+    "jp": "店員に値段を聞きました。",
+    "en": "I asked the clerk the price."
+   }
+  },
+  {
+   "id": "n_kyaku",
+   "dictionary": "客",
+   "kana": "きゃく",
+   "romaji": "kyaku",
+   "meaning": "customer; guest",
+   "type": "noun",
+   "tags": [
+    "people",
+    "n4"
+   ],
+   "example": {
+    "jp": "店に客がたくさんいます。",
+    "en": "There are many customers in the store."
+   }
+  },
+  {
+   "id": "n_kaimono",
+   "dictionary": "買い物",
+   "kana": "かいもの",
+   "romaji": "kaimono",
+   "meaning": "shopping",
+   "type": "noun",
+   "tags": [
+    "shopping",
+    "n4"
+   ],
+   "example": {
+    "jp": "買い物に行きます。",
+    "en": "I'll go shopping."
+   }
+  },
+  {
+   "id": "n_nedan",
+   "dictionary": "値段",
+   "kana": "ねだん",
+   "romaji": "nedan",
+   "meaning": "price",
+   "type": "noun",
+   "tags": [
+    "shopping",
+    "money",
+    "n4"
+   ],
+   "example": {
+    "jp": "この値段は安いです。",
+    "en": "This price is cheap."
+   }
+  },
+  {
+   "id": "n_shouhin",
+   "dictionary": "商品",
+   "kana": "しょうひん",
+   "romaji": "shouhin",
+   "meaning": "product; merchandise",
+   "type": "noun",
+   "tags": [
+    "shopping",
+    "n4"
+   ],
+   "example": {
+    "jp": "新しい商品を買いました。",
+    "en": "I bought a new product."
+   }
+  },
+  {
+   "id": "n_shiharai",
+   "dictionary": "支払い",
+   "kana": "しはらい",
+   "romaji": "shiharai",
+   "meaning": "payment",
+   "type": "noun",
+   "tags": [
+    "money",
+    "shopping",
+    "n4"
+   ],
+   "example": {
+    "jp": "支払いは現金です。",
+    "en": "The payment is in cash."
+   }
+  },
+  {
+   "id": "n_genkin",
+   "dictionary": "現金",
+   "kana": "げんきん",
+   "romaji": "genkin",
+   "meaning": "cash",
+   "type": "noun",
+   "tags": [
+    "money",
+    "n4"
+   ],
+   "example": {
+    "jp": "現金で払います。",
+    "en": "I'll pay in cash."
+   }
+  },
+  {
+   "id": "n_kusuri",
+   "dictionary": "薬",
+   "kana": "くすり",
+   "romaji": "kusuri",
+   "meaning": "medicine; drug",
+   "type": "noun",
+   "tags": [
+    "health",
+    "n4"
+   ],
+   "example": {
+    "jp": "風邪の薬を飲みました。",
+    "en": "I took cold medicine."
+   }
+  },
+  {
+   "id": "n_netsu",
+   "dictionary": "熱",
+   "kana": "ねつ",
+   "romaji": "netsu",
+   "meaning": "fever",
+   "type": "noun",
+   "tags": [
+    "health",
+    "n4"
+   ],
+   "example": {
+    "jp": "熱が三十八度あります。",
+    "en": "I have a fever of 38 degrees."
+   }
+  },
+  {
+   "id": "n_itami",
+   "dictionary": "痛み",
+   "kana": "いたみ",
+   "romaji": "itami",
+   "meaning": "pain",
+   "type": "noun",
+   "tags": [
+    "health",
+    "body",
+    "n4"
+   ],
+   "example": {
+    "jp": "頭の痛みが続きます。",
+    "en": "My headache continues."
+   }
+  },
+  {
+   "id": "n_kaji",
+   "dictionary": "家事",
+   "kana": "かじ",
+   "romaji": "kaji",
+   "meaning": "housework",
+   "type": "noun",
+   "tags": [
+    "house",
+    "n4"
+   ],
+   "example": {
+    "jp": "家事を手伝います。",
+    "en": "I help with the housework."
+   }
+  },
+  {
+   "id": "n_ryouri",
+   "dictionary": "料理",
+   "kana": "りょうり",
+   "romaji": "ryouri",
+   "meaning": "cooking; dish",
+   "type": "noun",
+   "tags": [
+    "food",
+    "n4"
+   ],
+   "example": {
+    "jp": "母の料理はおいしいです。",
+    "en": "My mother's cooking is delicious."
+   }
+  },
+  {
+   "id": "n_aji",
+   "dictionary": "味",
+   "kana": "あじ",
+   "romaji": "aji",
+   "meaning": "taste; flavor",
+   "type": "noun",
+   "tags": [
+    "food",
+    "n4"
+   ],
+   "example": {
+    "jp": "この味が好きです。",
+    "en": "I like this taste."
+   }
+  },
+  {
+   "id": "n_obentou",
+   "dictionary": "お弁当",
+   "kana": "おべんとう",
+   "romaji": "obentou",
+   "meaning": "boxed lunch",
+   "type": "noun",
+   "tags": [
+    "food",
+    "n4"
+   ],
+   "example": {
+    "jp": "お弁当を持って行きます。",
+    "en": "I'll take a boxed lunch."
+   }
+  },
+  {
+   "id": "n_choushoku",
+   "dictionary": "朝食",
+   "kana": "ちょうしょく",
+   "romaji": "choushoku",
+   "meaning": "breakfast (formal)",
+   "type": "noun",
+   "tags": [
+    "food",
+    "time",
+    "n4"
+   ],
+   "example": {
+    "jp": "朝食は七時に食べます。",
+    "en": "I eat breakfast at seven."
+   }
+  },
+  {
+   "id": "n_yuushoku",
+   "dictionary": "夕食",
+   "kana": "ゆうしょく",
+   "romaji": "yuushoku",
+   "meaning": "dinner (formal)",
+   "type": "noun",
+   "tags": [
+    "food",
+    "time",
+    "n4"
+   ],
+   "example": {
+    "jp": "夕食を用意します。",
+    "en": "I'll prepare dinner."
+   }
+  },
+  {
+   "id": "n_shokuji",
+   "dictionary": "食事",
+   "kana": "しょくじ",
+   "romaji": "shokuji",
+   "meaning": "meal",
+   "type": "noun",
+   "tags": [
+    "food",
+    "n4"
+   ],
+   "example": {
+    "jp": "食事のあとで散歩します。",
+    "en": "I take a walk after meals."
+   }
+  },
+  {
+   "id": "n_daidokoro",
+   "dictionary": "台所",
+   "kana": "だいどころ",
+   "romaji": "daidokoro",
+   "meaning": "kitchen",
+   "type": "noun",
+   "tags": [
+    "house",
+    "n4"
+   ],
+   "example": {
+    "jp": "台所で料理します。",
+    "en": "I cook in the kitchen."
+   }
+  },
+  {
+   "id": "n_sentaku",
+   "dictionary": "洗濯",
+   "kana": "せんたく",
+   "romaji": "sentaku",
+   "meaning": "laundry",
+   "type": "noun",
+   "tags": [
+    "house",
+    "n4"
+   ],
+   "example": {
+    "jp": "洗濯をしました。",
+    "en": "I did the laundry."
+   }
+  },
+  {
+   "id": "n_souji",
+   "dictionary": "掃除",
+   "kana": "そうじ",
+   "romaji": "souji",
+   "meaning": "cleaning",
+   "type": "noun",
+   "tags": [
+    "house",
+    "n4"
+   ],
+   "example": {
+    "jp": "部屋の掃除をします。",
+    "en": "I'll clean the room."
+   }
+  },
+  {
+   "id": "n_denki",
+   "dictionary": "電気",
+   "kana": "でんき",
+   "romaji": "denki",
+   "meaning": "electricity; light",
+   "type": "noun",
+   "tags": [
+    "house",
+    "n4"
+   ],
+   "example": {
+    "jp": "電気を消してください。",
+    "en": "Please turn off the lights."
+   }
+  },
+  {
+   "id": "n_reizouko",
+   "dictionary": "冷蔵庫",
+   "kana": "れいぞうこ",
+   "romaji": "reizouko",
+   "meaning": "refrigerator",
+   "type": "noun",
+   "tags": [
+    "house",
+    "n4"
+   ],
+   "example": {
+    "jp": "冷蔵庫にビールがあります。",
+    "en": "There's beer in the fridge."
+   }
+  },
+  {
+   "id": "n_sentakuki",
+   "dictionary": "洗濯機",
+   "kana": "せんたくき",
+   "romaji": "sentakuki",
+   "meaning": "washing machine",
+   "type": "noun",
+   "tags": [
+    "house",
+    "n4"
+   ],
+   "example": {
+    "jp": "洗濯機を回しました。",
+    "en": "I ran the washing machine."
+   }
+  },
+  {
+   "id": "n_kisetsu",
+   "dictionary": "季節",
+   "kana": "きせつ",
+   "romaji": "kisetsu",
+   "meaning": "season",
+   "type": "noun",
+   "tags": [
+    "nature",
+    "time",
+    "n4"
+   ],
+   "example": {
+    "jp": "一番好きな季節は秋です。",
+    "en": "My favorite season is autumn."
+   }
+  },
+  {
+   "id": "n_haru",
+   "dictionary": "春",
+   "kana": "はる",
+   "romaji": "haru",
+   "meaning": "spring",
+   "type": "noun",
+   "tags": [
+    "nature",
+    "time",
+    "n4"
+   ],
+   "example": {
+    "jp": "春に花が咲きます。",
+    "en": "Flowers bloom in spring."
+   }
+  },
+  {
+   "id": "n_natsu",
+   "dictionary": "夏",
+   "kana": "なつ",
+   "romaji": "natsu",
+   "meaning": "summer",
+   "type": "noun",
+   "tags": [
+    "nature",
+    "time",
+    "n4"
+   ],
+   "example": {
+    "jp": "夏は暑いです。",
+    "en": "Summer is hot."
+   }
+  },
+  {
+   "id": "n_aki",
+   "dictionary": "秋",
+   "kana": "あき",
+   "romaji": "aki",
+   "meaning": "autumn",
+   "type": "noun",
+   "tags": [
+    "nature",
+    "time",
+    "n4"
+   ],
+   "example": {
+    "jp": "秋に紅葉を見ます。",
+    "en": "I see autumn leaves in fall."
+   }
+  },
+  {
+   "id": "n_fuyu",
+   "dictionary": "冬",
+   "kana": "ふゆ",
+   "romaji": "fuyu",
+   "meaning": "winter",
+   "type": "noun",
+   "tags": [
+    "nature",
+    "time",
+    "n4"
+   ],
+   "example": {
+    "jp": "冬は雪が降ります。",
+    "en": "It snows in winter."
+   }
+  },
+  {
+   "id": "n_kion",
+   "dictionary": "気温",
+   "kana": "きおん",
+   "romaji": "kion",
+   "meaning": "temperature",
+   "type": "noun",
+   "tags": [
+    "weather",
+    "n4"
+   ],
+   "example": {
+    "jp": "今日の気温は三十度です。",
+    "en": "Today's temperature is 30 degrees."
+   }
+  },
+  {
+   "id": "n_jishin",
+   "dictionary": "地震",
+   "kana": "じしん",
+   "romaji": "jishin",
+   "meaning": "earthquake",
+   "type": "noun",
+   "tags": [
+    "nature",
+    "n4"
+   ],
+   "example": {
+    "jp": "地震がありました。",
+    "en": "There was an earthquake."
+   }
+  },
+  {
+   "id": "n_jiko",
+   "dictionary": "事故",
+   "kana": "じこ",
+   "romaji": "jiko",
+   "meaning": "accident",
+   "type": "noun",
+   "tags": [
+    "abstract",
+    "transport",
+    "n4"
+   ],
+   "example": {
+    "jp": "交通事故に遭いました。",
+    "en": "I was in a traffic accident."
+   }
+  },
+  {
+   "id": "n_chikoku",
+   "dictionary": "遅刻",
+   "kana": "ちこく",
+   "romaji": "chikoku",
+   "meaning": "lateness; being late",
+   "type": "noun",
+   "tags": [
+    "work",
+    "school",
+    "n4"
+   ],
+   "example": {
+    "jp": "遅刻しないでください。",
+    "en": "Please don't be late."
+   }
+  },
+  {
+   "id": "n_shucchou",
+   "dictionary": "出張",
+   "kana": "しゅっちょう",
+   "romaji": "shucchou",
+   "meaning": "business trip",
+   "type": "noun",
+   "tags": [
+    "work",
+    "n4"
+   ],
+   "example": {
+    "jp": "来週大阪へ出張します。",
+    "en": "I'll go on a business trip to Osaka next week."
+   }
+  },
+  {
+   "id": "n_kaigi",
+   "dictionary": "会議",
+   "kana": "かいぎ",
+   "romaji": "kaigi",
+   "meaning": "meeting",
+   "type": "noun",
+   "tags": [
+    "work",
+    "n4"
+   ],
+   "example": {
+    "jp": "会議が二時から始まります。",
+    "en": "The meeting starts at two."
+   }
+  },
+  {
+   "id": "n_kikaku",
+   "dictionary": "企画",
+   "kana": "きかく",
+   "romaji": "kikaku",
+   "meaning": "plan; project",
+   "type": "noun",
+   "tags": [
+    "work",
+    "n4"
+   ],
+   "example": {
+    "jp": "新しい企画を立てました。",
+    "en": "I made a new plan."
+   }
+  },
+  {
+   "id": "n_shourai",
+   "dictionary": "将来",
+   "kana": "しょうらい",
+   "romaji": "shourai",
+   "meaning": "future",
+   "type": "noun",
+   "tags": [
+    "abstract",
+    "n4"
+   ],
+   "example": {
+    "jp": "将来、先生になりたいです。",
+    "en": "I want to become a teacher in the future."
+   }
+  },
+  {
+   "id": "n_yume",
+   "dictionary": "夢",
+   "kana": "ゆめ",
+   "romaji": "yume",
+   "meaning": "dream",
+   "type": "noun",
+   "tags": [
+    "abstract",
+    "feelings",
+    "n4"
+   ],
+   "example": {
+    "jp": "夢を実現したいです。",
+    "en": "I want to make my dream come true."
+   }
+  },
+  {
+   "id": "n_mokuhyou",
+   "dictionary": "目標",
+   "kana": "もくひょう",
+   "romaji": "mokuhyou",
+   "meaning": "goal",
+   "type": "noun",
+   "tags": [
+    "abstract",
+    "n4"
+   ],
+   "example": {
+    "jp": "目標を立てました。",
+    "en": "I set a goal."
+   }
+  },
+  {
+   "id": "n_riyuu",
+   "dictionary": "理由",
+   "kana": "りゆう",
+   "romaji": "riyuu",
+   "meaning": "reason",
+   "type": "noun",
+   "tags": [
+    "abstract",
+    "n4"
+   ],
+   "example": {
+    "jp": "遅れた理由を聞かれました。",
+    "en": "I was asked the reason for being late."
+   }
+  },
+  {
+   "id": "n_kimochi",
+   "dictionary": "気持ち",
+   "kana": "きもち",
+   "romaji": "kimochi",
+   "meaning": "feeling",
+   "type": "noun",
+   "tags": [
+    "feelings",
+    "n4"
+   ],
+   "example": {
+    "jp": "気持ちがいい天気です。",
+    "en": "It's pleasant weather."
+   }
+  },
+  {
+   "id": "n_keiken",
+   "dictionary": "経験",
+   "kana": "けいけん",
+   "romaji": "keiken",
+   "meaning": "experience",
+   "type": "noun",
+   "tags": [
+    "abstract",
+    "n4"
+   ],
+   "example": {
+    "jp": "日本での経験を話しました。",
+    "en": "I talked about my experience in Japan."
+   }
+  },
+  {
+   "id": "n_jinsei",
+   "dictionary": "人生",
+   "kana": "じんせい",
+   "romaji": "jinsei",
+   "meaning": "life; one's life",
+   "type": "noun",
+   "tags": [
+    "abstract",
+    "n4"
+   ],
+   "example": {
+    "jp": "人生で一番の思い出です。",
+    "en": "It's the best memory of my life."
+   }
+  },
+  {
+   "id": "n_bunka",
+   "dictionary": "文化",
+   "kana": "ぶんか",
+   "romaji": "bunka",
+   "meaning": "culture",
+   "type": "noun",
+   "tags": [
+    "culture",
+    "n4"
+   ],
+   "example": {
+    "jp": "日本の文化に興味があります。",
+    "en": "I'm interested in Japanese culture."
+   }
+  },
+  {
+   "id": "n_rekishi",
+   "dictionary": "歴史",
+   "kana": "れきし",
+   "romaji": "rekishi",
+   "meaning": "history",
+   "type": "noun",
+   "tags": [
+    "study",
+    "culture",
+    "n4"
+   ],
+   "example": {
+    "jp": "歴史を勉強しています。",
+    "en": "I'm studying history."
+   }
+  },
+  {
+   "id": "n_seiji",
+   "dictionary": "政治",
+   "kana": "せいじ",
+   "romaji": "seiji",
+   "meaning": "politics",
+   "type": "noun",
+   "tags": [
+    "culture",
+    "society",
+    "n4"
+   ],
+   "example": {
+    "jp": "政治に興味があります。",
+    "en": "I'm interested in politics."
+   }
+  },
+  {
+   "id": "n_keizai",
+   "dictionary": "経済",
+   "kana": "けいざい",
+   "romaji": "keizai",
+   "meaning": "economy",
+   "type": "noun",
+   "tags": [
+    "culture",
+    "society",
+    "n4"
+   ],
+   "example": {
+    "jp": "経済について学びます。",
+    "en": "I study economics."
+   }
+  },
+  {
+   "id": "n_kagaku",
+   "dictionary": "科学",
+   "kana": "かがく",
+   "romaji": "kagaku",
+   "meaning": "science",
+   "type": "noun",
+   "tags": [
+    "study",
+    "n4"
+   ],
+   "example": {
+    "jp": "科学が好きです。",
+    "en": "I like science."
+   }
+  },
+  {
+   "id": "n_shakai",
+   "dictionary": "社会",
+   "kana": "しゃかい",
+   "romaji": "shakai",
+   "meaning": "society",
+   "type": "noun",
+   "tags": [
+    "society",
+    "n4"
+   ],
+   "example": {
+    "jp": "社会で働きます。",
+    "en": "I work in society."
+   }
+  },
+  {
+   "id": "n_kankyou",
+   "dictionary": "環境",
+   "kana": "かんきょう",
+   "romaji": "kankyou",
+   "meaning": "environment",
+   "type": "noun",
+   "tags": [
+    "society",
+    "nature",
+    "n4"
+   ],
+   "example": {
+    "jp": "環境を守ります。",
+    "en": "We protect the environment."
+   }
+  },
+  {
+   "id": "n_koutsuu",
+   "dictionary": "交通",
+   "kana": "こうつう",
+   "romaji": "koutsuu",
+   "meaning": "traffic; transportation",
+   "type": "noun",
+   "tags": [
+    "transport",
+    "n4"
+   ],
+   "example": {
+    "jp": "この辺は交通が便利です。",
+    "en": "This area has convenient transportation."
+   }
+  },
+  {
+   "id": "n_unten",
+   "dictionary": "運転",
+   "kana": "うんてん",
+   "romaji": "unten",
+   "meaning": "driving",
+   "type": "noun",
+   "tags": [
+    "transport",
+    "n4"
+   ],
+   "example": {
+    "jp": "運転を練習します。",
+    "en": "I practice driving."
+   }
+  },
+  {
+   "id": "n_menkyo",
+   "dictionary": "免許",
+   "kana": "めんきょ",
+   "romaji": "menkyo",
+   "meaning": "license",
+   "type": "noun",
+   "tags": [
+    "transport",
+    "n4"
+   ],
+   "example": {
+    "jp": "運転免許を取りました。",
+    "en": "I got my driver's license."
+   }
+  },
+  {
+   "id": "n_annai",
+   "dictionary": "案内",
+   "kana": "あんない",
+   "romaji": "annai",
+   "meaning": "guidance; guide",
+   "type": "noun",
+   "tags": [
+    "communication",
+    "n4"
+   ],
+   "example": {
+    "jp": "駅まで案内してください。",
+    "en": "Please guide me to the station."
+   }
+  },
+  {
+   "id": "n_shoutai",
+   "dictionary": "招待",
+   "kana": "しょうたい",
+   "romaji": "shoutai",
+   "meaning": "invitation",
+   "type": "noun",
+   "tags": [
+    "social",
+    "n4"
+   ],
+   "example": {
+    "jp": "パーティーに招待されました。",
+    "en": "I was invited to a party."
+   }
+  },
+  {
+   "id": "n_purezento",
+   "dictionary": "プレゼント",
+   "kana": "プレゼント",
+   "romaji": "purezento",
+   "meaning": "present; gift",
+   "type": "noun",
+   "tags": [
+    "social",
+    "n4"
+   ],
+   "example": {
+    "jp": "誕生日のプレゼントを買いました。",
+    "en": "I bought a birthday present."
+   }
+  },
+  {
+   "id": "n_oiwai",
+   "dictionary": "お祝い",
+   "kana": "おいわい",
+   "romaji": "oiwai",
+   "meaning": "celebration; congratulation",
+   "type": "noun",
+   "tags": [
+    "social",
+    "n4"
+   ],
+   "example": {
+    "jp": "合格のお祝いをしました。",
+    "en": "We celebrated passing the exam."
+   }
+  },
+  {
+   "id": "n_sotsugyou",
+   "dictionary": "卒業",
+   "kana": "そつぎょう",
+   "romaji": "sotsugyou",
+   "meaning": "graduation",
+   "type": "noun",
+   "tags": [
+    "school",
+    "n4"
+   ],
+   "example": {
+    "jp": "大学を卒業しました。",
+    "en": "I graduated from university."
+   }
+  },
+  {
+   "id": "n_nyuugaku",
+   "dictionary": "入学",
+   "kana": "にゅうがく",
+   "romaji": "nyuugaku",
+   "meaning": "school entrance",
+   "type": "noun",
+   "tags": [
+    "school",
+    "n4"
+   ],
+   "example": {
+    "jp": "四月に入学します。",
+    "en": "I'll enter school in April."
+   }
+  },
+  {
+   "id": "n_kyouiku",
+   "dictionary": "教育",
+   "kana": "きょういく",
+   "romaji": "kyouiku",
+   "meaning": "education",
+   "type": "noun",
+   "tags": [
+    "school",
+    "society",
+    "n4"
+   ],
+   "example": {
+    "jp": "教育が大切です。",
+    "en": "Education is important."
+   }
+  },
+  {
+   "id": "n_naraigoto",
+   "dictionary": "習い事",
+   "kana": "ならいごと",
+   "romaji": "naraigoto",
+   "meaning": "lessons; extracurricular study",
+   "type": "noun",
+   "tags": [
+    "study",
+    "school",
+    "n4"
+   ],
+   "example": {
+    "jp": "子供に習い事をさせています。",
+    "en": "I have my child take lessons."
+   }
+  },
+  {
+   "id": "n_shuukan",
+   "dictionary": "習慣",
+   "kana": "しゅうかん",
+   "romaji": "shuukan",
+   "meaning": "habit; custom",
+   "type": "noun",
+   "tags": [
+    "abstract",
+    "society",
+    "n4"
+   ],
+   "example": {
+    "jp": "朝走る習慣があります。",
+    "en": "I have a habit of running in the morning."
+   }
+  },
+  {
+   "id": "n_imi",
+   "dictionary": "意味",
+   "kana": "いみ",
+   "romaji": "imi",
+   "meaning": "meaning",
+   "type": "noun",
+   "tags": [
+    "abstract",
+    "study",
+    "n4"
+   ],
+   "example": {
+    "jp": "この言葉の意味を知りません。",
+    "en": "I don't know the meaning of this word."
+   }
+  },
+  {
+   "id": "n_iken",
+   "dictionary": "意見",
+   "kana": "いけん",
+   "romaji": "iken",
+   "meaning": "opinion",
+   "type": "noun",
+   "tags": [
+    "communication",
+    "abstract",
+    "n4"
+   ],
+   "example": {
+    "jp": "意見を聞かせてください。",
+    "en": "Please share your opinion."
+   }
+  },
+  {
+   "id": "n_setsumei",
+   "dictionary": "説明",
+   "kana": "せつめい",
+   "romaji": "setsumei",
+   "meaning": "explanation",
+   "type": "noun",
+   "tags": [
+    "communication",
+    "n4"
+   ],
+   "example": {
+    "jp": "説明が分かりやすいです。",
+    "en": "The explanation is easy to understand."
+   }
+  },
+  {
+   "id": "n_shirase",
+   "dictionary": "知らせ",
+   "kana": "しらせ",
+   "romaji": "shirase",
+   "meaning": "news; notice",
+   "type": "noun",
+   "tags": [
+    "communication",
+    "n4"
+   ],
+   "example": {
+    "jp": "いい知らせが来ました。",
+    "en": "Good news came."
+   }
+  },
+  {
+   "id": "n_saikin",
+   "dictionary": "最近",
+   "kana": "さいきん",
+   "romaji": "saikin",
+   "meaning": "recently; these days",
+   "type": "noun",
+   "tags": [
+    "time",
+    "n3"
+   ],
+   "example": {
+    "jp": "最近、忙しいです。",
+    "en": "I've been busy lately."
+   }
+  },
+  {
+   "id": "n_kongo",
+   "dictionary": "今後",
+   "kana": "こんご",
+   "romaji": "kongo",
+   "meaning": "from now on",
+   "type": "noun",
+   "tags": [
+    "time",
+    "n3"
+   ],
+   "example": {
+    "jp": "今後は気をつけます。",
+    "en": "I'll be careful from now on."
+   }
+  },
+  {
+   "id": "n_yononaka",
+   "dictionary": "世の中",
+   "kana": "よのなか",
+   "romaji": "yononaka",
+   "meaning": "the world; society",
+   "type": "noun",
+   "tags": [
+    "society",
+    "n3"
+   ],
+   "example": {
+    "jp": "世の中は広いです。",
+    "en": "The world is wide."
+   }
+  },
+  {
+   "id": "n_shakaijin",
+   "dictionary": "社会人",
+   "kana": "しゃかいじん",
+   "romaji": "shakaijin",
+   "meaning": "working adult",
+   "type": "noun",
+   "tags": [
+    "society",
+    "work",
+    "n3"
+   ],
+   "example": {
+    "jp": "来年社会人になります。",
+    "en": "I'll become a working adult next year."
+   }
+  },
+  {
+   "id": "n_joushi",
+   "dictionary": "上司",
+   "kana": "じょうし",
+   "romaji": "joushi",
+   "meaning": "boss; superior",
+   "type": "noun",
+   "tags": [
+    "work",
+    "n3"
+   ],
+   "example": {
+    "jp": "上司に相談しました。",
+    "en": "I consulted my boss."
+   }
+  },
+  {
+   "id": "n_buka",
+   "dictionary": "部下",
+   "kana": "ぶか",
+   "romaji": "buka",
+   "meaning": "subordinate",
+   "type": "noun",
+   "tags": [
+    "work",
+    "n3"
+   ],
+   "example": {
+    "jp": "部下を指導します。",
+    "en": "I train my subordinates."
+   }
+  },
+  {
+   "id": "n_douryou",
+   "dictionary": "同僚",
+   "kana": "どうりょう",
+   "romaji": "douryou",
+   "meaning": "colleague",
+   "type": "noun",
+   "tags": [
+    "work",
+    "n3"
+   ],
+   "example": {
+    "jp": "同僚と昼ご飯を食べます。",
+    "en": "I eat lunch with my colleagues."
+   }
+  },
+  {
+   "id": "n_kyuuryou",
+   "dictionary": "給料",
+   "kana": "きゅうりょう",
+   "romaji": "kyuuryou",
+   "meaning": "salary",
+   "type": "noun",
+   "tags": [
+    "work",
+    "money",
+    "n3"
+   ],
+   "example": {
+    "jp": "給料が上がりました。",
+    "en": "My salary went up."
+   }
+  },
+  {
+   "id": "n_zangyou",
+   "dictionary": "残業",
+   "kana": "ざんぎょう",
+   "romaji": "zangyou",
+   "meaning": "overtime work",
+   "type": "noun",
+   "tags": [
+    "work",
+    "n3"
+   ],
+   "example": {
+    "jp": "今日は残業です。",
+    "en": "I have overtime today."
+   }
+  },
+  {
+   "id": "n_kyuuka",
+   "dictionary": "休暇",
+   "kana": "きゅうか",
+   "romaji": "kyuuka",
+   "meaning": "vacation; leave",
+   "type": "noun",
+   "tags": [
+    "work",
+    "time",
+    "n3"
+   ],
+   "example": {
+    "jp": "夏休暇を取ります。",
+    "en": "I'll take summer vacation."
+   }
+  },
+  {
+   "id": "n_kinmu",
+   "dictionary": "勤務",
+   "kana": "きんむ",
+   "romaji": "kinmu",
+   "meaning": "work; service",
+   "type": "noun",
+   "tags": [
+    "work",
+    "n3"
+   ],
+   "example": {
+    "jp": "八時から勤務します。",
+    "en": "I work from eight o'clock."
+   }
+  },
+  {
+   "id": "n_mensetsu",
+   "dictionary": "面接",
+   "kana": "めんせつ",
+   "romaji": "mensetsu",
+   "meaning": "interview",
+   "type": "noun",
+   "tags": [
+    "work",
+    "n3"
+   ],
+   "example": {
+    "jp": "面接を受けるつもりです。",
+    "en": "I plan to have an interview."
+   }
+  },
+  {
+   "id": "n_shokuba",
+   "dictionary": "職場",
+   "kana": "しょくば",
+   "romaji": "shokuba",
+   "meaning": "workplace",
+   "type": "noun",
+   "tags": [
+    "work",
+    "n3"
+   ],
+   "example": {
+    "jp": "職場は家から近いです。",
+    "en": "My workplace is near my home."
+   }
+  },
+  {
+   "id": "n_nouryoku",
+   "dictionary": "能力",
+   "kana": "のうりょく",
+   "romaji": "nouryoku",
+   "meaning": "ability",
+   "type": "noun",
+   "tags": [
+    "abstract",
+    "n3"
+   ],
+   "example": {
+    "jp": "彼は能力が高いです。",
+    "en": "He has high ability."
+   }
+  },
+  {
+   "id": "n_sainou",
+   "dictionary": "才能",
+   "kana": "さいのう",
+   "romaji": "sainou",
+   "meaning": "talent",
+   "type": "noun",
+   "tags": [
+    "abstract",
+    "n3"
+   ],
+   "example": {
+    "jp": "彼女には音楽の才能があります。",
+    "en": "She has musical talent."
+   }
+  },
+  {
+   "id": "n_doryoku",
+   "dictionary": "努力",
+   "kana": "どりょく",
+   "romaji": "doryoku",
+   "meaning": "effort",
+   "type": "noun",
+   "tags": [
+    "abstract",
+    "n3"
+   ],
+   "example": {
+    "jp": "努力が実りました。",
+    "en": "My efforts bore fruit."
+   }
+  },
+  {
+   "id": "n_gaman",
+   "dictionary": "我慢",
+   "kana": "がまん",
+   "romaji": "gaman",
+   "meaning": "patience; endurance",
+   "type": "noun",
+   "tags": [
+    "feelings",
+    "n3"
+   ],
+   "example": {
+    "jp": "痛みを我慢します。",
+    "en": "I endure the pain."
+   }
+  },
+  {
+   "id": "n_yuuki",
+   "dictionary": "勇気",
+   "kana": "ゆうき",
+   "romaji": "yuuki",
+   "meaning": "courage",
+   "type": "noun",
+   "tags": [
+    "feelings",
+    "n3"
+   ],
+   "example": {
+    "jp": "勇気を出して話しました。",
+    "en": "I gathered courage and spoke."
+   }
+  },
+  {
+   "id": "n_kibou",
+   "dictionary": "希望",
+   "kana": "きぼう",
+   "romaji": "kibou",
+   "meaning": "hope",
+   "type": "noun",
+   "tags": [
+    "feelings",
+    "n3"
+   ],
+   "example": {
+    "jp": "希望を捨てません。",
+    "en": "I won't give up hope."
+   }
+  },
+  {
+   "id": "n_kitai",
+   "dictionary": "期待",
+   "kana": "きたい",
+   "romaji": "kitai",
+   "meaning": "expectation",
+   "type": "noun",
+   "tags": [
+    "feelings",
+    "n3"
+   ],
+   "example": {
+    "jp": "期待に応えます。",
+    "en": "I'll live up to expectations."
+   }
+  },
+  {
+   "id": "n_kandou",
+   "dictionary": "感動",
+   "kana": "かんどう",
+   "romaji": "kandou",
+   "meaning": "being moved; emotion",
+   "type": "noun",
+   "tags": [
+    "feelings",
+    "n3"
+   ],
+   "example": {
+    "jp": "映画に感動しました。",
+    "en": "I was moved by the movie."
+   }
+  },
+  {
+   "id": "n_anshin",
+   "dictionary": "安心",
+   "kana": "あんしん",
+   "romaji": "anshin",
+   "meaning": "relief",
+   "type": "noun",
+   "tags": [
+    "feelings",
+    "n3"
+   ],
+   "example": {
+    "jp": "結果を聞いて安心しました。",
+    "en": "I felt relieved to hear the result."
+   }
+  },
+  {
+   "id": "n_kyoumi",
+   "dictionary": "興味",
+   "kana": "きょうみ",
+   "romaji": "kyoumi",
+   "meaning": "interest",
+   "type": "noun",
+   "tags": [
+    "feelings",
+    "n3"
+   ],
+   "example": {
+    "jp": "日本文化に興味があります。",
+    "en": "I'm interested in Japanese culture."
+   }
+  },
+  {
+   "id": "n_shumi",
+   "dictionary": "趣味",
+   "kana": "しゅみ",
+   "romaji": "shumi",
+   "meaning": "hobby",
+   "type": "noun",
+   "tags": [
+    "leisure",
+    "n3"
+   ],
+   "example": {
+    "jp": "趣味は写真を撮ることです。",
+    "en": "My hobby is taking photos."
+   }
+  },
+  {
+   "id": "n_koufuku",
+   "dictionary": "幸福",
+   "kana": "こうふく",
+   "romaji": "koufuku",
+   "meaning": "happiness",
+   "type": "noun",
+   "tags": [
+    "feelings",
+    "n3"
+   ],
+   "example": {
+    "jp": "幸福な生活を送ります。",
+    "en": "I live a happy life."
+   }
+  },
+  {
+   "id": "n_kioku",
+   "dictionary": "記憶",
+   "kana": "きおく",
+   "romaji": "kioku",
+   "meaning": "memory",
+   "type": "noun",
+   "tags": [
+    "abstract",
+    "n3"
+   ],
+   "example": {
+    "jp": "子供の頃の記憶があります。",
+    "en": "I have memories from my childhood."
+   }
+  },
+  {
+   "id": "n_chuui",
+   "dictionary": "注意",
+   "kana": "ちゅうい",
+   "romaji": "chuui",
+   "meaning": "caution; attention",
+   "type": "noun",
+   "tags": [
+    "abstract",
+    "n3"
+   ],
+   "example": {
+    "jp": "足元に注意してください。",
+    "en": "Please watch your step."
+   }
+  },
+  {
+   "id": "n_kisoku",
+   "dictionary": "規則",
+   "kana": "きそく",
+   "romaji": "kisoku",
+   "meaning": "rule; regulation",
+   "type": "noun",
+   "tags": [
+    "society",
+    "n3"
+   ],
+   "example": {
+    "jp": "学校の規則を守ります。",
+    "en": "I follow the school rules."
+   }
+  },
+  {
+   "id": "n_houritsu",
+   "dictionary": "法律",
+   "kana": "ほうりつ",
+   "romaji": "houritsu",
+   "meaning": "law",
+   "type": "noun",
+   "tags": [
+    "society",
+    "n3"
+   ],
+   "example": {
+    "jp": "法律について勉強します。",
+    "en": "I study law."
+   }
+  },
+  {
+   "id": "n_seido",
+   "dictionary": "制度",
+   "kana": "せいど",
+   "romaji": "seido",
+   "meaning": "system; institution",
+   "type": "noun",
+   "tags": [
+    "society",
+    "n3"
+   ],
+   "example": {
+    "jp": "新しい制度が始まりました。",
+    "en": "A new system started."
+   }
+  },
+  {
+   "id": "n_sekinin",
+   "dictionary": "責任",
+   "kana": "せきにん",
+   "romaji": "sekinin",
+   "meaning": "responsibility",
+   "type": "noun",
+   "tags": [
+    "abstract",
+    "work",
+    "n3"
+   ],
+   "example": {
+    "jp": "責任を持って行います。",
+    "en": "I'll do it responsibly."
+   }
+  },
+  {
+   "id": "n_yakuwari",
+   "dictionary": "役割",
+   "kana": "やくわり",
+   "romaji": "yakuwari",
+   "meaning": "role",
+   "type": "noun",
+   "tags": [
+    "abstract",
+    "n3"
+   ],
+   "example": {
+    "jp": "私の役割は大きいです。",
+    "en": "My role is important."
+   }
+  },
+  {
+   "id": "n_jouken",
+   "dictionary": "条件",
+   "kana": "じょうけん",
+   "romaji": "jouken",
+   "meaning": "condition",
+   "type": "noun",
+   "tags": [
+    "abstract",
+    "n3"
+   ],
+   "example": {
+    "jp": "条件を話し合います。",
+    "en": "We'll discuss the conditions."
+   }
+  },
+  {
+   "id": "n_joukyou",
+   "dictionary": "状況",
+   "kana": "じょうきょう",
+   "romaji": "joukyou",
+   "meaning": "situation",
+   "type": "noun",
+   "tags": [
+    "abstract",
+    "n3"
+   ],
+   "example": {
+    "jp": "状況を説明します。",
+    "en": "I'll explain the situation."
+   }
+  },
+  {
+   "id": "n_joutai",
+   "dictionary": "状態",
+   "kana": "じょうたい",
+   "romaji": "joutai",
+   "meaning": "state; condition",
+   "type": "noun",
+   "tags": [
+    "abstract",
+    "n3"
+   ],
+   "example": {
+    "jp": "物の状態を調べます。",
+    "en": "I check the condition of things."
+   }
+  },
+  {
+   "id": "n_kankei",
+   "dictionary": "関係",
+   "kana": "かんけい",
+   "romaji": "kankei",
+   "meaning": "relationship; relation",
+   "type": "noun",
+   "tags": [
+    "abstract",
+    "n3"
+   ],
+   "example": {
+    "jp": "彼とは友達の関係です。",
+    "en": "I have a friendship with him."
+   }
+  },
+  {
+   "id": "n_eikyou",
+   "dictionary": "影響",
+   "kana": "えいきょう",
+   "romaji": "eikyou",
+   "meaning": "influence",
+   "type": "noun",
+   "tags": [
+    "abstract",
+    "n3"
+   ],
+   "example": {
+    "jp": "天気が影響します。",
+    "en": "The weather has an influence."
+   }
+  },
+  {
+   "id": "n_henka",
+   "dictionary": "変化",
+   "kana": "へんか",
+   "romaji": "henka",
+   "meaning": "change",
+   "type": "noun",
+   "tags": [
+    "abstract",
+    "n3"
+   ],
+   "example": {
+    "jp": "気温の変化が大きいです。",
+    "en": "The change in temperature is big."
+   }
+  },
+  {
+   "id": "n_genin",
+   "dictionary": "原因",
+   "kana": "げんいん",
+   "romaji": "genin",
+   "meaning": "cause",
+   "type": "noun",
+   "tags": [
+    "abstract",
+    "n3"
+   ],
+   "example": {
+    "jp": "原因を調べます。",
+    "en": "I'll investigate the cause."
+   }
+  },
+  {
+   "id": "n_kekka",
+   "dictionary": "結果",
+   "kana": "けっか",
+   "romaji": "kekka",
+   "meaning": "result",
+   "type": "noun",
+   "tags": [
+    "abstract",
+    "n3"
+   ],
+   "example": {
+    "jp": "結果は後で分かります。",
+    "en": "The result will be known later."
+   }
+  },
+  {
+   "id": "n_seikatsu",
+   "dictionary": "生活",
+   "kana": "せいかつ",
+   "romaji": "seikatsu",
+   "meaning": "life; lifestyle",
+   "type": "noun",
+   "tags": [
+    "abstract",
+    "society",
+    "n3"
+   ],
+   "example": {
+    "jp": "毎日の生活を楽しみます。",
+    "en": "I enjoy my daily life."
+   }
+  },
+  {
+   "id": "n_geijutsu",
+   "dictionary": "芸術",
+   "kana": "げいじゅつ",
+   "romaji": "geijutsu",
+   "meaning": "art",
+   "type": "noun",
+   "tags": [
+    "culture",
+    "n3"
+   ],
+   "example": {
+    "jp": "芸術を鑑賞します。",
+    "en": "I appreciate art."
+   }
+  },
+  {
+   "id": "n_sakuhin",
+   "dictionary": "作品",
+   "kana": "さくひん",
+   "romaji": "sakuhin",
+   "meaning": "work; piece (of art)",
+   "type": "noun",
+   "tags": [
+    "culture",
+    "n3"
+   ],
+   "example": {
+    "jp": "有名な作品です。",
+    "en": "It's a famous work."
+   }
+  },
+  {
+   "id": "n_kenkou",
+   "dictionary": "健康",
+   "kana": "けんこう",
+   "romaji": "kenkou",
+   "meaning": "health",
+   "type": "noun",
+   "tags": [
+    "health",
+    "n3"
+   ],
+   "example": {
+    "jp": "健康のために運動します。",
+    "en": "I exercise for my health."
+   }
+  },
+  {
+   "id": "n_suimin",
+   "dictionary": "睡眠",
+   "kana": "すいみん",
+   "romaji": "suimin",
+   "meaning": "sleep",
+   "type": "noun",
+   "tags": [
+    "health",
+    "n3"
+   ],
+   "example": {
+    "jp": "睡眠が足りません。",
+    "en": "I don't get enough sleep."
+   }
+  },
+  {
+   "id": "n_undou",
+   "dictionary": "運動",
+   "kana": "うんどう",
+   "romaji": "undou",
+   "meaning": "exercise; sports",
+   "type": "noun",
+   "tags": [
+    "health",
+    "leisure",
+    "n3"
+   ],
+   "example": {
+    "jp": "毎日運動します。",
+    "en": "I exercise every day."
+   }
+  },
+  {
+   "id": "n_kanja",
+   "dictionary": "患者",
+   "kana": "かんじゃ",
+   "romaji": "kanja",
+   "meaning": "patient",
+   "type": "noun",
+   "tags": [
+    "health",
+    "n3"
+   ],
+   "example": {
+    "jp": "患者を診察します。",
+    "en": "I examine patients."
+   }
+  },
+  {
+   "id": "n_shujutsu",
+   "dictionary": "手術",
+   "kana": "しゅじゅつ",
+   "romaji": "shujutsu",
+   "meaning": "surgery",
+   "type": "noun",
+   "tags": [
+    "health",
+    "n3"
+   ],
+   "example": {
+    "jp": "手術が必要です。",
+    "en": "Surgery is necessary."
+   }
+  },
+  {
+   "id": "n_chiryou",
+   "dictionary": "治療",
+   "kana": "ちりょう",
+   "romaji": "chiryou",
+   "meaning": "treatment; therapy",
+   "type": "noun",
+   "tags": [
+    "health",
+    "n3"
+   ],
+   "example": {
+    "jp": "治療を続けます。",
+    "en": "I continue treatment."
+   }
+  },
+  {
+   "id": "n_eiyou",
+   "dictionary": "栄養",
+   "kana": "えいよう",
+   "romaji": "eiyou",
+   "meaning": "nutrition",
+   "type": "noun",
+   "tags": [
+    "health",
+    "food",
+    "n3"
+   ],
+   "example": {
+    "jp": "栄養がある食べ物です。",
+    "en": "It's nutritious food."
+   }
+  },
+  {
+   "id": "n_mikaku",
+   "dictionary": "味覚",
+   "kana": "みかく",
+   "romaji": "mikaku",
+   "meaning": "sense of taste",
+   "type": "noun",
+   "tags": [
+    "food",
+    "n3"
+   ],
+   "example": {
+    "jp": "味覚が鋭いです。",
+    "en": "He has a keen sense of taste."
+   }
+  },
+  {
+   "id": "n_zairyou",
+   "dictionary": "材料",
+   "kana": "ざいりょう",
+   "romaji": "zairyou",
+   "meaning": "ingredients; materials",
+   "type": "noun",
+   "tags": [
+    "food",
+    "n3"
+   ],
+   "example": {
+    "jp": "材料を買いました。",
+    "en": "I bought the ingredients."
+   }
+  },
+  {
+   "id": "n_choumiryou",
+   "dictionary": "調味料",
+   "kana": "ちょうみりょう",
+   "romaji": "choumiryou",
+   "meaning": "seasoning",
+   "type": "noun",
+   "tags": [
+    "food",
+    "n3"
+   ],
+   "example": {
+    "jp": "調味料を加えます。",
+    "en": "I add seasoning."
+   }
+  },
+  {
+   "id": "n_kaiwa",
+   "dictionary": "会話",
+   "kana": "かいわ",
+   "romaji": "kaiwa",
+   "meaning": "conversation",
+   "type": "noun",
+   "tags": [
+    "communication",
+    "n3"
+   ],
+   "example": {
+    "jp": "日本語で会話します。",
+    "en": "I converse in Japanese."
+   }
+  },
+  {
+   "id": "n_wadai",
+   "dictionary": "話題",
+   "kana": "わだい",
+   "romaji": "wadai",
+   "meaning": "topic of conversation",
+   "type": "noun",
+   "tags": [
+    "communication",
+    "n3"
+   ],
+   "example": {
+    "jp": "話題がありません。",
+    "en": "I don't have a topic to talk about."
+   }
+  },
+  {
+   "id": "n_jouhou",
+   "dictionary": "情報",
+   "kana": "じょうほう",
+   "romaji": "jouhou",
+   "meaning": "information",
+   "type": "noun",
+   "tags": [
+    "communication",
+    "technology",
+    "n3"
+   ],
+   "example": {
+    "jp": "情報を集めます。",
+    "en": "I gather information."
+   }
+  },
+  {
+   "id": "n_koukoku",
+   "dictionary": "広告",
+   "kana": "こうこく",
+   "romaji": "koukoku",
+   "meaning": "advertisement",
+   "type": "noun",
+   "tags": [
+    "communication",
+    "n3"
+   ],
+   "example": {
+    "jp": "テレビで広告を見ました。",
+    "en": "I saw an ad on TV."
+   }
+  },
+  {
+   "id": "n_setsumeikai",
+   "dictionary": "説明会",
+   "kana": "せつめいかい",
+   "romaji": "setsumeikai",
+   "meaning": "explanatory meeting",
+   "type": "noun",
+   "tags": [
+    "communication",
+    "n3"
+   ],
+   "example": {
+    "jp": "説明会に参加します。",
+    "en": "I'll attend the briefing."
+   }
+  },
+  {
+   "id": "n_juumin",
+   "dictionary": "住民",
+   "kana": "じゅうみん",
+   "romaji": "juumin",
+   "meaning": "resident",
+   "type": "noun",
+   "tags": [
+    "society",
+    "n3"
+   ],
+   "example": {
+    "jp": "住民の声を聞きます。",
+    "en": "I listen to residents' voices."
+   }
+  },
+  {
+   "id": "n_shimin",
+   "dictionary": "市民",
+   "kana": "しみん",
+   "romaji": "shimin",
+   "meaning": "citizen",
+   "type": "noun",
+   "tags": [
+    "society",
+    "n3"
+   ],
+   "example": {
+    "jp": "市民の生活を守ります。",
+    "en": "We protect citizens' lives."
+   }
+  },
+  {
+   "id": "n_yakusho",
+   "dictionary": "役所",
+   "kana": "やくしょ",
+   "romaji": "yakusho",
+   "meaning": "government office",
+   "type": "noun",
+   "tags": [
+    "society",
+    "n3"
+   ],
+   "example": {
+    "jp": "役所で手続きをします。",
+    "en": "I'll do the procedures at the government office."
+   }
+  },
+  {
+   "id": "n_zeikin",
+   "dictionary": "税金",
+   "kana": "ぜいきん",
+   "romaji": "zeikin",
+   "meaning": "tax",
+   "type": "noun",
+   "tags": [
+    "society",
+    "money",
+    "n3"
+   ],
+   "example": {
+    "jp": "税金を払います。",
+    "en": "I pay taxes."
+   }
+  },
+  {
+   "id": "n_yosan",
+   "dictionary": "予算",
+   "kana": "よさん",
+   "romaji": "yosan",
+   "meaning": "budget",
+   "type": "noun",
+   "tags": [
+    "money",
+    "n3"
+   ],
+   "example": {
+    "jp": "予算を決めます。",
+    "en": "We'll decide the budget."
+   }
+  },
+  {
+   "id": "n_chokin",
+   "dictionary": "貯金",
+   "kana": "ちょきん",
+   "romaji": "chokin",
+   "meaning": "savings",
+   "type": "noun",
+   "tags": [
+    "money",
+    "n3"
+   ],
+   "example": {
+    "jp": "毎月貯金します。",
+    "en": "I save money every month."
+   }
+  },
+  {
+   "id": "n_shuunyuu",
+   "dictionary": "収入",
+   "kana": "しゅうにゅう",
+   "romaji": "shuunyuu",
+   "meaning": "income",
+   "type": "noun",
+   "tags": [
+    "money",
+    "work",
+    "n3"
+   ],
+   "example": {
+    "jp": "収入が減りました。",
+    "en": "My income decreased."
+   }
+  },
+  {
+   "id": "n_shishutsu",
+   "dictionary": "支出",
+   "kana": "ししゅつ",
+   "romaji": "shishutsu",
+   "meaning": "expenditure",
+   "type": "noun",
+   "tags": [
+    "money",
+    "n3"
+   ],
+   "example": {
+    "jp": "支出を控えます。",
+    "en": "I'll cut down on spending."
+   }
+  },
+  {
+   "id": "n_toushi",
+   "dictionary": "投資",
+   "kana": "とうし",
+   "romaji": "toushi",
+   "meaning": "investment",
+   "type": "noun",
+   "tags": [
+    "money",
+    "n3"
+   ],
+   "example": {
+    "jp": "株式に投資します。",
+    "en": "I invest in stocks."
+   }
+  },
+  {
+   "id": "n_shinamono",
+   "dictionary": "品物",
+   "kana": "しなもの",
+   "romaji": "shinamono",
+   "meaning": "goods; article",
+   "type": "noun",
+   "tags": [
+    "shopping",
+    "n3"
+   ],
+   "example": {
+    "jp": "安い品物を探します。",
+    "en": "I look for cheap goods."
+   }
+  },
+  {
+   "id": "n_hinshitsu",
+   "dictionary": "品質",
+   "kana": "ひんしつ",
+   "romaji": "hinshitsu",
+   "meaning": "quality",
+   "type": "noun",
+   "tags": [
+    "shopping",
+    "n3"
+   ],
+   "example": {
+    "jp": "品質がいいです。",
+    "en": "The quality is good."
+   }
+  },
+  {
+   "id": "n_kounyuu",
+   "dictionary": "購入",
+   "kana": "こうにゅう",
+   "romaji": "kounyuu",
+   "meaning": "purchase",
+   "type": "noun",
+   "tags": [
+    "shopping",
+    "n3"
+   ],
+   "example": {
+    "jp": "オンラインで購入しました。",
+    "en": "I purchased it online."
+   }
+  },
+  {
+   "id": "n_kankou",
+   "dictionary": "観光",
+   "kana": "かんこう",
+   "romaji": "kankou",
+   "meaning": "sightseeing",
+   "type": "noun",
+   "tags": [
+    "travel",
+    "n3"
+   ],
+   "example": {
+    "jp": "観光地を回ります。",
+    "en": "I visit tourist spots."
+   }
+  },
+  {
+   "id": "n_kankoukyaku",
+   "dictionary": "観光客",
+   "kana": "かんこうきゃく",
+   "romaji": "kankoukyaku",
+   "meaning": "tourist",
+   "type": "noun",
+   "tags": [
+    "travel",
+    "people",
+    "n3"
+   ],
+   "example": {
+    "jp": "観光客が増えました。",
+    "en": "Tourists have increased."
+   }
+  },
+  {
+   "id": "n_ryokan",
+   "dictionary": "旅館",
+   "kana": "りょかん",
+   "romaji": "ryokan",
+   "meaning": "Japanese inn",
+   "type": "noun",
+   "tags": [
+    "travel",
+    "place",
+    "n3"
+   ],
+   "example": {
+    "jp": "旅館に泊まりました。",
+    "en": "I stayed at a ryokan."
+   }
+  },
+  {
+   "id": "n_yoyaku",
+   "dictionary": "予約",
+   "kana": "よやく",
+   "romaji": "yoyaku",
+   "meaning": "reservation",
+   "type": "noun",
+   "tags": [
+    "travel",
+    "shopping",
+    "n3"
+   ],
+   "example": {
+    "jp": "ホテルを予約しました。",
+    "en": "I reserved a hotel."
+   }
+  },
+  {
+   "id": "n_ryoukin",
+   "dictionary": "料金",
+   "kana": "りょうきん",
+   "romaji": "ryoukin",
+   "meaning": "fee; charge",
+   "type": "noun",
+   "tags": [
+    "money",
+    "travel",
+    "n3"
+   ],
+   "example": {
+    "jp": "料金を払います。",
+    "en": "I'll pay the fee."
+   }
+  },
+  {
+   "id": "n_teiryuu_jo",
+   "dictionary": "停留所",
+   "kana": "ていりゅうじょ",
+   "romaji": "teiryuu_jo",
+   "meaning": "bus stop",
+   "type": "noun",
+   "tags": [
+    "transport",
+    "n3"
+   ],
+   "example": {
+    "jp": "バス停留所で待ちます。",
+    "en": "I wait at the bus stop."
+   },
+   "note": "Written 停留所; commonly バス停."
+  },
+  {
+   "id": "n_chuushajou",
+   "dictionary": "駐車場",
+   "kana": "ちゅうしゃじょう",
+   "romaji": "chuushajou",
+   "meaning": "parking lot",
+   "type": "noun",
+   "tags": [
+    "transport",
+    "n3"
+   ],
+   "example": {
+    "jp": "駐車場に車を停めます。",
+    "en": "I park my car in the parking lot."
+   }
+  },
+  {
+   "id": "n_nenryou",
+   "dictionary": "燃料",
+   "kana": "ねんりょう",
+   "romaji": "nenryou",
+   "meaning": "fuel",
+   "type": "noun",
+   "tags": [
+    "transport",
+    "society",
+    "n3"
+   ],
+   "example": {
+    "jp": "燃料が高いです。",
+    "en": "Fuel is expensive."
+   }
+  },
+  {
+   "id": "n_juutai",
+   "dictionary": "渋滞",
+   "kana": "じゅうたい",
+   "romaji": "juutai",
+   "meaning": "traffic jam",
+   "type": "noun",
+   "tags": [
+    "transport",
+    "n3"
+   ],
+   "example": {
+    "jp": "渋滞に巻き込まれました。",
+    "en": "I got caught in a traffic jam."
+   }
+  },
+  {
+   "id": "n_bouken",
+   "dictionary": "冒険",
+   "kana": "ぼうけん",
+   "romaji": "bouken",
+   "meaning": "adventure",
+   "type": "noun",
+   "tags": [
+    "abstract",
+    "n2"
+   ],
+   "example": {
+    "jp": "冒険の旅に出ました。",
+    "en": "I set out on an adventure."
+   }
+  },
+  {
+   "id": "n_tetsugaku",
+   "dictionary": "哲学",
+   "kana": "てつがく",
+   "romaji": "tetsugaku",
+   "meaning": "philosophy",
+   "type": "noun",
+   "tags": [
+    "abstract",
+    "study",
+    "n2"
+   ],
+   "example": {
+    "jp": "哲学を学びたいです。",
+    "en": "I want to study philosophy."
+   }
+  },
+  {
+   "id": "n_shisou",
+   "dictionary": "思想",
+   "kana": "しそう",
+   "romaji": "shisou",
+   "meaning": "thought; ideology",
+   "type": "noun",
+   "tags": [
+    "abstract",
+    "n2"
+   ],
+   "example": {
+    "jp": "彼の思想に興味があります。",
+    "en": "I'm interested in his ideas."
+   }
+  },
+  {
+   "id": "n_riron",
+   "dictionary": "理論",
+   "kana": "りろん",
+   "romaji": "riron",
+   "meaning": "theory",
+   "type": "noun",
+   "tags": [
+    "abstract",
+    "study",
+    "n2"
+   ],
+   "example": {
+    "jp": "理論と実践を結びます。",
+    "en": "I connect theory and practice."
+   }
+  },
+  {
+   "id": "n_genri",
+   "dictionary": "原理",
+   "kana": "げんり",
+   "romaji": "genri",
+   "meaning": "principle",
+   "type": "noun",
+   "tags": [
+    "abstract",
+    "n2"
+   ],
+   "example": {
+    "jp": "原理を説明します。",
+    "en": "I'll explain the principle."
+   }
+  },
+  {
+   "id": "n_kasetsu",
+   "dictionary": "仮説",
+   "kana": "かせつ",
+   "romaji": "kasetsu",
+   "meaning": "hypothesis",
+   "type": "noun",
+   "tags": [
+    "abstract",
+    "study",
+    "n2"
+   ],
+   "example": {
+    "jp": "仮説を立てました。",
+    "en": "I formed a hypothesis."
+   }
+  },
+  {
+   "id": "n_housoku",
+   "dictionary": "法則",
+   "kana": "ほうそく",
+   "romaji": "housoku",
+   "meaning": "law; rule",
+   "type": "noun",
+   "tags": [
+    "abstract",
+    "n2"
+   ],
+   "example": {
+    "jp": "自然の法則です。",
+    "en": "It's a law of nature."
+   }
+  },
+  {
+   "id": "n_shinri",
+   "dictionary": "真理",
+   "kana": "しんり",
+   "romaji": "shinri",
+   "meaning": "truth",
+   "type": "noun",
+   "tags": [
+    "abstract",
+    "n2"
+   ],
+   "example": {
+    "jp": "真理を求めます。",
+    "en": "I seek the truth."
+   }
+  },
+  {
+   "id": "n_gainen",
+   "dictionary": "概念",
+   "kana": "がいねん",
+   "romaji": "gainen",
+   "meaning": "concept",
+   "type": "noun",
+   "tags": [
+    "abstract",
+    "n2"
+   ],
+   "example": {
+    "jp": "概念を説明しました。",
+    "en": "I explained the concept."
+   }
+  },
+  {
+   "id": "n_ishiki",
+   "dictionary": "意識",
+   "kana": "いしき",
+   "romaji": "ishiki",
+   "meaning": "consciousness; awareness",
+   "type": "noun",
+   "tags": [
+    "abstract",
+    "n2"
+   ],
+   "example": {
+    "jp": "健康を意識します。",
+    "en": "I'm conscious of my health."
+   }
+  },
+  {
+   "id": "n_ninshiki",
+   "dictionary": "認識",
+   "kana": "にんしき",
+   "romaji": "ninshiki",
+   "meaning": "recognition; perception",
+   "type": "noun",
+   "tags": [
+    "abstract",
+    "n2"
+   ],
+   "example": {
+    "jp": "認識が変わります。",
+    "en": "My perception changes."
+   }
+  },
+  {
+   "id": "n_rikai",
+   "dictionary": "理解",
+   "kana": "りかい",
+   "romaji": "rikai",
+   "meaning": "understanding",
+   "type": "noun",
+   "tags": [
+    "abstract",
+    "n2"
+   ],
+   "example": {
+    "jp": "相手を理解します。",
+    "en": "I understand the other person."
+   }
+  },
+  {
+   "id": "n_haaku",
+   "dictionary": "把握",
+   "kana": "はあく",
+   "romaji": "haaku",
+   "meaning": "grasp; understanding",
+   "type": "noun",
+   "tags": [
+    "abstract",
+    "n2"
+   ],
+   "example": {
+    "jp": "状況を把握しました。",
+    "en": "I grasped the situation."
+   }
+  },
+  {
+   "id": "n_keikou",
+   "dictionary": "傾向",
+   "kana": "けいこう",
+   "romaji": "keikou",
+   "meaning": "tendency; trend",
+   "type": "noun",
+   "tags": [
+    "abstract",
+    "n2"
+   ],
+   "example": {
+    "jp": "最近の傾向です。",
+    "en": "It's a recent trend."
+   }
+  },
+  {
+   "id": "n_tokuchou",
+   "dictionary": "特徴",
+   "kana": "とくちょう",
+   "romaji": "tokuchou",
+   "meaning": "characteristic",
+   "type": "noun",
+   "tags": [
+    "abstract",
+    "n2"
+   ],
+   "example": {
+    "jp": "この動物の特徴です。",
+    "en": "It's a feature of this animal."
+   }
+  },
+  {
+   "id": "n_seishitsu",
+   "dictionary": "性質",
+   "kana": "せいしつ",
+   "romaji": "seishitsu",
+   "meaning": "nature; property",
+   "type": "noun",
+   "tags": [
+    "abstract",
+    "n2"
+   ],
+   "example": {
+    "jp": "水の性質を学びます。",
+    "en": "I learn about the properties of water."
+   }
+  },
+  {
+   "id": "n_honshitsu",
+   "dictionary": "本質",
+   "kana": "ほんしつ",
+   "romaji": "honshitsu",
+   "meaning": "essence",
+   "type": "noun",
+   "tags": [
+    "abstract",
+    "n2"
+   ],
+   "example": {
+    "jp": "問題の本質を見ます。",
+    "en": "I see the essence of the problem."
+   }
+  },
+  {
+   "id": "n_youso",
+   "dictionary": "要素",
+   "kana": "ようそ",
+   "romaji": "youso",
+   "meaning": "element; factor",
+   "type": "noun",
+   "tags": [
+    "abstract",
+    "n2"
+   ],
+   "example": {
+    "jp": "成功の要素を分析します。",
+    "en": "I analyze the factors of success."
+   }
+  },
+  {
+   "id": "n_youin",
+   "dictionary": "要因",
+   "kana": "よういん",
+   "romaji": "youin",
+   "meaning": "cause; factor",
+   "type": "noun",
+   "tags": [
+    "abstract",
+    "n2"
+   ],
+   "example": {
+    "jp": "失敗の要因を探します。",
+    "en": "I look for the cause of the failure."
+   }
+  },
+  {
+   "id": "n_haikei",
+   "dictionary": "背景",
+   "kana": "はいけい",
+   "romaji": "haikei",
+   "meaning": "background",
+   "type": "noun",
+   "tags": [
+    "abstract",
+    "n2"
+   ],
+   "example": {
+    "jp": "事件の背景を調べます。",
+    "en": "I investigate the background of the incident."
+   }
+  },
+  {
+   "id": "n_jijou",
+   "dictionary": "事情",
+   "kana": "じじょう",
+   "romaji": "jijou",
+   "meaning": "circumstances",
+   "type": "noun",
+   "tags": [
+    "abstract",
+    "n2"
+   ],
+   "example": {
+    "jp": "事情を説明します。",
+    "en": "I'll explain the circumstances."
+   }
+  },
+  {
+   "id": "n_genjou",
+   "dictionary": "現状",
+   "kana": "げんじょう",
+   "romaji": "genjou",
+   "meaning": "current situation",
+   "type": "noun",
+   "tags": [
+    "abstract",
+    "n2"
+   ],
+   "example": {
+    "jp": "現状を報告します。",
+    "en": "I'll report the current situation."
+   }
+  },
+  {
+   "id": "n_taisaku",
+   "dictionary": "対策",
+   "kana": "たいさく",
+   "romaji": "taisaku",
+   "meaning": "countermeasure",
+   "type": "noun",
+   "tags": [
+    "abstract",
+    "n2"
+   ],
+   "example": {
+    "jp": "対策を考えます。",
+    "en": "We'll think of countermeasures."
+   }
+  },
+  {
+   "id": "n_kaiketsu",
+   "dictionary": "解決",
+   "kana": "かいけつ",
+   "romaji": "kaiketsu",
+   "meaning": "solution; resolution",
+   "type": "noun",
+   "tags": [
+    "abstract",
+    "n2"
+   ],
+   "example": {
+    "jp": "問題を解決しました。",
+    "en": "I solved the problem."
+   }
+  },
+  {
+   "id": "n_kaizen",
+   "dictionary": "改善",
+   "kana": "かいぜん",
+   "romaji": "kaizen",
+   "meaning": "improvement",
+   "type": "noun",
+   "tags": [
+    "abstract",
+    "work",
+    "n2"
+   ],
+   "example": {
+    "jp": "改善を続けます。",
+    "en": "We continue to improve."
+   }
+  },
+  {
+   "id": "n_kaikaku",
+   "dictionary": "改革",
+   "kana": "かいかく",
+   "romaji": "kaikaku",
+   "meaning": "reform",
+   "type": "noun",
+   "tags": [
+    "abstract",
+    "society",
+    "n2"
+   ],
+   "example": {
+    "jp": "制度を改革します。",
+    "en": "We reform the system."
+   }
+  },
+  {
+   "id": "n_hatten",
+   "dictionary": "発展",
+   "kana": "はってん",
+   "romaji": "hatten",
+   "meaning": "development; growth",
+   "type": "noun",
+   "tags": [
+    "abstract",
+    "n2"
+   ],
+   "example": {
+    "jp": "経済が発展しています。",
+    "en": "The economy is developing."
+   }
+  },
+  {
+   "id": "n_seichou",
+   "dictionary": "成長",
+   "kana": "せいちょう",
+   "romaji": "seichou",
+   "meaning": "growth",
+   "type": "noun",
+   "tags": [
+    "abstract",
+    "n2"
+   ],
+   "example": {
+    "jp": "子供の成長を喜びます。",
+    "en": "I'm happy about the child's growth."
+   }
+  },
+  {
+   "id": "n_shinpo",
+   "dictionary": "進歩",
+   "kana": "しんぽ",
+   "romaji": "shinpo",
+   "meaning": "progress",
+   "type": "noun",
+   "tags": [
+    "abstract",
+    "n2"
+   ],
+   "example": {
+    "jp": "科学の進歩です。",
+    "en": "It's progress in science."
+   }
+  },
+  {
+   "id": "n_hanei",
+   "dictionary": "繁栄",
+   "kana": "はんえい",
+   "romaji": "hanei",
+   "meaning": "prosperity",
+   "type": "noun",
+   "tags": [
+    "abstract",
+    "n2"
+   ],
+   "example": {
+    "jp": "国の繁栄を願います。",
+    "en": "I wish for the nation's prosperity."
+   }
+  },
+  {
+   "id": "n_suitai",
+   "dictionary": "衰退",
+   "kana": "すいたい",
+   "romaji": "suitai",
+   "meaning": "decline",
+   "type": "noun",
+   "tags": [
+    "abstract",
+    "n2"
+   ],
+   "example": {
+    "jp": "経済が衰退しました。",
+    "en": "The economy declined."
+   }
+  },
+  {
+   "id": "n_genshou",
+   "dictionary": "現象",
+   "kana": "げんしょう",
+   "romaji": "genshou",
+   "meaning": "phenomenon",
+   "type": "noun",
+   "tags": [
+    "abstract",
+    "study",
+    "n2"
+   ],
+   "example": {
+    "jp": "自然現象を観察します。",
+    "en": "I observe natural phenomena."
+   }
+  },
+  {
+   "id": "n_genjitsu",
+   "dictionary": "現実",
+   "kana": "げんじつ",
+   "romaji": "genjitsu",
+   "meaning": "reality",
+   "type": "noun",
+   "tags": [
+    "abstract",
+    "n2"
+   ],
+   "example": {
+    "jp": "現実を受け入れます。",
+    "en": "I accept reality."
+   }
+  },
+  {
+   "id": "n_souzou",
+   "dictionary": "想像",
+   "kana": "そうぞう",
+   "romaji": "souzou",
+   "meaning": "imagination",
+   "type": "noun",
+   "tags": [
+    "abstract",
+    "n2"
+   ],
+   "example": {
+    "jp": "想像が広がります。",
+    "en": "My imagination expands."
+   }
+  },
+  {
+   "id": "n_kanjou",
+   "dictionary": "感情",
+   "kana": "かんじょう",
+   "romaji": "kanjou",
+   "meaning": "emotion",
+   "type": "noun",
+   "tags": [
+    "feelings",
+    "n2"
+   ],
+   "example": {
+    "jp": "感情をコントロールします。",
+    "en": "I control my emotions."
+   }
+  },
+  {
+   "id": "n_kankaku",
+   "dictionary": "感覚",
+   "kana": "かんかく",
+   "romaji": "kankaku",
+   "meaning": "sense; sensation",
+   "type": "noun",
+   "tags": [
+    "feelings",
+    "n2"
+   ],
+   "example": {
+    "jp": "平衡感覚を失いました。",
+    "en": "I lost my sense of balance."
+   }
+  },
+  {
+   "id": "n_chokkan",
+   "dictionary": "直感",
+   "kana": "ちょっかん",
+   "romaji": "chokkan",
+   "meaning": "intuition",
+   "type": "noun",
+   "tags": [
+    "feelings",
+    "n2"
+   ],
+   "example": {
+    "jp": "直感で答えました。",
+    "en": "I answered by intuition."
+   }
+  },
+  {
+   "id": "n_ikari",
+   "dictionary": "怒り",
+   "kana": "いかり",
+   "romaji": "ikari",
+   "meaning": "anger",
+   "type": "noun",
+   "tags": [
+    "feelings",
+    "n2"
+   ],
+   "example": {
+    "jp": "怒りを抑えます。",
+    "en": "I suppress my anger."
+   }
+  },
+  {
+   "id": "n_kanashimi",
+   "dictionary": "悲しみ",
+   "kana": "かなしみ",
+   "romaji": "kanashimi",
+   "meaning": "sadness",
+   "type": "noun",
+   "tags": [
+    "feelings",
+    "n2"
+   ],
+   "example": {
+    "jp": "悲しみを乗り越えます。",
+    "en": "I overcome the sadness."
+   }
+  },
+  {
+   "id": "n_yorokobi",
+   "dictionary": "喜び",
+   "kana": "よろこび",
+   "romaji": "yorokobi",
+   "meaning": "joy",
+   "type": "noun",
+   "tags": [
+    "feelings",
+    "n2"
+   ],
+   "example": {
+    "jp": "喜びを共有します。",
+    "en": "I share the joy."
+   }
+  },
+  {
+   "id": "n_kurou",
+   "dictionary": "苦労",
+   "kana": "くろう",
+   "romaji": "kurou",
+   "meaning": "hardship",
+   "type": "noun",
+   "tags": [
+    "feelings",
+    "n2"
+   ],
+   "example": {
+    "jp": "苦労を乗り越えました。",
+    "en": "I overcame the hardship."
+   }
+  },
+  {
+   "id": "n_nintai",
+   "dictionary": "忍耐",
+   "kana": "にんたい",
+   "romaji": "nintai",
+   "meaning": "perseverance",
+   "type": "noun",
+   "tags": [
+    "feelings",
+    "n2"
+   ],
+   "example": {
+    "jp": "忍耐が必要です。",
+    "en": "Patience is necessary."
+   }
+  },
+  {
+   "id": "n_sonkei",
+   "dictionary": "尊敬",
+   "kana": "そんけい",
+   "romaji": "sonkei",
+   "meaning": "respect",
+   "type": "noun",
+   "tags": [
+    "feelings",
+    "n2"
+   ],
+   "example": {
+    "jp": "先生を尊敬しています。",
+    "en": "I respect my teacher."
+   }
+  },
+  {
+   "id": "n_shinrai",
+   "dictionary": "信頼",
+   "kana": "しんらい",
+   "romaji": "shinrai",
+   "meaning": "trust",
+   "type": "noun",
+   "tags": [
+    "feelings",
+    "social",
+    "n2"
+   ],
+   "example": {
+    "jp": "友達の信頼を得ました。",
+    "en": "I gained my friend's trust."
+   }
+  },
+  {
+   "id": "n_chouwa",
+   "dictionary": "調和",
+   "kana": "ちょうわ",
+   "romaji": "chouwa",
+   "meaning": "harmony",
+   "type": "noun",
+   "tags": [
+    "abstract",
+    "n2"
+   ],
+   "example": {
+    "jp": "自然と調和します。",
+    "en": "I live in harmony with nature."
+   }
+  },
+  {
+   "id": "n_hanzatsu",
+   "dictionary": "繁雑",
+   "kana": "はんざつ",
+   "romaji": "hanzatsu",
+   "meaning": "complexity",
+   "type": "noun",
+   "tags": [
+    "abstract",
+    "n2"
+   ],
+   "example": {
+    "jp": "繁雑な手続きです。",
+    "en": "It's a complicated procedure."
+   }
+  },
+  {
+   "id": "n_chitsujo",
+   "dictionary": "秩序",
+   "kana": "ちつじょ",
+   "romaji": "chitsujo",
+   "meaning": "order",
+   "type": "noun",
+   "tags": [
+    "society",
+    "n2"
+   ],
+   "example": {
+    "jp": "社会の秩序を守ります。",
+    "en": "We maintain social order."
+   }
+  },
+  {
+   "id": "n_byoudou",
+   "dictionary": "平等",
+   "kana": "びょうどう",
+   "romaji": "byoudou",
+   "meaning": "equality",
+   "type": "noun",
+   "tags": [
+    "society",
+    "n2"
+   ],
+   "example": {
+    "jp": "男女平等です。",
+    "en": "There is equality between men and women."
+   }
+  },
+  {
+   "id": "n_kouhei",
+   "dictionary": "公平",
+   "kana": "こうへい",
+   "romaji": "kouhei",
+   "meaning": "fairness",
+   "type": "noun",
+   "tags": [
+    "society",
+    "n2"
+   ],
+   "example": {
+    "jp": "公平に判断します。",
+    "en": "I judge fairly."
+   }
+  },
+  {
+   "id": "n_seigi",
+   "dictionary": "正義",
+   "kana": "せいぎ",
+   "romaji": "seigi",
+   "meaning": "justice",
+   "type": "noun",
+   "tags": [
+    "society",
+    "n2"
+   ],
+   "example": {
+    "jp": "正義を貫きます。",
+    "en": "I stick to justice."
+   }
+  },
+  {
+   "id": "n_doutoku",
+   "dictionary": "道徳",
+   "kana": "どうとく",
+   "romaji": "doutoku",
+   "meaning": "morality",
+   "type": "noun",
+   "tags": [
+    "society",
+    "n2"
+   ],
+   "example": {
+    "jp": "道徳を教えます。",
+    "en": "I teach morality."
+   }
+  },
+  {
+   "id": "n_rinri",
+   "dictionary": "倫理",
+   "kana": "りんり",
+   "romaji": "rinri",
+   "meaning": "ethics",
+   "type": "noun",
+   "tags": [
+    "society",
+    "n2"
+   ],
+   "example": {
+    "jp": "倫理の問題です。",
+    "en": "It's an ethical issue."
+   }
+  },
+  {
+   "id": "n_kokumin",
+   "dictionary": "国民",
+   "kana": "こくみん",
+   "romaji": "kokumin",
+   "meaning": "the people; nationals",
+   "type": "noun",
+   "tags": [
+    "society",
+    "n2"
+   ],
+   "example": {
+    "jp": "国民の暮らしを守ります。",
+    "en": "We protect the people's livelihoods."
+   }
+  },
+  {
+   "id": "n_seifu",
+   "dictionary": "政府",
+   "kana": "せいふ",
+   "romaji": "seifu",
+   "meaning": "government",
+   "type": "noun",
+   "tags": [
+    "society",
+    "n2"
+   ],
+   "example": {
+    "jp": "政府が新しい政策を発表しました。",
+    "en": "The government announced a new policy."
+   }
+  },
+  {
+   "id": "n_seisaku",
+   "dictionary": "政策",
+   "kana": "せいさく",
+   "romaji": "seisaku",
+   "meaning": "policy",
+   "type": "noun",
+   "tags": [
+    "society",
+    "n2"
+   ],
+   "example": {
+    "jp": "教育政策を議論します。",
+    "en": "We discuss education policy."
+   }
+  },
+  {
+   "id": "n_houan",
+   "dictionary": "法案",
+   "kana": "ほうあん",
+   "romaji": "houan",
+   "meaning": "bill; proposed law",
+   "type": "noun",
+   "tags": [
+    "society",
+    "n2"
+   ],
+   "example": {
+    "jp": "法案が可決されました。",
+    "en": "The bill was passed."
+   }
+  },
+  {
+   "id": "n_senkyo",
+   "dictionary": "選挙",
+   "kana": "せんきょ",
+   "romaji": "senkyo",
+   "meaning": "election",
+   "type": "noun",
+   "tags": [
+    "society",
+    "n2"
+   ],
+   "example": {
+    "jp": "選挙に投票しました。",
+    "en": "I voted in the election."
+   }
+  },
+  {
+   "id": "n_touhyou",
+   "dictionary": "投票",
+   "kana": "とうひょう",
+   "romaji": "touhyou",
+   "meaning": "voting",
+   "type": "noun",
+   "tags": [
+    "society",
+    "n2"
+   ],
+   "example": {
+    "jp": "投票率が上がりました。",
+    "en": "Voter turnout rose."
+   }
+  },
+  {
+   "id": "n_shuchou",
+   "dictionary": "主張",
+   "kana": "しゅちょう",
+   "romaji": "shuchou",
+   "meaning": "assertion; claim",
+   "type": "noun",
+   "tags": [
+    "communication",
+    "n2"
+   ],
+   "example": {
+    "jp": "自分の主張を述べます。",
+    "en": "I state my claim."
+   }
+  },
+  {
+   "id": "n_giron",
+   "dictionary": "議論",
+   "kana": "ぎろん",
+   "romaji": "giron",
+   "meaning": "discussion; debate",
+   "type": "noun",
+   "tags": [
+    "communication",
+    "n2"
+   ],
+   "example": {
+    "jp": "活発に議論します。",
+    "en": "We discuss actively."
+   }
+  },
+  {
+   "id": "n_ketsuron",
+   "dictionary": "結論",
+   "kana": "けつろん",
+   "romaji": "ketsuron",
+   "meaning": "conclusion",
+   "type": "noun",
+   "tags": [
+    "communication",
+    "n2"
+   ],
+   "example": {
+    "jp": "結論を出しました。",
+    "en": "We reached a conclusion."
+   }
+  },
+  {
+   "id": "n_settoku",
+   "dictionary": "説得",
+   "kana": "せっとく",
+   "romaji": "settoku",
+   "meaning": "persuasion",
+   "type": "noun",
+   "tags": [
+    "communication",
+    "n2"
+   ],
+   "example": {
+    "jp": "相手を説得しました。",
+    "en": "I persuaded the other party."
+   }
+  },
+  {
+   "id": "n_nattoku",
+   "dictionary": "納得",
+   "kana": "なっとく",
+   "romaji": "nattoku",
+   "meaning": "conviction; acceptance",
+   "type": "noun",
+   "tags": [
+    "communication",
+    "n2"
+   ],
+   "example": {
+    "jp": "説明に納得しました。",
+    "en": "I'm convinced by the explanation."
+   }
+  },
+  {
+   "id": "n_shounin",
+   "dictionary": "承認",
+   "kana": "しょうにん",
+   "romaji": "shounin",
+   "meaning": "approval",
+   "type": "noun",
+   "tags": [
+    "communication",
+    "work",
+    "n2"
+   ],
+   "example": {
+    "jp": "上司の承認を得ます。",
+    "en": "I get my boss's approval."
+   }
+  },
+  {
+   "id": "n_kyoka",
+   "dictionary": "許可",
+   "kana": "きょか",
+   "romaji": "kyoka",
+   "meaning": "permission",
+   "type": "noun",
+   "tags": [
+    "communication",
+    "n2"
+   ],
+   "example": {
+    "jp": "入室を許可されました。",
+    "en": "I was allowed to enter."
+   }
+  },
+  {
+   "id": "n_kinshi",
+   "dictionary": "禁止",
+   "kana": "きんし",
+   "romaji": "kinshi",
+   "meaning": "prohibition",
+   "type": "noun",
+   "tags": [
+    "communication",
+    "society",
+    "n2"
+   ],
+   "example": {
+    "jp": "喫煙は禁止です。",
+    "en": "Smoking is prohibited."
+   }
+  },
+  {
+   "id": "n_kitei",
+   "dictionary": "規定",
+   "kana": "きてい",
+   "romaji": "kitei",
+   "meaning": "stipulation; regulation",
+   "type": "noun",
+   "tags": [
+    "society",
+    "n2"
+   ],
+   "example": {
+    "jp": "規定に従います。",
+    "en": "I follow the regulations."
+   }
+  },
+  {
+   "id": "n_shikou",
+   "dictionary": "施行",
+   "kana": "しこう",
+   "romaji": "shikou",
+   "meaning": "enforcement",
+   "type": "noun",
+   "tags": [
+    "society",
+    "n2"
+   ],
+   "example": {
+    "jp": "新しい法律が施行されました。",
+    "en": "The new law took effect."
+   }
+  },
+  {
+   "id": "n_shishitsu",
+   "dictionary": "資質",
+   "kana": "ししつ",
+   "romaji": "shishitsu",
+   "meaning": "qualities; aptitude",
+   "type": "noun",
+   "tags": [
+    "abstract",
+    "n1"
+   ],
+   "example": {
+    "jp": "彼には指導者の資質があります。",
+    "en": "He has the qualities of a leader."
+   }
+  },
+  {
+   "id": "n_chisei",
+   "dictionary": "知性",
+   "kana": "ちせい",
+   "romaji": "chisei",
+   "meaning": "intellect",
+   "type": "noun",
+   "tags": [
+    "abstract",
+    "n1"
+   ],
+   "example": {
+    "jp": "知性を磨きます。",
+    "en": "I sharpen my intellect."
+   }
+  },
+  {
+   "id": "n_eichi",
+   "dictionary": "叡智",
+   "kana": "えいち",
+   "romaji": "eichi",
+   "meaning": "wisdom",
+   "type": "noun",
+   "tags": [
+    "abstract",
+    "n1"
+   ],
+   "example": {
+    "jp": "先人の叡智を学びます。",
+    "en": "I learn the wisdom of our predecessors."
+   }
+  },
+  {
+   "id": "n_dousatsu",
+   "dictionary": "洞察",
+   "kana": "どうさつ",
+   "romaji": "dousatsu",
+   "meaning": "insight",
+   "type": "noun",
+   "tags": [
+    "abstract",
+    "n1"
+   ],
+   "example": {
+    "jp": "鋭い洞察を持っています。",
+    "en": "He has keen insight."
+   }
+  },
+  {
+   "id": "n_satori",
+   "dictionary": "悟り",
+   "kana": "さとり",
+   "romaji": "satori",
+   "meaning": "enlightenment",
+   "type": "noun",
+   "tags": [
+    "abstract",
+    "n1"
+   ],
+   "example": {
+    "jp": "悟りを開きます。",
+    "en": "To attain enlightenment."
+   }
+  },
+  {
+   "id": "n_mujou",
+   "dictionary": "無常",
+   "kana": "むじょう",
+   "romaji": "mujou",
+   "meaning": "impermanence",
+   "type": "noun",
+   "tags": [
+    "abstract",
+    "n1"
+   ],
+   "example": {
+    "jp": "人生の無常を感じます。",
+    "en": "I feel the impermanence of life."
+   }
+  },
+  {
+   "id": "n_shukumei",
+   "dictionary": "宿命",
+   "kana": "しゅくめい",
+   "romaji": "shukumei",
+   "meaning": "fate; destiny",
+   "type": "noun",
+   "tags": [
+    "abstract",
+    "n1"
+   ],
+   "example": {
+    "jp": "宿命を受け入れます。",
+    "en": "I accept my fate."
+   }
+  },
+  {
+   "id": "n_unmei",
+   "dictionary": "運命",
+   "kana": "うんめい",
+   "romaji": "unmei",
+   "meaning": "destiny",
+   "type": "noun",
+   "tags": [
+    "abstract",
+    "n1"
+   ],
+   "example": {
+    "jp": "運命の出会いでした。",
+    "en": "It was a fateful encounter."
+   }
+  },
+  {
+   "id": "n_zetsubou",
+   "dictionary": "絶望",
+   "kana": "ぜつぼう",
+   "romaji": "zetsubou",
+   "meaning": "despair",
+   "type": "noun",
+   "tags": [
+    "feelings",
+    "n1"
+   ],
+   "example": {
+    "jp": "絶望に打ちひしがれました。",
+    "en": "I was overcome by despair."
+   }
+  },
+  {
+   "id": "n_kattou",
+   "dictionary": "葛藤",
+   "kana": "かっとう",
+   "romaji": "kattou",
+   "meaning": "conflict; struggle",
+   "type": "noun",
+   "tags": [
+    "feelings",
+    "n1"
+   ],
+   "example": {
+    "jp": "心の葛藤があります。",
+    "en": "I have an inner conflict."
+   }
+  },
+  {
+   "id": "n_dousatsuryoku",
+   "dictionary": "洞察力",
+   "kana": "どうさつりょく",
+   "romaji": "dousatsuryoku",
+   "meaning": "insight; perception",
+   "type": "noun",
+   "tags": [
+    "abstract",
+    "n1"
+   ],
+   "example": {
+    "jp": "洞察力が鋭いです。",
+    "en": "He has sharp insight."
+   }
+  },
+  {
+   "id": "n_rinen",
+   "dictionary": "理念",
+   "kana": "りねん",
+   "romaji": "rinen",
+   "meaning": "principle; ideal",
+   "type": "noun",
+   "tags": [
+    "abstract",
+    "n1"
+   ],
+   "example": {
+    "jp": "理念を掲げます。",
+    "en": "We uphold our principles."
+   }
+  },
+  {
+   "id": "n_shinjou",
+   "dictionary": "信条",
+   "kana": "しんじょう",
+   "romaji": "shinjou",
+   "meaning": "creed; belief",
+   "type": "noun",
+   "tags": [
+    "abstract",
+    "n1"
+   ],
+   "example": {
+    "jp": "これが私の信条です。",
+    "en": "This is my creed."
+   }
+  },
+  {
+   "id": "n_shinnen",
+   "dictionary": "信念",
+   "kana": "しんねん",
+   "romaji": "shinnen",
+   "meaning": "conviction",
+   "type": "noun",
+   "tags": [
+    "abstract",
+    "n1"
+   ],
+   "example": {
+    "jp": "信念を曲げません。",
+    "en": "I won't bend my convictions."
+   }
+  },
+  {
+   "id": "n_bonnou",
+   "dictionary": "煩悩",
+   "kana": "ぼんのう",
+   "romaji": "bonnou",
+   "meaning": "worldly desires",
+   "type": "noun",
+   "tags": [
+    "abstract",
+    "n1"
+   ],
+   "example": {
+    "jp": "煩悩を断ち切ります。",
+    "en": "To cut off worldly desires."
+   }
+  },
+  {
+   "id": "n_joudo",
+   "dictionary": "浄土",
+   "kana": "じょうど",
+   "romaji": "joudo",
+   "meaning": "pure land",
+   "type": "noun",
+   "tags": [
+    "abstract",
+    "n1"
+   ],
+   "example": {
+    "jp": "浄土を願います。",
+    "en": "To pray for the pure land."
+   }
+  },
+  {
+   "id": "n_yuukyuu",
+   "dictionary": "悠久",
+   "kana": "ゆうきゅう",
+   "romaji": "yuukyuu",
+   "meaning": "eternity",
+   "type": "noun",
+   "tags": [
+    "abstract",
+    "n1"
+   ],
+   "example": {
+    "jp": "悠久の時を感じます。",
+    "en": "I feel the eternal passage of time."
+   }
+  },
+  {
+   "id": "n_eizoku",
+   "dictionary": "永続",
+   "kana": "えいぞく",
+   "romaji": "eizoku",
+   "meaning": "perpetuity",
+   "type": "noun",
+   "tags": [
+    "abstract",
+    "n1"
+   ],
+   "example": {
+    "jp": "平和の永続を願います。",
+    "en": "We hope for lasting peace."
+   }
+  },
+  {
+   "id": "n_hensen",
+   "dictionary": "変遷",
+   "kana": "へんせん",
+   "romaji": "hensen",
+   "meaning": "transition; changes",
+   "type": "noun",
+   "tags": [
+    "abstract",
+    "n1"
+   ],
+   "example": {
+    "jp": "社会の変遷をたどります。",
+    "en": "We trace the changes in society."
+   }
+  },
+  {
+   "id": "n_henkaku",
+   "dictionary": "変革",
+   "kana": "へんかく",
+   "romaji": "henkaku",
+   "meaning": "transformation",
+   "type": "noun",
+   "tags": [
+    "abstract",
+    "n1"
+   ],
+   "example": {
+    "jp": "大きな変革が必要です。",
+    "en": "A big transformation is needed."
+   }
+  },
+  {
+   "id": "n_tenkan",
+   "dictionary": "転換",
+   "kana": "てんかん",
+   "romaji": "tenkan",
+   "meaning": "conversion; switch",
+   "type": "noun",
+   "tags": [
+    "abstract",
+    "n1"
+   ],
+   "example": {
+    "jp": "方針を転換しました。",
+    "en": "We switched the policy."
+   }
+  },
+  {
+   "id": "n_suii",
+   "dictionary": "推移",
+   "kana": "すいい",
+   "romaji": "suii",
+   "meaning": "transition; course",
+   "type": "noun",
+   "tags": [
+    "abstract",
+    "n1"
+   ],
+   "example": {
+    "jp": "情勢の推移を見守ります。",
+    "en": "We watch the course of events."
+   }
+  },
+  {
+   "id": "n_hakyuu",
+   "dictionary": "波及",
+   "kana": "はきゅう",
+   "romaji": "hakyuu",
+   "meaning": "spread; influence",
+   "type": "noun",
+   "tags": [
+    "abstract",
+    "n1"
+   ],
+   "example": {
+    "jp": "影響が波及しました。",
+    "en": "The influence spread."
+   }
+  },
+  {
+   "id": "n_shintou",
+   "dictionary": "浸透",
+   "kana": "しんとう",
+   "romaji": "shintou",
+   "meaning": "permeation; penetration",
+   "type": "noun",
+   "tags": [
+    "abstract",
+    "n1"
+   ],
+   "example": {
+    "jp": "文化が浸透します。",
+    "en": "The culture spreads."
+   }
+  },
+  {
+   "id": "n_ryuusei",
+   "dictionary": "隆盛",
+   "kana": "りゅうせい",
+   "romaji": "ryuusei",
+   "meaning": "prosperity",
+   "type": "noun",
+   "tags": [
+    "abstract",
+    "n1"
+   ],
+   "example": {
+    "jp": "国の隆盛を願います。",
+    "en": "We hope for the nation's prosperity."
+   }
+  },
+  {
+   "id": "n_chouraku",
+   "dictionary": "凋落",
+   "kana": "ちょうらく",
+   "romaji": "chouraku",
+   "meaning": "decline; downfall",
+   "type": "noun",
+   "tags": [
+    "abstract",
+    "n1"
+   ],
+   "example": {
+    "jp": "栄光の凋落を見ました。",
+    "en": "We witnessed the decline of glory."
+   }
+  },
+  {
+   "id": "n_eikou",
+   "dictionary": "栄光",
+   "kana": "えいこう",
+   "romaji": "eikou",
+   "meaning": "glory",
+   "type": "noun",
+   "tags": [
+    "abstract",
+    "n1"
+   ],
+   "example": {
+    "jp": "栄光を勝ち取りました。",
+    "en": "We won glory."
+   }
+  },
+  {
+   "id": "n_kizuna",
+   "dictionary": "絆",
+   "kana": "きずな",
+   "romaji": "kizuna",
+   "meaning": "bond; ties",
+   "type": "noun",
+   "tags": [
+    "abstract",
+    "n1"
+   ],
+   "example": {
+    "jp": "家族の絆を大切にします。",
+    "en": "I value family bonds."
+   }
+  },
+  {
+   "id": "n_kessoku",
+   "dictionary": "結束",
+   "kana": "けっそく",
+   "romaji": "kessoku",
+   "meaning": "unity",
+   "type": "noun",
+   "tags": [
+    "abstract",
+    "n1"
+   ],
+   "example": {
+    "jp": "チームの結束を固めます。",
+    "en": "We strengthen team unity."
+   }
+  },
+  {
+   "id": "n_rentai",
+   "dictionary": "連帯",
+   "kana": "れんたい",
+   "romaji": "rentai",
+   "meaning": "solidarity",
+   "type": "noun",
+   "tags": [
+    "abstract",
+    "n1"
+   ],
+   "example": {
+    "jp": "国民の連帯を示します。",
+    "en": "We show national solidarity."
+   }
+  },
+  {
+   "id": "n_nagusame",
+   "dictionary": "慰め",
+   "kana": "なぐさめ",
+   "romaji": "nagusame",
+   "meaning": "comfort",
+   "type": "noun",
+   "tags": [
+    "feelings",
+    "n1"
+   ],
+   "example": {
+    "jp": "友人の言葉が慰めになりました。",
+    "en": "My friend's words comforted me."
+   }
+  },
+  {
+   "id": "n_itawari",
+   "dictionary": "労り",
+   "kana": "いたわり",
+   "romaji": "itawari",
+   "meaning": "consideration; sympathy",
+   "type": "noun",
+   "tags": [
+    "feelings",
+    "n1"
+   ],
+   "example": {
+    "jp": "労りの気持ちを持ちます。",
+    "en": "I have a considerate heart."
+   }
+  },
+  {
+   "id": "n_nasake",
+   "dictionary": "情け",
+   "kana": "なさけ",
+   "romaji": "nasake",
+   "meaning": "compassion; mercy",
+   "type": "noun",
+   "tags": [
+    "feelings",
+    "n1"
+   ],
+   "example": {
+    "jp": "情けをかけます。",
+    "en": "To show mercy."
+   }
+  },
+  {
+   "id": "n_awaremi",
+   "dictionary": "哀れみ",
+   "kana": "あわれみ",
+   "romaji": "awaremi",
+   "meaning": "pity",
+   "type": "noun",
+   "tags": [
+    "feelings",
+    "n1"
+   ],
+   "example": {
+    "jp": "哀れみの目で見ます。",
+    "en": "To look with pity."
+   }
+  },
+  {
+   "id": "n_gouman",
+   "dictionary": "傲慢",
+   "kana": "ごうまん",
+   "romaji": "gouman",
+   "meaning": "arrogance",
+   "type": "noun",
+   "tags": [
+    "feelings",
+    "n1"
+   ],
+   "example": {
+    "jp": "傲慢な態度です。",
+    "en": "It's an arrogant attitude."
+   }
+  },
+  {
+   "id": "n_sennen",
+   "dictionary": "専念",
+   "kana": "せんねん",
+   "romaji": "sennen",
+   "meaning": "devotion",
+   "type": "noun",
+   "tags": [
+    "abstract",
+    "n1"
+   ],
+   "example": {
+    "jp": "研究に専念します。",
+    "en": "I devote myself to research."
+   }
+  },
+  {
+   "id": "n_kenshin",
+   "dictionary": "献身",
+   "kana": "けんしん",
+   "romaji": "kenshin",
+   "meaning": "devotion; dedication",
+   "type": "noun",
+   "tags": [
+    "abstract",
+    "n1"
+   ],
+   "example": {
+    "jp": "献身的に働きます。",
+    "en": "I work devotedly."
+   }
+  },
+  {
+   "id": "n_shoujin",
+   "dictionary": "精進",
+   "kana": "しょうじん",
+   "romaji": "shoujin",
+   "meaning": "diligence; devotion",
+   "type": "noun",
+   "tags": [
+    "abstract",
+    "n1"
+   ],
+   "example": {
+    "jp": "修行に精進します。",
+    "en": "I devote myself to training."
+   }
+  },
+  {
+   "id": "n_sessei",
+   "dictionary": "節制",
+   "kana": "せっせい",
+   "romaji": "sessei",
+   "meaning": "moderation",
+   "type": "noun",
+   "tags": [
+    "abstract",
+    "n1"
+   ],
+   "example": {
+    "jp": "食事を節制します。",
+    "en": "I moderate my diet."
+   }
+  },
+  {
+   "id": "n_kinyoku",
+   "dictionary": "禁欲",
+   "kana": "きんよく",
+   "romaji": "kinyoku",
+   "meaning": "abstinence",
+   "type": "noun",
+   "tags": [
+    "abstract",
+    "n1"
+   ],
+   "example": {
+    "jp": "禁欲的な生活です。",
+    "en": "It's an abstinent life."
+   }
+  },
+  {
+   "id": "n_seiren",
+   "dictionary": "清廉",
+   "kana": "せいれん",
+   "romaji": "seiren",
+   "meaning": "uprightness",
+   "type": "noun",
+   "tags": [
+    "abstract",
+    "n1"
+   ],
+   "example": {
+    "jp": "清廉な人柄です。",
+    "en": "He is an upright person."
+   }
+  },
+  {
+   "id": "n_keppaku",
+   "dictionary": "潔白",
+   "kana": "けっぱく",
+   "romaji": "keppaku",
+   "meaning": "innocence",
+   "type": "noun",
+   "tags": [
+    "abstract",
+    "n1"
+   ],
+   "example": {
+    "jp": "潔白を証明します。",
+    "en": "I prove my innocence."
+   }
+  },
+  {
+   "id": "n_benmei",
+   "dictionary": "弁明",
+   "kana": "べんめい",
+   "romaji": "benmei",
+   "meaning": "explanation; defense",
+   "type": "noun",
+   "tags": [
+    "communication",
+    "n1"
+   ],
+   "example": {
+    "jp": "自らの弁明をします。",
+    "en": "I give my own explanation."
+   }
+  },
+  {
+   "id": "n_genkyuu",
+   "dictionary": "言及",
+   "kana": "げんきゅう",
+   "romaji": "genkyuu",
+   "meaning": "reference; mention",
+   "type": "noun",
+   "tags": [
+    "communication",
+    "n1"
+   ],
+   "example": {
+    "jp": "その問題に言及しました。",
+    "en": "He mentioned that issue."
+   }
+  },
+  {
+   "id": "n_teishou",
+   "dictionary": "提唱",
+   "kana": "ていしょう",
+   "romaji": "teishou",
+   "meaning": "advocacy",
+   "type": "noun",
+   "tags": [
+    "communication",
+    "n1"
+   ],
+   "example": {
+    "jp": "新しい理論を提唱します。",
+    "en": "He advocates a new theory."
+   }
+  },
+  {
+   "id": "n_teigen",
+   "dictionary": "提言",
+   "kana": "ていげん",
+   "romaji": "teigen",
+   "meaning": "proposal; recommendation",
+   "type": "noun",
+   "tags": [
+    "communication",
+    "n1"
+   ],
+   "example": {
+    "jp": "改革を提言しました。",
+    "en": "I proposed reforms."
+   }
+  },
+  {
+   "id": "n_shisa",
+   "dictionary": "示唆",
+   "kana": "しさ",
+   "romaji": "shisa",
+   "meaning": "suggestion; implication",
+   "type": "noun",
+   "tags": [
+    "communication",
+    "n1"
+   ],
+   "example": {
+    "jp": "重要な示唆を与えます。",
+    "en": "It gives an important implication."
+   }
+  }
+ ]
+}
