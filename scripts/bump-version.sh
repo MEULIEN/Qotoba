@@ -21,6 +21,6 @@ next="v$(( ${current#v} + 1 ))"
 echo "Bumping build stamp: ${current} -> ${next}"
 
 sed -i "s/const BUILD_ID = '${current}'/const BUILD_ID = '${next}'/" sw.js
-sed -i "s/?v=${current}/?v=${next}/g" index.html manifest.json
+sed -i "s/?v=${current#v}/?v=${next#v}/g" index.html manifest.json
 
 echo "Done. Commit these changes and push — users update without a manual cache clear or reinstall."

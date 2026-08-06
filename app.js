@@ -45,10 +45,27 @@ const EXTENSIVE_FORMS_PER_WORD = 4; // distinct forms drilled per word in an ext
 const TEST_QUESTIONS = 10;           // questions drawn per test from previously seen items
 const THEME_LIGHT = 'light';
 const THEME_DARK = 'dark';
-const BG_PRESETS = [
-  '#FAF8F2', '#FFFDF6', '#F4E9D8', '#E8EDF2', '#F7EFE8',
-  '#191C20', '#232A2F', '#2B2326', '#1F3352', '#3A2E1E'
-];
+// Color choices always follow the theme: light backgrounds in light theme,
+// dark backgrounds in dark theme — never a mismatch.
+const BG_PRESETS_LIGHT = ['#FAF8F2', '#FFFDF6', '#F4E9D8', '#E8EDF2', '#F7EFE8'];
+const BG_PRESETS_DARK = ['#191C20', '#232A2F', '#2B2326', '#1F3352', '#3A2E1E'];
+function bgPresetsFor(theme) { return theme === THEME_DARK ? BG_PRESETS_DARK : BG_PRESETS_LIGHT; }
+
+/* ---------------- exam ---------------- */
+const EXAM_QUESTIONS = 10;           // questions per exam
+const EXAM_SECONDS_PER_QUESTION = 20; // used for the estimated-duration notice
+
+/* ---------------- word categories ----------------
+   Coarse word types shown at the top of the Topics selector; topic tags
+   (daily, animals, business, …) refine within them. */
+const CATEGORY_IDS = ['verb', 'adverb', 'i-adjective', 'na-adjective', 'noun'];
+const CATEGORY_LABELS = {
+  verb: 'Verbs',
+  adverb: 'Adverbs',
+  'i-adjective': 'い-adjectives',
+  'na-adjective': 'な-adjectives',
+  noun: 'Nouns'
+};
 
 /* ---------------- state ---------------- */
 const STATE = {
@@ -66,6 +83,8 @@ const STATE = {
   view: 'loading',
   viewParams: {},
   session: null,
+  sessionOrigin: null,
+  examLevel: null,
   libraryTab: 'all',
   particleTab: 'all',
   directionsTab: 'all',
@@ -184,6 +203,18 @@ class DataRegistry {
    divider lines and dim tints are recomputed so every theme stays
    readable without changing the rest of the design. */
 function defaultAnchorFor(theme) { return theme === THEME_DARK ? '#191C20' : '#FAF8F2'; }
+// Allowed background lightness window per theme, so a light color can never
+// be picked under dark theme (or vice versa).
+function themeRange(theme) { return theme === THEME_DARK ? { min: 0, max: 45 } : { min: 55, max: 100 }; }
+// Clamp a hex color's lightness into the window allowed by the theme.
+function coerceThemeColor(hex, theme) {
+  const c = hexToRgb(hex);
+  const hsl = rgbToHsl(c.r, c.g, c.b);
+  const range = themeRange(theme);
+  const l = Math.min(range.max / 100, Math.max(range.min / 100, hsl.l));
+  if (l === hsl.l) return hex;
+  return hslToHex(hsl.h, hsl.s, l);
+}
 function hexToRgb(hex) {
   const h = hex.replace('#', '');
   return { r: parseInt(h.slice(0, 2), 16), g: parseInt(h.slice(2, 4), 16), b: parseInt(h.slice(4, 6), 16) };
@@ -295,6 +326,7 @@ class Settings {
     this.DEFAULTS = {
       levels: ['n5', 'n4', 'n3', 'n2', 'n1'],
       topics: [],
+      categories: [...CATEGORY_IDS],
       sessionMode: SESSION_MODE_QUICK,
       theme: THEME_LIGHT,
       background: null,
@@ -303,6 +335,7 @@ class Settings {
     this.value = {
       levels: [...this.DEFAULTS.levels],
       topics: [],
+      categories: [...this.DEFAULTS.categories],
       sessionMode: this.DEFAULTS.sessionMode,
       theme: this.DEFAULTS.theme,
       background: null,
@@ -315,9 +348,15 @@ class Settings {
       if (raw) {
         if (Array.isArray(raw.levels)) this.value.levels = raw.levels;
         if (Array.isArray(raw.topics)) this.value.topics = raw.topics;
+        if (Array.isArray(raw.categories)) {
+          this.value.categories = raw.categories.filter(c => CATEGORY_IDS.includes(c));
+          if (this.value.categories.length === 0) this.value.categories = [...CATEGORY_IDS];
+        }
         if (raw.sessionMode === SESSION_MODE_EXTENSIVE || raw.sessionMode === SESSION_MODE_QUICK) this.value.sessionMode = raw.sessionMode;
         if (raw.theme === THEME_DARK || raw.theme === THEME_LIGHT) this.value.theme = raw.theme;
-        if (typeof raw.background === 'string' && /^#[0-9a-fA-F]{6}$/.test(raw.background)) this.value.background = raw.background;
+        if (typeof raw.background === 'string' && /^#[0-9a-fA-F]{6}$/.test(raw.background)) {
+          this.value.background = coerceThemeColor(raw.background, this.value.theme);
+        }
         if (typeof raw.shade === 'number' && raw.shade >= 0 && raw.shade <= 100) this.value.shade = raw.shade;
       }
     } catch (e) { /* keep defaults */ }
@@ -327,6 +366,7 @@ class Settings {
     this.value = {
       levels: [...this.DEFAULTS.levels],
       topics: [],
+      categories: [...this.DEFAULTS.categories],
       sessionMode: this.DEFAULTS.sessionMode,
       theme: this.DEFAULTS.theme,
       background: null,
@@ -352,14 +392,15 @@ class Settings {
   }
   setBackground(hex) {
     if (!/^#[0-9a-fA-F]{6}$/.test(hex)) return;
-    this.value.background = hex;
+    this.value.background = coerceThemeColor(hex, this.value.theme);
     this.value.shade = null;
     this.save();
     this.applyTheme();
   }
   setShade(shade) {
     if (this.value.background == null) this.value.background = defaultAnchorFor(this.value.theme);
-    this.value.shade = Math.max(0, Math.min(100, Math.round(Number(shade) || 50)));
+    const range = themeRange(this.value.theme);
+    this.value.shade = Math.max(range.min, Math.min(range.max, Math.round(Number(shade) || 50)));
     this.save();
     this.applyTheme();
   }
@@ -375,9 +416,19 @@ class Settings {
     else this.value.levels.push(level);
     this.save();
   }
+  toggleCategory(cat) {
+    if (!CATEGORY_IDS.includes(cat)) return;
+    if (!Array.isArray(this.value.categories)) this.value.categories = [...CATEGORY_IDS];
+    const i = this.value.categories.indexOf(cat);
+    if (i >= 0) this.value.categories.splice(i, 1);
+    else this.value.categories.push(cat);
+    this.save();
+  }
   wordEnabled(word) {
     const level = registry.levelOf(word);
     if (level && !this.value.levels.includes(level)) return false;
+    const cats = this.value.categories || CATEGORY_IDS;
+    if (cats.length && !cats.includes(word.type)) return false;
     if (this.value.topics.length === 0) return true;
     return registry.topicsOf(word).some(t => this.value.topics.includes(t));
   }
@@ -577,6 +628,18 @@ function answerAccepted(word, formName, typed) {
   return candidates.some(c => normalizeAnswer(c) === normalized);
 }
 
+function meaningAccepted(word, direction, typed) {
+  const normalized = normalizeAnswer(typed);
+  if (!normalized) return false;
+  if (direction === 'en2jp') {
+    return [word.dictionary, word.kana, (word.romaji || '').toLowerCase()]
+      .filter(Boolean)
+      .some(c => normalizeAnswer(c) === normalized);
+  }
+  const chunks = String(word.meaning || '').split(/[;,，、]/).map(c => normalizeAnswer(c)).filter(Boolean);
+  return chunks.some(c => c === normalized || (normalized.length >= 3 && (c.includes(normalized) || normalized.includes(c))));
+}
+
 function exampleForForm(word, formName) {
   const ex = word.example || {};
   if (ex.form_en && ex.form_en[formName]) return ex.form_en[formName];
@@ -742,6 +805,66 @@ class TestSession {
   finish() { /* scoreboard is recorded separately in finishSession */ }
 }
 
+/* ============================================================
+   ExamSession — a timed, JLPT-style, unskippable exam. Like a
+   test it never touches the SRS boxes, streak, or daily flags;
+   unlike a test there is no reveal/skip and no back button, so
+   once started it runs to the end. Results are recorded into
+   the same scoreboard, tagged as exams.
+   ============================================================ */
+class ExamSession {
+  constructor(queue, level) {
+    this.kind = 'exam';
+    this.level = level || null;
+    this.queue = queue;
+    this.index = 0;
+    this.stats = { correct: 0, total: 0, newCount: 0 };
+    this._answered = null;
+    this._revealed = false;
+    this._choicesCache = {};
+  }
+  currentCard() { return this.queue[this.index]; }
+  advance() {
+    this.index += 1;
+    this._answered = null;
+    this._revealed = false;
+  }
+  finish() { /* scoreboard is recorded separately in finishSession */ }
+}
+
+function buildMeaningChoices(word) {
+  const correct = String(word.meaning || '');
+  const seen = new Set([correct]);
+  const distractors = [];
+  for (const w of shuffle(registry.allWords)) {
+    const m = String(w.meaning || '');
+    if (w.id === word.id || seen.has(m)) continue;
+    seen.add(m);
+    distractors.push(m);
+    if (distractors.length >= 3) break;
+  }
+  return shuffle([correct, ...distractors]);
+}
+
+function buildExamSession(level) {
+  const pool = registry.enabledWords().filter(w => registry.levelOf(w) === level);
+  if (pool.length === 0) return null;
+  const conjugable = pool.filter(w => registry.isVerb(w) || registry.isAdjective(w));
+  const nRec = Math.min(5, conjugable.length);
+  const nMean = Math.min(EXAM_QUESTIONS - nRec, pool.length);
+  const queue = [];
+  for (const word of sample(conjugable, nRec)) {
+    const forms = registry.formsFor(word).map(f => f.name_en);
+    const formName = forms.find(f => f !== 'dictionary') || 'dictionary';
+    queue.push({ step: 'quiz-recognition', word, formName, correct: conjugate(word, formName), isExam: true });
+  }
+  for (const word of sample(pool, nMean)) {
+    queue.push({ step: 'quiz-meaning', word, direction: 'jp2en', correct: String(word.meaning || ''), isExam: true });
+  }
+  if (queue.length === 0) return null;
+  return new ExamSession(shuffle(queue), level);
+}
+
 function countSeenItems() {
   const enabledIds = registry.enabledIdSet();
   let n = 0;
@@ -793,7 +916,9 @@ function recordTestSession() {
     date: todayStr(),
     questions: s.stats.total,
     correct: s.stats.correct,
-    accuracy: acc
+    accuracy: acc,
+    type: s.kind === 'exam' ? 'exam' : 'test',
+    level: s.level || null
   });
   STATE.testStats.history = STATE.testStats.history.slice(0, 20);
   localStorage.setItem(LS_TEST, JSON.stringify(STATE.testStats));
@@ -914,6 +1039,8 @@ function render() {
     case 'session': html = renderSession(); break;
     case 'summary': html = renderSummary(); break;
     case 'test': html = renderTest(); break;
+    case 'examSetup': html = renderExamSetup(); break;
+    case 'exam': html = renderExam(); break;
     case 'scoreboard': html = renderScoreboard(); break;
     default: html = '<div class="screen"><p>Loading…</p></div>';
   }
@@ -923,7 +1050,7 @@ function render() {
 
 function topbar(title, backView) {
   return `<div class="topbar">
-    ${backView ? `<button class="back" data-action="go" data-view="${backView}">‹ Back</button>` : '<span class="spacer"></span>'}
+    ${backView ? `<button class="back" data-action="back" data-back-view="${backView}">‹ Back</button>` : '<span class="spacer"></span>'}
     <span class="title">${escapeHtml(title)}</span>
     <span class="spacer"></span>
   </div>`;
@@ -943,13 +1070,16 @@ function renderHome() {
   const dots = Array.from({ length: 7 }, (_, i) => `<span class="dot ${i < Math.min(streak, 7) ? 'filled' : ''}"></span>`).join('');
   const modeLabel = settings.value.sessionMode === SESSION_MODE_EXTENSIVE ? 'Extensive' : 'Quick';
   const refButtons = [
+    ['library', '📕', 'Verbs', 'verb'],
+    ['library', '📘', 'Adjectives', 'adjective'],
+    ['library', '📗', 'Adverbs', 'adverb'],
     ['rules', '📐', 'Rules'],
     ['particles', '🔤', 'Particles'],
     ['directions', '🧭', 'Directions'],
     ['demonstratives', '👉', 'Kosoado'],
     ['radicals', '🌱', 'Radicals']
-  ].map(([view, icon, label]) =>
-    `<button class="link-btn ghost" data-action="go" data-view="${view}">${icon} ${label}</button>`).join('');
+  ].map(([view, icon, label, cat]) =>
+    `<button class="link-btn ghost" data-action="go" data-view="${view}" ${cat ? `data-cat="${cat}"` : ''}>${icon} ${label}</button>`).join('');
   return `<div class="screen">
     <div class="hero">
       <div class="eyebrow">Qotoba · 言葉</div>
@@ -1012,6 +1142,7 @@ function renderLibrary() {
   const filtered = enabled.filter(w => {
     if (tab === 'all') return true;
     if (tab === 'verb') return w.type === 'verb';
+    if (tab === 'adjective') return w.type === 'i-adjective' || w.type === 'na-adjective';
     return w.type === tab;
   });
   const rows = filtered.map(w => {
@@ -1039,6 +1170,7 @@ function renderLibrary() {
     <div class="tab-row">
       <button class="tab ${tab === 'all' ? 'active' : ''}" data-action="tab" data-tab="all">All</button>
       <button class="tab ${tab === 'verb' ? 'active' : ''}" data-action="tab" data-tab="verb">Verbs</button>
+      <button class="tab ${tab === 'adjective' ? 'active' : ''}" data-action="tab" data-tab="adjective">Adjectives</button>
       <button class="tab ${tab === 'i-adjective' ? 'active' : ''}" data-action="tab" data-tab="i-adjective">い-adj</button>
       <button class="tab ${tab === 'na-adjective' ? 'active' : ''}" data-action="tab" data-tab="na-adjective">な-adj</button>
       <button class="tab ${tab === 'adverb' ? 'active' : ''}" data-action="tab" data-tab="adverb">Adverbs</button>
@@ -1395,6 +1527,12 @@ function renderSettings() {
     ${topicOptions}
   </select>`;
 
+  const categories = settings.value.categories || CATEGORY_IDS;
+  const categoryChips = CATEGORY_IDS.map(cat =>
+    `<button class="chip ${categories.includes(cat) ? 'on' : ''}" data-action="toggle-category" data-cat="${cat}">
+      <span class="chip-label">${CATEGORY_LABELS[cat]}</span>
+    </button>`).join('');
+
   const enabledCount = registry.enabledWords().length;
   const totalCount = registry.allWords.length;
 
@@ -1404,7 +1542,8 @@ function renderSettings() {
   const anchor = settings.value.background || defaultAnchorFor(theme);
   const naturalL = Math.round(rgbToHsl(hexToRgb(anchor).r, hexToRgb(anchor).g, hexToRgb(anchor).b).l * 100);
   const shade = settings.value.shade == null ? naturalL : settings.value.shade;
-  const swatches = BG_PRESETS.map(c =>
+  const range = themeRange(theme);
+  const swatches = bgPresetsFor(theme).map(c =>
     `<button class="swatch ${bg.toLowerCase() === c.toLowerCase() ? 'on' : ''}" data-action="set-background" data-color="${c}" style="background:${c}" title="${c}" aria-label="${c}"></button>`
   ).join('');
 
@@ -1416,7 +1555,10 @@ function renderSettings() {
     </div>
     <div class="eyebrow">Levels</div>
     <div class="chip-row">${levelChips}</div>
-    <div class="eyebrow" style="margin-top:14px">Topics</div>
+    <div class="eyebrow" style="margin-top:14px">Categories</div>
+    <p class="settings-hint">Pick which word types are in scope.</p>
+    <div class="chip-row">${categoryChips}</div>
+    <div class="eyebrow" style="margin-top:14px">Word topics</div>
     <p class="settings-hint">Select one or more topics (hold Ctrl/Cmd and click). Leave empty to include every topic.</p>
     ${topicSelect}
 
@@ -1431,7 +1573,7 @@ function renderSettings() {
 
     <div class="settings-section">
       <div class="eyebrow">Appearance</div>
-      <p class="settings-hint">Light or dark base, plus a fine-tuned background. Dark defaults to a soft charcoal — never harsh pure black.</p>
+      <p class="settings-hint">Background colors follow the theme — light colors in light theme, dark colors in dark theme. Dark defaults to a soft charcoal, never harsh pure black.</p>
       <div class="chip-row">
         <button class="chip ${theme === THEME_LIGHT ? 'on' : ''}" data-action="set-theme" data-theme="${THEME_LIGHT}">Light</button>
         <button class="chip ${theme === THEME_DARK ? 'on' : ''}" data-action="set-theme" data-theme="${THEME_DARK}">Dark</button>
@@ -1444,7 +1586,7 @@ function renderSettings() {
       </div>
       <div class="shade-control">
         <span class="shade-label">Fine-tune brightness</span>
-        <input type="range" id="bg-shade" min="0" max="100" value="${shade}" aria-label="Background brightness">
+        <input type="range" id="bg-shade" min="${range.min}" max="${range.max}" value="${shade}" aria-label="Background brightness">
       </div>
       <div class="action-row" style="margin-top:12px">
         <button class="btn ghost" data-action="reset-background">Reset colors</button>
@@ -1482,7 +1624,7 @@ function renderSession() {
   else if (card.step === 'quiz-meaning') body = renderMeaningCard(card);
 
   return `<div class="screen">
-    ${topbar(title, 'home')}
+    ${topbar(title, STATE.sessionOrigin || 'home')}
     <div class="progress-track"><div class="progress-fill" style="width:${sessionProgressPct()}%"></div></div>
     <div class="card-stage">${body}</div>
   </div>`;
@@ -1618,7 +1760,42 @@ function renderRecallCard(card) {
 function renderMeaningCard(card) {
   const { word, direction } = card;
   const revealed = STATE.session._revealed;
+  const answered = STATE.session._answered;
+  const isTest = STATE.session.kind === 'test';
   const promptIsJp = direction === 'jp2en';
+
+  const inputHtml = (revealed || answered) ? '' : `
+    <input type="text" class="recall-input" id="meaning-input" placeholder="${promptIsJp ? 'Type the English meaning' : 'Type the Japanese word'}" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false">
+    <div class="action-row" style="margin-top:12px">
+      <button class="btn primary" data-action="check-meaning">Check</button>
+      <button class="btn ghost" data-action="reveal">Show answer</button>
+    </div>`;
+
+  let feedbackHtml = '';
+  if (revealed && !answered) {
+    feedbackHtml = isTest ? `
+      <div class="answer-reveal">
+        <div class="label">Answer</div>
+        <div class="result">${promptIsJp ? escapeHtml(word.meaning) : escapeHtml(word.dictionary) + ' — ' + escapeHtml(word.kana)}</div>
+      </div>
+      <div class="action-row"><button class="btn primary" data-action="advance">Next →</button></div>` : `
+      <div class="answer-reveal">
+        <div class="label">Answer</div>
+        <div class="result">${promptIsJp ? escapeHtml(word.meaning) : escapeHtml(word.dictionary) + ' — ' + escapeHtml(word.kana)}</div>
+      </div>
+      <div class="action-row">
+        <button class="btn again" data-action="grade-meaning" data-grade="again">Missed it</button>
+        <button class="btn good" data-action="grade-meaning" data-grade="good">Got it</button>
+      </div>`;
+  } else if (answered) {
+    feedbackHtml = `
+      <div class="answer-reveal">
+        <div class="label ${answered.correct ? '' : 'wrong'}">${answered.correct ? 'Correct' : 'Not quite'}</div>
+        <div class="result">${promptIsJp ? escapeHtml(word.meaning) : escapeHtml(word.dictionary) + ' — ' + escapeHtml(word.kana)}</div>
+      </div>
+      <div class="action-row"><button class="btn primary" data-action="advance">Next →</button></div>`;
+  }
+
   return `<div class="prompt-card">
     ${wordBadges(word)}
     <div class="ask" style="border:none;margin-top:0;padding-top:0">
@@ -1627,28 +1804,21 @@ function renderMeaningCard(card) {
     <div class="kanji" style="margin-top:14px">${promptIsJp ? escapeHtml(word.dictionary) : escapeHtml(word.meaning)}</div>
     ${promptIsJp ? `<div class="kana">${escapeHtml(word.kana)}</div>` : ''}
   </div>
-  ${revealed ? `
-    <div class="answer-reveal">
-      <div class="label">Answer</div>
-      <div class="result">${promptIsJp ? escapeHtml(word.meaning) : escapeHtml(word.dictionary) + ' — ' + escapeHtml(word.kana)}</div>
-    </div>
-    <div class="action-row">
-      <button class="btn again" data-action="grade-meaning" data-grade="again">Missed it</button>
-      <button class="btn good" data-action="grade-meaning" data-grade="good">Got it</button>
-    </div>` : `
-    <div class="action-row">
-      <button class="btn primary" data-action="reveal">Show answer</button>
-    </div>`}`;
+  ${inputHtml}
+  ${feedbackHtml}`;
 }
 
 function renderSummary() {
   const s = STATE.session;
   const acc = s.stats.total ? Math.round((s.stats.correct / s.stats.total) * 100) : 100;
-  if (s.kind === 'test') {
+  if (s.kind === 'test' || s.kind === 'exam') {
+    const cap = s.kind === 'exam'
+      ? `Exam complete${s.level ? ' · JLPT ' + s.level.toUpperCase() : ''} — ${s.stats.correct}/${s.stats.total} correct`
+      : `Test complete — ${s.stats.correct}/${s.stats.total} correct`;
     return `<div class="screen">
     <div class="summary-hero">
       <div class="big">${acc}%</div>
-      <div class="cap">Test complete — ${s.stats.correct}/${s.stats.total} correct</div>
+      <div class="cap">${cap}</div>
     </div>
     <div class="summary-grid">
       <div class="box"><div class="n">${s.stats.total}</div><div class="l">asked</div></div>
@@ -1695,6 +1865,107 @@ function renderTest() {
       <button class="btn ghost" data-action="go" data-view="scoreboard">📊 Scoreboard</button>
     </div>
     <p class="settings-hint">Daily sessions grow the pool this test draws from.</p>
+
+    <div class="settings-section">
+      <div class="eyebrow">Exam</div>
+      <p class="settings-hint">A timed, unskippable JLPT-style exam on the conjugation and vocabulary this app covers. Pick a level, then run it to the end — no going back once started.</p>
+      <button class="btn primary" data-action="go" data-view="examSetup">📝 Start an exam →</button>
+    </div>
+  </div>`;
+}
+
+/* ---------- exam ---------- */
+function renderExamSetup() {
+  const levels = registry.availableLevels;
+  const counts = {};
+  for (const w of registry.enabledWords()) {
+    const l = registry.levelOf(w);
+    if (l) counts[l] = (counts[l] || 0) + 1;
+  }
+  let selected = STATE.examLevel;
+  if (!levels.includes(selected)) selected = levels[0] || null;
+  STATE.examLevel = selected;
+  const levelChips = levels.map(lv =>
+    `<button class="chip ${lv === selected ? 'on' : ''}" data-action="exam-level" data-level="${lv}">
+      <span class="chip-label">${lv.toUpperCase()}</span>
+      <span class="chip-count">${counts[lv] || 0}</span>
+    </button>`).join('');
+  const totalSec = EXAM_QUESTIONS * EXAM_SECONDS_PER_QUESTION;
+  const dur = totalSec < 60 ? 'under a minute' : `~${Math.ceil(totalSec / 60)} minutes`;
+  return `<div class="screen">
+    ${topbar('Exam', 'test')}
+    <div class="hero">
+      <div class="eyebrow">JLPT-style check</div>
+      <h1 class="greeting">Exam</h1>
+      <p class="sub">A timed, unskippable test on the conjugation and vocabulary this app covers.</p>
+    </div>
+    <div class="detail-head" style="background:var(--gold-soft);color:var(--ink-deep)">
+      <span class="eyebrow" style="color:#C0392B">⚠️ Read this first</span>
+      <p style="margin-top:6px;font-size:13px;line-height:1.6">Once you start, you <b>cannot go back or leave</b> until the exam finishes. Estimated duration: <b>${dur}</b>. No skips, no hints — every question must be answered.</p>
+    </div>
+    <div class="eyebrow" style="margin-top:14px">JLPT level</div>
+    <p class="settings-hint">Questions are drawn only from words tagged at this level, within your study scope.</p>
+    <div class="chip-row">${levelChips || '<div class="empty-state">No levels available.</div>'}</div>
+    <div class="action-row">
+      <button class="btn primary" data-action="start-exam" data-level="${escapeHtml(selected || '')}" ${!selected || !counts[selected] ? 'disabled' : ''}>Start exam →</button>
+      <button class="btn ghost" data-action="back" data-back-view="test">Not now</button>
+    </div>
+    <p class="settings-hint">Results are added to the scoreboard alongside your tests.</p>
+  </div>`;
+}
+
+function renderExam() {
+  const s = STATE.session;
+  if (!s) return '<div class="screen"><div class="empty-state">No active exam.</div></div>';
+  if (s.index >= s.queue.length) {
+    finishSession();
+    return renderSummary();
+  }
+  const card = s.currentCard();
+  const cache = s._choicesCache = s._choicesCache || {};
+  if (!cache[s.index]) {
+    cache[s.index] = card.step === 'quiz-recognition'
+      ? buildChoices(card.word, card.formName)
+      : buildMeaningChoices(card.word);
+  }
+  const opts = cache[s.index];
+  const answered = s._answered;
+  const btns = opts.map(opt => {
+    let cls = 'choice-btn';
+    if (answered) {
+      if (opt === card.correct) cls += ' correct';
+      else if (opt === answered.picked && opt !== card.correct) cls += ' incorrect';
+    }
+    return `<button class="${cls}" ${answered ? 'disabled' : ''} data-action="choice" data-value="${escapeHtml(opt)}">${escapeHtml(opt)}</button>`;
+  }).join('');
+  const feedback = answered ? `<div class="action-row"><button class="btn primary" data-action="advance">Next →</button></div>` : '';
+
+  let prompt = '';
+  if (card.step === 'quiz-recognition') {
+    const formDef = registry.formDef(card.word, card.formName);
+    prompt = `${wordBadges(card.word)}
+      <div class="kanji">${escapeHtml(card.word.dictionary)}</div>
+      <div class="kana">${escapeHtml(card.word.kana)} · ${escapeHtml(card.word.romaji)}</div>
+      <div class="ask">
+        <div class="form-name">${escapeHtml(card.formName)}<span class="jp">${escapeHtml(formDef.name_jp)}</span></div>
+        <div class="usage">${escapeHtml(formDef.usage_en)}</div>
+      </div>`;
+  } else {
+    prompt = `${wordBadges(card.word)}
+      <div class="kanji">${escapeHtml(card.word.dictionary)}</div>
+      <div class="kana">${escapeHtml(card.word.kana)}</div>
+      <div class="ask" style="border:none;margin-top:0;padding-top:0">
+        <div class="form-name">What does this mean?</div>
+      </div>`;
+  }
+
+  return `<div class="screen">
+    ${topbar('Exam · JLPT ' + (s.level || '').toUpperCase(), null)}
+    <div class="progress-track"><div class="progress-fill" style="width:${Math.round((s.index / s.queue.length) * 100)}%"></div></div>
+    <div class="card-stage"><div class="prompt-card">${prompt}</div>
+    <div class="choice-grid">${btns}</div>
+    ${feedback}
+    </div>
   </div>`;
 }
 
@@ -1707,10 +1978,11 @@ function renderScoreboard() {
   const practiceAcc = STATE.progress.totalReviews ? Math.round((STATE.progress.totalCorrect / STATE.progress.totalReviews) * 100) : 0;
   const historyRows = ts.history.length ? ts.history.map(h => {
     const pct = h.questions ? Math.round((h.correct / h.questions) * 100) : 0;
+    const tag = h.type === 'exam' ? `<span class="s-tag">exam${h.level ? ' · ' + h.level.toUpperCase() : ''}</span>` : '';
     return `<div class="score-row">
       <span class="s-date">${escapeHtml(h.date)}</span>
       <span class="s-bar"><span class="s-fill" style="width:${pct}%"></span></span>
-      <span class="s-num">${h.correct}/${h.questions} · ${pct}%</span>
+      <span class="s-num">${h.correct}/${h.questions} · ${pct}%${tag}</span>
     </div>`;
   }).join('') : '<div class="empty-state">No tests yet. Take one from the Test tab to start tracking.</div>';
   return `<div class="screen">
@@ -1742,7 +2014,7 @@ function finishSession() {
   const s = STATE.session;
   if (!s || s._finished) return;
   s._finished = true;
-  if (s.kind === 'test') recordTestSession();
+  if (s.kind === 'test' || s.kind === 'exam') recordTestSession();
   else s.finish();
 }
 
@@ -1779,6 +2051,31 @@ function handleCheck() {
     recordTestAnswer(isCorrect);
   }
   STATE.session._answered = { typed, correct: isCorrect };
+  render();
+}
+
+function handleMeaningCheck() {
+  if (STATE.session._answered || STATE.session._revealed) return;
+  const card = STATE.session.currentCard();
+  const input = document.getElementById('meaning-input');
+  const typed = input ? input.value : '';
+  const isCorrect = meaningAccepted(card.word, card.direction, typed);
+  if (STATE.session.kind === 'test' || STATE.session.kind === 'exam') {
+    recordTestAnswer(isCorrect);
+  } else {
+    srs.gradeMeaning(card.word.id, isCorrect ? 'good' : 'again');
+    STATE.session.stats.total += 1;
+    if (isCorrect) STATE.session.stats.correct += 1;
+  }
+  STATE.session._answered = { typed, correct: isCorrect };
+  render();
+}
+
+function handleExamChoice(picked) {
+  const card = STATE.session.currentCard();
+  const isCorrect = picked === card.correct;
+  recordTestAnswer(isCorrect);
+  STATE.session._answered = { picked, correct: isCorrect };
   render();
 }
 
@@ -1829,12 +2126,20 @@ function goView(view, params) {
   render();
 }
 
+function handleBack(backView) {
+  // Back during a session/test/exam just closes it and returns to the page
+  // it was started from (which may not be home).
+  if (STATE.session && !STATE.session._finished) STATE.session = null;
+  goView(backView);
+}
+
 function startSession(kind) {
   STATE.session = new Session(kind, settings.value.sessionMode);
   if (STATE.session.queue.length === 0) {
     const first = registry.enabledWords()[0];
     if (first) STATE.session.queue.push({ step: 'teach', word: first, formName: 'dictionary' });
   }
+  STATE.sessionOrigin = STATE.view;
   goView('session');
 }
 
@@ -1842,7 +2147,16 @@ function startTest() {
   const session = buildTestSession();
   if (!session || session.queue.length === 0) return;
   STATE.session = session;
+  STATE.sessionOrigin = STATE.view;
   goView('test');
+}
+
+function startExam(level) {
+  const session = buildExamSession(level || STATE.examLevel);
+  if (!session || session.queue.length === 0) return;
+  STATE.session = session;
+  STATE.sessionOrigin = 'test';
+  goView('exam');
 }
 
 app.addEventListener('click', (e) => {
@@ -1856,7 +2170,10 @@ app.addEventListener('click', (e) => {
     if (el.dataset.id) params.id = el.dataset.id;
     if (el.dataset.kind) params.kind = el.dataset.kind;
     if (el.dataset.form) params.form = el.dataset.form;
+    if (el.dataset.cat) STATE.libraryTab = el.dataset.cat;
     goView(view, params);
+  } else if (action === 'back') {
+    handleBack(el.dataset.backView);
   } else if (action === 'tab-nav') {
     goView(el.dataset.view);
   } else if (action === 'tab') {
@@ -1877,6 +2194,9 @@ app.addEventListener('click', (e) => {
   } else if (action === 'toggle-level') {
     settings.toggleLevel(el.dataset.level);
     render();
+  } else if (action === 'toggle-category') {
+    settings.toggleCategory(el.dataset.cat);
+    render();
   } else if (action === 'reset-settings') {
     settings.reset();
     render();
@@ -1896,13 +2216,22 @@ app.addEventListener('click', (e) => {
     startSession(el.dataset.kind);
   } else if (action === 'start-test') {
     startTest();
+  } else if (action === 'exam-level') {
+    STATE.examLevel = el.dataset.level;
+    render();
+  } else if (action === 'start-exam') {
+    startExam(el.dataset.level);
   } else if (action === 'reset-scoreboard') {
     resetScoreboard();
     render();
   } else if (action === 'choice') {
-    if (!STATE.session._answered) handleChoice(el.dataset.value);
+    if (STATE.session._answered) return;
+    if (STATE.session.kind === 'exam') handleExamChoice(el.dataset.value);
+    else handleChoice(el.dataset.value);
   } else if (action === 'check') {
     handleCheck();
+  } else if (action === 'check-meaning') {
+    handleMeaningCheck();
   } else if (action === 'advance') {
     advanceQueue();
   } else if (action === 'reveal') {
@@ -1945,12 +2274,15 @@ document.addEventListener('change', (e) => {
 
 document.addEventListener('keydown', (e) => {
   if (e.key !== 'Enter') return;
-  if (STATE.view !== 'session' && STATE.view !== 'test') return;
+  if (STATE.view !== 'session' && STATE.view !== 'test' && STATE.view !== 'exam') return;
   if (!STATE.session) return;
   const active = document.activeElement;
   if (active && active.id === 'recall-input') {
     e.preventDefault();
     handleCheck();
+  } else if (active && active.id === 'meaning-input') {
+    e.preventDefault();
+    handleMeaningCheck();
   } else {
     const advance = document.querySelector('[data-action="advance"]');
     if (advance) { e.preventDefault(); advanceQueue(); }
