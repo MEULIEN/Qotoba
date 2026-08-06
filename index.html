@@ -3,21 +3,44 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1, user-scalable=no">
-<title>活用 Katsuyō — Conjugation Trainer</title>
+<title>Qotoba 言葉 — Conjugation Trainer</title>
 <meta name="description" content="A small daily trainer for Japanese verb and adjective conjugation.">
 <meta name="theme-color" content="#1F3352">
+<meta name="mobile-web-app-capable" content="yes">
 
-<link rel="manifest" href="manifest.json">
-<link rel="apple-touch-icon" href="icons/icon-180.png">
+<!-- ?v=BUILD_ID cache-buster: bump with sw.js's BUILD_ID so the browser
+     never reuses a stale shell (index/app.js/manifest) from HTTP cache. -->
+<link rel="manifest" href="manifest.json?v=4">
+<link rel="apple-touch-icon" href="icons/icon-180.png?v=4">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="apple-mobile-web-app-title" content="活用">
-<link rel="icon" href="icons/icon-192.png">
+<meta name="apple-mobile-web-app-title" content="Qotoba">
+<link rel="icon" href="icons/icon-192.png?v=4">
 
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css?v=4">
 </head>
 <body>
-<div id="app" role="application" aria-label="Katsuyō conjugation trainer"></div>
-<script src="app.js"></script>
+<div id="app" role="application" aria-label="Qotoba conjugation trainer"></div>
+<script src="app.js?v=4"></script>
+<script>
+// Service-worker registration tuned for instant updates:
+//  - updateViaCache:'none' forces the browser to re-fetch sw.js on every
+//    visit, so a newly pushed service worker is picked up right away.
+//  - when a new SW takes control (controllerchange), reload once so users
+//    see the deployed version immediately — no manual cache clear, no
+//    reinstall, and no reload loops (guarded via sessionStorage).
+if ('serviceWorker' in navigator) {
+  var hadController = !!navigator.serviceWorker.controller;
+  navigator.serviceWorker.addEventListener('controllerchange', function () {
+    if (hadController && !sessionStorage.getItem('qotoba_reloaded')) {
+      sessionStorage.setItem('qotoba_reloaded', '1');
+      window.location.reload();
+    }
+  });
+  window.addEventListener('load', function () {
+    navigator.serviceWorker.register('sw.js', { scope: './', updateViaCache: 'none' }).catch(function () {});
+  });
+}
+</script>
 </body>
 </html>

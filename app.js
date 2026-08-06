@@ -1,5 +1,5 @@
 /* ============================================================
-   Katsuyō 活用 — Japanese conjugation trainer
+   Qotoba 言葉 — Japanese conjugation trainer
    Vanilla JS, no build step, no framework. Everything renders
    into #app as HTML strings with delegated click handling.
    ============================================================ */
@@ -38,6 +38,18 @@ const MEANING_CARDS_PER_EVENING = 2;
 // pulling in new words.
 const ACTIVE_WORD_POOL = 15;
 
+/* ---------------- study modes & customization ---------------- */
+const SESSION_MODE_QUICK = 'quick';
+const SESSION_MODE_EXTENSIVE = 'extensive';
+const EXTENSIVE_FORMS_PER_WORD = 4; // distinct forms drilled per word in an extensive session
+const TEST_QUESTIONS = 10;           // questions drawn per test from previously seen items
+const THEME_LIGHT = 'light';
+const THEME_DARK = 'dark';
+const BG_PRESETS = [
+  '#FAF8F2', '#FFFDF6', '#F4E9D8', '#E8EDF2', '#F7EFE8',
+  '#191C20', '#232A2F', '#2B2326', '#1F3352', '#3A2E1E'
+];
+
 /* ---------------- state ---------------- */
 const STATE = {
   verbData: null,
@@ -50,6 +62,7 @@ const STATE = {
   srs: {},        // key -> {box, due, introduced, reps, lapses}
   meaningSrs: {},  // wordId -> {box, due}
   progress: { streak: 0, lastActiveDate: null, totalReviews: 0, totalCorrect: 0, today: { date: null, morning: false, evening: false } },
+  testStats: { total: 0, correct: 0, sessions: 0, history: [] },
   view: 'loading',
   viewParams: {},
   session: null,
@@ -88,10 +101,29 @@ function escapeHtml(s) {
 function srsKey(wordId, formName) { return wordId + '::' + formName; }
 
 /* ---------------- storage keys ---------------- */
-const LS_SRS = 'katsuyo_srs_v1';
-const LS_MEANING = 'katsuyo_meaning_srs_v1';
-const LS_PROGRESS = 'katsuyo_progress_v1';
-const LS_SETTINGS = 'katsuyo_settings_v1';
+// Renamed prefix (katsuyo -> qotoba). migrateStorage() copies any existing
+// katsuyo_* data across on first run, so streaks/vocabulary are never lost.
+const LS_SRS = 'qotoba_srs_v1';
+const LS_MEANING = 'qotoba_meaning_srs_v1';
+const LS_PROGRESS = 'qotoba_progress_v1';
+const LS_SETTINGS = 'qotoba_settings_v1';
+const LS_TEST = 'qotoba_test_v1';
+const OLD_KEYS = [
+  ['katsuyo_srs_v1', LS_SRS],
+  ['katsuyo_meaning_srs_v1', LS_MEANING],
+  ['katsuyo_progress_v1', LS_PROGRESS],
+  ['katsuyo_settings_v1', LS_SETTINGS]
+];
+
+function migrateStorage() {
+  try {
+    for (const [oldKey, newKey] of OLD_KEYS) {
+      if (localStorage.getItem(newKey) === null && localStorage.getItem(oldKey) !== null) {
+        localStorage.setItem(newKey, localStorage.getItem(oldKey));
+      }
+    }
+  } catch (e) { /* storage unavailable; keep going with defaults */ }
+}
 
 /* ============================================================
    DataRegistry — single source of truth for every data file.
@@ -145,8 +177,114 @@ class DataRegistry {
   enabledIdSet() { return new Set(this.enabledWords().map(w => w.id)); }
 }
 
+/* ---------------- theme & background helpers ----------------
+   Background colors are user-customizable. The palette is derived
+   from the chosen background: light backgrounds get dark ink, dark
+   (soft, never pure black) backgrounds get light ink. Card surfaces,
+   divider lines and dim tints are recomputed so every theme stays
+   readable without changing the rest of the design. */
+function defaultAnchorFor(theme) { return theme === THEME_DARK ? '#191C20' : '#FAF8F2'; }
+function hexToRgb(hex) {
+  const h = hex.replace('#', '');
+  return { r: parseInt(h.slice(0, 2), 16), g: parseInt(h.slice(2, 4), 16), b: parseInt(h.slice(4, 6), 16) };
+}
+function rgbToHex(r, g, b) {
+  const c = v => Math.max(0, Math.min(255, Math.round(v))).toString(16).padStart(2, '0');
+  return '#' + c(r) + c(g) + c(b);
+}
+function rgbToHsl(r, g, b) {
+  r /= 255; g /= 255; b /= 255;
+  const max = Math.max(r, g, b), min = Math.min(r, g, b);
+  let h = 0, s = 0;
+  const l = (max + min) / 2;
+  if (max !== min) {
+    const d = max - min;
+    s = l > 0.5 ? d / (2 - max - min) : d / (max + min);
+    if (max === r) h = (g - b) / d + (g < b ? 6 : 0);
+    else if (max === g) h = (b - r) / d + 2;
+    else h = (r - g) / d + 4;
+    h /= 6;
+  }
+  return { h, s, l };
+}
+function hslToHex(h, s, l) {
+  h = (h % 1 + 1) % 1;
+  const hue2rgb = (p, q, t) => {
+    if (t < 0) t += 1;
+    if (t > 1) t -= 1;
+    if (t < 1 / 6) return p + (q - p) * 6 * t;
+    if (t < 1 / 2) return q;
+    if (t < 2 / 3) return p + (q - p) * (2 / 3 - t) * 6;
+    return p;
+  };
+  if (s === 0) { const v = Math.round(l * 255); return rgbToHex(v, v, v); }
+  const q = l < 0.5 ? l * (1 + s) : l + s - l * s;
+  const p = 2 * l - q;
+  const rr = hue2rgb(p, q, h + 1 / 3);
+  const gg = hue2rgb(p, q, h);
+  const bb = hue2rgb(p, q, h - 1 / 3);
+  return rgbToHex(rr * 255, gg * 255, bb * 255);
+}
+function luminance(rgb) {
+  const f = v => { v /= 255; return v <= 0.03928 ? v / 12.92 : Math.pow((v + 0.055) / 1.055, 2.4); };
+  return 0.2126 * f(rgb.r) + 0.7152 * f(rgb.g) + 0.0722 * f(rgb.b);
+}
+function mixRgb(a, b, t) {
+  return { r: a.r + (b.r - a.r) * t, g: a.g + (b.g - a.g) * t, b: a.b + (b.b - a.b) * t };
+}
+function shadeHex(hex, t) {
+  const base = hexToRgb(hex);
+  const target = t >= 0 ? { r: 255, g: 255, b: 255 } : { r: 0, g: 0, b: 0 };
+  const m = mixRgb(base, target, Math.abs(t));
+  return rgbToHex(m.r, m.g, m.b);
+}
+function rgbaStr(hex, alpha) {
+  const c = hexToRgb(hex);
+  return 'rgba(' + c.r + ',' + c.g + ',' + c.b + ',' + alpha + ')';
+}
+function effectiveBackground(value) {
+  const theme = value.theme === THEME_DARK ? THEME_DARK : THEME_LIGHT;
+  const anchor = value.background || defaultAnchorFor(theme);
+  const base = hexToRgb(anchor);
+  const hsl = rgbToHsl(base.r, base.g, base.b);
+  const shade = value.shade == null ? Math.round(hsl.l * 100) : value.shade;
+  return hslToHex(hsl.h, hsl.s, shade / 100);
+}
+function derivePalette(bg) {
+  const base = hexToRgb(bg);
+  const dark = luminance(base) < 0.4;
+  const ink = dark ? '#ECE8DF' : '#1F3352';
+  const inkDeep = dark ? '#F6F3EC' : '#142238';
+  return {
+    paper: bg,
+    ink,
+    inkDeep,
+    card: dark ? shadeHex(bg, 0.06) : '#FFFFFF',
+    paperDim: shadeHex(bg, dark ? -0.05 : -0.02),
+    paperLine: dark ? rgbaStr('#ECE8DF', 0.18) : 'rgba(31,51,82,0.12)'
+  };
+}
+function applyThemeSettings(value) {
+  if (typeof document === 'undefined' || !document.documentElement || !document.documentElement.style) return;
+  const dark = value.theme === THEME_DARK;
+  const bg = effectiveBackground(value);
+  const pal = derivePalette(bg);
+  const root = document.documentElement;
+  root.setAttribute('data-theme', dark ? 'dark' : 'light');
+  root.style.setProperty('--paper', pal.paper);
+  root.style.setProperty('--ink', pal.ink);
+  root.style.setProperty('--ink-deep', pal.inkDeep);
+  root.style.setProperty('--paper-dim', pal.paperDim);
+  root.style.setProperty('--paper-line', pal.paperLine);
+  root.style.setProperty('--card', pal.card);
+  if (document.body && document.body.style) document.body.style.background = pal.paper;
+  const meta = document.querySelector && document.querySelector('meta[name="theme-color"]');
+  if (meta) meta.setAttribute('content', pal.paper);
+}
+
 /* ============================================================
-   Settings — which levels and topics are in the study scope.
+   Settings — which levels and topics are in the study scope,
+   the daily session mode (quick vs extensive), and appearance.
    A word is included only when its JLPT level tag (if any) is
    selected and, when any topics are selected, it carries at
    least one of those topic tags.
@@ -154,8 +292,22 @@ class DataRegistry {
 class Settings {
   constructor() {
     this.key = LS_SETTINGS;
-    this.DEFAULTS = { levels: ['n5', 'n4', 'n3', 'n2', 'n1'], topics: [] };
-    this.value = { levels: [...this.DEFAULTS.levels], topics: [] };
+    this.DEFAULTS = {
+      levels: ['n5', 'n4', 'n3', 'n2', 'n1'],
+      topics: [],
+      sessionMode: SESSION_MODE_QUICK,
+      theme: THEME_LIGHT,
+      background: null,
+      shade: null
+    };
+    this.value = {
+      levels: [...this.DEFAULTS.levels],
+      topics: [],
+      sessionMode: this.DEFAULTS.sessionMode,
+      theme: this.DEFAULTS.theme,
+      background: null,
+      shade: null
+    };
   }
   load() {
     try {
@@ -163,13 +315,59 @@ class Settings {
       if (raw) {
         if (Array.isArray(raw.levels)) this.value.levels = raw.levels;
         if (Array.isArray(raw.topics)) this.value.topics = raw.topics;
+        if (raw.sessionMode === SESSION_MODE_EXTENSIVE || raw.sessionMode === SESSION_MODE_QUICK) this.value.sessionMode = raw.sessionMode;
+        if (raw.theme === THEME_DARK || raw.theme === THEME_LIGHT) this.value.theme = raw.theme;
+        if (typeof raw.background === 'string' && /^#[0-9a-fA-F]{6}$/.test(raw.background)) this.value.background = raw.background;
+        if (typeof raw.shade === 'number' && raw.shade >= 0 && raw.shade <= 100) this.value.shade = raw.shade;
       }
     } catch (e) { /* keep defaults */ }
   }
   save() { localStorage.setItem(this.key, JSON.stringify(this.value)); }
   reset() {
-    this.value = { levels: [...this.DEFAULTS.levels], topics: [] };
+    this.value = {
+      levels: [...this.DEFAULTS.levels],
+      topics: [],
+      sessionMode: this.DEFAULTS.sessionMode,
+      theme: this.DEFAULTS.theme,
+      background: null,
+      shade: null
+    };
     this.save();
+    this.applyTheme();
+  }
+  applyTheme() { applyThemeSettings(this.value); }
+  currentBackground() { return effectiveBackground(this.value); }
+  setSessionMode(mode) {
+    if (mode === SESSION_MODE_QUICK || mode === SESSION_MODE_EXTENSIVE) {
+      this.value.sessionMode = mode;
+      this.save();
+    }
+  }
+  setTheme(theme) {
+    if (theme === THEME_LIGHT || theme === THEME_DARK) {
+      this.value.theme = theme;
+      this.save();
+      this.applyTheme();
+    }
+  }
+  setBackground(hex) {
+    if (!/^#[0-9a-fA-F]{6}$/.test(hex)) return;
+    this.value.background = hex;
+    this.value.shade = null;
+    this.save();
+    this.applyTheme();
+  }
+  setShade(shade) {
+    if (this.value.background == null) this.value.background = defaultAnchorFor(this.value.theme);
+    this.value.shade = Math.max(0, Math.min(100, Math.round(Number(shade) || 50)));
+    this.save();
+    this.applyTheme();
+  }
+  resetBackground() {
+    this.value.background = null;
+    this.value.shade = null;
+    this.save();
+    this.applyTheme();
   }
   toggleLevel(level) {
     const i = this.value.levels.indexOf(level);
@@ -407,8 +605,9 @@ function buildChoices(word, formName) {
    recall+meaning) built from the SRS engine.
    ============================================================ */
 class Session {
-  constructor(kind) {
+  constructor(kind, mode) {
     this.kind = kind;
+    this.mode = mode || SESSION_MODE_QUICK;
     this.queue = [];
     this.index = 0;
     this.stats = { correct: 0, total: 0, newCount: 0 };
@@ -417,6 +616,52 @@ class Session {
     this._choicesCache = {};
     if (kind === 'morning') this.buildMorning();
     else this.buildEvening();
+    if (this.mode === SESSION_MODE_EXTENSIVE) this.expandForExtensive();
+  }
+  tierIndexOf(word, formName) {
+    const tiers = registry.tiersFor(word);
+    for (let i = 0; i < tiers.length; i++) if (tiers[i].includes(formName)) return i;
+    return tiers.length;
+  }
+  expandForExtensive() {
+    // Keep the exact same vocabulary set as the quick session, but drill
+    // each word up to EXTENSIVE_FORMS_PER_WORD different forms so the same
+    // item is presented several times testing different tenses.
+    const perWord = {};
+    for (const card of this.queue) {
+      if (!card || !card.word) continue;
+      const id = card.word.id;
+      if (!perWord[id]) perWord[id] = new Set();
+      if (card.formName) perWord[id].add(card.formName);
+    }
+    const extras = [];
+    for (const word of registry.enabledWords()) {
+      const formsSeen = perWord[word.id];
+      if (!formsSeen) continue;
+      const want = EXTENSIVE_FORMS_PER_WORD - formsSeen.size;
+      if (want <= 0) continue;
+      const introduced = [];
+      const fresh = [];
+      for (const f of registry.formsFor(word)) {
+        const fn = f.name_en;
+        if (formsSeen.has(fn)) continue;
+        const item = STATE.srs[srsKey(word.id, fn)];
+        if (item && item.introduced) introduced.push(fn);
+        else if (!item && this.tierIndexOf(word, fn) === 0) fresh.push(fn);
+      }
+      for (const fn of shuffle([...introduced, ...fresh]).slice(0, want)) {
+        const item = STATE.srs[srsKey(word.id, fn)];
+        const isNew = !(item && item.introduced);
+        if (isNew) {
+          extras.push({ step: 'teach', word, formName: fn, isNew: true, extensive: true });
+          extras.push({ step: 'quiz-recognition', word, formName: fn, isNew: true, extensive: true });
+        } else {
+          const step = this.kind === 'morning' ? 'quiz-recognition' : 'quiz-recall';
+          extras.push({ step, word, formName: fn, isNew: false, extensive: true });
+        }
+      }
+    }
+    this.queue = this.queue.concat(shuffle(extras));
   }
   buildMorning() {
     const newCards = srs.getNewCandidates(NEW_PER_MORNING);
@@ -470,6 +715,95 @@ class Session {
   }
   finish() { srs.markSessionDone(this.kind); }
 }
+
+/* ============================================================
+   TestSession — a self-check drawn ONLY from previously seen
+   items. Unlike daily sessions it never touches the SRS boxes,
+   the streak, or the daily "done" flags — pure evaluation, with
+   results accumulated into the scoreboard.
+   ============================================================ */
+class TestSession {
+  constructor(queue) {
+    this.kind = 'test';
+    this.mode = SESSION_MODE_QUICK;
+    this.queue = queue;
+    this.index = 0;
+    this.stats = { correct: 0, total: 0, newCount: 0 };
+    this._answered = null;
+    this._revealed = false;
+    this._choicesCache = {};
+  }
+  currentCard() { return this.queue[this.index]; }
+  advance() {
+    this.index += 1;
+    this._answered = null;
+    this._revealed = false;
+  }
+  finish() { /* scoreboard is recorded separately in finishSession */ }
+}
+
+function countSeenItems() {
+  const enabledIds = registry.enabledIdSet();
+  let n = 0;
+  for (const key in STATE.srs) {
+    const item = STATE.srs[key];
+    if (item && item.introduced && enabledIds.has(key.split('::')[0])) n += 1;
+  }
+  return n;
+}
+
+function buildTestSession(limit) {
+  const enabledIds = registry.enabledIdSet();
+  const seen = [];
+  for (const key in STATE.srs) {
+    const item = STATE.srs[key];
+    if (!item || !item.introduced) continue;
+    const [wordId, formName] = key.split('::');
+    if (!enabledIds.has(wordId)) continue;
+    const word = registry.findWord(wordId);
+    if (word) seen.push({ word, formName });
+  }
+  if (seen.length === 0) return null;
+  const n = Math.min(limit || TEST_QUESTIONS, seen.length);
+  const queue = sample(seen, n).map(({ word, formName }) => {
+    const roll = Math.random();
+    let step = 'quiz-recall';
+    if (roll < 0.35) step = 'quiz-recognition';
+    else if (roll < 0.5) step = 'quiz-meaning';
+    const card = { step, word, formName, isTest: true };
+    if (step === 'quiz-meaning') card.direction = Math.random() < 0.5 ? 'jp2en' : 'en2jp';
+    return card;
+  });
+  return new TestSession(queue);
+}
+
+function recordTestAnswer(correct) {
+  const s = STATE.session;
+  s.stats.total += 1;
+  if (correct) s.stats.correct += 1;
+}
+
+function recordTestSession() {
+  const s = STATE.session;
+  const acc = s.stats.total ? Math.round((s.stats.correct / s.stats.total) * 100) : 100;
+  STATE.testStats.total += s.stats.total;
+  STATE.testStats.correct += s.stats.correct;
+  STATE.testStats.sessions += 1;
+  STATE.testStats.history.unshift({
+    date: todayStr(),
+    questions: s.stats.total,
+    correct: s.stats.correct,
+    accuracy: acc
+  });
+  STATE.testStats.history = STATE.testStats.history.slice(0, 20);
+  localStorage.setItem(LS_TEST, JSON.stringify(STATE.testStats));
+}
+
+function resetScoreboard() {
+  STATE.testStats = { total: 0, correct: 0, sessions: 0, history: [] };
+  localStorage.setItem(LS_TEST, JSON.stringify(STATE.testStats));
+}
+
 /* ============================================================
    App singletons — the registry owns data, settings own the
    study scope, the SRS engine owns spaced-repetition state.
@@ -496,8 +830,17 @@ function currentCard() { return STATE.session ? STATE.session.currentCard() : nu
 
 /* ---------------- storage ---------------- */
 function loadStorage() {
+  migrateStorage();
   settings.load();
   srs.load();
+  try {
+    const raw = JSON.parse(localStorage.getItem(LS_TEST));
+    STATE.testStats = Object.assign({ total: 0, correct: 0, sessions: 0, history: [] }, raw || {});
+    if (!Array.isArray(STATE.testStats.history)) STATE.testStats.history = [];
+  } catch (e) {
+    STATE.testStats = { total: 0, correct: 0, sessions: 0, history: [] };
+  }
+  settings.applyTheme();
 }
 
 /* ---------------- data loading ---------------- */
@@ -538,6 +881,19 @@ async function loadData() {
    ============================================================ */
 const app = document.getElementById('app');
 
+/* ---------------- rendering shell ---------------- */
+const TAB_VIEWS = ['home', 'library', 'test', 'scoreboard', 'settings'];
+const TAB_ICONS = { home: '🏠', library: '📖', test: '✏️', scoreboard: '📊', settings: '⚙️' };
+const TAB_LABELS = { home: 'Home', library: 'Words', test: 'Test', scoreboard: 'Stats', settings: 'Settings' };
+
+function tabbar() {
+  return `<nav class="tabbar">` + TAB_VIEWS.map(v =>
+    `<button class="tabbar-btn ${STATE.view === v ? 'active' : ''}" data-action="tab-nav" data-view="${v}" aria-label="${TAB_LABELS[v]}">
+      <span class="t-glyph">${TAB_ICONS[v]}</span>
+      <span class="t-label">${TAB_LABELS[v]}</span>
+    </button>`).join('') + `</nav>`;
+}
+
 function render() {
   let html = '';
   switch (STATE.view) {
@@ -557,9 +913,11 @@ function render() {
     case 'settings': html = renderSettings(); break;
     case 'session': html = renderSession(); break;
     case 'summary': html = renderSummary(); break;
+    case 'test': html = renderTest(); break;
+    case 'scoreboard': html = renderScoreboard(); break;
     default: html = '<div class="screen"><p>Loading…</p></div>';
   }
-  app.innerHTML = html;
+  app.innerHTML = html + (TAB_VIEWS.includes(STATE.view) ? tabbar() : '');
   window.scrollTo(0, 0);
 }
 
@@ -583,9 +941,18 @@ function renderHome() {
   const t = STATE.progress.today;
   const streak = STATE.progress.streak;
   const dots = Array.from({ length: 7 }, (_, i) => `<span class="dot ${i < Math.min(streak, 7) ? 'filled' : ''}"></span>`).join('');
+  const modeLabel = settings.value.sessionMode === SESSION_MODE_EXTENSIVE ? 'Extensive' : 'Quick';
+  const refButtons = [
+    ['rules', '📐', 'Rules'],
+    ['particles', '🔤', 'Particles'],
+    ['directions', '🧭', 'Directions'],
+    ['demonstratives', '👉', 'Kosoado'],
+    ['radicals', '🌱', 'Radicals']
+  ].map(([view, icon, label]) =>
+    `<button class="link-btn ghost" data-action="go" data-view="${view}">${icon} ${label}</button>`).join('');
   return `<div class="screen">
     <div class="hero">
-      <div class="eyebrow">活用 · Katsuyō</div>
+      <div class="eyebrow">Qotoba · 言葉</div>
       <h1 class="greeting">${greetingText()}</h1>
       <p class="sub">Two short sessions a day beats one long one. Let's keep the streak going.</p>
     </div>
@@ -606,6 +973,7 @@ function renderHome() {
           <div class="name">Morning session</div>
           <div class="desc">Learn new forms &amp; recognize them</div>
         </span>
+        <span class="mode-badge">${modeLabel}</span>
         ${t.morning ? '<span class="check">✓ Done</span>' : '<span class="chev">›</span>'}
       </button>
       <button class="session-card evening ${t.evening ? 'done' : ''}" data-action="start-session" data-kind="evening">
@@ -614,7 +982,16 @@ function renderHome() {
           <div class="name">Evening session</div>
           <div class="desc">Recall &amp; produce from memory</div>
         </span>
+        <span class="mode-badge">${modeLabel}</span>
         ${t.evening ? '<span class="check">✓ Done</span>' : '<span class="chev">›</span>'}
+      </button>
+      <button class="session-card test" data-action="go" data-view="test">
+        <span class="icon">✏️</span>
+        <span class="body">
+          <div class="name">Test</div>
+          <div class="desc">Evaluate yourself on studied forms</div>
+        </span>
+        <span class="chev">›</span>
       </button>
     </div>
 
@@ -623,15 +1000,8 @@ function renderHome() {
       <div class="stat-box"><div class="n">${m.mastered}</div><div class="l">mastered</div></div>
     </div>
 
-    <div class="link-row">
-      <button class="link-btn" data-action="go" data-view="library">📖 Words</button>
-      <button class="link-btn ghost" data-action="go" data-view="rules">📐 Rules</button>
-      <button class="link-btn ghost" data-action="go" data-view="particles">🔤 Particles</button>
-      <button class="link-btn ghost" data-action="go" data-view="directions">🧭 Directions</button>
-      <button class="link-btn ghost" data-action="go" data-view="demonstratives">👉 Kosoado</button>
-      <button class="link-btn ghost" data-action="go" data-view="radicals">🌱 Radicals</button>
-      <button class="link-btn ghost" data-action="go" data-view="settings">⚙️ Settings</button>
-    </div>
+    <div class="eyebrow" style="margin-top:6px">References</div>
+    <div class="link-row">${refButtons}</div>
     <p class="footer-note">All data stays on this device. No account, no server.</p>
   </div>`;
 }
@@ -1028,8 +1398,18 @@ function renderSettings() {
   const enabledCount = registry.enabledWords().length;
   const totalCount = registry.allWords.length;
 
+  const mode = settings.value.sessionMode;
+  const theme = settings.value.theme;
+  const bg = settings.currentBackground();
+  const anchor = settings.value.background || defaultAnchorFor(theme);
+  const naturalL = Math.round(rgbToHsl(hexToRgb(anchor).r, hexToRgb(anchor).g, hexToRgb(anchor).b).l * 100);
+  const shade = settings.value.shade == null ? naturalL : settings.value.shade;
+  const swatches = BG_PRESETS.map(c =>
+    `<button class="swatch ${bg.toLowerCase() === c.toLowerCase() ? 'on' : ''}" data-action="set-background" data-color="${c}" style="background:${c}" title="${c}" aria-label="${c}"></button>`
+  ).join('');
+
   return `<div class="screen">
-    ${topbar('Settings', 'home')}
+    ${topbar('Settings', null)}
     <div class="detail-head">
       <div class="kanji" style="font-size:22px">Study scope</div>
       <div class="meaning" style="margin-top:6px">Choose which words appear in the library and in daily sessions. Progress already earned is kept.</div>
@@ -1039,9 +1419,41 @@ function renderSettings() {
     <div class="eyebrow" style="margin-top:14px">Topics</div>
     <p class="settings-hint">Select one or more topics (hold Ctrl/Cmd and click). Leave empty to include every topic.</p>
     ${topicSelect}
-    <div class="action-row" style="margin-top:14px">
+
+    <div class="settings-section">
+      <div class="eyebrow">Session mode</div>
+      <p class="settings-hint">Quick runs each item once. Extensive drills the same words 3–4 times across different tenses — same vocabulary, denser session.</p>
+      <div class="chip-row">
+        <button class="chip ${mode === SESSION_MODE_QUICK ? 'on' : ''}" data-action="set-session-mode" data-mode="${SESSION_MODE_QUICK}">Quick</button>
+        <button class="chip ${mode === SESSION_MODE_EXTENSIVE ? 'on' : ''}" data-action="set-session-mode" data-mode="${SESSION_MODE_EXTENSIVE}">Extensive</button>
+      </div>
+    </div>
+
+    <div class="settings-section">
+      <div class="eyebrow">Appearance</div>
+      <p class="settings-hint">Light or dark base, plus a fine-tuned background. Dark defaults to a soft charcoal — never harsh pure black.</p>
+      <div class="chip-row">
+        <button class="chip ${theme === THEME_LIGHT ? 'on' : ''}" data-action="set-theme" data-theme="${THEME_LIGHT}">Light</button>
+        <button class="chip ${theme === THEME_DARK ? 'on' : ''}" data-action="set-theme" data-theme="${THEME_DARK}">Dark</button>
+      </div>
+      <p class="settings-hint" style="margin-top:12px">Background</p>
+      <div class="swatch-row">${swatches}</div>
+      <div class="bg-control">
+        <input type="color" id="bg-color" value="${bg}" aria-label="Custom background color">
+        <span class="bg-hex" id="bg-hex">${bg}</span>
+      </div>
+      <div class="shade-control">
+        <span class="shade-label">Fine-tune brightness</span>
+        <input type="range" id="bg-shade" min="0" max="100" value="${shade}" aria-label="Background brightness">
+      </div>
+      <div class="action-row" style="margin-top:12px">
+        <button class="btn ghost" data-action="reset-background">Reset colors</button>
+      </div>
+    </div>
+
+    <div class="action-row">
       <button class="btn primary" data-action="go" data-view="home">Done</button>
-      <button class="btn ghost" data-action="reset-settings">Reset</button>
+      <button class="btn ghost" data-action="reset-settings">Reset all</button>
     </div>
     <p class="settings-hint" style="margin-top:12px">${enabledCount} of ${totalCount} words are in scope right now.</p>
   </div>`;
@@ -1060,7 +1472,9 @@ function renderSession() {
     return renderSummary();
   }
   const card = s.currentCard();
-  const title = s.kind === 'morning' ? 'Morning · Learn' : 'Evening · Recall';
+  const kindLabel = s.kind === 'test' ? 'Test' : s.kind === 'morning' ? 'Morning' : 'Evening';
+  const modeLabel = s.kind === 'test' ? 'Self-check' : s.mode === SESSION_MODE_EXTENSIVE ? 'Extensive' : 'Quick';
+  const title = kindLabel + ' · ' + modeLabel;
   let body = '';
   if (card.step === 'teach') body = renderTeachCard(card);
   else if (card.step === 'quiz-recognition') body = renderRecognitionCard(card);
@@ -1142,6 +1556,7 @@ function renderRecallCard(card) {
   const { word, formName } = card;
   const formDef = registry.formDef(word, formName);
   const result = conjugate(word, formName);
+  const isTest = STATE.session.kind === 'test';
   const answered = STATE.session._answered;
   const revealed = STATE.session._revealed;
   const exJp = word.example.jp;
@@ -1154,7 +1569,15 @@ function renderRecallCard(card) {
       <button class="btn ghost" data-action="reveal">Show answer</button>
     </div>`;
 
-  const revealHtml = revealed ? `
+  let feedbackHtml = '';
+  if (revealed && !answered) {
+    feedbackHtml = isTest ? `
+    <div class="answer-reveal">
+      <div class="label">Answer</div>
+      <div class="result">${escapeHtml(result)}</div>
+      <div class="rule">${escapeHtml(formDef.usage_en)}</div>
+    </div>
+    <div class="action-row"><button class="btn primary" data-action="advance">Next →</button></div>` : `
     <div class="answer-reveal">
       <div class="label">Answer</div>
       <div class="result">${escapeHtml(result)}</div>
@@ -1165,15 +1588,16 @@ function renderRecallCard(card) {
       <button class="btn again" data-action="grade" data-grade="again">Again</button>
       <button class="btn good" data-action="grade" data-grade="good">Good</button>
       <button class="btn easy" data-action="grade" data-grade="easy">Easy</button>
-    </div>` : '' ;
-
-  const checkedHtml = answered ? `
+    </div>`;
+  } else if (answered) {
+    feedbackHtml = `
     <div class="answer-reveal">
       <div class="label ${answered.correct ? '' : 'wrong'}">${answered.correct ? 'Correct' : 'Not quite'}</div>
       <div class="result">${escapeHtml(result)}</div>
       <div class="rule">${escapeHtml(formDef.usage_en)}</div>
     </div>
-    <div class="action-row"><button class="btn primary" data-action="advance">Next →</button></div>` : '';
+    <div class="action-row"><button class="btn primary" data-action="advance">Next →</button></div>`;
+  }
 
   return `<div class="prompt-card">
     ${wordBadges(word)}
@@ -1188,8 +1612,7 @@ function renderRecallCard(card) {
     <div class="cloze-en">${escapeHtml(exampleForForm(word, formName))}</div>
   </div>
   ${inputHtml}
-  ${checkedHtml}
-  ${revealHtml}`;
+  ${feedbackHtml}`;
 }
 
 function renderMeaningCard(card) {
@@ -1221,6 +1644,23 @@ function renderMeaningCard(card) {
 function renderSummary() {
   const s = STATE.session;
   const acc = s.stats.total ? Math.round((s.stats.correct / s.stats.total) * 100) : 100;
+  if (s.kind === 'test') {
+    return `<div class="screen">
+    <div class="summary-hero">
+      <div class="big">${acc}%</div>
+      <div class="cap">Test complete — ${s.stats.correct}/${s.stats.total} correct</div>
+    </div>
+    <div class="summary-grid">
+      <div class="box"><div class="n">${s.stats.total}</div><div class="l">asked</div></div>
+      <div class="box"><div class="n">${s.stats.correct}</div><div class="l">correct</div></div>
+      <div class="box"><div class="n">${s.stats.total - s.stats.correct}</div><div class="l">missed</div></div>
+    </div>
+    <div class="action-row">
+      <button class="btn primary" data-action="go" data-view="scoreboard">View scoreboard</button>
+      <button class="btn ghost" data-action="go" data-view="home">Home</button>
+    </div>
+  </div>`;
+  }
   return `<div class="screen">
     <div class="summary-hero">
       <div class="big">${s.kind === 'morning' ? 'よくできました' : 'お疲れ様'}</div>
@@ -1235,22 +1675,90 @@ function renderSummary() {
   </div>`;
 }
 
+/* ---------- test & scoreboard ---------- */
+function renderTest() {
+  if (STATE.session && STATE.session.kind === 'test') return renderSession();
+  const seen = countSeenItems();
+  return `<div class="screen">
+    ${topbar('Test', null)}
+    <div class="hero">
+      <div class="eyebrow">自己評価 · Self check</div>
+      <h1 class="greeting">Test yourself</h1>
+      <p class="sub">Random questions drawn only from forms you have already studied — no new material, and it never touches your streak or schedule.</p>
+    </div>
+    <div class="detail-head">
+      <div class="kanji" style="font-size:22px">${seen} item${seen === 1 ? '' : 's'} in your pool</div>
+      <div class="meaning" style="margin-top:6px">Each test asks ${TEST_QUESTIONS} questions (recall, recognition &amp; meaning) pulled from your previously seen cards.</div>
+    </div>
+    <div class="action-row">
+      <button class="btn primary" data-action="start-test" ${seen === 0 ? 'disabled' : ''}>Start test →</button>
+      <button class="btn ghost" data-action="go" data-view="scoreboard">📊 Scoreboard</button>
+    </div>
+    <p class="settings-hint">Daily sessions grow the pool this test draws from.</p>
+  </div>`;
+}
+
+function renderScoreboard() {
+  const ts = STATE.testStats;
+  const total = ts.total;
+  const correct = ts.correct;
+  const missed = total - correct;
+  const acc = total ? Math.round((correct / total) * 100) : 0;
+  const practiceAcc = STATE.progress.totalReviews ? Math.round((STATE.progress.totalCorrect / STATE.progress.totalReviews) * 100) : 0;
+  const historyRows = ts.history.length ? ts.history.map(h => {
+    const pct = h.questions ? Math.round((h.correct / h.questions) * 100) : 0;
+    return `<div class="score-row">
+      <span class="s-date">${escapeHtml(h.date)}</span>
+      <span class="s-bar"><span class="s-fill" style="width:${pct}%"></span></span>
+      <span class="s-num">${h.correct}/${h.questions} · ${pct}%</span>
+    </div>`;
+  }).join('') : '<div class="empty-state">No tests yet. Take one from the Test tab to start tracking.</div>';
+  return `<div class="screen">
+    ${topbar('Scoreboard', null)}
+    <div class="summary-grid">
+      <div class="box"><div class="n">${total}</div><div class="l">questions</div></div>
+      <div class="box"><div class="n">${correct}</div><div class="l">correct</div></div>
+      <div class="box"><div class="n">${missed}</div><div class="l">missed</div></div>
+    </div>
+    <div class="stat-grid">
+      <div class="stat-box"><div class="n">${acc}%</div><div class="l">test accuracy</div></div>
+      <div class="stat-box"><div class="n">${practiceAcc}%</div><div class="l">practice accuracy</div></div>
+      <div class="stat-box"><div class="n">${ts.sessions}</div><div class="l">tests taken</div></div>
+      <div class="stat-box"><div class="n">${STATE.progress.streak}</div><div class="l">day streak</div></div>
+    </div>
+    <div class="eyebrow" style="margin-top:6px">Recent tests</div>
+    ${historyRows}
+    <div class="action-row">
+      <button class="btn primary" data-action="go" data-view="test">Take a test</button>
+      <button class="btn ghost" data-action="reset-scoreboard">Reset scoreboard</button>
+    </div>
+  </div>`;
+}
+
 /* ============================================================
    SESSION INTERACTION HANDLERS
    ============================================================ */
 function finishSession() {
-  STATE.session.finish();
+  const s = STATE.session;
+  if (!s || s._finished) return;
+  s._finished = true;
+  if (s.kind === 'test') recordTestSession();
+  else s.finish();
 }
 
 function handleChoice(picked) {
   const card = STATE.session.currentCard();
   const correct = conjugate(card.word, card.formName);
   const isCorrect = picked === correct;
-  const key = srsKey(card.word.id, card.formName);
-  if (!STATE.srs[key]) srs.introduceCard(card.word, card.formName);
-  srs.gradeCard(card.word, card.formName, isCorrect ? 'good' : 'again');
-  STATE.session.stats.total += 1;
-  if (isCorrect) STATE.session.stats.correct += 1;
+  if (STATE.session.kind !== 'test') {
+    const key = srsKey(card.word.id, card.formName);
+    if (!STATE.srs[key]) srs.introduceCard(card.word, card.formName);
+    srs.gradeCard(card.word, card.formName, isCorrect ? 'good' : 'again');
+    STATE.session.stats.total += 1;
+    if (isCorrect) STATE.session.stats.correct += 1;
+  } else {
+    recordTestAnswer(isCorrect);
+  }
   STATE.session._answered = { picked, correct: isCorrect };
   render();
 }
@@ -1261,11 +1769,15 @@ function handleCheck() {
   const input = document.getElementById('recall-input');
   const typed = input ? input.value : '';
   const isCorrect = answerAccepted(card.word, card.formName, typed);
-  const key = srsKey(card.word.id, card.formName);
-  if (!STATE.srs[key]) srs.introduceCard(card.word, card.formName);
-  srs.gradeCard(card.word, card.formName, isCorrect ? 'good' : 'again');
-  STATE.session.stats.total += 1;
-  if (isCorrect) STATE.session.stats.correct += 1;
+  if (STATE.session.kind !== 'test') {
+    const key = srsKey(card.word.id, card.formName);
+    if (!STATE.srs[key]) srs.introduceCard(card.word, card.formName);
+    srs.gradeCard(card.word, card.formName, isCorrect ? 'good' : 'again');
+    STATE.session.stats.total += 1;
+    if (isCorrect) STATE.session.stats.correct += 1;
+  } else {
+    recordTestAnswer(isCorrect);
+  }
   STATE.session._answered = { typed, correct: isCorrect };
   render();
 }
@@ -1276,7 +1788,14 @@ function advanceQueue() {
 }
 
 function handleReveal() {
-  STATE.session._revealed = true;
+  if (STATE.session._answered) return;
+  if (STATE.session.kind === 'test') {
+    // In a test, revealing the answer counts as a miss for that question.
+    if (!STATE.session._revealed) recordTestAnswer(false);
+    STATE.session._revealed = true;
+  } else {
+    STATE.session._revealed = true;
+  }
   render();
 }
 
@@ -1292,6 +1811,11 @@ function handleGrade(grade) {
 
 function handleGradeMeaning(grade) {
   const card = STATE.session.currentCard();
+  if (STATE.session.kind === 'test') {
+    recordTestAnswer(grade !== 'again');
+    advanceQueue();
+    return;
+  }
   srs.gradeMeaning(card.word.id, grade);
   STATE.session.stats.total += 1;
   if (grade !== 'again') STATE.session.stats.correct += 1;
@@ -1306,12 +1830,19 @@ function goView(view, params) {
 }
 
 function startSession(kind) {
-  STATE.session = new Session(kind);
+  STATE.session = new Session(kind, settings.value.sessionMode);
   if (STATE.session.queue.length === 0) {
     const first = registry.enabledWords()[0];
     if (first) STATE.session.queue.push({ step: 'teach', word: first, formName: 'dictionary' });
   }
   goView('session');
+}
+
+function startTest() {
+  const session = buildTestSession();
+  if (!session || session.queue.length === 0) return;
+  STATE.session = session;
+  goView('test');
 }
 
 app.addEventListener('click', (e) => {
@@ -1326,6 +1857,8 @@ app.addEventListener('click', (e) => {
     if (el.dataset.kind) params.kind = el.dataset.kind;
     if (el.dataset.form) params.form = el.dataset.form;
     goView(view, params);
+  } else if (action === 'tab-nav') {
+    goView(el.dataset.view);
   } else if (action === 'tab') {
     STATE.libraryTab = el.dataset.tab;
     render();
@@ -1347,8 +1880,25 @@ app.addEventListener('click', (e) => {
   } else if (action === 'reset-settings') {
     settings.reset();
     render();
+  } else if (action === 'set-session-mode') {
+    settings.setSessionMode(el.dataset.mode);
+    render();
+  } else if (action === 'set-theme') {
+    settings.setTheme(el.dataset.theme);
+    render();
+  } else if (action === 'set-background') {
+    settings.setBackground(el.dataset.color);
+    render();
+  } else if (action === 'reset-background') {
+    settings.resetBackground();
+    render();
   } else if (action === 'start-session') {
     startSession(el.dataset.kind);
+  } else if (action === 'start-test') {
+    startTest();
+  } else if (action === 'reset-scoreboard') {
+    resetScoreboard();
+    render();
   } else if (action === 'choice') {
     if (!STATE.session._answered) handleChoice(el.dataset.value);
   } else if (action === 'check') {
@@ -1364,17 +1914,39 @@ app.addEventListener('click', (e) => {
   }
 });
 
+document.addEventListener('input', (e) => {
+  const t = e.target;
+  if (!t || !t.id) return;
+  if (t.id === 'bg-color') {
+    settings.setBackground(t.value);
+    const hexEl = document.getElementById('bg-hex');
+    if (hexEl) hexEl.textContent = settings.currentBackground();
+  } else if (t.id === 'bg-shade') {
+    settings.setShade(t.value);
+    const hexEl = document.getElementById('bg-hex');
+    if (hexEl) hexEl.textContent = settings.currentBackground();
+  }
+});
+
 document.addEventListener('change', (e) => {
-  if (e.target && e.target.classList && e.target.classList.contains('topic-select')) {
+  if (!e.target) return;
+  if (e.target.classList && e.target.classList.contains('topic-select')) {
     settings.value.topics = [...e.target.selectedOptions].map(o => o.value);
     settings.save();
+    render();
+  } else if (e.target.id === 'bg-color') {
+    settings.setBackground(e.target.value);
+    render();
+  } else if (e.target.id === 'bg-shade') {
+    settings.setShade(e.target.value);
     render();
   }
 });
 
 document.addEventListener('keydown', (e) => {
   if (e.key !== 'Enter') return;
-  if (STATE.view !== 'session' || !STATE.session) return;
+  if (STATE.view !== 'session' && STATE.view !== 'test') return;
+  if (!STATE.session) return;
   const active = document.activeElement;
   if (active && active.id === 'recall-input') {
     e.preventDefault();
@@ -1397,10 +1969,8 @@ async function boot() {
   goView('home');
 }
 
-if ('serviceWorker' in navigator) {
-  window.addEventListener('load', () => {
-    navigator.serviceWorker.register('sw.js').catch(() => {});
-  });
-}
+// Service-worker registration lives in index.html (runs before this bundle,
+// uses updateViaCache:'none' and reloads once on controllerchange so a push
+// to GitHub instantly reaches web and home-screen users).
 
 boot();
