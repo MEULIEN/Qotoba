@@ -58,13 +58,17 @@ const EXAM_SECONDS_PER_QUESTION = 20; // used for the estimated-duration notice
 /* ---------------- word categories ----------------
    Coarse word types shown at the top of the Topics selector; topic tags
    (daily, animals, business, …) refine within them. */
-const CATEGORY_IDS = ['verb', 'adverb', 'i-adjective', 'na-adjective', 'noun'];
+const CATEGORY_IDS = ['verb', 'adverb', 'i-adjective', 'na-adjective', 'noun', 'particle', 'direction', 'kosoado', 'radical'];
 const CATEGORY_LABELS = {
   verb: 'Verbs',
   adverb: 'Adverbs',
   'i-adjective': 'い-adjectives',
   'na-adjective': 'な-adjectives',
-  noun: 'Nouns'
+  noun: 'Nouns',
+  particle: 'Particles',
+  direction: 'Directions',
+  kosoado: 'Kosoado',
+  radical: 'Radicals'
 };
 
 /* ---------------- state ---------------- */
@@ -165,7 +169,14 @@ class DataRegistry {
   get adjWords() { return (this.sources.adjective && this.sources.adjective.words) || []; }
   get adverbWords() { return (this.sources.adverb && this.sources.adverb.words) || []; }
   get nounWords() { return (this.sources.noun && this.sources.noun.words) || []; }
-  get allWords() { return [...this.verbWords, ...this.adjWords, ...this.adverbWords, ...this.nounWords]; }
+  get particleWords() { return (this.sources.particle && this.sources.particle.words) || []; }
+  get directionWords() { return (this.sources.direction && this.sources.direction.words) || []; }
+  get kosoadoWords() { return (this.sources.kosoado && this.sources.kosoado.words) || []; }
+  get radicalWords() { return (this.sources.radical && this.sources.radical.words) || []; }
+  get allWords() {
+    return [...this.verbWords, ...this.adjWords, ...this.adverbWords, ...this.nounWords,
+      ...this.particleWords, ...this.directionWords, ...this.kosoadoWords, ...this.radicalWords];
+  }
 
   isVerb(word) { return word.type === 'verb'; }
   isAdjective(word) { return word.type === 'i-adjective' || word.type === 'na-adjective'; }
@@ -971,6 +982,48 @@ function loadStorage() {
 }
 
 /* ---------------- data loading ---------------- */
+/* Reference decks (particles, directions, kosoado, radicals) are not just
+   browsable — they are normalized into the word pool so they are drilled in
+   daily sessions, tests, and exams like any other vocabulary. Each entry gets
+   the standard word schema (id, dictionary, kana, romaji, meaning, type,
+   tags); conjugation stays dictionary-only via formsFor(). */
+function referenceWord(id, dictionary, kana, romaji, meaning, type, tags, extra) {
+  return Object.assign({
+    id, dictionary, kana, romaji, meaning, type, tags: tags || [], example: {}
+  }, extra || {});
+}
+function firstExample(ex) {
+  if (ex && Array.isArray(ex) && ex[0] && ex[0].jp) return { jp: ex[0].jp, en: ex[0].en || '' };
+  return {};
+}
+function registerReferenceWords() {
+  if (registry.sources.particle) return;
+  const particles = (registry.references.particles && registry.references.particles.particles) || [];
+  registry.registerWordSource('particle', { words: particles.map(p => referenceWord(
+    'p_' + p.particle, p.particle, p.particle, '', p.meaning_en, 'particle',
+    [String(p.level || '').toLowerCase(), p.category].filter(Boolean),
+    { category: p.category, usage_note: p.usage_note, example: firstExample(p.examples) }
+  ))});
+  const directions = (registry.references.directions && registry.references.directions.words) || [];
+  registry.registerWordSource('direction', { words: directions.map(w => referenceWord(
+    'dir_' + w.word, w.word, w.kana, w.romaji || '', w.meaning_en, 'direction',
+    [w.category].filter(Boolean),
+    { category: w.category, usage_note: w.usage_note, example: firstExample(w.examples) }
+  ))});
+  const demos = (registry.references.demonstratives && registry.references.demonstratives.words) || [];
+  registry.registerWordSource('kosoado', { words: demos.map(w => referenceWord(
+    'dem_' + w.word, w.word, w.kana, w.romaji || '', w.meaning_en, 'kosoado',
+    [w.series, w.category].filter(Boolean),
+    { series: w.series, category: w.category, usage_note: w.usage_note, example: firstExample(w.examples) }
+  ))});
+  const radicals = (registry.references.radicals && registry.references.radicals.words) || [];
+  registry.registerWordSource('radical', { words: radicals.map(w => referenceWord(
+    w.id, w.radical, w.kana, w.romaji || '', w.meaning_en, 'radical',
+    [w.category].filter(Boolean),
+    { category: w.category, note: w.note, example: {} }
+  ))});
+}
+
 async function loadData() {
   const [verbConj, adjConj, verbs, adjectives, adverbs, nouns, particles, directions, demonstratives, radicals] = await Promise.all([
     fetch('data/conjugation_verb.json').then(r => r.json()),
@@ -994,6 +1047,7 @@ async function loadData() {
   registry.registerReference('directions', directions);
   registry.registerReference('demonstratives', demonstratives);
   registry.registerReference('radicals', radicals);
+  registerReferenceWords();
   STATE.verbData = verbConj;
   STATE.adjData = adjConj;
   STATE.particleData = particles;
@@ -1156,7 +1210,7 @@ function renderLibrary() {
     return `<div class="word-row" data-action="go" data-view="wordDetail" data-id="${w.id}">
       <span class="kanji">${escapeHtml(w.dictionary)}</span>
       <span class="info">
-        <div class="kana">${escapeHtml(w.kana)} · ${escapeHtml(w.romaji)}</div>
+        <div class="kana">${escapeHtml(kanaRomaji(w))}</div>
         <div class="meaning">${escapeHtml(w.meaning)}</div>
       </span>
       <span class="mastery">${introducedForms}/${totalForms}</span>
@@ -1177,6 +1231,10 @@ function renderLibrary() {
       <button class="tab ${tab === 'na-adjective' ? 'active' : ''}" data-action="tab" data-tab="na-adjective">な-adj</button>
       <button class="tab ${tab === 'adverb' ? 'active' : ''}" data-action="tab" data-tab="adverb">Adverbs</button>
       <button class="tab ${tab === 'noun' ? 'active' : ''}" data-action="tab" data-tab="noun">Nouns</button>
+      <button class="tab ${tab === 'particle' ? 'active' : ''}" data-action="tab" data-tab="particle">Particles</button>
+      <button class="tab ${tab === 'direction' ? 'active' : ''}" data-action="tab" data-tab="direction">Directions</button>
+      <button class="tab ${tab === 'kosoado' ? 'active' : ''}" data-action="tab" data-tab="kosoado">Kosoado</button>
+      <button class="tab ${tab === 'radical' ? 'active' : ''}" data-action="tab" data-tab="radical">Radicals</button>
     </div>
     ${scopeNote}
     <div class="word-list">${rows || '<div class="empty-state">No words in this category yet.</div>'}</div>
@@ -1188,7 +1246,7 @@ function renderWordDetail() {
   if (!word) return `<div class="screen">${topbar('Not found', 'library')}</div>`;
   const forms = registry.formsFor(word);
   const badgeClass = registry.isVerb(word) ? 'verb' : word.type;
-  const badgeLabel = registry.isVerb(word) ? (word.group === 'group1' ? 'Godan' : word.group === 'group2' ? 'Ichidan' : 'Irregular') : (word.type === 'i-adjective' ? 'い-adjective' : word.type === 'na-adjective' ? 'な-adjective' : word.type === 'adverb' ? 'Adverb' : word.type === 'noun' ? 'Noun' : word.type);
+  const badgeLabel = registry.isVerb(word) ? (word.group === 'group1' ? 'Godan' : word.group === 'group2' ? 'Ichidan' : 'Irregular') : ({ 'i-adjective': 'い-adjective', 'na-adjective': 'な-adjective', adverb: 'Adverb', noun: 'Noun', particle: 'Particle', direction: 'Direction', kosoado: 'Kosoado', radical: 'Radical' })[word.type] || word.type;
   const rowsHtml = forms.map(f => {
     const key = srsKey(word.id, f.name_en);
     const s = STATE.srs[key];
@@ -1208,12 +1266,13 @@ function renderWordDetail() {
     <div class="detail-head">
       <span class="badge ${badgeClass}">${badgeLabel}</span>
       <div class="kanji" style="margin-top:10px">${escapeHtml(word.dictionary)}</div>
-      <div class="kana">${escapeHtml(word.kana)} · ${escapeHtml(word.romaji)}</div>
+      <div class="kana">${escapeHtml(kanaRomaji(word))}</div>
       <div class="meaning">${escapeHtml(word.meaning)}</div>
+      ${(word.example && word.example.jp) ? `
       <div class="example">
         <div class="jp">${escapeHtml(word.example.jp)}</div>
         <div class="en">${escapeHtml(word.example.en)}</div>
-      </div>
+      </div>` : ''}
     </div>
     ${noteHtml}
     <div class="form-table">${rowsHtml}</div>
@@ -1638,6 +1697,26 @@ function wordBadges(word) {
   return `<div class="badges"><span class="badge ${cls}">${label}</span></div>`;
 }
 
+// Some words (particles, radicals) have no romaji; render kana alone then.
+function kanaRomaji(word) {
+  return word.kana + (word.romaji ? ' · ' + word.romaji : '');
+}
+// Dictionary-only words (particles, directions, kosoado, radicals, adverbs,
+// nouns) have a single "dictionary" form — for them the form-name row shows
+// the deck + category instead of the meaningless "dictionary form" label.
+function isDictionaryOnly(word) { return registry.formsFor(word).length === 1; }
+function formAskName(word, formName) {
+  if (isDictionaryOnly(word)) {
+    const deck = { particle: 'Particle', direction: 'Direction', kosoado: 'Kosoado', radical: 'Radical', adverb: 'Adverb', noun: 'Noun' }[word.type];
+    if (deck) return deck + (word.category ? ' · ' + (CATEGORY_LABEL[word.category] || word.category) : '');
+  }
+  return formName;
+}
+function formAskUsage(word, formName, formDef) {
+  if (isDictionaryOnly(word)) return word.usage_note || word.note || formDef.usage_en;
+  return formDef.usage_en;
+}
+
 function renderTeachCard(card) {
   const { word, formName } = card;
   const formDef = registry.formDef(word, formName);
@@ -1645,11 +1724,11 @@ function renderTeachCard(card) {
   return `<div class="prompt-card">
     ${wordBadges(word)}
     <div class="kanji">${escapeHtml(word.dictionary)}</div>
-    <div class="kana">${escapeHtml(word.kana)} · ${escapeHtml(word.romaji)}</div>
+    <div class="kana">${escapeHtml(kanaRomaji(word))}</div>
     <div class="meaning">${escapeHtml(word.meaning)}</div>
     <div class="ask">
-      <div class="form-name">${escapeHtml(formName)}<span class="jp">${escapeHtml(formDef.name_jp)}</span></div>
-      <div class="usage">${escapeHtml(formDef.usage_en)}</div>
+      <div class="form-name">${escapeHtml(formAskName(word, formName))}${isDictionaryOnly(word) ? '' : `<span class="jp">${escapeHtml(formDef.name_jp)}</span>`}</div>
+      <div class="usage">${escapeHtml(formAskUsage(word, formName, formDef))}</div>
     </div>
     <div class="cloze-line">
       ${escapeHtml(result)}
@@ -1685,11 +1764,11 @@ function renderRecognitionCard(card) {
   return `<div class="prompt-card">
     ${wordBadges(word)}
     <div class="kanji">${escapeHtml(word.dictionary)}</div>
-    <div class="kana">${escapeHtml(word.kana)} · ${escapeHtml(word.romaji)}</div>
+    <div class="kana">${escapeHtml(kanaRomaji(word))}</div>
     <div class="meaning">${escapeHtml(word.meaning)}</div>
     <div class="ask">
-      <div class="form-name">${escapeHtml(formName)}<span class="jp">${escapeHtml(formDef.name_jp)}</span></div>
-      <div class="usage">${escapeHtml(formDef.usage_en)}</div>
+      <div class="form-name">${escapeHtml(formAskName(word, formName))}${isDictionaryOnly(word) ? '' : `<span class="jp">${escapeHtml(formDef.name_jp)}</span>`}</div>
+      <div class="usage">${escapeHtml(formAskUsage(word, formName, formDef))}</div>
     </div>
   </div>
   <div class="choice-grid">${btns}</div>
@@ -1703,8 +1782,8 @@ function renderRecallCard(card) {
   const isTest = STATE.session.kind === 'test';
   const answered = STATE.session._answered;
   const revealed = STATE.session._revealed;
-  const exJp = word.example.jp;
-  const clozeJp = exJp.replace(word.dictionary, revealed || answered ? `<b>${escapeHtml(result)}</b>` : '<span class="blank">&nbsp;</span>');
+  const exJp = (word.example && word.example.jp) ? word.example.jp : '';
+  const clozeJp = exJp ? exJp.replace(word.dictionary, revealed || answered ? `<b>${escapeHtml(result)}</b>` : '<span class="blank">&nbsp;</span>') : '';
 
   const inputHtml = (revealed || answered) ? '' : `
     <input type="text" class="recall-input" id="recall-input" placeholder="Type it, or just think it through" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false">
@@ -1719,13 +1798,13 @@ function renderRecallCard(card) {
     <div class="answer-reveal">
       <div class="label">Answer</div>
       <div class="result">${escapeHtml(result)}</div>
-      <div class="rule">${escapeHtml(formDef.usage_en)}</div>
+      <div class="rule">${escapeHtml(formAskUsage(word, formName, formDef))}</div>
     </div>
     <div class="action-row"><button class="btn primary" data-action="advance">Next →</button></div>` : `
     <div class="answer-reveal">
       <div class="label">Answer</div>
       <div class="result">${escapeHtml(result)}</div>
-      <div class="rule">${escapeHtml(formDef.usage_en)}</div>
+      <div class="rule">${escapeHtml(formAskUsage(word, formName, formDef))}</div>
     </div>
     <p style="font-size:12.5px;opacity:.6;text-align:center;margin-top:2px">How did that go?</p>
     <div class="action-row">
@@ -1738,7 +1817,7 @@ function renderRecallCard(card) {
     <div class="answer-reveal">
       <div class="label ${answered.correct ? '' : 'wrong'}">${answered.correct ? 'Correct' : 'Not quite'}</div>
       <div class="result">${escapeHtml(result)}</div>
-      <div class="rule">${escapeHtml(formDef.usage_en)}</div>
+      <div class="rule">${escapeHtml(formAskUsage(word, formName, formDef))}</div>
     </div>
     <div class="action-row"><button class="btn primary" data-action="advance">Next →</button></div>`;
   }
@@ -1746,14 +1825,14 @@ function renderRecallCard(card) {
   return `<div class="prompt-card">
     ${wordBadges(word)}
     <div class="kanji">${escapeHtml(word.dictionary)}</div>
-    <div class="kana">${escapeHtml(word.kana)} · ${escapeHtml(word.romaji)}</div>
+    <div class="kana">${escapeHtml(kanaRomaji(word))}</div>
     <div class="meaning">${escapeHtml(word.meaning)}</div>
     <div class="ask">
-      <div class="form-name">${escapeHtml(formName)}<span class="jp">${escapeHtml(formDef.name_jp)}</span></div>
-      <div class="usage">${escapeHtml(formDef.usage_en)}</div>
+      <div class="form-name">${escapeHtml(formAskName(word, formName))}${isDictionaryOnly(word) ? '' : `<span class="jp">${escapeHtml(formDef.name_jp)}</span>`}</div>
+      <div class="usage">${escapeHtml(formAskUsage(word, formName, formDef))}</div>
     </div>
-    <div class="cloze-line">${clozeJp}</div>
-    <div class="cloze-en">${escapeHtml(exampleForForm(word, formName))}</div>
+    ${clozeJp ? `<div class="cloze-line">${clozeJp}</div>` : ''}
+    ${exJp ? `<div class="cloze-en">${escapeHtml(exampleForForm(word, formName))}</div>` : ''}
   </div>
   ${inputHtml}
   ${feedbackHtml}`;
@@ -1947,7 +2026,7 @@ function renderExam() {
     const formDef = registry.formDef(card.word, card.formName);
     prompt = `${wordBadges(card.word)}
       <div class="kanji">${escapeHtml(card.word.dictionary)}</div>
-      <div class="kana">${escapeHtml(card.word.kana)} · ${escapeHtml(card.word.romaji)}</div>
+      <div class="kana">${escapeHtml(kanaRomaji(card.word))}</div>
       <div class="ask">
         <div class="form-name">${escapeHtml(card.formName)}<span class="jp">${escapeHtml(formDef.name_jp)}</span></div>
         <div class="usage">${escapeHtml(formDef.usage_en)}</div>

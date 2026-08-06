@@ -21,7 +21,7 @@
       updated in place without leaving orphaned entries.
    ============================================================ */
 
-const BUILD_ID = 'v5';
+const BUILD_ID = 'v6';
 const CACHE_NAME = 'qotoba-' + BUILD_ID;
 
 const PRECACHE_ASSETS = [

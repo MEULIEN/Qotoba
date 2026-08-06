@@ -180,9 +180,13 @@ a{color:inherit;}
 .badge.na-adjective{background:var(--naadj-soft);color:var(--naadj);}
 .badge.adverb{background:var(--adv-soft);color:var(--adv);}
 .badge.noun{background:var(--noun-soft);color:var(--noun);}
+.badge.particle{background:var(--gold-soft);color:var(--gold);}
+.badge.direction{background:var(--naadj-soft);color:var(--naadj);}
+.badge.kosoado{background:var(--iadj-soft);color:var(--iadj);}
+.badge.radical{background:var(--adv-soft);color:var(--adv);}
 
 /* ---------- library ---------- */
-.tab-row{display:flex;gap:8px;}
+.tab-row{display:flex;flex-wrap:wrap;gap:8px;}
 .tab{
   flex:1;text-align:center;padding:9px 6px;border-radius:100px;font-size:12.5px;font-weight:700;
   border:1px solid var(--paper-line);background:var(--card);cursor:pointer;opacity:.6;

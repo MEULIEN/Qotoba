@@ -22,14 +22,15 @@ Deploys as a static site on GitHub Pages; the service worker makes the whole app
 - **Typed meaning answers** — meaning cards in practice and tests accept a typed answer instead of a reveal-only flow (English meanings match on chunks; Japanese answers accept dictionary form, kana, or romaji).
 - **Scoreboard** — cumulative accuracy, sessions, and recent history (last 20 tests), resettable from the tab; exam runs are tagged with their level.
 - **Word library** — 660 verbs, 216 adjectives, 614 adverbs, and 492 nouns with the full conjugation table for every word.
+- **Reference decks, drilled like vocabulary** — Particles (99), Directions (38), Kosoado (39), and Radicals (104) are not only browseable reference decks; they're normalized into the word pool, so they appear in daily SRS sessions, tests, and (for level-tagged particles) exams. Their rich reference views (usage notes, example sentences, radical grid) remain available.
 - **Rules reference** — every verb tense and adjective form, applied live to the whole word list.
 - **Particles, Directions, Kosoado, Radicals** — browseable reference decks.
-- **Settings** — pick which JLPT levels, which **categories** (verbs, adverbs, adjectives, nouns), and which topics are in your study scope; the library and daily sessions respect the filter, existing progress is kept.
+- **Settings** — pick which JLPT levels, which **categories** (verbs, adverbs, adjectives, nouns, particles, directions, kosoado, radicals), and which topics are in your study scope; the library and daily sessions respect the filter, existing progress is kept.
 - **Appearance** — light/dark theme, plus a custom background color and shade slider; the whole palette (ink, cards, dividers) is derived from your choice. Background colors always follow the theme — light colors in light theme, dark in dark theme — so the two never clash.
 
 ## Files
 
-- `app.js` — the whole app. Organized around a small set of classes: `DataRegistry` (owns every data file), `Settings` (study scope + session mode + appearance), `SrsEngine` (spaced repetition + progress), `Session` / `TestSession` / `ExamSession` (a single study run).
+- `app.js` — the whole app. Organized around a small set of classes: `DataRegistry` (owns every data file), `Settings` (study scope + session mode + appearance), `SrsEngine` (spaced repetition + progress), `Session` / `TestSession` / `ExamSession` (a single study run). `registerReferenceWords()` normalizes the particle/direction/kosoado/radical reference decks into the word pool.
 - `index.html`, `style.css` — shell and styling.
 - `sw.js`, `manifest.json` — service worker and PWA manifest. `sw.js` carries a `BUILD_ID` stamp; versioned asset URLs (`?v=N`) bust the cache on deploy.
 - `scripts/bump-version.sh` — bumps `BUILD_ID` and every `?v=` cache-buster in `index.html`/`manifest.json` before you commit a new deploy.
