@@ -386,6 +386,8 @@ class Settings {
   setTheme(theme) {
     if (theme === THEME_LIGHT || theme === THEME_DARK) {
       this.value.theme = theme;
+      this.value.background = null;
+      this.value.shade = null;
       this.save();
       this.applyTheme();
     }
