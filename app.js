@@ -655,8 +655,13 @@ function meaningAccepted(word, direction, typed) {
 
 function exampleForForm(word, formName) {
   const ex = word.example || {};
-  if (ex.form_en && ex.form_en[formName]) return ex.form_en[formName];
-  return ex.en || '';
+  // When the example japanese never contains the dictionary form, the cloze
+  // never fires, so the sentence (and its translation) does not change —
+  // the base English is accurate for every form.
+  if (!ex.jp || !ex.jp.includes(word.dictionary)) return ex.en || '';
+  // English has no plain/polite distinction — base gloss is accurate.
+  if (formName === 'dictionary' || formName === 'polite present') return ex.en || '';
+  return (ex.form_en && ex.form_en[formName]) || '';
 }
 
 /* ---------------- distractor generation (for recognition quiz) ---------------- */
@@ -911,6 +916,52 @@ function buildTestSession(limit) {
     return card;
   });
   return new TestSession(queue);
+}
+
+/* ============================================================
+   FreeStudySession — an untimed practice run for anyone who wants
+   to drill more than the daily sessions allow. It draws from the
+   full enabled scope (any word, any form), never writes to the
+   SRS boxes, never records into the scoreboard, and never touches
+   the streak or the daily "done" flags. Purely a practice
+   playground — close it or finish it any time.
+   ============================================================ */
+class FreeStudySession {
+  constructor(queue) {
+    this.kind = 'free';
+    this.mode = SESSION_MODE_QUICK;
+    this.queue = queue;
+    this.index = 0;
+    this.stats = { correct: 0, total: 0, newCount: 0 };
+    this._answered = null;
+    this._revealed = false;
+    this._choicesCache = {};
+  }
+  currentCard() { return this.queue[this.index]; }
+  advance() {
+    this.index += 1;
+    this._answered = null;
+    this._revealed = false;
+  }
+  finish() { /* free study never writes SRS boxes or scoreboard */ }
+}
+
+function buildFreeStudySession() {
+  const pool = registry.enabledWords();
+  if (pool.length === 0) return null;
+  const words = pool.length <= 12 ? pool : sample(pool, 12);
+  const queue = [];
+  for (const word of words) {
+    if (registry.isVerb(word) || registry.isAdjective(word)) {
+      const forms = registry.formsFor(word).map(f => f.name_en);
+      const formName = forms.length ? sample(forms, 1)[0] : 'dictionary';
+      queue.push({ step: Math.random() < 0.5 ? 'quiz-recognition' : 'quiz-recall', word, formName, isFree: true });
+    } else {
+      queue.push({ step: 'quiz-meaning', word, direction: Math.random() < 0.5 ? 'jp2en' : 'en2jp', isFree: true });
+    }
+  }
+  if (queue.length === 0) return null;
+  return new FreeStudySession(shuffle(queue));
 }
 
 function recordTestAnswer(correct) {
@@ -1171,11 +1222,11 @@ function renderHome() {
         <span class="mode-badge">${modeLabel}</span>
         ${t.evening ? '<span class="check">✓ Done</span>' : '<span class="chev">›</span>'}
       </button>
-      <button class="session-card test" data-action="go" data-view="test">
-        <span class="icon">✏️</span>
+      <button class="session-card free" data-action="start-free-study">
+        <span class="icon">🧘</span>
         <span class="body">
-          <div class="name">Test</div>
-          <div class="desc">Evaluate yourself on studied forms</div>
+          <div class="name">Free study</div>
+          <div class="desc">Practice any word, any form — untimed, as much as you like</div>
         </span>
         <span class="chev">›</span>
       </button>
@@ -1675,8 +1726,8 @@ function renderSession() {
     return renderSummary();
   }
   const card = s.currentCard();
-  const kindLabel = s.kind === 'test' ? 'Test' : s.kind === 'morning' ? 'Morning' : 'Evening';
-  const modeLabel = s.kind === 'test' ? 'Self-check' : s.mode === SESSION_MODE_EXTENSIVE ? 'Extensive' : 'Quick';
+  const kindLabel = s.kind === 'test' ? 'Test' : (s.kind === 'free' ? 'Free study' : s.kind === 'morning' ? 'Morning' : 'Evening');
+  const modeLabel = s.kind === 'test' ? 'Self-check' : (s.kind === 'free' ? 'Untimed practice' : s.mode === SESSION_MODE_EXTENSIVE ? 'Extensive' : 'Quick');
   const title = kindLabel + ' · ' + modeLabel;
   let body = '';
   if (card.step === 'teach') body = renderTeachCard(card);
@@ -1784,6 +1835,7 @@ function renderRecallCard(card) {
   const revealed = STATE.session._revealed;
   const exJp = (word.example && word.example.jp) ? word.example.jp : '';
   const clozeJp = exJp ? exJp.replace(word.dictionary, revealed || answered ? `<b>${escapeHtml(result)}</b>` : '<span class="blank">&nbsp;</span>') : '';
+  const enForForm = exampleForForm(word, formName);
 
   const inputHtml = (revealed || answered) ? '' : `
     <input type="text" class="recall-input" id="recall-input" placeholder="Type it, or just think it through" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false">
@@ -1832,7 +1884,7 @@ function renderRecallCard(card) {
       <div class="usage">${escapeHtml(formAskUsage(word, formName, formDef))}</div>
     </div>
     ${clozeJp ? `<div class="cloze-line">${clozeJp}</div>` : ''}
-    ${exJp ? `<div class="cloze-en">${escapeHtml(exampleForForm(word, formName))}</div>` : ''}
+    ${(exJp && enForForm) ? `<div class="cloze-en">${escapeHtml(enForForm)}</div>` : ''}
   </div>
   ${inputHtml}
   ${feedbackHtml}`;
@@ -1892,6 +1944,21 @@ function renderMeaningCard(card) {
 function renderSummary() {
   const s = STATE.session;
   const acc = s.stats.total ? Math.round((s.stats.correct / s.stats.total) * 100) : 100;
+  if (s.kind === 'free') {
+    return `<div class="screen">
+    <div class="summary-hero">
+      <div class="big">${acc}%</div>
+      <div class="cap">Free study complete — ${s.stats.correct}/${s.stats.total} correct</div>
+    </div>
+    <div class="summary-grid">
+      <div class="box"><div class="n">${s.stats.total}</div><div class="l">asked</div></div>
+      <div class="box"><div class="n">${s.stats.correct}</div><div class="l">correct</div></div>
+      <div class="box"><div class="n">${s.stats.total - s.stats.correct}</div><div class="l">missed</div></div>
+    </div>
+    <p class="settings-hint" style="text-align:center">Nothing here was added to your schedule, SRS boxes, or scoreboard — practice stays practice.</p>
+    <div class="action-row"><button class="btn primary" data-action="go" data-view="home">Home</button></div>
+  </div>`;
+  }
   if (s.kind === 'test' || s.kind === 'exam') {
     const cap = s.kind === 'exam'
       ? `Exam complete${s.level ? ' · JLPT ' + s.level.toUpperCase() : ''} — ${s.stats.correct}/${s.stats.total} correct`
@@ -2096,14 +2163,16 @@ function finishSession() {
   if (!s || s._finished) return;
   s._finished = true;
   if (s.kind === 'test' || s.kind === 'exam') recordTestSession();
-  else s.finish();
+  else if (s.kind !== 'free') s.finish();
 }
 
 function handleChoice(picked) {
   const card = STATE.session.currentCard();
   const correct = conjugate(card.word, card.formName);
   const isCorrect = picked === correct;
-  if (STATE.session.kind !== 'test') {
+  if (STATE.session.kind === 'free') {
+    recordTestAnswer(isCorrect);
+  } else if (STATE.session.kind !== 'test') {
     const key = srsKey(card.word.id, card.formName);
     if (!STATE.srs[key]) srs.introduceCard(card.word, card.formName);
     srs.gradeCard(card.word, card.formName, isCorrect ? 'good' : 'again');
@@ -2122,7 +2191,9 @@ function handleCheck() {
   const input = document.getElementById('recall-input');
   const typed = input ? input.value : '';
   const isCorrect = answerAccepted(card.word, card.formName, typed);
-  if (STATE.session.kind !== 'test') {
+  if (STATE.session.kind === 'free') {
+    recordTestAnswer(isCorrect);
+  } else if (STATE.session.kind !== 'test') {
     const key = srsKey(card.word.id, card.formName);
     if (!STATE.srs[key]) srs.introduceCard(card.word, card.formName);
     srs.gradeCard(card.word, card.formName, isCorrect ? 'good' : 'again');
@@ -2141,7 +2212,7 @@ function handleMeaningCheck() {
   const input = document.getElementById('meaning-input');
   const typed = input ? input.value : '';
   const isCorrect = meaningAccepted(card.word, card.direction, typed);
-  if (STATE.session.kind === 'test' || STATE.session.kind === 'exam') {
+  if (STATE.session.kind === 'test' || STATE.session.kind === 'exam' || STATE.session.kind === 'free') {
     recordTestAnswer(isCorrect);
   } else {
     srs.gradeMeaning(card.word.id, isCorrect ? 'good' : 'again');
@@ -2179,6 +2250,12 @@ function handleReveal() {
 
 function handleGrade(grade) {
   const card = STATE.session.currentCard();
+  if (STATE.session.kind === 'free') {
+    STATE.session.stats.total += 1;
+    if (grade !== 'again') STATE.session.stats.correct += 1;
+    advanceQueue();
+    return;
+  }
   const key = srsKey(card.word.id, card.formName);
   if (!STATE.srs[key]) srs.introduceCard(card.word, card.formName);
   const correct = srs.gradeCard(card.word, card.formName, grade);
@@ -2189,7 +2266,7 @@ function handleGrade(grade) {
 
 function handleGradeMeaning(grade) {
   const card = STATE.session.currentCard();
-  if (STATE.session.kind === 'test') {
+  if (STATE.session.kind === 'test' || STATE.session.kind === 'free') {
     recordTestAnswer(grade !== 'again');
     advanceQueue();
     return;
@@ -2230,6 +2307,14 @@ function startTest() {
   STATE.session = session;
   STATE.sessionOrigin = STATE.view;
   goView('test');
+}
+
+function startFreeStudy() {
+  const session = buildFreeStudySession();
+  if (!session || session.queue.length === 0) return;
+  STATE.session = session;
+  STATE.sessionOrigin = STATE.view;
+  goView('session');
 }
 
 function startExam(level) {
@@ -2297,6 +2382,8 @@ app.addEventListener('click', (e) => {
     startSession(el.dataset.kind);
   } else if (action === 'start-test') {
     startTest();
+  } else if (action === 'start-free-study') {
+    startFreeStudy();
   } else if (action === 'exam-level') {
     STATE.examLevel = el.dataset.level;
     render();

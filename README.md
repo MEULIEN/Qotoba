@@ -17,6 +17,7 @@ Deploys as a static site on GitHub Pages; the service worker makes the whole app
 
 - **Daily SRS sessions** — a morning session (teach + recognition of new forms) and an evening session (recall by typing, plus bidirectional meaning cards). Cards move through 6 spaced-repetition boxes.
 - **Two session modes** — Quick (each word in one form) or **Extensive** (each word drilled in up to 4 different forms). Pick one in Settings.
+- **Free study** — an untimed practice run on the home screen that draws from your whole study scope, any word, any form. It never writes to your SRS boxes, the streak, or the scoreboard — pure practice, so you can drill as much as you like without touching your schedule.
 - **Test tab** — a 10-question self-check drawn *only* from words you've already studied (recall, recognition, and meaning). It never touches your SRS boxes, streak, or daily flags.
 - **Exam** — a timed, unskippable JLPT-style exam picked from words tagged at a chosen level (N5–N1), with a confirmation screen before it starts. Mixed recognition + meaning questions, no back button or hints once running; results are recorded on the scoreboard tagged as exams and never touch your SRS/streak.
 - **Typed meaning answers** — meaning cards in practice and tests accept a typed answer instead of a reveal-only flow (English meanings match on chunks; Japanese answers accept dictionary form, kana, or romaji).
@@ -30,7 +31,7 @@ Deploys as a static site on GitHub Pages; the service worker makes the whole app
 
 ## Files
 
-- `app.js` — the whole app. Organized around a small set of classes: `DataRegistry` (owns every data file), `Settings` (study scope + session mode + appearance), `SrsEngine` (spaced repetition + progress), `Session` / `TestSession` / `ExamSession` (a single study run). `registerReferenceWords()` normalizes the particle/direction/kosoado/radical reference decks into the word pool.
+- `app.js` — the whole app. Organized around a small set of classes: `DataRegistry` (owns every data file), `Settings` (study scope + session mode + appearance), `SrsEngine` (spaced repetition + progress), `Session` / `TestSession` / `ExamSession` / `FreeStudySession` (a single study run). `registerReferenceWords()` normalizes the particle/direction/kosoado/radical reference decks into the word pool.
 - `index.html`, `style.css` — shell and styling.
 - `sw.js`, `manifest.json` — service worker and PWA manifest. `sw.js` carries a `BUILD_ID` stamp; versioned asset URLs (`?v=N`) bust the cache on deploy.
 - `scripts/bump-version.sh` — bumps `BUILD_ID` and every `?v=` cache-buster in `index.html`/`manifest.json` before you commit a new deploy.

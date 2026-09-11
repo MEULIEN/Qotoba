@@ -295,12 +295,12 @@ a{color:inherit;}
 
 .answer-reveal{
   background:var(--good-soft);border:1px solid var(--good);border-radius:var(--radius-sm);
-  padding:16px;
+  padding:16px;color:var(--good);
 }
 .answer-reveal .label{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--good);}
 .answer-reveal .label.wrong{color:var(--bad);}
-.answer-reveal .result{font-family:var(--font-jp-display);font-size:22px;font-weight:700;margin-top:4px;color:var(--ink);}
-.answer-reveal .rule{font-size:12.5px;opacity:.75;margin-top:8px;line-height:1.55;}
+.answer-reveal .result{font-family:var(--font-jp-display);font-size:22px;font-weight:700;margin-top:4px;color:var(--good);}
+.answer-reveal .rule{font-size:12.5px;opacity:.75;margin-top:8px;line-height:1.55;color:var(--good);}
 
 .action-row{display:flex;gap:9px;}
 .btn{
@@ -428,6 +428,7 @@ a{color:inherit;}
   background:var(--gold-soft);color:#7A5E1A;flex-shrink:0;
 }
 .session-card.test .icon{background:var(--verb-soft);}
+.session-card.free .icon{background:var(--naadj-soft);}
 
 /* ---------- settings sections & appearance ---------- */
 .settings-section{

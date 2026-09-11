@@ -14,7 +14,23 @@
       ],
       "example": {
         "jp": "このかばんは高いです。",
-        "en": "This bag is expensive."
+        "en": "This bag is expensive.",
+        "form_en": {
+          "negative plain": "This bag is not expensive",
+          "negative polite": "This bag is not expensive",
+          "past plain": "This bag was expensive",
+          "past polite": "This bag was expensive",
+          "past negative plain": "This bag was not expensive",
+          "past negative polite": "This bag was not expensive",
+          "adverbial": "This bag is expensive, and ...",
+          "te-form": "This bag is expensive, and ...",
+          "conditional": "If this bag is expensive, ...",
+          "hypothetical past": "If this bag had been expensive, ...",
+          "wanting something to be a certain way": "I want to be expensive",
+          "degree": "This bag is too expensive",
+          "seeming": "This bag seems expensive",
+          "negative implication": "This bag is not expensive, and ..."
+        }
       },
       "irregular_overrides": {}
     },
@@ -31,7 +47,23 @@
       ],
       "example": {
         "jp": "この犬は大きいです。",
-        "en": "This dog is big."
+        "en": "This dog is big.",
+        "form_en": {
+          "negative plain": "This dog is not big",
+          "negative polite": "This dog is not big",
+          "past plain": "This dog was big",
+          "past polite": "This dog was big",
+          "past negative plain": "This dog was not big",
+          "past negative polite": "This dog was not big",
+          "adverbial": "This dog is big, and ...",
+          "te-form": "This dog is big, and ...",
+          "conditional": "If this dog is big, ...",
+          "hypothetical past": "If this dog had been big, ...",
+          "wanting something to be a certain way": "I want to be big",
+          "degree": "This dog is too big",
+          "seeming": "This dog seems big",
+          "negative implication": "This dog is not big, and ..."
+        }
       },
       "irregular_overrides": {}
     },
@@ -49,7 +81,23 @@
       ],
       "example": {
         "jp": "旅行は楽しいです。",
-        "en": "The trip is fun."
+        "en": "The trip is fun.",
+        "form_en": {
+          "negative plain": "The trip is not fun",
+          "negative polite": "The trip is not fun",
+          "past plain": "The trip was fun",
+          "past polite": "The trip was fun",
+          "past negative plain": "The trip was not fun",
+          "past negative polite": "The trip was not fun",
+          "adverbial": "The trip is fun, and ...",
+          "te-form": "The trip is fun, and ...",
+          "conditional": "If the trip is fun, ...",
+          "hypothetical past": "If the trip had been fun, ...",
+          "wanting something to be a certain way": "I want to be fun",
+          "degree": "The trip is too fun",
+          "seeming": "The trip seems fun",
+          "negative implication": "The trip is not fun, and ..."
+        }
       },
       "irregular_overrides": {}
     },
@@ -67,7 +115,23 @@
       ],
       "example": {
         "jp": "図書館は静かです。",
-        "en": "The library is quiet."
+        "en": "The library is quiet.",
+        "form_en": {
+          "negative plain": "The library is not quiet",
+          "negative polite": "The library is not quiet",
+          "past plain": "The library was quiet",
+          "past polite": "The library was quiet",
+          "past negative plain": "The library was not quiet",
+          "past negative polite": "The library was not quiet",
+          "adverbial": "The library is quiet, and ...",
+          "te-form": "The library is quiet, and ...",
+          "conditional": "If the library is quiet, ...",
+          "hypothetical past": "If the library had been quiet, ...",
+          "wanting something to be a certain way": "I want to be quiet",
+          "degree": "The library is too quiet",
+          "seeming": "The library seems quiet",
+          "negative implication": "The library is not quiet, and ..."
+        }
       },
       "irregular_overrides": {}
     },
@@ -84,7 +148,16 @@
       ],
       "example": {
         "jp": "音楽が好きです。",
-        "en": "I like music."
+        "en": "I like music.",
+        "form_en": {
+          "negative plain": "I do not like music",
+          "negative polite": "I do not like music",
+          "past plain": "I liked music",
+          "past polite": "I liked music",
+          "past negative plain": "I did not like music",
+          "past negative polite": "I did not like music",
+          "te-form": "I like music, and ..."
+        }
       },
       "note": "The thing liked is usually marked with が, not を: 音楽が好きです (not 音楽を好きです).",
       "irregular_overrides": {}
@@ -103,7 +176,16 @@
       ],
       "example": {
         "jp": "田中さんは元気です。",
-        "en": "Tanaka-san is doing well."
+        "en": "Tanaka-san is doing well.",
+        "form_en": {
+          "negative plain": "Tanaka-san is doing well",
+          "negative polite": "Tanaka-san is doing well",
+          "past plain": "Tanaka-san was doing well",
+          "past polite": "Tanaka-san was doing well",
+          "past negative plain": "Tanaka-san was doing well",
+          "past negative polite": "Tanaka-san was doing well",
+          "te-form": "Tanaka-san doing well, and ..."
+        }
       },
       "irregular_overrides": {}
     },
@@ -121,7 +203,23 @@
       ],
       "example": {
         "jp": "このアプリは便利です。",
-        "en": "This app is convenient."
+        "en": "This app is convenient.",
+        "form_en": {
+          "negative plain": "This app is not convenient",
+          "negative polite": "This app is not convenient",
+          "past plain": "This app was convenient",
+          "past polite": "This app was convenient",
+          "past negative plain": "This app was not convenient",
+          "past negative polite": "This app was not convenient",
+          "adverbial": "This app is convenient, and ...",
+          "te-form": "This app is convenient, and ...",
+          "conditional": "If this app is convenient, ...",
+          "hypothetical past": "If this app had been convenient, ...",
+          "wanting something to be a certain way": "I want to be convenient",
+          "degree": "This app is too convenient",
+          "seeming": "This app seems convenient",
+          "negative implication": "This app is not convenient, and ..."
+        }
       },
       "irregular_overrides": {}
     },
@@ -138,7 +236,23 @@
       ],
       "example": {
         "jp": "この猫はとても小さいです。",
-        "en": "This cat is very small."
+        "en": "This cat is very small.",
+        "form_en": {
+          "negative plain": "This cat is not very small",
+          "negative polite": "This cat is not very small",
+          "past plain": "This cat was very small",
+          "past polite": "This cat was very small",
+          "past negative plain": "This cat was not very small",
+          "past negative polite": "This cat was not very small",
+          "adverbial": "This cat is very small, and ...",
+          "te-form": "This cat is very small, and ...",
+          "conditional": "If this cat is very small, ...",
+          "hypothetical past": "If this cat had been very small, ...",
+          "wanting something to be a certain way": "I want to be very small",
+          "degree": "This cat is too small",
+          "seeming": "This cat seems small",
+          "negative implication": "This cat is not very small, and ..."
+        }
       },
       "irregular_overrides": {}
     },
@@ -156,7 +270,8 @@
       ],
       "example": {
         "jp": "新しい靴を買いました。",
-        "en": "I bought new shoes."
+        "en": "I bought new shoes.",
+        "form_en": {}
       },
       "irregular_overrides": {}
     },
@@ -174,7 +289,18 @@
       ],
       "example": {
         "jp": "この車は古いですが、よく走ります。",
-        "en": "This car is old but runs well."
+        "en": "This car is old but runs well.",
+        "form_en": {
+          "past plain": "This car was old but runs well",
+          "past polite": "This car was old but runs well",
+          "adverbial": "This car is old but runs well, and ...",
+          "te-form": "This car is old but runs well, and ...",
+          "conditional": "If this car is old but runs well, ...",
+          "hypothetical past": "If this car had been old but runs well, ...",
+          "wanting something to be a certain way": "I want to be old but runs well",
+          "degree": "This car is too old",
+          "seeming": "This car seems old but runs well"
+        }
       },
       "irregular_overrides": {}
     },
@@ -225,7 +351,23 @@
       ],
       "example": {
         "jp": "今日はとても暑いです。",
-        "en": "It is very hot today."
+        "en": "It is very hot today.",
+        "form_en": {
+          "negative plain": "It is not very hot today",
+          "negative polite": "It is not very hot today",
+          "past plain": "It was very hot today",
+          "past polite": "It was very hot today",
+          "past negative plain": "It was not very hot today",
+          "past negative polite": "It was not very hot today",
+          "adverbial": "It is very hot today, and ...",
+          "te-form": "It is very hot today, and ...",
+          "conditional": "If it is very hot today, ...",
+          "hypothetical past": "If it had been very hot today, ...",
+          "wanting something to be a certain way": "I want to be very hot today",
+          "degree": "It is too hot",
+          "seeming": "It seems hot today",
+          "negative implication": "It is not very hot today, and ..."
+        }
       },
       "note": "暑い refers to hot weather. The hot-to-the-touch 熱い and the thick 厚い are separate words also read あつい.",
       "irregular_overrides": {}
@@ -243,7 +385,23 @@
       ],
       "example": {
         "jp": "冬は寒いです。",
-        "en": "Winter is cold."
+        "en": "Winter is cold.",
+        "form_en": {
+          "negative plain": "Winter is not cold",
+          "negative polite": "Winter is not cold",
+          "past plain": "Winter was cold",
+          "past polite": "Winter was cold",
+          "past negative plain": "Winter was not cold",
+          "past negative polite": "Winter was not cold",
+          "adverbial": "Winter is cold, and ...",
+          "te-form": "Winter is cold, and ...",
+          "conditional": "If winter is cold, ...",
+          "hypothetical past": "If winter had been cold, ...",
+          "wanting something to be a certain way": "I want to be cold",
+          "degree": "Winter is too cold",
+          "seeming": "Winter seems cold",
+          "negative implication": "Winter is not cold, and ..."
+        }
       },
       "note": "寒い refers to cold weather/air. The cold-to-the-touch 冷たい is a separate word.",
       "irregular_overrides": {}
@@ -279,7 +437,23 @@
       ],
       "example": {
         "jp": "秋は涼しいです。",
-        "en": "Autumn is cool."
+        "en": "Autumn is cool.",
+        "form_en": {
+          "negative plain": "Autumn is not cool",
+          "negative polite": "Autumn is not cool",
+          "past plain": "Autumn was cool",
+          "past polite": "Autumn was cool",
+          "past negative plain": "Autumn was not cool",
+          "past negative polite": "Autumn was not cool",
+          "adverbial": "Autumn is cool, and ...",
+          "te-form": "Autumn is cool, and ...",
+          "conditional": "If autumn is cool, ...",
+          "hypothetical past": "If autumn had been cool, ...",
+          "wanting something to be a certain way": "I want to be cool",
+          "degree": "Autumn is too cool",
+          "seeming": "Autumn seems cool",
+          "negative implication": "Autumn is not cool, and ..."
+        }
       },
       "irregular_overrides": {}
     },
@@ -297,7 +471,23 @@
       ],
       "example": {
         "jp": "このお茶は熱いです。気をつけてください。",
-        "en": "This tea is hot. Please be careful."
+        "en": "This tea is hot. Please be careful.",
+        "form_en": {
+          "negative plain": "This tea is not hot. Please be careful",
+          "negative polite": "This tea is not hot. Please be careful",
+          "past plain": "This tea was hot. Please be careful",
+          "past polite": "This tea was hot. Please be careful",
+          "past negative plain": "This tea was not hot. Please be careful",
+          "past negative polite": "This tea was not hot. Please be careful",
+          "adverbial": "This tea is hot. Please be careful, and ...",
+          "te-form": "This tea is hot. Please be careful, and ...",
+          "conditional": "If this tea is hot. Please be careful, ...",
+          "hypothetical past": "If this tea had been hot. Please be careful, ...",
+          "wanting something to be a certain way": "I want to be hot. Please be careful",
+          "degree": "This tea is too hot",
+          "seeming": "This tea seems hot. Please be careful",
+          "negative implication": "This tea is not hot. Please be careful, and ..."
+        }
       },
       "note": "熱い describes something physically hot to touch. Weather heat is 暑い and thickness is 厚い.",
       "irregular_overrides": {}
@@ -316,7 +506,8 @@
       ],
       "example": {
         "jp": "冷たい水が飲みたいです。",
-        "en": "I want to drink cold water."
+        "en": "I want to drink cold water.",
+        "form_en": {}
       },
       "irregular_overrides": {}
     },
@@ -334,7 +525,23 @@
       ],
       "example": {
         "jp": "今週は仕事が忙しいです。",
-        "en": "I am busy with work this week."
+        "en": "I am busy with work this week.",
+        "form_en": {
+          "negative plain": "I am not busy with work this week",
+          "negative polite": "I am not busy with work this week",
+          "past plain": "I was busy with work this week",
+          "past polite": "I was busy with work this week",
+          "past negative plain": "I was not busy with work this week",
+          "past negative polite": "I was not busy with work this week",
+          "adverbial": "I am busy with work this week, and ...",
+          "te-form": "I am busy with work this week, and ...",
+          "conditional": "If I am busy with work this week, ...",
+          "hypothetical past": "If I had been busy with work this week, ...",
+          "wanting something to be a certain way": "I want to be busy with work this week",
+          "degree": "I am too busy",
+          "seeming": "I seem busy with work this week",
+          "negative implication": "I am not busy with work this week, and ..."
+        }
       },
       "irregular_overrides": {}
     },
@@ -370,7 +577,23 @@
       ],
       "example": {
         "jp": "うちの台所は狭いです。",
-        "en": "Our kitchen is small."
+        "en": "Our kitchen is small.",
+        "form_en": {
+          "negative plain": "Our kitchen is not small",
+          "negative polite": "Our kitchen is not small",
+          "past plain": "Our kitchen was small",
+          "past polite": "Our kitchen was small",
+          "past negative plain": "Our kitchen was not small",
+          "past negative polite": "Our kitchen was not small",
+          "adverbial": "Our kitchen is small, and ...",
+          "te-form": "Our kitchen is small, and ...",
+          "conditional": "If our kitchen is small, ...",
+          "hypothetical past": "If our kitchen had been small, ...",
+          "wanting something to be a certain way": "I want to be small",
+          "degree": "Our kitchen is too small",
+          "seeming": "Our kitchen seems small",
+          "negative implication": "Our kitchen is not small, and ..."
+        }
       },
       "irregular_overrides": {}
     },
@@ -387,7 +610,23 @@
       ],
       "example": {
         "jp": "駅からここまで遠いです。",
-        "en": "It is far from the station to here."
+        "en": "It is far from the station to here.",
+        "form_en": {
+          "negative plain": "It is not far from the station to here",
+          "negative polite": "It is not far from the station to here",
+          "past plain": "It was far from the station to here",
+          "past polite": "It was far from the station to here",
+          "past negative plain": "It was not far from the station to here",
+          "past negative polite": "It was not far from the station to here",
+          "adverbial": "It is far from the station to here, and ...",
+          "te-form": "It is far from the station to here, and ...",
+          "conditional": "If it is far from the station to here, ...",
+          "hypothetical past": "If it had been far from the station to here, ...",
+          "wanting something to be a certain way": "I want to be far from the station to here",
+          "degree": "It is too far",
+          "seeming": "It seems far from the station to here",
+          "negative implication": "It is not far from the station to here, and ..."
+        }
       },
       "irregular_overrides": {}
     },
@@ -404,7 +643,23 @@
       ],
       "example": {
         "jp": "スーパーは家に近いです。",
-        "en": "The supermarket is near my house."
+        "en": "The supermarket is near my house.",
+        "form_en": {
+          "negative plain": "The supermarket is not near my house",
+          "negative polite": "The supermarket is not near my house",
+          "past plain": "The supermarket was near my house",
+          "past polite": "The supermarket was near my house",
+          "past negative plain": "The supermarket was not near my house",
+          "past negative polite": "The supermarket was not near my house",
+          "adverbial": "The supermarket is near my house, and ...",
+          "te-form": "The supermarket is near my house, and ...",
+          "conditional": "If the supermarket is near my house, ...",
+          "hypothetical past": "If the supermarket had been near my house, ...",
+          "wanting something to be a certain way": "I want to be near my house",
+          "degree": "The supermarket is too near",
+          "seeming": "The supermarket seems near my house",
+          "negative implication": "The supermarket is not near my house, and ..."
+        }
       },
       "irregular_overrides": {}
     },
@@ -421,7 +676,23 @@
       ],
       "example": {
         "jp": "この川は長いです。",
-        "en": "This river is long."
+        "en": "This river is long.",
+        "form_en": {
+          "negative plain": "This river is not long",
+          "negative polite": "This river is not long",
+          "past plain": "This river was long",
+          "past polite": "This river was long",
+          "past negative plain": "This river was not long",
+          "past negative polite": "This river was not long",
+          "adverbial": "This river is long, and ...",
+          "te-form": "This river is long, and ...",
+          "conditional": "If this river is long, ...",
+          "hypothetical past": "If this river had been long, ...",
+          "wanting something to be a certain way": "I want to be long",
+          "degree": "This river is too long",
+          "seeming": "This river seems long",
+          "negative implication": "This river is not long, and ..."
+        }
       },
       "irregular_overrides": {}
     },
@@ -438,7 +709,8 @@
       ],
       "example": {
         "jp": "冬は昼が短いです。",
-        "en": "In winter the days are short."
+        "en": "In winter the days are short.",
+        "form_en": {}
       },
       "irregular_overrides": {}
     },
@@ -455,7 +727,23 @@
       ],
       "example": {
         "jp": "この問題は難しいです。",
-        "en": "This problem is difficult."
+        "en": "This problem is difficult.",
+        "form_en": {
+          "negative plain": "This problem is not difficult",
+          "negative polite": "This problem is not difficult",
+          "past plain": "This problem was difficult",
+          "past polite": "This problem was difficult",
+          "past negative plain": "This problem was not difficult",
+          "past negative polite": "This problem was not difficult",
+          "adverbial": "This problem is difficult, and ...",
+          "te-form": "This problem is difficult, and ...",
+          "conditional": "If this problem is difficult, ...",
+          "hypothetical past": "If this problem had been difficult, ...",
+          "wanting something to be a certain way": "I want to be difficult",
+          "degree": "This problem is too difficult",
+          "seeming": "This problem seems difficult",
+          "negative implication": "This problem is not difficult, and ..."
+        }
       },
       "irregular_overrides": {}
     },
@@ -472,7 +760,23 @@
       ],
       "example": {
         "jp": "この本は易しい日本語で書いてあります。",
-        "en": "This book is written in easy Japanese."
+        "en": "This book is written in easy Japanese.",
+        "form_en": {
+          "negative plain": "This book is not written in easy Japanese",
+          "negative polite": "This book is not written in easy Japanese",
+          "past plain": "This book was written in easy Japanese",
+          "past polite": "This book was written in easy Japanese",
+          "past negative plain": "This book was not written in easy Japanese",
+          "past negative polite": "This book was not written in easy Japanese",
+          "adverbial": "This book is written in easy Japanese, and ...",
+          "te-form": "This book is written in easy Japanese, and ...",
+          "conditional": "If this book is written in easy Japanese, ...",
+          "hypothetical past": "If this book had been written in easy Japanese, ...",
+          "wanting something to be a certain way": "I want to be written in easy Japanese",
+          "degree": "This book is too written",
+          "seeming": "This book seems written in easy Japanese",
+          "negative implication": "This book is not written in easy Japanese, and ..."
+        }
       },
       "note": "易しい (easy) and 優しい (kind) are different words that are both read やさしい.",
       "irregular_overrides": {}
@@ -491,7 +795,16 @@
       ],
       "example": {
         "jp": "体の調子が悪いです。",
-        "en": "I am not feeling well."
+        "en": "I am not feeling well.",
+        "form_en": {
+          "negative plain": "I am not feeling well",
+          "negative polite": "I am not feeling well",
+          "past plain": "I was not feeling well",
+          "past polite": "I was not feeling well",
+          "past negative plain": "I was not feeling well",
+          "past negative polite": "I was not feeling well",
+          "te-form": "I feeling well, and ..."
+        }
       },
       "irregular_overrides": {}
     },
@@ -528,7 +841,23 @@
       ],
       "example": {
         "jp": "電車が遅れています。遅いです。",
-        "en": "The train is delayed. It is late."
+        "en": "The train is delayed. It is late.",
+        "form_en": {
+          "negative plain": "The train is not delayed. It is late",
+          "negative polite": "The train is not delayed. It is late",
+          "past plain": "The train was delayed. It is late",
+          "past polite": "The train was delayed. It is late",
+          "past negative plain": "The train was not delayed. It is late",
+          "past negative polite": "The train was not delayed. It is late",
+          "adverbial": "The train is delayed. It is late, and ...",
+          "te-form": "The train is delayed. It is late, and ...",
+          "conditional": "If the train is delayed. It is late, ...",
+          "hypothetical past": "If the train had been delayed. It is late, ...",
+          "wanting something to be a certain way": "I want to be delayed. It is late",
+          "degree": "The train is too delayed",
+          "seeming": "The train seems delayed. It is late",
+          "negative implication": "The train is not delayed. It is late, and ..."
+        }
       },
       "irregular_overrides": {}
     },
@@ -545,7 +874,8 @@
       ],
       "example": {
         "jp": "日本には雨が多いです。",
-        "en": "There is a lot of rain in Japan."
+        "en": "There is a lot of rain in Japan.",
+        "form_en": {}
       },
       "note": "多い describes the subject directly (人が多い). It is not used attributively before a noun the way other adjectives are (Xの多い人 is used instead).",
       "irregular_overrides": {}
@@ -563,7 +893,8 @@
       ],
       "example": {
         "jp": "今年の雪は少ないです。",
-        "en": "There is little snow this year."
+        "en": "There is little snow this year.",
+        "form_en": {}
       },
       "irregular_overrides": {}
     },
@@ -580,7 +911,23 @@
       ],
       "example": {
         "jp": "この部屋は明るいです。",
-        "en": "This room is bright."
+        "en": "This room is bright.",
+        "form_en": {
+          "negative plain": "This room is not bright",
+          "negative polite": "This room is not bright",
+          "past plain": "This room was bright",
+          "past polite": "This room was bright",
+          "past negative plain": "This room was not bright",
+          "past negative polite": "This room was not bright",
+          "adverbial": "This room is bright, and ...",
+          "te-form": "This room is bright, and ...",
+          "conditional": "If this room is bright, ...",
+          "hypothetical past": "If this room had been bright, ...",
+          "wanting something to be a certain way": "I want to be bright",
+          "degree": "This room is too bright",
+          "seeming": "This room seems bright",
+          "negative implication": "This room is not bright, and ..."
+        }
       },
       "irregular_overrides": {}
     },
@@ -597,7 +944,8 @@
       ],
       "example": {
         "jp": "夜の公園は暗いです。",
-        "en": "The park at night is dark."
+        "en": "The park at night is dark.",
+        "form_en": {}
       },
       "irregular_overrides": {}
     },
@@ -615,7 +963,23 @@
       ],
       "example": {
         "jp": "彼はまだ若いです。",
-        "en": "He is still young."
+        "en": "He is still young.",
+        "form_en": {
+          "negative plain": "He is not still young",
+          "negative polite": "He is not still young",
+          "past plain": "He was still young",
+          "past polite": "He was still young",
+          "past negative plain": "He was not still young",
+          "past negative polite": "He was not still young",
+          "adverbial": "He is still young, and ...",
+          "te-form": "He is still young, and ...",
+          "conditional": "If he is still young, ...",
+          "hypothetical past": "If he had been still young, ...",
+          "wanting something to be a certain way": "I want to be still young",
+          "degree": "He is too still",
+          "seeming": "He seems still young",
+          "negative implication": "He is not still young, and ..."
+        }
       },
       "irregular_overrides": {}
     },
@@ -632,7 +996,16 @@
       ],
       "example": {
         "jp": "白いシャツを着ています。",
-        "en": "I am wearing a white shirt."
+        "en": "I am wearing a white shirt.",
+        "form_en": {
+          "negative plain": "I am wearing a white shirt",
+          "negative polite": "I am wearing a white shirt",
+          "past plain": "I was wearing a white shirt",
+          "past polite": "I was wearing a white shirt",
+          "past negative plain": "I was wearing a white shirt",
+          "past negative polite": "I was wearing a white shirt",
+          "te-form": "I wearing a white shirt, and ..."
+        }
       },
       "irregular_overrides": {}
     },
@@ -649,7 +1022,16 @@
       ],
       "example": {
         "jp": "黒い髪が好きです。",
-        "en": "I like black hair."
+        "en": "I like black hair.",
+        "form_en": {
+          "negative plain": "I do not like black hair",
+          "negative polite": "I do not like black hair",
+          "past plain": "I liked black hair",
+          "past polite": "I liked black hair",
+          "past negative plain": "I did not like black hair",
+          "past negative polite": "I did not like black hair",
+          "te-form": "I like black hair, and ..."
+        }
       },
       "irregular_overrides": {}
     },
@@ -666,7 +1048,8 @@
       ],
       "example": {
         "jp": "赤いりんごをもらいました。",
-        "en": "I received a red apple."
+        "en": "I received a red apple.",
+        "form_en": {}
       },
       "irregular_overrides": {}
     },
@@ -684,7 +1067,23 @@
       ],
       "example": {
         "jp": "空が青いです。",
-        "en": "The sky is blue."
+        "en": "The sky is blue.",
+        "form_en": {
+          "negative plain": "The sky is not blue",
+          "negative polite": "The sky is not blue",
+          "past plain": "The sky was blue",
+          "past polite": "The sky was blue",
+          "past negative plain": "The sky was not blue",
+          "past negative polite": "The sky was not blue",
+          "adverbial": "The sky is blue, and ...",
+          "te-form": "The sky is blue, and ...",
+          "conditional": "If the sky is blue, ...",
+          "hypothetical past": "If the sky had been blue, ...",
+          "wanting something to be a certain way": "I want to be blue",
+          "degree": "The sky is too blue",
+          "seeming": "The sky seems blue",
+          "negative implication": "The sky is not blue, and ..."
+        }
       },
       "irregular_overrides": {}
     },
@@ -702,7 +1101,23 @@
       ],
       "example": {
         "jp": "この荷物は重いです。",
-        "en": "This luggage is heavy."
+        "en": "This luggage is heavy.",
+        "form_en": {
+          "negative plain": "This luggage is not heavy",
+          "negative polite": "This luggage is not heavy",
+          "past plain": "This luggage was heavy",
+          "past polite": "This luggage was heavy",
+          "past negative plain": "This luggage was not heavy",
+          "past negative polite": "This luggage was not heavy",
+          "adverbial": "This luggage is heavy, and ...",
+          "te-form": "This luggage is heavy, and ...",
+          "conditional": "If this luggage is heavy, ...",
+          "hypothetical past": "If this luggage had been heavy, ...",
+          "wanting something to be a certain way": "I want to be heavy",
+          "degree": "This luggage is too heavy",
+          "seeming": "This luggage seems heavy",
+          "negative implication": "This luggage is not heavy, and ..."
+        }
       },
       "irregular_overrides": {}
     },
@@ -738,7 +1153,23 @@
       ],
       "example": {
         "jp": "彼はとても強いです。",
-        "en": "He is very strong."
+        "en": "He is very strong.",
+        "form_en": {
+          "negative plain": "He is not very strong",
+          "negative polite": "He is not very strong",
+          "past plain": "He was very strong",
+          "past polite": "He was very strong",
+          "past negative plain": "He was not very strong",
+          "past negative polite": "He was not very strong",
+          "adverbial": "He is very strong, and ...",
+          "te-form": "He is very strong, and ...",
+          "conditional": "If he is very strong, ...",
+          "hypothetical past": "If he had been very strong, ...",
+          "wanting something to be a certain way": "I want to be very strong",
+          "degree": "He is too strong",
+          "seeming": "He seems strong",
+          "negative implication": "He is not very strong, and ..."
+        }
       },
       "irregular_overrides": {}
     },
@@ -756,7 +1187,8 @@
       ],
       "example": {
         "jp": "私はお酒に弱いです。",
-        "en": "I have a low tolerance for alcohol."
+        "en": "I have a low tolerance for alcohol.",
+        "form_en": {}
       },
       "irregular_overrides": {}
     },
@@ -791,7 +1223,22 @@
       ],
       "example": {
         "jp": "田中さんは優しい人です。",
-        "en": "Tanaka-san is a kind person."
+        "en": "Tanaka-san is a kind person.",
+        "form_en": {
+          "negative plain": "Tanaka-san is not a kind person",
+          "negative polite": "Tanaka-san is not a kind person",
+          "past plain": "Tanaka-san was a kind person",
+          "past polite": "Tanaka-san was a kind person",
+          "past negative plain": "Tanaka-san was not a kind person",
+          "past negative polite": "Tanaka-san was not a kind person",
+          "adverbial": "Tanaka-san is a kind person, and ...",
+          "te-form": "Tanaka-san is a kind person, and ...",
+          "conditional": "If tanaka-san is a kind person, ...",
+          "hypothetical past": "If tanaka-san had been a kind person, ...",
+          "wanting something to be a certain way": "I want to be a kind person",
+          "seeming": "Tanaka-san seems a kind person",
+          "negative implication": "Tanaka-san is not a kind person, and ..."
+        }
       },
       "note": "優しい (kind) and 易しい (easy) are different words that are both read やさしい.",
       "irregular_overrides": {}
@@ -810,7 +1257,23 @@
       ],
       "example": {
         "jp": "ここは危ないです。近づかないでください。",
-        "en": "This place is dangerous. Please do not go near it."
+        "en": "This place is dangerous. Please do not go near it.",
+        "form_en": {
+          "negative plain": "This place is not dangerous. Please do not go near it",
+          "negative polite": "This place is not dangerous. Please do not go near it",
+          "past plain": "This place was dangerous. Please do not go near it",
+          "past polite": "This place was dangerous. Please do not go near it",
+          "past negative plain": "This place was not dangerous. Please do not go near it",
+          "past negative polite": "This place was not dangerous. Please do not go near it",
+          "adverbial": "This place is dangerous. Please do not go near it, and ...",
+          "te-form": "This place is dangerous. Please do not go near it, and ...",
+          "conditional": "If this place is dangerous. Please do not go near it, ...",
+          "hypothetical past": "If this place had been dangerous. Please do not go near it, ...",
+          "wanting something to be a certain way": "I want to be dangerous. Please do not go near it",
+          "degree": "This place is too dangerous",
+          "seeming": "This place seems dangerous. Please do not go near it",
+          "negative implication": "This place is not dangerous. Please do not go near it, and ..."
+        }
       },
       "irregular_overrides": {}
     },
@@ -847,7 +1310,23 @@
       ],
       "example": {
         "jp": "この花はとても美しいです。",
-        "en": "This flower is very beautiful."
+        "en": "This flower is very beautiful.",
+        "form_en": {
+          "negative plain": "This flower is not very beautiful",
+          "negative polite": "This flower is not very beautiful",
+          "past plain": "This flower was very beautiful",
+          "past polite": "This flower was very beautiful",
+          "past negative plain": "This flower was not very beautiful",
+          "past negative polite": "This flower was not very beautiful",
+          "adverbial": "This flower is very beautiful, and ...",
+          "te-form": "This flower is very beautiful, and ...",
+          "conditional": "If this flower is very beautiful, ...",
+          "hypothetical past": "If this flower had been very beautiful, ...",
+          "wanting something to be a certain way": "I want to be very beautiful",
+          "degree": "This flower is too beautiful",
+          "seeming": "This flower seems beautiful",
+          "negative implication": "This flower is not very beautiful, and ..."
+        }
       },
       "irregular_overrides": {}
     },
@@ -864,7 +1343,18 @@
       ],
       "example": {
         "jp": "部屋が汚いので、掃除します。",
-        "en": "The room is dirty, so I will clean it."
+        "en": "The room is dirty, so I will clean it.",
+        "form_en": {
+          "past plain": "The room was dirty, so I will clean it",
+          "past polite": "The room was dirty, so I will clean it",
+          "adverbial": "The room is dirty, so I will clean it, and ...",
+          "te-form": "The room is dirty, so I will clean it, and ...",
+          "conditional": "If the room is dirty, so I will clean it, ...",
+          "hypothetical past": "If the room had been dirty, so I will clean it, ...",
+          "wanting something to be a certain way": "I want to be dirty, so I will clean it",
+          "degree": "The room is too dirty",
+          "seeming": "The room seems dirty, so I will clean it"
+        }
       },
       "irregular_overrides": {}
     },
@@ -881,7 +1371,23 @@
       ],
       "example": {
         "jp": "別れは悲しいです。",
-        "en": "Parting is sad."
+        "en": "Parting is sad.",
+        "form_en": {
+          "negative plain": "Parting is not sad",
+          "negative polite": "Parting is not sad",
+          "past plain": "Parting was sad",
+          "past polite": "Parting was sad",
+          "past negative plain": "Parting was not sad",
+          "past negative polite": "Parting was not sad",
+          "adverbial": "Parting is sad, and ...",
+          "te-form": "Parting is sad, and ...",
+          "conditional": "If parting is sad, ...",
+          "hypothetical past": "If parting had been sad, ...",
+          "wanting something to be a certain way": "I want to be sad",
+          "degree": "Parting is too sad",
+          "seeming": "Parting seems sad",
+          "negative implication": "Parting is not sad, and ..."
+        }
       },
       "irregular_overrides": {}
     },
@@ -898,7 +1404,23 @@
       ],
       "example": {
         "jp": "プレゼントをもらって嬉しいです。",
-        "en": "I am glad I received a present."
+        "en": "I am glad I received a present.",
+        "form_en": {
+          "negative plain": "I am not glad I received a present",
+          "negative polite": "I am not glad I received a present",
+          "past plain": "I was glad I received a present",
+          "past polite": "I was glad I received a present",
+          "past negative plain": "I was not glad I received a present",
+          "past negative polite": "I was not glad I received a present",
+          "adverbial": "I am glad I received a present, and ...",
+          "te-form": "I am glad I received a present, and ...",
+          "conditional": "If I am glad I received a present, ...",
+          "hypothetical past": "If I had been glad I received a present, ...",
+          "wanting something to be a certain way": "I want to be glad I received a present",
+          "degree": "I am too glad",
+          "seeming": "I seem glad I received a present",
+          "negative implication": "I am not glad I received a present, and ..."
+        }
       },
       "irregular_overrides": {}
     },
@@ -915,7 +1437,8 @@
       ],
       "example": {
         "jp": "一人で暮らすのは寂しいです。",
-        "en": "Living alone is lonely."
+        "en": "Living alone is lonely.",
+        "form_en": {}
       },
       "irregular_overrides": {}
     },
@@ -933,7 +1456,8 @@
       ],
       "example": {
         "jp": "頭が痛いです。",
-        "en": "I have a headache."
+        "en": "I have a headache.",
+        "form_en": {}
       },
       "irregular_overrides": {}
     },
@@ -951,7 +1475,8 @@
       ],
       "example": {
         "jp": "虫に刺されて、足が痒いです。",
-        "en": "A bug bit me and my leg is itchy."
+        "en": "A bug bit me and my leg is itchy.",
+        "form_en": {}
       },
       "irregular_overrides": {}
     },
@@ -968,7 +1493,23 @@
       ],
       "example": {
         "jp": "この薬は苦いです。",
-        "en": "This medicine is bitter."
+        "en": "This medicine is bitter.",
+        "form_en": {
+          "negative plain": "This medicine is not bitter",
+          "negative polite": "This medicine is not bitter",
+          "past plain": "This medicine was bitter",
+          "past polite": "This medicine was bitter",
+          "past negative plain": "This medicine was not bitter",
+          "past negative polite": "This medicine was not bitter",
+          "adverbial": "This medicine is bitter, and ...",
+          "te-form": "This medicine is bitter, and ...",
+          "conditional": "If this medicine is bitter, ...",
+          "hypothetical past": "If this medicine had been bitter, ...",
+          "wanting something to be a certain way": "I want to be bitter",
+          "degree": "This medicine is too bitter",
+          "seeming": "This medicine seems bitter",
+          "negative implication": "This medicine is not bitter, and ..."
+        }
       },
       "irregular_overrides": {}
     },
@@ -985,7 +1526,23 @@
       ],
       "example": {
         "jp": "このケーキは甘いです。",
-        "en": "This cake is sweet."
+        "en": "This cake is sweet.",
+        "form_en": {
+          "negative plain": "This cake is not sweet",
+          "negative polite": "This cake is not sweet",
+          "past plain": "This cake was sweet",
+          "past polite": "This cake was sweet",
+          "past negative plain": "This cake was not sweet",
+          "past negative polite": "This cake was not sweet",
+          "adverbial": "This cake is sweet, and ...",
+          "te-form": "This cake is sweet, and ...",
+          "conditional": "If this cake is sweet, ...",
+          "hypothetical past": "If this cake had been sweet, ...",
+          "wanting something to be a certain way": "I want to be sweet",
+          "degree": "This cake is too sweet",
+          "seeming": "This cake seems sweet",
+          "negative implication": "This cake is not sweet, and ..."
+        }
       },
       "irregular_overrides": {}
     },
@@ -1002,7 +1559,23 @@
       ],
       "example": {
         "jp": "このカレーは辛いです。",
-        "en": "This curry is spicy."
+        "en": "This curry is spicy.",
+        "form_en": {
+          "negative plain": "This curry is not spicy",
+          "negative polite": "This curry is not spicy",
+          "past plain": "This curry was spicy",
+          "past polite": "This curry was spicy",
+          "past negative plain": "This curry was not spicy",
+          "past negative polite": "This curry was not spicy",
+          "adverbial": "This curry is spicy, and ...",
+          "te-form": "This curry is spicy, and ...",
+          "conditional": "If this curry is spicy, ...",
+          "hypothetical past": "If this curry had been spicy, ...",
+          "wanting something to be a certain way": "I want to be spicy",
+          "degree": "This curry is too spicy",
+          "seeming": "This curry seems spicy",
+          "negative implication": "This curry is not spicy, and ..."
+        }
       },
       "note": "辛い read からい means spicy/hot in taste. Read つらい, it is a different word meaning painful/hard.",
       "irregular_overrides": {}
@@ -1039,7 +1612,22 @@
       ],
       "example": {
         "jp": "このりんごは少し酸っぱいです。",
-        "en": "This apple is a little sour."
+        "en": "This apple is a little sour.",
+        "form_en": {
+          "negative plain": "This apple is not a little sour",
+          "negative polite": "This apple is not a little sour",
+          "past plain": "This apple was a little sour",
+          "past polite": "This apple was a little sour",
+          "past negative plain": "This apple was not a little sour",
+          "past negative polite": "This apple was not a little sour",
+          "adverbial": "This apple is a little sour, and ...",
+          "te-form": "This apple is a little sour, and ...",
+          "conditional": "If this apple is a little sour, ...",
+          "hypothetical past": "If this apple had been a little sour, ...",
+          "wanting something to be a certain way": "I want to be a little sour",
+          "seeming": "This apple seems a little sour",
+          "negative implication": "This apple is not a little sour, and ..."
+        }
       },
       "irregular_overrides": {}
     },
@@ -1056,7 +1644,23 @@
       ],
       "example": {
         "jp": "このスープは塩辛いです。",
-        "en": "This soup is salty."
+        "en": "This soup is salty.",
+        "form_en": {
+          "negative plain": "This soup is not salty",
+          "negative polite": "This soup is not salty",
+          "past plain": "This soup was salty",
+          "past polite": "This soup was salty",
+          "past negative plain": "This soup was not salty",
+          "past negative polite": "This soup was not salty",
+          "adverbial": "This soup is salty, and ...",
+          "te-form": "This soup is salty, and ...",
+          "conditional": "If this soup is salty, ...",
+          "hypothetical past": "If this soup had been salty, ...",
+          "wanting something to be a certain way": "I want to be salty",
+          "degree": "This soup is too salty",
+          "seeming": "This soup seems salty",
+          "negative implication": "This soup is not salty, and ..."
+        }
       },
       "note": "The standard reading is しおからい; the colloquial しょっぱい is widely used in casual speech.",
       "irregular_overrides": {}
@@ -1094,7 +1698,23 @@
       ],
       "example": {
         "jp": "このベッドは柔らかいです。",
-        "en": "This bed is soft."
+        "en": "This bed is soft.",
+        "form_en": {
+          "negative plain": "This bed is not soft",
+          "negative polite": "This bed is not soft",
+          "past plain": "This bed was soft",
+          "past polite": "This bed was soft",
+          "past negative plain": "This bed was not soft",
+          "past negative polite": "This bed was not soft",
+          "adverbial": "This bed is soft, and ...",
+          "te-form": "This bed is soft, and ...",
+          "conditional": "If this bed is soft, ...",
+          "hypothetical past": "If this bed had been soft, ...",
+          "wanting something to be a certain way": "I want to be soft",
+          "degree": "This bed is too soft",
+          "seeming": "This bed seems soft",
+          "negative implication": "This bed is not soft, and ..."
+        }
       },
       "irregular_overrides": {}
     },
@@ -1112,7 +1732,8 @@
       ],
       "example": {
         "jp": "彼女は細い指をしています。",
-        "en": "She has slender fingers."
+        "en": "She has slender fingers.",
+        "form_en": {}
       },
       "irregular_overrides": {}
     },
@@ -1130,7 +1751,8 @@
       ],
       "example": {
         "jp": "この木は幹が太いです。",
-        "en": "This tree has a thick trunk."
+        "en": "This tree has a thick trunk.",
+        "form_en": {}
       },
       "irregular_overrides": {}
     },
@@ -1148,7 +1770,8 @@
       ],
       "example": {
         "jp": "細かい点まで説明してください。",
-        "en": "Please explain even the fine points."
+        "en": "Please explain even the fine points.",
+        "form_en": {}
       },
       "irregular_overrides": {}
     },
@@ -1165,7 +1788,23 @@
       ],
       "example": {
         "jp": "地球は丸いです。",
-        "en": "The earth is round."
+        "en": "The earth is round.",
+        "form_en": {
+          "negative plain": "The earth is not round",
+          "negative polite": "The earth is not round",
+          "past plain": "The earth was round",
+          "past polite": "The earth was round",
+          "past negative plain": "The earth was not round",
+          "past negative polite": "The earth was not round",
+          "adverbial": "The earth is round, and ...",
+          "te-form": "The earth is round, and ...",
+          "conditional": "If the earth is round, ...",
+          "hypothetical past": "If the earth had been round, ...",
+          "wanting something to be a certain way": "I want to be round",
+          "degree": "The earth is too round",
+          "seeming": "The earth seems round",
+          "negative implication": "The earth is not round, and ..."
+        }
       },
       "irregular_overrides": {}
     },
@@ -1182,7 +1821,16 @@
       ],
       "example": {
         "jp": "四角い箱を探しています。",
-        "en": "I am looking for a square box."
+        "en": "I am looking for a square box.",
+        "form_en": {
+          "negative plain": "I am looking for a square box",
+          "negative polite": "I am looking for a square box",
+          "past plain": "I was looking for a square box",
+          "past polite": "I was looking for a square box",
+          "past negative plain": "I was looking for a square box",
+          "past negative polite": "I was looking for a square box",
+          "te-form": "I looking for a square box, and ..."
+        }
       },
       "irregular_overrides": {}
     },
@@ -1200,7 +1848,23 @@
       ],
       "example": {
         "jp": "この湖はとても深いです。",
-        "en": "This lake is very deep."
+        "en": "This lake is very deep.",
+        "form_en": {
+          "negative plain": "This lake is not very deep",
+          "negative polite": "This lake is not very deep",
+          "past plain": "This lake was very deep",
+          "past polite": "This lake was very deep",
+          "past negative plain": "This lake was not very deep",
+          "past negative polite": "This lake was not very deep",
+          "adverbial": "This lake is very deep, and ...",
+          "te-form": "This lake is very deep, and ...",
+          "conditional": "If this lake is very deep, ...",
+          "hypothetical past": "If this lake had been very deep, ...",
+          "wanting something to be a certain way": "I want to be very deep",
+          "degree": "This lake is too deep",
+          "seeming": "This lake seems deep",
+          "negative implication": "This lake is not very deep, and ..."
+        }
       },
       "irregular_overrides": {}
     },
@@ -1236,7 +1900,23 @@
       ],
       "example": {
         "jp": "この車は速いです。",
-        "en": "This car is fast."
+        "en": "This car is fast.",
+        "form_en": {
+          "negative plain": "This car is not fast",
+          "negative polite": "This car is not fast",
+          "past plain": "This car was fast",
+          "past polite": "This car was fast",
+          "past negative plain": "This car was not fast",
+          "past negative polite": "This car was not fast",
+          "adverbial": "This car is fast, and ...",
+          "te-form": "This car is fast, and ...",
+          "conditional": "If this car is fast, ...",
+          "hypothetical past": "If this car had been fast, ...",
+          "wanting something to be a certain way": "I want to be fast",
+          "degree": "This car is too fast",
+          "seeming": "This car seems fast",
+          "negative implication": "This car is not fast, and ..."
+        }
       },
       "note": "速い means fast/quick; 早い (also はやい) means early.",
       "irregular_overrides": {}
@@ -1255,7 +1935,23 @@
       ],
       "example": {
         "jp": "この紙は薄いです。",
-        "en": "This paper is thin."
+        "en": "This paper is thin.",
+        "form_en": {
+          "negative plain": "This paper is not thin",
+          "negative polite": "This paper is not thin",
+          "past plain": "This paper was thin",
+          "past polite": "This paper was thin",
+          "past negative plain": "This paper was not thin",
+          "past negative polite": "This paper was not thin",
+          "adverbial": "This paper is thin, and ...",
+          "te-form": "This paper is thin, and ...",
+          "conditional": "If this paper is thin, ...",
+          "hypothetical past": "If this paper had been thin, ...",
+          "wanting something to be a certain way": "I want to be thin",
+          "degree": "This paper is too thin",
+          "seeming": "This paper seems thin",
+          "negative implication": "This paper is not thin, and ..."
+        }
       },
       "irregular_overrides": {}
     },
@@ -1272,7 +1968,23 @@
       ],
       "example": {
         "jp": "この本は厚いです。",
-        "en": "This book is thick."
+        "en": "This book is thick.",
+        "form_en": {
+          "negative plain": "This book is not thick",
+          "negative polite": "This book is not thick",
+          "past plain": "This book was thick",
+          "past polite": "This book was thick",
+          "past negative plain": "This book was not thick",
+          "past negative polite": "This book was not thick",
+          "adverbial": "This book is thick, and ...",
+          "te-form": "This book is thick, and ...",
+          "conditional": "If this book is thick, ...",
+          "hypothetical past": "If this book had been thick, ...",
+          "wanting something to be a certain way": "I want to be thick",
+          "degree": "This book is too thick",
+          "seeming": "This book seems thick",
+          "negative implication": "This book is not thick, and ..."
+        }
       },
       "note": "厚い means thick in depth. The weather heat 暑い and touch heat 熱い are also read あつい.",
       "irregular_overrides": {}
@@ -1290,7 +2002,8 @@
       ],
       "example": {
         "jp": "夜に一人で歩くのは怖いです。",
-        "en": "Walking alone at night is scary."
+        "en": "Walking alone at night is scary.",
+        "form_en": {}
       },
       "irregular_overrides": {}
     },
@@ -1307,7 +2020,8 @@
       ],
       "example": {
         "jp": "人前で話すのは恥ずかしいです。",
-        "en": "Speaking in front of people is embarrassing."
+        "en": "Speaking in front of people is embarrassing.",
+        "form_en": {}
       },
       "irregular_overrides": {}
     },
@@ -1324,7 +2038,23 @@
       ],
       "example": {
         "jp": "彼の答えは正しいです。",
-        "en": "His answer is correct."
+        "en": "His answer is correct.",
+        "form_en": {
+          "negative plain": "His answer is not correct",
+          "negative polite": "His answer is not correct",
+          "past plain": "His answer was correct",
+          "past polite": "His answer was correct",
+          "past negative plain": "His answer was not correct",
+          "past negative polite": "His answer was not correct",
+          "adverbial": "His answer is correct, and ...",
+          "te-form": "His answer is correct, and ...",
+          "conditional": "If his answer is correct, ...",
+          "hypothetical past": "If his answer had been correct, ...",
+          "wanting something to be a certain way": "I want to be correct",
+          "degree": "His answer is too correct",
+          "seeming": "His answer seems correct",
+          "negative implication": "His answer is not correct, and ..."
+        }
       },
       "irregular_overrides": {}
     },
@@ -1341,7 +2071,22 @@
       ],
       "example": {
         "jp": "彼は偉い人です。",
-        "en": "He is a great person."
+        "en": "He is a great person.",
+        "form_en": {
+          "negative plain": "He is not a great person",
+          "negative polite": "He is not a great person",
+          "past plain": "He was a great person",
+          "past polite": "He was a great person",
+          "past negative plain": "He was not a great person",
+          "past negative polite": "He was not a great person",
+          "adverbial": "He is a great person, and ...",
+          "te-form": "He is a great person, and ...",
+          "conditional": "If he is a great person, ...",
+          "hypothetical past": "If he had been a great person, ...",
+          "wanting something to be a certain way": "I want to be a great person",
+          "seeming": "He seems a great person",
+          "negative implication": "He is not a great person, and ..."
+        }
       },
       "irregular_overrides": {}
     },
@@ -1358,7 +2103,23 @@
       ],
       "example": {
         "jp": "この動物はとても珍しいです。",
-        "en": "This animal is very rare."
+        "en": "This animal is very rare.",
+        "form_en": {
+          "negative plain": "This animal is not very rare",
+          "negative polite": "This animal is not very rare",
+          "past plain": "This animal was very rare",
+          "past polite": "This animal was very rare",
+          "past negative plain": "This animal was not very rare",
+          "past negative polite": "This animal was not very rare",
+          "adverbial": "This animal is very rare, and ...",
+          "te-form": "This animal is very rare, and ...",
+          "conditional": "If this animal is very rare, ...",
+          "hypothetical past": "If this animal had been very rare, ...",
+          "wanting something to be a certain way": "I want to be very rare",
+          "degree": "This animal is too rare",
+          "seeming": "This animal seems rare",
+          "negative implication": "This animal is not very rare, and ..."
+        }
       },
       "irregular_overrides": {}
     },
@@ -1376,7 +2137,8 @@
       ],
       "example": {
         "jp": "昨夜あまり寝なかったので、眠いです。",
-        "en": "I did not sleep much last night, so I am sleepy."
+        "en": "I did not sleep much last night, so I am sleepy.",
+        "form_en": {}
       },
       "irregular_overrides": {}
     },
@@ -1393,7 +2155,8 @@
       ],
       "example": {
         "jp": "子どもの頃の写真を見ると、懐かしい気持ちになります。",
-        "en": "Looking at childhood photos makes me feel nostalgic."
+        "en": "Looking at childhood photos makes me feel nostalgic.",
+        "form_en": {}
       },
       "irregular_overrides": {}
     },
@@ -1411,7 +2174,16 @@
       ],
       "example": {
         "jp": "息が苦しいです。",
-        "en": "I am having trouble breathing."
+        "en": "I am having trouble breathing.",
+        "form_en": {
+          "negative plain": "I am having trouble breathing",
+          "negative polite": "I am having trouble breathing",
+          "past plain": "I was having trouble breathing",
+          "past polite": "I was having trouble breathing",
+          "past negative plain": "I was having trouble breathing",
+          "past negative polite": "I was having trouble breathing",
+          "te-form": "I having trouble breathing, and ..."
+        }
       },
       "irregular_overrides": {}
     },
@@ -1428,7 +2200,16 @@
       ],
       "example": {
         "jp": "太陽が眩しいです。",
-        "en": "The sun is dazzling."
+        "en": "The sun is dazzling.",
+        "form_en": {
+          "negative plain": "The sun is dazzling",
+          "negative polite": "The sun is dazzling",
+          "past plain": "The sun was dazzling",
+          "past polite": "The sun was dazzling",
+          "past negative plain": "The sun was dazzling",
+          "past negative polite": "The sun was dazzling",
+          "te-form": "The sun dazzling, and ..."
+        }
       },
       "irregular_overrides": {}
     },
@@ -1445,7 +2226,8 @@
       ],
       "example": {
         "jp": "故郷が恋しいです。",
-        "en": "I miss my hometown."
+        "en": "I miss my hometown.",
+        "form_en": {}
       },
       "irregular_overrides": {}
     },
@@ -1463,7 +2245,8 @@
       ],
       "example": {
         "jp": "昨日は激しい雨が降りました。",
-        "en": "Heavy rain fell yesterday."
+        "en": "Heavy rain fell yesterday.",
+        "form_en": {}
       },
       "irregular_overrides": {}
     },
@@ -1500,7 +2283,8 @@
       ],
       "example": {
         "jp": "素晴らしい景色ですね。",
-        "en": "What a wonderful view."
+        "en": "What a wonderful view.",
+        "form_en": {}
       },
       "irregular_overrides": {}
     },
@@ -1518,7 +2302,22 @@
       ],
       "example": {
         "jp": "彼は賢い犬です。",
-        "en": "He is a clever dog."
+        "en": "He is a clever dog.",
+        "form_en": {
+          "negative plain": "He is not a clever dog",
+          "negative polite": "He is not a clever dog",
+          "past plain": "He was a clever dog",
+          "past polite": "He was a clever dog",
+          "past negative plain": "He was not a clever dog",
+          "past negative polite": "He was not a clever dog",
+          "adverbial": "He is a clever dog, and ...",
+          "te-form": "He is a clever dog, and ...",
+          "conditional": "If he is a clever dog, ...",
+          "hypothetical past": "If he had been a clever dog, ...",
+          "wanting something to be a certain way": "I want to be a clever dog",
+          "seeming": "He seems a clever dog",
+          "negative implication": "He is not a clever dog, and ..."
+        }
       },
       "irregular_overrides": {}
     },
@@ -1536,7 +2335,8 @@
       ],
       "example": {
         "jp": "彼は考え方が幼いです。",
-        "en": "His way of thinking is immature."
+        "en": "His way of thinking is immature.",
+        "form_en": {}
       },
       "irregular_overrides": {}
     },
@@ -1553,7 +2353,23 @@
       ],
       "example": {
         "jp": "このガラスは脆いです。",
-        "en": "This glass is fragile."
+        "en": "This glass is fragile.",
+        "form_en": {
+          "negative plain": "This glass is not fragile",
+          "negative polite": "This glass is not fragile",
+          "past plain": "This glass was fragile",
+          "past polite": "This glass was fragile",
+          "past negative plain": "This glass was not fragile",
+          "past negative polite": "This glass was not fragile",
+          "adverbial": "This glass is fragile, and ...",
+          "te-form": "This glass is fragile, and ...",
+          "conditional": "If this glass is fragile, ...",
+          "hypothetical past": "If this glass had been fragile, ...",
+          "wanting something to be a certain way": "I want to be fragile",
+          "degree": "This glass is too fragile",
+          "seeming": "This glass seems fragile",
+          "negative implication": "This glass is not fragile, and ..."
+        }
       },
       "irregular_overrides": {}
     },
@@ -1570,7 +2386,23 @@
       ],
       "example": {
         "jp": "このナイフは鋭いです。",
-        "en": "This knife is sharp."
+        "en": "This knife is sharp.",
+        "form_en": {
+          "negative plain": "This knife is not sharp",
+          "negative polite": "This knife is not sharp",
+          "past plain": "This knife was sharp",
+          "past polite": "This knife was sharp",
+          "past negative plain": "This knife was not sharp",
+          "past negative polite": "This knife was not sharp",
+          "adverbial": "This knife is sharp, and ...",
+          "te-form": "This knife is sharp, and ...",
+          "conditional": "If this knife is sharp, ...",
+          "hypothetical past": "If this knife had been sharp, ...",
+          "wanting something to be a certain way": "I want to be sharp",
+          "degree": "This knife is too sharp",
+          "seeming": "This knife seems sharp",
+          "negative implication": "This knife is not sharp, and ..."
+        }
       },
       "irregular_overrides": {}
     },
@@ -1604,7 +2436,23 @@
       ],
       "example": {
         "jp": "秋の風は心地よいです。",
-        "en": "The autumn breeze is pleasant."
+        "en": "The autumn breeze is pleasant.",
+        "form_en": {
+          "negative plain": "The autumn breeze is not pleasant",
+          "negative polite": "The autumn breeze is not pleasant",
+          "past plain": "The autumn breeze was pleasant",
+          "past polite": "The autumn breeze was pleasant",
+          "past negative plain": "The autumn breeze was not pleasant",
+          "past negative polite": "The autumn breeze was not pleasant",
+          "adverbial": "The autumn breeze is pleasant, and ...",
+          "te-form": "The autumn breeze is pleasant, and ...",
+          "conditional": "If the autumn breeze is pleasant, ...",
+          "hypothetical past": "If the autumn breeze had been pleasant, ...",
+          "wanting something to be a certain way": "I want to be pleasant",
+          "degree": "The autumn breeze is too pleasant",
+          "seeming": "The autumn breeze seems pleasant",
+          "negative implication": "The autumn breeze is not pleasant, and ..."
+        }
       },
       "irregular_overrides": {}
     },
@@ -1621,7 +2469,23 @@
       ],
       "example": {
         "jp": "隣の部屋が騒がしいです。",
-        "en": "The next room is noisy."
+        "en": "The next room is noisy.",
+        "form_en": {
+          "negative plain": "The next room is not noisy",
+          "negative polite": "The next room is not noisy",
+          "past plain": "The next room was noisy",
+          "past polite": "The next room was noisy",
+          "past negative plain": "The next room was not noisy",
+          "past negative polite": "The next room was not noisy",
+          "adverbial": "The next room is noisy, and ...",
+          "te-form": "The next room is noisy, and ...",
+          "conditional": "If the next room is noisy, ...",
+          "hypothetical past": "If the next room had been noisy, ...",
+          "wanting something to be a certain way": "I want to be noisy",
+          "degree": "The next room is too noisy",
+          "seeming": "The next room seems noisy",
+          "negative implication": "The next room is not noisy, and ..."
+        }
       },
       "irregular_overrides": {}
     },
@@ -1638,7 +2502,16 @@
       ],
       "example": {
         "jp": "怪しい人が家の前を歩いています。",
-        "en": "A suspicious person is walking in front of my house."
+        "en": "A suspicious person is walking in front of my house.",
+        "form_en": {
+          "negative plain": "A suspicious person is walking in front of my house",
+          "negative polite": "A suspicious person is walking in front of my house",
+          "past plain": "A suspicious person was walking in front of my house",
+          "past polite": "A suspicious person was walking in front of my house",
+          "past negative plain": "A suspicious person was walking in front of my house",
+          "past negative polite": "A suspicious person was walking in front of my house",
+          "te-form": "A suspicious person walking in front of my house, and ..."
+        }
       },
       "irregular_overrides": {}
     },
@@ -1656,7 +2529,23 @@
       ],
       "example": {
         "jp": "うちの先生は厳しいです。",
-        "en": "My teacher is strict."
+        "en": "My teacher is strict.",
+        "form_en": {
+          "negative plain": "My teacher is not strict",
+          "negative polite": "My teacher is not strict",
+          "past plain": "My teacher was strict",
+          "past polite": "My teacher was strict",
+          "past negative plain": "My teacher was not strict",
+          "past negative polite": "My teacher was not strict",
+          "adverbial": "My teacher is strict, and ...",
+          "te-form": "My teacher is strict, and ...",
+          "conditional": "If my teacher is strict, ...",
+          "hypothetical past": "If my teacher had been strict, ...",
+          "wanting something to be a certain way": "I want to be strict",
+          "degree": "My teacher is too strict",
+          "seeming": "My teacher seems strict",
+          "negative implication": "My teacher is not strict, and ..."
+        }
       },
       "irregular_overrides": {}
     },
@@ -1673,7 +2562,8 @@
       ],
       "example": {
         "jp": "日本の夏は蒸し暑いです。",
-        "en": "Japanese summers are humid."
+        "en": "Japanese summers are humid.",
+        "form_en": {}
       },
       "irregular_overrides": {}
     },
@@ -1691,7 +2581,8 @@
       ],
       "example": {
         "jp": "年末は何かと慌ただしいです。",
-        "en": "The end of the year is always hectic."
+        "en": "The end of the year is always hectic.",
+        "form_en": {}
       },
       "irregular_overrides": {}
     },
@@ -1708,7 +2599,8 @@
       ],
       "example": {
         "jp": "彼は逞しい体をしています。",
-        "en": "He has a robust build."
+        "en": "He has a robust build.",
+        "form_en": {}
       },
       "irregular_overrides": {}
     },
@@ -1725,7 +2617,23 @@
       ],
       "example": {
         "jp": "後輩が頼もしいです。",
-        "en": "My junior is dependable."
+        "en": "My junior is dependable.",
+        "form_en": {
+          "negative plain": "My junior is not dependable",
+          "negative polite": "My junior is not dependable",
+          "past plain": "My junior was dependable",
+          "past polite": "My junior was dependable",
+          "past negative plain": "My junior was not dependable",
+          "past negative polite": "My junior was not dependable",
+          "adverbial": "My junior is dependable, and ...",
+          "te-form": "My junior is dependable, and ...",
+          "conditional": "If my junior is dependable, ...",
+          "hypothetical past": "If my junior had been dependable, ...",
+          "wanting something to be a certain way": "I want to be dependable",
+          "degree": "My junior is too dependable",
+          "seeming": "My junior seems dependable",
+          "negative implication": "My junior is not dependable, and ..."
+        }
       },
       "irregular_overrides": {}
     },
@@ -1742,7 +2650,8 @@
       ],
       "example": {
         "jp": "恐ろしい夢を見ました。",
-        "en": "I had a terrible dream."
+        "en": "I had a terrible dream.",
+        "form_en": {}
       },
       "irregular_overrides": {}
     },
@@ -1759,7 +2668,8 @@
       ],
       "example": {
         "jp": "昨日は物凄い風が吹きました。",
-        "en": "A tremendous wind blew yesterday."
+        "en": "A tremendous wind blew yesterday.",
+        "form_en": {}
       },
       "irregular_overrides": {}
     },
@@ -1776,7 +2686,23 @@
       ],
       "example": {
         "jp": "細長い箱の中に箸が入っています。",
-        "en": "Chopsticks are in the long thin box."
+        "en": "Chopsticks are in the long thin box.",
+        "form_en": {
+          "negative plain": "Chopsticks are not in the long thin box",
+          "negative polite": "Chopsticks are not in the long thin box",
+          "past plain": "Chopsticks was in the long thin box",
+          "past polite": "Chopsticks was in the long thin box",
+          "past negative plain": "Chopsticks was not in the long thin box",
+          "past negative polite": "Chopsticks was not in the long thin box",
+          "adverbial": "Chopsticks are in the long thin box, and ...",
+          "te-form": "Chopsticks are in the long thin box, and ...",
+          "conditional": "If chopsticks are in the long thin box, ...",
+          "hypothetical past": "If chopsticks had been in the long thin box, ...",
+          "wanting something to be a certain way": "I want to be in the long thin box",
+          "degree": "Chopsticks are too in",
+          "seeming": "Chopsticks seems in the long thin box",
+          "negative implication": "Chopsticks are not in the long thin box, and ..."
+        }
       },
       "irregular_overrides": {}
     },
@@ -1794,7 +2720,23 @@
       ],
       "example": {
         "jp": "日本語は奥深いです。",
-        "en": "The Japanese language is profound."
+        "en": "The Japanese language is profound.",
+        "form_en": {
+          "negative plain": "The Japanese language is not profound",
+          "negative polite": "The Japanese language is not profound",
+          "past plain": "The Japanese language was profound",
+          "past polite": "The Japanese language was profound",
+          "past negative plain": "The Japanese language was not profound",
+          "past negative polite": "The Japanese language was not profound",
+          "adverbial": "The Japanese language is profound, and ...",
+          "te-form": "The Japanese language is profound, and ...",
+          "conditional": "If the japanese language is profound, ...",
+          "hypothetical past": "If the japanese language had been profound, ...",
+          "wanting something to be a certain way": "I want to be profound",
+          "degree": "The Japanese language is too profound",
+          "seeming": "The Japanese language seems profound",
+          "negative implication": "The Japanese language is not profound, and ..."
+        }
       },
       "irregular_overrides": {}
     },
@@ -1829,7 +2771,8 @@
       ],
       "example": {
         "jp": "まだ食べられるのに捨てるのはもったいないです。",
-        "en": "Throwing it away when it is still edible is wasteful."
+        "en": "Throwing it away when it is still edible is wasteful.",
+        "form_en": {}
       },
       "irregular_overrides": {}
     },
@@ -1846,7 +2789,22 @@
       ],
       "example": {
         "jp": "彼は頼りない人です。",
-        "en": "He is an unreliable person."
+        "en": "He is an unreliable person.",
+        "form_en": {
+          "negative plain": "He is not an unreliable person",
+          "negative polite": "He is not an unreliable person",
+          "past plain": "He was an unreliable person",
+          "past polite": "He was an unreliable person",
+          "past negative plain": "He was not an unreliable person",
+          "past negative polite": "He was not an unreliable person",
+          "adverbial": "He is an unreliable person, and ...",
+          "te-form": "He is an unreliable person, and ...",
+          "conditional": "If he is an unreliable person, ...",
+          "hypothetical past": "If he had been an unreliable person, ...",
+          "wanting something to be a certain way": "I want to be an unreliable person",
+          "seeming": "He seems an unreliable person",
+          "negative implication": "He is not an unreliable person, and ..."
+        }
       },
       "irregular_overrides": {}
     },
@@ -1864,7 +2822,23 @@
       ],
       "example": {
         "jp": "命は尊いものです。",
-        "en": "Life is precious."
+        "en": "Life is precious.",
+        "form_en": {
+          "negative plain": "Life is not precious",
+          "negative polite": "Life is not precious",
+          "past plain": "Life was precious",
+          "past polite": "Life was precious",
+          "past negative plain": "Life was not precious",
+          "past negative polite": "Life was not precious",
+          "adverbial": "Life is precious, and ...",
+          "te-form": "Life is precious, and ...",
+          "conditional": "If life is precious, ...",
+          "hypothetical past": "If life had been precious, ...",
+          "wanting something to be a certain way": "I want to be precious",
+          "degree": "Life is too precious",
+          "seeming": "Life seems precious",
+          "negative implication": "Life is not precious, and ..."
+        }
       },
       "irregular_overrides": {}
     },
@@ -1898,7 +2872,8 @@
       ],
       "example": {
         "jp": "災害の被害は痛ましいものです。",
-        "en": "The damage from the disaster is heartbreaking."
+        "en": "The damage from the disaster is heartbreaking.",
+        "form_en": {}
       },
       "irregular_overrides": {}
     },
@@ -1915,7 +2890,23 @@
       ],
       "example": {
         "jp": "長年住んだ町を離れるのは名残惜しいです。",
-        "en": "I am reluctant to leave the town I lived in for many years."
+        "en": "I am reluctant to leave the town I lived in for many years.",
+        "form_en": {
+          "negative plain": "I am not reluctant to leave the town I lived in for many years",
+          "negative polite": "I am not reluctant to leave the town I lived in for many years",
+          "past plain": "I was reluctant to leave the town I lived in for many years",
+          "past polite": "I was reluctant to leave the town I lived in for many years",
+          "past negative plain": "I was not reluctant to leave the town I lived in for many years",
+          "past negative polite": "I was not reluctant to leave the town I lived in for many years",
+          "adverbial": "I am reluctant to leave the town I lived in for many years, and ...",
+          "te-form": "I am reluctant to leave the town I lived in for many years, and ...",
+          "conditional": "If I am reluctant to leave the town I lived in for many years, ...",
+          "hypothetical past": "If I had been reluctant to leave the town I lived in for many years, ...",
+          "wanting something to be a certain way": "I want to be reluctant to leave the town I lived in for many years",
+          "degree": "I am too reluctant",
+          "seeming": "I seem reluctant to leave the town I lived in for many years",
+          "negative implication": "I am not reluctant to leave the town I lived in for many years, and ..."
+        }
       },
       "irregular_overrides": {}
     },
@@ -1932,7 +2923,8 @@
       ],
       "example": {
         "jp": "この料理は味が物足りないです。",
-        "en": "This dish tastes a bit lacking."
+        "en": "This dish tastes a bit lacking.",
+        "form_en": {}
       },
       "irregular_overrides": {}
     },
@@ -1949,7 +2941,23 @@
       ],
       "example": {
         "jp": "その理由は馬鹿馬鹿しいです。",
-        "en": "That reason is absurd."
+        "en": "That reason is absurd.",
+        "form_en": {
+          "negative plain": "That reason is not absurd",
+          "negative polite": "That reason is not absurd",
+          "past plain": "That reason was absurd",
+          "past polite": "That reason was absurd",
+          "past negative plain": "That reason was not absurd",
+          "past negative polite": "That reason was not absurd",
+          "adverbial": "That reason is absurd, and ...",
+          "te-form": "That reason is absurd, and ...",
+          "conditional": "If that reason is absurd, ...",
+          "hypothetical past": "If that reason had been absurd, ...",
+          "wanting something to be a certain way": "I want to be absurd",
+          "degree": "That reason is too absurd",
+          "seeming": "That reason seems absurd",
+          "negative implication": "That reason is not absurd, and ..."
+        }
       },
       "irregular_overrides": {}
     },
@@ -2001,7 +3009,8 @@
       ],
       "example": {
         "jp": "卑しい心で金を奪った。",
-        "en": "He stole the money out of greed."
+        "en": "He stole the money out of greed.",
+        "form_en": {}
       },
       "irregular_overrides": {}
     },
@@ -2018,7 +3027,8 @@
       ],
       "example": {
         "jp": "麗しい歌声が聞こえてきます。",
-        "en": "A beautiful singing voice can be heard."
+        "en": "A beautiful singing voice can be heard.",
+        "form_en": {}
       },
       "irregular_overrides": {}
     },
@@ -2036,7 +3046,8 @@
       ],
       "example": {
         "jp": "花の芳しい香りがします。",
-        "en": "There is a fragrant smell of flowers."
+        "en": "There is a fragrant smell of flowers.",
+        "form_en": {}
       },
       "irregular_overrides": {}
     },
@@ -2054,7 +3065,22 @@
       ],
       "example": {
         "jp": "彼は勇ましい兵士でした。",
-        "en": "He was a brave soldier."
+        "en": "He was a brave soldier.",
+        "form_en": {
+          "negative plain": "He is not a brave soldier",
+          "negative polite": "He is not a brave soldier",
+          "past plain": "He was a brave soldier",
+          "past polite": "He was a brave soldier",
+          "past negative plain": "He was not a brave soldier",
+          "past negative polite": "He was not a brave soldier",
+          "adverbial": "He is a brave soldier, and ...",
+          "te-form": "He is a brave soldier, and ...",
+          "conditional": "If he is a brave soldier, ...",
+          "hypothetical past": "If he had been a brave soldier, ...",
+          "wanting something to be a certain way": "I want to be a brave soldier",
+          "seeming": "He seems a brave soldier",
+          "negative implication": "He is not a brave soldier, and ..."
+        }
       },
       "irregular_overrides": {}
     },
@@ -2071,7 +3097,8 @@
       ],
       "example": {
         "jp": "きれいな花が咲いています。",
-        "en": "Beautiful flowers are blooming."
+        "en": "Beautiful flowers are blooming.",
+        "form_en": {}
       },
       "note": "Usually written in kana; 綺麗 is also seen. Its reading has no kanji-origin な/だ spelling change.",
       "irregular_overrides": {}
@@ -2089,7 +3116,23 @@
       ],
       "example": {
         "jp": "このお寺は有名です。",
-        "en": "This temple is famous."
+        "en": "This temple is famous.",
+        "form_en": {
+          "negative plain": "This temple is not famous",
+          "negative polite": "This temple is not famous",
+          "past plain": "This temple was famous",
+          "past polite": "This temple was famous",
+          "past negative plain": "This temple was not famous",
+          "past negative polite": "This temple was not famous",
+          "adverbial": "This temple is famous, and ...",
+          "te-form": "This temple is famous, and ...",
+          "conditional": "If this temple is famous, ...",
+          "hypothetical past": "If this temple had been famous, ...",
+          "wanting something to be a certain way": "I want to be famous",
+          "degree": "This temple is too famous",
+          "seeming": "This temple seems famous",
+          "negative implication": "This temple is not famous, and ..."
+        }
       },
       "irregular_overrides": {}
     },
@@ -2106,7 +3149,22 @@
       ],
       "example": {
         "jp": "健康は何よりも大切です。",
-        "en": "Health is the most important thing of all."
+        "en": "Health is the most important thing of all.",
+        "form_en": {
+          "negative plain": "Health is not the most important thing of all",
+          "negative polite": "Health is not the most important thing of all",
+          "past plain": "Health was the most important thing of all",
+          "past polite": "Health was the most important thing of all",
+          "past negative plain": "Health was not the most important thing of all",
+          "past negative polite": "Health was not the most important thing of all",
+          "adverbial": "Health is the most important thing of all, and ...",
+          "te-form": "Health is the most important thing of all, and ...",
+          "conditional": "If health is the most important thing of all, ...",
+          "hypothetical past": "If health had been the most important thing of all, ...",
+          "wanting something to be a certain way": "I want to be the most important thing of all",
+          "seeming": "Health seems the most important thing of all",
+          "negative implication": "Health is not the most important thing of all, and ..."
+        }
       },
       "irregular_overrides": {}
     },
@@ -2124,7 +3182,8 @@
       ],
       "example": {
         "jp": "大丈夫ですか。",
-        "en": "Are you all right?"
+        "en": "Are you all right?",
+        "form_en": {}
       },
       "irregular_overrides": {}
     },
@@ -2142,7 +3201,23 @@
       ],
       "example": {
         "jp": "パスポートが必要です。",
-        "en": "A passport is necessary."
+        "en": "A passport is necessary.",
+        "form_en": {
+          "negative plain": "A passport is not necessary",
+          "negative polite": "A passport is not necessary",
+          "past plain": "A passport was necessary",
+          "past polite": "A passport was necessary",
+          "past negative plain": "A passport was not necessary",
+          "past negative polite": "A passport was not necessary",
+          "adverbial": "A passport is necessary, and ...",
+          "te-form": "A passport is necessary, and ...",
+          "conditional": "If a passport is necessary, ...",
+          "hypothetical past": "If a passport had been necessary, ...",
+          "wanting something to be a certain way": "I want to be necessary",
+          "degree": "A passport is too necessary",
+          "seeming": "A passport seems necessary",
+          "negative implication": "A passport is not necessary, and ..."
+        }
       },
       "irregular_overrides": {}
     },
@@ -2160,7 +3235,23 @@
       ],
       "example": {
         "jp": "この問題は簡単です。",
-        "en": "This problem is simple."
+        "en": "This problem is simple.",
+        "form_en": {
+          "negative plain": "This problem is not simple",
+          "negative polite": "This problem is not simple",
+          "past plain": "This problem was simple",
+          "past polite": "This problem was simple",
+          "past negative plain": "This problem was not simple",
+          "past negative polite": "This problem was not simple",
+          "adverbial": "This problem is simple, and ...",
+          "te-form": "This problem is simple, and ...",
+          "conditional": "If this problem is simple, ...",
+          "hypothetical past": "If this problem had been simple, ...",
+          "wanting something to be a certain way": "I want to be simple",
+          "degree": "This problem is too simple",
+          "seeming": "This problem seems simple",
+          "negative implication": "This problem is not simple, and ..."
+        }
       },
       "irregular_overrides": {}
     },
@@ -2177,7 +3268,8 @@
       ],
       "example": {
         "jp": "今日は変な夢を見ました。",
-        "en": "I had a strange dream today."
+        "en": "I had a strange dream today.",
+        "form_en": {}
       },
       "irregular_overrides": {}
     },
@@ -2195,7 +3287,8 @@
       ],
       "example": {
         "jp": "私たちは同じ学校です。",
-        "en": "We go to the same school."
+        "en": "We go to the same school.",
+        "form_en": {}
       },
       "note": "同じ is exceptional: it can directly modify a noun without な (同じ人), and its plain copula is だ (同じだ).",
       "irregular_overrides": {}
@@ -2213,7 +3306,8 @@
       ],
       "example": {
         "jp": "ここで写真を撮ってはだめです。",
-        "en": "You must not take photos here."
+        "en": "You must not take photos here.",
+        "form_en": {}
       },
       "irregular_overrides": {}
     },
@@ -2231,7 +3325,23 @@
       ],
       "example": {
         "jp": "彼は料理が上手です。",
-        "en": "He is good at cooking."
+        "en": "He is good at cooking.",
+        "form_en": {
+          "negative plain": "He is not good at cooking",
+          "negative polite": "He is not good at cooking",
+          "past plain": "He was good at cooking",
+          "past polite": "He was good at cooking",
+          "past negative plain": "He was not good at cooking",
+          "past negative polite": "He was not good at cooking",
+          "adverbial": "He is good at cooking, and ...",
+          "te-form": "He is good at cooking, and ...",
+          "conditional": "If he is good at cooking, ...",
+          "hypothetical past": "If he had been good at cooking, ...",
+          "wanting something to be a certain way": "I want to be good at cooking",
+          "degree": "He is too good",
+          "seeming": "He seems good at cooking",
+          "negative implication": "He is not good at cooking, and ..."
+        }
       },
       "note": "上手 and 下手 take が for the skill: 料理が上手です.",
       "irregular_overrides": {}
@@ -2250,7 +3360,23 @@
       ],
       "example": {
         "jp": "私は歌が下手です。",
-        "en": "I am bad at singing."
+        "en": "I am bad at singing.",
+        "form_en": {
+          "negative plain": "I am not bad at singing",
+          "negative polite": "I am not bad at singing",
+          "past plain": "I was bad at singing",
+          "past polite": "I was bad at singing",
+          "past negative plain": "I was not bad at singing",
+          "past negative polite": "I was not bad at singing",
+          "adverbial": "I am bad at singing, and ...",
+          "te-form": "I am bad at singing, and ...",
+          "conditional": "If I am bad at singing, ...",
+          "hypothetical past": "If I had been bad at singing, ...",
+          "wanting something to be a certain way": "I want to be bad at singing",
+          "degree": "I am too bad",
+          "seeming": "I seem bad at singing",
+          "negative implication": "I am not bad at singing, and ..."
+        }
       },
       "irregular_overrides": {}
     },
@@ -2268,7 +3394,18 @@
       ],
       "example": {
         "jp": "今日は暇なので、遊びに行きましょう。",
-        "en": "I am free today, so let us go out."
+        "en": "I am free today, so let us go out.",
+        "form_en": {
+          "past plain": "I was free today, so let us go out",
+          "past polite": "I was free today, so let us go out",
+          "adverbial": "I am free today, so let us go out, and ...",
+          "te-form": "I am free today, so let us go out, and ...",
+          "conditional": "If I am free today, so let us go out, ...",
+          "hypothetical past": "If I had been free today, so let us go out, ...",
+          "wanting something to be a certain way": "I want to be free today, so let us go out",
+          "degree": "I am too free",
+          "seeming": "I seem free today, so let us go out"
+        }
       },
       "irregular_overrides": {}
     },
@@ -2286,7 +3423,18 @@
       ],
       "example": {
         "jp": "この靴は丈夫で長持ちします。",
-        "en": "These shoes are sturdy and last long."
+        "en": "These shoes are sturdy and last long.",
+        "form_en": {
+          "past plain": "These shoes was sturdy and last long",
+          "past polite": "These shoes was sturdy and last long",
+          "adverbial": "These shoes are sturdy and last long, and ...",
+          "te-form": "These shoes are sturdy and last long, and ...",
+          "conditional": "If these shoes are sturdy and last long, ...",
+          "hypothetical past": "If these shoes had been sturdy and last long, ...",
+          "wanting something to be a certain way": "I want to be sturdy and last long",
+          "degree": "These shoes are too sturdy",
+          "seeming": "These shoes seems sturdy and last long"
+        }
       },
       "irregular_overrides": {}
     },
@@ -2304,7 +3452,23 @@
       ],
       "example": {
         "jp": "一人で全部運ぶのは無理です。",
-        "en": "It is impossible to carry everything alone."
+        "en": "It is impossible to carry everything alone.",
+        "form_en": {
+          "negative plain": "It is not impossible to carry everything alone",
+          "negative polite": "It is not impossible to carry everything alone",
+          "past plain": "It was impossible to carry everything alone",
+          "past polite": "It was impossible to carry everything alone",
+          "past negative plain": "It was not impossible to carry everything alone",
+          "past negative polite": "It was not impossible to carry everything alone",
+          "adverbial": "It is impossible to carry everything alone, and ...",
+          "te-form": "It is impossible to carry everything alone, and ...",
+          "conditional": "If it is impossible to carry everything alone, ...",
+          "hypothetical past": "If it had been impossible to carry everything alone, ...",
+          "wanting something to be a certain way": "I want to be impossible to carry everything alone",
+          "degree": "It is too impossible",
+          "seeming": "It seems impossible to carry everything alone",
+          "negative implication": "It is not impossible to carry everything alone, and ..."
+        }
       },
       "irregular_overrides": {}
     },
@@ -2322,7 +3486,16 @@
       ],
       "example": {
         "jp": "私は野菜が嫌いです。",
-        "en": "I dislike vegetables."
+        "en": "I dislike vegetables.",
+        "form_en": {
+          "negative plain": "I do not dislike vegetables",
+          "negative polite": "I do not dislike vegetables",
+          "past plain": "I disliked vegetables",
+          "past polite": "I disliked vegetables",
+          "past negative plain": "I did not dislike vegetables",
+          "past negative polite": "I did not dislike vegetables",
+          "te-form": "I dislike vegetables, and ..."
+        }
       },
       "note": "嫌い looks like an i-adjective but conjugates as a na-adjective (嫌いな, 嫌いだ). The thing disliked takes が.",
       "irregular_overrides": {}
@@ -2341,7 +3514,8 @@
       ],
       "example": {
         "jp": "駅の人が親切に道を教えてくれました。",
-        "en": "The station staff kindly showed me the way."
+        "en": "The station staff kindly showed me the way.",
+        "form_en": {}
       },
       "irregular_overrides": {}
     },
@@ -2358,7 +3532,22 @@
       ],
       "example": {
         "jp": "今日は特別な日です。",
-        "en": "Today is a special day."
+        "en": "Today is a special day.",
+        "form_en": {
+          "negative plain": "Today is not a special day",
+          "negative polite": "Today is not a special day",
+          "past plain": "Today was a special day",
+          "past polite": "Today was a special day",
+          "past negative plain": "Today was not a special day",
+          "past negative polite": "Today was not a special day",
+          "adverbial": "Today is a special day, and ...",
+          "te-form": "Today is a special day, and ...",
+          "conditional": "If today is a special day, ...",
+          "hypothetical past": "If today had been a special day, ...",
+          "wanting something to be a certain way": "I want to be a special day",
+          "seeming": "Today seems a special day",
+          "negative implication": "Today is not a special day, and ..."
+        }
       },
       "irregular_overrides": {}
     },
@@ -2376,7 +3565,23 @@
       ],
       "example": {
         "jp": "この通りは夜も賑やかです。",
-        "en": "This street is lively even at night."
+        "en": "This street is lively even at night.",
+        "form_en": {
+          "negative plain": "This street is not lively even at night",
+          "negative polite": "This street is not lively even at night",
+          "past plain": "This street was lively even at night",
+          "past polite": "This street was lively even at night",
+          "past negative plain": "This street was not lively even at night",
+          "past negative polite": "This street was not lively even at night",
+          "adverbial": "This street is lively even at night, and ...",
+          "te-form": "This street is lively even at night, and ...",
+          "conditional": "If this street is lively even at night, ...",
+          "hypothetical past": "If this street had been lively even at night, ...",
+          "wanting something to be a certain way": "I want to be lively even at night",
+          "degree": "This street is too lively",
+          "seeming": "This street seems lively even at night",
+          "negative implication": "This street is not lively even at night, and ..."
+        }
       },
       "irregular_overrides": {}
     },
@@ -2394,7 +3599,8 @@
       ],
       "example": {
         "jp": "時間は十分あります。",
-        "en": "There is enough time."
+        "en": "There is enough time.",
+        "form_en": {}
       },
       "irregular_overrides": {}
     },
@@ -2412,7 +3618,8 @@
       ],
       "example": {
         "jp": "彼は丁寧な言葉を使います。",
-        "en": "He uses polite language."
+        "en": "He uses polite language.",
+        "form_en": {}
       },
       "irregular_overrides": {}
     },
@@ -2429,7 +3636,23 @@
       ],
       "example": {
         "jp": "試験に落ちて残念でした。",
-        "en": "It was unfortunate that I failed the exam."
+        "en": "It was unfortunate that I failed the exam.",
+        "form_en": {
+          "negative plain": "It is not unfortunate that I failed the exam",
+          "negative polite": "It is not unfortunate that I failed the exam",
+          "past plain": "It was unfortunate that I failed the exam",
+          "past polite": "It was unfortunate that I failed the exam",
+          "past negative plain": "It was not unfortunate that I failed the exam",
+          "past negative polite": "It was not unfortunate that I failed the exam",
+          "adverbial": "It is unfortunate that I failed the exam, and ...",
+          "te-form": "It is unfortunate that I failed the exam, and ...",
+          "conditional": "If it is unfortunate that I failed the exam, ...",
+          "hypothetical past": "If it had been unfortunate that I failed the exam, ...",
+          "wanting something to be a certain way": "I want to be unfortunate that I failed the exam",
+          "degree": "It is too unfortunate",
+          "seeming": "It seems unfortunate that I failed the exam",
+          "negative implication": "It is not unfortunate that I failed the exam, and ..."
+        }
       },
       "irregular_overrides": {}
     },
@@ -2447,7 +3670,22 @@
       ],
       "example": {
         "jp": "ここは危険な場所です。",
-        "en": "This is a dangerous place."
+        "en": "This is a dangerous place.",
+        "form_en": {
+          "negative plain": "This are not a dangerous place",
+          "negative polite": "This are not a dangerous place",
+          "past plain": "This was a dangerous place",
+          "past polite": "This was a dangerous place",
+          "past negative plain": "This was not a dangerous place",
+          "past negative polite": "This was not a dangerous place",
+          "adverbial": "This are a dangerous place, and ...",
+          "te-form": "This are a dangerous place, and ...",
+          "conditional": "If this are a dangerous place, ...",
+          "hypothetical past": "If this had been a dangerous place, ...",
+          "wanting something to be a certain way": "I want to be a dangerous place",
+          "seeming": "This seems a dangerous place",
+          "negative implication": "This are not a dangerous place, and ..."
+        }
       },
       "irregular_overrides": {}
     },
@@ -2465,7 +3703,23 @@
       ],
       "example": {
         "jp": "この国は安全です。",
-        "en": "This country is safe."
+        "en": "This country is safe.",
+        "form_en": {
+          "negative plain": "This country is not safe",
+          "negative polite": "This country is not safe",
+          "past plain": "This country was safe",
+          "past polite": "This country was safe",
+          "past negative plain": "This country was not safe",
+          "past negative polite": "This country was not safe",
+          "adverbial": "This country is safe, and ...",
+          "te-form": "This country is safe, and ...",
+          "conditional": "If this country is safe, ...",
+          "hypothetical past": "If this country had been safe, ...",
+          "wanting something to be a certain way": "I want to be safe",
+          "degree": "This country is too safe",
+          "seeming": "This country seems safe",
+          "negative implication": "This country is not safe, and ..."
+        }
       },
       "irregular_overrides": {}
     },
@@ -2483,7 +3737,23 @@
       ],
       "example": {
         "jp": "この問題は複雑です。",
-        "en": "This problem is complicated."
+        "en": "This problem is complicated.",
+        "form_en": {
+          "negative plain": "This problem is not complicated",
+          "negative polite": "This problem is not complicated",
+          "past plain": "This problem was complicated",
+          "past polite": "This problem was complicated",
+          "past negative plain": "This problem was not complicated",
+          "past negative polite": "This problem was not complicated",
+          "adverbial": "This problem is complicated, and ...",
+          "te-form": "This problem is complicated, and ...",
+          "conditional": "If this problem is complicated, ...",
+          "hypothetical past": "If this problem had been complicated, ...",
+          "wanting something to be a certain way": "I want to be complicated",
+          "degree": "This problem is too complicated",
+          "seeming": "This problem seems complicated",
+          "negative implication": "This problem is not complicated, and ..."
+        }
       },
       "irregular_overrides": {}
     },
@@ -2501,7 +3771,22 @@
       ],
       "example": {
         "jp": "素敵なドレスですね。",
-        "en": "That is a lovely dress."
+        "en": "That is a lovely dress.",
+        "form_en": {
+          "negative plain": "That is not a lovely dress",
+          "negative polite": "That is not a lovely dress",
+          "past plain": "That was a lovely dress",
+          "past polite": "That was a lovely dress",
+          "past negative plain": "That was not a lovely dress",
+          "past negative polite": "That was not a lovely dress",
+          "adverbial": "That is a lovely dress, and ...",
+          "te-form": "That is a lovely dress, and ...",
+          "conditional": "If that is a lovely dress, ...",
+          "hypothetical past": "If that had been a lovely dress, ...",
+          "wanting something to be a certain way": "I want to be a lovely dress",
+          "seeming": "That seems a lovely dress",
+          "negative implication": "That is not a lovely dress, and ..."
+        }
       },
       "irregular_overrides": {}
     },
@@ -2519,7 +3804,8 @@
       ],
       "example": {
         "jp": "彼は立派な医者になりました。",
-        "en": "He became a fine doctor."
+        "en": "He became a fine doctor.",
+        "form_en": {}
       },
       "irregular_overrides": {}
     },
@@ -2537,7 +3823,23 @@
       ],
       "example": {
         "jp": "私は英語が得意です。",
-        "en": "I am good at English."
+        "en": "I am good at English.",
+        "form_en": {
+          "negative plain": "I am not good at English",
+          "negative polite": "I am not good at English",
+          "past plain": "I was good at English",
+          "past polite": "I was good at English",
+          "past negative plain": "I was not good at English",
+          "past negative polite": "I was not good at English",
+          "adverbial": "I am good at English, and ...",
+          "te-form": "I am good at English, and ...",
+          "conditional": "If I am good at English, ...",
+          "hypothetical past": "If I had been good at English, ...",
+          "wanting something to be a certain way": "I want to be good at English",
+          "degree": "I am too good",
+          "seeming": "I seem good at English",
+          "negative implication": "I am not good at English, and ..."
+        }
       },
       "irregular_overrides": {}
     },
@@ -2555,7 +3857,23 @@
       ],
       "example": {
         "jp": "私は人前で話すのが苦手です。",
-        "en": "I am not good at speaking in front of people."
+        "en": "I am not good at speaking in front of people.",
+        "form_en": {
+          "negative plain": "I am not good at speaking in front of people",
+          "negative polite": "I am not good at speaking in front of people",
+          "past plain": "I was good at speaking in front of people",
+          "past polite": "I was good at speaking in front of people",
+          "past negative plain": "I was not good at speaking in front of people",
+          "past negative polite": "I was not good at speaking in front of people",
+          "adverbial": "I am good at speaking in front of people, and ...",
+          "te-form": "I am good at speaking in front of people, and ...",
+          "conditional": "If I am good at speaking in front of people, ...",
+          "hypothetical past": "If I had been good at speaking in front of people, ...",
+          "wanting something to be a certain way": "I want to be good at speaking in front of people",
+          "degree": "I am too good",
+          "seeming": "I seem good at speaking in front of people",
+          "negative implication": "I am not good at speaking in front of people, and ..."
+        }
       },
       "irregular_overrides": {}
     },
@@ -2573,7 +3891,23 @@
       ],
       "example": {
         "jp": "彼は日本語の勉強に熱心です。",
-        "en": "He is enthusiastic about studying Japanese."
+        "en": "He is enthusiastic about studying Japanese.",
+        "form_en": {
+          "negative plain": "He is not enthusiastic about studying Japanese",
+          "negative polite": "He is not enthusiastic about studying Japanese",
+          "past plain": "He was enthusiastic about studying Japanese",
+          "past polite": "He was enthusiastic about studying Japanese",
+          "past negative plain": "He was not enthusiastic about studying Japanese",
+          "past negative polite": "He was not enthusiastic about studying Japanese",
+          "adverbial": "He is enthusiastic about studying Japanese, and ...",
+          "te-form": "He is enthusiastic about studying Japanese, and ...",
+          "conditional": "If he is enthusiastic about studying Japanese, ...",
+          "hypothetical past": "If he had been enthusiastic about studying Japanese, ...",
+          "wanting something to be a certain way": "I want to be enthusiastic about studying Japanese",
+          "degree": "He is too enthusiastic",
+          "seeming": "He seems enthusiastic about studying Japanese",
+          "negative implication": "He is not enthusiastic about studying Japanese, and ..."
+        }
       },
       "irregular_overrides": {}
     },
@@ -2591,7 +3925,22 @@
       ],
       "example": {
         "jp": "彼女は真面目な学生です。",
-        "en": "She is a serious student."
+        "en": "She is a serious student.",
+        "form_en": {
+          "negative plain": "She is not a serious student",
+          "negative polite": "She is not a serious student",
+          "past plain": "She was a serious student",
+          "past polite": "She was a serious student",
+          "past negative plain": "She was not a serious student",
+          "past negative polite": "She was not a serious student",
+          "adverbial": "She is a serious student, and ...",
+          "te-form": "She is a serious student, and ...",
+          "conditional": "If she is a serious student, ...",
+          "hypothetical past": "If she had been a serious student, ...",
+          "wanting something to be a certain way": "I want to be a serious student",
+          "seeming": "She seems a serious student",
+          "negative implication": "She is not a serious student, and ..."
+        }
       },
       "irregular_overrides": {}
     },
@@ -2608,7 +3957,8 @@
       ],
       "example": {
         "jp": "家族と過ごす時間は幸せです。",
-        "en": "Time spent with family is happy."
+        "en": "Time spent with family is happy.",
+        "form_en": {}
       },
       "irregular_overrides": {}
     },
@@ -2626,7 +3976,8 @@
       ],
       "example": {
         "jp": "好きなことを自由にしてください。",
-        "en": "Please feel free to do whatever you like."
+        "en": "Please feel free to do whatever you like.",
+        "form_en": {}
       },
       "irregular_overrides": {}
     },
@@ -2644,7 +3995,23 @@
       ],
       "example": {
         "jp": "この田舎は電車が不便です。",
-        "en": "Trains are inconvenient in this countryside."
+        "en": "Trains are inconvenient in this countryside.",
+        "form_en": {
+          "negative plain": "Trains are not inconvenient in this countryside",
+          "negative polite": "Trains are not inconvenient in this countryside",
+          "past plain": "Trains was inconvenient in this countryside",
+          "past polite": "Trains was inconvenient in this countryside",
+          "past negative plain": "Trains was not inconvenient in this countryside",
+          "past negative polite": "Trains was not inconvenient in this countryside",
+          "adverbial": "Trains are inconvenient in this countryside, and ...",
+          "te-form": "Trains are inconvenient in this countryside, and ...",
+          "conditional": "If trains are inconvenient in this countryside, ...",
+          "hypothetical past": "If trains had been inconvenient in this countryside, ...",
+          "wanting something to be a certain way": "I want to be inconvenient in this countryside",
+          "degree": "Trains are too inconvenient",
+          "seeming": "Trains seems inconvenient in this countryside",
+          "negative implication": "Trains are not inconvenient in this countryside, and ..."
+        }
       },
       "irregular_overrides": {}
     },
@@ -2662,7 +4029,18 @@
       ],
       "example": {
         "jp": "この魚は新鮮でおいしいです。",
-        "en": "This fish is fresh and delicious."
+        "en": "This fish is fresh and delicious.",
+        "form_en": {
+          "past plain": "This fish was fresh and delicious",
+          "past polite": "This fish was fresh and delicious",
+          "adverbial": "This fish is fresh and delicious, and ...",
+          "te-form": "This fish is fresh and delicious, and ...",
+          "conditional": "If this fish is fresh and delicious, ...",
+          "hypothetical past": "If this fish had been fresh and delicious, ...",
+          "wanting something to be a certain way": "I want to be fresh and delicious",
+          "degree": "This fish is too fresh",
+          "seeming": "This fish seems fresh and delicious"
+        }
       },
       "irregular_overrides": {}
     },
@@ -2680,7 +4058,16 @@
       ],
       "example": {
         "jp": "この映画は退屈でした。",
-        "en": "This movie was boring."
+        "en": "This movie was boring.",
+        "form_en": {
+          "negative plain": "This movie was boring",
+          "negative polite": "This movie was boring",
+          "past plain": "This movie was boring",
+          "past polite": "This movie was boring",
+          "past negative plain": "This movie was boring",
+          "past negative polite": "This movie was boring",
+          "te-form": "This movie boring, and ..."
+        }
       },
       "irregular_overrides": {}
     },
@@ -2697,7 +4084,23 @@
       ],
       "example": {
         "jp": "母は私のことを心配しています。",
-        "en": "My mother is worried about me."
+        "en": "My mother is worried about me.",
+        "form_en": {
+          "negative plain": "My mother is not worried about me",
+          "negative polite": "My mother is not worried about me",
+          "past plain": "My mother was worried about me",
+          "past polite": "My mother was worried about me",
+          "past negative plain": "My mother was not worried about me",
+          "past negative polite": "My mother was not worried about me",
+          "adverbial": "My mother is worried about me, and ...",
+          "te-form": "My mother is worried about me, and ...",
+          "conditional": "If my mother is worried about me, ...",
+          "hypothetical past": "If my mother had been worried about me, ...",
+          "wanting something to be a certain way": "I want to be worried about me",
+          "degree": "My mother is too worried",
+          "seeming": "My mother seems worried about me",
+          "negative implication": "My mother is not worried about me, and ..."
+        }
       },
       "irregular_overrides": {}
     },
@@ -2714,7 +4117,8 @@
       ],
       "example": {
         "jp": "書類を書くのは面倒です。",
-        "en": "Filling out forms is a hassle."
+        "en": "Filling out forms is a hassle.",
+        "form_en": {}
       },
       "irregular_overrides": {}
     },
@@ -2732,7 +4136,8 @@
       ],
       "example": {
         "jp": "子育ては大変です。",
-        "en": "Raising children is tough."
+        "en": "Raising children is tough.",
+        "form_en": {}
       },
       "irregular_overrides": {}
     },
@@ -2750,7 +4155,23 @@
       ],
       "example": {
         "jp": "正直な人に頼まれた仕事です。",
-        "en": "It is work entrusted to me by an honest person."
+        "en": "It is work entrusted to me by an honest person.",
+        "form_en": {
+          "negative plain": "It is not work entrusted to me by an honest person",
+          "negative polite": "It is not work entrusted to me by an honest person",
+          "past plain": "It was work entrusted to me by an honest person",
+          "past polite": "It was work entrusted to me by an honest person",
+          "past negative plain": "It was not work entrusted to me by an honest person",
+          "past negative polite": "It was not work entrusted to me by an honest person",
+          "adverbial": "It is work entrusted to me by an honest person, and ...",
+          "te-form": "It is work entrusted to me by an honest person, and ...",
+          "conditional": "If it is work entrusted to me by an honest person, ...",
+          "hypothetical past": "If it had been work entrusted to me by an honest person, ...",
+          "wanting something to be a certain way": "I want to be work entrusted to me by an honest person",
+          "degree": "It is too work",
+          "seeming": "It seems work entrusted to me by an honest person",
+          "negative implication": "It is not work entrusted to me by an honest person, and ..."
+        }
       },
       "irregular_overrides": {}
     },
@@ -2768,7 +4189,23 @@
       ],
       "example": {
         "jp": "そんなことをするのは馬鹿です。",
-        "en": "It is foolish to do such a thing."
+        "en": "It is foolish to do such a thing.",
+        "form_en": {
+          "negative plain": "It is not foolish to do such a thing",
+          "negative polite": "It is not foolish to do such a thing",
+          "past plain": "It was foolish to do such a thing",
+          "past polite": "It was foolish to do such a thing",
+          "past negative plain": "It was not foolish to do such a thing",
+          "past negative polite": "It was not foolish to do such a thing",
+          "adverbial": "It is foolish to do such a thing, and ...",
+          "te-form": "It is foolish to do such a thing, and ...",
+          "conditional": "If it is foolish to do such a thing, ...",
+          "hypothetical past": "If it had been foolish to do such a thing, ...",
+          "wanting something to be a certain way": "I want to be foolish to do such a thing",
+          "degree": "It is too foolish",
+          "seeming": "It seems foolish to do such a thing",
+          "negative implication": "It is not foolish to do such a thing, and ..."
+        }
       },
       "note": "Harsh when directed at people (fool/idiot); in compounds like 馬鹿らしい it is milder.",
       "irregular_overrides": {}
@@ -2786,7 +4223,8 @@
       ],
       "example": {
         "jp": "この机の表面は滑らかです。",
-        "en": "The surface of this desk is smooth."
+        "en": "The surface of this desk is smooth.",
+        "form_en": {}
       },
       "irregular_overrides": {}
     },
@@ -2804,7 +4242,16 @@
       ],
       "example": {
         "jp": "彼女は派手な服が好きです。",
-        "en": "She likes flashy clothes."
+        "en": "She likes flashy clothes.",
+        "form_en": {
+          "negative plain": "She does not like flashy clothes",
+          "negative polite": "She does not like flashy clothes",
+          "past plain": "She liked flashy clothes",
+          "past polite": "She liked flashy clothes",
+          "past negative plain": "She did not like flashy clothes",
+          "past negative polite": "She did not like flashy clothes",
+          "te-form": "She likes flashy clothes, and ..."
+        }
       },
       "irregular_overrides": {}
     },
@@ -2822,7 +4269,16 @@
       ],
       "example": {
         "jp": "彼は地味なネクタイをしています。",
-        "en": "He is wearing a plain necktie."
+        "en": "He is wearing a plain necktie.",
+        "form_en": {
+          "negative plain": "He is wearing a plain necktie",
+          "negative polite": "He is wearing a plain necktie",
+          "past plain": "He was wearing a plain necktie",
+          "past polite": "He was wearing a plain necktie",
+          "past negative plain": "He was wearing a plain necktie",
+          "past negative polite": "He was wearing a plain necktie",
+          "te-form": "He wearing a plain necktie, and ..."
+        }
       },
       "irregular_overrides": {}
     },
@@ -2840,7 +4296,8 @@
       ],
       "example": {
         "jp": "彼は素直な性格です。",
-        "en": "He has an open, obedient nature."
+        "en": "He has an open, obedient nature.",
+        "form_en": {}
       },
       "irregular_overrides": {}
     },
@@ -2858,7 +4315,23 @@
       ],
       "example": {
         "jp": "この国は自然が豊かです。",
-        "en": "This country is rich in nature."
+        "en": "This country is rich in nature.",
+        "form_en": {
+          "negative plain": "This country is not rich in nature",
+          "negative polite": "This country is not rich in nature",
+          "past plain": "This country was rich in nature",
+          "past polite": "This country was rich in nature",
+          "past negative plain": "This country was not rich in nature",
+          "past negative polite": "This country was not rich in nature",
+          "adverbial": "This country is rich in nature, and ...",
+          "te-form": "This country is rich in nature, and ...",
+          "conditional": "If this country is rich in nature, ...",
+          "hypothetical past": "If this country had been rich in nature, ...",
+          "wanting something to be a certain way": "I want to be rich in nature",
+          "degree": "This country is too rich",
+          "seeming": "This country seems rich in nature",
+          "negative implication": "This country is not rich in nature, and ..."
+        }
       },
       "irregular_overrides": {}
     },
@@ -2876,7 +4349,8 @@
       ],
       "example": {
         "jp": "そんな贅沢な暮らしはできません。",
-        "en": "I cannot afford such a luxurious life."
+        "en": "I cannot afford such a luxurious life.",
+        "form_en": {}
       },
       "irregular_overrides": {}
     },
@@ -2894,7 +4368,8 @@
       ],
       "example": {
         "jp": "彼女は上品な話し方をします。",
-        "en": "She speaks in an elegant manner."
+        "en": "She speaks in an elegant manner.",
+        "form_en": {}
       },
       "irregular_overrides": {}
     },
@@ -2912,7 +4387,8 @@
       ],
       "example": {
         "jp": "下品な冗談はやめてください。",
-        "en": "Please stop with the vulgar jokes."
+        "en": "Please stop with the vulgar jokes.",
+        "form_en": {}
       },
       "irregular_overrides": {}
     },
@@ -2930,7 +4406,23 @@
       ],
       "example": {
         "jp": "彼の答えは正確です。",
-        "en": "His answer is accurate."
+        "en": "His answer is accurate.",
+        "form_en": {
+          "negative plain": "His answer is not accurate",
+          "negative polite": "His answer is not accurate",
+          "past plain": "His answer was accurate",
+          "past polite": "His answer was accurate",
+          "past negative plain": "His answer was not accurate",
+          "past negative polite": "His answer was not accurate",
+          "adverbial": "His answer is accurate, and ...",
+          "te-form": "His answer is accurate, and ...",
+          "conditional": "If his answer is accurate, ...",
+          "hypothetical past": "If his answer had been accurate, ...",
+          "wanting something to be a certain way": "I want to be accurate",
+          "degree": "His answer is too accurate",
+          "seeming": "His answer seems accurate",
+          "negative implication": "His answer is not accurate, and ..."
+        }
       },
       "irregular_overrides": {}
     },
@@ -2948,7 +4440,8 @@
       ],
       "example": {
         "jp": "彼は明確な理由を説明しました。",
-        "en": "He explained a clear reason."
+        "en": "He explained a clear reason.",
+        "form_en": {}
       },
       "irregular_overrides": {}
     },
@@ -2966,7 +4459,8 @@
       ],
       "example": {
         "jp": "具体的な例を挙げてください。",
-        "en": "Please give a concrete example."
+        "en": "Please give a concrete example.",
+        "form_en": {}
       },
       "irregular_overrides": {}
     },
@@ -2983,7 +4477,23 @@
       ],
       "example": {
         "jp": "試験が意外に難しかったです。",
-        "en": "The exam was surprisingly difficult."
+        "en": "The exam was surprisingly difficult.",
+        "form_en": {
+          "negative plain": "The exam is not surprisingly difficult",
+          "negative polite": "The exam is not surprisingly difficult",
+          "past plain": "The exam was surprisingly difficult",
+          "past polite": "The exam was surprisingly difficult",
+          "past negative plain": "The exam was not surprisingly difficult",
+          "past negative polite": "The exam was not surprisingly difficult",
+          "adverbial": "The exam is surprisingly difficult, and ...",
+          "te-form": "The exam is surprisingly difficult, and ...",
+          "conditional": "If the exam is surprisingly difficult, ...",
+          "hypothetical past": "If the exam had been surprisingly difficult, ...",
+          "wanting something to be a certain way": "I want to be surprisingly difficult",
+          "degree": "The exam is too surprisingly",
+          "seeming": "The exam seems surprisingly difficult",
+          "negative implication": "The exam is not surprisingly difficult, and ..."
+        }
       },
       "irregular_overrides": {}
     },
@@ -3001,7 +4511,8 @@
       ],
       "example": {
         "jp": "適当なサイズを選んでください。",
-        "en": "Please choose an appropriate size."
+        "en": "Please choose an appropriate size.",
+        "form_en": {}
       },
       "note": "In casual speech 適当 can mean half-hearted or sloppy (適当にやる), so it is often written with kana or adjusted in tone.",
       "irregular_overrides": {}
@@ -3020,7 +4531,8 @@
       ],
       "example": {
         "jp": "退職して気楽な生活を送っています。",
-        "en": "After retiring I lead a carefree life."
+        "en": "After retiring I lead a carefree life.",
+        "form_en": {}
       },
       "irregular_overrides": {}
     },
@@ -3038,7 +4550,8 @@
       ],
       "example": {
         "jp": "気軽に相談してください。",
-        "en": "Please feel free to ask for advice."
+        "en": "Please feel free to ask for advice.",
+        "form_en": {}
       },
       "irregular_overrides": {}
     },
@@ -3056,7 +4569,23 @@
       ],
       "example": {
         "jp": "このホテルは快適です。",
-        "en": "This hotel is comfortable."
+        "en": "This hotel is comfortable.",
+        "form_en": {
+          "negative plain": "This hotel is not comfortable",
+          "negative polite": "This hotel is not comfortable",
+          "past plain": "This hotel was comfortable",
+          "past polite": "This hotel was comfortable",
+          "past negative plain": "This hotel was not comfortable",
+          "past negative polite": "This hotel was not comfortable",
+          "adverbial": "This hotel is comfortable, and ...",
+          "te-form": "This hotel is comfortable, and ...",
+          "conditional": "If this hotel is comfortable, ...",
+          "hypothetical past": "If this hotel had been comfortable, ...",
+          "wanting something to be a certain way": "I want to be comfortable",
+          "degree": "This hotel is too comfortable",
+          "seeming": "This hotel seems comfortable",
+          "negative implication": "This hotel is not comfortable, and ..."
+        }
       },
       "irregular_overrides": {}
     },
@@ -3074,7 +4603,23 @@
       ],
       "example": {
         "jp": "仕事が終わって楽になりました。",
-        "en": "I am relieved now that the work is done."
+        "en": "I am relieved now that the work is done.",
+        "form_en": {
+          "negative plain": "I am not relieved now that the work is done",
+          "negative polite": "I am not relieved now that the work is done",
+          "past plain": "I was relieved now that the work is done",
+          "past polite": "I was relieved now that the work is done",
+          "past negative plain": "I was not relieved now that the work is done",
+          "past negative polite": "I was not relieved now that the work is done",
+          "adverbial": "I am relieved now that the work is done, and ...",
+          "te-form": "I am relieved now that the work is done, and ...",
+          "conditional": "If I am relieved now that the work is done, ...",
+          "hypothetical past": "If I had been relieved now that the work is done, ...",
+          "wanting something to be a certain way": "I want to be relieved now that the work is done",
+          "degree": "I am too relieved",
+          "seeming": "I seem relieved now that the work is done",
+          "negative implication": "I am not relieved now that the work is done, and ..."
+        }
       },
       "irregular_overrides": {}
     },
@@ -3092,7 +4637,8 @@
       ],
       "example": {
         "jp": "彼は繊細な神経の持ち主です。",
-        "en": "He has delicate nerves."
+        "en": "He has delicate nerves.",
+        "form_en": {}
       },
       "irregular_overrides": {}
     },
@@ -3110,7 +4656,8 @@
       ],
       "example": {
         "jp": "彼は貧乏な家庭に育ちました。",
-        "en": "He grew up in a poor family."
+        "en": "He grew up in a poor family.",
+        "form_en": {}
       },
       "irregular_overrides": {}
     },
@@ -3128,7 +4675,23 @@
       ],
       "example": {
         "jp": "海は穏やかです。",
-        "en": "The sea is calm."
+        "en": "The sea is calm.",
+        "form_en": {
+          "negative plain": "The sea is not calm",
+          "negative polite": "The sea is not calm",
+          "past plain": "The sea was calm",
+          "past polite": "The sea was calm",
+          "past negative plain": "The sea was not calm",
+          "past negative polite": "The sea was not calm",
+          "adverbial": "The sea is calm, and ...",
+          "te-form": "The sea is calm, and ...",
+          "conditional": "If the sea is calm, ...",
+          "hypothetical past": "If the sea had been calm, ...",
+          "wanting something to be a certain way": "I want to be calm",
+          "degree": "The sea is too calm",
+          "seeming": "The sea seems calm",
+          "negative implication": "The sea is not calm, and ..."
+        }
       },
       "irregular_overrides": {}
     },
@@ -3146,7 +4709,8 @@
       ],
       "example": {
         "jp": "彼女は華やかな生活をしています。",
-        "en": "She lives a glamorous life."
+        "en": "She lives a glamorous life.",
+        "form_en": {}
       },
       "irregular_overrides": {}
     },
@@ -3163,7 +4727,22 @@
       ],
       "example": {
         "jp": "彼は誠実な人です。",
-        "en": "He is a sincere person."
+        "en": "He is a sincere person.",
+        "form_en": {
+          "negative plain": "He is not a sincere person",
+          "negative polite": "He is not a sincere person",
+          "past plain": "He was a sincere person",
+          "past polite": "He was a sincere person",
+          "past negative plain": "He was not a sincere person",
+          "past negative polite": "He was not a sincere person",
+          "adverbial": "He is a sincere person, and ...",
+          "te-form": "He is a sincere person, and ...",
+          "conditional": "If he is a sincere person, ...",
+          "hypothetical past": "If he had been a sincere person, ...",
+          "wanting something to be a certain way": "I want to be a sincere person",
+          "seeming": "He seems a sincere person",
+          "negative implication": "He is not a sincere person, and ..."
+        }
       },
       "irregular_overrides": {}
     },
@@ -3181,7 +4760,23 @@
       ],
       "example": {
         "jp": "この子は活発です。",
-        "en": "This child is very active."
+        "en": "This child is very active.",
+        "form_en": {
+          "negative plain": "This child is not very active",
+          "negative polite": "This child is not very active",
+          "past plain": "This child was very active",
+          "past polite": "This child was very active",
+          "past negative plain": "This child was not very active",
+          "past negative polite": "This child was not very active",
+          "adverbial": "This child is very active, and ...",
+          "te-form": "This child is very active, and ...",
+          "conditional": "If this child is very active, ...",
+          "hypothetical past": "If this child had been very active, ...",
+          "wanting something to be a certain way": "I want to be very active",
+          "degree": "This child is too active",
+          "seeming": "This child seems active",
+          "negative implication": "This child is not very active, and ..."
+        }
       },
       "irregular_overrides": {}
     },
@@ -3199,7 +4794,8 @@
       ],
       "example": {
         "jp": "彼は会議で積極的に意見を言います。",
-        "en": "He actively voices opinions in meetings."
+        "en": "He actively voices opinions in meetings.",
+        "form_en": {}
       },
       "irregular_overrides": {}
     },
@@ -3217,7 +4813,8 @@
       ],
       "example": {
         "jp": "彼女は消極的な性格です。",
-        "en": "She has a passive personality."
+        "en": "She has a passive personality.",
+        "form_en": {}
       },
       "irregular_overrides": {}
     },
@@ -3234,7 +4831,18 @@
       ],
       "example": {
         "jp": "彼は能力があるのに謙虚です。",
-        "en": "He is capable yet humble."
+        "en": "He is capable yet humble.",
+        "form_en": {
+          "past plain": "He was capable yet humble",
+          "past polite": "He was capable yet humble",
+          "adverbial": "He is capable yet humble, and ...",
+          "te-form": "He is capable yet humble, and ...",
+          "conditional": "If he is capable yet humble, ...",
+          "hypothetical past": "If he had been capable yet humble, ...",
+          "wanting something to be a certain way": "I want to be capable yet humble",
+          "degree": "He is too capable",
+          "seeming": "He seems capable yet humble"
+        }
       },
       "irregular_overrides": {}
     },
@@ -3252,7 +4860,8 @@
       ],
       "example": {
         "jp": "柔軟な考え方が必要です。",
-        "en": "A flexible way of thinking is necessary."
+        "en": "A flexible way of thinking is necessary.",
+        "form_en": {}
       },
       "irregular_overrides": {}
     },
@@ -3270,7 +4879,8 @@
       ],
       "example": {
         "jp": "二つの意味の違いは微妙です。",
-        "en": "The difference in meaning between the two is subtle."
+        "en": "The difference in meaning between the two is subtle.",
+        "form_en": {}
       },
       "note": "In casual speech 微妙 often means 'not great / hard to say' (as a hedging response).",
       "irregular_overrides": {}
@@ -3288,7 +4898,8 @@
       ],
       "example": {
         "jp": "厳密に言えば、その説明は正しくありません。",
-        "en": "Strictly speaking, that explanation is not correct."
+        "en": "Strictly speaking, that explanation is not correct.",
+        "form_en": {}
       },
       "irregular_overrides": {}
     },
@@ -3306,7 +4917,8 @@
       ],
       "example": {
         "jp": "彼は巧妙な手口で詐欺を働いた。",
-        "en": "He committed fraud through a cunning scheme."
+        "en": "He committed fraud through a cunning scheme.",
+        "form_en": {}
       },
       "irregular_overrides": {}
     },
@@ -3323,7 +4935,18 @@
       ],
       "example": {
         "jp": "彼は頑固で意見を変えません。",
-        "en": "He is stubborn and will not change his opinion."
+        "en": "He is stubborn and will not change his opinion.",
+        "form_en": {
+          "past plain": "He was stubborn and will not change his opinion",
+          "past polite": "He was stubborn and will not change his opinion",
+          "adverbial": "He is stubborn and will not change his opinion, and ...",
+          "te-form": "He is stubborn and will not change his opinion, and ...",
+          "conditional": "If he is stubborn and will not change his opinion, ...",
+          "hypothetical past": "If he had been stubborn and will not change his opinion, ...",
+          "wanting something to be a certain way": "I want to be stubborn and will not change his opinion",
+          "degree": "He is too stubborn",
+          "seeming": "He seems stubborn and will not change his opinion"
+        }
       },
       "irregular_overrides": {}
     },
@@ -3341,7 +4964,8 @@
       ],
       "example": {
         "jp": "彼は堅実な投資をしています。",
-        "en": "He makes sound investments."
+        "en": "He makes sound investments.",
+        "form_en": {}
       },
       "irregular_overrides": {}
     },
@@ -3359,7 +4983,8 @@
       ],
       "example": {
         "jp": "彼は公正な審判をしました。",
-        "en": "He made a fair judgment."
+        "en": "He made a fair judgment.",
+        "form_en": {}
       },
       "irregular_overrides": {}
     },
@@ -3376,7 +5001,8 @@
       ],
       "example": {
         "jp": "客観的に自分の欠点を見てください。",
-        "en": "Please look at your own faults objectively."
+        "en": "Please look at your own faults objectively.",
+        "form_en": {}
       },
       "irregular_overrides": {}
     },
@@ -3393,7 +5019,23 @@
       ],
       "example": {
         "jp": "その意見は主観的です。",
-        "en": "That opinion is subjective."
+        "en": "That opinion is subjective.",
+        "form_en": {
+          "negative plain": "That opinion is not subjective",
+          "negative polite": "That opinion is not subjective",
+          "past plain": "That opinion was subjective",
+          "past polite": "That opinion was subjective",
+          "past negative plain": "That opinion was not subjective",
+          "past negative polite": "That opinion was not subjective",
+          "adverbial": "That opinion is subjective, and ...",
+          "te-form": "That opinion is subjective, and ...",
+          "conditional": "If that opinion is subjective, ...",
+          "hypothetical past": "If that opinion had been subjective, ...",
+          "wanting something to be a certain way": "I want to be subjective",
+          "degree": "That opinion is too subjective",
+          "seeming": "That opinion seems subjective",
+          "negative implication": "That opinion is not subjective, and ..."
+        }
       },
       "irregular_overrides": {}
     },
@@ -3411,7 +5053,23 @@
       ],
       "example": {
         "jp": "彼はその計画に否定的です。",
-        "en": "He is negative about the plan."
+        "en": "He is negative about the plan.",
+        "form_en": {
+          "negative plain": "He is not negative about the plan",
+          "negative polite": "He is not negative about the plan",
+          "past plain": "He was negative about the plan",
+          "past polite": "He was negative about the plan",
+          "past negative plain": "He was not negative about the plan",
+          "past negative polite": "He was not negative about the plan",
+          "adverbial": "He is negative about the plan, and ...",
+          "te-form": "He is negative about the plan, and ...",
+          "conditional": "If he is negative about the plan, ...",
+          "hypothetical past": "If he had been negative about the plan, ...",
+          "wanting something to be a certain way": "I want to be negative about the plan",
+          "degree": "He is too negative",
+          "seeming": "He seems negative about the plan",
+          "negative implication": "He is not negative about the plan, and ..."
+        }
       },
       "irregular_overrides": {}
     },
@@ -3429,7 +5087,23 @@
       ],
       "example": {
         "jp": "彼女は新しい案に肯定的です。",
-        "en": "She is positive about the new idea."
+        "en": "She is positive about the new idea.",
+        "form_en": {
+          "negative plain": "She is not positive about the new idea",
+          "negative polite": "She is not positive about the new idea",
+          "past plain": "She was positive about the new idea",
+          "past polite": "She was positive about the new idea",
+          "past negative plain": "She was not positive about the new idea",
+          "past negative polite": "She was not positive about the new idea",
+          "adverbial": "She is positive about the new idea, and ...",
+          "te-form": "She is positive about the new idea, and ...",
+          "conditional": "If she is positive about the new idea, ...",
+          "hypothetical past": "If she had been positive about the new idea, ...",
+          "wanting something to be a certain way": "I want to be positive about the new idea",
+          "degree": "She is too positive",
+          "seeming": "She seems positive about the new idea",
+          "negative implication": "She is not positive about the new idea, and ..."
+        }
       },
       "irregular_overrides": {}
     },
@@ -3447,7 +5121,23 @@
       ],
       "example": {
         "jp": "彼は政府の政策に批判的です。",
-        "en": "He is critical of the government's policy."
+        "en": "He is critical of the government's policy.",
+        "form_en": {
+          "negative plain": "He is not critical of the government's policy",
+          "negative polite": "He is not critical of the government's policy",
+          "past plain": "He was critical of the government's policy",
+          "past polite": "He was critical of the government's policy",
+          "past negative plain": "He was not critical of the government's policy",
+          "past negative polite": "He was not critical of the government's policy",
+          "adverbial": "He is critical of the government's policy, and ...",
+          "te-form": "He is critical of the government's policy, and ...",
+          "conditional": "If he is critical of the government's policy, ...",
+          "hypothetical past": "If he had been critical of the government's policy, ...",
+          "wanting something to be a certain way": "I want to be critical of the government's policy",
+          "degree": "He is too critical",
+          "seeming": "He seems critical of the government's policy",
+          "negative implication": "He is not critical of the government's policy, and ..."
+        }
       },
       "irregular_overrides": {}
     },
@@ -3465,7 +5155,23 @@
       ],
       "example": {
         "jp": "彼の返事は曖昧でした。",
-        "en": "His answer was vague."
+        "en": "His answer was vague.",
+        "form_en": {
+          "negative plain": "His answer is not vague",
+          "negative polite": "His answer is not vague",
+          "past plain": "His answer was vague",
+          "past polite": "His answer was vague",
+          "past negative plain": "His answer was not vague",
+          "past negative polite": "His answer was not vague",
+          "adverbial": "His answer is vague, and ...",
+          "te-form": "His answer is vague, and ...",
+          "conditional": "If his answer is vague, ...",
+          "hypothetical past": "If his answer had been vague, ...",
+          "wanting something to be a certain way": "I want to be vague",
+          "degree": "His answer is too vague",
+          "seeming": "His answer seems vague",
+          "negative implication": "His answer is not vague, and ..."
+        }
       },
       "irregular_overrides": {}
     },
@@ -3483,7 +5189,8 @@
       ],
       "example": {
         "jp": "この資料は情報が不十分です。",
-        "en": "This document has insufficient information."
+        "en": "This document has insufficient information.",
+        "form_en": {}
       },
       "irregular_overrides": {}
     },
@@ -3501,7 +5208,8 @@
       ],
       "example": {
         "jp": "率直に意見を聞かせてください。",
-        "en": "Please give me your frank opinion."
+        "en": "Please give me your frank opinion.",
+        "form_en": {}
       },
       "irregular_overrides": {}
     },
@@ -3519,7 +5227,8 @@
       ],
       "example": {
         "jp": "彼は慎重に物事を進めます。",
-        "en": "He proceeds carefully."
+        "en": "He proceeds carefully.",
+        "form_en": {}
       },
       "irregular_overrides": {}
     },
@@ -3537,7 +5246,8 @@
       ],
       "example": {
         "jp": "彼は大胆な計画を立てました。",
-        "en": "He made a bold plan."
+        "en": "He made a bold plan.",
+        "form_en": {}
       },
       "irregular_overrides": {}
     },
@@ -3555,7 +5265,8 @@
       ],
       "example": {
         "jp": "そんな買い物は無駄です。",
-        "en": "Such shopping is wasteful."
+        "en": "Such shopping is wasteful.",
+        "form_en": {}
       },
       "irregular_overrides": {}
     },
@@ -3573,7 +5284,23 @@
       ],
       "example": {
         "jp": "今は待つのが賢明です。",
-        "en": "It is wise to wait now."
+        "en": "It is wise to wait now.",
+        "form_en": {
+          "negative plain": "It is not wise to wait now",
+          "negative polite": "It is not wise to wait now",
+          "past plain": "It was wise to wait now",
+          "past polite": "It was wise to wait now",
+          "past negative plain": "It was not wise to wait now",
+          "past negative polite": "It was not wise to wait now",
+          "adverbial": "It is wise to wait now, and ...",
+          "te-form": "It is wise to wait now, and ...",
+          "conditional": "If it is wise to wait now, ...",
+          "hypothetical past": "If it had been wise to wait now, ...",
+          "wanting something to be a certain way": "I want to be wise to wait now",
+          "degree": "It is too wise",
+          "seeming": "It seems wise to wait now",
+          "negative implication": "It is not wise to wait now, and ..."
+        }
       },
       "irregular_overrides": {}
     },
@@ -3590,7 +5317,8 @@
       ],
       "example": {
         "jp": "高価な時計を身につけています。",
-        "en": "He wears an expensive watch."
+        "en": "He wears an expensive watch.",
+        "form_en": {}
       },
       "irregular_overrides": {}
     },
@@ -3608,7 +5336,8 @@
       ],
       "example": {
         "jp": "彼女は優雅な身のこなしをします。",
-        "en": "She moves gracefully."
+        "en": "She moves gracefully.",
+        "form_en": {}
       },
       "irregular_overrides": {}
     },
@@ -3626,7 +5355,8 @@
       ],
       "example": {
         "jp": "豪華なホテルに泊まりました。",
-        "en": "I stayed at a luxurious hotel."
+        "en": "I stayed at a luxurious hotel.",
+        "form_en": {}
       },
       "irregular_overrides": {}
     },
@@ -3643,7 +5373,23 @@
       ],
       "example": {
         "jp": "戦争は悲惨なものです。",
-        "en": "War is tragic."
+        "en": "War is tragic.",
+        "form_en": {
+          "negative plain": "War is not tragic",
+          "negative polite": "War is not tragic",
+          "past plain": "War was tragic",
+          "past polite": "War was tragic",
+          "past negative plain": "War was not tragic",
+          "past negative polite": "War was not tragic",
+          "adverbial": "War is tragic, and ...",
+          "te-form": "War is tragic, and ...",
+          "conditional": "If war is tragic, ...",
+          "hypothetical past": "If war had been tragic, ...",
+          "wanting something to be a certain way": "I want to be tragic",
+          "degree": "War is too tragic",
+          "seeming": "War seems tragic",
+          "negative implication": "War is not tragic, and ..."
+        }
       },
       "irregular_overrides": {}
     },
@@ -3661,7 +5407,8 @@
       ],
       "example": {
         "jp": "彼は切実な問題を抱えています。",
-        "en": "He has a pressing problem."
+        "en": "He has a pressing problem.",
+        "form_en": {}
       },
       "irregular_overrides": {}
     },
@@ -3678,7 +5425,8 @@
       ],
       "example": {
         "jp": "些細なことで喧嘩してしまいました。",
-        "en": "We ended up quarreling over something trivial."
+        "en": "We ended up quarreling over something trivial.",
+        "form_en": {}
       },
       "irregular_overrides": {}
     },
@@ -3695,7 +5443,8 @@
       ],
       "example": {
         "jp": "この教会の雰囲気は荘厳です。",
-        "en": "The atmosphere of this church is solemn."
+        "en": "The atmosphere of this church is solemn.",
+        "form_en": {}
       },
       "irregular_overrides": {}
     },
@@ -3713,7 +5462,8 @@
       ],
       "example": {
         "jp": "戦争の不条理さを強く感じました。",
-        "en": "I strongly felt the absurdity of war."
+        "en": "I strongly felt the absurdity of war.",
+        "form_en": {}
       },
       "irregular_overrides": {}
     },
@@ -3731,7 +5481,8 @@
       ],
       "example": {
         "jp": "会議が円滑に進みました。",
-        "en": "The meeting went smoothly."
+        "en": "The meeting went smoothly.",
+        "form_en": {}
       },
       "irregular_overrides": {}
     },
@@ -3748,7 +5499,23 @@
       ],
       "example": {
         "jp": "彼は温厚な性格で知られています。",
-        "en": "He is known for his gentle personality."
+        "en": "He is known for his gentle personality.",
+        "form_en": {
+          "negative plain": "He is not known for his gentle personality",
+          "negative polite": "He is not known for his gentle personality",
+          "past plain": "He was known for his gentle personality",
+          "past polite": "He was known for his gentle personality",
+          "past negative plain": "He was not known for his gentle personality",
+          "past negative polite": "He was not known for his gentle personality",
+          "adverbial": "He is known for his gentle personality, and ...",
+          "te-form": "He is known for his gentle personality, and ...",
+          "conditional": "If he is known for his gentle personality, ...",
+          "hypothetical past": "If he had been known for his gentle personality, ...",
+          "wanting something to be a certain way": "I want to be known for his gentle personality",
+          "degree": "He is too known",
+          "seeming": "He seems known for his gentle personality",
+          "negative implication": "He is not known for his gentle personality, and ..."
+        }
       },
       "irregular_overrides": {}
     },
@@ -3766,7 +5533,23 @@
       ],
       "example": {
         "jp": "粗末な食事で申し訳ありません。",
-        "en": "I am sorry for the humble meal."
+        "en": "I am sorry for the humble meal.",
+        "form_en": {
+          "negative plain": "I am not sorry for the humble meal",
+          "negative polite": "I am not sorry for the humble meal",
+          "past plain": "I was sorry for the humble meal",
+          "past polite": "I was sorry for the humble meal",
+          "past negative plain": "I was not sorry for the humble meal",
+          "past negative polite": "I was not sorry for the humble meal",
+          "adverbial": "I am sorry for the humble meal, and ...",
+          "te-form": "I am sorry for the humble meal, and ...",
+          "conditional": "If I am sorry for the humble meal, ...",
+          "hypothetical past": "If I had been sorry for the humble meal, ...",
+          "wanting something to be a certain way": "I want to be sorry for the humble meal",
+          "degree": "I am too sorry",
+          "seeming": "I seem sorry for the humble meal",
+          "negative implication": "I am not sorry for the humble meal, and ..."
+        }
       },
       "irregular_overrides": {}
     },
@@ -3784,7 +5567,8 @@
       ],
       "example": {
         "jp": "彼の失敗は滑稽に見えました。",
-        "en": "His failure looked comical."
+        "en": "His failure looked comical.",
+        "form_en": {}
       },
       "irregular_overrides": {}
     },
@@ -3802,7 +5586,8 @@
       ],
       "example": {
         "jp": "山岳地帯の環境は過酷です。",
-        "en": "The environment in the mountainous region is harsh."
+        "en": "The environment in the mountainous region is harsh.",
+        "form_en": {}
       },
       "irregular_overrides": {}
     },
@@ -3820,7 +5605,23 @@
       ],
       "example": {
         "jp": "今日はいい天気です。",
-        "en": "Today is nice weather."
+        "en": "Today is nice weather.",
+        "form_en": {
+          "negative plain": "Today is not nice weather",
+          "negative polite": "Today is not nice weather",
+          "past plain": "Today was nice weather",
+          "past polite": "Today was nice weather",
+          "past negative plain": "Today was not nice weather",
+          "past negative polite": "Today was not nice weather",
+          "adverbial": "Today is nice weather, and ...",
+          "te-form": "Today is nice weather, and ...",
+          "conditional": "If today is nice weather, ...",
+          "hypothetical past": "If today had been nice weather, ...",
+          "wanting something to be a certain way": "I want to be nice weather",
+          "degree": "Today is too nice",
+          "seeming": "Today seems nice weather",
+          "negative implication": "Today is not nice weather, and ..."
+        }
       },
       "note": "Irregular: every form besides the dictionary form and polite present is built on the stem 良- (yo-), not い-.",
       "irregular_overrides": {
